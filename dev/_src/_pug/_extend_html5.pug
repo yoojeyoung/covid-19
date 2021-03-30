@@ -1,0 +1,114 @@
+- var language = 'ko'
+- var htmlClass = ''
+- var bodyClass = ''
+- var wrapClass = ''
+- var NODE_ENV = locals['NODE_ENV'];
+block vars
+
+//- 추가 인클루드는 _setting 안에다가 하기 여기 인클루드는 _setting 하나만 나와있게 관리하기
+include /_src/_pug/_setting
+
+doctype html
+
+html(class=`${htmlClass}`, lang=`${language}`)
+    head
+        block viewport
+            - var viewport_mode = 'pc'
+
+        case viewport_mode
+            when 'pc'
+                meta(name='viewport', content='width=device-width, initial-scale=1')
+            when 'mobile'
+                meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no')
+                meta(name='format-detection', content="telephone=no")
+
+        meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+        meta(charset="utf-8")
+
+        block title
+            title 프로젝트타이틀
+
+        block keywords&description
+            meta(name="keywords" content="")
+            meta(name="description" content="")
+
+        block property
+            meta(property="og:title" content="")
+            meta(property="og:url" content="")
+            meta(property="og:image" content="")
+            meta(property="og:description" content="")
+
+        link(rel='shortcut icon', type='image/x-icon', href='/favicon.ico')
+
+        block css
+            //- www
+            if NODE_ENV === 'development'
+                link(href='../../css_partials/font.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/reset.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/print.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/jquery.scrollbar.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/swiper.5.4.5.css', type='text/css', rel='stylesheet')
+
+                link(href='../../css_partials/prototype_common.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_scroll.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_breadcrumb.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_scrollspy.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_map.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_video.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_icon.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_button.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_form.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_pagenav.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_table.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_box.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_container.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_tab.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_swiper.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_accordion.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_popup.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototype_test.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/prototypelist.css', type='text/css', rel='stylesheet')
+
+                link(href='../../css_partials/header.css', type='text/css', rel='stylesheet')
+                link(href='../../css_partials/footer.css', type='text/css', rel='stylesheet')
+            //- build
+            else
+                link(href='../../css/common.css', type='text/css', rel='stylesheet')
+
+        block script_top
+            script(src='../../js/jquery.js')
+            script(src='../../js/swiper.min.5.4.5.js')
+            script(src='../../js/jquery.scrollbar.min.js' defer)
+            script(src='../../js/common.js' defer)
+            script(src='../../js/front.js' defer)
+            script(src='../../js/TweenMax.min.js')
+
+    body(class=`${bodyClass}`)
+        //- ie8이하 브라우저 업그레이드 권장 안내 텍스트
+        +browserupgrade
+
+        block wrap
+            #wrap(class=`${wrapClass}`)
+
+                block header
+                    // s: header include
+                    if NODE_ENV === 'development'
+                        <!--#include virtual="/html/include/header.html" -->
+                    else
+                        include /html/include/header
+                    // e: header include
+
+                block contents
+
+                block footer
+                    // s: footer include
+                    if NODE_ENV === 'development'
+                        <!--#include virtual="/html/include/footer.html" -->
+                    else
+                        include /html/include/footer
+                    // e: footer include
+
+            //- 딤드용 이미지
+            +dimm
+
+        block script

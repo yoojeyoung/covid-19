@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>프로젝트타이틀</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link href="../../css_partials/font.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/reset.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/print.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/jquery.scrollbar.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/swiper.5.4.5.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_common.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_scroll.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_breadcrumb.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_scrollspy.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_map.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_video.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_icon.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_button.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_form.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_pagenav.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_table.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_box.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_container.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_tab.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_swiper.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_accordion.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_popup.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_test.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototypelist.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/header.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/footer.css" type="text/css" rel="stylesheet">
+  <link href="../../css/common.css" type="text/css" rel="stylesheet">
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/swiper.min.5.4.5.js"></script>
+  <script src="../../js/jquery.scrollbar.min.js" defer></script>
+  <script src="../../js/common.js" defer></script>
+  <script src="../../js/front.js" defer></script>
+  <script src="../../js/TweenMax.min.js"></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+  <div id="wrap">
+    <!-- s: header include-->
+    <!--#include virtual="/html/include/header.html" -->
+    <!-- e: header include-->
+    <div id="container">
+      <div id="content" role="main">
+        <div class="page_wrap page_layout">
+          <!-- pgheader-->
+          <header class="pgheader_wrap">
+            <div class="pgheader_in">
+              <div class="pghleft_w">
+                <a class="btn_pghtotal" href="javascript:;">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </a>
+                <div class="pgh_title">CTC.admin</div>
+              </div>
+              <div class="adm_men_w">
+                <a class="adm_mendl_w" href="javascript:;">
+                  <span class="adm_men_name">콘텐츠 관리자</span>
+                </a>
+                <div class="mentype_list_w">
+                  <ul class="mentype_list">
+                    <li>
+                      <a class="mentype" href="#">테스트 1</a>
+                    </li>
+                    <li>
+                      <a class="mentype" href="#">테스트 2</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- // pgheader-->
+          <section class="pgmid_zone">
+            <div class="pgleft_wrap">
+              <div class="plz_cont_in">
+                <ul class="plm_list">
+                  <li id="plm01">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico ico_plm01"></span>
+                      <span class="plm_in">상황판</span>
+                    </a>
+                  </li>
+                  <li id="plm02">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico ico_plm02"></span>
+                      <span class="plm_in">검사현황</span>
+                    </a>
+                  </li>
+                  <li id="plm03">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico ico_plm03"></span>
+                      <span class="plm_in">통계</span>
+                    </a>
+                    <div class="pltm_list_w">
+                      <ul class="pltm_list">
+                        <li id="plm03_01">
+                          <a class="pltm" href="#">확진자통계</a>
+                        </li>
+                        <li id="plm03_02">
+                          <a class="pltm" href="#">검사통계</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li id="plm06">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico"></span>
+                      <span class="plm_in">역학조사</span>
+                    </a>
+                  </li>
+                  <li id="plm04">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico ico_plm04"></span>
+                      <span class="plm_in">자료실</span>
+                    </a>
+                    <div class="pltm_list_w">
+                      <ul class="pltm_list">
+                        <li id="plm04_01">
+                          <a class="pltm" href="#">현황자료게시판</a>
+                        </li>
+                        <li id="plm04_02">
+                          <a class="pltm" href="#">분석자료게시판</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li id="plm05">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico ico_plm05"></span>
+                      <span class="plm_in">확진자관리</span>
+                    </a>
+                    <div class="pltm_list_w">
+                      <ul class="pltm_list">
+                        <li id="plm05_01">
+                          <a class="pltm" href="#">확진자전국데이터</a>
+                        </li>
+                        <li id="plm05_02">
+                          <a class="pltm" href="#">확진자목록</a>
+                        </li>
+                        <li id="plm05_03">
+                          <a class="pltm" href="#">확진자등록</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li id="plm06">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico ico_plm06"></span>
+                      <span class="plm_in">검사소관리</span>
+                    </a>
+                    <div class="pltm_list_w">
+                      <ul class="pltm_list">
+                        <li id="plm06_01">
+                          <a class="pltm" href="#">검사소목록 / 괸리</a>
+                        </li>
+                        <li id="plm06_02">
+                          <a class="pltm" href="#">검사실적등록</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li id="plm07">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico ico_plm07"></span>
+                      <span class="plm_in">격리자데이터</span>
+                    </a>
+                  </li>
+                  <li id="plm08">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico ico_plm08"></span>
+                      <span class="plm_in">카카오톡게시판</span>
+                    </a>
+                  </li>
+                  <li id="plm09">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico ico_plm09"></span>
+                      <span class="plm_in">클러스터관리</span>
+                    </a>
+                  </li>
+                  <li id="plm10">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico ico_plm10"></span>
+                      <span class="plm_in">사용자관리</span>
+                    </a>
+                  </li>
+                  <li id="plm11">
+                    <a class="plm" href="javascript:;">
+                      <span class="plm_ico ico_plm11"></span>
+                      <span class="plm_in">코드관리</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="pgright_wrap">
+              <div class="pmap_list_w">
+                <ul class="pmap_list">
+                  <li class="has_phome">
+                    <a class="pgm_home" href="javascript:;"></a>
+                  </li>
+                  <li>
+                    <a class="pgm_mapmenu" href="javascript:;">관리자 계정관리</a>
+                  </li>
+                  <li>
+                    <a class="pgm_mapmenu" href="javascript:;">관리자 계정</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="prz_cbox_low">
+                <!-- 내용이 들어갑니다.-->
+                <div class="btn_both_tb_w btop_pos">
+                  <div class="btn_both_tb">
+                    <div class="btn_both_td both_left">
+                      <a class="btn_ctxt ltype3" href="#">밀번호 재설정</a>
+                      <a class="btn_ctxt ltype3" href="#">정보 수정</a>
+                      <a class="btn_ctxt ltype3" href="#">사용 중지</a>
+                    </div>
+                    <div class="btn_both_td both_right">
+                      <a class="btn_ctxt dtype3" href="#">새 관리자 등록</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="data_htb_w">
+                  <table class="data_htb" id="data_sort_table">
+                    <colgroup>
+                      <col style="width:60px;">
+                      <col>
+                      <col style="width:9%;">
+                      <col style="width:15%;">
+                      <col style="width:15%;">
+                      <col style="width:12%;">
+                      <col style="width:15%;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th class="has_notxt">
+                          <div class="fitem oneitem">
+                            <input class="frdchk" id="check_total" type="checkbox">
+                            <label class="fitem_lab" for="check_total"></label>
+                          </div>
+                        </th>
+                        <th class="has_sort">
+                          <span class="dt_thwpsp">이메일</span>
+                        </th>
+                        <th class="has_sort sort_up">
+                          <span class="dt_thwpsp">이름</span>
+                        </th>
+                        <th class="has_sort sort_down">
+                          <span class="dt_thwpsp">등록일자</span>
+                        </th>
+                        <th>
+                          <span class="dt_thwpsp">마지막 로그인</span>
+                        </th>
+                        <th>
+                          <span class="dt_thwpsp">등록 CTC</span>
+                        </th>
+                        <th>
+                          <span class="dt_thwpsp">마지막 로그인</span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="has_notxt">
+                          <div class="fitem oneitem">
+                            <input class="frdchk" type="checkbox" id="">
+                            <label class="fitem_lab" for=""></label>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="data_ctext">zalexiaparkandjoyandsomething@pia.space</span>
+                        </td>
+                        <td>
+                          <span class="data_ctext">홍길동</span>
+                        </td>
+                        <td>
+                          <span class="data_ctext">2021-01-12 23:12:12</span>
+                        </td>
+                        <td>
+                          <span class="data_ctext">2021-01-12 00:00:00</span>
+                        </td>
+                        <td>
+                          <span class="data_ctext">0</span>
+                        </td>
+                        <td class="ptype2">
+                          <span class="data_cring">사용중</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- paging_w-->
+                <div class="paging_w">
+                  <a class="pn_control pn_prev2" href="#">
+                    <span class="hdtext">처음</span>
+                  </a>
+                  <a class="pn_control pn_prev" href="#">
+                    <span class="hdtext">이전</span>
+                  </a>
+                  <ul class="pn_num_list">
+                    <li class="active">
+                      <a class="pn_num" href="#">1</a>
+                    </li>
+                    <li>
+                      <a class="pn_num" href="#">2</a>
+                    </li>
+                    <li>
+                      <a class="pn_num" href="#">3</a>
+                    </li>
+                    <li>
+                      <a class="pn_num" href="#">4</a>
+                    </li>
+                    <li>
+                      <a class="pn_num" href="#">5</a>
+                    </li>
+                    <li>
+                      <a class="pn_num" href="#">6</a>
+                    </li>
+                    <li>
+                      <a class="pn_num" href="#">7</a>
+                    </li>
+                    <li>
+                      <a class="pn_num" href="#">8</a>
+                    </li>
+                    <li>
+                      <a class="pn_num" href="#">9</a>
+                    </li>
+                    <li>
+                      <a class="pn_num" href="#">10</a>
+                    </li>
+                  </ul>
+                  <a class="pn_control pn_next" href="#">
+                    <span class="hdtext">다음</span>
+                  </a>
+                  <a class="pn_control pn_next2" href="#">
+                    <span class="hdtext">끝</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- s: footer include-->
+    <!--#include virtual="/html/include/footer.html" -->
+    <!-- e: footer include-->
+  </div>
+  <div class="dimm">
+    <img src="../../images/common/blank_size_100.png" alt="">
+  </div>
+  <script>
+    //- CTC.rockMenu("#plm01,#plm01_01");
+
+    $(function() {
+      // 테이블 액션 - 전체 선택
+      $("#check_total").on("click", function() {
+        var $this = $(this),
+          $t_p = $this.parents(".data_htb");
+        if ($this.prop("checked")) {
+          $t_p.find(".frdchk").prop("checked", true);
+        } else {
+          $t_p.find(".frdchk").prop("checked", false);
+        }
+      });
+      // 테이블 액션 - 개별 선택
+      $(".data_htb tbody .frdchk").on("click", function() {
+        var $this = $(this),
+          $t_p = $this.parents("tr");
+        if ($this.prop("checked")) {
+          $t_p.addClass("active");
+        } else {
+          $t_p.removeClass("active");
+        }
+      });
+
+      // 체크박스 for 퍼블확인용
+      $("#data_sort_table .fitem.oneitem").each(function(index) {
+        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id", "check_0" + index);
+        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for", "check_0" + index);
+      });
+    });
+
+  </script>
+</body>
+
+</html>

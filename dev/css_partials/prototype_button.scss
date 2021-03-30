@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+@import 'dev/_src/_scss/_setting';
+
+/*! mobile 버전 - css */
+@media (max-width:1023px){}
+/*! pc & tablet 버전 - css */
+@media (min-width:1024px){}
+
+// ******************** code comments ********************
+// button
+// 프로젝트 폰트 종류에 따라 font-size, line-height 값을 조정해 주기
+// 텍스트 설정후에 패딩으로 버튼의 높이값 조절
+// 최소 가로값이 필요 할 경우 min-width 사용 하기
+// 크기나 스타일에 따라서 lv01, lv02, lv03 등으로 타입 추가 하기
+// ******************** code comments ********************
+/*! 기본 버튼 */
+.btn-lv01{
+    display:inline-block;
+    text-align:center;
+    @include rem(padding, 11px 15px 12px 15px);
+    transition: all .3s ease-out;
+    .txt{
+        @include rem(font-size, 20px);
+        line-height:1.4;
+    }
+    &.blue{
+        border:1px solid blue;
+        background-color:blue;
+        color:#ffffff;
+    }
+    &.white{
+        border:1px solid blue;
+        background-color:#ffffff;
+        color:red;
+    }
+    [class^="ico-"]{
+        @include rem(margin-left, 10px);
+    }
+}
+
+/*! 기본 버튼 - 컨테이너 */
+.btn-container{}
+
+/*! 기본 버튼 - 정렬 */
+.btn-align{
+    &-type01{
+        display:flex;
+        &.spacebetween01{
+            justify-content: space-between;
+            @include rem(margin-right, -5px);
+            a,
+            button{
+                @include rem(margin-right, 5px);
+                flex: 1 1 auto;
+            }
+        }
+    }
+}

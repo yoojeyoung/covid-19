@@ -1,0 +1,71 @@
+extends /_src/_pug/_extend_html5
+
+block title
+    title 프로토타입
+
+block header
+
+block contents
+    #container
+
+        h1.hide-txt 프로토타입
+        #content(role='main')
+            //- ******************** code comments ********************
+            //- accordion
+            //- ******************** code comments ********************
+            .____prototype-group
+                h2.____prototype-tit01 아코디언
+                br
+
+                //- 프로토타입 컨텐츠 영역
+                .accrodion-container
+                    ul.accrodion-list
+                        li.accrodion-item
+                            a(href="#none").accrodion-btn
+                                span.hide-txt.close 메뉴 닫힘
+                                span.hide-txt.open 메뉴 열림
+                                span.accrodion-util
+                                    span.txt word-break:keep-all; word-wrap:break-word; 클릭영역 글자수에 따라 세로 가변형 스타일
+                                    span.bu(aria-hidden="true")
+                            .accrodion-content
+                                | 아코디언 컨텐츠 영역
+                        li.accrodion-item
+                            a(href="#none").accrodion-btn
+                                span.hide-txt.close 메뉴 닫힘
+                                span.hide-txt.open 메뉴 열림
+                                span.accrodion-util
+                                    span.txt word-break:keep-all; word-wrap:break-word; 클릭영역 글자수에 따라 세로 가변형 스타일
+                                    span.tag 정상
+                                    span.bu(aria-hidden="true")
+                            .accrodion-content
+                                | 아코디언 컨텐츠 영역
+                        li.accrodion-item
+                            a(href="#none").accrodion-btn
+                                span.hide-txt.close 메뉴 닫힘
+                                span.hide-txt.open 메뉴 열림
+                                span.accrodion-util
+                                    span.txt.ellipsis 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임 1줄 말줄임
+                                    span.tag 정상
+                                    span.bu(aria-hidden="true")
+                            .accrodion-content
+                                | 아코디언 컨텐츠 영역
+
+                hr
+                hr
+                hr
+                hr
+
+                //- 최신업데이트 2021. 03. 16.
+                //- 이슈 - 맥북 사파리에서 모바일 크기로 스크롤 줄이다 보면 텍스트 영역이 왼쪽으로 넘어감
+                pre.____code-info.
+                    # .accrodion-util 영역에 아이콘등 추가 할 수 있습니다.
+                    # .accrodion-content 영역에 아코디언 컨텐츠를 추가 합니다.
+
+                    # 스크립트 관련 가이드
+                    # 기본은 전체가 열리는 버전 입니다.
+                    # .accrodion-list 에 ui-accrodion-toggle 클래스 붙이면 토글 형태로 변경됩니다.
+                pre
+
+block footer
+
+block script

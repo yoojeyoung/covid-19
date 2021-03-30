@@ -1,0 +1,190 @@
+extends /_src/_pug/_extend_html5
+
+block title
+    title 프로토타입
+
+block header
+
+block contents
+    #container
+
+        h1.hide-txt 프로토타입
+        #content(role='main')
+            //- ******************** code comments ********************
+            //- form - checkbox
+            //- ******************** code comments ********************
+            .____prototype-group
+                h2.____prototype-tit01 input[type="checkbox"]
+                span.input-checkbox
+                    input(type="checkbox", id="checkbox201", name="checkbox201")
+                    label(for="checkbox201")
+                        span.hide-txt 숨김텍스트처리
+                span.input-checkbox
+                    input(type="checkbox", id="checkbox202", name="checkbox202", checked)
+                    label(for="checkbox202")
+                        span.hide-txt 숨김텍스트처리
+                span.input-checkbox
+                    input(type="checkbox", id="checkbox203", name="checkbox203", disabled)
+                    label(for="checkbox203")
+                        span.hide-txt 숨김텍스트처리
+                span.input-checkbox
+                    input(type="checkbox", id="checkbox204", name="checkbox204", checked, disabled)
+                    label(for="checkbox204")
+                        span.hide-txt 숨김텍스트처리
+                pre.____code-info.
+                    # 텍스트가 없는 기본형. (라디오버튼 내용 동일)
+                    # 텍스트의 위치에 따라 right, left, up, down 클래스를 붙여줍니다.
+                    # label 태그에는 width, height 값을 지정 하면 안됩니다.
+                    # label 태그에는 가로 길이에 맞게 padding 을 조정합니다.
+                    # 체크박스 및 라디오버튼의 선택표시는 이미지를 사용하지 않고 css를 사용했습니다.
+                    # input 태그는 appearance를 사용하면 IE 에서는 기본 컴퍼넌트가 지워지지 않기 때문에 숨김텍스트 처리하듯이 지웠습니다.
+                    # 애니메이션이 필요 없을 경우는 css에서 애니메이션 영역을 지우고 label:after 를 display:none; 처리하고 checked 되면 display:block; 되게 수정하면 됩니다.
+                    # 신규타입을 만들때는 "input-checkbox-타입형태" 로 네이밍해서 만듭니다.
+                    # 신규타입은 input-checkbox에 추가로 클래스 붙여서 css를 바꾸지 않고 위와 같은 네이밍으로 기본형태와 분리하여 css 작성해 줍니다.
+                pre
+
+            .____prototype-group
+                h2.____prototype-tit01 input[type="checkbox"] - 텍스트 위치 변경
+                span.input-checkbox.right
+                    input(type="checkbox", id="checkbox211", name="checkbox211")
+                    label(for="checkbox211")
+                        span.txt 텍스트 오른쪽
+                span.input-checkbox.left
+                    input(type="checkbox", id="checkbox221", name="checkbox221")
+                    label(for="checkbox221")
+                        span.txt 텍스트 왼쪽
+                span.input-checkbox.down
+                    input(type="checkbox", id="checkbox231", name="checkbox231")
+                    label(for="checkbox231")
+                        span.txt 텍스트 아래쪽
+                span.input-checkbox.up
+                    input(type="checkbox", id="checkbox241", name="checkbox241")
+                    label(for="checkbox241")
+                        span.txt 텍스트 위쪽
+
+            //- ******************** code comments ********************
+            //- form - radio
+            //- ******************** code comments ********************
+            .____prototype-group
+                h2.____prototype-tit01 input[type="radio"]
+                span.input-radio
+                    input(type="radio", id="radio201", name="radio201")
+                    label(for="radio201")
+                        span.hide-txt 숨김텍스트처리
+                span.input-radio
+                    input(type="radio", id="radio202", name="radio202", checked)
+                    label(for="radio202")
+                        span.hide-txt 숨김텍스트처리
+                span.input-radio
+                    input(type="radio", id="radio203", name="radio203", disabled)
+                    label(for="radio203")
+                        span.hide-txt 숨김텍스트처리
+                span.input-radio
+                    input(type="radio", id="radio204", name="radio204", checked, disabled)
+                    label(for="radio204")
+                        span.hide-txt 숨김텍스트처리
+
+            .____prototype-group
+                h2.____prototype-tit01 input[type="radio"] - 텍스트 위치 변경
+                span.input-radio.right
+                    input(type="radio", id="radio211", name="radio211")
+                    label(for="radio211")
+                        span.txt 텍스트 오른쪽
+                span.input-radio.left
+                    input(type="radio", id="radio221", name="radio221")
+                    label(for="radio221")
+                        span.txt 텍스트 왼쪽
+                span.input-radio.down
+                    input(type="radio", id="radio231", name="radio231")
+                    label(for="radio231")
+                        span.txt 텍스트 아래쪽
+                span.input-radio.up
+                    input(type="radio", id="radio241", name="radio241")
+                    label(for="radio241")
+                        span.txt 텍스트 위쪽
+
+            //- ******************** code comments ********************
+            //- form - input text
+            //- ******************** code comments ********************
+            .____prototype-group
+                h2.____prototype-tit01 input text
+                br
+                span.input-txt.in-message
+                    input(type="text", title="검색어 입력", placeholder="검색어를 입력해주세요")
+                    span.message.pass 사용 가능한 이메일 입니다.
+                br
+                br
+                span.input-txt.in-message
+                    input(type="text", title="검색어 입력", placeholder="검색어를 입력해주세요")
+                    span.message.error 비밀번호가 일치하지 않습니다.
+                br
+                br
+                span.input-txt
+                    input(type="text", title="검색어 입력", placeholder="읽기 전용", readonly)
+                pre.____code-info.
+                    # input text 기본형.
+                    # 벨리데이션 메세지가 필요 할 때는 .in-message 클래스를 추가 합니다.
+                    # 가로 길이는 span.input-txt에 정해주면 됩니다. input 가로길이는 항상 100% 입니다.
+
+                    # input text은 label 태그를 필수로 연결해야 합니다. label를 사용할 수 없을때는 title="" 태그를 사용 합니다.
+                pre
+
+            //- ******************** code comments ********************
+            //- form - input date
+            //- ******************** code comments ********************
+            .____prototype-group
+                h2.____prototype-tit01 input date (IE 미지원)
+                br
+                span.input-date
+                    input(type="date", title="날짜 선택", value="2019-02-28")
+                pre.____code-info.
+                    # input date 기본형.
+                    # IE는 지원하지 않기 때문에 모바일웹에서 사용하기 적당합니다.
+                    # 기본 컴퍼넌트는 웹접근성을 준수합니다.(인증마크 획득시 통과)
+                    # 커스터마이징에 제약사항이 많습니다.
+                    # 텍스트가 가운데정렬이 되지 않아 텍스트 오른쪽에 아이콘 이미지를 추가하는 형태를 만들어서 maring:0 auto; 등으로 달력 컴퍼넌트 전체를 가운데 정렬해서 사용해야 합니다.
+                pre
+
+            //- ******************** code comments ********************
+            //- form - select
+            //- ******************** code comments ********************
+            .____prototype-group
+                h2.____prototype-tit01 셀렉트 박스
+                br
+                span.selectbox
+                    select(title="")
+                        option(value="") 선택
+                        option(value="") 아이템1
+                        option(value="") 아이템2
+                br
+                br
+                span.selectbox
+                    select(title="", disabled)
+                        option(value="") disabled
+                        option(value="") 아이템1
+                        option(value="") 아이템2
+                pre.____code-info.
+                    # selectbox 기본형.
+                    # span.selectbox 의 가로 길이를 조정 합니다.
+                    # select의 가로는 항상 100% 입니다.
+                    # 셀렉트박스는 사용시 웹접근성 준수를 위하여 선택 후 "버튼"을 누를 수 있도록 퍼블리싱되어야 합니다.
+
+                    # selectbox는 label 태그를 필수로 연결해야 합니다. label를 사용할 수 없을때는 title="" 태그를 사용 합니다.
+                pre
+
+            //- ******************** code comments ********************
+            //- form - file input
+            //- ******************** code comments ********************
+            .____prototype-group
+                h2.____prototype-tit01 파일첨부
+                br
+                .input-file-type01
+                    input(type="file" id="input_file_type01").input-file
+                    // label 에 파일 이름을 넣어 주세요.
+                    label(for="input_file_type01").input-file-label
+                        | 파일 이름이 들어 갑니다.
+
+
+block footer
+
+block script

@@ -1,0 +1,94 @@
+//- 아래 세팅은 모든 페이지에서 공통으로 적용됨
+//- 별도 세팅이 필요한 경우 해당 페이지내에서 설정 해야함
+//- 이 페이지를 사용하는 것이 아니라 아래 주석 가이드를 참고 바람
+
+//- 언어, html 클래스, body 클래스, wrap 클래스 변수 설정 영역
+//- block vars 라고 설정해야 다른 페이지에서 사용 할 수 있음
+- var language = 'ko'
+- var htmlClass = ''
+- var bodyClass = ''
+- var wrapClass = ''
+block vars
+
+//- 추가 인클루드는 _setting 안에다가 하기 여기 인클루드는 _setting 하나만 나와있게 관리하기
+include /_src/_pug/_setting
+
+//- doctype 설정
+doctype html
+
+//- 조건 주석문 mixin
++html_conditional_comment(language)
+
+//- html 클래스와 언어 설정을 위한 변수를 아래와 같이 세팅
+html(class=`${htmlClass}`, lang=`${language}`)
+    //<![endif]
+    head
+        //- 뷰포트 선택 영역
+        //- case 에 설정된 코드를 아래 viewport_mode 변수에 값을 세팅 하기
+        block viewport
+            - var viewport_mode = 'pc'
+
+        case viewport_mode
+            when 'pc'
+                meta(name='viewport', content='width=device-width, initial-scale=1')
+            when 'mobile'
+                meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no')
+                meta(name='format-detection', content="telephone=no")
+
+        meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+        meta(charset="utf-8")
+
+        //- 프로젝트 타이틀 설정
+        //- 모든 페이지에 공통 적용
+        block title
+            title 프로젝트타이틀
+
+        //- 메타태그 keywords, description 텍스트 설정
+        //- 모든 페이지에 공통 적용
+        block keywords&description
+            meta(name="keywords" content="")
+            meta(name="description" content="")
+
+        //- org 태그 title, url, image, description 텍스트 설정
+        //- 모든 페이지에 공통 적용
+        block property
+            meta(property="og:title" content="")
+            meta(property="og:url" content="")
+            meta(property="og:image" content="")
+            meta(property="og:description" content="")
+
+        link(rel='shortcut icon', type='image/x-icon', href='/favicon.ico')
+
+        //- 기본 css 링크 설정
+        block css
+            link(href=`${path_02}${path_css}common.css`, type='text/css', rel='stylesheet')
+
+        block script_top
+
+    body(class=`${bodyClass}`)
+        //- ie8이하 브라우저 업그레이드 권장 안내 텍스트
+        +browserupgrade
+
+        block wrap
+            #wrap(class=`${wrapClass}`)
+
+                block header
+                    // s: header include
+                    include /html/include/header
+                    // e: header include
+
+                block contents
+
+                block footer
+                    // s: footer include
+                    include /html/include/footer
+                    // e: footer include
+
+            //- 딤드용 이미지
+            +dimm
+
+        //- 기본 스크립트 링크 설정
+        block script
+            script(src=`${path_02}${path_js}jquery.js`)
+            script(src=`${path_02}${path_js}jquery.scrollbar.min.js`)
+            script(src=`${path_02}${path_js}common.js`)

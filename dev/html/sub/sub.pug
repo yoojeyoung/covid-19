@@ -1,0 +1,144 @@
+extends /_src/_pug/_extend_html5
+
+block append css
+    link(href='../../css/common.css', type='text/css', rel='stylesheet')
+
+block contents
+  #container
+    #content(role='main')
+      // 탭메뉴
+      .tab-group
+        .tab-wrap
+          ul.tab-list
+            li(role="tab")
+              a(href="#")  아우터
+            li(role="tab")
+              a(href="#") 상의
+            li(role="tab")
+              a(href="#") 하의
+            li(role="tab")
+              a(href="#") 신발
+            li(role="tab")
+              a(href="#") 가방
+        .tab-area.tab__contents
+          .tab-content 111111111
+          .tab-content 2222222222
+          .tab-content 333333333
+          .tab-content 444444444
+          .tab-content 55555555
+      
+      // 팝업
+      .btn-area 
+        button.btn__info(type="button" data-info="wMission") 팝업버튼
+      // 팝업 노출 방향 설정
+      // popup-wrap(data-direction="top,bottom,left,right") 추가
+      .popup-wrap
+        .popup-dialog.small
+          .popup-container
+            .popup-header
+                h1.popup-tit(tabindex="-1") 팝업 제목
+            .popup-content
+                | 팝업 컨텐츠 영역, 텍스트 및 이미지
+                | 팝업 컨텐츠 영역, 텍스트 및 이미지
+                | 팝업 컨텐츠 영역, 텍스트 및 이미지
+                | 팝업 컨텐츠 영역, 텍스트 및 이미지
+                | 팝업 컨텐츠 영역, 텍스트 및 이미지
+                | 팝업 컨텐츠 영역, 텍스트 및 이미지
+                | 팝업 컨텐츠 영역, 텍스트 및 이미지
+            .popup-footer
+                | 푸터 컨텐츠 버튼등
+            button(type="button").btn-close-popup
+                span.hide-txt 팝업 닫기
+                i.ico-close(aria-hidden="true")
+
+      button(type="button").btn-menu
+        span.bar
+        span.bar
+        span.bar
+
+append script
+  script.
+    // 탭 메뉴 
+    let tabWrap = $('.tab-list');
+    let tabList = tabWrap.find('li');
+    let idx = 1;
+    let tabContent = $('.tab-group').find('.tab__contents > div');
+    let btn = tabList.find('a');
+
+    tabList.eq(idx - 1).addClass('on').attr('aria-selected', 'true');
+    tabContent.hide();
+    tabContent.eq(idx - 1).show();
+
+    for(let i = 0; i<tabList.length; i++){
+      let listId = $('.tab-group').attr('id');
+      tabList.eq(i).attr({'aria-index' : `${listId}${i}`, 'id' : `tab${listId}${i}`});
+      tabContent.eq(i).attr('aria-label' , `tab${listId}${i}`);
+    }
+
+    btn.on('click', function(){
+      let index = tabList.index();
+      let thisIndex = $(this).parent().index();
+      tabList.removeClass('on').removeAttr('aria-selected').attr('aria-selected','false');
+      $(this).parent().addClass('on').attr('aria-selected','true');
+      tabContent.hide();
+      tabContent.eq(thisIndex).show();
+    })
+
+    // 팝업
+    function bodyStop(act) {
+      let $body = document.querySelector('body');
+      let scrollPosition = 0;
+      if ( act === 'on' ) {
+        scrollPosition = window.pageYOffset;
+        $body.style.overflow = 'hidden';
+        $body.style.position = 'fixed';
+        $body.style.top = `-${scrollPosition}px`;
+        $body.style.width = '100%';
+      } else if ( act === 'off' ) {
+        $body.style.removeProperty('overflow');
+        $body.style.removeProperty('position');
+        $body.style.removeProperty('top');
+        $body.style.removeProperty('width');
+        window.scrollTo(0, scrollPosition);
+      }
+    }
+
+    let pbtn = $('.btn__info');
+    pbtn.on('click', function(){
+      let myid = $(this).attr('data-info');
+      let mylayer = $('.popup-wrap').attr('data-popup', `${myid}layer`);
+      let startDir = $('.popup-wrap');
+      let direction = startDir.attr('data-direction');
+      let dimm = $('.dimm');
+      // 팝업 방향 설정(top,bottom,left,right)
+      switch(direction){
+        case "bottom":
+          TweenMax.fromTo(startDir,.45,{top:'100%'},{top:0, ease: Expo.easeOut});
+          break;
+        case "top":
+          TweenMax.fromTo(startDir,.45,{top:'-100%'},{top:0, ease: Expo.easeOut});
+          break;
+        case "left":
+          TweenMax.fromTo(startDir,.45,{left:'-100%'},{left:0, ease: Expo.easeOut});
+          break;
+        case "right":
+          TweenMax.fromTo(startDir,.45,{left:'auto',right:'-100%'},{right:0, ease: Expo.easeOut});
+          break;
+      }
+      mylayer.removeClass('off').addClass('on');
+      //- dimm.show();
+      bodyStop('on');
+      
+      let cbtn = mylayer.find('.btn-close-popup');
+      cbtn.on('click', function(){
+        mylayer.removeClass('on').addClass('off');
+        //- dimm.hide();
+        bodyStop('off');
+      });
+    });
+
+    // 햄버그 메뉴
+    let menuBtn = $('.btn-menu')
+    menuBtn.on('click', function(){
+      menuBtn.addClass('on');
+    });

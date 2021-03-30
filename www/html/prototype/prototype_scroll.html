@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>프로토타입</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link href="../../css_partials/font.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/reset.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/print.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/jquery.scrollbar.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/swiper.5.4.5.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_common.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_scroll.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_breadcrumb.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_scrollspy.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_map.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_video.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_icon.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_button.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_form.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_pagenav.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_table.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_box.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_container.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_tab.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_swiper.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_accordion.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_popup.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype_test.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototypelist.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/header.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/footer.css" type="text/css" rel="stylesheet">
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/swiper.min.5.4.5.js"></script>
+  <script src="../../js/jquery.scrollbar.min.js" defer></script>
+  <script src="../../js/common.js" defer></script>
+  <script src="../../js/front.js" defer></script>
+  <script src="../../js/TweenMax.min.js"></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+  <div id="wrap">
+    <div id="container">
+      <h1 class="hide-txt">프로토타입</h1>
+      <div id="content" role="main">
+        <div class="____prototype-group">
+          <h2 class="____prototype-tit01">디자인 스크롤 - 기본 inner</h2><br>
+          <style>
+            .scrollbar-inner {
+              width: 300px;
+              max-height: 150px;
+            }
+
+          </style>
+          <div class="scrollbar-inner">
+            <div class="contents-sample-test">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</div>
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</div>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="____prototype-group">
+          <h2 class="____prototype-tit01">디자인 스크롤 - 기본 outer</h2><br>
+          <style>
+            .scrollbar-outer {
+              width: 300px;
+              max-height: 150px;
+            }
+
+          </style>
+          <div class="scrollbar-outer">
+            <div class="contents-sample-test">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</div>
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</div>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="____prototype-group">
+          <h2 class="____prototype-tit01">디자인 스크롤 - textarea</h2><br>
+          <style>
+            .textarea-scrollbar {
+              width: 300px;
+              height: 150px;
+            }
+
+          </style>
+          <textarea class="textarea-scrollbar scrollbar-outer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
+</textarea>
+          <pre class="____code-info"># scrollbar-inner 클래스는 스크롤바가 텍스트의 안쪽에 위치합니다.
+# scrollbar-outer 클래스는 스크롤바가 텍스트의 바깥쪽에 위치합니다.
+# scrollbar-inner, scrollbar-outer 영역에 max-height 속성으로 스크롤 범위를 지정 합니다.
+# scrollbar-inner, scrollbar-outer 영역은 jquery.scrollbar 라이브러리에서 사용하는 클래스 입니다.
+# scrollbar-inner, scrollbar-outer 영역에는 padding 속성을 넣을 수 없습니다.
+# scrollbar-inner, scrollbar-outer 자식 엘리먼트에서 padding 속성을 조정 합니다.</pre>
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dimm">
+    <img src="../../images/common/blank_size_100.png" alt="">
+  </div>
+  <script>
+    $(function() {
+      // 디자인 스크롤 - 기본 inner
+      jQuery('.scrollbar-inner').scrollbar();
+      //- 디자인 스크롤 - 기본 outer
+      jQuery('.scrollbar-outer').scrollbar();
+      // 디자인 스크롤 - textarea
+      jQuery('.textarea-scrollbar').scrollbar();
+    })
+
+  </script>
+</body>
+
+</html>

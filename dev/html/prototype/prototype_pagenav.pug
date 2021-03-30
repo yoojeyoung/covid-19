@@ -1,0 +1,38 @@
+extends /_src/_pug/_extend_html5
+
+block title
+    title 프로토타입
+
+block header
+
+block contents
+    #container
+
+        h1.hide-txt 프로토타입
+        #content(role='main')
+
+            //- ******************** code comments ********************
+            //- pagenav
+            //- ******************** code comments ********************
+            .____prototype-group
+                h2.____prototype-tit01 페이지 네비게이션 - 타입 1
+                br
+                .page-nav-container
+                    +page-nav('type01')
+                pre.____code-info.
+                    # 페이지네비게이션 타입 1
+                    # 빈 태그에는 aria-hidden="true" 라고 처리해야 스크린 리더나 보이스오버, 토크백등에서 읽지 않습니다.
+                pre
+            .____prototype-group
+                h2.____prototype-tit01 페이지 네비게이션 - 타입 2
+                br
+                .page-nav-container
+                    +page-nav('type02', 'type02')
+                pre.____code-info.
+                    # 페이지네비게이션 타입 2
+                    # 빈 태그에는 aria-hidden="true" 라고 처리해야 스크린 리더나 보이스오버, 토크백등에서 읽지 않습니다.
+                pre
+
+block footer
+
+block script

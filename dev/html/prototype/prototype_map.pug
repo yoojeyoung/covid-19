@@ -1,0 +1,69 @@
+extends /_src/_pug/_extend_html5
+
+block title
+    title 프로토타입
+
+block header
+
+block contents
+    #container
+
+        h1.hide-txt 프로토타입
+        #content(role='main')
+            //- ******************** code comments ********************
+            //- map
+            //- ******************** code comments ********************
+            .____prototype-group
+                h2.____prototype-tit01 지도 - 네이버
+                // 네이버
+                //- minxin run
+                +mapApiNaver
+
+            .____prototype-group
+                h2.____prototype-tit01 지도 - 카카오
+                // 카카오
+                //- minxin run
+                +mapApiKakao
+
+            .____prototype-group
+                h2.____prototype-tit01 지도 - 구글
+                // 구글
+                //- minxin run
+                +mapApiGoogle
+
+block footer
+
+block script
+    // naver map
+    script(src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=83bfuniegk&submodules=panorama,geocoder,drawing,visualization")
+    // kakao map
+    script(src="https://dapi.kakao.com/v2/maps/sdk에.js?appkey=9d976ff44126100f084df22f1922ebf5")
+    script.
+        //- 프로토타입 map 관련 (프로젝트에 사용)
+        // naver map
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.3595704, 127.105399),
+            zoom: 15
+        };
+        var map = new naver.maps.Map('map01', mapOptions);
+
+
+        // daum map
+        var container = document.getElementById('map02');
+        var options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level: 3
+        };
+        var map = new kakao.maps.Map(container, options);
+
+
+        // google map
+        var mapGoogle;
+        function initMap() {
+            mapGoogle = new google.maps.Map(document.getElementById('map03'), {
+                center: {lat: -34.397, lng: 150.644},
+                zoom: 8
+            });
+        }
+    // google map
+    script(src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap")

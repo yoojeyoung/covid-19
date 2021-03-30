@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+@import 'dev/_src/_scss/_setting';
+
+/*! mobile 버전 - css */
+@media (max-width:1023px){}
+/*! pc & tablet 버전 - css */
+@media (min-width:1024px){}
+
+// ******************** code comments ********************
+// form - checkbox
+// ******************** code comments ********************
+/*! form - checkbox */
+.input-checkbox{
+    display:inline-block;
+    input{
+        border: 0;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+    }
+    label{
+        display:inline-block;
+        position: relative;
+        @include rem(min-width, 20px);
+        @include rem(min-height, 20px);
+        @include rem(padding-top, 1px);
+        // 익스에서 위로 조금더 올라 간것 같으면 위 패딩은 미디어쿼리 핵으로 2px 로 분기처리하기
+        user-select: none;
+    }
+    .txt{
+        display:inline-block;
+        color:gray;
+        @include rem(font-size, 16px);
+    }
+    label:before{
+        content:'';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        @include rem(width, 20px);
+        @include rem(height, 20px);
+        @include rem(margin-top, -10px);
+        border: 1px solid gray;
+        text-align: center;
+        transition: all .3s ease-out;
+    }
+    label:after{
+        content:'';
+        display:block;
+        position: absolute;
+        top: 50%;
+        @include rem(left, 5px);
+        @include rem(margin-top, -4px);
+        @include rem(width, 9px);
+        @include rem(height, 6px);
+        @include rem(border-top, 2px solid gray);
+        @include rem(border-right, 2px solid gray);
+        transform: rotate(130deg);
+        transition: all .3s ease-out;
+    }
+    &.right{
+        label{
+            @include rem(padding-left, 30px);
+        }
+    }
+    &.left{
+        label{
+            @include rem(padding-right, 30px);
+        }
+        label:before{
+            left:auto;
+            right:0;
+        }
+        label:after{
+            left:auto;
+            @include rem(right, 5px);
+        }
+    }
+    &.up{
+        label{
+            @include rem(padding-bottom, 25px);
+        }
+        label:before{
+            top:auto;
+            bottom:0;
+            left:50%;
+            @include rem(margin-left, -10px);
+            margin-top:0;
+        }
+        label:after{
+            top:auto;
+            @include rem(bottom, 8px);
+            left:50%;
+            @include rem(margin-left, -5px);
+            margin-top:0;
+        }
+    }
+    &.down{
+        label{
+            @include rem(padding-top, 25px);
+        }
+        label:before{
+            top:0;
+            left:50%;
+            @include rem(margin-left, -10px);
+            margin-top:0;
+        }
+        label:after{
+            @include rem(top, 6px);
+            left:50%;
+            @include rem(margin-left, -5px);
+            margin-top:0;
+        }
+    }
+    // 접근성 소스 필요시 아래 주석 해제
+    // input:hover,
+    // input:focus{
+    // 	& + label:before{
+    // 		box-shadow: 0px 0px 2px 3px rgba(0,180,255,0.5);
+    // 	}
+    // }
+    // checked 됐을때 스타일 변화
+    input.checked,
+    input:checked{
+        & + label:before{
+            background-color:blue;
+            border-color:blue;
+        }
+        & + label:after{
+            border-color:#ffffff;
+        }
+        & + label .txt{
+            color: gray;
+        }
+    }
+    // disabled 됐을때 스타일 변화
+    input.disabled,
+    input:disabled{
+        & + label:before{
+            background-color:lightgray;
+            border-color:gray;
+        }
+        & + label:after{
+            border-color:#ffffff;
+        }
+    }
+}
+
+// ******************** code comments ********************
+// form - radio
+// ******************** code comments ********************
+/*! form - radio */
+.input-radio{
+    display:inline-block;
+    input{
+        border: 0;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+    }
+    label{
+        display:inline-block;
+        position: relative;
+        @include rem(min-width, 20px);
+        @include rem(min-height, 20px);
+        @include rem(padding-top, 1px);
+        // 익스에서 위로 조금더 올라 간것 같으면 위 패딩은 미디어쿼리 핵으로 2px 로 분기처리하기
+        user-select: none;
+    }
+    .txt{
+        display:inline-block;
+        color:gray;
+        @include rem(font-size, 16px);
+    }
+    label:before{
+        content:'';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        @include rem(width, 20px);
+        @include rem(height, 20px);
+        @include rem(margin-top, -10px);
+        border: 1px solid gray;
+        text-align: center;
+        border-radius: 50%;
+        transition: all .3s ease-out;
+    }
+    label:after{
+        content:'';
+        display:block;
+        position: absolute;
+        top: 50%;
+        background-color: gray;
+        @include rem(left, 6px);
+        @include rem(width, 8px);
+        @include rem(height, 8px);
+        @include rem(margin-top, -4px);
+        border-radius: 50%;
+        transition: all .3s ease-out;
+    }
+    &.right{
+        label{
+            @include rem(padding-left, 30px);
+        }
+    }
+    &.left{
+        label{
+            @include rem(padding-right, 30px);
+        }
+        label:before{
+            left:auto;
+            right:0;
+        }
+        label:after{
+            left:auto;
+            @include rem(right, 6px);
+        }
+    }
+    &.up{
+        label{
+            @include rem(padding-bottom, 25px);
+        }
+        label:before{
+            top:auto;
+            bottom:0;
+            left:50%;
+            @include rem(margin-left, -10px);
+            margin-top:0;
+        }
+        label:after{
+            top:auto;
+            @include rem(bottom, 6px);
+            left:50%;
+            @include rem(margin-left, -4px);
+            margin-top:0;
+        }
+    }
+    &.down{
+        label{
+            @include rem(padding-top, 25px);
+        }
+        label:before{
+            top:0;
+            left:50%;
+            @include rem(margin-left, -10px);
+            margin-top:0;
+        }
+        label:after{
+            @include rem(top, 6px);
+            left:50%;
+            @include rem(margin-left, -4px);
+            margin-top:0;
+        }
+    }
+    // 접근성 소스 필요시 아래 주석 해제
+    // input:hover,
+    // input:focus{
+    // 	& + label:before{
+    // 		box-shadow: 0px 0px 2px 3px rgba(0,180,255,0.5);
+    // 	}
+    // }
+    // checked 됐을때 스타일 변화
+    input.checked,
+    input:checked{
+        & + label:before{
+            background-color:blue;
+            border-color:blue;
+        }
+        & + label:after{
+            background-color:#ffffff;
+        }
+    }
+    // disabled 됐을때 스타일 변화
+    input.disabled,
+    input:disabled{
+        & + label:before{
+            background-color:lightgray;
+            border-color:gray;
+        }
+        & + label:after{
+            background-color:#ffffff;
+        }
+    }
+}
+
+// ******************** code comments ********************
+// form - input text
+// ******************** code comments ********************
+/*! form - input text */
+.input-txt{
+    display:inline-block;position:relative;width:100%;
+    border:1px solid #cccccc;
+    background-color: #ffffff;
+    &.in-message {
+        @include rem(margin-bottom, 30px);
+    }
+    input{
+        display:inline-block;padding:0 0 0 15px; width:100%;font-size:12px;
+        height:38px;line-height:38px;border:none;
+        appearance: none;border-radius: 0;
+    }
+    // 에러 또는 성공 메세지 출력 관련 스타일
+    .message {
+        position: absolute;
+        @include rem-calc(top, 100%, '+', 9px);
+        left: 0;
+        @include rem(font-size, 14px);
+        font-weight: 300;
+        &.pass {
+            color: blue;
+        }
+        &.error {
+            color: red;
+        }
+    }
+}
+.input-txt input:read-only{opacity:0.5;}
+
+// form - placeholder
+// Chrome, Firefox, Opera, Safari 10.1+
+.input-txt input::placeholder{
+    font-size:12px;color:gray;
+    background:transparent;
+    // 아래 속성은 Firefox 용
+    opacity: 1;
+}
+.input-txt input:-ms-input-placeholder{position:relative;top:1px;}
+.input-txt input::-ms-input-placeholder{position:relative;top:1px;}
+
+// ******************** code comments ********************
+// form - input date
+// ******************** code comments ********************
+// ******************** code comments ********************
+// form - select
+// ******************** code comments ********************
+/*! form - selectbox */
+.selectbox{
+    position:relative;z-index:0;display:inline-block;width:100%;
+    overflow:hidden;border:1px solid #cccccc;
+    &:after{
+        content:'';
+        display:block;
+        position:absolute;
+        top:50%;
+        @include rem(right, 22px);
+        @include rem(margin-top, -8px);
+        @include rem(width, 10px);
+        @include rem(height, 10px);
+        @include rem(border-top, 2px solid gray);
+        @include rem(border-right, 2px solid gray);
+        transform: rotate(135deg);
+    }
+    select{
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        width:100%;
+        @include rem(padding, 0 0 0 20px);
+        @include rem(height, 48px);
+        @include rem(line-height, 48px);
+        @include rem(font-size, 16px);
+        color: gray;
+        background-color:transparent;
+        border:none;appearance:none;
+        border-radius:0;
+    }
+    select::-ms-expand{display:none;}
+    select:disabled{
+        background-color:lightgray;
+        pointer-events: none;
+    }
+}
+
+// ******************** code comments ********************
+// form - file input
+// ******************** code comments ********************
+/*! 파일첨부 스타일 */
+.input-file-type01 {
+    position: relative;
+    @include rem(padding-right, 60px);
+
+    .input-file {
+        position: relative;
+        width: 100%;
+        @include rem(height, 50px);
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .input-file-label {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        @include rem-calc(width, 100%, '-', 60px);
+        @include rem(padding, 15px 0 15px 20px);
+        border: 1px solid gray;
+        color: gray;
+        @include rem(font-size, 16px);
+        font-weight: 300;
+        transition: all .3s ease-out;
+
+        &:after {
+            content: '';
+            display: block;
+            @include rem(width, 50px);
+            @include rem(height, 50px);
+            position: absolute;
+            @include rem(top, -1px);
+            @include rem(right, -60px);
+            background: #f5f5f5 url('../images/common/ico_add_file.png') no-repeat center center;
+        }
+    }
+
+    .input-file {
+        &:hover + .input-file-label,
+        &:focus + .input-file-label {
+            border: 1px solid black;
+        }
+    }
+}

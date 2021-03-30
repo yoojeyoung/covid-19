@@ -1,0 +1,55 @@
+extends /_src/_pug/_extend_html5
+
+block title
+    title 프로토타입
+
+block header
+
+block contents
+    #container
+
+        h1.hide-txt 프로토타입
+        #content(role='main')
+            //- ******************** code comments ********************
+            //- video
+            //- ******************** code comments ********************
+            .____prototype-group
+                h2.____prototype-tit01 영상 - youtube iframe
+                // youtube iframe
+                //- minxin run
+                +youtubeIframe
+
+            .____prototype-group
+                h2.____prototype-tit01 영상 - youtube object
+                // youtube object
+                //- minxin run
+                +youtubeObject
+
+            .____prototype-group
+                h2.____prototype-tit01 영상 - youtube embed
+                // youtube embed
+                //- minxin run
+                +youtubeEmbed
+
+            .____prototype-group
+                h2.____prototype-tit01 영상 - vimeo iframe
+                // vimeo iframe
+                //- minxin run
+                +vimeoIframe
+
+            .____prototype-group
+                h2.____prototype-tit01 영상 - vimeo embed
+                // vimeo embed
+                //- minxin run
+                +vimeoEmbed
+
+            .____prototype-group
+                h2.____prototype-tit01 영상 - video
+                br
+                // video
+                //- minxin run
+                +video
+
+block footer
+
+block script

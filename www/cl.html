@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>코딩리스트</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link href="css_partials/codinglist.css" type="text/css" rel="stylesheet">
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/swiper.min.5.4.5.js"></script>
+  <script src="../../js/jquery.scrollbar.min.js" defer></script>
+  <script src="../../js/common.js" defer></script>
+  <script src="../../js/front.js" defer></script>
+  <script src="../../js/TweenMax.min.js"></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+  <div id="wrap">
+    <div id="content">
+      <div class="cl-info-area">
+        <h1 class="project-tit">제목</h1>
+      </div>
+      <div class="cl-link-area">
+        <div class="link-category">
+          <a href="#ct01">메인</a>
+          <a href="#ct02">서브</a>
+          <a href="#ct00">프로토타입</a>
+        </div>
+        <div class="page-count-area">
+          <span class="pc-all">전체<span>0</span>
+          </span>
+          <span class="pc-ing">진행중<span>0</span>
+          </span>
+          <span class="pc-end">완료<span>0</span>
+          </span>
+          <span class="pc-percent">진행률<span>0</span>%</span>
+        </div>
+      </div>
+      <div class="cl-category-link" id="ct01">
+        <div class="cl-list-area">
+          <div class="cl-list-detail">
+            <h2 class="cl-category-tit">메인<span class="page-count-category"></span>
+            </h2>
+            <table class="cl-table">
+              <thead>
+                <tr>
+                  <th>no</th>
+                  <th>depth 1</th>
+                  <th>depth 2</th>
+                  <th>depth 3</th>
+                  <th>depth 4</th>
+                  <th>depth 5</th>
+                  <th>filename</th>
+                  <th>완료일</th>
+                  <th>진행상태</th>
+                  <th>진행률</th>
+                  <th>스크립트<br>유무</th>
+                  <th>스크립트<br>진행률</th>
+                  <th>비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01">메인</td>
+                  <td class="p-depth02"></td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/main/main.html">html/main/main.html</a>
+                    <a class="p-link_open" href="./html/main/main.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/main/main.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time"></td>
+                  <td class="p-status"></td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="cl-category-link" id="ct02">
+        <div class="cl-list-area">
+          <div class="cl-list-detail">
+            <h2 class="cl-category-tit">서브<span class="page-count-category"></span>
+            </h2>
+            <table class="cl-table">
+              <thead>
+                <tr>
+                  <th>no</th>
+                  <th>depth 1</th>
+                  <th>depth 2</th>
+                  <th>depth 3</th>
+                  <th>depth 4</th>
+                  <th>depth 5</th>
+                  <th>filename</th>
+                  <th>완료일</th>
+                  <th>진행상태</th>
+                  <th>진행률</th>
+                  <th>스크립트<br>유무</th>
+                  <th>스크립트<br>진행률</th>
+                  <th>비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01">서브</td>
+                  <td class="p-depth02"></td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/sub/sub.html">html/sub/sub.html</a>
+                    <a class="p-link_open" href="./html/sub/sub.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/sub/sub.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time"></td>
+                  <td class="p-status"></td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="cl-category-link" id="ct00">
+        <div class="cl-list-area">
+          <div class="cl-list-detail">
+            <h2 class="cl-category-tit">프로토타입<span class="page-count-category"></span>
+            </h2>
+            <table class="cl-table">
+              <thead>
+                <tr>
+                  <th>no</th>
+                  <th>depth 1</th>
+                  <th>depth 2</th>
+                  <th>depth 3</th>
+                  <th>depth 4</th>
+                  <th>depth 5</th>
+                  <th>filename</th>
+                  <th>완료일</th>
+                  <th>진행상태</th>
+                  <th>진행률</th>
+                  <th>스크립트<br>유무</th>
+                  <th>스크립트<br>진행률</th>
+                  <th>비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01">프로토타입</td>
+                  <td class="p-depth02">가이드</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_guide.pdf">html/prototype/prototype_guide.pdf</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_guide.pdf" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_guide.pdf" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">스크롤</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_scroll.html">html/prototype/prototype_scroll.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_scroll.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_scroll.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">브레드크럼</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_breadcrumb.html">html/prototype/prototype_breadcrumb.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_breadcrumb.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_breadcrumb.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">스크롤스파이</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_scrollspy.html">html/prototype/prototype_scrollspy.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_scrollspy.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_scrollspy.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">지도</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_map.html">html/prototype/prototype_map.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_map.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_map.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">비디오</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_video.html">html/prototype/prototype_video.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_video.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_video.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">아이콘</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_icon.html">html/prototype/prototype_icon.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_icon.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_icon.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">버튼</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_button.html">html/prototype/prototype_button.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_button.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_button.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">폼요소</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_form.html">html/prototype/prototype_form.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_form.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_form.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">페이지네비게이션</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_pagenav.html">html/prototype/prototype_pagenav.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_pagenav.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_pagenav.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">테이블</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_table.html">html/prototype/prototype_table.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_table.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_table.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">박스</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_box.html">html/prototype/prototype_box.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_box.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_box.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">컨테이너</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_container.html">html/prototype/prototype_container.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_container.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_container.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">탭</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_tab.html">html/prototype/prototype_tab.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_tab.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_tab.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">swiper</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_swiper.html">html/prototype/prototype_swiper.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_swiper.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_swiper.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">아코디언</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_accordion.html">html/prototype/prototype_accordion.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_accordion.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_accordion.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">팝업</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_popup.html">html/prototype/prototype_popup.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_popup.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_popup.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">테스트 </td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/prototype/prototype_test.html">html/prototype/prototype_test.html</a>
+                    <a class="p-link_open" href="./html/prototype/prototype_test.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/prototype/prototype_test.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01">메일템플릿</td>
+                  <td class="p-depth02">기본 템플릿</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/mail/mailform_template01.html">html/mail/mailform_template01.html</a>
+                    <a class="p-link_open" href="./html/mail/mailform_template01.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/mail/mailform_template01.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">샘플01</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/mail/mailform_sample01.html">html/mail/mailform_sample01.html</a>
+                    <a class="p-link_open" href="./html/mail/mailform_sample01.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/mail/mailform_sample01.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+                <tr>
+                  <td class="p-num"></td>
+                  <td class="p-depth01"></td>
+                  <td class="p-depth02">샘플02</td>
+                  <td class="p-depth03"></td>
+                  <td class="p-depth04"></td>
+                  <td class="p-depth05"></td>
+                  <td class="p-filename">
+                    <a class="p-link" href="./html/mail/mailform_sample02.html">html/mail/mailform_sample02.html</a>
+                    <a class="p-link_open" href="./html/mail/mailform_sample02.html" target="_blank">[새창]</a>
+                    <a class="p-link_dev" href="http://uxdev.etribe.co.kr/ux_auto_gulp/html/mail/mailform_sample02.html" target="_blank">[dev]</a>
+                  </td>
+                  <td class="p-time">-</td>
+                  <td class="p-status">-</td>
+                  <td class="p-percent"></td>
+                  <td class="p-script01"></td>
+                  <td class="p-script02"></td>
+                  <td class="p-etc"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="btn-top" href="#content">TOP</a>
+  </div>
+  <div class="dimm">
+    <img src="../../images/common/blank_size_100.png" alt="">
+  </div>
+  <script src="js/jquery.js"></script>
+  <script>
+    $(function() {
+      var allCount = $('.p-status:contains()').length;
+      var noCount = $('.p-status:contains(-)').length;
+      var endCount = $('.p-status:contains(완료)').length;
+      var ingCount = $('.p-status:contains(진행중)').length;
+      //- var modifyCount = $('.p_status:contains(수정중)').length;
+
+      // 전체 페이지 (전체 페이지 - 페이지아닌것들)
+      var all_sum_count = allCount - noCount;
+
+      // 진행률 (완료 페이지 / 전체 페이지 * 100)
+      var eCount = endCount / all_sum_count * 100;
+
+      //- console.log(endCount);
+      //- console.log(ingCount);
+      //- console.log(modifyCount);
+      //- console.log(allCount);
+
+      $('.pc-ing>span').text(ingCount);
+      //- $('.pc_modify>span').text(modifyCount);
+      $('.pc-end>span').text(endCount);
+      //- (-) 대쉬로 표시된 파일들은 카운트 하지 않음
+      $('.pc-all>span').text(all_sum_count);
+      $('.pc-percent>span').text(eCount.toFixed(0));
+
+      // page number auto
+      $('.cl-table>tbody').each(function() {
+        $(this).children().children('td.p-num').each(function(index) {
+          //- console.log(index);
+          $(this).text(index + 1);
+        });
+      });
+
+    });
+
+  </script>
+</body>
+
+</html>

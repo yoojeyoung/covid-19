@@ -1,0 +1,25 @@
+extends /_src/_pug/_extend_html5
+
+block css
+    //- www
+    if NODE_ENV === 'development'
+        link(href='../../css_partials/font.css', type='text/css', rel='stylesheet')
+        link(href='../../css_partials/reset.css', type='text/css', rel='stylesheet')
+        link(href='../../css_partials/print.css', type='text/css', rel='stylesheet')
+
+        link(href='../../css_partials/prototype_common.css', type='text/css', rel='stylesheet')
+
+        link(href='../../css_partials/header.css', type='text/css', rel='stylesheet')
+        link(href='../../css_partials/footer.css', type='text/css', rel='stylesheet')
+    //- build
+    else
+        link(href='../../css/main.css', type='text/css', rel='stylesheet')
+
+block script_top
+    script(src='../../js/jquery.js' defer)
+    script(src='../../js/main.js' defer)
+
+block contents
+    #container
+        #content(role='main')
+            | 컨텐츠 시작

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*! mobile 버전 - css */
+/*! pc & tablet 버전 - css */
+/*! 기본 버튼 */
+.btn-lv01 {
+  display: inline-block;
+  text-align: center;
+  padding: 11px 15px 12px 15px;
+  padding: 1.1rem 1.5rem 1.2rem 1.5rem;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+  .btn-lv01 .txt {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.4; }
+  .btn-lv01.blue {
+    border: 1px solid blue;
+    background-color: blue;
+    color: #ffffff; }
+  .btn-lv01.white {
+    border: 1px solid blue;
+    background-color: #ffffff;
+    color: red; }
+  .btn-lv01 [class^="ico-"] {
+    margin-left: 10px;
+    margin-left: 1rem; }
+
+/*! 기본 버튼 - 컨테이너 */
+/*! 기본 버튼 - 정렬 */
+.btn-align-type01 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .btn-align-type01.spacebetween01 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: -5px;
+    margin-right: -0.5rem; }
+    .btn-align-type01.spacebetween01 a,
+    .btn-align-type01.spacebetween01 button {
+      margin-right: 5px;
+      margin-right: 0.5rem;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto; }
+
+/*# sourceMappingURL=../../sass_maps/css_partials/prototype_button.css.map */

@@ -1,0 +1,198 @@
+extends /_src/_pug/_extend_html5
+
+block title
+    title 코딩리스트
+
+block css
+    //- www
+    if NODE_ENV === 'development'
+        link(href='css_partials/codinglist.css', type='text/css', rel='stylesheet')
+    //- build
+    else
+        style
+            include /css_partials/codinglist.scss
+
+
+block contents
+    block header
+
+    //- 믹스인 영역
+    //- 테이블 공통 헤드 영역
+    mixin table_thead
+        thead
+            tr
+                th no
+                th depth 1
+                th depth 2
+                th depth 3
+                th depth 4
+                th depth 5
+                th filename
+                th 완료일
+                th 진행상태
+                th 진행률
+                th 스크립트<br>유무
+                th 스크립트<br>진행률
+                th 비고
+
+    //- 테이블 링크 영역 localLink, devLink 변수에 내용 작성하면 됩니다.
+    - var localLink = './'
+    - var devLink = `http://uxdev.etribe.co.kr/${project_name}/`
+    mixin page_link(urlLocal, urlDev, page_name)
+        a.p-link(href=urlLocal) #{page_name}
+        a.p-link_open(href=urlLocal, target="_blank") [새창]
+        a.p-link_dev(href=urlDev, target="_blank") [dev]
+
+    //- 테이블 컨텐츠 영역
+    mixin table_contents(categorySub1, categorySub2, categorySub3, categorySub4, categorySub5, pageName, pageEnd, pageStatus, pageP, script01, script02)
+        //- tr
+        //- 번호
+        td.p-num
+        //- depth 01
+        td.p-depth01 #{categorySub1}
+        //- depth 02
+        td.p-depth02 #{categorySub2}
+        //- depth 03
+        td.p-depth03 #{categorySub3}
+        //- depth 04
+        td.p-depth04 #{categorySub4}
+        //- depth 05
+        td.p-depth05 #{categorySub5}
+        //- file name
+        td.p-filename
+            +page_link(localLink + pageName, devLink + pageName, pageName)
+        //- 완료일
+        td.p-time #{pageEnd}
+        //- 진행상태
+        td.p-status #{pageStatus}
+        //- 진행률 %
+        td.p-percent #{pageP}
+        //- 스크립트 유무
+        td.p-script01 #{script01}
+        //- 스크립트 진행률
+        td.p-script02 #{script02}
+
+
+
+
+
+
+    #content
+        mixin link-category(items)
+            div.cl-info-area
+                h1.project-tit
+                    | 제목
+
+            div.cl-link-area
+                //- 필요시 주석 해제
+                //- div.link-other
+                //- 	a(href="#", target="_blank")
+                //- 		| 외부링크1
+                //- 	a(href="#", target="_blank")
+                //- 		| 외부링크2
+                //- 	a(href="#", target="_blank")
+                //- 		| 외부링크3
+
+                div.link-category
+                    each item in items
+                        a(href='#'+item[1])!= item[0]
+
+                div.page-count-area
+                    span.pc-all 전체
+                        span 0
+                    span.pc-ing 진행중
+                        span 0
+                    //- span.pc_modify 수정중
+                    //- 	span 0
+                    span.pc-end 완료
+                        span 0
+                    span.pc-percent 진행률
+                        span 0
+                        | %
+
+            each item in items
+                div(id=item[1]).cl-category-link
+                    div.cl-list-area
+                        div.cl-list-detail
+                            h2.cl-category-tit!= item[0]
+                                span.page-count-category
+                            //- 코딩리스트 갯수만큼 아래 목록 추가 하기
+                            case item[2]
+                                when 0
+                                    include _codinglist/_prototype_cl
+                                when 1
+                                    include _codinglist/_cl01
+                                when 2
+                                    include _codinglist/_cl02
+                            //-
+                                when 3
+                                    include _codinglist/_cl03
+                                when 4
+                                    include _codinglist/_cl04
+                                when 5
+                                    include _codinglist/_cl05
+                                when 6
+                                    include _codinglist/_cl06
+                                when 7
+                                    include _codinglist/_cl07
+                                when 8
+                                    include _codinglist/_cl08
+                                when 9
+                                    include _codinglist/_cl09
+                                when 10
+                                    include _codinglist/_cl10
+
+        //- 코딩리스트 카테고리별 항목 데이터 입력 영역
+        //- 위 case 문에서 include 파일 목록 추가 해야함
+        +link-category(
+            [
+                ['메인', 'ct01', 1],
+                ['서브', 'ct02', 2],
+                ['프로토타입', 'ct00', 0],
+            ]
+        )
+
+
+
+    block footer
+
+    a(href="#content").btn-top TOP
+
+
+block script
+    script(src='js/jquery.js')
+    script.
+        $(function () {
+            var allCount = $('.p-status:contains()').length;
+            var noCount = $('.p-status:contains(-)').length;
+            var endCount = $('.p-status:contains(완료)').length;
+            var ingCount = $('.p-status:contains(진행중)').length;
+            //- var modifyCount = $('.p_status:contains(수정중)').length;
+
+            // 전체 페이지 (전체 페이지 - 페이지아닌것들)
+            var all_sum_count = allCount - noCount;
+
+            // 진행률 (완료 페이지 / 전체 페이지 * 100)
+            var eCount = endCount / all_sum_count * 100;
+
+            //- console.log(endCount);
+            //- console.log(ingCount);
+            //- console.log(modifyCount);
+            //- console.log(allCount);
+
+            $('.pc-ing>span').text(ingCount);
+            //- $('.pc_modify>span').text(modifyCount);
+            $('.pc-end>span').text(endCount);
+            //- (-) 대쉬로 표시된 파일들은 카운트 하지 않음
+            $('.pc-all>span').text(all_sum_count);
+            $('.pc-percent>span').text(eCount.toFixed(0));
+
+            // page number auto
+            $('.cl-table>tbody').each(function () {
+                $(this).children().children('td.p-num').each(function (index) {
+                    //- console.log(index);
+                    $(this).text(index + 1);
+                });
+            });
+
+        });

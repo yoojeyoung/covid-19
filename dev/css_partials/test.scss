@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@import 'dev/_src/_scss/_setting';
+
+/*! pc & tablet 버전 - css */
+@media (min-width:1024px){
+  // 탭메뉴
+  .tab-group{
+    margin: 50px 0;
+    .tab-list{
+      display: flex;
+      li{
+        a{display: block;}
+        &.on{
+          border-bottom: 1px solid salmon;
+          font-weight: bold;
+          a{color: salmon;}
+        }
+        +li{margin-left: 15px;}
+      }
+    }
+    .tab-content{margin-top: 30px;}
+  }
+
+  // 팝업
+  .popup-wrap {
+    
+    // 팝업(on,off) 노출 효과
+    &.on {
+      display: block;
+      animation: fnIn .6s;
+    }
+    &.off { animation: fnOut 1s; }
+  }
+
+  // 햄버그 메뉴
+  .btn-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 20px;
+    transition: transform .2s ease-out,opacity .2s ease-out,left .2s ease-out;
+    .bar{
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 2px;
+      background: #333;
+      transform: rotate(0);
+      &:nth-child(1){
+        top: 0;
+        transform-origin: 0 0;
+      }
+      &:nth-child(2){
+        top: 8px;
+      }
+      &:nth-child(3){
+        top: 16px;
+        transform-origin: 0 100%;
+      }
+    }
+    &.on{
+      .bar{
+        &:nth-child(1){
+          top: 1px;
+          left: 3px;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+        &:nth-child(3){
+          left: 3px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+/*! mobile 버전 - css */
+@media (max-width:1023px){} 
