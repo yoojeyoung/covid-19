@@ -6384,8 +6384,8 @@ button.btn_cbotxt {
   height: 30px;
   display: block;
   position: absolute;
-  top: 0;
-  left: 0; }
+  top: 20px;
+  left: 20px; }
 
 .pgh_title {
   display: -webkit-box;
@@ -6483,12 +6483,10 @@ button.btn_cbotxt {
   left: 0;
   background: #13d5aa; }
 
-.plm_list > li.active .plm:after {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  top: 24px; }
+.plm_list > li.active .plm.on:after {
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg); }
 
 .plm_list > li.active .plm_ico:before {
   /*background-image:url("../images/admin/ico_lm_active.png");*/
@@ -6541,7 +6539,7 @@ button.btn_cbotxt {
 .plm_ico.ico_plm04:before{background-position:0 -75px;}
 .plm_ico.ico_plm05:before{background-position:0 -100px;}
 */
-.plm:after {
+.plm.on:after {
   display: block;
   content: '';
   width: 8px;
@@ -6552,13 +6550,14 @@ button.btn_cbotxt {
   right: 25px;
   border-right: 1px solid rgba(255, 255, 255, 0.55);
   border-bottom: 1px solid rgba(255, 255, 255, 0.55);
-  transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg); }
+          transform: translateZ(0);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s; }
 
 .pltm_list_w {
   display: none; }
@@ -6910,4 +6909,4 @@ button.btn_cbotxt {
 /*! pc & tablet 버전 - css */
 /*! mobile 버전 - css */
 
-/*# sourceMappingURL=../../sass_maps/css/common.css.map */
+/*# sourceMappingURL=../sass_maps/common.css.map */

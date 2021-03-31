@@ -21,12 +21,10 @@ CTC = {
 		});
 	},
 	layoutCommon : function(){
-		// var menuList = $('.plm_list > li').find('.pltm_list_w');
-		// if(menuList.length){
-		// 	menuList.closest('li').find('.plm').css({
-		// 		'background' : '#fff'
-		// 	})
-		// }
+		var menuList = $('.plm_list > li').find('.pltm_list_w');
+		if(menuList.length){
+			menuList.closest('li').find('.plm').addClass('on');
+		}
 		$(".adm_mendl_w").on("click",function(){
 			$(".mentype_list_w").slideToggle();
 		});
