@@ -29,6 +29,7 @@ CTC = {
 			$(".mentype_list_w").slideToggle();
 		});
 		$(".btn_pghtotal").on("click",function(){
+			$(this).toggleClass('on');
 			$(".page_wrap").toggleClass("fold");
 		});
 		$(".plm").on("click",function(){

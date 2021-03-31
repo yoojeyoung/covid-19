@@ -1,0 +1,37 @@
+extends /_src/_pug/_extend_html5
+
+block append css
+  link(href='../../css/common.css', type='text/css', rel='stylesheet')
+
+block contents
+  #container
+    #content(role='main')
+      .cform_wrap
+        .cform_box_tb
+          .cform_box_td
+            .cform_box
+              .cform_titlow
+                h1.cform_tit.has_ico01
+                  span.cform_tit_in 로그인
+              .cform_contlow
+                .cform_field
+                  .cform_ftr
+                    .cform_fcell.has_lab
+                      label.cfc_lab(for='cfc_01') 아이디
+                    .cform_fcell.has_fcont
+                      input#cfc_01.form_int(type='text' placeholder='email address')
+                  .cform_ftr
+                    .cform_fcell.has_lab
+                      label.cfc_lab(for='cfc_02') 패스워드
+                    .cform_fcell.has_fcont
+                      input#cfc_02.form_int(type='password' placeholder='password')
+                  .cform_ftr
+                    .cform_fcell.has_lab
+                    .cform_fcell.has_fcont
+                      .fitem
+                        input#save_id.frdchk(type='checkbox')
+                        label.fitem_lab(for='save_id') 아이디 저장
+                .btn_cfmsm_w
+                  a.btn_cfmsm(href='#') 로그인
+                .btn_cfmelse_w
+                  a.btn_cfmelse(href='#') 비밀번호 초기화

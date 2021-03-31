@@ -50,53 +50,11 @@
 }
 /* // [loading] layout.css이나 reset.css 둘중 아무 파일 하단에 추가  */
 
-
-.front_body{background:#f2f2f2;}
 .page_wrap{min-width:1280px;background:#f2f2f2;}
-.page_wrap.page_layout{
-  .bar{
-    position: absolute;
-    left: 0;
-    width: 22px;
-    height: 2px;
-    background: #333;
-    transform: rotate(0);
-    &:nth-child(1){
-      top: 0;
-      transform-origin: 0 0;
-    }
-    &:nth-child(2){
-      top: 8px;
-    }
-    &:nth-child(3){
-      top: 16px;
-      transform-origin: 0 100%;
-    }
-  }
-  &.fold{
-    .bar{
-      &:nth-child(1){
-        top: 1px;
-        left: 3px;
-        transform: rotate(45deg);
-      }
-      &:nth-child(2){
-        opacity: 0;
-      }
-      &:nth-child(3){
-        left: 3px;
-        transform: rotate(-45deg);
-      }
-    }
-  }
-}
+.page_wrap.page_layout{}
 .page_wrap.page_layout:after{display:block;content:'';clear:both;}
 .page_wrap:after{}
-
-.pgheader_wrap{min-width:1280px;height:60px;background:#a675fe;position:fixed;top:0;left:0;width:100%;z-index:100;}
-.pgheader_in{position:relative;}
-.pghleft_w{height:60px;position:relative;width:250px;box-sizing:border-box;padding:0 60px;overflow:hidden;}
-.btn_pghtotal{width:30px;height:30px;display:block;position:absolute;top:20px;left:20px;}
+.front_body{background:#f2f2f2;}
 // .pghtotal{display:block;width:18px;height:2px;background:#fff;position:absolute;top:50%;left:20px;margin-top:-1px;}
 // .pghtotal:before,
 // .pghtotal:after{display:block;content:'';width:100%;height:2px;background:#fff;position:absolute;top:0;left:0;}
@@ -105,7 +63,6 @@
 // .pghtotal{}
 // .pghtotal:before{}
 // .pghtotal:after{}
-.pgh_title{display:flex;height:60px;box-sizing:border-box;align-items: center;line-height:1.3;justify-content:center;font-size:21px; font-family: 'NanumSquare'; font-weight:700;color:#fff;white-space: nowrap;}
 
 .page_leftzone{width:250px;position:relative;overflow:hidden;position:absolute;top:0;left:0;background:#511bb4;height:100%;}
 .page_leftzone:before{display:block;content:'';width:250px;background:#511bb4;height:100%;position:fixed;top:0;left:0;}
@@ -173,25 +130,7 @@
 .pmap_list > li:last-of-type:after{display:none;}
 .pgm_home{display:inline-block;vertical-align: middle;background:url("../images/admin/ico_maphome.png") no-repeat 0 0;width:12px;height:12px;position:relative;top:-1px;}
 .pgm_mapmenu{display:inline-block;color:#1b1b1b;line-height:1;}
-.adm_men_w{display:inline-block;position:absolute;top:24px;right:40px;}
-.adm_mendl_w{display:block;font-size:0;line-height:0;padding:0 21px 0 30px;position:relative;}
-.adm_mendl_w:before{display:block;content:'';width:30px;height:30px;background:url("../images/admin/ico_logtop.png") no-repeat 0 0;position:absolute;top:-9px;left:0;}
-.adm_mendl_w:after{
-    display:block;content:'';width:8px;height:8px;position:absolute;top:50%;right:3px;margin-top:-8px;border-right:1px solid #fff;border-bottom:1px solid #fff;
-    transform: translateZ(0);-webkit-transform: translateZ(0);-ms-transform: translateZ(0);-moz-transform: translateZ(0);
-	-webkit-transform:rotate(45deg);transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);
-}
-.adm_men{display:inline-block;width:30px;height:30px;background:#13d5aa url("../images/admin/ico_logtop.png") no-repeat 50% 0/cover;border-radius: 100%;}
-.adm_men_name{font-size:12px;line-height:1;display:inline-block;white-space: nowrap;color:#fff;}
-.mentype_list_w{display:none;position:absolute;top:25px;right:0;background:#fff;min-width:100%;
-    -webkit-box-shadow: 1px 0px 15px -2px rgba(0,0,0,0.2);
-    -moz-box-shadow: 1px 0px 15px -2px rgba(0,0,0,0.2);
-    box-shadow: 1px 0px 15px -2px rgba(0,0,0,0.2);
-}
-.mentype_list{padding:5px 0;}
-.mentype_list > li{}
-.mentype_list > li:last-of-type{}
-.mentype{display:block;padding:5px 15px;line-height:1.3;white-space: nowrap;}
+
 .prz_ctit_low{text-align:center;/*max-width:1400px;*/margin:0 30px;padding:35px 0 30px;}
 .prz_ctit{font-size:26px;line-height:1;color:#000;font-family: 'NanumSquare';letter-spacing: -1px;}
 .prz_cbox_low{background:#fff;border:1px solid #e2e2e2;border-radius:10px;margin: 0 40px;/*max-width:1320px;*/padding:30px 30px 40px;margin-bottom:50px;}
