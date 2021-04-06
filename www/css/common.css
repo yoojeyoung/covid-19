@@ -3607,6 +3607,7 @@ a:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 60px;
+  background: #1d2747;
   overflow: hidden; }
   .pghleft_w .btn_pghtotal {
     width: 30px;
@@ -3877,10 +3878,10 @@ input.form_int {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 0;
-  border-bottom: 1px solid #bbbbbb;
-  font-size: 12px;
-  height: 38px;
-  padding: 2px 10px 0; }
+  border: 1px solid #bbbbbb;
+  font-size: 14px;
+  min-height: 56px;
+  padding: 19px 24px; }
 
 input.form_int::-webkit-input-placeholder {
   color: #999999 !important; }
@@ -4545,6 +4546,9 @@ button.btn_cbotxt {
 .cform_ftr {
   display: table-row; }
 
+.cform_fcell {
+  padding-bottom: 25px; }
+
 .cform_ftr:last-of-type .cform_fcell {
   padding-bottom: 0; }
 
@@ -4589,12 +4593,16 @@ button.btn_cbotxt {
   display: block;
   font-size: 14px;
   color: #fff;
-  height: 43px;
-  line-height: 43px;
+  min-height: 56px;
   text-align: center;
-  padding: 0 30px;
+  padding: 21px 30px 19px;
   white-space: nowrap;
   background: #8d4dff; }
+  .btn_cfmsm.btn-web {
+    background: #2883c5; }
+  .btn_cfmsm.btn-certifi {
+    margin-top: 8px;
+    background: #283356; }
 
 .btn_cfmelse_w {
   text-align: right;
@@ -4604,9 +4612,23 @@ button.btn_cbotxt {
   text-align: left; }
 
 .btn_cfmelse {
+  position: relative;
   display: inline-block;
   font-size: 14px;
   color: #515151; }
+  .btn_cfmelse:not(:last-child) {
+    padding-right: 20px;
+    margin-right: 10px; }
+  .btn_cfmelse:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -5px;
+    display: block;
+    width: 1px;
+    height: 100%;
+    margin: 0 10px;
+    background: #606060; }
 
 /* table */
 .data_htb_w {
@@ -6835,7 +6857,7 @@ button.btn_cbotxt {
   height: 100%;
   overflow: hidden;
   overflow-y: auto;
-  background: #f2f2f2;
+  background: #f5f6f7;
   position: fixed;
   top: 0;
   left: 0; }
@@ -6849,7 +6871,8 @@ button.btn_cbotxt {
 .cform_box_td {
   display: table-cell;
   vertical-align: middle;
-  padding: 40px; }
+  padding: 40px;
+  background: url(../images/login/img-visual-login.png) right center no-repeat; }
 
 .cform_box_w {
   padding: 40px; }
@@ -6857,27 +6880,30 @@ button.btn_cbotxt {
 .cform_box {
   background: #fff;
   border: 1px solid #e2e2e2;
-  border-radius: 5px;
-  width: 500px;
+  border-radius: 10px;
+  width: 584px;
   text-align: center;
-  padding: 50px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 22.3px 1.7px rgba(1, 71, 126, 0.19);
+          box-shadow: 0 0 22.3px 1.7px rgba(1, 71, 126, 0.19); }
 
-.cform_tit_in {
-  font-size: 20px;
-  color: #000000;
+.cform_titlow {
+  text-align: left; }
+
+.cform_titlow .cform_tit_in {
+  font-size: 32px;
+  color: #2883c5;
   font-family: 'NanumSquare';
   font-weight: 700; }
 
-.cform_tit:after {
-  display: block;
-  content: '';
-  width: 67px;
-  height: 67px;
-  background: url("../images/admin/ico_logmen.png") no-repeat 0 0/cover;
-  margin: 20px auto 0; }
+.cform_titlow .sub-title {
+  margin-top: 15px;
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #5e5e5e; }
 
 .cform_tit.has_ico02:after {
   background-image: url("../images/admin/ico_logpw.png");
@@ -6885,7 +6911,7 @@ button.btn_cbotxt {
   height: 70px; }
 
 .cform_contlow {
-  margin-top: 55px;
+  margin-top: 47px;
   text-align: left; }
 
 /*! pc & tablet 버전 - css */
