@@ -1,12 +1,12 @@
 {
-  "name": "ux_auto_gulp",
+  "name": "covid-19",
   "config": {
     "port": "8888"
   },
   "version": "1.0.1",
   "repository": {
     "type": "git",
-    "url": "ssh://git@git.etribe.co.kr:10022/ux/ux_auto_gulp.git"
+    "url": "https://github.com/yoojeyoung/covid-19.git"
   },
   "scripts": {
     "gulp": "cross-env NODE_ENV=development gulp default --development",

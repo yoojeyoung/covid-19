@@ -32,7 +32,7 @@ select.dsel option[value=""][disabled] {
 select.dsel option {
   color:#000;
 }
-input.form_int{width:100%;line-height:1;box-sizing:border-box;border:0;border-bottom:1px solid #bbbbbb;font-size:12px;height:38px;padding:2px 10px 0;}
+input.form_int{width:100%;line-height:1;box-sizing:border-box;border:0;border:1px solid #bbbbbb;font-size:14px;min-height:56px;padding: 19px 24px;}
 input.form_int.sm{}
 input.form_int:focus{}
 input.form_int::-webkit-input-placeholder{color:#999999 !important;}
@@ -194,7 +194,7 @@ button.btn_cbotxt{min-width:152px}
 /* login ui */
 .cform_field{display:table;width:100%;}
 .cform_ftr{display:table-row;}
-.cform_fcell{display:table-cell;vertical-align: top;padding-bottom:25px;}
+.cform_fcell{padding-bottom:25px;}
 .cform_ftr:last-of-type .cform_fcell{padding-bottom:0;}
 .cform_fcell.has_lab{width:1px;padding:11px 15px 0 0;}
 .cform_fcell.has_fcont{}
@@ -208,10 +208,38 @@ button.btn_cbotxt{min-width:152px}
 .cft_ment{text-align:center;font-size:14px;color:#000000;margin-bottom:55px;}
 .btn_cfmsm_w{margin-top:25px;}
 .btn_cfmsm_w.type2{margin-top:55px;}
-.btn_cfmsm{display:block;font-size:14px;color:#fff;height:43px;line-height:43px;text-align:center;padding:0 30px;white-space: nowrap;background:#8d4dff;}
+.btn_cfmsm{
+	display:block;
+	font-size:14px;
+	color:#fff;
+	min-height:56px;
+	text-align:center;
+	padding:21px 30px 19px;
+	white-space: nowrap;
+	background:#8d4dff;
+	&.btn-web{background: #2883c5;}
+	&.btn-certifi{margin-top: 8px;background: #283356;}
+}
 .btn_cfmelse_w{text-align:right;margin-top:20px;}
 .btn_cfmelse_w.type2{text-align:left;}
-.btn_cfmelse{display:inline-block;font-size:14px;color:#515151;}
+.btn_cfmelse{
+	position: relative;
+	display:inline-block;
+	font-size:14px;
+	color:#515151;
+	&:not(:last-child){padding-right: 20px; margin-right: 10px;}
+	&:not(:last-child)::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: -5px;
+		display: block;
+		width: 1px;
+		height: 100%;
+		margin: 0 10px;
+		background: #606060;
+	}
+}
 
 /* table */
 .data_htb_w{border-top:1px solid #000000;}

@@ -60,10 +60,10 @@ input.form_int {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 0;
-  border-bottom: 1px solid #bbbbbb;
-  font-size: 12px;
-  height: 38px;
-  padding: 2px 10px 0; }
+  border: 1px solid #bbbbbb;
+  font-size: 14px;
+  min-height: 56px;
+  padding: 19px 24px; }
 
 input.form_int::-webkit-input-placeholder {
   color: #999999 !important; }
@@ -729,8 +729,6 @@ button.btn_cbotxt {
   display: table-row; }
 
 .cform_fcell {
-  display: table-cell;
-  vertical-align: top;
   padding-bottom: 25px; }
 
 .cform_ftr:last-of-type .cform_fcell {
@@ -777,12 +775,16 @@ button.btn_cbotxt {
   display: block;
   font-size: 14px;
   color: #fff;
-  height: 43px;
-  line-height: 43px;
+  min-height: 56px;
   text-align: center;
-  padding: 0 30px;
+  padding: 21px 30px 19px;
   white-space: nowrap;
   background: #8d4dff; }
+  .btn_cfmsm.btn-web {
+    background: #2883c5; }
+  .btn_cfmsm.btn-certifi {
+    margin-top: 8px;
+    background: #283356; }
 
 .btn_cfmelse_w {
   text-align: right;
@@ -792,9 +794,23 @@ button.btn_cbotxt {
   text-align: left; }
 
 .btn_cfmelse {
+  position: relative;
   display: inline-block;
   font-size: 14px;
   color: #515151; }
+  .btn_cfmelse:not(:last-child) {
+    padding-right: 20px;
+    margin-right: 10px; }
+  .btn_cfmelse:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -5px;
+    display: block;
+    width: 1px;
+    height: 100%;
+    margin: 0 10px;
+    background: #606060; }
 
 /* table */
 .data_htb_w {
@@ -2542,4 +2558,4 @@ button.btn_cbotxt {
 
 /* // layout2 */
 
-/*# sourceMappingURL=../sass_maps/contents.css.map */
+/*# sourceMappingURL=../../sass_maps/css_partials/contents.css.map */

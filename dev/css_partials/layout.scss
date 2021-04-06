@@ -3,7 +3,8 @@
 @import 'dev/_src/_scss/_setting';
 
 /*! pc & tablet 버전 - css */
-@media (min-width:1024px){}
+@media (min-width:1024px){
+}
 
 /*! mobile 버전 - css */
 @media (max-width:1023px){} 
@@ -154,14 +155,19 @@
 
 /* */
 .cform_body{width:100%;height:100%;background:#f2f2f2;}
-.cform_wrap{width:100%;height:100%;overflow:hidden;overflow-y:auto;background:#f2f2f2;position:fixed;top:0;left:0;}
+.cform_wrap{width:100%;height:100%;overflow:hidden;overflow-y:auto;background:#f5f6f7;position:fixed;top:0;left:0;}
 .cform_box_tb{display:table;width:100%;height:100%;table-layout: fixed;}
-.cform_box_td{display:table-cell;vertical-align: middle;padding:40px;}
+.cform_box_td{
+  display:table-cell;
+  vertical-align: middle;
+  padding:40px;
+  background: url(../images/login/img-visual-login.png) right center no-repeat;
+}
 .cform_box_w{padding:40px;}
-.cform_box{background:#fff;border:1px solid #e2e2e2;border-radius:5px;width:500px;text-align:center;padding:50px;box-sizing:border-box;margin:0 auto;}
-.cform_titlow{}
-.cform_tit{}
-.cform_tit_in{font-size:20px;color:#000000;font-family: 'NanumSquare';font-weight:700}
-.cform_tit:after{display:block;content:'';width:67px;height:67px;background:url("../images/admin/ico_logmen.png") no-repeat 0 0/cover;margin:20px auto 0;}
+.cform_box{background:#fff;border:1px solid #e2e2e2;border-radius:10px;width:584px;text-align:center;padding:32px;box-sizing:border-box;margin:0 auto;  box-shadow: 0 0 22.3px 1.7px rgba(1, 71, 126, 0.19);}
+.cform_titlow{text-align: left;}
+.cform_titlow .cform_tit{}
+.cform_titlow .cform_tit_in{font-size:32px;color:#2883c5;font-family: 'NanumSquare';font-weight:700}
+.cform_titlow .sub-title{margin-top:15px; @include rem(font-size, 18px);color: #5e5e5e;}
 .cform_tit.has_ico02:after{background-image:url("../images/admin/ico_logpw.png");width:70px;height:70px;}
-.cform_contlow{margin-top:55px;text-align:left;}
+.cform_contlow{margin-top:47px;text-align:left;}

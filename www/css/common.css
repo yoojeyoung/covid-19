@@ -4545,11 +4545,6 @@ button.btn_cbotxt {
 .cform_ftr {
   display: table-row; }
 
-.cform_fcell {
-  display: table-cell;
-  vertical-align: top;
-  padding-bottom: 25px; }
-
 .cform_ftr:last-of-type .cform_fcell {
   padding-bottom: 0; }
 
@@ -6896,4 +6891,4 @@ button.btn_cbotxt {
 /*! pc & tablet 버전 - css */
 /*! mobile 버전 - css */
 
-/*# sourceMappingURL=../sass_maps/common.css.map */
+/*# sourceMappingURL=../../sass_maps/css/common.css.map */
