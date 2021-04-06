@@ -173,23 +173,16 @@
   /*border-bottom:1px solid rgba(255,255,255,.2);*/
   position: relative; }
 
-.plm_list > li.active {
-  background: #1b2428; }
+.plm_list > li.active .pltm_list li {
+  background: #0f1c49; }
 
-.plm_list > li.active:after {
-  display: block;
-  content: '';
-  width: 1px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #13d5aa; }
+.plm_list > li.active .plm_in {
+  color: #fff; }
 
 .plm_list > li.active .plm.on:after {
-  -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg); }
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
 
 .plm_list > li.active .plm_ico:before {
   /*background-image:url("../images/admin/ico_lm_active.png");*/
@@ -202,7 +195,7 @@
 .plm {
   display: block;
   position: relative;
-  padding: 22px 45px 21px 50px;
+  padding: 13px 45px 13px 50px;
   overflow: hidden; }
 
 .plm_ico {
@@ -215,7 +208,7 @@
 
 .plm_in {
   font-size: 14px;
-  color: #fff;
+  color: #94a5bb;
   line-height: 1.3; }
 
 .plm_ico:before {
@@ -249,15 +242,15 @@
   height: 8px;
   opacity: .55;
   position: absolute;
-  top: 27px;
+  top: 15px;
   right: 25px;
   border-right: 1px solid rgba(255, 255, 255, 0.55);
   border-bottom: 1px solid rgba(255, 255, 255, 0.55);
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   -webkit-transition: all ease .3s;
   -o-transition: all ease .3s;
   transition: all ease .3s; }
@@ -265,26 +258,12 @@
 .pltm_list_w {
   display: none; }
 
-.pltm_list {
-  padding: 0 45px 20px 52px; }
-
 .pltm_list > li {
   position: relative;
-  padding-left: 8px;
-  margin-bottom: 10px; }
+  padding: 13px 45px 13px 50px; }
 
 .pltm_list > li.active .pltm {
   color: #13d5aa; }
-
-.pltm_list > li:before {
-  display: block;
-  content: '';
-  width: 2px;
-  height: 2px;
-  background: #13d5aa;
-  position: absolute;
-  top: 5px;
-  left: 0; }
 
 .pltm_list > li:last-of-type {
   margin-bottom: 0; }
