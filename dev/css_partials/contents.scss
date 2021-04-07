@@ -107,10 +107,10 @@ textarea.form_ta::input-placeholder{color:#999999 !important;}
 .pn_control.pn_next{background-image:url("../images/admin/btn_pn_next.png");}
 .pn_control.pn_next2{background-image:url("../images/admin/btn_pn_next2.png");}
 .pn_num_list{display:inline-block;padding:0 22px;}
-.pn_num_list > li{display:inline-block;margin:0 3px;}
+.pn_num_list > li{display:inline-block;margin:0 4px;}
 .pn_num_list > li.active{}
-.pn_num_list > li.active .pn_num{background:#fff;color:#2c313b;border:1px solid #2c313b;font-size:14px;font-weight:700;line-height:29px;}
-.pn_num{display:inline-block;width:30px;color:#6d6c6c;height:30px;line-height:30px;border-radius:100%;text-align:center;vertical-align: middle;font-size:12px;color:#6d6c6c;box-sizing:border-box;}
+.pn_num_list > li.active .pn_num{background:#fff;color:#409eff;font-size:14px;font-weight:700;line-height:21px;}
+.pn_num{display:inline-block;width:21px;color:#6d6c6c;height:21px;line-height:21px;border-radius:100%;text-align:center;vertical-align: middle;font-size:12px;color:#6d6c6c;box-sizing:border-box;}
 
 
 /* radio checkbox */

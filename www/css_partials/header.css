@@ -90,6 +90,15 @@
   color: #fff;
   white-space: nowrap; }
 
+.title-area {
+  position: absolute;
+  top: 22px;
+  left: 274px; }
+  .title-area h1 {
+    font-size: 18px;
+    color: #1d2747;
+    font-weight: bold; }
+
 .adm_men_w {
   position: absolute;
   top: 24px;

@@ -63,6 +63,16 @@
 }
 .pgh_title{display:flex;height:60px;box-sizing:border-box;align-items: center;line-height:1.3;justify-content:center;font-size:21px; font-family: 'NanumSquare'; font-weight:700;color:#fff;white-space: nowrap;}
 
+.title-area{
+	position: absolute;
+	top: 22px;
+	left: 274px;
+	h1{
+		font-size: 18px;
+		color: #1d2747;
+		font-weight: bold;
+	}
+}
 
 .adm_men_w{
 	position:absolute;
@@ -107,7 +117,7 @@
 	display:none;
 	min-width:100%;
 	background:#fff;
-  box-shadow: 1px 0px 15px -2px rgba(0,0,0,0.2);
+	box-shadow: 1px 0px 15px -2px rgba(0,0,0,0.2);
 	.mentype_list{
 		padding:5px 0;
 		.mentype{

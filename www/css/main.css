@@ -521,12 +521,14 @@ a:before {
 .pgheader_wrap {
   min-width: 1280px;
   height: 60px;
-  background: #a675fe;
+  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
 
 .pgheader_in {
   position: relative; }
@@ -606,10 +608,15 @@ a:before {
   white-space: nowrap; }
 
 .adm_men_w {
-  display: inline-block;
   position: absolute;
   top: 24px;
   right: 40px; }
+  .adm_men_w a {
+    display: inline-block;
+    font-size: 16px;
+    color: #606266;
+    line-height: 1;
+    white-space: nowrap; }
 
 .adm_mendl_w {
   position: relative;
@@ -623,12 +630,6 @@ a:before {
     height: 30px;
     background: #13d5aa url("../images/admin/ico_logtop.png") no-repeat 50% 0/cover;
     border-radius: 100%; }
-  .adm_mendl_w .adm_men_name {
-    display: inline-block;
-    font-size: 12px;
-    color: #fff;
-    line-height: 1;
-    white-space: nowrap; }
   .adm_mendl_w::before {
     content: '';
     position: absolute;
