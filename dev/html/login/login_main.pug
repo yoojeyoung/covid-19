@@ -1,9 +1,16 @@
 extends /_src/_pug/_extend_html5
 
+block header 
+  header.pgheader_wrap.type02
+    .inner
+      h1
+        a(href="")
+          img(src="../../images/common/img-toplogo-login.png", alt="")
+
 block contents
   #container
     #content(role='main')
-      .cform_wrap
+      .cform_wrap.login-type
         .cform_box_tb
           .cform_box_td
             .cform_box
@@ -29,3 +36,13 @@ block contents
                 .btn_cfmsm_w
                   a.btn_cfmsm.btn-web(href='#') 웹 로그인
                   a.btn_cfmsm.btn-certifi(href='#') 인증서 로그인
+
+block footer
+  footer#footer.type02
+    .inner
+      .footer-wrap
+        .footer-column
+          a(href="")
+            img(src="../../images/common/img-bottomlogo-login.png", alt="")
+        .footer-column
+          p.footer-copyright ⓒ2021. Seoul Metropolitan Govermment Some Rights Reserved.
