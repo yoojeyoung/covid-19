@@ -65,7 +65,118 @@
     </header>
     <div id="container">
       <div id="content" role="main">
-        <div class="cform_wrap login-type"></div>
+        <div class="login-content-wrap">
+          <div class="inner">
+            <div class="tit-area">
+              <span class="tit">서울시 Covid-19 환자 관리 지원 시스템 접속 권한 요청</span>
+            </div>
+            <div class="form-group">
+              <!-- 벨리데이션 체크 시 .input-txt class override.-->
+              <!-- 성공 : .form-success-->
+              <!-- 실패 : .form-error-->
+              <!-- 이름-->
+              <div class="input-txt form-error">
+                <label for="txt01">이름</label>
+                <div class="input-box">
+                  <input type="text" title="" id="txt01">
+                </div>
+                <div class="message">이름을 확인해주세요</div>
+              </div>
+              <!-- 메일-->
+              <div class="input-txt form-error">
+                <label for="txt01">이메일(ID)</label>
+                <div class="input-box">
+                  <input type="text" title="" id="txt01" placeholder="example@mail.com">
+                  <button class="btn-lv01">
+                    <span class="txt">중복확인</span>
+                  </button>
+                </div>
+                <div class="message">이메일을 확인해주세요</div>
+              </div>
+              <!-- 비밀번호-->
+              <div class="input-txt form-error">
+                <label for="txt01">비밀번호</label>
+                <div class="input-box">
+                  <input type="text" title="" id="txt01">
+                </div>
+                <div class="message">비밀번호를 확인해주세요</div>
+              </div>
+              <!-- 비밀번호 확인-->
+              <div class="input-txt form-success">
+                <label for="txt01">비밀번호 확인</label>
+                <div class="input-box">
+                  <input type="text" title="" id="txt01">
+                </div>
+                <span class="message">일치</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-tit">
+                <span class="tit">소속</span>
+              </div>
+              <div class="input-radio right">
+                <input type="radio" id="radio211" name="radio211">
+                <label for="radio211">
+                  <span class="txt">서울시</span>
+                </label>
+                <div class="selectbox">
+                  <select title="">
+                    <option value="">선택해주세요.</option>
+                    <option value="">선택</option>
+                    <option value="">선택</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-radio right">
+                <input type="radio" id="radio211" name="radio211">
+                <label for="radio211">
+                  <span class="txt">자치구(선별진료소)</span>
+                </label>
+                <div class="selectbox">
+                  <select title="">
+                    <option value="">선택해주세요.</option>
+                    <option value="">선택</option>
+                    <option value="">선택</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-radio right">
+                <input type="radio" id="radio211" name="radio211">
+                <label for="radio211">
+                  <span class="txt">보건소</span>
+                </label>
+                <div class="selectbox">
+                  <select title="">
+                    <option value="">선택해주세요.</option>
+                    <option value="">선택</option>
+                    <option value="">선택</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-radio right">
+                <input type="radio" id="radio211" name="radio211">
+                <label for="radio211">
+                  <span class="txt">의료기관</span>
+                </label>
+                <div class="selectbox">
+                  <select title="">
+                    <option value="">선택해주세요.</option>
+                    <option value="">선택</option>
+                    <option value="">선택</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-tit">
+                <span class="tit">기타</span>
+              </div>
+              <div class="input-textarea">
+                <textarea name="" cols="30" rows="10" placeholder="요청사유(담당업무) 및 신분 확인에 필요한 추가 정보를 간략히 입력해 주세요"> </textarea>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="type02" id="footer">

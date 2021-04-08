@@ -72,6 +72,94 @@ body {
         margin-top: 14px;
         margin-top: 1.4rem; }
 
+/* 권한요청 페이지 */
+.login-content-wrap {
+  width: 1200px;
+  width: 120rem;
+  min-height: 1200px;
+  min-height: 120rem;
+  margin: 100px auto 0;
+  margin: 10rem auto 0;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
+  .login-content-wrap .inner {
+    width: 460px;
+    min-height: 400px;
+    margin: 0 auto; }
+  .login-content-wrap .tit-area {
+    text-align: center; }
+    .login-content-wrap .tit-area .tit {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000; }
+
+/* form 공통 */
+.form-group .input-txt {
+  border: none; }
+  .form-group .input-txt label {
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #606266; }
+  .form-group .input-txt .input-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .form-group .input-txt .input-box input {
+      height: 40px;
+      margin-top: 8px;
+      border: 1px solid #e4e7ed;
+      border-radius: 4px; }
+      .form-group .input-txt .input-box input::-webkit-input-placeholder {
+        color: #c0c4cc; }
+      .form-group .input-txt .input-box input::-moz-placeholder {
+        color: #c0c4cc; }
+      .form-group .input-txt .input-box input:-ms-input-placeholder {
+        color: #c0c4cc; }
+      .form-group .input-txt .input-box input::-ms-input-placeholder {
+        color: #c0c4cc; }
+      .form-group .input-txt .input-box input::placeholder {
+        color: #c0c4cc; }
+    .form-group .input-txt .input-box .btn-lv01 {
+      height: 40px;
+      margin-left: 8px;
+      padding: 9px 19px;
+      border-radius: 4px;
+      background: #f5f6f7; }
+      .form-group .input-txt .input-box .btn-lv01 .txt {
+        font-size: 14px; }
+  .form-group .input-txt:not(:first-child) {
+    margin-top: 16px; }
+  .form-group .input-txt.form-success input {
+    border-color: #28a745; }
+  .form-group .input-txt.form-success .message {
+    color: #28a745; }
+  .form-group .input-txt.form-error input {
+    border-color: #dc3545; }
+  .form-group .input-txt.form-error .message {
+    color: #dc3545; }
+
+.form-group .form-tit {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e4e7ed; }
+  .form-group .form-tit .tit {
+    font-size: 16px;
+    font-weight: 500;
+    color: #303133; }
+
+.form-group .input-radio {
+  margin-top: 19px; }
+  .form-group .input-radio .selectbox {
+    margin-top: 15px; }
+
+.form-group + .form-group {
+  margin-top: 32px; }
+
 /*! mobile 버전 - css */
 
 /*# sourceMappingURL=../../sass_maps/css_partials/jeyoung.css.map */

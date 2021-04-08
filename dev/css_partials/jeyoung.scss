@@ -54,6 +54,72 @@ body{background: #f5f5f7}
     }
   }
 }
+
+/* 권한요청 페이지 */
+.login-content-wrap {
+  @include rem(width,1200px);
+  @include rem(min-height,1200px);
+  @include rem(margin,100px auto 0);
+  background: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  .inner{
+    width: 460px;
+    min-height: 400px;
+    margin: 0 auto;
+  }
+  .tit-area{
+    text-align: center;
+    .tit{font-size: 18px; font-weight: bold;color: #000;}
+  }
+}
+
+/* form 공통 */
+.form-group{
+  .input-txt{
+    border: none;
+    label{@include rem(font-size,14px);color: #606266;}
+    .input-box{
+      display: flex;
+      align-items: flex-end;
+      input{
+        height: 40px;
+        margin-top: 8px;
+        border: 1px solid #e4e7ed;
+        border-radius: 4px;
+        &::placeholder{color: #c0c4cc;}
+      }
+      .btn-lv01{
+        height: 40px;
+        margin-left: 8px;
+        padding: 9px 19px;
+        border-radius: 4px;
+        background: #f5f6f7;
+        .txt{font-size: 14px;}
+      }
+    }
+    &:not(:first-child){margin-top: 16px;}
+    &.form-success{
+      input{border-color:#28a745;}
+      .message{color: #28a745;}
+    }
+    &.form-error{
+      input{border-color: #dc3545;}
+      .message{color: #dc3545;}
+    }
+  }
+  .form-tit{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e4e7ed;
+    .tit{font-size: 16px;font-weight: 500;color: #303133;}
+  }
+  .input-radio{
+    margin-top: 19px;
+    .selectbox{margin-top: 15px;}
+  }
+  + .form-group{margin-top: 32px;}
+}
+
+
 /*! mobile 버전 - css */
 @media (max-width:1023px){
 

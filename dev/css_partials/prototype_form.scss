@@ -156,7 +156,7 @@
 // ******************** code comments ********************
 /*! form - radio */
 .input-radio{
-    display:inline-block;
+    // display:inline-block;
     input{
         border: 0;
         clip: rect(0 0 0 0);
@@ -178,8 +178,8 @@
     }
     .txt{
         display:inline-block;
-        color:gray;
-        @include rem(font-size, 16px);
+        color:#606266;
+        @include rem(font-size, 14px);
     }
     label:before{
         content:'';
@@ -189,23 +189,12 @@
         @include rem(width, 20px);
         @include rem(height, 20px);
         @include rem(margin-top, -10px);
-        border: 1px solid gray;
+        border: 1px solid #dcdfe6;
         text-align: center;
         border-radius: 50%;
         transition: all .3s ease-out;
     }
     label:after{
-        content:'';
-        display:block;
-        position: absolute;
-        top: 50%;
-        background-color: gray;
-        @include rem(left, 6px);
-        @include rem(width, 8px);
-        @include rem(height, 8px);
-        @include rem(margin-top, -4px);
-        border-radius: 50%;
-        transition: all .3s ease-out;
     }
     &.right{
         label{
@@ -272,11 +261,21 @@
     input.checked,
     input:checked{
         & + label:before{
-            background-color:blue;
-            border-color:blue;
+            background-color:#409eff;
+            border-color:#409eff;
         }
         & + label:after{
-            background-color:#ffffff;
+            content:'';
+            display:block;
+            position: absolute;
+            top: 50%;
+            background-color: #fff;
+            @include rem(left, 6px);
+            @include rem(width, 8px);
+            @include rem(height, 8px);
+            @include rem(margin-top, -4px);
+            border-radius: 50%;
+            transition: all .3s ease-out;
         }
     }
     // disabled 됐을때 스타일 변화
@@ -310,11 +309,9 @@
     }
     // 에러 또는 성공 메세지 출력 관련 스타일
     .message {
-        position: absolute;
-        @include rem-calc(top, 100%, '+', 9px);
-        left: 0;
-        @include rem(font-size, 14px);
-        font-weight: 300;
+        display: block;
+        @include rem(margin-top,3px);
+        @include rem(font-size, 12px);
         &.pass {
             color: blue;
         }
@@ -345,7 +342,8 @@
 /*! form - selectbox */
 .selectbox{
     position:relative;z-index:0;display:inline-block;width:100%;
-    overflow:hidden;border:1px solid #cccccc;
+    overflow:hidden;border:1px solid #e4e7ed;
+    border-radius: 4px;
     &:after{
         content:'';
         display:block;
@@ -365,10 +363,10 @@
         z-index: 1;
         width:100%;
         @include rem(padding, 0 0 0 20px);
-        @include rem(height, 48px);
-        @include rem(line-height, 48px);
-        @include rem(font-size, 16px);
-        color: gray;
+        @include rem(height, 40px);
+        @include rem(line-height, 40px);
+        @include rem(font-size, 14px);
+        color: #c0c4cc;
         background-color:transparent;
         border:none;appearance:none;
         border-radius:0;
@@ -429,5 +427,15 @@
         &:focus + .input-file-label {
             border: 1px solid black;
         }
+    }
+}
+
+.input-textarea{
+    textarea{
+        width: 100%;
+        height: 152px;
+        margin-top: 8px;
+        border-color: #e4e7ed;
+        border-radius: 4px;
     }
 }

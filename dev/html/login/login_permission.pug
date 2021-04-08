@@ -10,7 +10,87 @@ block header
 block contents
   #container
     #content(role='main')
-      .cform_wrap.login-type
+      .login-content-wrap 
+        .inner
+          .tit-area 
+            span.tit 서울시 Covid-19 환자 관리 지원 시스템 접속 권한 요청
+          .form-group
+            // 벨리데이션 체크 시 .input-txt class override.
+            // 성공 : .form-success
+            // 실패 : .form-error
+            
+            // 이름
+            .input-txt.form-error
+              label(for="txt01") 이름
+              .input-box
+                input(type="text" title="" id="txt01")
+              .message 이름을 확인해주세요
+            // 메일
+            .input-txt.form-error
+              label(for="txt01") 이메일(ID)
+              .input-box
+                input(type="text" title="" id="txt01" placeholder="example@mail.com")
+                button.btn-lv01
+                  span.txt 중복확인
+              .message 이메일을 확인해주세요
+            // 비밀번호
+            .input-txt.form-error
+              label(for="txt01") 비밀번호
+              .input-box
+                input(type="text" title="" id="txt01")
+              .message 비밀번호를 확인해주세요
+            // 비밀번호 확인
+            .input-txt.form-success
+              label(for="txt01") 비밀번호 확인
+              .input-box
+                input(type="text" title="" id="txt01")
+              span.message 일치
+          
+          .form-group
+            .form-tit
+              span.tit 소속
+            .input-radio.right
+              input(type="radio" id="radio211" name="radio211")
+              label(for="radio211")
+                span.txt 서울시
+              .selectbox
+                select(title="")
+                  option(value="") 선택해주세요.
+                  option(value="") 선택
+                  option(value="") 선택
+            .input-radio.right
+              input(type="radio" id="radio211" name="radio211")
+              label(for="radio211")
+                span.txt 자치구(선별진료소)
+              .selectbox
+                select(title="")
+                  option(value="") 선택해주세요.
+                  option(value="") 선택
+                  option(value="") 선택
+            .input-radio.right
+              input(type="radio" id="radio211" name="radio211")
+              label(for="radio211")
+                span.txt 보건소
+              .selectbox
+                select(title="")
+                  option(value="") 선택해주세요.
+                  option(value="") 선택
+                  option(value="") 선택
+            .input-radio.right
+              input(type="radio" id="radio211" name="radio211")
+              label(for="radio211")
+                span.txt 의료기관
+              .selectbox
+                select(title="")
+                  option(value="") 선택해주세요.
+                  option(value="") 선택
+                  option(value="") 선택
+          
+          .form-group
+            .form-tit
+              span.tit 기타
+            .input-textarea 
+              textarea(name="", cols="30", rows="10" placeholder="요청사유(담당업무) 및 신분 확인에 필요한 추가 정보를 간략히 입력해 주세요") 
 
 block footer
   footer#footer.type02
