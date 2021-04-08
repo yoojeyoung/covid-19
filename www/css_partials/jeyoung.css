@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* default : pc 기준 */
+/* 임시 비밀번호 로그인 페이지 */
+body {
+  background: #f5f5f7; }
+
+.pgright_wrap .password_wrap {
+  max-width: 657px;
+  max-width: 65.7rem;
+  margin: 0 auto;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-top: 8rem; }
+  .pgright_wrap .password_wrap .tit-area {
+    text-align: center; }
+    .pgright_wrap .password_wrap .tit-area span {
+      display: block;
+      font-size: 24px;
+      font-size: 2.4rem;
+      color: #3d3e42;
+      font-weight: bold; }
+    .pgright_wrap .password_wrap .tit-area .sub-tit {
+      margin-top: 10px;
+      margin-top: 1rem;
+      font-size: 18px;
+      font-size: 1.8rem;
+      font-weight: normal; }
+  .pgright_wrap .password_wrap .user-info-area {
+    margin-top: 24px;
+    margin-top: 2.4rem;
+    max-width: 657px;
+    max-width: 65.7rem;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
+    .pgright_wrap .password_wrap .user-info-area .inner {
+      padding: 24px 88px; }
+    .pgright_wrap .password_wrap .user-info-area .column {
+      display: table;
+      width: 100%;
+      padding: 13px 0 10px;
+      padding: 1.3rem 0 1rem; }
+      .pgright_wrap .password_wrap .user-info-area .column .type01, .pgright_wrap .password_wrap .user-info-area .column .type02 {
+        display: table-cell;
+        font-size: 14px;
+        font-size: 1.4rem;
+        color: #606266;
+        vertical-align: initial; }
+      .pgright_wrap .password_wrap .user-info-area .column .type01 {
+        width: 20%; }
+      .pgright_wrap .password_wrap .user-info-area .column .type02 {
+        width: 80%;
+        color: #000000; }
+        .pgright_wrap .password_wrap .user-info-area .column .type02 .input-wrap input {
+          width: 100%;
+          min-height: 40px;
+          border: 1px solid #e4e7ed;
+          border-radius: 4px; }
+        .pgright_wrap .password_wrap .user-info-area .column .type02 .input-wrap .validation-wrap {
+          margin-top: 6px;
+          margin-top: 0.6rem; }
+          .pgright_wrap .password_wrap .user-info-area .column .type02 .input-wrap .validation-wrap span {
+            display: block;
+            font-size: 12px;
+            font-size: 1.2rem;
+            color: #c0c4cc; }
+        .pgright_wrap .password_wrap .user-info-area .column .type02 .input-wrap.form-fail input {
+          border: 1px solid #dc3545; }
+        .pgright_wrap .password_wrap .user-info-area .column .type02 .input-wrap.form-fail .validation-wrap .validation-text {
+          color: #dc3545; }
+      .pgright_wrap .password_wrap .user-info-area .column:not(:first-child) {
+        margin-top: 14px;
+        margin-top: 1.4rem; }
+
+/*! mobile 버전 - css */
+
+/*# sourceMappingURL=../../sass_maps/css_partials/jeyoung.css.map */

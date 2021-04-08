@@ -75,7 +75,7 @@ html {
     font-size: -webkit-calc(10px + 12 * ((100vw - 1024px) / 1279));
     font-size: calc(10px + 12 * ((100vw - 1024px) / 1279)); } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   html {
     font-size: 10px; } }
 

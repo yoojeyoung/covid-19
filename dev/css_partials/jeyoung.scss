@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@import 'dev/_src/_scss/_setting';
+
+/* default : pc 기준 */
+
+/* 임시 비밀번호 로그인 페이지 */
+body{background: #f5f5f7}
+.pgright_wrap{
+  .password_wrap{
+    @include rem(max-width, 657px);
+    @include rem(margin,0 auto);
+    @include rem(padding-top,80px);
+    .tit-area{
+      text-align: center;
+      span{display: block;@include rem(font-size, 24px);color: #3d3e42;font-weight: bold;}
+      .sub-tit{@include rem(margin-top, 10px); @include rem(font-size,18px);font-weight: normal;}
+    }
+    .user-info-area{
+      @include rem(margin-top,24px);
+      @include rem(max-width,657px);
+      background-color: #fff;
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+      .inner{padding: 24px 88px;}
+      .column{
+        display: table;
+        width: 100%;
+        @include rem(padding, 13px 0 10px);
+        .type01, .type02{
+          display: table-cell;
+          @include rem(font-size,14px);
+          color: #606266;
+          vertical-align: initial;
+        }
+        .type01{width: 20%;}
+        .type02{
+          width: 80%;color: #000000;
+          .input-wrap{
+            input{width: 100%;min-height: 40px;border: 1px solid #e4e7ed;border-radius: 4px;}
+            .validation-wrap{
+              @include rem(margin-top,6px);
+              span{display: block;@include rem(font-size,12px);color: #c0c4cc;}
+            }
+            &.form-fail{
+              input{border: 1px solid #dc3545;}
+              .validation-wrap{
+                .validation-text{color: #dc3545;}
+              }
+            }
+          }
+        }
+        &:not(:first-child){@include rem(margin-top,14px)}
+      }
+    }
+  }
+}
+/*! mobile 버전 - css */
+@media (max-width:1023px){
+
+} 

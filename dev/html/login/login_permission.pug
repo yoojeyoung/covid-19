@@ -1,0 +1,27 @@
+extends /_src/_pug/_extend_html5
+
+block header 
+  header.pgheader_wrap.type02
+    .inner
+      h1
+        a(href="")
+          img(src="../../images/common/img-toplogo-login.png", alt="")
+
+block contents
+  #container
+    #content(role='main')
+      .cform_wrap.login-type
+
+block footer
+  footer#footer.type02
+    .inner
+      .footer-wrap
+        .footer-column
+          a(href="")
+            img(src="../../images/common/img-bottomlogo-login.png", alt="")
+        .footer-column
+          p.footer-copyright ⓒ2021. Seoul Metropolitan Govermment Some Rights Reserved.
+
+append script
+  script.
+    COVID.dimLayerShow('#srdTarget01');

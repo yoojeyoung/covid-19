@@ -58,7 +58,7 @@ html{
 }
 
 // PC 영역
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     html {
         font-size: $global-font-size;
     }
