@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @font-face {
   font-family: "NotoSans-Black";
   src: url("../font/NotoSans-Black.eot");
@@ -3634,16 +3633,16 @@ a:before {
 
 /* login 페이지 header */
 .pgheader_wrap.type02 {
-  height: 100px;
-  height: 10rem;
+  height: 110px;
+  height: 11rem;
   -webkit-box-shadow: none;
           box-shadow: none; }
   .pgheader_wrap.type02 .inner {
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
-    padding: 30px 0 28px;
-    padding: 3rem 0 2.8rem; }
+    padding: 35px 0 32px;
+    padding: 3.5rem 0 3.2rem; }
 
 @media (max-width: 1250px) {
   .pgheader_wrap.type02 {
@@ -3655,8 +3654,8 @@ a:before {
 /*! mobile 버전 - css */
 /*! pc & tablet 버전 - css */
 .f-fixed .login-content-wrap {
-  margin-bottom: 160px;
-  margin-bottom: 16rem; }
+  margin-bottom: 143px;
+  margin-bottom: 14.3rem; }
 
 .f-fixed footer.type02 {
   position: fixed;
@@ -3665,14 +3664,14 @@ a:before {
 
 /* login 페이지 footer */
 #footer.type02 {
-  height: 100px;
+  height: 83px;
   background: #fff;
   width: 100%;
   z-index: 100; }
   #footer.type02 .inner {
     max-width: 1200px;
-    padding: 32px 0 30px;
-    padding: 3.2rem 0 3rem;
+    padding: 26px 0 20px;
+    padding: 2.6rem 0 2rem;
     height: 100%;
     margin: 0 auto; }
   #footer.type02 .footer-wrap {
@@ -3785,7 +3784,7 @@ input.form_int.fatype2 {
   padding: 30px; }
 
 .layer_box {
-  width: 500px;
+  max-width: 500px;
   background: #fff;
   position: relative;
   margin: 0 auto;
@@ -3796,15 +3795,14 @@ input.form_int.fatype2 {
   width: 1020px; }
 
 .layer_tit_low {
-  padding: 0 20px; }
+  padding: 12px 16px 0;
+  padding: 1.2rem 1.6rem 0; }
 
 .layer_tit {
   font-size: 15px;
   line-height: 1.3;
   color: #000;
-  padding: 15px 60px 15px 0;
   text-align: left;
-  border-bottom: 1px solid #000;
   font-weight: 700; }
 
 .layer_cont {
@@ -3814,6 +3812,16 @@ input.form_int.fatype2 {
 
 .layer_cont_in {
   padding: 50px 20px; }
+  .layer_cont_in.form-group {
+    padding: 0 16px;
+    padding: 0 1.6rem; }
+    .layer_cont_in.form-group .input-txt {
+      margin-top: 16px;
+      margin-top: 1.6rem; }
+
+.layer_box .btn-group {
+  margin-top: 32px;
+  margin-top: 3.2rem; }
 
 .layer_cont_in.type2 {
   padding: 20px 30px; }
@@ -4957,6 +4965,70 @@ button.btn_cbotxt {
   .cform_wrap.login-type .cform_box_td .cform_box {
     margin: 0; }
 
+.cform_wrap.password .cform_box_td {
+  max-width: 1220px;
+  max-width: 122rem;
+  width: auto;
+  background: none; }
+
+.cform_wrap.password .cform_box {
+  max-width: 600px;
+  max-width: 60rem;
+  width: auto;
+  padding: 24px 48px 50px;
+  padding: 2.4rem 4.8rem 5rem;
+  margin: 0 24px;
+  margin: 0 2.4rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  border-radius: 0; }
+  .cform_wrap.password .cform_box .tit-area {
+    padding: 0 64px 30px;
+    padding: 0 6.4rem 3rem;
+    border-bottom: 1px solid #b1b1b1; }
+  .cform_wrap.password .cform_box .content-area {
+    margin-top: 47px;
+    margin-top: 4.7rem; }
+    .cform_wrap.password .cform_box .content-area .tit {
+      font-size: 24px;
+      font-size: 2.4rem;
+      color: #2d2d2d; }
+    .cform_wrap.password .cform_box .content-area .column-group {
+      margin-top: 48px;
+      margin-top: 4.8rem;
+      padding: 0 98px;
+      padding: 0 9.8rem; }
+      .cform_wrap.password .cform_box .content-area .column-group li {
+        display: table;
+        width: 100%; }
+        .cform_wrap.password .cform_box .content-area .column-group li:not(:first-child) {
+          margin-top: 20px;
+          margin-top: 2rem; }
+      .cform_wrap.password .cform_box .content-area .column-group span {
+        display: table-cell;
+        text-align: left;
+        font-size: 18px;
+        font-size: 1.8rem;
+        color: #565656; }
+      .cform_wrap.password .cform_box .content-area .column-group .type01 {
+        width: 35%; }
+      .cform_wrap.password .cform_box .content-area .column-group .type02 {
+        width: 65%;
+        padding-left: 50px;
+        padding-left: 5rem;
+        color: #0181c9; }
+  .cform_wrap.password .cform_box .point-txt {
+    margin-top: 50px;
+    margin-top: 5rem; }
+    .cform_wrap.password .cform_box .point-txt .txt {
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #283356; }
+  .cform_wrap.password .cform_box .btn-group .txt {
+    font-size: 18px;
+    font-size: 1.8rem; }
+
 /* default : pc 기준 */
 /*! mobile 버전 - css */
 /* default : pc 기준 */
@@ -5135,20 +5207,33 @@ body {
     margin-top: 15px;
     margin-top: 1.5rem; }
 
+.form-group .input-notice .point-txt {
+  display: block;
+  margin-top: 16px;
+  margin-top: 1.6rem;
+  padding-left: 10px;
+  padding-left: 1rem;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-indent: -10px;
+  text-indent: -1rem;
+  color: #2883c5;
+  line-height: 1.5; }
+
 .form-group + .form-group {
   margin-top: 32px;
   margin-top: 3.2rem; }
 
 /* 버튼 공통 */
 .btn-group {
+  margin-top: 24px;
+  margin-top: 2.4rem;
   text-align: center;
   font-size: 0; }
   .btn-group button {
     display: inline-block;
     min-width: 120px;
     min-width: 12rem;
-    margin-top: 24px;
-    margin-top: 2.4rem;
     padding: 8px 0 7px;
     padding: 0.8rem 0 0.7rem;
     border-radius: 4px;
@@ -5166,6 +5251,16 @@ body {
     .btn-group button + button {
       margin-left: 16px;
       margin-left: 1.6rem; }
+  .btn-group.right {
+    margin: 0 16px;
+    margin: 0 1.6rem;
+    text-align: right; }
+  .btn-group.col-1 button {
+    width: 100%;
+    min-width: auto; }
+  .btn-group.h-56 button {
+    height: 56px;
+    height: 5.6rem; }
 
 /*! mobile 버전 - css */
 @media (max-width: 1250px) {

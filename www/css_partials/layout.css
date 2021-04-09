@@ -513,16 +513,19 @@
   text-align: left; }
 
 .cform_titlow .cform_tit_in {
+  font-size: 32px;
+  font-size: 3.2rem;
   color: #2883c5;
   font-family: 'NanumSquare';
-  font-weight: 700; }
+  font-weight: 500; }
 
 .cform_titlow .sub-title {
   margin-top: 15px;
   margin-top: 1.5rem;
   font-size: 18px;
   font-size: 1.8rem;
-  color: #5e5e5e; }
+  color: #5e5e5e;
+  line-height: 1.5; }
 
 .cform_tit.has_ico02:after {
   background-image: url("../images/admin/ico_logpw.png");

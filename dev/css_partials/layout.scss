@@ -180,8 +180,8 @@
 .cform_box{background:#fff;border:1px solid #e2e2e2;border-radius:10px;@include rem(width,584px);text-align:center;@include rem(padding,32px);box-sizing:border-box;margin:0 auto;  box-shadow: 0 0 22.3px 1.7px rgba(1, 71, 126, 0.19);}
 .cform_titlow{text-align: left;}
 .cform_titlow .cform_tit{}
-.cform_titlow .cform_tit_in{@include rem(32px);color:#2883c5;font-family: 'NanumSquare';font-weight:700}
-.cform_titlow .sub-title{@include rem(margin-top,15px);@include rem(font-size, 18px);color: #5e5e5e;}
+.cform_titlow .cform_tit_in{@include rem(font-size,32px);color:#2883c5;font-family: 'NanumSquare';font-weight:500;}
+.cform_titlow .sub-title{@include rem(margin-top,15px);@include rem(font-size, 18px);color: #5e5e5e;line-height: 1.5;}
 .cform_tit.has_ico02:after{background-image:url("../images/admin/ico_logpw.png");@include rem(width,70px);@include rem(height,70px);}
 .cform_contlow{@include rem(margin-top,47px);text-align:left;}
 

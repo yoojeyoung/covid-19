@@ -93,9 +93,8 @@ input.form_int.fatype2 {
 .layer_tit {
   font-size: 15px;
   line-height: 1.3;
-  color: #000;
-  text-align: left;
-  font-weight: 700; }
+  color: #303103;
+  text-align: left; }
 
 .layer_cont {
   position: relative;
@@ -104,6 +103,13 @@ input.form_int.fatype2 {
 
 .layer_cont_in {
   padding: 50px 20px; }
+  .layer_cont_in .content-txt {
+    margin-top: 18px;
+    margin-top: 1.8rem; }
+    .layer_cont_in .content-txt .txt {
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #909399; }
   .layer_cont_in.form-group {
     padding: 0 16px;
     padding: 0 1.6rem; }
@@ -114,6 +120,9 @@ input.form_int.fatype2 {
 .layer_box .btn-group {
   margin-top: 32px;
   margin-top: 3.2rem; }
+  .layer_box .btn-group.mt-25 {
+    margin-top: 25px;
+    margin-top: 2.5rem; }
 
 .layer_cont_in.type2 {
   padding: 20px 30px; }

@@ -133,6 +133,11 @@ body {
         color: #c0c4cc; }
       .form-group .input-txt .input-box input::placeholder {
         color: #c0c4cc; }
+      .form-group .input-txt .input-box input.mt-0 {
+        margin-top: 0; }
+      .form-group .input-txt .input-box input.h-56 {
+        height: 56px;
+        height: 5.6rem; }
     .form-group .input-txt .input-box .btn-lv01 {
       height: 40px;
       height: 4rem;
@@ -219,6 +224,12 @@ body {
     .btn-group button + button {
       margin-left: 16px;
       margin-left: 1.6rem; }
+    .btn-group button.wid-80 {
+      min-width: 80px;
+      min-width: 8rem; }
+    .btn-group button.wid-89 {
+      min-width: 89px;
+      min-width: 8.9rem; }
   .btn-group.right {
     margin: 0 16px;
     margin: 0 1.6rem;
