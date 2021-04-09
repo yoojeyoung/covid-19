@@ -55,21 +55,6 @@ html {
   html:lang(zh) {
     letter-spacing: 0; }
 
-@media (max-width: 374px) {
-  html {
-    font-size: -webkit-calc(7px + 10 * ((100vw - 280px) / 374));
-    font-size: calc(7px + 10 * ((100vw - 280px) / 374)); } }
-
-@media (min-width: 375px) and (max-width: 750px) {
-  html {
-    font-size: -webkit-calc(10px + 20 * ((100vw - 375px) / 750));
-    font-size: calc(10px + 20 * ((100vw - 375px) / 750)); } }
-
-@media (min-width: 751px) and (max-width: 1023px) {
-  html {
-    font-size: -webkit-calc(10px + 13 * ((100vw - 751px) / 1023));
-    font-size: calc(10px + 13 * ((100vw - 751px) / 1023)); } }
-
 @media (min-width: 1024px) and (max-width: 1279px) {
   html {
     font-size: -webkit-calc(10px + 12 * ((100vw - 1024px) / 1279));

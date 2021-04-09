@@ -1,5 +1,8 @@
 extends /_src/_pug/_extend_html5
 
+block vars
+  - var bodyClass = ''
+
 block header 
   header.pgheader_wrap.type02
     .inner
@@ -44,6 +47,12 @@ block contents
               label(for="txt01") 비밀번호 확인
               .input-box
                 input(type="text" title="" id="txt01")
+              span.message 일치
+            // 휴대전화
+            .input-txt.form-success
+              label(for="txt01") 휴대전화
+              .input-box
+                input(type="text" title="" id="txt01" placeholder="- 없이 입력해주세요")
               span.message 일치
           
           .form-group
@@ -99,6 +108,7 @@ block contents
               span.txt 확인
 
 block footer
+  //- body에 .f-fixed class 추가할 경우 푸터 허단 고정 됩니다.
   footer#footer.type02
     .inner
       .footer-wrap

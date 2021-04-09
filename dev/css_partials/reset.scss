@@ -27,26 +27,26 @@ html{
 // https://css-tricks.com/snippets/css/fluid-typography/
 
 // 모바일 기본 영역 보다 작은 사이즈 대응 영역
-@media (max-width: 374px) {
-    html {
-        font-size: calc(#{$global-font-size - 3} + 10 * ((100vw - 280px) / 374));
-    }
-}
+// @media (max-width: 374px) {
+//     html {
+//         font-size: calc(#{$global-font-size - 3} + 10 * ((100vw - 280px) / 374));
+//     }
+// }
 
-// 모바일 기본 사이즈 대응 영역 (PSD 750 사이즈 기준 세팅)
-// max-width 에는 PSD 가로 사이즈 적용하기. 그걸 반으로 나눈 것을 min-width 에 적용하기.
-@media (min-width: 375px) and (max-width: 750px) {
-    html {
-        font-size: calc(#{$global-font-size} + 20 * ((100vw - 375px) / 750));
-    }
-}
+// // 모바일 기본 사이즈 대응 영역 (PSD 750 사이즈 기준 세팅)
+// // max-width 에는 PSD 가로 사이즈 적용하기. 그걸 반으로 나눈 것을 min-width 에 적용하기.
+// @media (min-width: 375px) and (max-width: 750px) {
+//     html {
+//         font-size: calc(#{$global-font-size} + 20 * ((100vw - 375px) / 750));
+//     }
+// }
 
 // 기본 영역보다 큰 사이즈 대응 영역 (태블릿 전 단계)
-@media (min-width: 751px) and (max-width: 1023px) {
-    html {
-        font-size: calc(#{$global-font-size} + 13 * ((100vw - 751px) / 1023));
-    }
-}
+// @media (min-width: 751px) and (max-width: 1023px) {
+//     html {
+//         font-size: calc(#{$global-font-size} + 13 * ((100vw - 751px) / 1023));
+//     }
+// }
 
 // 태블릿 영역 대응 (아이패드 기준 1024 부터 태블릿 영역으로 정의함)
 // pc 컨텐츠 영역 최소 사이즈에 맞춰서 조정이 필요함

@@ -67,21 +67,6 @@ html {
   html:lang(zh) {
     letter-spacing: 0; }
 
-@media (max-width: 374px) {
-  html {
-    font-size: -webkit-calc(7px + 10 * ((100vw - 280px) / 374));
-    font-size: calc(7px + 10 * ((100vw - 280px) / 374)); } }
-
-@media (min-width: 375px) and (max-width: 750px) {
-  html {
-    font-size: -webkit-calc(10px + 20 * ((100vw - 375px) / 750));
-    font-size: calc(10px + 20 * ((100vw - 375px) / 750)); } }
-
-@media (min-width: 751px) and (max-width: 1023px) {
-  html {
-    font-size: -webkit-calc(10px + 13 * ((100vw - 751px) / 1023));
-    font-size: calc(10px + 13 * ((100vw - 751px) / 1023)); } }
-
 @media (min-width: 1024px) and (max-width: 1279px) {
   html {
     font-size: -webkit-calc(10px + 12 * ((100vw - 1024px) / 1279));
@@ -316,59 +301,6 @@ template {
  */
 [hidden] {
   display: none; }
-
-/* ==========================================================================
-    Print styles.
-    Inlined to avoid the additional HTTP request:
-    http://www.phpied.com/delay-loading-your-print-css/
- ========================================================================== */
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: http://www.sanbeiji.com/archives/953 */
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-    text-shadow: none !important; }
-  a,
-  a:visited {
-    text-decoration: underline; }
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: ""; }
-  pre {
-    white-space: pre-wrap !important; }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-  /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  thead {
-    display: table-header-group; }
-  tr,
-  img {
-    page-break-inside: avoid; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-  h2,
-  h3 {
-    page-break-after: avoid; } }
 
 /*! common */
 .clfix:after, .clfix:before {
@@ -679,13 +611,12 @@ a:before {
 
 /* login 페이지 header */
 .pgheader_wrap.type02 {
-  min-width: 1200px;
   height: 100px;
   height: 10rem;
   -webkit-box-shadow: none;
           box-shadow: none; }
   .pgheader_wrap.type02 .inner {
-    width: 1200px;
+    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
     padding: 30px 0 28px;
@@ -693,18 +624,23 @@ a:before {
 
 /*! mobile 버전 - css */
 /*! pc & tablet 버전 - css */
-/* login 페이지 footer */
-#footer.type02 {
-  min-width: 1200px;
-  height: 100px;
-  background: #fff;
+.f-fixed .login-content-wrap {
+  margin-bottom: 160px;
+  margin-bottom: 16rem; }
+
+.f-fixed footer.type02 {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 0; }
+
+/* login 페이지 footer */
+#footer.type02 {
+  height: 100px;
+  background: #fff;
   width: 100%;
   z-index: 100; }
   #footer.type02 .inner {
-    width: 1200px;
+    max-width: 1200px;
     padding: 32px 0 30px;
     padding: 3.2rem 0 3rem;
     height: 100%;

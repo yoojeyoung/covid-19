@@ -74,16 +74,19 @@ body {
 
 /* 권한요청 페이지 */
 .login-content-wrap {
-  width: 1200px;
-  width: 120rem;
-  margin: 160px auto;
-  margin: 16rem auto;
+  width: 90%;
+  max-width: 1200px;
+  max-width: 120rem;
+  margin: 160px auto 60px;
+  margin: 16rem auto 6rem;
+  padding: 0 20px;
+  padding: 0 2rem;
   background: #fff;
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
   .login-content-wrap .inner {
-    width: 460px;
-    width: 46rem;
+    max-width: 460px;
+    max-width: 46rem;
     margin: 0 auto;
     padding: 40px 0 46px;
     padding: 4rem 0 4.6rem; }
@@ -205,23 +208,14 @@ body {
       margin-left: 16px;
       margin-left: 1.6rem; }
 
-@media screen and (min-wudth: 1024px) and (max-width: 1200px) {
+@media only screen and (min-wudth: 1024px) and (max-width: 1200px) {
   .login-content-wrap {
-    width: 1024px;
-    width: 102.4rem; } }
+    max-width: 1000px;
+    max-width: 100rem; }
+    .login-content-wrap .inner {
+      width: 350px;
+      width: 35rem; } }
 
 /*! mobile 버전 - css */
-@media (max-width: 1023px) {
-  .login-content-wrap {
-    width: 600px;
-    width: 60rem; } }
-
-@media (max-width: 750px) {
-  .login-content-wrap {
-    width: 300px;
-    width: 30rem; }
-    .login-content-wrap .inner {
-      width: 200px;
-      width: 20rem; } }
 
 /*# sourceMappingURL=../../sass_maps/css_partials/jeyoung.css.map */

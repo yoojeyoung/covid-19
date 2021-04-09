@@ -26,7 +26,6 @@
 // **********************************
 @import '../css_partials/font';
 @import '../css_partials/reset';
-@import '../css_partials/print';
 
 // **********************************
 // 플러그인 영역
@@ -45,23 +44,9 @@
 // 프로토타입을 세분화 할 경우 특정 css 파일에서 불필요한 프로토타입을 제거하여 경량화 할 수 있다
 // **********************************
 @import '../css_partials/prototype_common';
-@import '../css_partials/prototype_scroll';
-@import '../css_partials/prototype_breadcrumb';
-@import '../css_partials/prototype_scrollspy';
-@import '../css_partials/prototype_map';
-@import '../css_partials/prototype_video';
-@import '../css_partials/prototype_icon';
-@import '../css_partials/prototype_button';
 @import '../css_partials/prototype_form';
-@import '../css_partials/prototype_pagenav';
-@import '../css_partials/prototype_table';
-@import '../css_partials/prototype_box';
-@import '../css_partials/prototype_container';
-@import '../css_partials/prototype_tab';
-@import '../css_partials/prototype_swiper';
-@import '../css_partials/prototype_accordion';
 @import '../css_partials/prototype_popup';
-@import '../css_partials/prototype_test';
+@import '../css_partials/prototype';
 @import '../css_partials/prototypelist';
 
 // **********************************
@@ -72,7 +57,6 @@
 
 // **********************************
 // 서브 컨텐츠 영역
-@import '../css_partials/test';
 // **********************************
 
 
