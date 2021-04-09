@@ -74,7 +74,6 @@ body {
 
 /* 권한요청 페이지 */
 .login-content-wrap {
-  width: 90%;
   max-width: 1200px;
   max-width: 120rem;
   margin: 160px auto 60px;
@@ -176,20 +175,33 @@ body {
     margin-top: 15px;
     margin-top: 1.5rem; }
 
+.form-group .input-notice .point-txt {
+  display: block;
+  margin-top: 16px;
+  margin-top: 1.6rem;
+  padding-left: 10px;
+  padding-left: 1rem;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-indent: -10px;
+  text-indent: -1rem;
+  color: #2883c5;
+  line-height: 1.5; }
+
 .form-group + .form-group {
   margin-top: 32px;
   margin-top: 3.2rem; }
 
 /* 버튼 공통 */
 .btn-group {
+  margin-top: 24px;
+  margin-top: 2.4rem;
   text-align: center;
   font-size: 0; }
   .btn-group button {
     display: inline-block;
     min-width: 120px;
     min-width: 12rem;
-    margin-top: 24px;
-    margin-top: 2.4rem;
     padding: 8px 0 7px;
     padding: 0.8rem 0 0.7rem;
     border-radius: 4px;
@@ -207,15 +219,23 @@ body {
     .btn-group button + button {
       margin-left: 16px;
       margin-left: 1.6rem; }
-
-@media only screen and (min-wudth: 1024px) and (max-width: 1200px) {
-  .login-content-wrap {
-    max-width: 1000px;
-    max-width: 100rem; }
-    .login-content-wrap .inner {
-      width: 350px;
-      width: 35rem; } }
+  .btn-group.right {
+    margin: 0 16px;
+    margin: 0 1.6rem;
+    text-align: right; }
+  .btn-group.col-1 button {
+    width: 100%;
+    min-width: auto; }
+  .btn-group.h-56 button {
+    height: 56px;
+    height: 5.6rem; }
 
 /*! mobile 버전 - css */
+@media (max-width: 1250px) {
+  .login-content-wrap {
+    max-width: auto;
+    max-width: auto;
+    margin: 160px 24px 60px;
+    margin: 16rem 2.4rem 6rem; } }
 
 /*# sourceMappingURL=../../sass_maps/css_partials/jeyoung.css.map */

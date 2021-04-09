@@ -57,7 +57,6 @@ body{background: #f5f5f7}
 
 /* 권한요청 페이지 */
 .login-content-wrap {
-  width: 90%;
   // @include rem(min-width,460px);
   @include rem(max-width,1200px);
   @include rem(margin,160px auto 60px);
@@ -119,17 +118,28 @@ body{background: #f5f5f7}
     @include rem(margin-top,19px);
     .selectbox{@include rem(margin-top,15px);}
   }
+  .input-notice{
+    .point-txt{
+      display: block;
+      @include rem(margin-top,16px);
+      @include rem(padding-left,10px);
+      @include rem(font-size,12px);
+      @include rem(text-indent,-10px);
+      color: #2883c5;
+      line-height: 1.5
+    }
+  }
   + .form-group{@include rem(margin-top,32px);}
 }
 
 /* 버튼 공통 */
 .btn-group{
+  @include rem(margin-top,24px);
   text-align: center;
   font-size: 0;
   button{
     display: inline-block;
     @include rem(min-width, 120px);
-    @include rem(margin-top,24px);
     @include rem(padding,8px 0 7px);
     @include rem(border-radius,4px);
     border: 1px solid #e4e7ed;
@@ -140,22 +150,35 @@ body{background: #f5f5f7}
     }
     + button{@include rem(margin-left,16px);}
   }
-}
-
-@media only screen and (min-wudth:1024px) and (max-width:1200px){
-  .login-content-wrap{
-    @include rem(max-width,1000px);
-    .inner{@include rem(width,350px)}
+  &.right{
+    @include rem(margin,0 16px);
+    text-align: right;
   }
-
+  &.col-1{
+    button{
+      width: 100%;
+      min-width: auto;
+    }
+  }
+  &.h-56{
+    button{@include rem(height,56px);}
+  }
 }
-/*! mobile 버전 - css */
-// @media (max-width:1023px){
+
+// @media only screen and (min-wudth:1024px) and (max-width:1200px){
 //   .login-content-wrap{
-//     @include rem(max-width,auto);
-//     @include rem( width,600px);
+//     @include rem(max-width,1000px);
+//     .inner{@include rem(width,350px)}
 //   }
 // }
+
+/*! mobile 버전 - css */
+@media (max-width:1250px){
+  .login-content-wrap{
+    @include rem(max-width,auto);
+    @include rem(margin, 160px 24px 60px);
+  }
+}
 
 // @media (max-width:750px){
 //   .login-content-wrap{

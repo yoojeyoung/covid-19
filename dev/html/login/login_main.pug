@@ -1,5 +1,8 @@
 extends /_src/_pug/_extend_html5
 
+block vars
+  - var bodyClass = 'f-fixed'
+
 block header 
   header.pgheader_wrap.type02
     .inner
@@ -44,22 +47,44 @@ block contents
             // layer_box
             .layer_box
               .layer_tit_low
-                h2.layer_tit 
+                h2.layer_tit 비밀번호 재설정 요청
               .layer_cont(style='max-height: 875px;')
-                p.lcyment.ctype2 
-                .layer_cont_in
-                  // 내용이 들어갑니다.
-                  .lyment_w
-                    p.lyment_para_nor
-                  // // 내용이 들어갑니다.
-              .btn_lysm_w
-                a.btn_ctxt.ltype.closetrigger(href='#') 
+                .layer_cont_in.form-group
+                  // 이름
+                  .input-txt.form-error
+                    label(for="txt01") 이름
+                    .input-box
+                      input(type="text" title="" id="txt01")
+                    .message 이름을 확인해주세요
+                  // 메일
+                  .input-txt.form-error
+                    label(for="txt01") 이메일(ID)
+                    .input-box
+                      input(type="text" title="" id="txt01" placeholder="example@mail.com")
+                      button.btn-lv01
+                        span.txt 중복확인
+                    .message 이메일을 확인해주세요
+                  // 비밀번호
+                  .input-txt.form-error
+                    label(for="txt01") 비밀번호
+                    .input-box
+                      input(type="text" title="" id="txt01")
+                    .message 비밀번호를 확인해주세요
+                  .input-notice 
+                    span.point-txt * 기존 비밀번호는 초기화되며, 입력하신 이메일(ID)로 임시 비밀번호가 발송됩니다. 받으신 임시 비밀번호로 로그인 후 변경 바랍니다.
+              .btn-group.right
                 // closetrigger 있으면 닫힘
-                a.btn_ctxt.closetrigger(href='#') 
-                // closetrigger 있으면 닫힘
-              a.btn_layerclose(href='javascript:;')
-                span.hdtext 
+                button.btn-close.closetrigger(href='#')
+                  span.txt 취소
+                button.btn-confirm.closetrigger(href='#')
+                  span.txt 확인
+              button(href='javascript:;')
+                span.hdtext
+
+
+
 block footer
+  //- body에 .f-fixed class 추가할 경우 푸터 허단 고정 됩니다.
   footer#footer.type02
     .inner
       .footer-wrap

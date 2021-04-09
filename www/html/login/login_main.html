@@ -37,7 +37,7 @@
   <script src="../../js/TweenMax.min.js"></script>
 </head>
 
-<body>
+<body class="f-fixed">
   <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
   <div id="wrap">
     <header class="pgheader_wrap type02">
@@ -94,27 +94,54 @@
               <!-- layer_box-->
               <div class="layer_box">
                 <div class="layer_tit_low">
-                  <h2 class="layer_tit"> </h2>
+                  <h2 class="layer_tit">비밀번호 재설정 요청</h2>
                 </div>
                 <div class="layer_cont" style="max-height: 875px;">
-                  <p class="lcyment ctype2"> </p>
-                  <div class="layer_cont_in">
-                    <!-- 내용이 들어갑니다.-->
-                    <div class="lyment_w">
-                      <p class="lyment_para_nor"></p>
+                  <div class="layer_cont_in form-group">
+                    <!-- 이름-->
+                    <div class="input-txt form-error">
+                      <label for="txt01">이름</label>
+                      <div class="input-box">
+                        <input type="text" title="" id="txt01">
+                      </div>
+                      <div class="message">이름을 확인해주세요</div>
                     </div>
-                    <!-- // 내용이 들어갑니다.-->
+                    <!-- 메일-->
+                    <div class="input-txt form-error">
+                      <label for="txt01">이메일(ID)</label>
+                      <div class="input-box">
+                        <input type="text" title="" id="txt01" placeholder="example@mail.com">
+                        <button class="btn-lv01">
+                          <span class="txt">중복확인</span>
+                        </button>
+                      </div>
+                      <div class="message">이메일을 확인해주세요</div>
+                    </div>
+                    <!-- 비밀번호-->
+                    <div class="input-txt form-error">
+                      <label for="txt01">비밀번호</label>
+                      <div class="input-box">
+                        <input type="text" title="" id="txt01">
+                      </div>
+                      <div class="message">비밀번호를 확인해주세요</div>
+                    </div>
+                    <div class="input-notice">
+                      <span class="point-txt">* 기존 비밀번호는 초기화되며, 입력하신 이메일(ID)로 임시 비밀번호가 발송됩니다. 받으신 임시 비밀번호로 로그인 후 변경 바랍니다.</span>
+                    </div>
                   </div>
                 </div>
-                <div class="btn_lysm_w">
-                  <a class="btn_ctxt ltype closetrigger" href="#"> </a>
+                <div class="btn-group right">
                   <!-- closetrigger 있으면 닫힘-->
-                  <a class="btn_ctxt closetrigger" href="#"> </a>
-                  <!-- closetrigger 있으면 닫힘-->
+                  <button class="btn-close closetrigger" href="#">
+                    <span class="txt">취소</span>
+                  </button>
+                  <button class="btn-confirm closetrigger" href="#">
+                    <span class="txt">확인</span>
+                  </button>
                 </div>
-                <a class="btn_layerclose" href="javascript:;">
-                  <span class="hdtext"> </span>
-                </a>
+                <button href="javascript:;">
+                  <span class="hdtext"></span>
+                </button>
               </div>
             </div>
           </div>
