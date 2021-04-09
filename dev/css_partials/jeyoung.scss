@@ -58,18 +58,18 @@ body{background: #f5f5f7}
 /* 권한요청 페이지 */
 .login-content-wrap {
   @include rem(width,1200px);
-  @include rem(min-height,1200px);
-  @include rem(margin,100px auto 0);
+  @include rem(margin,160px auto);
   background: #fff;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   .inner{
-    width: 460px;
-    min-height: 400px;
+    @include rem(width,460px);
     margin: 0 auto;
+    @include rem(padding, 40px 0 46px);
   }
   .tit-area{
+    @include rem(margin-bottom,24px);
     text-align: center;
-    .tit{font-size: 18px; font-weight: bold;color: #000;}
+    .tit{@include rem(font-size,18px);font-weight: bold;color: #000;}
   }
 }
 
@@ -82,22 +82,22 @@ body{background: #f5f5f7}
       display: flex;
       align-items: flex-end;
       input{
-        height: 40px;
-        margin-top: 8px;
+        @include rem(height,40px);
+        @include rem(margin-top,8px);
         border: 1px solid #e4e7ed;
-        border-radius: 4px;
+        @include rem(border-radius,4px);
         &::placeholder{color: #c0c4cc;}
       }
       .btn-lv01{
-        height: 40px;
-        margin-left: 8px;
-        padding: 9px 19px;
-        border-radius: 4px;
+        @include rem(height,40px);
+        @include rem(margin-left,8px);
+        @include rem(padding,9px 19px);
+        @include rem(border-radius,4px);
         background: #f5f6f7;
-        .txt{font-size: 14px;}
+        .txt{@include rem(font-size,14px);}
       }
     }
-    &:not(:first-child){margin-top: 16px;}
+    &:not(:first-child){@include rem(margin-top,16px);}
     &.form-success{
       input{border-color:#28a745;}
       .message{color: #28a745;}
@@ -108,19 +108,53 @@ body{background: #f5f5f7}
     }
   }
   .form-tit{
-    padding-bottom: 16px;
+    @include rem(padding-bottom, 16px);
     border-bottom: 1px solid #e4e7ed;
-    .tit{font-size: 16px;font-weight: 500;color: #303133;}
+    .tit{@include rem(font-size,16px);font-weight: 500;color: #303133;}
   }
   .input-radio{
-    margin-top: 19px;
-    .selectbox{margin-top: 15px;}
+    @include rem(margin-top,19px);
+    .selectbox{@include rem(margin-top,15px);}
   }
-  + .form-group{margin-top: 32px;}
+  + .form-group{@include rem(margin-top,32px);}
 }
 
+/* 버튼 공통 */
+.btn-group{
+  text-align: center;
+  font-size: 0;
+  button{
+    display: inline-block;
+    @include rem(min-width, 120px);
+    @include rem(margin-top,24px);
+    @include rem(padding,8px 0 7px);
+    @include rem(border-radius,4px);
+    border: 1px solid #e4e7ed;
+    .txt{@include rem(font-size,14px);color: #fff;}
+    &.btn-confirm{background: #0778ca;border-color: #0778ca;}
+    &.btn-close{
+      .txt{color: #606266;}
+    }
+    + button{@include rem(margin-left,16px);}
+  }
+}
 
+@media screen and (min-wudth:1024px) and (max-width:1200px){
+  .login-content-wrap{
+    @include rem(width,1024px);
+  }
+
+}
 /*! mobile 버전 - css */
 @media (max-width:1023px){
+  .login-content-wrap{
+    @include rem(width,600px);
+  }
+}
 
-} 
+@media (max-width:750px){
+  .login-content-wrap{
+    @include rem(width,300px);
+    .inner{@include rem(width,200px)}
+  }
+}

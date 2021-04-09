@@ -310,7 +310,7 @@
     // 에러 또는 성공 메세지 출력 관련 스타일
     .message {
         display: block;
-        @include rem(margin-top,3px);
+        @include rem(margin-top,5px);
         @include rem(font-size, 12px);
         &.pass {
             color: blue;

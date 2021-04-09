@@ -3,11 +3,6 @@
 @import 'dev/_src/_scss/_setting';
 
 /*! pc & tablet 버전 - css */
-@media (min-width:1024px){}
-
-/*! mobile 버전 - css */
-@media (max-width:1023px){} 
-
 
 .gbutton_w{padding:0 0 100px;}
 .gbutton_w a{height:50px;line-height:50px;display:inline-block;padding:0 20px;background:#ddd;}
@@ -212,3 +207,7 @@ button.btn_cbotxt{min-width:152px}
 
 .no_sort .dt_thwpsp{padding:0;cursor: default;}
 .no_sort .dt_thwpsp:after{display:none;}
+
+
+/*! mobile 버전 - css */
+@media (max-width:1023px){} 

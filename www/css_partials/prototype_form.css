@@ -299,8 +299,8 @@
     border-radius: 0; }
   .input-txt .message {
     display: block;
-    margin-top: 3px;
-    margin-top: 0.3rem;
+    margin-top: 5px;
+    margin-top: 0.5rem;
     font-size: 12px;
     font-size: 1.2rem; }
     .input-txt .message.pass {
