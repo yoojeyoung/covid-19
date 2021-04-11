@@ -91,13 +91,13 @@ html(class=`${htmlClass}`, lang=`${language}`)
 
                 block contents
 
-                block footer
-                    // s: footer include
-                    if NODE_ENV === 'development'
-                        <!--#include virtual="/html/include/footer.html" -->
-                    else
-                        include /html/include/footer
-                    // e: footer include
+                //- block footer
+                //-     // s: footer include
+                //-     if NODE_ENV === 'development'
+                //-         <!--#include virtual="/html/include/footer.html" -->
+                //-     else
+                //-         include /html/include/footer
+                //-     // e: footer include
 
             //- 딤드용 이미지
             +dimm

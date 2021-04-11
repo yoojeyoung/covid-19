@@ -8,10 +8,539 @@ block contents
           .pgleft_wrap
             include /html/menu/_menulist
           .pgright_wrap
-            .pmap_list_w
+            .inner
               h2.tit 서울시 코로나19 상황판
+              // 최상위 테이블
+              section.content-wrap
+                .tbl-container01
+                  table.tbl-col01
+                    caption 공시자료: 번호,보고서명,등록일
+                    colgroup
+                      col(width="16.666%")
+                      col(width="16.666%")
+                      col(width="16.666%")
+                      col(width="16.666%")
+                      col(width="16.666%")
+                      col(width="16.666%")
+                    thead
+                        tr
+                          th(rowspan="2").border-r 구분
+                          th(rowspan="2").border-r 전일대비 증감
+                          th(colspan="4").border-b 확진환자 현황
+                        tr
+                          th 계
+                          th 격리중
+                          th 퇴원
+                          th 사망
+                    tbody
+                        tr
+                          td 구분
+                          td 665
+                          td 68,664
+                          td 17,130
+                          td 50,409
+                          td 1,125
+                        tr
+                          td 서울시
+                          td 141
+                          td 21,604
+                          td 5,832
+                          td 15,534
+                          td 238
+              // 검사 및 확진자 현황
+              section.content-wrap
+                .sec-tit
+                  spna.tit 검사 및 확진자 현황
+                .tbl-container01.scroll
+                    table.tbl-col-row01
+                        caption 검사결과테이블: 목표질환(비만,시각이상,청각이상,고혈압,신장질환,빈혈,당뇨병,이상지질혈증,만성신장질환,간장질환,폐결핵흉부질환,골다공증),검사항목,검진결과(20141013,20161020,20181211),단위,정상,주의,위험
+                        thead
+                            tr
+                                th(colspan="3" scope="col") 일자
+                                th(scope="col") 1월 1일
+                                th(scope="col") 1월 2일
+                                th(scope="col") 1월 3일
+                                th(scope="col") 1월 4일
+                                th(scope="col") 1월 5일
+                                th(scope="col") 1월 6일
+                                th(scope="col") 1월 7일
+                                th(scope="col") 1월 8일
+                                th(scope="col") 1월 9일
+                                th(scope="col") 1월 10일
+                                th(scope="col") 1월 11일
+                                th(scope="col") 1월 12일
+                                th(scope="col") 1월 13일
+                                th(scope="col") 1월 14일
+                                th(scope="col") 1월 15일
+                                th(scope="col") 통계
+                        tbody
+                            // 계측검사 - 비만
+                            tr
+                              th(rowspan="5").border-r 검사
+                              th(colspan="2").border-r 총계 
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966
+                              td 24,966 
+                            tr
+                              th(rowspan="2").border-r 보건소
+                              th.border-r 선별
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                              td 11,146
+                            tr
+                              th.border-r  임시
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                              td 12,209
+                            tr
+                              th(rowspan="2").border-r  의료기관
+                              th.border-r 민간
+                              td 1,611 
+                              td 1,611 
+                              td 1,611
+                              td 1,611 
+                              td 1,611
+                              td 1,611
+                              td 1,611
+                              td 1,611
+                              td 1,611
+                              td 1,611
+                              td 1,611
+                              td 1,611
+                              td 1,611
+                              td 1,611
+                              td 1,611
+                              td 1,611
+                            tr
+                              th.border-r 시립
+                              td - 
+                              td - 
+                              td -
+                              td - 
+                              td -
+                              td -
+                              td -
+                              td -
+                              td -
+                              td -
+                              td -
+                              td -
+                              td -
+                              td -
+                              td -
+                              td -
+                            tr
+                              th(colspan="3").border-r 확진자(명)
+                              td.point 300 
+                              td.point 300 
+                              td.point 300
+                              td.point 300 
+                              td.point 300
+                              td.point 300
+                              td.point 300
+                              td.point 300
+                              td.point 300
+                              td.point 300
+                              td.point 300
+                              td.point 300
+                              td.point 300
+                              td.point 300
+                              td.point 300
+                              td.point 300
+                            tr
+                              th(colspan="3").border-r (임시선별)
+                              td (32) 
+                              td (32) 
+                              td (32)
+                              td (32) 
+                              td (32)
+                              td (32)
+                              td (32)
+                              td (32)
+                              td (32)
+                              td (32)
+                              td (32)
+                              td (32)
+                              td (32)
+                              td (32)
+                              td (32)
+                              td (32)
+                            tr
+                              th(colspan="3").border-r 확진율
+                              td 1.0% 
+                              td 1.0% 
+                              td 1.0%
+                              td 1.0% 
+                              td 1.0%
+                              td 1.0%
+                              td 1.0%
+                              td 1.0%
+                              td 1.0%
+                              td 1.0%
+                              td 1.0%
+                              td 1.0%
+                              td 1.0%
+                              td 1.0%
+                              td 1.0%
+                              td 1.0%
+              // 주요 발생 원힌 별 현황
+              section.content-wrap
+                .sec-tit
+                  spna.tit 주요 발생 원인 별 현황
+                .column-group
+                  .column
+                    .tbl-container01
+                      table.tbl-col01.type02
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup
+                          col(width="50%")
+                          col(width="25%")
+                          col(width="25%")
+                        thead
+                            tr
+                              th 원인구분
+                              th 누적
+                              th 전일대비
+                        tbody
+                            tr
+                              td 해외유입
+                              td 698
+                              td 4
+                            tr
+                              td 강동구 소재 요양병원 관련
+                              td 11
+                              td 2
+                            tr
+                              td 은평구 소재 병원 관련
+                              td 10
+                              td 2
+                            tr
+                              td 구로구 소재 요양병원/요양원관련
+                              td 222
+                              td 1
+                            tr
+                              td 동대문구 소재 어르신 시설 관련
+                              td 43
+                              td 1
+                            tr
+                              td 관악구 소재 종교시설 관련
+                              td 18
+                              td 1
+                            tr
+                              td 송파구 소재 종교시설 관련
+                              td 1,166
+                              td 1
+                            tr
+                              td 기타 집단 감염
+                              td 6,793
+                              td 4
+                            tr
+                              td 기타 확진자 접촉
+                              td 6,591
+                              td 76
+                            tr
+                              td 타시도 확진자 접촉
+                              td 963
+                              td 4
+                            tr
+                              td 감염 경로 조사중
+                              td 4,915
+                              td 45
+                            tr
+                              td 소계
+                              td 21,604
+                              td 141
+                    .chart-area.wid-759
+                      .chart-graph
+              // 자치구별 확진환자 현황
+              section.content-wrap
+                .sec-tit 
+                  span.tit 자치구별 확진환자 현황
+                .tbl-container01
+                  table.tbl-col01.tbl-cell-equal
+                    caption 공시자료: 번호,보고서명,등록일
+                    thead
+                        tr
+                          th 구분
+                          th 랍계
+                          th 종로구
+                          th 중구
+                          th 용산구
+                          th 성동구
+                          th 광진구
+                          th 동대문구
+                          th 중랑구
+                          th 성북구
+                          th 도봉구
+                          th 노원구
+                          th 은평구
+                          th 서대문구
+                          th 마포구
+                          th 양천구
+                          th 강서구
+                          th 구로구
+                          th 금천구
+                          th 영등포구
+                          th 동작구
+                          th 관악구
+                          th 서초구
+                          th 강남구
+                          th 송파구
+                          th 강동구
+                          th 기타
+                    tbody
+                        tr
+                          td 전일누계
+                          td 21,463
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                          td 452 
+                        tr.bg-yellow
+                          td 1.9 증가
+                          td.point 141
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4 
+                          td.point 4
+                        tr
+                          td 합계
+                          td 21,604
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456 
+                          td 456
+              // 자가격리자 현황
+              section.content-wrap
+                .sec-tit 
+                  span.tit 자가격리자 현황
+                .tbl-container01
+                  table.tbl-col01
+                    caption 공시자료: 번호,보고서명,등록일
+                    colgroup
+                      col(width="12.5%")
+                      col(width="12.5%")
+                      col(width="12.5%")
+                      col(width="12.5%")
+                      col(width="12.5%")
+                      col(width="12.5%")
+                      col(width="12.5%")
+                      col(width="12.5%")
+                    thead
+                        tr
+                          th(rowspan="2").border-r 구분
+                          th(rowspan="2").border-r 계
+                          th(colspan="3").border-r.border-b 접촉자
+                          th(colspan="3").border-b 해외입국자
+                        tr
+                          th 소계
+                          th 감시중
+                          th.border-r 해제
+                          th 소계
+                          th 감시중
+                          th 해제
+                    tbody
+                        tr
+                          td 총계
+                          td 132,980 
+                          td 132,980 
+                          td 132,980 
+                          td 132,980 
+                          td 132,980 
+                          td 132,980 
+                          td 132,980 
+                        tr
+                          td 금일
+                          td 7,745
+                          td 7,745
+                          td 7,745
+                          td 7,745
+                          td 7,745
+                          td 7,745
+                          td 7,745
+              // 확진자 관리 현황
+              section.content-wrap
+                .sec-tit 
+                  span.tit 확진자 관리 현황
+                .column-group 
+                  .column
 
+                  .column
+                    .tbl-container01
+                      table.tbl-col01
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                        thead
+                            tr
+                              th(colspan="5").border-b 격리중
+                            tr
+                              th 격리총합
+                              th 병원
+                              th 생활치료센터
+                              th 자가치료
+                              th 기타
+                        tbody
+                            tr
+                              td 132,980
+                              td 2,345
+                              td 3,456
+                              td 456
+                              td 567
+                    .info-link
+                      span.txt 상세한 추가 정보는 아래의 링크로 이동하여 확인할 수 있습니다.
+                      a(type="button" href="#")
+                        span.txt 병상관리 사이트
+                .column-group 
+                  .column
 
-
+                  .column
+                    .tbl-container01
+                      table.tbl-col01
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                          col(width="12.5%")
+                        thead
+                            tr
+                              th(colspan="5").border-b 격리중
+                            tr
+                              th 격리총합
+                              th 병원
+                              th 생활치료센터
+                              th 자가치료
+                              th 기타
+                        tbody
+                            tr
+                              td 132,980
+                              td 2,345
+                              td 3,456
+                              td 456
+                              td 567
+                    .info-link
+                      span.txt 상세한 추가 정보는 아래의 링크로 이동하여 확인할 수 있습니다.
+                      a(type="button" href="#")
+                        span.txt 병상관리 사이트
+              // 일일 확진환자 현황
+              section.content-wrap
+                .sec-tit 
+                  span.tit 일일 확진환자 현황
+                .chart-area.wid-1468
+                  .chart-graph
 append script
   script.

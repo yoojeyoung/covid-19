@@ -137,8 +137,8 @@
 .prz_maptb{display:table;width:100%;@include rem(height,60px);}
 .prz_maptd{display:table-cell;vertical-align: middle;}
 .prz_maptd:after{display:block;content:'';clear:both;}
-.pmap_list_w{@include rem(padding,24px);}
-.pmap_list_w .tit{color: #1d2747;@include rem(font-size,24px);font-weight: bold;}
+.pgright_wrap .inner{@include rem(max-width,1612px);@include rem(margin,106px auto 0);@include rem(padding,0 24px);}
+.pgright_wrap .inner .tit{color: #1d2747;@include rem(font-size,24px);font-weight: bold;}
 .pmap_list{display:table;}
 .pmap_list > li{display:table-cell;vertical-align: middle;@include rem(padding-right,26px);position:relative;}
 .pmap_list > li:after{

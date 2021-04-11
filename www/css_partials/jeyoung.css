@@ -241,6 +241,83 @@ body {
     height: 56px;
     height: 5.6rem; }
 
+/* 공통영역 */
+section.content-wrap {
+  margin-top: 24px;
+  margin-top: 2.4rem;
+  padding: 24px;
+  padding: 2.4rem;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
+  section.content-wrap .sec-tit .tit {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold; }
+  section.content-wrap .sec-tit + .tbl-container01 {
+    margin-top: 24px;
+    margin-top: 2.4rem; }
+  section.content-wrap .column-group {
+    margin-top: 24px;
+    margin-top: 2.4rem; }
+    section.content-wrap .column-group .column {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    section.content-wrap .column-group .tbl-container01 {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    section.content-wrap .column-group .info-link {
+      width: 373px;
+      width: 37.3rem;
+      margin-left: 16px;
+      margin-left: 1.6rem;
+      padding: 24px 65px;
+      padding: 2.4rem 6.5rem;
+      border: 1px solid #e4e7ed; }
+      section.content-wrap .column-group .info-link .txt {
+        font-size: 14px;
+        font-size: 1.4rem;
+        color: #606266;
+        word-break: break-all;
+        word-wrap: break-word; }
+      section.content-wrap .column-group .info-link a {
+        max-width: 243px;
+        max-width: 24.3rem;
+        width: 100%;
+        margin-top: 21px;
+        margin-top: 2.1rem;
+        padding: 9px 5px;
+        padding: 0.9rem 0.5rem;
+        background: #dd682d;
+        text-align: center; }
+        section.content-wrap .column-group .info-link a .txt {
+          font-size: 14px;
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: #fff;
+          word-break: break-all; }
+  section.content-wrap .chart-area {
+    margin-top: 24px;
+    margin-top: 2.4rem;
+    background: #e5edf4; }
+    section.content-wrap .chart-area.wid-1468 {
+      max-width: 1468px;
+      max-width: 146.8rem;
+      height: 402px;
+      height: 40.2rem; }
+    section.content-wrap .chart-area.wid-759 {
+      width: 759px;
+      width: 75.9rem;
+      margin: 0 0 0 40px;
+      margin: 0 0 0 4rem;
+      padding: 54px 81px;
+      padding: 5.4rem 8.1rem;
+      border: 1px solid #cacdd5; }
+
 /*! mobile 버전 - css */
 @media (max-width: 1250px) {
   .login-content-wrap {

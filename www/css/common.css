@@ -3219,7 +3219,7 @@ a:before {
   width: 100%;
   border: 1px solid gray; }
   .tbl-col01 th {
-    background-color: cornsilk;
+    background-color: Ee5edf4;
     font-size: 24px;
     font-size: 2.4rem;
     border-right: 1px solid gray;
@@ -3801,9 +3801,8 @@ input.form_int.fatype2 {
 .layer_tit {
   font-size: 15px;
   line-height: 1.3;
-  color: #000;
-  text-align: left;
-  font-weight: 700; }
+  color: #303103;
+  text-align: left; }
 
 .layer_cont {
   position: relative;
@@ -3812,6 +3811,13 @@ input.form_int.fatype2 {
 
 .layer_cont_in {
   padding: 50px 20px; }
+  .layer_cont_in .content-txt {
+    margin-top: 18px;
+    margin-top: 1.8rem; }
+    .layer_cont_in .content-txt .txt {
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #909399; }
   .layer_cont_in.form-group {
     padding: 0 16px;
     padding: 0 1.6rem; }
@@ -3822,6 +3828,9 @@ input.form_int.fatype2 {
 .layer_box .btn-group {
   margin-top: 32px;
   margin-top: 3.2rem; }
+  .layer_box .btn-group.mt-25 {
+    margin-top: 25px;
+    margin-top: 2.5rem; }
 
 .layer_cont_in.type2 {
   padding: 20px 30px; }
@@ -4921,16 +4930,19 @@ button.btn_cbotxt {
   text-align: left; }
 
 .cform_titlow .cform_tit_in {
+  font-size: 32px;
+  font-size: 3.2rem;
   color: #2883c5;
   font-family: 'NanumSquare';
-  font-weight: 700; }
+  font-weight: 500; }
 
 .cform_titlow .sub-title {
   margin-top: 15px;
   margin-top: 1.5rem;
   font-size: 18px;
   font-size: 1.8rem;
-  color: #5e5e5e; }
+  color: #5e5e5e;
+  line-height: 1.5; }
 
 .cform_tit.has_ico02:after {
   background-image: url("../images/admin/ico_logpw.png");
@@ -5165,6 +5177,11 @@ body {
         color: #c0c4cc; }
       .form-group .input-txt .input-box input::placeholder {
         color: #c0c4cc; }
+      .form-group .input-txt .input-box input.mt-0 {
+        margin-top: 0; }
+      .form-group .input-txt .input-box input.h-56 {
+        height: 56px;
+        height: 5.6rem; }
     .form-group .input-txt .input-box .btn-lv01 {
       height: 40px;
       height: 4rem;
@@ -5251,6 +5268,12 @@ body {
     .btn-group button + button {
       margin-left: 16px;
       margin-left: 1.6rem; }
+    .btn-group button.wid-80 {
+      min-width: 80px;
+      min-width: 8rem; }
+    .btn-group button.wid-89 {
+      min-width: 89px;
+      min-width: 8.9rem; }
   .btn-group.right {
     margin: 0 16px;
     margin: 0 1.6rem;

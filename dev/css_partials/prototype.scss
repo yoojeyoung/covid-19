@@ -664,6 +664,7 @@
 /*! table - col 타입 1 */
 .tbl-container01{
     width: 100%;
+    &.scroll{white-space: nowrap;overflow: auto;}
 }
 // 셀 균등하게 만들때
 .tbl-cell-equal{
@@ -713,27 +714,42 @@
 // col 타입
 .tbl-col01{
     width:100%;
-    border:1px solid gray;
+    text-align: center;
     th{
-        background-color:cornsilk;
-        @include rem(font-size, 24px);
-        border-right:1px solid gray;
-        border-bottom:1px solid gray;
+        background-color:#e5edf4;
+        @include rem(padding,14px 16px);
+        @include rem(font-size, 14px);
+        font-weight: bold;
+        color: #2a2c2e;
+        text-align: center;
         &:last-child{
             border-right:0;
         }
+        &.border-b{border-bottom: 1px solid #c5d5e3};
+        &.border-r{border-right: 1px solid #c5d5e3};
     }
     td{
-        @include rem(font-size, 18px);
-        border-right:1px solid gray;
-        border-bottom:1px solid gray;
-        &:last-child{
-            border-right:0;
-        }
+        @include rem(padding,14px 16px);
+        @include rem(font-size, 14px);
+        color: #606266;
+        border-bottom:1px solid #e4e7ed;
+        &.point{color: #c12526;}
     }
-    tr:last-child{
-        td{
-            border-bottom:0;
+    tr{
+        &.bg-yellow{background: #fff9ea;}
+    }
+    &.type02{
+        text-align: left;
+        th{background-color: initial;text-align: left;}
+        tbody{
+            tr{
+                border-top: 1px solid #e4e7ed;
+                &:last-child{
+                    border-top: 1px solid #cacdd5;
+                    border-bottom: 1px solid #cacdd5;
+                }
+            }
+            td{border: none;}
         }
     }
 }
@@ -769,38 +785,30 @@
 // col + row 타입
 .tbl-col-row01{
     width:100%;
-    border:1px solid gray;
+    text-align: center;
     th{
-        background-color:cornsilk;
-        @include rem(font-size, 12px);
-        border-right:1px solid gray;
-        border-bottom:1px solid gray;
+        background-color:#e5edf4;
+        @include rem(padding,14px 8px);
+        @include rem(font-size, 14px);
+        font-weight: bold;
+        color: #2a2c2e;
         text-align: center;
+        &.border-t{border-top: 1px solid #e4e7ed};
+        &.border-r{border-right: 1px solid #e4e7ed};
     }
     td{
-        @include rem(font-size, 12px);
-        border-right:1px solid gray;
-        border-bottom:1px solid gray;
-        &:last-child{
-            border-right:0;
-        }
+        @include rem(padding,14px 8px);
+        @include rem(font-size, 14px);
+        color: #606266;
+        border-bottom:1px solid #e4e7ed;
+        &.border-r{border-right: 1px solid #e4e7ed};
+        &.point{color: #c12526;}
     }
     thead{
-        tr:first-child{
-            th:last-child{
-                border-right:0;
-            }
-        }
+        th{color: #000;}
     }
     tbody{
-        tr:last-child{
-            th{
-                border-bottom:0;
-            }
-            td{
-                border-bottom:0;
-            }
-        }
+        th{color: #606266;font-weight: normal;border-bottom:1px solid #e4e7ed;background: initial;}
     }
 }
 
