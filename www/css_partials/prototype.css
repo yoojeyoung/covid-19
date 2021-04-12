@@ -311,49 +311,40 @@
 /*! page navigation */
 .page-nav {
   width: 100%;
+  margin-top: 24px;
+  margin-top: 2.4rem;
   text-align: center;
   font-size: 0; }
   .page-nav .page-item-container {
-    display: inline-block;
-    margin: 0 34px;
-    margin: 0 3.4rem; }
+    display: inline-block; }
   .page-nav .page-item {
     display: inline-block;
-    width: 40px;
-    width: 4rem;
-    height: 48px;
-    height: 4.8rem; }
+    width: 22px;
+    width: 2.2rem;
+    height: 21px;
+    height: 2.1rem; }
     .page-nav .page-item .page-link {
       display: table;
       width: 100%;
       height: 100%; }
       .page-nav .page-item .page-link .txt {
         display: table-cell;
-        font-size: 18px;
-        font-size: 1.8rem;
-        color: gray;
-        -webkit-transition: color .3s ease-out;
-        -o-transition: color .3s ease-out;
-        transition: color .3s ease-out; }
-      .page-nav .page-item .page-link:hover:not(.on) .txt, .page-nav .page-item .page-link:focus:not(.on) .txt, .page-nav .page-item .page-link:active:not(.on) .txt {
-        color: blue; }
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: #606266; }
       .page-nav .page-item .page-link.on .txt {
-        color: blue;
+        color: #409eff;
         font-weight: 500; }
   .page-nav .page-util {
     display: inline-block;
-    width: 48px;
-    width: 4.8rem;
-    height: 48px;
-    height: 4.8rem; }
+    width: 22px;
+    width: 2.2rem;
+    height: 21px;
+    height: 2.1rem; }
     .page-nav .page-util .page-link {
       display: table;
       width: 100%;
-      height: 100%;
-      border: 1px solid #999999;
-      -webkit-transition: border .3s ease-out;
-      -o-transition: border .3s ease-out;
-      transition: border .3s ease-out; }
+      height: 100%; }
     .page-nav .page-util .ico-area {
       display: table-cell;
       width: 100%; }
@@ -364,10 +355,10 @@
       width: 0.8rem;
       height: 8px;
       height: 0.8rem;
-      border-top: 2px solid #000000;
-      border-top: 0.2rem solid #000000;
-      border-right: 2px solid #000000;
-      border-right: 0.2rem solid #000000;
+      border-top: 1px solid #606266;
+      border-top: 0.1rem solid #606266;
+      border-right: 1px solid #606266;
+      border-right: 0.1rem solid #606266;
       -webkit-transition: border .3s ease-out;
       -o-transition: border .3s ease-out;
       transition: border .3s ease-out; }
@@ -378,14 +369,6 @@
         margin-right: -2px;
         margin-right: -0.2rem;
         left: 0; }
-        .page-nav .page-util .ico-page-arrow.left:first-child {
-          -webkit-transition: left .3s ease-out;
-          -o-transition: left .3s ease-out;
-          transition: left .3s ease-out; }
-        .page-nav .page-util .ico-page-arrow.left:last-child {
-          -webkit-transition: left .3s ease-out;
-          -o-transition: left .3s ease-out;
-          transition: left .3s ease-out; }
       .page-nav .page-util .ico-page-arrow.right {
         -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
@@ -393,46 +376,12 @@
         margin-left: -2px;
         margin-left: -0.2rem;
         right: 0; }
-        .page-nav .page-util .ico-page-arrow.right:first-child {
-          -webkit-transition: right .3s ease-out;
-          -o-transition: right .3s ease-out;
-          transition: right .3s ease-out; }
-        .page-nav .page-util .ico-page-arrow.right:last-child {
-          -webkit-transition: right .3s ease-out;
-          -o-transition: right .3s ease-out;
-          transition: right .3s ease-out; }
     .page-nav .page-util.prev {
       margin-left: 8px;
       margin-left: 0.8rem; }
     .page-nav .page-util.next {
       margin-right: 8px;
       margin-right: 0.8rem; }
-    .page-nav .page-util .page-link:hover:not(.disabled) .ico-page-arrow.left {
-      left: -3px; }
-    .page-nav .page-util .page-link:hover:not(.disabled) .ico-page-arrow.right {
-      right: -3px; }
-    .page-nav .page-util .page-link:hover:not(.disabled), .page-nav .page-util .page-link:focus:not(.disabled), .page-nav .page-util .page-link:active:not(.disabled) {
-      border-color: blue; }
-      .page-nav .page-util .page-link:hover:not(.disabled) .ico-page-arrow, .page-nav .page-util .page-link:focus:not(.disabled) .ico-page-arrow, .page-nav .page-util .page-link:active:not(.disabled) .ico-page-arrow {
-        border-color: blue; }
-    .page-nav .page-util .page-link.disabled {
-      opacity: 0.5;
-      pointer-events: none;
-      position: relative;
-      z-index: -1; }
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        .page-nav .page-util .page-link.disabled {
-          /* IE10+ CSS styles go here */ }
-          .page-nav .page-util .page-link.disabled:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background: #ffffff;
-            opacity: 0;
-            z-index: 1; } }
 
 /*! page navigation - type02 */
 .page-nav.type02 .page-item-container .page-item:first-child {
@@ -705,11 +654,30 @@
     font-size: 14px;
     font-size: 1.4rem;
     color: #606266;
-    border-bottom: 1px solid #e4e7ed; }
+    border-bottom: 1px solid #e4e7ed;
+    line-height: 1.5; }
     .tbl-col01 td.point {
       color: #c12526; }
+    .tbl-col01 td.point02 {
+      background: #fff6f8; }
+    .tbl-col01 td.border-r {
+      border-right: 1px solid #e4e7ed; }
+    .tbl-col01 td a {
+      display: inline-block;
+      width: 90%;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      overflow: hidden; }
   .tbl-col01 tr.bg-yellow {
     background: #fff9ea; }
+  .tbl-col01 tbody th {
+    color: #606266;
+    font-weight: normal;
+    border-bottom: 1px solid #e4e7ed;
+    background: initial; }
+    .tbl-col01 tbody th.border-r {
+      border-right: 1px solid #e4e7ed; }
   .tbl-col01.type02 {
     text-align: left; }
     .tbl-col01.type02 th {
@@ -722,6 +690,10 @@
         border-bottom: 1px solid #cacdd5; }
     .tbl-col01.type02 tbody td {
       border: none; }
+  .tbl-col01.board {
+    text-align: left; }
+    .tbl-col01.board th {
+      text-align: left; }
 
 .tbl-row01 {
   width: 100%;

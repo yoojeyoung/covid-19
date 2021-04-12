@@ -151,7 +151,63 @@
                 </ul>
               </div>
             </div>
-            <div class="pgright_wrap"></div>
+            <div class="pgright_wrap">
+              <div class="inner">
+                <h2 class="tit">현황 자료 게시판</h2>
+                <!-- 최상위 테이블-->
+                <section class="content-wrap">
+                  <div class="detail-view-container">
+                    <div class="white-form">
+                      <span class="type01">제목</span>
+                      <span class="type02">
+                        <div class="input-wrap">
+                          <input type="text" placeholder="제목을 입력해주세요">
+                        </div>
+                      </span>
+                    </div>
+                    <div class="white-form">
+                      <span class="type01">내용</span>
+                      <span class="type02">
+                        <div class="input-wrap">
+                          <textarea name="" cols="30" rows="10" placeholder="내용을 입력해주세요"></textarea>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="white-form pb-0">
+                      <span class="type01">첨부파일</span>
+                      <span class="type02 ml-30">
+                        <div class="input-wrap">
+                          <label class="upload-btn" for="upload-file">첨부파일 추가</label>
+                          <input type="file" id="upload-file">
+                        </div>
+                      </span>
+                    </div>
+                    <div class="upload-list type02">
+                      <span class="point-txt">최대 용량 2mb 이하의 파일을 업로드해주세요</span>
+                      <a class="upload-item" href="">
+                        <span class="txt">보건소 선별 검사실적_.0305.xls</span>
+                      </a>
+                      <a class="upload-item" href="">
+                        <span class="txt">보건소 선별 검사실적_.0305.xls</span>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <div class="btn-group type02">
+                  <a class="btn-list" href="">
+                    <span class="txt">목록</span>
+                  </a>
+                  <div class="white-btn-area">
+                    <a class="btn-modify" href="">
+                      <span class="txt">취소</span>
+                    </a>
+                    <a class="btn-white" href="">
+                      <span class="txt">저장</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -160,39 +216,7 @@
   <div class="dimm">
     <img src="../../images/common/blank_size_100.png" alt="">
   </div>
-  <script>
-    //- CTC.rockMenu("#plm01,#plm01_01");
-
-    $(function() {
-      // 테이블 액션 - 전체 선택
-      $("#check_total").on("click", function() {
-        var $this = $(this),
-          $t_p = $this.parents(".data_htb");
-        if ($this.prop("checked")) {
-          $t_p.find(".frdchk").prop("checked", true);
-        } else {
-          $t_p.find(".frdchk").prop("checked", false);
-        }
-      });
-      // 테이블 액션 - 개별 선택
-      $(".data_htb tbody .frdchk").on("click", function() {
-        var $this = $(this),
-          $t_p = $this.parents("tr");
-        if ($this.prop("checked")) {
-          $t_p.addClass("active");
-        } else {
-          $t_p.removeClass("active");
-        }
-      });
-
-      // 체크박스 for 퍼블확인용
-      $("#data_sort_table .fitem.oneitem").each(function(index) {
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id", "check_0" + index);
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for", "check_0" + index);
-      });
-    });
-
-  </script>
+  <script></script>
 </body>
 
 </html>

@@ -1,0 +1,68 @@
+extends /_src/_pug/_extend_html5
+
+block contents
+  #container
+    #content(role='main')
+      .page_wrap.page_layout
+        section.pgmid_zone
+          .pgleft_wrap
+            include /html/menu/_menulist
+          .pgright_wrap
+            .inner
+              h2.tit 현황 자료 게시판
+              // 최상위 테이블
+              section.content-wrap
+                .detail-view-container 
+                  .view-title 
+                    span.number 164
+                    span.tit 의료기관 선별 검사실적 취합 자료 공유
+                  .view-content
+                    .data-area 
+                      span.data 2021.3.6
+                      span.name 홍길동
+                    p iOS 14.4 버전을 사용하는 아이폰에서 파일업로드시 오류가 발생하고 있습니다.<br>오류가 발생할 경우 PC를 통해 서비스를 이용해 주시기 바랍니다. 해당사항에 대해 조치중에 있으묘, 4월 초 완료 예정입니다. 이용에 불푠을 드려 대단히 죄송합니다.
+                    p
+                      span.num 1.
+                      .input-radio.right
+                        input(type="radio" id="radio211" name="radio211")
+                        label(for="radio211")
+                          span.txt 설치장소 : 정촌면사무소(경남 진주지 정촌로 57)
+                      .input-radio.right
+                        input(type="radio" id="radio212" name="radio212")
+                        label(for="radio212")
+                          span.txt 운영시간 : 매일(24시간)
+                      .input-radio.right
+                        input(type="radio" id="radio213" name="radio213")
+                        label(for="radio213")
+                          span.txt 비고 : 제적, 가족관계 및 부동산 등기부 등본 법원 승인 후 발급가능
+                    p
+                      span.num 2.
+                      .input-radio.right
+                        input(type="radio" id="radio214" name="radio214")
+                        label(for="radio214")
+                          span.txt 설치장소 : 국민건강보험공단 진주산청지사(경남 진주시 소호로112)
+                      .input-radio.right
+                        input(type="radio" id="radio215" name="radio215")
+                        label(for="radio215")
+                          span.txt 운영시간 : 월~금, 휴일제외 (09:00 ~ 18:00)
+                      .input-radio.right
+                        input(type="radio" id="radio216" name="radio216")
+                        label(for="radio216")
+                          span.txt 비고 : 제적, 가족관계 및 부동산 등기부 등본 법원 승인 후 발급가능
+                  .upload-list 
+                    a(href="").upload-item
+                      span.txt 보건소 선별 검사실적_.0305.xls
+                    a(href="").upload-item
+                      span.txt 보건소 선별 검사실적_.0305.xls
+              .btn-group.type02
+                a(href="").btn-list
+                  span.txt 목록
+                .white-btn-area
+                  a(href="").btn-delete
+                    span.txt 삭제
+                  a(href="").btn-modify
+                    span.txt 수정
+                  a(href="").btn-white
+                    span.txt 글쓰기
+append script
+  script.

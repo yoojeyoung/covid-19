@@ -16,7 +16,7 @@
 
 /* // [loading] layout.css이나 reset.css 둘중 아무 파일 하단에 추가  */
 
-.page_wrap{min-width:1280px;background:#f2f2f2;}
+.page_wrap{/*min-width:1280px;*/background:#f2f2f2;}
 .page_wrap.page_layout{}
 .page_wrap.page_layout:after{display:block;content:'';clear:both;}
 .front_body{background:#f2f2f2;}

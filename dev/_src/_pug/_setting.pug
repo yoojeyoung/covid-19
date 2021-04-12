@@ -81,13 +81,6 @@ mixin tab-nav(tabType, active, tabs)
 mixin page-nav(type, addClass)
     //- 추가 클래스가 있을 경우 붙이기 addClass
     .page-nav(class=addClass)
-        .page-util.first
-            // page-link 에 disabled 클래스 있음
-            a.page-link(href="#none" role="button")
-                span.hide-txt 첫 페이지
-                span.ico-area(aria-hidden="true")
-                    i.ico-page-arrow.left
-                    i.ico-page-arrow.left
         .page-util.prev
             a.page-link(href="#none" role="button")
                 span.hide-txt 이전 페이지
@@ -127,12 +120,6 @@ mixin page-nav(type, addClass)
             a.page-link(href="#none" role="button")
                 span.hide-txt 다음 페이지
                 span.ico-area(aria-hidden="true")
-                    i.ico-page-arrow.right
-        .page-util.last
-            a.page-link(href="#none" role="button")
-                span.hide-txt 마지막 페이지
-                span.ico-area(aria-hidden="true")
-                    i.ico-page-arrow.right
                     i.ico-page-arrow.right
 
 

@@ -240,6 +240,55 @@ body {
   .btn-group.h-56 button {
     height: 56px;
     height: 5.6rem; }
+  .btn-group.type02 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .btn-group.type02 .white-btn-area {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .btn-group.type02 .white-btn-area a {
+        min-width: 66px;
+        min-width: 6.6rem;
+        width: 100%;
+        padding: 9px 5px;
+        padding: 0.9rem 0.5rem;
+        border: 1px solid #e4e7ed;
+        background: #fff; }
+        .btn-group.type02 .white-btn-area a.btn-white {
+          min-width: 79px;
+          min-width: 7.9rem;
+          background: #0778ca; }
+          .btn-group.type02 .white-btn-area a.btn-white .txt {
+            color: #fff; }
+        .btn-group.type02 .white-btn-area a.btn-delete {
+          background: #dc3545; }
+          .btn-group.type02 .white-btn-area a.btn-delete .txt {
+            color: #fff; }
+        .btn-group.type02 .white-btn-area a + a {
+          margin-left: 16px;
+          margin-left: 1.6rem; }
+    .btn-group.type02 a {
+      max-width: 66px;
+      max-width: 6.6rem;
+      width: 100%;
+      padding: 9px 5px;
+      padding: 0.9rem 0.5rem;
+      border: 1px solid #e4e7ed;
+      border-radius: 4px;
+      border-radius: 0.4rem;
+      background: #fff; }
+      .btn-group.type02 a .txt {
+        font-size: 14px;
+        font-size: 1.4rem;
+        color: #606266; }
 
 /* 공통영역 */
 section.content-wrap {
@@ -249,14 +298,47 @@ section.content-wrap {
   padding: 2.4rem;
   background: #fff;
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
-  section.content-wrap .sec-tit .tit {
-    font-size: 16px;
-    font-size: 1.6rem;
-    font-weight: bold; }
-  section.content-wrap .sec-tit + .tbl-container01 {
-    margin-top: 24px;
-    margin-top: 2.4rem; }
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  /* 현황 자료 게시판 */ }
+  section.content-wrap .sec-tit {
+    position: relative; }
+    section.content-wrap .sec-tit .tit {
+      font-size: 16px;
+      font-size: 1.6rem;
+      font-weight: bold; }
+    section.content-wrap .sec-tit .btn-area {
+      position: absolute;
+      top: -10px;
+      top: -1rem;
+      right: 16px;
+      right: 1.6rem;
+      display: table; }
+      section.content-wrap .sec-tit .btn-area .data {
+        display: table-cell;
+        font-size: 12px;
+        font-size: 1.2rem;
+        vertical-align: bottom; }
+    section.content-wrap .sec-tit .btn-download {
+      display: table-cell;
+      max-width: 85px;
+      max-width: 8.5rem;
+      width: 100%;
+      margin-left: 16px;
+      margin-left: 1.6rem;
+      padding: 11px 10px;
+      padding: 1.1rem 1rem;
+      border: 1px solid #0778ca;
+      border-radius: 4px;
+      border-radius: 0.4rem; }
+      section.content-wrap .sec-tit .btn-download .txt {
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: #0778ca;
+        word-wrap: break-word;
+        word-break: break-all; }
+    section.content-wrap .sec-tit + .tbl-container01 {
+      margin-top: 24px;
+      margin-top: 2.4rem; }
   section.content-wrap .column-group {
     margin-top: 24px;
     margin-top: 2.4rem; }
@@ -317,6 +399,169 @@ section.content-wrap {
       padding: 54px 81px;
       padding: 5.4rem 8.1rem;
       border: 1px solid #cacdd5; }
+  section.content-wrap .detail-view-container .view-title {
+    padding-bottom: 26px;
+    padding-bottom: 2.6rem;
+    border-bottom: 1px solid #e4e7ed; }
+    section.content-wrap .detail-view-container .view-title span {
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #303133; }
+    section.content-wrap .detail-view-container .view-title .tit {
+      margin-left: 20px;
+      margin-left: 2rem;
+      font-size: 16px;
+      font-size: 1.6rem;
+      font-weight: bold; }
+  section.content-wrap .detail-view-container .view-content {
+    margin: 26px 0 0; }
+    section.content-wrap .detail-view-container .view-content .data-area {
+      margin-bottom: 33px;
+      margin-bottom: 3.3rem;
+      text-align: right; }
+      section.content-wrap .detail-view-container .view-content .data-area span {
+        font-size: 14px;
+        font-size: 1.4rem;
+        color: #303133; }
+        section.content-wrap .detail-view-container .view-content .data-area span + span {
+          margin-left: 20px;
+          margin-left: 2rem; }
+    section.content-wrap .detail-view-container .view-content p {
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #303133;
+      line-height: 1.5; }
+      section.content-wrap .detail-view-container .view-content p + p {
+        margin-top: 30px;
+        margin-top: 3rem; }
+    section.content-wrap .detail-view-container .view-content .input-radio {
+      margin-top: 5px;
+      margin-top: 0.5rem; }
+      section.content-wrap .detail-view-container .view-content .input-radio .txt {
+        color: #303133; }
+  section.content-wrap .detail-view-container .upload-list {
+    margin: 30px 0 28px;
+    margin: 3rem 0 2.8rem; }
+    section.content-wrap .detail-view-container .upload-list .upload-item {
+      position: relative;
+      display: block;
+      color: #2f80ed;
+      text-decoration: underline; }
+      section.content-wrap .detail-view-container .upload-list .upload-item .txt {
+        font-size: 12px;
+        font-size: 1.2rem;
+        word-break: break-all;
+        word-wrap: break-word; }
+      section.content-wrap .detail-view-container .upload-list .upload-item + .upload-item {
+        margin-top: 6px;
+        margin-top: 0.6rem; }
+    section.content-wrap .detail-view-container .upload-list.type02 {
+      margin-top: 8px;
+      margin-top: 0.8rem;
+      padding-left: 100px;
+      padding-left: 10rem; }
+      section.content-wrap .detail-view-container .upload-list.type02 .point-txt {
+        display: inline-block;
+        margin-bottom: 11px;
+        margin-bottom: 1.1rem;
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: #909399; }
+  section.content-wrap .detail-view-container .white-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 24px 0 24px 24px;
+    padding: 2.4rem 0 2.4rem 2.4rem;
+    border-bottom: 1px solid #e4e7ed; }
+    section.content-wrap .detail-view-container .white-form span {
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #303133; }
+    section.content-wrap .detail-view-container .white-form .type02 {
+      width: 100%;
+      margin-left: 55px;
+      margin-left: 5.5rem;
+      -webkit-box-flex: 1;
+      -webkit-flex: auto;
+          -ms-flex: auto;
+              flex: auto; }
+      section.content-wrap .detail-view-container .white-form .type02 input {
+        width: 100%;
+        min-height: 40px;
+        min-height: 4rem;
+        padding-left: 12px;
+        padding-left: 1.2rem;
+        border: 1px solid #e4e7ed;
+        border-radius: 4px;
+        border-radius: 0.4rem; }
+        section.content-wrap .detail-view-container .white-form .type02 input::-webkit-input-placeholder {
+          color: #c0c4cc; }
+        section.content-wrap .detail-view-container .white-form .type02 input::-moz-placeholder {
+          color: #c0c4cc; }
+        section.content-wrap .detail-view-container .white-form .type02 input:-ms-input-placeholder {
+          color: #c0c4cc; }
+        section.content-wrap .detail-view-container .white-form .type02 input::-ms-input-placeholder {
+          color: #c0c4cc; }
+        section.content-wrap .detail-view-container .white-form .type02 input::placeholder {
+          color: #c0c4cc; }
+      section.content-wrap .detail-view-container .white-form .type02 input[type="file"] {
+        position: absolute;
+        width: 1px;
+        width: 0.1rem;
+        height: 1px;
+        height: 0.1rem;
+        padding: 0;
+        margin: -1px;
+        margin: -0.1rem;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0; }
+      section.content-wrap .detail-view-container .white-form .type02 .upload-btn {
+        display: inline-block;
+        max-width: 113px;
+        max-width: 11.3rem;
+        width: 100%;
+        height: 32px;
+        height: 3.2rem;
+        padding: 7px 5px 5px;
+        padding: 0.7rem 0.5rem 0.5rem;
+        color: #fff;
+        background: #0778ca;
+        border-radius: 4px;
+        border-radius: 0.4rem;
+        text-align: center; }
+      section.content-wrap .detail-view-container .white-form .type02 textarea {
+        width: 100%;
+        min-height: 263px;
+        min-height: 26.3rem;
+        padding: 12px 8px;
+        padding: 1.2rem 0.8rem;
+        border: 1px solid #e4e7ed;
+        border-radius: 4px;
+        border-radius: 0.4rem; }
+        section.content-wrap .detail-view-container .white-form .type02 textarea::-webkit-input-placeholder {
+          color: #c0c4cc; }
+        section.content-wrap .detail-view-container .white-form .type02 textarea::-moz-placeholder {
+          color: #c0c4cc; }
+        section.content-wrap .detail-view-container .white-form .type02 textarea:-ms-input-placeholder {
+          color: #c0c4cc; }
+        section.content-wrap .detail-view-container .white-form .type02 textarea::-ms-input-placeholder {
+          color: #c0c4cc; }
+        section.content-wrap .detail-view-container .white-form .type02 textarea::placeholder {
+          color: #c0c4cc; }
+      section.content-wrap .detail-view-container .white-form .type02.ml-30 {
+        margin-left: 30px;
+        margin-left: 3rem; }
+    section.content-wrap .detail-view-container .white-form:nth-child(3) {
+      border-bottom: none; }
+    section.content-wrap .detail-view-container .white-form.pb-0 {
+      padding-bottom: 0; }
 
 /*! mobile 버전 - css */
 @media (max-width: 1250px) {

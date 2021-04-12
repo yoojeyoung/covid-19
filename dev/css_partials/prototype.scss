@@ -304,19 +304,20 @@
 // .page-nav-container{}
 .page-nav{
     width:100%;
+    @include rem(margin-top,24px);
     text-align:center;
     font-size:0;
 
     .page-item-container{
         display:inline-block;
-        @include rem(margin, 0 34px);
+        // @include rem(margin, 0 34px);
     }
 
     // 페이징 숫자 영역
     .page-item{
         display:inline-block;
-        @include rem(width, 40px);
-        @include rem(height, 48px);
+        @include rem(width, 22px);
+        @include rem(height, 21px);
 
         .page-link{
             display:table;
@@ -324,20 +325,12 @@
             height:100%;
             .txt{
                 display:table-cell;
-                @include rem(font-size, 18px);
-                color: gray;
-                transition: color .3s ease-out;
-            }
-            &:hover:not(.on),
-            &:focus:not(.on),
-            &:active:not(.on){
-                .txt{
-                    color: blue;
-                }
+                @include rem(font-size, 12px);
+                color: #606266;
             }
             &.on{
                 .txt{
-                    color: blue;
+                    color: #409eff;
                     font-weight: 500;
                 }
             }
@@ -347,15 +340,13 @@
     // 페이징 버튼 영역
     .page-util{
         display:inline-block;
-        @include rem(width, 48px);
-        @include rem(height, 48px);
+        @include rem(width, 22px);
+        @include rem(height, 21px);
 
         .page-link{
             display:table;
             width:100%;
             height:100%;
-            border:1px solid #999999;
-            transition: border .3s ease-out;
         }
 
         .ico-area{
@@ -367,8 +358,8 @@
             position: relative;
             @include rem(width, 8px);
             @include rem(height, 8px);
-            @include rem(border-top, 2px solid #000000);
-            @include rem(border-right, 2px solid #000000);
+            @include rem(border-top, 1px solid #606266);
+            @include rem(border-right, 1px solid #606266);
             transition: border .3s ease-out;
             &.left{
                 transform: rotate(-135deg);
@@ -376,12 +367,6 @@
 
                 // hover 애니메이션 관련 소스 필요 없을 경우 제거
                 left:0;
-                &:first-child{
-                    transition: left .3s ease-out;
-                }
-                &:last-child{
-                    transition: left .3s ease-out;
-                }
             }
             &.right{
                 transform: rotate(45deg);
@@ -389,12 +374,6 @@
 
                 // hover 애니메이션 관련 소스 필요 없을 경우 제거
                 right:0;
-                &:first-child{
-                    transition: right .3s ease-out;
-                }
-                &:last-child{
-                    transition: right .3s ease-out;
-                }
             }
         }
 
@@ -407,31 +386,20 @@
 
         // 페이징 버튼 - 화살표 애니메이션 - 필요 없을 시 제거하기
         .page-link{
-            &:hover:not(.disabled){
-                .ico-page-arrow{
-                    &.left{
-                        left:-3px;
-                    }
-                    &.right{
-                        right:-3px;
-                    }
-                }
-            }
+            // &:hover:not(.disabled){
+            //     .ico-page-arrow{
+            //         &.left{
+            //             left:-3px;
+            //         }
+            //         &.right{
+            //             right:-3px;
+            //         }
+            //     }
+            // }
         }
 
         // 페이징 버튼 - 기본 마우스 hover 속성
-        .page-link{
-            &:hover:not(.disabled),
-            &:focus:not(.disabled),
-            &:active:not(.disabled){
-                border-color: blue;
-                .ico-page-arrow{
-                    border-color: blue;
-                }
-            }
-            // disabled 속성
-            @include ui-disabled();
-        }
+        
     }
 }
 
@@ -733,10 +701,30 @@
         @include rem(font-size, 14px);
         color: #606266;
         border-bottom:1px solid #e4e7ed;
+        line-height: 1.5;
         &.point{color: #c12526;}
+        &.point02{background:#fff6f8};
+        &.border-r{border-right: 1px solid #e4e7ed};
+        a{
+            display: inline-block;
+            // @include rem(max-width,calc(100% - 60px));
+            width: 90%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
     }
     tr{
         &.bg-yellow{background: #fff9ea;}
+    }
+    tbody{
+        th{
+            color: #606266;
+            font-weight: normal;
+            border-bottom:1px solid #e4e7ed;
+            background: initial;
+            &.border-r{border-right: 1px solid #e4e7ed};
+        }
     }
     &.type02{
         text-align: left;
@@ -750,6 +738,12 @@
                 }
             }
             td{border: none;}
+        }
+    }
+    &.board{
+        text-align:left;
+        th{
+            text-align: left;
         }
     }
 }
