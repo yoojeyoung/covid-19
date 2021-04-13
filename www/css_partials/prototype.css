@@ -71,11 +71,15 @@ a:before {
     .mobile-mode-dimm-container .mobile-mode-box {
       position: relative;
       padding: 20px;
+      padding: 2rem;
       margin: 0 40px;
+      margin: 0 4rem;
       background: #fff;
       border-radius: 10px;
+      border-radius: 1rem;
       border: 2px solid blue;
-      font-size: 24px; } }
+      font-size: 24px;
+      font-size: 2.4rem; } }
 
 /*! skipnav */
 .skipnav {
@@ -201,6 +205,7 @@ a:before {
   display: block;
   background-color: bisque;
   padding: 8px 20px 8px 20px;
+  padding: 0.8rem 2rem 0.8rem 2rem;
   border-bottom: 1px solid #000000; }
   .accrodion-btn .hide-txt.close {
     display: inline-block; }
@@ -228,6 +233,7 @@ a:before {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     font-size: 16px;
+    font-size: 1.6rem;
     color: black;
     font-weight: 700;
     line-height: 1.35;
@@ -239,10 +245,15 @@ a:before {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 8px;
+    width: 0.8rem;
     height: 8px;
+    height: 0.8rem;
     margin: -4px 2px 0 2px;
+    margin: -0.4rem 0.2rem 0 0.2rem;
     border-top: 2px solid #000000;
+    border-top: 0.2rem solid #000000;
     border-right: 2px solid #000000;
+    border-right: 0.2rem solid #000000;
     -webkit-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
             transform: rotate(135deg); }
@@ -253,9 +264,13 @@ a:before {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     min-width: 40px;
+    min-width: 4rem;
     font-size: 11px;
+    font-size: 1.1rem;
     padding: 4px 10px 4px 10px;
+    padding: 0.4rem 1rem 0.4rem 1rem;
     border-radius: 20px;
+    border-radius: 2rem;
     text-align: center;
     color: #ffffff;
     font-weight: 500;
@@ -269,6 +284,7 @@ a:before {
 .accrodion-content {
   display: none;
   padding: 38px 0 38px 0;
+  padding: 3.8rem 0 3.8rem 0;
   background-color: cornsilk; }
 
 .accrodion-item.open .accrodion-btn .hide-txt.close {
@@ -285,11 +301,13 @@ a:before {
   display: inline-block;
   text-align: center;
   padding: 11px 15px 12px 15px;
+  padding: 1.1rem 1.5rem 1.2rem 1.5rem;
   -webkit-transition: all .3s ease-out;
   -o-transition: all .3s ease-out;
   transition: all .3s ease-out; }
   .btn-lv01 .txt {
     font-size: 20px;
+    font-size: 2rem;
     line-height: 1.4; }
   .btn-lv01.blue {
     border: 1px solid blue;
@@ -300,7 +318,8 @@ a:before {
     background-color: #ffffff;
     color: red; }
   .btn-lv01 [class^="ico-"] {
-    margin-left: 10px; }
+    margin-left: 10px;
+    margin-left: 1rem; }
 
 /*! 기본 버튼 - 컨테이너 */
 /*! 기본 버튼 - 정렬 */
@@ -314,10 +333,12 @@ a:before {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-right: -5px; }
+    margin-right: -5px;
+    margin-right: -0.5rem; }
     .btn-align-type01.spacebetween01 a,
     .btn-align-type01.spacebetween01 button {
       margin-right: 5px;
+      margin-right: 0.5rem;
       -webkit-box-flex: 1;
       -webkit-flex: 1 1 auto;
           -ms-flex: 1 1 auto;
@@ -327,9 +348,13 @@ a:before {
 .ico-arrow-style {
   display: inline-block;
   width: 10px;
+  width: 1rem;
   height: 10px;
+  height: 1rem;
   border-top: 2px solid #000000;
-  border-right: 2px solid #000000; }
+  border-top: 0.2rem solid #000000;
+  border-right: 2px solid #000000;
+  border-right: 0.2rem solid #000000; }
   .ico-arrow-style.top {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
@@ -376,7 +401,9 @@ a:before {
   display: inline-block;
   position: relative;
   width: 16px;
+  width: 1.6rem;
   height: 16px;
+  height: 1.6rem;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg); }
@@ -409,9 +436,12 @@ a:before {
 .ico-download-black {
   display: inline-block;
   width: 18px;
+  width: 1.8rem;
   height: 17px;
+  height: 1.7rem;
   background: url("../images/common/ico_download_dark.png") no-repeat left center;
-  background-size: 18px 17px; }
+  background-size: 18px 17px;
+  background-size: 1.8rem 1.7rem; }
 
 .ico-download-black02 {
   display: inline-block;
@@ -429,6 +459,7 @@ a:before {
 .page-nav {
   width: 100%;
   margin-top: 24px;
+  margin-top: 2.4rem;
   text-align: center;
   font-size: 0; }
   .page-nav .page-item-container {
@@ -436,7 +467,9 @@ a:before {
   .page-nav .page-item {
     display: inline-block;
     width: 22px;
-    height: 21px; }
+    width: 2.2rem;
+    height: 21px;
+    height: 2.1rem; }
     .page-nav .page-item .page-link {
       display: table;
       width: 100%;
@@ -444,6 +477,7 @@ a:before {
       .page-nav .page-item .page-link .txt {
         display: table-cell;
         font-size: 12px;
+        font-size: 1.2rem;
         color: #606266; }
       .page-nav .page-item .page-link.on .txt {
         color: #409eff;
@@ -451,7 +485,9 @@ a:before {
   .page-nav .page-util {
     display: inline-block;
     width: 22px;
-    height: 21px; }
+    width: 2.2rem;
+    height: 21px;
+    height: 2.1rem; }
     .page-nav .page-util .page-link {
       display: table;
       width: 100%;
@@ -463,9 +499,13 @@ a:before {
       display: inline-block;
       position: relative;
       width: 8px;
+      width: 0.8rem;
       height: 8px;
+      height: 0.8rem;
       border-top: 1px solid #606266;
+      border-top: 0.1rem solid #606266;
       border-right: 1px solid #606266;
+      border-right: 0.1rem solid #606266;
       -webkit-transition: border .3s ease-out;
       -o-transition: border .3s ease-out;
       transition: border .3s ease-out; }
@@ -474,37 +514,46 @@ a:before {
             -ms-transform: rotate(-135deg);
                 transform: rotate(-135deg);
         margin-right: -2px;
+        margin-right: -0.2rem;
         left: 0; }
       .page-nav .page-util .ico-page-arrow.right {
         -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
                 transform: rotate(45deg);
         margin-left: -2px;
+        margin-left: -0.2rem;
         right: 0; }
     .page-nav .page-util.prev {
-      margin-left: 8px; }
+      margin-left: 8px;
+      margin-left: 0.8rem; }
     .page-nav .page-util.next {
-      margin-right: 8px; }
+      margin-right: 8px;
+      margin-right: 0.8rem; }
 
 /*! page navigation - type02 */
 .page-nav.type02 .page-item-container .page-item:first-child {
   position: relative;
-  padding-right: 15px; }
+  padding-right: 15px;
+  padding-right: 1.5rem; }
   .page-nav.type02 .page-item-container .page-item:first-child:after {
     content: '';
     width: 1px;
+    width: 0.1rem;
     height: 20px;
+    height: 2rem;
     position: absolute;
     top: 50%;
     right: 0;
     margin-top: -10px;
+    margin-top: -1rem;
     background-color: gray;
     -webkit-transform: rotate(0deg) skew(-20deg, 0deg);
         -ms-transform: rotate(0deg) skew(-20deg, 0deg);
             transform: rotate(0deg) skew(-20deg, 0deg); }
 
 .page-nav.type02 .page-item-container .page-item:last-child {
-  padding-left: 15px; }
+  padding-left: 15px;
+  padding-left: 1.5rem; }
 
 /*! jquery scrollbar - customizing css - common */
 .scrollbar-inner,
@@ -561,8 +610,11 @@ a:before {
 
 .default-swiper .swiper-slide {
   width: 200px;
+  width: 20rem;
   height: 200px;
+  height: 20rem;
   margin-right: 20px;
+  margin-right: 2rem;
   background-color: chocolate; }
 
 .default-swiper .swiper-pagination-bullet-active {
@@ -575,9 +627,13 @@ a:before {
   font-size: 0;
   display: inline-block;
   width: 20px;
+  width: 2rem;
   height: 20px;
+  height: 2rem;
   border-top: 2px solid #000000;
+  border-top: 0.2rem solid #000000;
   border-right: 2px solid #000000;
+  border-right: 0.2rem solid #000000;
   -webkit-transform: rotate(-135deg);
       -ms-transform: rotate(-135deg);
           transform: rotate(-135deg); }
@@ -586,9 +642,13 @@ a:before {
   font-size: 0;
   display: inline-block;
   width: 20px;
+  width: 2rem;
   height: 20px;
+  height: 2rem;
   border-top: 2px solid #000000;
+  border-top: 0.2rem solid #000000;
   border-right: 2px solid #000000;
+  border-right: 0.2rem solid #000000;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
@@ -600,7 +660,8 @@ a:before {
   white-space: nowrap;
   margin: 0 auto;
   -webkit-overflow-scrolling: touch;
-  width: 300px; }
+  width: 300px;
+  width: 30rem; }
   .tab-nav-container.scroll::-webkit-scrollbar {
     height: 8px; }
   .tab-nav-container.scroll::-webkit-scrollbar-thumb {
@@ -622,7 +683,9 @@ a:before {
   .tab-nav .tab-item {
     display: table-cell;
     height: 70px;
-    padding: 0 1px; }
+    height: 7rem;
+    padding: 0 1px;
+    padding: 0 0.1rem; }
     .tab-nav .tab-item:first-child {
       padding-left: 0; }
     .tab-nav .tab-item:last-child {
@@ -641,7 +704,9 @@ a:before {
     .tab-nav .tab-link .txt {
       display: table-cell;
       padding: 10px;
+      padding: 1rem;
       font-size: 20px;
+      font-size: 2rem;
       color: lightgray; }
     .tab-nav .tab-link:hover, .tab-nav .tab-link:focus, .tab-nav .tab-link:active, .tab-nav .tab-link.active {
       background-color: blue; }
@@ -674,7 +739,8 @@ a:before {
   -webkit-overflow-scrolling: touch;
   overflow: auto; }
   .tbl-fixed-scroll.height01 {
-    max-height: 300px; }
+    max-height: 300px;
+    max-height: 30rem; }
   .tbl-fixed-scroll table {
     border: 0;
     white-space: nowrap;
@@ -684,25 +750,30 @@ a:before {
     position: sticky;
     top: 0;
     z-index: 5;
-    height: 25px; }
+    height: 25px;
+    height: 2.5rem; }
   .tbl-fixed-scroll .sticky-thead02 {
     position: -webkit-sticky;
     position: sticky;
     top: 25px;
+    top: 2.5rem;
     z-index: 4;
-    height: 25px; }
+    height: 25px;
+    height: 2.5rem; }
   .tbl-fixed-scroll .sticky-tbody01 {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 3;
-    min-width: 90px; }
+    min-width: 90px;
+    min-width: 9rem; }
   .tbl-fixed-scroll .sticky-tbody02 {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 90px;
+    left: 9rem;
     z-index: 2;
     background-color: #ffffff; }
 
@@ -712,7 +783,9 @@ a:before {
   .tbl-col01 th {
     background-color: #e5edf4;
     padding: 14px 16px;
+    padding: 1.4rem 1.6rem;
     font-size: 14px;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #2a2c2e;
     text-align: center; }
@@ -724,7 +797,9 @@ a:before {
       border-right: 1px solid #c5d5e3; }
   .tbl-col01 td {
     padding: 14px 16px;
+    padding: 1.4rem 1.6rem;
     font-size: 14px;
+    font-size: 1.4rem;
     color: #606266;
     border-bottom: 1px solid #e4e7ed;
     line-height: 1.5; }
@@ -773,10 +848,12 @@ a:before {
   .tbl-row01 th {
     background-color: cornsilk;
     font-size: 24px;
+    font-size: 2.4rem;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray; }
   .tbl-row01 td {
     font-size: 18px;
+    font-size: 1.8rem;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray; }
     .tbl-row01 td:last-child {
@@ -792,7 +869,9 @@ a:before {
   .tbl-col-row01 th {
     background-color: #e5edf4;
     padding: 14px 8px;
+    padding: 1.4rem 0.8rem;
     font-size: 14px;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #2a2c2e;
     text-align: center; }
@@ -802,7 +881,9 @@ a:before {
       border-right: 1px solid #e4e7ed; }
   .tbl-col-row01 td {
     padding: 14px 8px;
+    padding: 1.4rem 0.8rem;
     font-size: 14px;
+    font-size: 1.4rem;
     color: #606266;
     border-bottom: 1px solid #e4e7ed; }
     .tbl-col-row01 td.border-r {
@@ -925,8 +1006,11 @@ a:before {
     display: inline-block;
     position: relative;
     min-width: 20px;
+    min-width: 2rem;
     min-height: 20px;
+    min-height: 2rem;
     padding-top: 1px;
+    padding-top: 0.1rem;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -934,15 +1018,19 @@ a:before {
   .input-checkbox .txt {
     display: inline-block;
     color: gray;
-    font-size: 16px; }
+    font-size: 16px;
+    font-size: 1.6rem; }
   .input-checkbox label:before {
     content: '';
     position: absolute;
     top: 50%;
     left: 0;
     width: 20px;
+    width: 2rem;
     height: 20px;
+    height: 2rem;
     margin-top: -10px;
+    margin-top: -1rem;
     border: 1px solid gray;
     text-align: center;
     -webkit-transition: all .3s ease-out;
@@ -954,11 +1042,17 @@ a:before {
     position: absolute;
     top: 50%;
     left: 5px;
+    left: 0.5rem;
     margin-top: -4px;
+    margin-top: -0.4rem;
     width: 9px;
+    width: 0.9rem;
     height: 6px;
+    height: 0.6rem;
     border-top: 2px solid gray;
+    border-top: 0.2rem solid gray;
     border-right: 2px solid gray;
+    border-right: 0.2rem solid gray;
     -webkit-transform: rotate(130deg);
         -ms-transform: rotate(130deg);
             transform: rotate(130deg);
@@ -966,40 +1060,51 @@ a:before {
     -o-transition: all .3s ease-out;
     transition: all .3s ease-out; }
   .input-checkbox.right label {
-    padding-left: 30px; }
+    padding-left: 30px;
+    padding-left: 3rem; }
   .input-checkbox.left label {
-    padding-right: 30px; }
+    padding-right: 30px;
+    padding-right: 3rem; }
   .input-checkbox.left label:before {
     left: auto;
     right: 0; }
   .input-checkbox.left label:after {
     left: auto;
-    right: 5px; }
+    right: 5px;
+    right: 0.5rem; }
   .input-checkbox.up label {
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    padding-bottom: 2.5rem; }
   .input-checkbox.up label:before {
     top: auto;
     bottom: 0;
     left: 50%;
     margin-left: -10px;
+    margin-left: -1rem;
     margin-top: 0; }
   .input-checkbox.up label:after {
     top: auto;
     bottom: 8px;
+    bottom: 0.8rem;
     left: 50%;
     margin-left: -5px;
+    margin-left: -0.5rem;
     margin-top: 0; }
   .input-checkbox.down label {
-    padding-top: 25px; }
+    padding-top: 25px;
+    padding-top: 2.5rem; }
   .input-checkbox.down label:before {
     top: 0;
     left: 50%;
     margin-left: -10px;
+    margin-left: -1rem;
     margin-top: 0; }
   .input-checkbox.down label:after {
     top: 6px;
+    top: 0.6rem;
     left: 50%;
     margin-left: -5px;
+    margin-left: -0.5rem;
     margin-top: 0; }
   .input-checkbox input.checked + label:before,
   .input-checkbox input:checked + label:before {
@@ -1034,8 +1139,11 @@ a:before {
   display: inline-block;
   position: relative;
   min-width: 20px;
+  min-width: 2rem;
   min-height: 20px;
+  min-height: 2rem;
   padding-top: 1px;
+  padding-top: 0.1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1044,7 +1152,8 @@ a:before {
 .input-radio .txt {
   display: inline-block;
   color: #606266;
-  font-size: 14px; }
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 .input-radio label:before {
   content: '';
@@ -1052,8 +1161,11 @@ a:before {
   top: 50%;
   left: 0;
   width: 20px;
+  width: 2rem;
   height: 20px;
+  height: 2rem;
   margin-top: -10px;
+  margin-top: -1rem;
   border: 1px solid #dcdfe6;
   text-align: center;
   border-radius: 50%;
@@ -1062,10 +1174,12 @@ a:before {
   transition: all .3s ease-out; }
 
 .input-radio.right label {
-  padding-left: 30px; }
+  padding-left: 30px;
+  padding-left: 3rem; }
 
 .input-radio.left label {
-  padding-right: 30px; }
+  padding-right: 30px;
+  padding-right: 3rem; }
 
 .input-radio.left label:before {
   left: auto;
@@ -1073,38 +1187,47 @@ a:before {
 
 .input-radio.left label:after {
   left: auto;
-  right: 6px; }
+  right: 6px;
+  right: 0.6rem; }
 
 .input-radio.up label {
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  padding-bottom: 2.5rem; }
 
 .input-radio.up label:before {
   top: auto;
   bottom: 0;
   left: 50%;
   margin-left: -10px;
+  margin-left: -1rem;
   margin-top: 0; }
 
 .input-radio.up label:after {
   top: auto;
   bottom: 6px;
+  bottom: 0.6rem;
   left: 50%;
   margin-left: -4px;
+  margin-left: -0.4rem;
   margin-top: 0; }
 
 .input-radio.down label {
-  padding-top: 25px; }
+  padding-top: 25px;
+  padding-top: 2.5rem; }
 
 .input-radio.down label:before {
   top: 0;
   left: 50%;
   margin-left: -10px;
+  margin-left: -1rem;
   margin-top: 0; }
 
 .input-radio.down label:after {
   top: 6px;
+  top: 0.6rem;
   left: 50%;
   margin-left: -4px;
+  margin-left: -0.4rem;
   margin-top: 0; }
 
 .input-radio input.checked + label:before,
@@ -1120,9 +1243,13 @@ a:before {
   top: 50%;
   background-color: #fff;
   left: 6px;
+  left: 0.6rem;
   width: 8px;
+  width: 0.8rem;
   height: 8px;
+  height: 0.8rem;
   margin-top: -4px;
+  margin-top: -0.4rem;
   border-radius: 50%;
   -webkit-transition: all .3s ease-out;
   -o-transition: all .3s ease-out;
@@ -1145,7 +1272,8 @@ a:before {
   border: 1px solid #cccccc;
   background-color: #ffffff; }
   .input-txt.in-message {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    margin-bottom: 3rem; }
   .input-txt input {
     display: inline-block;
     padding: 0 0 0 15px;
@@ -1161,7 +1289,9 @@ a:before {
   .input-txt .message {
     display: block;
     margin-top: 5px;
-    font-size: 12px; }
+    margin-top: 0.5rem;
+    font-size: 12px;
+    font-size: 1.2rem; }
     .input-txt .message.pass {
       color: blue; }
     .input-txt .message.error {
@@ -1226,11 +1356,17 @@ a:before {
     position: absolute;
     top: 50%;
     right: 22px;
+    right: 2.2rem;
     margin-top: -8px;
+    margin-top: -0.8rem;
     width: 10px;
+    width: 1rem;
     height: 10px;
+    height: 1rem;
     border-top: 2px solid gray;
+    border-top: 0.2rem solid gray;
     border-right: 2px solid gray;
+    border-right: 0.2rem solid gray;
     -webkit-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
             transform: rotate(135deg); }
@@ -1240,9 +1376,13 @@ a:before {
     z-index: 1;
     width: 100%;
     padding: 0 0 0 20px;
+    padding: 0 0 0 2rem;
     height: 40px;
+    height: 4rem;
     line-height: 40px;
+    line-height: 4rem;
     font-size: 14px;
+    font-size: 1.4rem;
     color: #c0c4cc;
     background-color: transparent;
     border: none;
@@ -1259,11 +1399,13 @@ a:before {
 /*! 파일첨부 스타일 */
 .input-file-type01 {
   position: relative;
-  padding-right: 60px; }
+  padding-right: 60px;
+  padding-right: 6rem; }
   .input-file-type01 .input-file {
     position: relative;
     width: 100%;
     height: 50px;
+    height: 5rem;
     z-index: 2;
     opacity: 0;
     cursor: pointer; }
@@ -1279,9 +1421,11 @@ a:before {
     width: -webkit-calc(100% - 6rem);
     width: calc(100% - 6rem);
     padding: 15px 0 15px 20px;
+    padding: 1.5rem 0 1.5rem 2rem;
     border: 1px solid gray;
     color: gray;
     font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 300;
     -webkit-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
@@ -1290,10 +1434,14 @@ a:before {
       content: '';
       display: block;
       width: 50px;
+      width: 5rem;
       height: 50px;
+      height: 5rem;
       position: absolute;
       top: -1px;
+      top: -0.1rem;
       right: -60px;
+      right: -6rem;
       background: #f5f5f5 url("../images/common/ico_add_file.png") no-repeat center center; }
   .input-file-type01 .input-file:hover + .input-file-label,
   .input-file-type01 .input-file:focus + .input-file-label {
