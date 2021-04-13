@@ -31,11 +31,9 @@
 // 플러그인 영역
 // **********************************
 /*! s: plugin - jquery.scrollbar css */
-@import '../css_partials/jquery.scrollbar';
 /*! e: plugin - jquery.scrollbar css */
 
 /*! s: plugin - swiper css */
-@import '../css_partials/swiper.5.4.5';
 /*! e: plugin - swiper css */
 
 // **********************************
@@ -43,24 +41,15 @@
 // 프로토타입별로 파일을 세분화 할 경우 아래에 import 하기
 // 프로토타입을 세분화 할 경우 특정 css 파일에서 불필요한 프로토타입을 제거하여 경량화 할 수 있다
 // **********************************
-@import '../css_partials/prototype_common';
-@import '../css_partials/prototype_form';
-@import '../css_partials/prototype_popup';
 @import '../css_partials/prototype';
-@import '../css_partials/prototypelist';
 
 // **********************************
 // 레이아웃 영역
 // **********************************
-@import '../css_partials/header';
-@import '../css_partials/footer';
 
 // **********************************
 // 서브 컨텐츠 영역
 // **********************************
 
-
 @import '../css_partials/contents';
-@import '../css_partials/layout';
-@import '../css_partials/kik1611';
 @import '../css_partials/jeyoung.scss';
