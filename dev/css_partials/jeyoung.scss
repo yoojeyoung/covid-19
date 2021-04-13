@@ -5,7 +5,19 @@
 /* default : pc 기준 */
 
 /* header 공통 */
-.pgheader_wrap{min-width:1200px;@include rem(height,60px);background:#fff;position:fixed;top:0;left:0;width:100%;z-index:100;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);}
+.main{
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}
+.pgheader_wrap{@include rem(height,60px);background:#fff;position:fixed;top:0;left:0;width:100%;z-index:100;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);}
 .pgheader_in{position:relative;}
 .pghleft_w{
 	@include rem(height,60px);
@@ -65,23 +77,13 @@
 	position: absolute;
 	@include rem(top,22px);
 	@include rem(left,274px);
-	h1{
-		@include rem(font-size,18px);
-		color: #1d2747;
-		font-weight: bold;
-	}
+	h1{@include rem(font-size,18px);color: #1d2747;font-weight: bold;}
 }
 .adm_men_w{
 	position:absolute;
 	@include rem(top,24px);
 	@include rem(right,40px);
-	a{
-		display: inline-block;
-		@include rem(font-size,16px);
-		color:#606266;
-		line-height:1;
-		white-space: nowrap;
-	}
+	a{display: inline-block;@include rem(font-size,16px);color:#606266;line-height:1;white-space: nowrap;}
 }
 .adm_mendl_w{
 	position:relative;
@@ -89,27 +91,14 @@
 	@include rem(padding,0 21px 0 30px);
 	font-size:0;
 	line-height:0;
-	.adm_men{
-		display:inline-block;
-		@include rem(width,30px);
-		@include rem(height,30px);
-		background:#13d5aa url("../images/admin/ico_logtop.png") no-repeat 50% 0/cover;
-		border-radius: 100%;
-	}
-	&::before{
-		content:'';
-		position:absolute;
-		@include rem(top,-9px);
-		display:block;
-		@include rem(width,30px);
-		@include rem(height,30px);
-		background:url("../images/admin/ico_logtop.png") no-repeat 0 0;
-	}
+	.adm_men{display:inline-block;@include rem(width,30px);@include rem(height,30px);background:#13d5aa url("../images/admin/ico_logtop.png") no-repeat 50% 0/cover;border-radius: 100%;}
+	&::before{content:'';position:absolute;@include rem(top,-9px);display:block;@include rem(width,30px);@include rem(height,30px);background:url("../images/admin/ico_logtop.png") no-repeat 0 0;}
 }
 .pgheader_wrap.type02{
-	@include rem(height,110px);
+  position: relative;
+	@include rem(height,100px);
 	box-shadow: none;
-	.inner{max-width: 1200px;height: 100%;margin: 0 auto;@include rem(padding,35px 0 32px)}
+	.inner{max-width: 1200px;height: 100%;margin: 0 auto;@include rem(padding,29px 0);}
 }
 
 @media (max-width:1250px){
@@ -141,13 +130,7 @@
   .footer-column{
       display: flex;
       align-self: center;
-      .footer-copyright{
-          @include rem(margin-left, 10px);
-          @include rem(font-size, 14px);
-          color: #999;
-          word-break: break-all;
-          word-wrap: break-word;
-      }
+      .footer-copyright{@include rem(margin-left, 10px);@include rem(font-size, 14px);color: #999;word-break: break-all;word-wrap: break-word;}
   }
 }
 
@@ -214,7 +197,7 @@ body{background: #f5f5f7}
 .login-content-wrap {
   // @include rem(min-width,460px);
   @include rem(max-width,1200px);
-  @include rem(margin,160px auto 60px);
+  @include rem(margin,60px auto 60px);
   @include rem(padding, 0 20px);
   background: #fff;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
@@ -238,15 +221,7 @@ body{background: #f5f5f7}
     .input-box{
       display: flex;
       align-items: flex-end;
-      input{
-        @include rem(height,40px);
-        @include rem(margin-top,8px);
-        border: 1px solid #e4e7ed;
-        @include rem(border-radius,4px);
-        &::placeholder{color: #c0c4cc;}
-        &.mt-0{margin-top: 0}
-        &.h-56{@include rem(height, 56px);}
-      }
+      input{@include rem(height,40px);@include rem(margin-top,8px);border: 1px solid #e4e7ed;@include rem(border-radius,4px);&::placeholder{color: #c0c4cc;}&.mt-0{margin-top: 0}&.h-56{@include rem(height, 56px);}}
       .btn-lv01{
         @include rem(height,40px);
         @include rem(margin-left,8px);
@@ -531,24 +506,28 @@ section.content-wrap{
   }
 }
 
-
-// @media only screen and (min-wudth:1024px) and (max-width:1200px){
-//   .login-content-wrap{
-//     @include rem(max-width,1000px);
-//     .inner{@include rem(width,350px)}
-//   }
-// }
+/* -------------- media 쿼리 영역 -------------- */
+@media screen and (min-width:1200px) and (max-width:1200px){
+  
+}
+@media (min-width:1200px){
+  .cform_wrap{
+    &.login-type {
+      .cform_box_td{
+        @include rem(width,1200px);
+        max-width: initial;
+        padding: 0!important;
+        background: url(../images/login/img-visual-login.png) right center no-repeat;
+        .cform_box{@include rem(width,584px);max-width: initial;}
+      }
+    }
+  }
+}
 
 /*! mobile 버전 - css */
 @media (max-width:1250px){
   .login-content-wrap{
-    @include rem(max-width,auto);
-    @include rem(margin, 160px 24px 60px);
+    @include rem(max-width,initial);
+    @include rem(margin, 60px 24px 60px);
   }
 }
-
-// @media (max-width:750px){
-//   .login-content-wrap{
-//     @include rem(width,600px);
-//   }
-// }

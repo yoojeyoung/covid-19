@@ -55,15 +55,6 @@ html {
   html:lang(zh) {
     letter-spacing: 0; }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
-  html {
-    font-size: -webkit-calc(10px + 12 * ((100vw - 1024px) / 1279));
-    font-size: calc(10px + 12 * ((100vw - 1024px) / 1279)); } }
-
-@media (min-width: 1024px) {
-  html {
-    font-size: 10px; } }
-
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
 code, form, fieldset, legend, input, textarea, p, blockquote, th, td,
 article, aside, canvas, details, figcaption, figure, footer, header,
@@ -290,4 +281,4 @@ template {
 [hidden] {
   display: none; }
 
-/*# sourceMappingURL=../sass_maps/reset.css.map */
+/*# sourceMappingURL=../../sass_maps/css_partials/reset.css.map */

@@ -51,18 +51,18 @@ html{
 // 태블릿 영역 대응 (아이패드 기준 1024 부터 태블릿 영역으로 정의함)
 // pc 컨텐츠 영역 최소 사이즈에 맞춰서 조정이 필요함
 // 예) 컨텐츠 최소 넓이가 1100px 이라고 한다면 max-width를 1100px 로 변경 해야함
-@media (min-width: 1024px) and (max-width: 1279px) {
-    html {
-        font-size: calc(#{$global-font-size} + 12 * ((100vw - 1024px) / 1279));
-    }
-}
+// @media (min-width: 1024px) and (max-width: 1279px) {
+//     html {
+//         font-size: calc(#{$global-font-size} + 12 * ((100vw - 1024px) / 1279));
+//     }
+// }
 
 // PC 영역
-@media (min-width: 1024px) {
-    html {
-        font-size: $global-font-size;
-    }
-}
+// @media (min-width: 1024px) {
+//     html {
+//         font-size: $global-font-size;
+//     }
+// }
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 code,form,fieldset,legend,input,textarea,p,blockquote,th,td,
