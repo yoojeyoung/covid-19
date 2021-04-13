@@ -99,6 +99,11 @@
 	@include rem(height,100px);
 	box-shadow: none;
 	.inner{max-width: 1200px;height: 100%;margin: 0 auto;@include rem(padding,29px 0);}
+  h1{
+    a{
+      img{max-width: 100%;}
+    }
+  }
 }
 
 @media (max-width:1250px){
@@ -507,9 +512,6 @@ section.content-wrap{
 }
 
 /* -------------- media 쿼리 영역 -------------- */
-@media screen and (min-width:1200px) and (max-width:1200px){
-  
-}
 @media (min-width:1200px){
   .cform_wrap{
     &.login-type {
