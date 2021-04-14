@@ -804,10 +804,23 @@ a{
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            .ico-new{
+                // @include rem(width,15px);
+                // @include rem(height,15px);
+                @include rem(margin-left,8px);
+                @include rem(padding,2px 4px);
+                @include rem(font-size,9px);
+                color: #fff;
+                border-radius: 50%;
+                background: #dc3545;
+            }
         }
     }
     tr{
         &.bg-yellow{background: #fff9ea;}
+        &.bg-green{background: #f6fff3;}
+        &.bg-purple{background: #f4f8ff;}
+        &.bg-pink{background: #fff6f8;}
     }
     tbody{
         th{
@@ -836,6 +849,17 @@ a{
         text-align:left;
         th{
             text-align: left;
+        }
+    }
+    &.confirm-table{
+        th,td{
+            @include rem(padding, 8px 10px);
+            text-align: center;
+        }
+        tbody{
+            td{
+                &:nth-child(6){text-align: left;}
+            }
         }
     }
 }

@@ -3733,7 +3733,12 @@ section.content-wrap {
   background: #fff;
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  white-space: nowrap;
   /* 현황 자료 게시판 */ }
+  section.content-wrap .inner {
+    min-width: 1140px;
+    min-width: 114rem; }
   section.content-wrap .sec-tit {
     position: relative; }
     section.content-wrap .sec-tit .tit {
@@ -4018,4 +4023,4 @@ section.content-wrap {
     margin: 60px 24px 60px;
     margin: 6rem 2.4rem 6rem; } }
 
-/*# sourceMappingURL=../sass_maps/common.css.map */
+/*# sourceMappingURL=../../sass_maps/css/common.css.map */

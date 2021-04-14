@@ -816,8 +816,24 @@ a:before {
       -o-text-overflow: ellipsis;
          text-overflow: ellipsis;
       overflow: hidden; }
+      .tbl-col01 td a .ico-new {
+        margin-left: 8px;
+        margin-left: 0.8rem;
+        padding: 2px 4px;
+        padding: 0.2rem 0.4rem;
+        font-size: 9px;
+        font-size: 0.9rem;
+        color: #fff;
+        border-radius: 50%;
+        background: #dc3545; }
   .tbl-col01 tr.bg-yellow {
     background: #fff9ea; }
+  .tbl-col01 tr.bg-green {
+    background: #f6fff3; }
+  .tbl-col01 tr.bg-purple {
+    background: #f4f8ff; }
+  .tbl-col01 tr.bg-pink {
+    background: #fff6f8; }
   .tbl-col01 tbody th {
     color: #606266;
     font-weight: normal;
@@ -841,6 +857,12 @@ a:before {
     text-align: left; }
     .tbl-col01.board th {
       text-align: left; }
+  .tbl-col01.confirm-table th, .tbl-col01.confirm-table td {
+    padding: 8px 10px;
+    padding: 0.8rem 1rem;
+    text-align: center; }
+  .tbl-col01.confirm-table tbody td:nth-child(6) {
+    text-align: left; }
 
 .tbl-row01 {
   width: 100%;
@@ -1551,4 +1573,4 @@ a:before {
   padding: 10px;
   background: #eeeeee; }
 
-/*# sourceMappingURL=../sass_maps/prototype.css.map */
+/*# sourceMappingURL=../../sass_maps/css_partials/prototype.css.map */

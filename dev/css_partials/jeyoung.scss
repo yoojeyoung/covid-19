@@ -226,7 +226,16 @@ body{background: #f5f5f7}
     .input-box{
       display: flex;
       align-items: flex-end;
-      input{@include rem(height,40px);@include rem(margin-top,8px);border: 1px solid #e4e7ed;@include rem(border-radius,4px);&::placeholder{color: #c0c4cc;}&.mt-0{margin-top: 0}&.h-56{@include rem(height, 56px);}}
+      input{
+        @include rem(height,40px);
+        @include rem(margin-top,8px);
+        @include rem(font-size,14px);
+        border: 1px solid #e4e7ed;
+        @include rem(border-radius,4px);
+        &::placeholder{color: #c0c4cc;@include rem(font-size,14px);}
+        &.mt-0{margin-top: 0}
+        &.h-56{@include rem(height, 56px);}
+      }
       .btn-lv01{
         @include rem(height,40px);
         @include rem(margin-left,8px);
@@ -286,8 +295,32 @@ body{background: #f5f5f7}
       .txt{color: #606266;}
     }
     + button{@include rem(margin-left,16px);}
+  }
+  a{
+    @include rem(min-width,66px);
+    width: 100%;
+    @include rem(padding,9px 5px);
+    border: 1px solid #e4e7ed;
+    background: #fff;
+    +a{@include rem(margin-left,16px);}
+    .txt{@include rem(font-size,14px);color: #606266}
+  }
+  button,a{
     &.wid-80{@include rem(min-width,80px);}
     &.wid-89{@include rem(min-width,89px);}
+    &.wid-79{@include rem(min-width,79px);}
+    &.color-blue{
+      background: #0778ca;
+      .txt{color: #fff;}
+    }
+    &.color-red{
+      background:#dc3545;
+      .txt{color: #fff;}
+    }
+    &.color-white{
+      background: #fff;
+      .txt{color: #646266;}
+    }
   }
   &.right{
     @include rem(margin,0 16px);
@@ -302,37 +335,16 @@ body{background: #f5f5f7}
   &.h-56{
     button{@include rem(height,56px);}
   }
-  &.type02{
+  &.flex{
     display: flex;
     justify-content: space-between;
-    .white-btn-area{
-      display: flex;
-      a{
-        @include rem(min-width,66px);
-        width: 100%;
-        @include rem(padding,9px 5px);
-        border: 1px solid #e4e7ed;
-        background: #fff;
-        &.btn-white{
-          @include rem(min-width,79px);
-          background: #0778ca;
-          .txt{color: #fff;}
-        }
-        &.btn-delete{
-          background:#dc3545;
-          .txt{color: #fff;}
-        }
-        +a{@include rem(margin-left,16px);}
-      }
-    }
+    .white-btn-area{display: flex;}
     a{
       @include rem(max-width,66px);
       width: 100%;
       @include rem(padding,9px 5px);
       border: 1px solid #e4e7ed;
       @include rem(border-radius,4px);
-      background: #fff;
-      .txt{@include rem(font-size,14px);color: #606266}
     }
   }
 }
@@ -340,9 +352,15 @@ body{background: #f5f5f7}
 /* 공통영역 */
 section.content-wrap{
   @include rem(margin-top,24px);
-  @include rem(padding,24px);
   background: #fff;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  white-space: nowrap;
+  .inner{
+    margin-top: 0;
+    @include rem(min-width,1140px);
+    @include rem(padding,24px);
+  }
   .sec-tit{
     position: relative;
     // display: flex;
@@ -350,24 +368,31 @@ section.content-wrap{
     // align-items: flex-end;
     .tit{
       @include rem(font-size,16px);
-    font-weight: bold;
+      font-weight: bold;
+      .num{color: #0778ca;}
     }
     .btn-area{
+      display: flex;
+      align-items: flex-end;
       position: absolute;
       @include rem(top,-10px);
       @include rem(right,16px);
-      display: table;
-      .data{display: table-cell;@include rem(font-size,12px);vertical-align: bottom;}
-    }
-    .btn-download{
-      display: table-cell;
-      @include rem(max-width,85px);
-      width: 100%;
-      @include rem(margin-left,16px);
-      @include rem(padding,11px 10px);
-      border: 1px solid #0778ca;
-      @include rem(border-radius,4px);
-      .txt{@include rem(font-size,12px);color: #0778ca;word-wrap: break-word;word-break: break-all;}
+      .data{@include rem(font-size,12px);vertical-align: bottom;}
+      .btn-download{
+        @include rem(max-width,85px);
+        width: 100%;
+        @include rem(margin-left,16px);
+        @include rem(padding,11px 10px);
+        border: 1px solid #0778ca;
+        @include rem(border-radius,4px);
+        .txt{@include rem(font-size,12px);color: #0778ca;word-wrap: break-word;word-break: break-all;}
+        &.wid-156{@include rem(padding,5px 10px);@include rem(min-width,156px);}
+        &.wid-109{@include rem(padding,5px 10px);@include rem(min-width,109px);}
+      }
+      /* 확진자 관리 > 확진자 목록 오른쪽 버튼 영역 */
+      &.type02{
+        @include rem(top,-6px);
+      }
     }
     + .tbl-container01{@include rem(margin-top,24px);}
   }
@@ -378,8 +403,9 @@ section.content-wrap{
     .info-link{
       @include rem(width,373px);
       @include rem(margin-left,16px);
-      @include rem(padding,24px 65px);
+      @include rem(padding,24px);
       border: 1px solid #e4e7ed;
+      text-align: center;
       .txt{
         @include rem(font-size,14px);
         color: #606266;
@@ -387,9 +413,10 @@ section.content-wrap{
         word-wrap: break-word;
       }
       a{
+        display: block;
         @include rem(max-width,243px);
         width: 100%;
-        @include rem(margin-top,21px);
+        @include rem(margin,21px auto 0);
         @include rem(padding,9px 5px);
         background: #dd682d;
         text-align: center;
@@ -403,115 +430,116 @@ section.content-wrap{
     &.wid-1468{@include rem(max-width,1468px);@include rem(height,402px);}
     &.wid-759{@include rem(width,759px);@include rem(margin,0 0 0 40px); @include rem(padding,54px 81px);border: 1px solid #cacdd5;}
   }
+}
 
-  /* 현황 자료 게시판 */
-  .detail-view-container{
-    .view-title{
-      @include rem(padding-bottom,26px);
-      border-bottom: 1px solid #e4e7ed;
-      span{@include rem(font-size,14px);color: #303133;}
-      .tit{@include rem(margin-left,20px);@include rem(font-size,16px);font-weight: bold;}
-    }
-    .view-content{
-      margin: 26px 0 0;
-      .data-area{
-        @include rem(margin-bottom,33px);
-        text-align: right;
-        span{
-          @include rem(font-size,14px);color: #303133;
-          + span{@include rem(margin-left,20px);}
-        }
-      }
-      p{
-        @include rem(font-size,14px);
-        color: #303133;
-        line-height: 1.5;
-        + p{@include rem(margin-top,30px);}
-      }
-      .input-radio{
-        @include rem(margin-top,5px);
-        .txt{color: #303133;}
+/*검사 현황 자료 게시판 */
+.detail-view-container{
+  .view-title{
+    @include rem(padding-bottom,26px);
+    border-bottom: 1px solid #e4e7ed;
+    span{@include rem(font-size,14px);color: #303133;}
+    .tit{@include rem(margin-left,20px);@include rem(font-size,16px);font-weight: bold;}
+  }
+  .view-content{
+    margin: 26px 0 0;
+    .data-area{
+      @include rem(margin-bottom,33px);
+      text-align: right;
+      span{
+        @include rem(font-size,14px);color: #303133;
+        + span{@include rem(margin-left,20px);}
       }
     }
-    .upload-list{
-      @include rem(margin,30px 0 28px);
-      .upload-item{
-        position: relative;
-        display: block;
-        color: #2f80ed;
-        text-decoration: underline;
-        .txt{@include rem(font-size,12px);word-break: break-all;word-wrap: break-word;}
-        + .upload-item{@include rem(margin-top,6px);}
-      }
-      &.type02{
-        @include rem(margin-top,8px);
-        @include rem(padding-left,100px);
-        .point-txt{
-          display: inline-block;
-          @include rem(margin-bottom,11px);
-          @include rem(font-size,12px);
-          color: #909399;
-        }
+    p{
+      @include rem(font-size,14px);
+      color: #303133;
+      line-height: 1.5;
+      + p{@include rem(margin-top,30px);}
+    }
+    .input-radio{
+      @include rem(margin-top,5px);
+      .txt{color: #303133;}
+    }
+  }
+  .upload-list{
+    @include rem(margin,30px 0 28px);
+    .upload-item{
+      position: relative;
+      display: block;
+      color: #2f80ed;
+      text-decoration: underline;
+      .txt{@include rem(font-size,12px);word-break: break-all;word-wrap: break-word;}
+      + .upload-item{@include rem(margin-top,6px);}
+    }
+    &.type02{
+      @include rem(margin-top,8px);
+      @include rem(padding-left,100px);
+      .point-txt{
+        display: inline-block;
+        @include rem(margin-bottom,11px);
+        @include rem(font-size,12px);
+        color: #909399;
       }
     }
-    .white-form{
-      display: flex;
-      align-items:center;
-      @include rem(padding, 24px 0 24px 24px);
-      border-bottom: 1px solid #e4e7ed;
-      span{@include rem(font-size,14px);color: #303133;}
-      .type02{
+  }
+  .white-form{
+    display: flex;
+    align-items:center;
+    @include rem(padding, 24px 0 24px 24px);
+    border-bottom: 1px solid #e4e7ed;
+    span{@include rem(font-size,14px);color: #303133;}
+    .type02{
+      width: 100%;
+      @include rem(margin-left,55px);
+      flex: auto;
+      input{
         width: 100%;
-        @include rem(margin-left,55px);
-        flex: auto;
-        input{
-          width: 100%;
-          @include rem(min-height,40px);
-          @include rem(padding-left,12px);
-          border: 1px solid #e4e7ed;
-          @include rem(border-radius,4px);
-          &::placeholder{
-            color: #c0c4cc;
-          }
+        @include rem(min-height,40px);
+        @include rem(padding-left,12px);
+        border: 1px solid #e4e7ed;
+        @include rem(border-radius,4px);
+        &::placeholder{
+          color: #c0c4cc;
         }
-        input[type="file"]{
-          position: absolute;
-          @include rem(width,1px);
-          @include rem(height,1px);
-          padding: 0;
-          @include rem(margin,-1px);
-          overflow: hidden;
-          clip:rect(0,0,0,0);
-          border: 0;
-        }
-        .upload-btn{
-          display: inline-block;
-          @include rem(max-width,113px);
-          width: 100%;
-          @include rem(height,32px);
-          @include rem(padding,7px 5px 5px);
-          color: #fff;
-          background: #0778ca;
-          @include rem(border-radius,4px);
-          text-align: center;
-        }
-        textarea{
-          width: 100%;
-          @include rem(min-height,263px);
-          @include rem(padding,12px 8px);
-          border: 1px solid #e4e7ed;
-          @include rem(border-radius,4px);
-          &::placeholder{color: #c0c4cc;}
-        }
-        &.ml-30{@include rem(margin-left,30px);}
       }
-      &:nth-child(3){border-bottom: none;}
-      &.pb-0{padding-bottom: 0;}
+      input[type="file"]{
+        position: absolute;
+        @include rem(width,1px);
+        @include rem(height,1px);
+        padding: 0;
+        @include rem(margin,-1px);
+        overflow: hidden;
+        clip:rect(0,0,0,0);
+        border: 0;
+      }
+      .upload-btn{
+        display: inline-block;
+        @include rem(max-width,113px);
+        width: 100%;
+        @include rem(height,32px);
+        @include rem(padding,7px 5px 5px);
+        color: #fff;
+        background: #0778ca;
+        @include rem(border-radius,4px);
+        text-align: center;
+      }
+      textarea{
+        width: 100%;
+        @include rem(min-height,263px);
+        @include rem(padding,12px 8px);
+        border: 1px solid #e4e7ed;
+        @include rem(border-radius,4px);
+        &::placeholder{color: #c0c4cc;}
+      }
+      &.ml-30{@include rem(margin-left,30px);}
     }
+    &:nth-child(3){border-bottom: none;}
+    &.pb-0{padding-bottom: 0;}
   }
 }
 
 /* -------------- media 쿼리 영역 -------------- */
+/* 로그인 메인 bg */
 @media (min-width:1200px){
   .cform_wrap{
     &.login-type {

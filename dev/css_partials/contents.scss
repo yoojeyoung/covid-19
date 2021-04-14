@@ -362,8 +362,8 @@ button.btn_cbotxt{min-width:152px}
 .pmap_list > li:last-of-type{padding-right:0;}
 .pmap_list > li:last-of-type:after{display:none;}
 
-.pgleft_wrap{position:fixed;top:60px;left:0;width:250px;height:calc(100% - 60px); background:#283356;z-index:50;transition:.4s;overflow:hidden;overflow-y:auto;}
-.pgright_wrap{margin:60px 0 0 250px;transition:.4s;background: #f5f5f7;}
+.pgleft_wrap{position:fixed;top:60px;left:0;visibility:hidden; width:0;height:calc(100% - 60px); background:#283356;z-index:50;transition:.4s;overflow:hidden;overflow-y:auto;}
+.pgright_wrap{margin:60px auto 0;transition:.4s;background: #f5f5f7;}
 
 .page_wrap.fold{}
 .page_wrap.fold .plm{padding:0;@include rem(height,60px);}
@@ -452,6 +452,14 @@ button.btn_cbotxt{min-width:152px}
   }
 }
 
+/* 미디어 쿼리 영역*/
+/* 메뉴리스트 1660 이하 햄버그 메뉴 변경 */
+@media (min-width:1660px){
+  .pgright_wrap{
+    margin:60px 0 0 250px;
+  }
+  .pgleft_wrap{visibility: visible;width: 250px; transition: all .2s;}
+}
 
 /*! mobile 버전 - css */
 @media (max-width:1023px){} 

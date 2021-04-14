@@ -12,37 +12,38 @@ block contents
               h2.tit 현황 자료 게시판
               // 최상위 테이블
               section.content-wrap
-                .detail-view-container 
-                  .white-form
-                    span.type01 제목
-                    span.type02 
-                      .input-wrap
-                          input(type="text" placeholder="제목을 입력해주세요")
-                  .white-form
-                    span.type01 내용
-                    span.type02 
-                      .input-wrap
-                          textarea(name="", cols="30", rows="10" placeholder="내용을 입력해주세요")
-                  .white-form.pb-0
-                    span.type01 첨부파일
-                    span.type02.ml-30
-                      .input-wrap
-                        label(for="upload-file").upload-btn 첨부파일 추가
-                        input(type="file" id="upload-file")
-                  .upload-list.type02
-                    span.point-txt 최대 용량 2mb 이하의 파일을 업로드해주세요
-                    a(href="").upload-item
-                      span.txt 보건소 선별 검사실적_.0305.xls
-                    a(href="").upload-item
-                      span.txt 보건소 선별 검사실적_.0305.xls
+                .inner
+                  .detail-view-container 
+                    .white-form
+                      span.type01 제목
+                      span.type02 
+                        .input-wrap
+                            input(type="text" placeholder="제목을 입력해주세요")
+                    .white-form
+                      span.type01 내용
+                      span.type02 
+                        .input-wrap
+                            textarea(name="", cols="30", rows="10" placeholder="내용을 입력해주세요")
+                    .white-form.pb-0
+                      span.type01 첨부파일
+                      span.type02.ml-30
+                        .input-wrap
+                          label(for="upload-file").upload-btn 첨부파일 추가
+                          input(type="file" id="upload-file")
+                    .upload-list.type02
+                      span.point-txt 최대 용량 2mb 이하의 파일을 업로드해주세요
+                      a(href="").upload-item
+                        span.txt 보건소 선별 검사실적_.0305.xls
+                      a(href="").upload-item
+                        span.txt 보건소 선별 검사실적_.0305.xls
 
-              .btn-group.type02
+              .btn-group.flex
                 a(href="").btn-list
                   span.txt 목록
                 .white-btn-area 
-                  a(href="").btn-modify
+                  a(href="").color-red
                     span.txt 취소
-                  a(href="").btn-white
+                  a(href="").color-blue
                     span.txt 저장
 append script
   script.
