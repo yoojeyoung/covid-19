@@ -1,15 +1,60 @@
 @charset "UTF-8";
 /* default : pc 기준 */
 /* header 공통 */
-.main header {
+.main header.pgheader_wrap {
   position: fixed;
   top: 0;
   left: 0; }
 
-.main footer {
+.main footer.type02 {
   position: fixed;
   bottom: 0;
   left: 0; }
+
+/* 푸터 공통 */
+#footer.type02 {
+  height: 83px;
+  background: #fff;
+  width: 100%;
+  z-index: 100; }
+  #footer.type02 .inner {
+    max-width: 1200px;
+    padding: 26px 0 20px;
+    padding: 2.6rem 0 2rem;
+    height: 100%;
+    margin: 0 auto; }
+  #footer.type02 .footer-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  #footer.type02 .footer-column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
+    #footer.type02 .footer-column .footer-copyright {
+      margin-left: 10px;
+      margin-left: 1rem;
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #999;
+      word-break: break-all;
+      word-wrap: break-word; }
+
+@media (max-width: 1250px) {
+  #footer.type02 {
+    max-width: auto;
+    max-width: auto;
+    padding: 0 24px;
+    padding: 0 2.4rem; } }
 
 .pgheader_wrap {
   height: 60px;
@@ -200,50 +245,6 @@
   position: fixed;
   bottom: 0;
   left: 0; }
-
-#footer.type02 {
-  height: 83px;
-  background: #fff;
-  width: 100%;
-  z-index: 100; }
-  #footer.type02 .inner {
-    max-width: 1200px;
-    padding: 26px 0 20px;
-    padding: 2.6rem 0 2rem;
-    height: 100%;
-    margin: 0 auto; }
-  #footer.type02 .footer-wrap {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  #footer.type02 .footer-column {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center; }
-    #footer.type02 .footer-column .footer-copyright {
-      margin-left: 10px;
-      margin-left: 1rem;
-      font-size: 14px;
-      font-size: 1.4rem;
-      color: #999;
-      word-break: break-all;
-      word-wrap: break-word; }
-
-@media (max-width: 1250px) {
-  #footer.type02 {
-    max-width: auto;
-    max-width: auto;
-    padding: 0 24px;
-    padding: 0 2.4rem; } }
 
 /* 임시 비밀번호 로그인 페이지 */
 body {
@@ -468,11 +469,13 @@ body {
     padding: 0.8rem 0 0.7rem;
     border-radius: 4px;
     border-radius: 0.4rem;
-    border: 1px solid #e4e7ed; }
+    border: 1px solid #e4e7ed;
+    text-align: center; }
     .btn-group button .txt {
       font-size: 14px;
       font-size: 1.4rem;
-      color: #fff; }
+      color: #fff;
+      text-align: center; }
     .btn-group button.btn-confirm {
       background: #0778ca;
       border-color: #0778ca; }
@@ -488,14 +491,16 @@ body {
     padding: 9px 5px;
     padding: 0.9rem 0.5rem;
     border: 1px solid #e4e7ed;
-    background: #fff; }
+    background: #fff;
+    text-align: center; }
     .btn-group a + a {
       margin-left: 16px;
       margin-left: 1.6rem; }
     .btn-group a .txt {
       font-size: 14px;
       font-size: 1.4rem;
-      color: #606266; }
+      color: #606266;
+      text-align: center; }
   .btn-group button.wid-80, .btn-group a.wid-80 {
     min-width: 80px;
     min-width: 8rem; }
@@ -509,6 +514,14 @@ body {
     background: #0778ca; }
     .btn-group button.color-blue .txt, .btn-group a.color-blue .txt {
       color: #fff; }
+  .btn-group button.color-blue02, .btn-group a.color-blue02 {
+    background: #2883c5; }
+    .btn-group button.color-blue02 .txt, .btn-group a.color-blue02 .txt {
+      color: #fff; }
+  .btn-group button.color-blue03, .btn-group a.color-blue03 {
+    background: #283356; }
+    .btn-group button.color-blue03 .txt, .btn-group a.color-blue03 .txt {
+      color: #fff; }
   .btn-group button.color-red, .btn-group a.color-red {
     background: #dc3545; }
     .btn-group button.color-red .txt, .btn-group a.color-red .txt {
@@ -517,6 +530,34 @@ body {
     background: #fff; }
     .btn-group button.color-white .txt, .btn-group a.color-white .txt {
       color: #646266; }
+  .btn-group button.wid-full, .btn-group a.wid-full {
+    width: 100%; }
+  .btn-group button.inline, .btn-group a.inline {
+    position: relative;
+    display: inline-block;
+    min-width: auto;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none; }
+    .btn-group button.inline .txt, .btn-group a.inline .txt {
+      font-size: 18px;
+      color: #606060; }
+    .btn-group button.inline::after, .btn-group a.inline::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 21px;
+      background-color: #606060; }
+    .btn-group button.inline + .inline, .btn-group a.inline + .inline {
+      margin: 0; }
+    .btn-group button.inline:not(:last-child), .btn-group a.inline:not(:last-child) {
+      margin-right: 10px;
+      margin-right: 1rem;
+      padding-right: 10px;
+      padding-right: 1rem; }
   .btn-group.right {
     margin: 0 16px;
     margin: 0 1.6rem;
@@ -857,7 +898,7 @@ section.content-wrap {
   .detail-view-container .white-form.pb-0 {
     padding-bottom: 0; }
 
-/* -------------- media 쿼리 영역 -------------- */
+/* -------------- 미디어쿼리 영역 -------------- */
 /* 로그인 메인 bg */
 @media (min-width: 1200px) {
   .cform_wrap.login-type .cform_box_td {

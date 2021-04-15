@@ -16,15 +16,15 @@
   <link href="../../css_partials/font.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/reset.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/prototype.css" type="text/css" rel="stylesheet">
-  <link href="../../css_partials/jeyoung.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/public.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/contents.css" type="text/css" rel="stylesheet">
   <script src="../../js/jquery.js"></script>
   <script src="../../js/common.js" defer></script>
 </head>
 
-<body class="main">
+<body>
   <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
-  <div id="wrap">
+  <div class="main" id="wrap">
     <header class="pgheader_wrap type02">
       <div class="inner">
         <h1>
@@ -60,13 +60,23 @@
                       <input class="mt-0 h-56" type="text" title="" id="txt01" placeholder="비밀번호를 입력해주세요">
                     </div>
                   </div>
-                  <div class="btn_cfmelse_w">
-                    <a class="btn_cfmelse" href="#" onclick="COVID.dimLayerShow('#srdTarget01');">비밀번호 재설정</a>
-                    <a class="btn_cfmelse" href="#" onclick="COVID.dimLayerShow('#srdTarget02');">접속권한 요청</a>
+                  <!-- 20210415 버튼공통 작업(class명 변경됬으니 확인필요)-->
+                  <div class="btn-group right">
+                    <button class="inline" onclick="COVID.dimLayerShow('#srdTarget01');">
+                      <span class="txt">비밀번호 재설정</span>
+                    </button>
+                    <button class="inline" onclick="COVID.dimLayerShow('#srdTarget02');">
+                      <span class="txt">접속권한 요청</span>
+                    </button>
                   </div>
-                  <div class="btn_cfmsm_w">
-                    <a class="btn_cfmsm btn-web" href="#">웹 로그인</a>
-                    <a class="btn_cfmsm btn-certifi" href="#">인증서 로그인</a>
+                  <!-- 20210415 버튼공통 작업(class명 변경됬으니 확인필요)-->
+                  <div class="btn-group">
+                    <button class="wid-full color-blue02" type="submit">
+                      <div class="txt">웹 로그인</div>
+                    </button>
+                    <button class="wid-full color-blue03" type="submit">
+                      <div class="txt">인증서 로그인</div>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -121,7 +131,7 @@
                   <button class="color-white wid-89 closetrigger" href="#">
                     <span class="txt">취소</span>
                   </button>
-                  <button class="color-blue wid-89 closetrigger" href="#">
+                  <button class="color-blue wid-89 closetrigger" type="submit">
                     <span class="txt">확인</span>
                   </button>
                 </div>

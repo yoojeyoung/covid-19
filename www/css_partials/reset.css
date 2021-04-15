@@ -1,11 +1,11 @@
-@charset "UTF-8";
 /*! reset */
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  vertical-align: middle; }
+  vertical-align: middle;
+  text-align: left; }
 
 html {
   -webkit-text-size-adjust: 100%;
@@ -13,47 +13,8 @@ html {
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
   font-size: 10px;
-  font-weight: 400; }
-  html:lang(ko) {
-    font-family: "Malgun Gothic", "맑은 고딕", Dotum, "돋움", arial, verdana, sans-serif; }
-  html:lang(en) {
-    font-family: Helvetica, Arial, sans-serif; }
-  html:lang(ja) {
-    font-family: "Meiryo", "メイリオ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif; }
-  html:lang(zh) {
-    font-family: Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif; }
-  html:lang(ko) {
-    line-height: 1.15; }
-  html:lang(en) {
-    line-height: 1.15; }
-  html:lang(ja) {
-    line-height: 1.15; }
-  html:lang(zh) {
-    line-height: 1.15; }
-  html:lang(ko) {
-    word-break: keep-all; }
-  html:lang(en) {
-    word-break: break-all; }
-  html:lang(ja) {
-    word-break: break-all; }
-  html:lang(zh) {
-    word-break: break-all; }
-  html:lang(ko) {
-    word-wrap: break-word; }
-  html:lang(en) {
-    word-wrap: break-word; }
-  html:lang(ja) {
-    word-wrap: break-word; }
-  html:lang(zh) {
-    word-wrap: break-word; }
-  html:lang(ko) {
-    letter-spacing: 0; }
-  html:lang(en) {
-    letter-spacing: 0; }
-  html:lang(ja) {
-    letter-spacing: 0; }
-  html:lang(zh) {
-    letter-spacing: 0; }
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif; }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
 code, form, fieldset, legend, input, textarea, p, blockquote, th, td,

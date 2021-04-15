@@ -45,349 +45,10 @@ a{
     }
 }
 
-// 강제 포커스 생성되는 곳의 아웃라인을 제거하는 소스
-[tabindex="-1"]{
-    &:focus{
-        outline:0;
-    }
-}
-// [tabindex="-1"]:focus:not(:focus-visible) {
-//   outline: 0 !important;
-// }
-
-/*! 반응형 미지원 컨텐츠의 모바일 화면시 가림막 소스 */
-.mobile-mode-dimm-container{
-    display:none;
-}
-@media (max-width:1023px){
-    .mobile-mode-dimm-container{
-        display: flex;
-        position: fixed;
-        top: 0;
-        left: 0;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        outline: 0;
-        overflow: hidden;
-        text-align: center;
-        z-index: $mobile-mode-dimm-container;
-        background: #000;
-        opacity: 1;
-        .mobile-mode-box{
-            position: relative;
-            @include rem(padding, 20px);
-            @include rem(margin, 0 40px);
-            background: #fff;
-            @include rem(border-radius, 10px);
-            border: 2px solid blue;
-            @include rem(font-size, 24px);
-        }
-    }
-}
-
-/*! skipnav */
-.skipnav{position:absolute;top:0;left:0;z-index:9999;width:100%;height:0;line-height:1}
-.skipnav a{display:block;overflow:hidden;width:1px;height:1px;margin:0 -1px -1px 0;padding:0;font-size:0;line-height:1}
-.skipnav a:active,.skipnav a:focus,.skipnav a:hover{position:absolute;top:0;left:0;z-index:50;width:100%;height:19px;margin:0;padding:5px 0;border:1px solid #c4d7ea;background:#2b6cb0;color:#fff;font-weight:700;font-size:1.333em;text-align:center;line-height:100%}
-
-/*! Browser Upgrade Prompt */
-.browserupgrade{margin:.2em 0;padding:.2em 0;background:#ccc;color:#000;font-size:1px}
-.browserupgrade strong{color:#000;font-weight:700}
-.browserupgrade a{color:#8d0080;font-weight:700;text-decoration:underline}
 
 /*! dimm */
 .dimm{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:99;background:#000;opacity:.6}
 .dimm img{display:block}
-
-/* print  */
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-// ******************** code comments ********************
-// accordion
-// ******************** code comments ********************
-/*! 아코디언 스타일 */
-.accrodion-container{}
-.accrodion-list{}
-.accrodion-item{}
-.accrodion-btn{
-    position: relative;
-    display: block;
-    background-color: bisque;
-    @include rem(padding, 8px 20px 8px 20px);
-    border-bottom:1px solid #000000;
-    .hide-txt.close{display: inline-block;}
-    .hide-txt.open{display:none;}
-}
-.accrodion-util{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    .txt{
-        display:inline-block;
-        width:100%;
-        flex:1 1 auto;
-        @include rem(font-size, 16px);
-        color:black;
-        font-weight: 700;
-        line-height: 1.35;
-        background-color:aqua;
-    }
-    .bu{
-        display:inline-block;
-        flex:0 0 auto;
-        @include rem(width, 8px);
-        @include rem(height, 8px);
-        @include rem(margin, -4px 2px 0 2px);
-        @include rem(border-top, 2px solid #000000);
-        @include rem(border-right, 2px solid #000000);
-        transform: rotate(135deg);
-    }
-    .tag{
-        display:inline-block;
-        flex:0 0 auto;
-        @include rem(min-width, 40px);
-        @include rem(font-size, 11px);
-        @include rem(padding, 4px 10px 4px 10px);
-        @include rem(border-radius, 20px);
-        text-align: center;
-        color:#ffffff;
-        font-weight: 500;
-        background-color: green;
-    }
-    .ellipsis{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-}
-.accrodion-content{
-    display:none;
-    @include rem(padding, 38px 0 38px 0);
-    background-color:cornsilk;
-}
-
-// 아코디언 열렸을 때
-.accrodion-item.open{
-    .accrodion-btn{
-        .hide-txt.close{display: none;}
-        .hide-txt.open{display:inline-block;}
-    }
-    .accrodion-content{
-        display: block;
-    }
-}
-
-// ******************** code comments ********************
-// button
-// 프로젝트 폰트 종류에 따라 font-size, line-height 값을 조정해 주기
-// 텍스트 설정후에 패딩으로 버튼의 높이값 조절
-// 최소 가로값이 필요 할 경우 min-width 사용 하기
-// 크기나 스타일에 따라서 lv01, lv02, lv03 등으로 타입 추가 하기
-// ******************** code comments ********************
-/*! 기본 버튼 */
-.btn-lv01{
-    display:inline-block;
-    text-align:center;
-    @include rem(padding, 11px 15px 12px 15px);
-    transition: all .3s ease-out;
-    .txt{
-        @include rem(font-size, 20px);
-        line-height:1.4;
-    }
-    &.blue{
-        border:1px solid blue;
-        background-color:blue;
-        color:#ffffff;
-    }
-    &.white{
-        border:1px solid blue;
-        background-color:#ffffff;
-        color:red;
-    }
-    [class^="ico-"]{
-        @include rem(margin-left, 10px);
-    }
-}
-
-/*! 기본 버튼 - 컨테이너 */
-.btn-container{}
-
-/*! 기본 버튼 - 정렬 */
-.btn-align{
-    &-type01{
-        display:flex;
-        &.spacebetween01{
-            justify-content: space-between;
-            @include rem(margin-right, -5px);
-            a,
-            button{
-                @include rem(margin-right, 5px);
-                flex: 1 1 auto;
-            }
-        }
-    }
-}
-
-
-// ******************** code comments ********************
-// icon
-// 이미지 아이콘과 css 아이콘을 구분해서 관리하기
-// 추가 스타일이 필요할 경우 프로젝트내에서 판단하여 클래스를 추가 하거나 타입을 추가 하기
-// ******************** code comments ********************
-/*! css 아이콘 스타일 - 화살표 */
-.ico-arrow-style{
-    display: inline-block;
-    @include rem(width, 10px);
-    @include rem(height, 10px);
-    @include rem(border-top, 2px solid #000000);
-    @include rem(border-right, 2px solid #000000);
-    &.top {
-        transform: rotate(-45deg);
-    }
-    &.down {
-        transform: rotate(135deg);
-    }
-    &.left {
-        transform: rotate(-135deg);
-    }
-    &.right {
-        transform: rotate(45deg);
-    }
-    &.top-left {
-        transform: rotate(-90deg) skew(-10deg, -10deg);
-    }
-    &.top-right {
-        transform: rotate(0) skew(-10deg, -10deg);
-    }
-    &.bottom-left {
-        transform: rotate(180deg) skew(-10deg, -10deg);
-    }
-    &.bottom-right {
-        transform: rotate(90deg) skew(-10deg, -10deg);
-    }
-    &.top-narrow {
-        transform: rotate(-45deg) skew(-15deg, -15deg);
-    }
-    &.top-wide {
-        transform: rotate(-45deg) skew(7deg, 7deg);
-    }
-}
-
-/*! css 아이콘 스타일 - X */
-.ico-close-gray{
-    display:inline-block;
-    position: relative;
-    @include rem(width, 16px);
-    @include rem(height, 16px);
-    &:before{
-        content:'';
-        width:100%;
-        height:2px;
-        position: absolute;
-        top:50%;
-        left:0;
-        margin-top: -1px;
-        background-color:gray;
-        transition: all .3s ease-out;
-    }
-    &:after{
-        content:'';
-        width:2px;
-        height:100%;
-        position: absolute;
-        top:0;
-        left:50%;
-        margin-left: -1px;
-        background-color:gray;
-        transition: all .3s ease-out;
-    }
-    transform: rotate(-45deg);
-}
-
-/*! images 아이콘 스타일 */
-// 기본 이미지
-.ico-download-black{
-    display:inline-block;
-    @include rem(width, 18px);
-    @include rem(height, 17px);
-    background:url('../images/common/ico_download_dark.png') no-repeat left center;
-    @include rem(background-size, 18px 17px);
-}
-// 스프라이트 이미지
-.ico-download-black02{
-    display: inline-block;
-    @include sprite-custom(rem, $pc-ico-download-dark);
-}
-
 
 // ******************** code comments ********************
 // page navigation
@@ -399,32 +60,19 @@ a{
     @include rem(margin-top,24px);
     text-align:center;
     font-size:0;
-
-    .page-item-container{
-        display:inline-block;
-        // @include rem(margin, 0 34px);
-    }
-
+    .page-item-container{display:inline-block;}
     // 페이징 숫자 영역
     .page-item{
         display:inline-block;
         @include rem(width, 22px);
         @include rem(height, 21px);
-
         .page-link{
             display:table;
             width:100%;
             height:100%;
-            .txt{
-                display:table-cell;
-                @include rem(font-size, 12px);
-                color: #606266;
-            }
+            .txt{display:table-cell;@include rem(font-size, 12px);color: #606266;}
             &.on{
-                .txt{
-                    color: #409eff;
-                    font-weight: 500;
-                }
+                .txt{color: #409eff;font-weight: 500;}
             }
         }
     }
@@ -434,17 +82,8 @@ a{
         display:inline-block;
         @include rem(width, 22px);
         @include rem(height, 21px);
-
-        .page-link{
-            display:table;
-            width:100%;
-            height:100%;
-        }
-
-        .ico-area{
-            display:table-cell;
-            width:100%;
-        }
+        .page-link{display:table;width:100%;height:100%;}
+        .ico-area{display:table-cell;width:100%;}
         .ico-page-arrow{
             display:inline-block;
             position: relative;
@@ -453,270 +92,13 @@ a{
             @include rem(border-top, 1px solid #606266);
             @include rem(border-right, 1px solid #606266);
             transition: border .3s ease-out;
-            &.left{
-                transform: rotate(-135deg);
-                @include rem(margin-right, -2px);
-
-                // hover 애니메이션 관련 소스 필요 없을 경우 제거
-                left:0;
-            }
-            &.right{
-                transform: rotate(45deg);
-                @include rem(margin-left, -2px);
-
-                // hover 애니메이션 관련 소스 필요 없을 경우 제거
-                right:0;
-            }
+            &.left{transform: rotate(-135deg);@include rem(margin-right, -2px);left:0;}
+            &.right{transform: rotate(45deg);@include rem(margin-left, -2px);right:0;}
         }
-
-        &.prev{
-            @include rem(margin-left, 8px);
-        }
-        &.next{
-            @include rem(margin-right, 8px);
-        }
-
-        // 페이징 버튼 - 화살표 애니메이션 - 필요 없을 시 제거하기
-        .page-link{
-            // &:hover:not(.disabled){
-            //     .ico-page-arrow{
-            //         &.left{
-            //             left:-3px;
-            //         }
-            //         &.right{
-            //             right:-3px;
-            //         }
-            //     }
-            // }
-        }
-
-        // 페이징 버튼 - 기본 마우스 hover 속성
-        
+        &.prev{@include rem(margin-left, 8px);}
+        &.next{@include rem(margin-right, 8px);}
     }
 }
-
-/*! page navigation - type02 */
-.page-nav.type02{
-    .page-item-container{
-        .page-item{
-            &:first-child{
-                position: relative;
-                @include rem(padding-right, 15px);
-                &:after{
-                    content:'';
-                    @include rem(width, 1px);
-                    @include rem(height, 20px);
-                    position: absolute;
-                    top:50%;
-                    right:0;
-                    @include rem(margin-top, -10px);
-                    background-color:gray;
-                    transform: rotate(0deg) skew(-20deg, 0deg);
-                }
-            }
-            &:last-child{
-                @include rem(padding-left, 15px);
-            }
-        }
-    }
-}
-
-// ******************** code comments ********************
-// scroll
-// ******************** code comments ********************
-/*! jquery scrollbar - customizing css - common */
-.scrollbar-inner,
-.scrollbar-outer{
-    overflow:hidden;
-}
-
-/*! jquery scrollbar - customizing css - inner scroll */
-.scrollbar-inner > .scroll-element .scroll-element_outer,
-.scrollbar-inner > .scroll-element .scroll-element_track,
-.scrollbar-inner > .scroll-element .scroll-bar {
-    border-radius: 0;
-    transition:background-color .3s ease-out;
-}
-
-.scrollbar-inner > .scroll-element .scroll-element_track,
-.scrollbar-inner > .scroll-element .scroll-bar {
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-    filter: alpha(opacity=1);
-    opacity: 1;
-}
-
-.scrollbar-inner > .scroll-element .scroll-element_track { background-color: rgba(0, 0, 0, 0.1); }
-.scrollbar-inner > .scroll-element .scroll-bar { background-color: darkgray; }
-.scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: gray; }
-.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: lightgray; }
-
-/*! jquery scrollbar - customizing css - outer scroll */
-.scrollbar-outer > .scroll-element .scroll-element_outer,
-.scrollbar-outer > .scroll-element .scroll-element_track,
-.scrollbar-outer > .scroll-element .scroll-bar {
-    border-radius: 0;
-    transition:background-color .3s ease-out;
-}
-
-.scrollbar-outer > .scroll-element .scroll-element_track { background-color: rgba(0, 0, 0, 0.1); }
-.scrollbar-outer > .scroll-element .scroll-bar { background-color: darkgray; }
-.scrollbar-outer > .scroll-element .scroll-bar:hover { background-color: gray; }
-.scrollbar-outer > .scroll-element.scroll-draggable .scroll-bar { background-color: lightgray; }
-
-
-// ******************** code comments ********************
-// swiper - 기본
-// ******************** code comments ********************
-// swiper 종류별로 .base-swiper 와 같이 클래스 만들고 상속 해서 사용하기
-.default-swiper{
-    .swiper-container{}
-    .swiper-wrapper{}
-    .swiper-slide{
-        @include rem(width, 200px);
-        @include rem(height, 200px);
-        @include rem(margin-right, 20px);
-        background-color:chocolate;
-    }
-    .swiper-pagination{
-        // 블릿 버전
-        &.swiper-pagination-bullets{}
-        // 텍스트 숫자 버전
-        &.swiper-pagination-fraction{}
-        // 프로그래스바 버전
-        &.swiper-pagination-progressbar{}
-    }
-    // 블릿 - 활성화
-    .swiper-pagination-bullet-active{
-        background-color:blue;
-    }
-    // 프로그래스바 - 활성화
-    .swiper-pagination-progressbar-fill{
-        background-color:blue;
-    }
-    // swiper 이전 버튼
-    .swiper-button-prev{
-        &:after{
-            font-size:0;
-            display: inline-block;
-            @include rem(width, 20px);
-            @include rem(height, 20px);
-            @include rem(border-top, 2px solid #000000);
-            @include rem(border-right, 2px solid #000000);
-            transform: rotate(-135deg);
-        }
-    }
-    // swiper 다음 버튼
-    .swiper-button-next{
-        &:after{
-            font-size:0;
-            display: inline-block;
-            @include rem(width, 20px);
-            @include rem(height, 20px);
-            @include rem(border-top, 2px solid #000000);
-            @include rem(border-right, 2px solid #000000);
-            transform: rotate(45deg);
-        }
-    }
-}
-
-// ******************** code comments ********************
-// tab
-// ******************** code comments ********************
-/*! 탭 메뉴 영역 - 탭 컨테이너 */
-.tab-nav-container{
-    // 스크롤 필요시 사용
-    &.scroll{
-        overflow-y: hidden;
-        overflow-x: auto;
-        white-space: nowrap;
-        margin:0 auto;
-        -webkit-overflow-scrolling: touch;
-        // @include rem(width, 값설정);
-        @include rem(width, 300px);
-
-        // scroll 디자인 필요할 경우 (크롬전용)
-        &::-webkit-scrollbar {
-            height: 8px;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: rgb(134, 133, 133);
-            border-radius: 10px;
-            background-clip: padding-box;
-            border: 1px solid transparent;
-        }
-        &::-webkit-scrollbar-track {
-            background-color: red;
-            border-radius: 10px;
-            box-shadow: inset 0 0 3px white;
-        }
-    }
-}
-
-/*! 탭 메뉴 영역 - 기본 탭 - 균등 분할 */
-.tab-nav{
-    width:100%;
-    display:table;
-    table-layout: fixed;
-
-    .tab-item{
-        display:table-cell;
-        @include rem(height, 70px);
-        @include rem(padding, 0 1px);
-        &:first-child{
-            padding-left:0;
-        }
-        &:last-child{
-            padding-right:0;
-        }
-    }
-    .tab-link{
-        display:table;
-        width:100%;
-        height:100%;
-        text-align:center;
-        background-color: gray;
-        transition:background-color .2s ease-out;
-        .hide-txt{display:none;}
-        .txt{
-            // 텍스트를 말줄임 ... 해야 할 경우 관련소스를 여기에 넣기
-            display:table-cell;
-            @include rem(padding, 10px);
-            @include rem(font-size, 20px);
-            color:lightgray;
-        }
-
-        &:hover,
-        &:focus,
-        &:active,
-        &.active{
-            background-color: blue;
-            .txt{
-                // font-weight:500;
-                color:#ffffff;
-            }
-        }
-        &.active{
-            .hide-txt{display:inline-block;}
-        }
-    }
-
-    // 탭 메뉴 불균등 분할 일때 추가 클래스
-    &.unequal{
-        display:inline-table;
-        table-layout: auto;
-    }
-}
-
-/*! 탭 메뉴 영역 - 탭 컨텐츠 영역 */
-.tab-content{
-    .tab-pane{
-        display:none;
-        &.active{
-            display:block;
-        }
-    }
-}
-
 
 // ******************** code comments ********************
 // table
@@ -730,47 +112,6 @@ a{
 .tbl-cell-equal{
     table-layout: fixed;
 }
-// 고정틀 + 스크롤 테이블
-.tbl-fixed-scroll{
-    border:1px solid gray;
-    -webkit-overflow-scrolling: touch;
-    overflow: auto;
-    &.height01{
-        @include rem(max-height, 300px);
-    }
-    table{
-        border:0;
-        white-space: nowrap;
-        border-collapse: separate;
-    }
-    .sticky-thead01{
-        position: sticky;
-        top:0;
-        z-index:5;
-        @include rem(height, 25px);
-    }
-    .sticky-thead02{
-        position: sticky;
-        @include rem(top, 25px);
-        z-index:4;
-        @include rem(height, 25px);
-    }
-    .sticky-tbody01{
-        position: sticky;
-        top:0;
-        left:0;
-        z-index: 3;
-        @include rem(min-width, 90px);
-    }
-    .sticky-tbody02{
-        position: sticky;
-        top:0;
-        @include rem(left, 90px);
-        z-index: 2;
-        background-color: #ffffff;
-    }
-}
-
 // col 타입
 .tbl-col01{
     width:100%;
@@ -883,12 +224,8 @@ a{
         }
     }
     tr:last-child{
-        th{
-            border-bottom:0;
-        }
-        td{
-            border-bottom:0;
-        }
+        th{border-bottom:0;}
+        td{border-bottom:0;}
     }
 }
 
@@ -922,102 +259,11 @@ a{
     }
 }
 
-
-// ******************** code comments ********************
-// video
-// ******************** code comments ********************
-/*! movie */
-.movie-area{
-    width: 300px; height: 300px;
-    iframe{
-        border: none;
-        width:100%;
-        height:100%;
-    }
-    video{
-        width: 100%; height: 100%;
-    }
-    object{
-        width: 100%; height: 100%;
-    }
-    embed{
-        width: 100%; height: 100%;
-    }
-}
-
-
-// 탭메뉴
-.tab-group{
-  margin: 50px 0;
-  .tab-list{
-    display: flex;
-    li{
-      a{display: block;}
-      &.on{
-        border-bottom: 1px solid salmon;
-        font-weight: bold;
-        a{color: salmon;}
-      }
-      +li{margin-left: 15px;}
-    }
-  }
-  .tab-content{margin-top: 30px;}
-}
-
 // 팝업
 .popup-wrap {
-  
   // 팝업(on,off) 노출 효과
-  &.on {
-    display: block;
-    animation: fnIn .6s;
-  }
-  &.off { animation: fnOut 1s; }
-}
-
-// 햄버그 메뉴
-.btn-menu{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 20px;
-  transition: transform .2s ease-out,opacity .2s ease-out,left .2s ease-out;
-  .bar{
-    position: absolute;
-    left: 0;
-    width: 22px;
-    height: 2px;
-    background: #333;
-    transform: rotate(0);
-    &:nth-child(1){
-      top: 0;
-      transform-origin: 0 0;
-    }
-    &:nth-child(2){
-      top: 8px;
-    }
-    &:nth-child(3){
-      top: 16px;
-      transform-origin: 0 100%;
-    }
-  }
-  &.on{
-    .bar{
-      &:nth-child(1){
-        top: 1px;
-        left: 3px;
-        transform: rotate(45deg);
-      }
-      &:nth-child(2){
-        opacity: 0;
-      }
-      &:nth-child(3){
-        left: 3px;
-        transform: rotate(-45deg);
-      }
-    }
-  }
+    &.on {display: block;animation: fnIn .6s;}
+    &.off { animation: fnOut 1s; }
 }
 
 // ******************** code comments ********************
@@ -1025,143 +271,44 @@ a{
 // ******************** code comments ********************
 /*! form - checkbox */
 .input-checkbox{
-  display:inline-block;
-  input{
-      border: 0;
-      clip: rect(0 0 0 0);
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-  }
-  label{
-      display:inline-block;
-      position: relative;
-      @include rem(min-width, 20px);
-      @include rem(min-height, 20px);
-      @include rem(padding-top, 1px);
-      // 익스에서 위로 조금더 올라 간것 같으면 위 패딩은 미디어쿼리 핵으로 2px 로 분기처리하기
-      user-select: none;
-  }
-  .txt{
-      display:inline-block;
-      color:gray;
-      @include rem(font-size, 16px);
-  }
-  label:before{
-      content:'';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      @include rem(width, 20px);
-      @include rem(height, 20px);
-      @include rem(margin-top, -10px);
-      border: 1px solid gray;
-      text-align: center;
-      transition: all .3s ease-out;
-  }
-  label:after{
-      content:'';
-      display:block;
-      position: absolute;
-      top: 50%;
-      @include rem(left, 5px);
-      @include rem(margin-top, -4px);
-      @include rem(width, 9px);
-      @include rem(height, 6px);
-      @include rem(border-top, 2px solid gray);
-      @include rem(border-right, 2px solid gray);
-      transform: rotate(130deg);
-      transition: all .3s ease-out;
-  }
-  &.right{
-      label{
-          @include rem(padding-left, 30px);
-      }
-  }
-  &.left{
-      label{
-          @include rem(padding-right, 30px);
-      }
-      label:before{
-          left:auto;
-          right:0;
-      }
-      label:after{
-          left:auto;
-          @include rem(right, 5px);
-      }
-  }
-  &.up{
-      label{
-          @include rem(padding-bottom, 25px);
-      }
-      label:before{
-          top:auto;
-          bottom:0;
-          left:50%;
-          @include rem(margin-left, -10px);
-          margin-top:0;
-      }
-      label:after{
-          top:auto;
-          @include rem(bottom, 8px);
-          left:50%;
-          @include rem(margin-left, -5px);
-          margin-top:0;
-      }
-  }
-  &.down{
-      label{
-          @include rem(padding-top, 25px);
-      }
-      label:before{
-          top:0;
-          left:50%;
-          @include rem(margin-left, -10px);
-          margin-top:0;
-      }
-      label:after{
-          @include rem(top, 6px);
-          left:50%;
-          @include rem(margin-left, -5px);
-          margin-top:0;
-      }
-  }
-  // 접근성 소스 필요시 아래 주석 해제
-  // input:hover,
-  // input:focus{
-  // 	& + label:before{
-  // 		box-shadow: 0px 0px 2px 3px rgba(0,180,255,0.5);
-  // 	}
-  // }
-  // checked 됐을때 스타일 변화
-  input.checked,
-  input:checked{
-      & + label:before{
-          background-color:blue;
-          border-color:blue;
-      }
-      & + label:after{
-          border-color:#ffffff;
-      }
-      & + label .txt{
-          color: gray;
-      }
-  }
-  // disabled 됐을때 스타일 변화
-  input.disabled,
-  input:disabled{
-      & + label:before{
-          background-color:lightgray;
-          border-color:gray;
-      }
-      & + label:after{
-          border-color:#ffffff;
-      }
-  }
+    display:inline-block;
+    input{border: 0;clip: rect(0 0 0 0);width: 1px;height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;}
+    label{display:inline-block;position: relative;@include rem(min-width, 20px);@include rem(min-height, 20px);@include rem(padding-top, 1px);user-select: none;}
+    .txt{display:inline-block;color:gray;@include rem(font-size, 16px);}
+    label:before{content:'';position: absolute;top: 50%;left: 0;@include rem(width, 20px);@include rem(height, 20px);@include rem(margin-top, -10px);border: 1px solid gray;text-align: center;transition: all .3s ease-out;}
+    label:after{content:'';display:block;position: absolute;top: 50%;@include rem(left, 5px);@include rem(margin-top, -4px);@include rem(width, 9px);@include rem(height, 6px);@include rem(border-top, 2px solid gray);@include rem(border-right, 2px solid gray);transform: rotate(130deg);transition: all .3s ease-out;}
+    &.right{
+        label{@include rem(padding-left, 30px);}
+    }
+    &.left{
+        label{@include rem(padding-right, 30px);}
+        label:before{left:auto;right:0;}
+        label:after{left:auto;@include rem(right, 5px);}
+    }
+    &.up{
+        label{@include rem(padding-bottom, 25px);}
+        label:before{top:auto;bottom:0;left:50%;@include rem(margin-left, -10px);margin-top:0;}
+        label:after{top:auto;@include rem(bottom, 8px);left:50%;@include rem(margin-left, -5px);margin-top:0;
+        }
+    }
+    &.down{
+        label{@include rem(padding-top, 25px);}
+        label:before{top:0;left:50%;@include rem(margin-left, -10px);margin-top:0;}
+        label:after{@include rem(top, 6px);left:50%;@include rem(margin-left, -5px);margin-top:0;}
+    }
+    // checked 됐을때 스타일 변화
+    input.checked,
+    input:checked{
+        & + label:before{background-color:blue;border-color:blue;}
+        & + label:after{border-color:#ffffff;}
+        & + label .txt{color: gray;}
+    }
+    // disabled 됐을때 스타일 변화
+    input.disabled,
+    input:disabled{
+        & + label:before{background-color:lightgray;border-color:gray;}
+        & + label:after{border-color:#ffffff;}
+    }
 }
 
 // ******************** code comments ********************
@@ -1170,138 +317,40 @@ a{
 /*! form - radio */
 .input-radio{
   // display:inline-block;
-  input{
-      border: 0;
-      clip: rect(0 0 0 0);
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-  }
-  label{
-      display:inline-block;
-      position: relative;
-      @include rem(min-width, 20px);
-      @include rem(min-height, 20px);
-      @include rem(padding-top, 1px);
-      // 익스에서 위로 조금더 올라 간것 같으면 위 패딩은 미디어쿼리 핵으로 2px 로 분기처리하기
-      user-select: none;
-  }
-  .txt{
-      display:inline-block;
-      color:#606266;
-      @include rem(font-size, 14px);
-  }
-  label:before{
-      content:'';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      @include rem(width, 20px);
-      @include rem(height, 20px);
-      @include rem(margin-top, -10px);
-      border: 1px solid #dcdfe6;
-      text-align: center;
-      border-radius: 50%;
-      transition: all .3s ease-out;
-  }
-  label:after{
-  }
-  &.right{
-      label{
-          @include rem(padding-left, 30px);
-      }
-  }
-  &.left{
-      label{
-          @include rem(padding-right, 30px);
-      }
-      label:before{
-          left:auto;
-          right:0;
-      }
-      label:after{
-          left:auto;
-          @include rem(right, 6px);
-      }
-  }
-  &.up{
-      label{
-          @include rem(padding-bottom, 25px);
-      }
-      label:before{
-          top:auto;
-          bottom:0;
-          left:50%;
-          @include rem(margin-left, -10px);
-          margin-top:0;
-      }
-      label:after{
-          top:auto;
-          @include rem(bottom, 6px);
-          left:50%;
-          @include rem(margin-left, -4px);
-          margin-top:0;
-      }
-  }
-  &.down{
-      label{
-          @include rem(padding-top, 25px);
-      }
-      label:before{
-          top:0;
-          left:50%;
-          @include rem(margin-left, -10px);
-          margin-top:0;
-      }
-      label:after{
-          @include rem(top, 6px);
-          left:50%;
-          @include rem(margin-left, -4px);
-          margin-top:0;
-      }
-  }
-  // 접근성 소스 필요시 아래 주석 해제
-  // input:hover,
-  // input:focus{
-  // 	& + label:before{
-  // 		box-shadow: 0px 0px 2px 3px rgba(0,180,255,0.5);
-  // 	}
-  // }
-  // checked 됐을때 스타일 변화
-  input.checked,
-  input:checked{
-      & + label:before{
-          background-color:#409eff;
-          border-color:#409eff;
-      }
-      & + label:after{
-          content:'';
-          display:block;
-          position: absolute;
-          top: 50%;
-          background-color: #fff;
-          @include rem(left, 6px);
-          @include rem(width, 8px);
-          @include rem(height, 8px);
-          @include rem(margin-top, -4px);
-          border-radius: 50%;
-          transition: all .3s ease-out;
-      }
-  }
-  // disabled 됐을때 스타일 변화
-  input.disabled,
-  input:disabled{
-      & + label:before{
-          background-color:lightgray;
-          border-color:gray;
-      }
-      & + label:after{
-          background-color:#ffffff;
-      }
-  }
+    input{border: 0;clip: rect(0 0 0 0);width: 1px;height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;}
+    label{display:inline-block;position: relative;@include rem(min-width, 20px);@include rem(min-height, 20px);@include rem(padding-top, 1px);user-select: none;}
+    .txt{display:inline-block;color:#606266;@include rem(font-size, 14px);}
+    label:before{content:'';position: absolute;top: 50%;left: 0;@include rem(width, 20px);@include rem(height, 20px);@include rem(margin-top, -10px);border: 1px solid #dcdfe6;text-align: center;border-radius: 50%;transition: all .3s ease-out;}
+    &.right{
+        label{@include rem(padding-left, 30px);}
+    }
+    &.left{
+        label{@include rem(padding-right, 30px);}
+        label:before{left:auto;right:0;}
+        label:after{left:auto;@include rem(right, 6px);}
+    }
+    &.up{
+        label{@include rem(padding-bottom, 25px);}
+        label:before{top:auto;bottom:0;left:50%;@include rem(margin-left, -10px);margin-top:0;}
+        label:after{top:auto;@include rem(bottom, 6px);left:50%;@include rem(margin-left, -4px);margin-top:0;}
+    }
+    &.down{
+        label{@include rem(padding-top, 25px);}
+        label:before{top:0;left:50%;@include rem(margin-left, -10px);margin-top:0;}
+        label:after{@include rem(top, 6px);left:50%;@include rem(margin-left, -4px);margin-top:0;}
+    }
+    // checked 됐을때 스타일 변화
+    input.checked,
+    input:checked{
+        & + label:before{background-color:#409eff;border-color:#409eff;}
+        & + label:after{content:'';display:block;position: absolute;top: 50%;background-color: #fff;@include rem(left, 6px);@include rem(width, 8px);@include rem(height, 8px);@include rem(margin-top, -4px);border-radius: 50%;transition: all .3s ease-out;}
+    }
+    // disabled 됐을때 스타일 변화
+    input.disabled,
+    input:disabled{
+        & + label:before{background-color:lightgray;border-color:gray;}
+        & + label:after{background-color:#ffffff;}
+    }
 }
 
 // ******************** code comments ********************
@@ -1309,39 +358,29 @@ a{
 // ******************** code comments ********************
 /*! form - input text */
 .input-txt{
-  display:inline-block;position:relative;width:100%;
-  border:1px solid #cccccc;
-  background-color: #ffffff;
-  &.in-message {
-      @include rem(margin-bottom, 30px);
-  }
-  input{
-      display:inline-block;padding:0 0 0 15px; width:100%;font-size:12px;
-      height:38px;line-height:38px;border:none;
-      appearance: none;border-radius: 0;
-  }
-  // 에러 또는 성공 메세지 출력 관련 스타일
-  .message {
-      display: block;
-      @include rem(margin-top,5px);
-      @include rem(font-size, 12px);
-      &.pass {
-          color: blue;
-      }
-      &.error {
-          color: red;
-      }
-  }
+    display:inline-block;position:relative;width:100%;
+    border:1px solid #cccccc;
+    background-color: #ffffff;
+    &.in-message {@include rem(margin-bottom, 30px);}
+    input{display:inline-block;padding:0 0 0 15px; width:100%;font-size:12px;height:38px;line-height:38px;border:none;appearance: none;border-radius: 0;}
+    // 에러 또는 성공 메세지 출력 관련 스타일
+    .message {
+        display: block;
+        @include rem(margin-top,5px);
+        @include rem(font-size, 12px);
+        &.pass {color: blue;}
+        &.error {color: red;}
+    }
 }
 .input-txt input:read-only{opacity:0.5;}
 
 // form - placeholder
 // Chrome, Firefox, Opera, Safari 10.1+
 .input-txt input::placeholder{
-  font-size:12px;color:gray;
-  background:transparent;
-  // 아래 속성은 Firefox 용
-  opacity: 1;
+    font-size:12px;color:gray;
+    background:transparent;
+    // 아래 속성은 Firefox 용
+    opacity: 1;
 }
 .input-txt input:-ms-input-placeholder{position:relative;top:1px;}
 .input-txt input::-ms-input-placeholder{position:relative;top:1px;}
@@ -1349,122 +388,15 @@ a{
 // ******************** code comments ********************
 /*! form - selectbox */
 .selectbox{
-  position:relative;z-index:0;display:inline-block;width:100%;
-  overflow:hidden;border:1px solid #e4e7ed;
-  border-radius: 4px;
-  &:after{
-      content:'';
-      display:block;
-      position:absolute;
-      top:50%;
-      @include rem(right, 22px);
-      @include rem(margin-top, -8px);
-      @include rem(width, 10px);
-      @include rem(height, 10px);
-      @include rem(border-top, 2px solid gray);
-      @include rem(border-right, 2px solid gray);
-      transform: rotate(135deg);
-  }
-  select{
-      cursor: pointer;
-      position: relative;
-      z-index: 1;
-      width:100%;
-      @include rem(padding, 0 0 0 20px);
-      @include rem(height, 40px);
-      @include rem(line-height, 40px);
-      @include rem(font-size, 14px);
-      color: #c0c4cc;
-      background-color:transparent;
-      border:none;appearance:none;
-      border-radius:0;
-  }
-  select::-ms-expand{display:none;}
-  select:disabled{
-      background-color:lightgray;
-      pointer-events: none;
-  }
-}
-
-// ******************** code comments ********************
-// form - file input
-// ******************** code comments ********************
-/*! 파일첨부 스타일 */
-.input-file-type01 {
-  position: relative;
-  @include rem(padding-right, 60px);
-
-  .input-file {
-      position: relative;
-      width: 100%;
-      @include rem(height, 50px);
-      z-index: 2;
-      opacity: 0;
-      cursor: pointer;
-  }
-
-  .input-file-label {
-      display: block;
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      cursor: pointer;
-      @include rem-calc(width, 100%, '-', 60px);
-      @include rem(padding, 15px 0 15px 20px);
-      border: 1px solid gray;
-      color: gray;
-      @include rem(font-size, 16px);
-      font-weight: 300;
-      transition: all .3s ease-out;
-
-      &:after {
-          content: '';
-          display: block;
-          @include rem(width, 50px);
-          @include rem(height, 50px);
-          position: absolute;
-          @include rem(top, -1px);
-          @include rem(right, -60px);
-          background: #f5f5f5 url('../images/common/ico_add_file.png') no-repeat center center;
-      }
-  }
-
-  .input-file {
-      &:hover + .input-file-label,
-      &:focus + .input-file-label {
-          border: 1px solid black;
-      }
-  }
+    position:relative;z-index:0;display:inline-block;width:100%;
+    overflow:hidden;border:1px solid #e4e7ed;
+    border-radius: 4px;
+    &:after{content:'';display:block;position:absolute;top:50%;@include rem(right, 22px);@include rem(margin-top, -8px);@include rem(width, 10px);@include rem(height, 10px);@include rem(border-top, 2px solid gray);@include rem(border-right, 2px solid gray);transform: rotate(135deg);}
+    select{cursor: pointer;position: relative;z-index: 1;width:100%;@include rem(padding, 0 0 0 20px);@include rem(height, 40px);@include rem(line-height, 40px);@include rem(font-size, 14px);color: #c0c4cc;background-color:transparent;border:none;appearance:none;border-radius:0;}
+    select::-ms-expand{display:none;}
+    select:disabled{background-color:lightgray;pointer-events: none;}
 }
 
 .input-textarea{
-  textarea{
-      width: 100%;
-      height: 152px;
-      margin-top: 8px;
-      border-color: #e4e7ed;
-      border-radius: 4px;
-  }
+    textarea{width: 100%;height: 152px;margin-top: 8px;border-color: #e4e7ed;border-radius: 4px;}
 }
-
-
-/* 프로토타입 리스트 */
-.____prototype-group {
-    margin-bottom: 50px;
-    padding:10px;
-    .input-checkbox {margin-right: 10px;}
-    .input-radio {margin-right: 10px;}
-}
-.____prototype-group hr {display: inline;border: 0;padding: 0 2px 0 2px;}
-.____prototype-tit01 {text-align: left;font-size: 20px;padding: 10px 10px 10px 10px;background: #cccccc;font-weight: bold;line-height: 1.5;}
-.____code-info {display: block;background: #dceef9;color: #000000;padding: 10px;border: 1px dotted #000000;margin-top: 20px;white-space: pre-wrap;line-height: 1.5;font-size: 14px;}
-.____btn-info-view {cursor: pointer;margin-top: 10px;background: #000000;color: #ffffff;height: 30px;padding: 0 30px 0 10px;position: relative;}
-.____btn-info-view:before {display: block;content: '';width: 9px;height: 1px;background: #ffffff;position: absolute;top: 50%;right: 10px;margin-top: -1px;}
-.____btn-info-view:after {display: block;content: '';width: 1px;height: 9px;background: #ffffff;position: absolute;top: 50%;right: 14px;margin-top: -5px;}
-.____code-info-view {display: none;background: #DCEEE5;color: #000000;padding: 10px;border: 1px dotted #000000;margin-top: 0;white-space: pre-wrap;line-height: 1.5;font-size: 14px;}
-.____btn-info-view.on + .____code-info-view {display: block;}
-.____btn-info-view.on:after {display: none;}
-.____prototype-table-sample01 {width: 100%;table-layout: fixed;margin-top: 10px;}
-.____prototype-table-sample01 td {border: 1px solid #dddddd;text-align: center;padding: 10px;}
-.____prototype-table-sample01 th {border: 1px solid #dddddd;text-align: center;padding: 10px;background: #eeeeee;}

@@ -1,7 +1,7 @@
 extends /_src/_pug/_extend_html5
 
 block vars
-  - var bodyClass = 'main'
+  - var wrapClass = 'main'
 
 block header 
   header.pgheader_wrap.type02
@@ -32,24 +32,18 @@ block contents
                 .input-txt
                   .input-box
                     input(type="text" title="" id="txt01" placeholder='비밀번호를 입력해주세요').mt-0.h-56
-                  //- .message 이메일을 확인해주세요
-                //- .cform_field
-                //-   .cform_ftr
-                //-     //- .cform_fcell.has_lab
-                //-     //-   label.cfc_lab(for='cfc_01') 아이디
-                //-     .cform_fcell.has_fcont
-                //-       input#cfc_01.form_int(type='text' placeholder='아이디(이메일)로 입력해주세요')
-                //-   .cform_ftr
-                //-     //- .cform_fcell.has_lab
-                //-     //-   label.cfc_lab(for='cfc_02') 패스워드
-                //-     .cform_fcell.has_fcont
-                //-       input#cfc_02.form_int(type='password' placeholder='비밀번호를 입력해주세요')
-                .btn_cfmelse_w
-                  a.btn_cfmelse(href='#' onclick="COVID.dimLayerShow('#srdTarget01');") 비밀번호 재설정
-                  a.btn_cfmelse(href='#' onclick="COVID.dimLayerShow('#srdTarget02');") 접속권한 요청
-                .btn_cfmsm_w
-                  a.btn_cfmsm.btn-web(href='#') 웹 로그인
-                  a.btn_cfmsm.btn-certifi(href='#') 인증서 로그인
+                // 20210415 버튼공통 작업(class명 변경됬으니 확인필요)
+                .btn-group.right
+                  button.inline(onclick="COVID.dimLayerShow('#srdTarget01');")
+                    span.txt 비밀번호 재설정
+                  button.inline(onclick="COVID.dimLayerShow('#srdTarget02');") 
+                    span.txt 접속권한 요청
+                // 20210415 버튼공통 작업(class명 변경됬으니 확인필요)
+                .btn-group
+                  button.wid-full.color-blue02(type="submit")
+                    .txt 웹 로그인
+                  button.wid-full.color-blue03(type="submit")
+                    .txt 인증서 로그인
 
       // 비밀번호 재설정 팝업
       #srdTarget01.dimlayer_z
@@ -87,7 +81,7 @@ block contents
                 // closetrigger 있으면 닫힘
                 button.color-white.wid-89.closetrigger(href='#')
                   span.txt 취소
-                button.color-blue.wid-89.closetrigger(href='#')
+                button(type="submit").color-blue.wid-89.closetrigger
                   span.txt 확인
               button(href='javascript:;')
                 span.hdtext
