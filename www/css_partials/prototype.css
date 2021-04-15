@@ -160,7 +160,8 @@ a:before {
     font-size: 1.4rem;
     color: #606266;
     border-bottom: 1px solid #e4e7ed;
-    line-height: 1.5; }
+    line-height: 1.5;
+    text-align: center; }
     .tbl-col01 td.point {
       color: #c12526; }
     .tbl-col01 td.point02 {
@@ -265,7 +266,8 @@ a:before {
     font-size: 14px;
     font-size: 1.4rem;
     color: #606266;
-    border-bottom: 1px solid #e4e7ed; }
+    border-bottom: 1px solid #e4e7ed;
+    text-align: center; }
     .tbl-col-row01 td.border-r {
       border-right: 1px solid #e4e7ed; }
     .tbl-col-row01 td.point {

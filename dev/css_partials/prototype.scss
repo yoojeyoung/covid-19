@@ -135,6 +135,7 @@ a{
         color: #606266;
         border-bottom:1px solid #e4e7ed;
         line-height: 1.5;
+        text-align: center;
         &.point{color: #c12526;}
         &.point02{background:#fff6f8};
         &.border-r{border-right: 1px solid #e4e7ed};
@@ -250,6 +251,7 @@ a{
         border-bottom:1px solid #e4e7ed;
         &.border-r{border-right: 1px solid #e4e7ed};
         &.point{color: #c12526;}
+        text-align: center;
     }
     thead{
         th{color: #000;}
