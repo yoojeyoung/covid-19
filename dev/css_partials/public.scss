@@ -239,12 +239,14 @@ body{background: #f5f5f7}
         &.h-56{@include rem(height, 56px);}
       }
       .btn-lv01{
+        @include rem(min-width,85px);
         @include rem(height,40px);
         @include rem(margin-left,8px);
-        @include rem(padding,9px 19px);
+        @include rem(padding,9px 5px);
         @include rem(border-radius,4px);
-        background: #f5f6f7;
-        .txt{@include rem(font-size,14px);}
+        background: #e1e3e8;
+        text-align: center;
+        .txt{@include rem(font-size,14px);color: #606266;}
       }
     }
     &:not(:first-child){@include rem(margin-top,16px);}
@@ -281,6 +283,43 @@ body{background: #f5f5f7}
 }
 
 /* 버튼 공통 */
+
+/* 버튼 - 개인으로 사용시 */
+button,a{
+  @include rem(min-width,80px);
+  @include rem(padding,10px 5px);
+  text-align: center;
+  .txt{@include rem(font-size,14px);color: #646266;}
+  &.wid-80{@include rem(min-width,80px);}
+  &.wid-89{@include rem(min-width,89px);}
+  &.wid-79{@include rem(min-width,79px);}
+  &.wid-66{@include rem(min-width,66px);}
+  &.color-blue{
+    background: #0778ca;
+    .txt{color: #fff;}
+  }
+  &.color-blue02{
+    background: #2883c5;
+    .txt{color: #fff;}
+  }
+  &.color-blue03{
+    background: #283356;
+    .txt{color: #fff;}
+  }
+  &.color-red{
+    background:#dc3545;
+    .txt{color: #fff;}
+  }
+  &.color-white{
+    background: #fff;
+    .txt{color: #646266;}
+  }
+  &.wid-full{
+    width: 100%;
+    min-width: auto;
+  }
+}
+/* 버튼 - 그룹으로 사용시 */
 .btn-group{
   @include rem(margin-top,24px);
   text-align: center;
@@ -310,9 +349,11 @@ body{background: #f5f5f7}
     .txt{@include rem(font-size,14px);color: #606266;text-align: center}
   }
   button,a{
-    &.wid-80{@include rem(min-width,80px);}
+    &.wid-92{@include rem(min-width,92px);}
     &.wid-89{@include rem(min-width,89px);}
+    &.wid-80{@include rem(min-width,80px);}
     &.wid-79{@include rem(min-width,79px);}
+    &.wid-77{@include rem(min-width,77px);}
     &.color-blue{
       background: #0778ca;
       .txt{color: #fff;}
@@ -397,7 +438,8 @@ section.content-wrap{
   white-space: nowrap;
   .inner{
     margin-top: 0;
-    @include rem(min-width,1140px);
+    // 1140px
+    @include rem(min-width,1420px);
     @include rem(padding,24px);
   }
   .sec-tit{
@@ -423,6 +465,7 @@ section.content-wrap{
         @include rem(margin-left,16px);
         @include rem(padding,11px 10px);
         border: 1px solid #0778ca;
+        text-align: center;
         @include rem(border-radius,4px);
         .txt{@include rem(font-size,12px);color: #0778ca;word-wrap: break-word;word-break: break-all;}
         &.wid-156{@include rem(padding,5px 10px);@include rem(min-width,156px);}
@@ -574,6 +617,42 @@ section.content-wrap{
     }
     &:nth-child(3){border-bottom: none;}
     &.pb-0{padding-bottom: 0;}
+  }
+}
+
+/* 검색영역 */
+.search-form{
+  .search-type{
+    display: flex;align-items: center;
+    &:not(:first-child){margin-top: 18px}
+  }
+  .input-radio{@include rem(width,180px);}
+  .search-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include rem(width,220px);
+    .type{
+      @include rem(font-size,14px);
+      font-weight: bold;
+      color: #606266;
+      + .input-txt{@include rem(margin-left,20px);}
+      + .selectbox{@include rem(margin-left,20px);}
+    }
+    .selectbox{width: 150px}
+    .input-txt{@include rem(padding-right,6px);}
+    + .search-list{@include rem(margin-left,30px);}
+    &.wid-445{width: 445px;}
+  }
+  .btn-data{
+    @include rem(padding,11px 10px);
+    border: 1px solid #e4e7ed;
+    border-radius: 4px;
+    text-align: center;
+    .txt{text-align: center;}
+    &:not(:last-child){@include rem(margin-left,28px);}
+    + .btn-data{@include rem(margin-left,10PX);}
+    + .input-txt{@include rem(margin-left,16px);}
   }
 }
 

@@ -356,7 +356,7 @@ $wide-screen: "(min-width: #{$max-breakpoint-main}px)";
 $rem-baseline: $global-font-size !default;
 $rem-fallback: true !default;
 // 하위브라우저 호환 맞춰야 할때 - false: rem만 출력, true: px,rem 둘다 출력
-$rem-px-only: false !default;
+$rem-px-only: true !default;
 // rem 변환이 필요 없을 때 - false: rem 변환 사용(기본), true: rem 변환 사용 안함(px출력)
 
 @function rem-separator($list, $separator: false) {

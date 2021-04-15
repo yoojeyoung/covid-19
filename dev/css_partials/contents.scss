@@ -29,12 +29,13 @@
 }
 .layer_box .btn-group{
 	@include rem(margin-top,32px);
+  @include rem(padding-bottom,21px);
 	&.mt-25{@include rem(margin-top,25px);}
 }
 .layer_cont_in.type2{padding:20px 30px;}
 .layer_cont_in.type4{padding:30px 30px;}
 .layer_cont_in.type3{padding:20px;}
-.btn_layerclose{display:block;width:30px;height:30px;position:absolute;top:10px;right:20px;}
+.btn_layerclose{display:block;width:30px;height:30px;position:absolute;top:10px;right:10px;}
 .btn_layerclose:before,
 .btn_layerclose:after{display:block;content:'';width:1px;height:20px;background:#646464;position:absolute;top:50%;left:50%;margin:-10px 0 0 -1px;transform: translateZ(0);}
 

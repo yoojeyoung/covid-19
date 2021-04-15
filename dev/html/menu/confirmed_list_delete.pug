@@ -10,6 +10,67 @@ block contents
           .pgright_wrap
             .inner
               h2.tit 삭제 확진자 목록
+              // 검색 영역
+              section.content-wrap
+                .inner
+                  .search-form
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio211" name="radio211")
+                        label(for="radio211")
+                          span.txt 조건 검색
+                      .search-list
+                        span.type 자치구
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list
+                        span.type 상태
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list
+                        span.type 발생원인
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list.wid-445
+                        span.type 확진일자
+                        button.btn-data.wid-66
+                          .txt 오늘
+                        button.btn-data.wid-66
+                          .txt 전날
+                        .input-txt
+                          input(type="text")
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio212" name="radio212")
+                        label(for="radio212")
+                          span.txt 확진자 번호로 검색
+                      .search-list
+                        .input-txt
+                          input(type="text" placeholder="숫자만 입력")
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio213" name="radio213")
+                        label(for="radio213")
+                          span.txt 키워드 검색
+                      .search-list
+                        .input-txt
+                          input(type="text" placeholder="검색어 입력")
+                      .search-list
+                        span.type 상테
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
               // 최상위 테이블
               section.content-wrap
                 .inner
@@ -19,9 +80,9 @@ block contents
                       |건
                       .btn-area.type02
                         button.btn-download.wid-156
-                          span.txt 다운
+                          span.txt 질본 업로드용 다운로드
                         button.btn-download.wid-109
-                          span.txt 다운
+                          span.txt 엑셀 다운로드
                   .tbl-container01
                     table.tbl-col01.confirm-table
                       caption 공시자료: 번호,보고서명,등록일

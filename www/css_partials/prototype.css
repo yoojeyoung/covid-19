@@ -54,7 +54,6 @@ a:before {
 .page-nav {
   width: 100%;
   margin-top: 24px;
-  margin-top: 2.4rem;
   text-align: center;
   font-size: 0; }
   .page-nav .page-item-container {
@@ -62,9 +61,7 @@ a:before {
   .page-nav .page-item {
     display: inline-block;
     width: 22px;
-    width: 2.2rem;
-    height: 21px;
-    height: 2.1rem; }
+    height: 21px; }
     .page-nav .page-item .page-link {
       display: table;
       width: 100%;
@@ -72,7 +69,6 @@ a:before {
       .page-nav .page-item .page-link .txt {
         display: table-cell;
         font-size: 12px;
-        font-size: 1.2rem;
         color: #606266; }
       .page-nav .page-item .page-link.on .txt {
         color: #409eff;
@@ -80,9 +76,7 @@ a:before {
   .page-nav .page-util {
     display: inline-block;
     width: 22px;
-    width: 2.2rem;
-    height: 21px;
-    height: 2.1rem; }
+    height: 21px; }
     .page-nav .page-util .page-link {
       display: table;
       width: 100%;
@@ -94,13 +88,9 @@ a:before {
       display: inline-block;
       position: relative;
       width: 8px;
-      width: 0.8rem;
       height: 8px;
-      height: 0.8rem;
       border-top: 1px solid #606266;
-      border-top: 0.1rem solid #606266;
       border-right: 1px solid #606266;
-      border-right: 0.1rem solid #606266;
       -webkit-transition: border .3s ease-out;
       -o-transition: border .3s ease-out;
       transition: border .3s ease-out; }
@@ -109,21 +99,17 @@ a:before {
             -ms-transform: rotate(-135deg);
                 transform: rotate(-135deg);
         margin-right: -2px;
-        margin-right: -0.2rem;
         left: 0; }
       .page-nav .page-util .ico-page-arrow.right {
         -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
                 transform: rotate(45deg);
         margin-left: -2px;
-        margin-left: -0.2rem;
         right: 0; }
     .page-nav .page-util.prev {
-      margin-left: 8px;
-      margin-left: 0.8rem; }
+      margin-left: 8px; }
     .page-nav .page-util.next {
-      margin-right: 8px;
-      margin-right: 0.8rem; }
+      margin-right: 8px; }
 
 /*! table - col 타입 1 */
 .tbl-container01 {
@@ -141,9 +127,7 @@ a:before {
   .tbl-col01 th {
     background-color: #e5edf4;
     padding: 14px 16px;
-    padding: 1.4rem 1.6rem;
     font-size: 14px;
-    font-size: 1.4rem;
     font-weight: bold;
     color: #2a2c2e;
     text-align: center; }
@@ -155,9 +139,7 @@ a:before {
       border-right: 1px solid #c5d5e3; }
   .tbl-col01 td {
     padding: 14px 16px;
-    padding: 1.4rem 1.6rem;
     font-size: 14px;
-    font-size: 1.4rem;
     color: #606266;
     border-bottom: 1px solid #e4e7ed;
     line-height: 1.5;
@@ -177,11 +159,8 @@ a:before {
       overflow: hidden; }
       .tbl-col01 td a .ico-new {
         margin-left: 8px;
-        margin-left: 0.8rem;
         padding: 2px 4px;
-        padding: 0.2rem 0.4rem;
         font-size: 9px;
-        font-size: 0.9rem;
         color: #fff;
         border-radius: 50%;
         background: #dc3545; }
@@ -218,7 +197,6 @@ a:before {
       text-align: left; }
   .tbl-col01.confirm-table th, .tbl-col01.confirm-table td {
     padding: 8px 10px;
-    padding: 0.8rem 1rem;
     text-align: center; }
   .tbl-col01.confirm-table tbody td:nth-child(6) {
     text-align: left; }
@@ -229,12 +207,10 @@ a:before {
   .tbl-row01 th {
     background-color: cornsilk;
     font-size: 24px;
-    font-size: 2.4rem;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray; }
   .tbl-row01 td {
     font-size: 18px;
-    font-size: 1.8rem;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray; }
     .tbl-row01 td:last-child {
@@ -250,9 +226,7 @@ a:before {
   .tbl-col-row01 th {
     background-color: #e5edf4;
     padding: 14px 8px;
-    padding: 1.4rem 0.8rem;
     font-size: 14px;
-    font-size: 1.4rem;
     font-weight: bold;
     color: #2a2c2e;
     text-align: center; }
@@ -262,9 +236,7 @@ a:before {
       border-right: 1px solid #e4e7ed; }
   .tbl-col-row01 td {
     padding: 14px 8px;
-    padding: 1.4rem 0.8rem;
     font-size: 14px;
-    font-size: 1.4rem;
     color: #606266;
     border-bottom: 1px solid #e4e7ed;
     text-align: center; }
@@ -305,11 +277,8 @@ a:before {
     display: inline-block;
     position: relative;
     min-width: 20px;
-    min-width: 2rem;
     min-height: 20px;
-    min-height: 2rem;
     padding-top: 1px;
-    padding-top: 0.1rem;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -317,19 +286,15 @@ a:before {
   .input-checkbox .txt {
     display: inline-block;
     color: gray;
-    font-size: 16px;
-    font-size: 1.6rem; }
+    font-size: 16px; }
   .input-checkbox label:before {
     content: '';
     position: absolute;
     top: 50%;
     left: 0;
     width: 20px;
-    width: 2rem;
     height: 20px;
-    height: 2rem;
     margin-top: -10px;
-    margin-top: -1rem;
     border: 1px solid gray;
     text-align: center;
     -webkit-transition: all .3s ease-out;
@@ -341,17 +306,11 @@ a:before {
     position: absolute;
     top: 50%;
     left: 5px;
-    left: 0.5rem;
     margin-top: -4px;
-    margin-top: -0.4rem;
     width: 9px;
-    width: 0.9rem;
     height: 6px;
-    height: 0.6rem;
     border-top: 2px solid gray;
-    border-top: 0.2rem solid gray;
     border-right: 2px solid gray;
-    border-right: 0.2rem solid gray;
     -webkit-transform: rotate(130deg);
         -ms-transform: rotate(130deg);
             transform: rotate(130deg);
@@ -359,51 +318,40 @@ a:before {
     -o-transition: all .3s ease-out;
     transition: all .3s ease-out; }
   .input-checkbox.right label {
-    padding-left: 30px;
-    padding-left: 3rem; }
+    padding-left: 30px; }
   .input-checkbox.left label {
-    padding-right: 30px;
-    padding-right: 3rem; }
+    padding-right: 30px; }
   .input-checkbox.left label:before {
     left: auto;
     right: 0; }
   .input-checkbox.left label:after {
     left: auto;
-    right: 5px;
-    right: 0.5rem; }
+    right: 5px; }
   .input-checkbox.up label {
-    padding-bottom: 25px;
-    padding-bottom: 2.5rem; }
+    padding-bottom: 25px; }
   .input-checkbox.up label:before {
     top: auto;
     bottom: 0;
     left: 50%;
     margin-left: -10px;
-    margin-left: -1rem;
     margin-top: 0; }
   .input-checkbox.up label:after {
     top: auto;
     bottom: 8px;
-    bottom: 0.8rem;
     left: 50%;
     margin-left: -5px;
-    margin-left: -0.5rem;
     margin-top: 0; }
   .input-checkbox.down label {
-    padding-top: 25px;
-    padding-top: 2.5rem; }
+    padding-top: 25px; }
   .input-checkbox.down label:before {
     top: 0;
     left: 50%;
     margin-left: -10px;
-    margin-left: -1rem;
     margin-top: 0; }
   .input-checkbox.down label:after {
     top: 6px;
-    top: 0.6rem;
     left: 50%;
     margin-left: -5px;
-    margin-left: -0.5rem;
     margin-top: 0; }
   .input-checkbox input.checked + label:before,
   .input-checkbox input:checked + label:before {
@@ -438,11 +386,8 @@ a:before {
   display: inline-block;
   position: relative;
   min-width: 20px;
-  min-width: 2rem;
   min-height: 20px;
-  min-height: 2rem;
   padding-top: 1px;
-  padding-top: 0.1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -451,8 +396,7 @@ a:before {
 .input-radio .txt {
   display: inline-block;
   color: #606266;
-  font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 14px; }
 
 .input-radio label:before {
   content: '';
@@ -460,11 +404,8 @@ a:before {
   top: 50%;
   left: 0;
   width: 20px;
-  width: 2rem;
   height: 20px;
-  height: 2rem;
   margin-top: -10px;
-  margin-top: -1rem;
   border: 1px solid #dcdfe6;
   text-align: center;
   border-radius: 50%;
@@ -473,12 +414,10 @@ a:before {
   transition: all .3s ease-out; }
 
 .input-radio.right label {
-  padding-left: 30px;
-  padding-left: 3rem; }
+  padding-left: 30px; }
 
 .input-radio.left label {
-  padding-right: 30px;
-  padding-right: 3rem; }
+  padding-right: 30px; }
 
 .input-radio.left label:before {
   left: auto;
@@ -486,47 +425,38 @@ a:before {
 
 .input-radio.left label:after {
   left: auto;
-  right: 6px;
-  right: 0.6rem; }
+  right: 6px; }
 
 .input-radio.up label {
-  padding-bottom: 25px;
-  padding-bottom: 2.5rem; }
+  padding-bottom: 25px; }
 
 .input-radio.up label:before {
   top: auto;
   bottom: 0;
   left: 50%;
   margin-left: -10px;
-  margin-left: -1rem;
   margin-top: 0; }
 
 .input-radio.up label:after {
   top: auto;
   bottom: 6px;
-  bottom: 0.6rem;
   left: 50%;
   margin-left: -4px;
-  margin-left: -0.4rem;
   margin-top: 0; }
 
 .input-radio.down label {
-  padding-top: 25px;
-  padding-top: 2.5rem; }
+  padding-top: 25px; }
 
 .input-radio.down label:before {
   top: 0;
   left: 50%;
   margin-left: -10px;
-  margin-left: -1rem;
   margin-top: 0; }
 
 .input-radio.down label:after {
   top: 6px;
-  top: 0.6rem;
   left: 50%;
   margin-left: -4px;
-  margin-left: -0.4rem;
   margin-top: 0; }
 
 .input-radio input.checked + label:before,
@@ -542,13 +472,9 @@ a:before {
   top: 50%;
   background-color: #fff;
   left: 6px;
-  left: 0.6rem;
   width: 8px;
-  width: 0.8rem;
   height: 8px;
-  height: 0.8rem;
   margin-top: -4px;
-  margin-top: -0.4rem;
   border-radius: 50%;
   -webkit-transition: all .3s ease-out;
   -o-transition: all .3s ease-out;
@@ -568,11 +494,11 @@ a:before {
   display: inline-block;
   position: relative;
   width: 100%;
-  border: 1px solid #cccccc;
-  background-color: #ffffff; }
+  border: 1px solid #e4e7ed;
+  background-color: #ffffff;
+  border-radius: 4px; }
   .input-txt.in-message {
-    margin-bottom: 30px;
-    margin-bottom: 3rem; }
+    margin-bottom: 30px; }
   .input-txt input {
     display: inline-block;
     padding: 0 0 0 15px;
@@ -588,9 +514,7 @@ a:before {
   .input-txt .message {
     display: block;
     margin-top: 5px;
-    margin-top: 0.5rem;
-    font-size: 12px;
-    font-size: 1.2rem; }
+    font-size: 12px; }
     .input-txt .message.pass {
       color: blue; }
     .input-txt .message.error {
@@ -603,32 +527,32 @@ a:before {
   opacity: 0.5; }
 
 .input-txt input::-webkit-input-placeholder {
-  font-size: 12px;
-  color: gray;
+  font-size: 14px;
+  color: #c0c4cc;
   background: transparent;
   opacity: 1; }
 
 .input-txt input::-moz-placeholder {
-  font-size: 12px;
-  color: gray;
+  font-size: 14px;
+  color: #c0c4cc;
   background: transparent;
   opacity: 1; }
 
 .input-txt input:-ms-input-placeholder {
-  font-size: 12px;
-  color: gray;
+  font-size: 14px;
+  color: #c0c4cc;
   background: transparent;
   opacity: 1; }
 
 .input-txt input::-ms-input-placeholder {
-  font-size: 12px;
-  color: gray;
+  font-size: 14px;
+  color: #c0c4cc;
   background: transparent;
   opacity: 1; }
 
 .input-txt input::placeholder {
-  font-size: 12px;
-  color: gray;
+  font-size: 14px;
+  color: #c0c4cc;
   background: transparent;
   opacity: 1; }
 
@@ -648,6 +572,7 @@ a:before {
   width: 100%;
   overflow: hidden;
   border: 1px solid #e4e7ed;
+  border-radius: 4px;
   border-radius: 4px; }
   .selectbox:after {
     content: '';
@@ -655,17 +580,11 @@ a:before {
     position: absolute;
     top: 50%;
     right: 22px;
-    right: 2.2rem;
     margin-top: -8px;
-    margin-top: -0.8rem;
     width: 10px;
-    width: 1rem;
     height: 10px;
-    height: 1rem;
     border-top: 2px solid gray;
-    border-top: 0.2rem solid gray;
     border-right: 2px solid gray;
-    border-right: 0.2rem solid gray;
     -webkit-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
             transform: rotate(135deg); }
@@ -675,13 +594,9 @@ a:before {
     z-index: 1;
     width: 100%;
     padding: 0 0 0 20px;
-    padding: 0 0 0 2rem;
     height: 40px;
-    height: 4rem;
     line-height: 40px;
-    line-height: 4rem;
     font-size: 14px;
-    font-size: 1.4rem;
     color: #c0c4cc;
     background-color: transparent;
     border: none;
