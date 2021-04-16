@@ -349,11 +349,14 @@ button,a{
     .txt{@include rem(font-size,14px);color: #606266;text-align: center}
   }
   button,a{
-    &.wid-92{@include rem(min-width,92px);}
-    &.wid-89{@include rem(min-width,89px);}
-    &.wid-80{@include rem(min-width,80px);}
-    &.wid-79{@include rem(min-width,79px);}
+    &.wid-58{@include rem(min-width,58px);}
+    &.wid-63{@include rem(min-width,63px);}
+    &.wid-66{@include rem(min-width,66px);}
     &.wid-77{@include rem(min-width,77px);}
+    &.wid-79{@include rem(min-width,79px);}
+    &.wid-80{@include rem(min-width,80px);}
+    &.wid-89{@include rem(min-width,89px);}
+    &.wid-92{@include rem(min-width,92px);}
     &.color-blue{
       background: #0778ca;
       .txt{color: #fff;}
@@ -487,6 +490,14 @@ section.content-wrap{
       }
     }
     + .tbl-container01{@include rem(margin-top,24px);}
+  }
+  .register-tit{
+    @include rem(margin-top,22px);
+    .tit{
+      @include rem(font-size,18px);
+      font-weight: bold;
+      color: #1d2747;
+    }
   }
   .column-group{
     @include rem(margin-top,24px);
@@ -669,6 +680,7 @@ section.content-wrap{
 
 /* 확진자 등록 공통 */
 .register-form{
+  position: relative;
   table.form-group{
     th,td{@include rem(padding, 5px 0);@include rem(font-size,12px);}
     th{@include rem(height,40px);@include rem(padding,4px 0);color: #333;font-weight: normal;}
@@ -687,8 +699,11 @@ section.content-wrap{
         &.wid-26{@include rem(width,26px);}
         &.wid-73{@include rem(width,73px);}
         &.wid-98{@include rem(width,98px);}
+        &.wid-149{@include rem(width,149px);}
         &.wid-281{@include rem(width,281px);}
+        &.wid-345{@include rem(width,345px);}
         &.wid-430{@include rem(width,430px);}
+        +.input-radio{@include rem(margin-left,20px);}
       }
       .selectbox{
         width: auto;
@@ -701,12 +716,28 @@ section.content-wrap{
           line-height: initial;
           &.wid-281{@include rem(width,281px);}
         }
+        +input{@include rem(margin-left,10px);}
       }
       button{
         @include rem(width,225px);
         .txt{
           color: #2f80ed;
         }
+        &.btn-data{
+          @include rem(width,51px);
+          @include rem(padding, 5px 0 4px);
+          border: 1px solid #e4e7ed;
+          .txt{@include rem(font-size,12px);color: #606266;}
+          +.btn-data{@include rem(margin-left,10px);}
+          + input{@include rem(margin-left,10px);}
+        }
+      }
+      .input-radio{
+        margin-top: 0;
+        .txt{@include rem(font-size,12px);color: #333;}
+        + .input-radio{@include rem(margin-left,10px);}
+        + input{@include rem(margin-left,10px);}
+        + .selectbox{@include rem(margin-left,10px);}
       }
     }
     .input-box{
@@ -725,10 +756,22 @@ section.content-wrap{
         color: #eb5757;
       }
     }
-    &.wid-448{@include rem(width,448px);}
-    &.wid-672{@include rem(width,672px);}
+  }
+  .btn-group{
+    position: absolute;
+    @include rem(top,-44px);
+    right: 0;
+    margin-top: 0;
   }
   &:not(:first-child){@include rem(margin-top,12px);}
+  &.mt-32{@include rem(margin-top,32px);}
+  &.mt-48{@include rem(margin-top,48px);}
+  &.wid-448{@include rem(width,448px);}
+  &.wid-550{@include rem(width,550px);}
+  &.wid-672{@include rem(width,672px);}
+  &.wid-810{@include rem(width,810px);}
+  &.wid-998{@include rem(width,998px);}
+  &.wid-1187{@include rem(width,1187px);}
 }
 
 /* -------------- 미디어쿼리 영역 -------------- */

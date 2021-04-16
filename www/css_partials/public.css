@@ -448,16 +448,22 @@ button, a {
       font-size: 14px;
       color: #606266;
       text-align: center; }
-  .btn-group button.wid-92, .btn-group a.wid-92 {
-    min-width: 92px; }
-  .btn-group button.wid-89, .btn-group a.wid-89 {
-    min-width: 89px; }
-  .btn-group button.wid-80, .btn-group a.wid-80 {
-    min-width: 80px; }
-  .btn-group button.wid-79, .btn-group a.wid-79 {
-    min-width: 79px; }
+  .btn-group button.wid-58, .btn-group a.wid-58 {
+    min-width: 58px; }
+  .btn-group button.wid-63, .btn-group a.wid-63 {
+    min-width: 63px; }
+  .btn-group button.wid-66, .btn-group a.wid-66 {
+    min-width: 66px; }
   .btn-group button.wid-77, .btn-group a.wid-77 {
     min-width: 77px; }
+  .btn-group button.wid-79, .btn-group a.wid-79 {
+    min-width: 79px; }
+  .btn-group button.wid-80, .btn-group a.wid-80 {
+    min-width: 80px; }
+  .btn-group button.wid-89, .btn-group a.wid-89 {
+    min-width: 89px; }
+  .btn-group button.wid-92, .btn-group a.wid-92 {
+    min-width: 92px; }
   .btn-group button.color-blue, .btn-group a.color-blue {
     background: #0778ca; }
     .btn-group button.color-blue .txt, .btn-group a.color-blue .txt {
@@ -600,6 +606,12 @@ section.content-wrap {
         top: -6px; }
     section.content-wrap .sec-tit + .tbl-container01 {
       margin-top: 24px; }
+  section.content-wrap .register-tit {
+    margin-top: 22px; }
+    section.content-wrap .register-tit .tit {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1d2747; }
   section.content-wrap .column-group {
     margin-top: 24px; }
     section.content-wrap .column-group .column {
@@ -847,90 +859,132 @@ section.content-wrap {
     margin-left: 16px; }
 
 /* 확진자 등록 공통 */
-.register-form table.form-group th, .register-form table.form-group td {
-  padding: 5px 0;
-  font-size: 12px; }
-
-.register-form table.form-group th {
-  height: 40px;
-  padding: 4px 0;
-  color: #333;
-  font-weight: normal; }
-
-.register-form table.form-group .input-txt {
-  width: auto;
-  /* 기본 input 139px */ }
-  .register-form table.form-group .input-txt input {
-    width: 139px;
-    height: 28px;
-    margin: 0 auto;
-    padding-left: 12px;
-    color: #606266;
-    font-size: 12px;
-    line-height: initial; }
-    .register-form table.form-group .input-txt input::-webkit-input-placeholder {
-      font-size: 12px; }
-    .register-form table.form-group .input-txt input::-moz-placeholder {
-      font-size: 12px; }
-    .register-form table.form-group .input-txt input:-ms-input-placeholder {
-      font-size: 12px; }
-    .register-form table.form-group .input-txt input::-ms-input-placeholder {
-      font-size: 12px; }
-    .register-form table.form-group .input-txt input::placeholder {
-      font-size: 12px; }
-    .register-form table.form-group .input-txt input.wid-26 {
-      width: 26px; }
-    .register-form table.form-group .input-txt input.wid-73 {
-      width: 73px; }
-    .register-form table.form-group .input-txt input.wid-98 {
-      width: 98px; }
-    .register-form table.form-group .input-txt input.wid-281 {
-      width: 281px; }
-    .register-form table.form-group .input-txt input.wid-430 {
-      width: 430px; }
-  .register-form table.form-group .input-txt .selectbox {
-    width: auto; }
-    .register-form table.form-group .input-txt .selectbox select {
+.register-form {
+  position: relative; }
+  .register-form table.form-group th, .register-form table.form-group td {
+    padding: 5px 0;
+    font-size: 12px; }
+  .register-form table.form-group th {
+    height: 40px;
+    padding: 4px 0;
+    color: #333;
+    font-weight: normal; }
+  .register-form table.form-group .input-txt {
+    width: auto;
+    /* 기본 input 139px */ }
+    .register-form table.form-group .input-txt input {
       width: 139px;
       height: 28px;
       margin: 0 auto;
       padding-left: 12px;
+      color: #606266;
       font-size: 12px;
       line-height: initial; }
-      .register-form table.form-group .input-txt .selectbox select.wid-281 {
+      .register-form table.form-group .input-txt input::-webkit-input-placeholder {
+        font-size: 12px; }
+      .register-form table.form-group .input-txt input::-moz-placeholder {
+        font-size: 12px; }
+      .register-form table.form-group .input-txt input:-ms-input-placeholder {
+        font-size: 12px; }
+      .register-form table.form-group .input-txt input::-ms-input-placeholder {
+        font-size: 12px; }
+      .register-form table.form-group .input-txt input::placeholder {
+        font-size: 12px; }
+      .register-form table.form-group .input-txt input.wid-26 {
+        width: 26px; }
+      .register-form table.form-group .input-txt input.wid-73 {
+        width: 73px; }
+      .register-form table.form-group .input-txt input.wid-98 {
+        width: 98px; }
+      .register-form table.form-group .input-txt input.wid-149 {
+        width: 149px; }
+      .register-form table.form-group .input-txt input.wid-281 {
         width: 281px; }
-  .register-form table.form-group .input-txt button {
-    width: 225px; }
-    .register-form table.form-group .input-txt button .txt {
-      color: #2f80ed; }
-
-.register-form table.form-group .input-box {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .register-form table.form-group .input-box .wave {
-    margin: 0 7px; }
-
-.register-form table.form-group .point {
-  position: relative; }
-  .register-form table.form-group .point::before {
-    content: "*";
+      .register-form table.form-group .input-txt input.wid-345 {
+        width: 345px; }
+      .register-form table.form-group .input-txt input.wid-430 {
+        width: 430px; }
+      .register-form table.form-group .input-txt input + .input-radio {
+        margin-left: 20px; }
+    .register-form table.form-group .input-txt .selectbox {
+      width: auto; }
+      .register-form table.form-group .input-txt .selectbox select {
+        width: 139px;
+        height: 28px;
+        margin: 0 auto;
+        padding-left: 12px;
+        font-size: 12px;
+        line-height: initial; }
+        .register-form table.form-group .input-txt .selectbox select.wid-281 {
+          width: 281px; }
+      .register-form table.form-group .input-txt .selectbox + input {
+        margin-left: 10px; }
+    .register-form table.form-group .input-txt button {
+      width: 225px; }
+      .register-form table.form-group .input-txt button .txt {
+        color: #2f80ed; }
+      .register-form table.form-group .input-txt button.btn-data {
+        width: 51px;
+        padding: 5px 0 4px;
+        border: 1px solid #e4e7ed; }
+        .register-form table.form-group .input-txt button.btn-data .txt {
+          font-size: 12px;
+          color: #606266; }
+        .register-form table.form-group .input-txt button.btn-data + .btn-data {
+          margin-left: 10px; }
+        .register-form table.form-group .input-txt button.btn-data + input {
+          margin-left: 10px; }
+    .register-form table.form-group .input-txt .input-radio {
+      margin-top: 0; }
+      .register-form table.form-group .input-txt .input-radio .txt {
+        font-size: 12px;
+        color: #333; }
+      .register-form table.form-group .input-txt .input-radio + .input-radio {
+        margin-left: 10px; }
+      .register-form table.form-group .input-txt .input-radio + input {
+        margin-left: 10px; }
+      .register-form table.form-group .input-txt .input-radio + .selectbox {
+        margin-left: 10px; }
+  .register-form table.form-group .input-box {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .register-form table.form-group .input-box .wave {
+      margin: 0 7px; }
+  .register-form table.form-group .point {
+    position: relative; }
+    .register-form table.form-group .point::before {
+      content: "*";
+      position: absolute;
+      top: 0;
+      left: -8px;
+      display: block;
+      font-size: 12px;
+      color: #eb5757; }
+  .register-form .btn-group {
     position: absolute;
-    top: 0;
-    left: -8px;
-    display: block;
-    font-size: 12px;
-    color: #eb5757; }
-
-.register-form table.form-group.wid-448 {
-  width: 448px; }
-
-.register-form table.form-group.wid-672 {
-  width: 672px; }
-
-.register-form:not(:first-child) {
-  margin-top: 12px; }
+    top: -44px;
+    right: 0;
+    margin-top: 0; }
+  .register-form:not(:first-child) {
+    margin-top: 12px; }
+  .register-form.mt-32 {
+    margin-top: 32px; }
+  .register-form.mt-48 {
+    margin-top: 48px; }
+  .register-form.wid-448 {
+    width: 448px; }
+  .register-form.wid-550 {
+    width: 550px; }
+  .register-form.wid-672 {
+    width: 672px; }
+  .register-form.wid-810 {
+    width: 810px; }
+  .register-form.wid-998 {
+    width: 998px; }
+  .register-form.wid-1187 {
+    width: 1187px; }
 
 /* -------------- 미디어쿼리 영역 -------------- */
 /* 로그인 메인 bg */

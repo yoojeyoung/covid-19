@@ -12,6 +12,250 @@ block contents
               h2.tit 확진자 목록
               section.content-wrap.shadow-n
                 .inner
+                  .register-form.wid-550
+                    .tbl-container01
+                      table.tbl-col01.form-group
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th 연번
+                              th 자치구
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .selectbox
+                                    select(title="")
+                                      option(value="") 선택해주세요.
+                                      option(value="") 선택
+                                      option(value="") 선택
+                  .register-form
+                    .tbl-container01
+                      table.tbl-col01.form-group
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th(colspan="7") 동선장소 
+                            tr
+                              th(rowspan="2") 관할시도
+                              th(rowspan="2") 조사보건소
+                              th(rowspan="2") 조사자성명
+                              th(colspan="2") 연락처
+                              th(rowspan="2") 조사일
+                              th(rowspan="2") 신고기관
+                            tr
+                              th 사무실
+                              th 핸드폰
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input 
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input 
+                              td 
+                                .input-txt
+                                  .input-box
+                                    button.btn-data
+                                      span.txt 오늘
+                                    button.btn-data
+                                      span.txt 전날
+                                    input(placeholder="숫자 입력").wid-149
+                              td 
+                                .input-txt
+                                  .input-box
+                                    .input-radio.right
+                                      input(type="radio" id="radio1" name="radio1")
+                                      label(for="radio1")
+                                        span.txt 보건소
+                                    .input-radio.right
+                                      input(type="radio" id="radio2" name="radio2")
+                                      label(for="radio2")
+                                        span.txt 의료기관
+                                    input(placeholder="숫자 입력").wid-149                            
+                  .register-form.wid-998
+                    .tbl-container01
+                      table.tbl-col01.form-group
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th 확진번호
+                              th 검사기관
+                              th 격리종류 및 장소
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .input-box
+                                    .input-radio.right
+                                      input(type="radio" id="radio3" name="radio3")
+                                      label(for="radio3")
+                                        span.txt 자가
+                                    .input-radio.right
+                                      input(type="radio" id="radio4" name="radio4")
+                                      label(for="radio4")
+                                        span.txt 시설
+                                    .input-radio.right
+                                      input(type="radio" id="radio5" name="radio5")
+                                      label(for="radio5")
+                                        span.txt 병원
+                                    input(placeholder="장소명 입력")
+                  .register-tit
+                    span.tit 인적사항
+                  .register-form.wid-998
+                    .tbl-container01
+                      table.tbl-col01.form-group
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup 
+                          col(width="25%")
+                          col(width="auto")
+                          col(width="25%")
+                        thead
+                            tr
+                              th 
+                                span 성명
+                              th 
+                                span.point 주민등록번호
+                              th 
+                                span 성별
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                                    .input-radio.right
+                                      input(type="radio" id="radio6" name="radio6")
+                                      label(for="radio6")
+                                        span.txt 여권번호
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    .input-radio.right
+                                      input(type="radio" id="radio7" name="radio7")
+                                      label(for="radio7")
+                                        span.txt 남성
+                                    .input-radio.right
+                                      input(type="radio" id="radio8" name="radio8")
+                                      label(for="radio8")
+                                        span.txt 여성
+                  .register-form.wid-1187
+                    .tbl-container01
+                      table.tbl-col01.form-group
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th 환자 연락처
+                              th 보호자 연락처
+                              th 직업
+                              th 의료기관종사자
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="직작명, 학교명, 의료기관명 등").wid-345
+                              td 
+                                .input-txt
+                                  .input-box
+                                    .input-radio.right
+                                      input(type="radio" id="radio7" name="radio7")
+                                      label(for="radio7")
+                                        span.txt 해당없음
+                                    .input-radio.right
+                                      input(type="radio" id="radio8" name="radio8")
+                                      label(for="radio8")
+                                        span.txt 없음
+                                    .selectbox
+                                      select(title="")
+                                        option(value="") 선택해주세요.
+                                        option(value="") 선택
+                                        option(value="") 선택
+                                    input
+                  .register-form.wid-810
+                    .tbl-container01
+                      table.tbl-col01.form-group
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th 등록장애인여부
+                              th 장애유형
+                              th 장애정도
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    .input-radio.right
+                                      input(type="radio" id="radio9" name="radio9")
+                                      label(for="radio9")
+                                        span.txt 예
+                                    .input-radio.right
+                                      input(type="radio" id="radio10" name="radio10")
+                                      label(for="radio10")
+                                        span.txt 아니오
+                              td 
+                                .input-txt
+                                  .input-box
+                                    .selectbox
+                                      select(title="")
+                                        option(value="") 선택해주세요.
+                                        option(value="") 선택
+                                        option(value="") 선택
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    .input-radio.right
+                                      input(type="radio" id="radio11" name="radio11")
+                                      label(for="radio11")
+                                        span.txt 중증
+                                    .input-radio.right
+                                      input(type="radio" id="radio12" name="radio12")
+                                      label(for="radio12")
+                                        span.txt 경증
+                  .register-tit
+                    span.tit 증상 및 기저질환
                   .register-form
                     .tbl-container01
                       table.tbl-col01.form-group
@@ -209,22 +453,6 @@ block contents
                                 .input-txt
                                   .input-box
                                     input.wid-281
-                  .register-form.mt-32.wid-448
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th 집단발병 연관(최종)
-                        tbody
-                            tr
-                              td 
-                                .input-txt
-                                  .selectbox
-                                    select(title="").wid-281
-                                      option(value="") 선택해주세요.
-                                      option(value="") 선택
-                                      option(value="") 선택
                   .register-form.mt-48.wid-672
                     .tbl-container01
                       table.tbl-col01.form-group
@@ -264,93 +492,7 @@ block contents
                         .btn-group 
                           button.color-blue.wid-63
                             span.txt 추가  
-                  .register-form.mt-48
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th(colspan="7") 동선장소 
-                            tr
-                              th(colspan="2") 일시
-                              th(colspan="2") 장소
-                              th(rowspan="2") 이동수단
-                              th(rowspan="2") 상황
-                              th(rowspan="2") 접촉자 및 특이행동
-                            tr
-                              th 날짜
-                              th 시간
-                              th 자치구
-                              th 위치
-                        tbody
-                            tr
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input.wid-73
-                                    span.wave ~
-                                    input.wid-73
-                              td 
-                                .input-txt
-                                  .selectbox
-                                    select(title="").wid-281
-                                      option(value="") 선택해주세요.
-                                      option(value="") 선택
-                                      option(value="") 선택
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(onclick="COVID.dimLayerShow('#srdTarget02')") 
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력") 
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력") 
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력") 
-                            tr
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input.wid-73
-                                    span.wave ~
-                                    input.wid-73
-                              td 
-                                .input-txt
-                                  .selectbox
-                                    select(title="").wid-281
-                                      option(value="") 선택해주세요.
-                                      option(value="") 선택
-                                      option(value="") 선택
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력") 
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력") 
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력") 
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력")
+                  
                     .btn-group 
                       button.color-blue.wid-63
                         span.txt 추가
