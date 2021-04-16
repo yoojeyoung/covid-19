@@ -200,6 +200,8 @@ a:before {
     text-align: center; }
   .tbl-col01.confirm-table tbody td:nth-child(6) {
     text-align: left; }
+  .tbl-col01 .align-l {
+    text-align: left; }
 
 .tbl-row01 {
   width: 100%;

@@ -72,10 +72,10 @@ block contents
                             option(value="") 선택
                             option(value="") 선택
                   .btn-group.type-r
-                    button.wid-92
+                    button.wid-92.border-blue
                       .txt 삭제목록
-                    button.wid-77
-                      .txt 버튼
+                    button.wid-77.color-blue
+                      .txt 검색
               // 최상위 테이블
               section.content-wrap
                 .inner
@@ -126,7 +126,7 @@ block contents
                             td 등록
                             td 등록
                             td
-                              a(href="") 보기 
+                              a(href="#" onclick="COVID.dimLayerShow('#srdTarget01')") 보기
                           tr 
                             td 28820
                             td 91588
@@ -138,7 +138,7 @@ block contents
                             td 등록
                             td 등록
                             td
-                              a(href="") 보기 
+                              a(href="") 보기
                           tr.bg-green 
                             td 28820
                             td 91588
@@ -276,5 +276,91 @@ block contents
                           
                   .page-nav-container
                       +page-nav('type01')
+      // 비밀번호 재설정 팝업
+      #srdTarget01.dimlayer_z
+        .dimlayer_tb
+          .dimlayer_td
+            // layer_box
+            .layer_box.wid-795
+              .layer_tit_low
+                h2.layer_tit 확진자 정보 수정 이력
+              .layer_cont(style='max-height: 875px;')
+                .layer_cont_in.pt-20
+                  .tbl-container01
+                    table.tbl-col01
+                      caption 공시자료: 번호,보고서명,등록일
+                      colgroup
+                        col(width="8%")
+                        col(width="12%")
+                        col(width="12%")
+                        col(width="20%")
+                        col(width="auto")
+                      thead
+                          tr
+                            th NO
+                            th 수정자
+                            th 소속
+                            th 수정일자
+                            th.align-l 수정내용
+                      tbody
+                          tr
+                            td 1
+                            td 홍길동
+                            td 삼성병원
+                            td 2021. 3. 4 16:32
+                            td.align-l
+                              span.type-txt
+                                | 격리구분 | 격리중 => 사망
+                                span.type 수정
+                              span.type-txt 
+                                | 퇴원일 | 미입력 => 2021.3.4 
+                                span.type 입력
+                          tr
+                            td 2
+                            td 홍길동
+                            td 서울시
+                            td 2021. 3. 4 16:32
+                            td.align-l
+                              span.type-txt
+                                | 격리구분 | 격리중 => 사망
+                                span.type 수정
+                              span.type-txt 
+                                | 퇴원일 | 미입력 => 2021.3.4 
+                                span.type 입력
+                          tr
+                            td 3
+                            td 홍길동
+                            td 서울시
+                            td 2021. 3. 4 16:32
+                            td.align-l
+                              span.type-txt
+                                | 격리구분 | 격리중 => 사망
+                                span.type 수정
+                              span.type-txt 
+                                | 퇴원일 | 미입력 => 2021.3.4 
+                                span.type 입력
+                          tr
+                            td 4
+                            td 홍길동
+                            td 서초구
+                            td 2021. 3. 4 16:32
+                            td.align-l 최초 등록
+                          tr
+                            td 5
+                            td 
+                            td 
+                            td 
+                            td
+                          
+              .page-nav-container
+                +page-nav('type01')
+              .btn-group.right.mt-16
+                // closetrigger 있으면 닫힘
+                button.color-white.wid-89.closetrigger
+                  span.txt 닫기
+              button(type="button").btn_layerclose
+                span.hide-txt 닫기
+
 append script
   script.
+    COVID.dimLayerShow('#srdTarget01');

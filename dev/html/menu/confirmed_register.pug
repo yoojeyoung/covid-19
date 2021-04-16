@@ -8,36 +8,346 @@ block contents
           .pgleft_wrap
             include /html/menu/_menulist
           .pgright_wrap
-
+            .inner
+              h2.tit 확진자 목록
+              section.content-wrap.shadow-n
+                .inner
+                  .register-form
+                    .tbl-container01
+                      table.tbl-col01.form-group
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th 
+                                span.point 연번
+                              th 
+                                span 접수일(질본통계반영일)
+                              th 
+                                span.point 확진일
+                              th
+                                span 역학조사서 입력일 <br>(클리스터조정일)
+                              th
+                                span 확진 No.
+                              th
+                                span 확진 기관
+                              th
+                                span 최초상황 접수보건소
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt
+                                  .selectbox
+                                    select(title="")
+                                      option(value="") 선택해주세요.
+                                      option(value="") 선택
+                                      option(value="") 선택
+                  .register-form
+                    .tbl-container01
+                      table.tbl-col01.form-group
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th
+                                span.point 이름
+                              th
+                                span.point 성별(출생년)
+                              th 
+                                span 국적
+                              th
+                                span.point 발생구(통계기준)
+                              th 
+                                span 거주지
+                              th 
+                                span 직업
+                              th 
+                                span 직장명(학교명)
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input.wid-98
+                                    span.wave ~
+                                    input.wid-26
+                              td 
+                                .input-txt
+                                  .selectbox
+                                    select(title="")
+                                      option(value="") 선택해주세요.
+                                      option(value="") 선택
+                                      option(value="") 선택
+                              td 
+                                .input-txt
+                                  .selectbox
+                                    select(title="")
+                                      option(value="") 선택해주세요.
+                                      option(value="") 선택
+                                      option(value="") 선택
+                              td 
+                                .input-txt
+                                  .selectbox
+                                    select(title="")
+                                      option(value="") 선택해주세요.
+                                      option(value="") 선택
+                                      option(value="") 선택
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                  .register-form
+                    .tbl-container01
+                      table.tbl-col01.form-group
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th 여행지역
+                              th 여행력
+                              th 해외 2차 접촉
+                              th 격리구분
+                              th 격리병원
+                              th 퇴원일(사망일)
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .selectbox
+                                    select(title="")
+                                      option(value="") 선택해주세요.
+                                      option(value="") 선택
+                                      option(value="") 선택
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .selectbox
+                                    select(title="")
+                                      option(value="") 선택해주세요.
+                                      option(value="") 선택
+                                      option(value="") 선택
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input.wid-281
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                  .register-form
+                    .tbl-container01
+                      table.tbl-col01.form-group
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th RdRp값
+                              th E gene값
+                              th 증상발현일
+                              th 14일 이내 증상
+                              th 기저질환
+                              th 비고
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt.form-error
+                                  .input-box
+                                    input
+                                  .message 14일 이내 증상을 입력해주세요.
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input.wid-281
+                  .register-form
+                    .tbl-container01
+                      table.tbl-col01.form-group.wid-448
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th 집단발병 연관(최종)
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .selectbox
+                                    select(title="").wid-281
+                                      option(value="") 선택해주세요.
+                                      option(value="") 선택
+                                      option(value="") 선택
+                  .register-form
+                    .tbl-container01
+                      table.tbl-col01.form-group.wid-672
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th 집단발병 연관(최종)
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    button(type="button") 
+                                      span.txt #2198
+                                    input.wid-430
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    button(type="button") 
+                                      span.txt 확진자 검색
+                                    input.wid-430
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    button(type="button") 
+                                      span.txt 확진자 검색
+                                    input.wid-430
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    button(type="button") 
+                                      span.txt 확진자 검색
+                                    input.wid-430
+                  .register-form
+                    .tbl-container01
+                      table.tbl-col01.form-group
+                        caption 공시자료: 번호,보고서명,등록일
+                        thead
+                            tr
+                              th(colspan="7") 동선장소 
+                            tr
+                              th(colspan="2") 일시
+                              th(colspan="2") 장소
+                              th(rowspan="2") 이동수단
+                              th(rowspan="2") 상황
+                              th(rowspan="2") 접촉자 및 특이행동
+                            tr
+                              th 날짜
+                              th 시간
+                              th 자치구
+                              th 위치
+                        tbody
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input.wid-73
+                                    span.wave ~
+                                    input.wid-73
+                              td 
+                                .input-txt
+                                  .selectbox
+                                    select(title="").wid-281
+                                      option(value="") 선택해주세요.
+                                      option(value="") 선택
+                                      option(value="") 선택
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력") 
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력") 
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력") 
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력") 
+                            tr
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input.wid-73
+                                    span.wave ~
+                                    input.wid-73
+                              td 
+                                .input-txt
+                                  .selectbox
+                                    select(title="").wid-281
+                                      option(value="") 선택해주세요.
+                                      option(value="") 선택
+                                      option(value="") 선택
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력") 
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력") 
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력") 
+                              td 
+                                .input-txt
+                                  .input-box
+                                    input(placeholder="숫자 입력")  
 append script
   script.
-    //- CTC.rockMenu("#plm01,#plm01_01");
-
-    $(function(){
-      // 테이블 액션 - 전체 선택
-      $("#check_total").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents(".data_htb");
-        if($this.prop("checked")){
-          $t_p.find(".frdchk").prop("checked",true);
-        }else{
-          $t_p.find(".frdchk").prop("checked",false);
-        }
-      });
-      // 테이블 액션 - 개별 선택
-      $(".data_htb tbody .frdchk").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents("tr");
-        if($this.prop("checked")){
-          $t_p.addClass("active");
-        }else{
-          $t_p.removeClass("active");
-        }
-      });
-
-      // 체크박스 for 퍼블확인용
-      $("#data_sort_table .fitem.oneitem").each(function(index){
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id","check_0"+index);
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for","check_0"+index);
-      });
-    });
+    COVID.dimLayerShow('#srdTarget01');

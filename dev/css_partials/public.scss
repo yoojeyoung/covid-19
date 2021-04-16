@@ -286,8 +286,8 @@ body{background: #f5f5f7}
 
 /* 버튼 - 개인으로 사용시 */
 button,a{
-  @include rem(min-width,80px);
-  @include rem(padding,10px 5px);
+  // @include rem(min-width,80px);
+  // @include rem(padding,10px 5px);
   text-align: center;
   .txt{@include rem(font-size,14px);color: #646266;}
   &.wid-80{@include rem(min-width,80px);}
@@ -374,6 +374,10 @@ button,a{
       background: #fff;
       .txt{color: #646266;}
     }
+    &.border-blue{
+      border: 1px solid #0778ca;
+      .txt{color: #0778ca;}
+    }
     &.wid-full{
       width: 100%;
     }
@@ -427,6 +431,11 @@ button,a{
       @include rem(border-radius,4px);
     }
   }
+  &.type-r{
+    position: absolute;
+    @include rem(bottom,24px);
+    @include rem(right,24px);
+  }
 }
 
 /* 공통영역 */
@@ -437,6 +446,7 @@ section.content-wrap{
   overflow: auto;
   white-space: nowrap;
   .inner{
+    position: relative;
     margin-top: 0;
     // 1140px
     @include rem(min-width,1420px);
@@ -512,6 +522,7 @@ section.content-wrap{
     &.wid-1468{@include rem(max-width,1468px);@include rem(height,402px);}
     &.wid-759{@include rem(width,759px);@include rem(margin,0 0 0 40px); @include rem(padding,54px 81px);border: 1px solid #cacdd5;}
   }
+  &.shadow-n{box-shadow: none;}
 }
 
 /*검사 현황 자료 게시판 */
@@ -654,6 +665,70 @@ section.content-wrap{
     + .btn-data{@include rem(margin-left,10PX);}
     + .input-txt{@include rem(margin-left,16px);}
   }
+}
+
+/* 확진자 등록 공통 */
+.register-form{
+  table.form-group{
+    th,td{@include rem(padding, 5px 0);@include rem(font-size,12px);}
+    th{@include rem(height,40px);@include rem(padding,4px 0);color: #333;font-weight: normal;}
+    .input-txt{
+      width: auto;
+      /* 기본 input 139px */
+      input{
+        @include rem(width,139px);
+        @include rem(height,28px);
+        margin: 0 auto;
+        @include rem(padding-left,12px);
+        color: #606266;
+        @include rem(font-size,12px);
+        line-height: initial;
+        &::placeholder{@include rem(font-size,12px);}
+        &.wid-26{@include rem(width,26px);}
+        &.wid-73{@include rem(width,73px);}
+        &.wid-98{@include rem(width,98px);}
+        &.wid-281{@include rem(width,281px);}
+        &.wid-430{@include rem(width,430px);}
+      }
+      .selectbox{
+        width: auto;
+        select{
+          @include rem(width,139px);
+          @include rem(height,28px);
+          margin: 0 auto;
+          @include rem(padding-left,12px);
+          @include rem(font-size,12px);
+          line-height: initial;
+          &.wid-281{@include rem(width,281px);}
+        }
+      }
+      button{
+        @include rem(width,225px);
+        .txt{
+          color: #2f80ed;
+        }
+      }
+    }
+    .input-box{
+      align-items: center;
+      .wave{@include rem(margin,0 7px);}
+    }
+    .point{
+      position: relative;
+      &::before{
+        content: "*";
+        position: absolute;
+        top: 0;
+        left: -8px;
+        display: block;
+        @include rem(font-size,12px);
+        color: #eb5757;
+      }
+    }
+    &.wid-448{@include rem(width,448px);}
+    &.wid-672{@include rem(width,672px);}
+  }
+  &:not(:first-child){@include rem(margin-top,12px);}
 }
 
 /* -------------- 미디어쿼리 영역 -------------- */

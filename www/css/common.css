@@ -472,6 +472,8 @@ a:before {
     text-align: center; }
   .tbl-col01.confirm-table tbody td:nth-child(6) {
     text-align: left; }
+  .tbl-col01 .align-l {
+    text-align: left; }
 
 .tbl-row01 {
   width: 100%;
@@ -766,8 +768,9 @@ a:before {
   display: inline-block;
   position: relative;
   width: 100%;
-  border: 1px solid #cccccc;
-  background-color: #ffffff; }
+  border: 1px solid #e4e7ed;
+  background-color: #ffffff;
+  border-radius: 4px; }
   .input-txt.in-message {
     margin-bottom: 30px; }
   .input-txt input {
@@ -798,32 +801,32 @@ a:before {
   opacity: 0.5; }
 
 .input-txt input::-webkit-input-placeholder {
-  font-size: 12px;
-  color: gray;
+  font-size: 14px;
+  color: #c0c4cc;
   background: transparent;
   opacity: 1; }
 
 .input-txt input::-moz-placeholder {
-  font-size: 12px;
-  color: gray;
+  font-size: 14px;
+  color: #c0c4cc;
   background: transparent;
   opacity: 1; }
 
 .input-txt input:-ms-input-placeholder {
-  font-size: 12px;
-  color: gray;
+  font-size: 14px;
+  color: #c0c4cc;
   background: transparent;
   opacity: 1; }
 
 .input-txt input::-ms-input-placeholder {
-  font-size: 12px;
-  color: gray;
+  font-size: 14px;
+  color: #c0c4cc;
   background: transparent;
   opacity: 1; }
 
 .input-txt input::placeholder {
-  font-size: 12px;
-  color: gray;
+  font-size: 14px;
+  color: #c0c4cc;
   background: transparent;
   opacity: 1; }
 
@@ -843,6 +846,7 @@ a:before {
   width: 100%;
   overflow: hidden;
   border: 1px solid #e4e7ed;
+  border-radius: 4px;
   border-radius: 4px; }
   .selectbox:after {
     content: '';
@@ -929,6 +933,8 @@ a:before {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .layer_box.wid-795 {
+    max-width: 795px; }
 
 .layer_box.sztype2 {
   width: 1020px; }
@@ -958,12 +964,25 @@ a:before {
     padding: 0 16px; }
     .layer_cont_in.form-group .input-txt {
       margin-top: 16px; }
+  .layer_cont_in table thead th {
+    color: #333;
+    font-weight: normal; }
+  .layer_cont_in table tbody .type-txt {
+    display: block; }
+    .layer_cont_in table tbody .type-txt .type {
+      margin-left: 18px;
+      color: #2f80ed;
+      vertical-align: top; }
+  .layer_cont_in.pt-20 {
+    padding: 20px 16px 0; }
 
 .layer_box .btn-group {
   margin-top: 32px;
   padding-bottom: 21px; }
   .layer_box .btn-group.mt-25 {
     margin-top: 25px; }
+  .layer_box .btn-group.mt-16 {
+    margin-top: 16px; }
 
 .layer_cont_in.type2 {
   padding: 20px 30px; }
@@ -1908,6 +1927,45 @@ body {
   margin-top: 32px; }
 
 /* 버튼 공통 */
+/* 버튼 - 개인으로 사용시 */
+button, a {
+  text-align: center; }
+  button .txt, a .txt {
+    font-size: 14px;
+    color: #646266; }
+  button.wid-80, a.wid-80 {
+    min-width: 80px; }
+  button.wid-89, a.wid-89 {
+    min-width: 89px; }
+  button.wid-79, a.wid-79 {
+    min-width: 79px; }
+  button.wid-66, a.wid-66 {
+    min-width: 66px; }
+  button.color-blue, a.color-blue {
+    background: #0778ca; }
+    button.color-blue .txt, a.color-blue .txt {
+      color: #fff; }
+  button.color-blue02, a.color-blue02 {
+    background: #2883c5; }
+    button.color-blue02 .txt, a.color-blue02 .txt {
+      color: #fff; }
+  button.color-blue03, a.color-blue03 {
+    background: #283356; }
+    button.color-blue03 .txt, a.color-blue03 .txt {
+      color: #fff; }
+  button.color-red, a.color-red {
+    background: #dc3545; }
+    button.color-red .txt, a.color-red .txt {
+      color: #fff; }
+  button.color-white, a.color-white {
+    background: #fff; }
+    button.color-white .txt, a.color-white .txt {
+      color: #646266; }
+  button.wid-full, a.wid-full {
+    width: 100%;
+    min-width: auto; }
+
+/* 버튼 - 그룹으로 사용시 */
 .btn-group {
   margin-top: 24px;
   text-align: center;
@@ -1943,12 +2001,16 @@ body {
       font-size: 14px;
       color: #606266;
       text-align: center; }
-  .btn-group button.wid-80, .btn-group a.wid-80 {
-    min-width: 80px; }
+  .btn-group button.wid-92, .btn-group a.wid-92 {
+    min-width: 92px; }
   .btn-group button.wid-89, .btn-group a.wid-89 {
     min-width: 89px; }
+  .btn-group button.wid-80, .btn-group a.wid-80 {
+    min-width: 80px; }
   .btn-group button.wid-79, .btn-group a.wid-79 {
     min-width: 79px; }
+  .btn-group button.wid-77, .btn-group a.wid-77 {
+    min-width: 77px; }
   .btn-group button.color-blue, .btn-group a.color-blue {
     background: #0778ca; }
     .btn-group button.color-blue .txt, .btn-group a.color-blue .txt {
@@ -1969,6 +2031,10 @@ body {
     background: #fff; }
     .btn-group button.color-white .txt, .btn-group a.color-white .txt {
       color: #646266; }
+  .btn-group button.border-blue, .btn-group a.border-blue {
+    border: 1px solid #0778ca; }
+    .btn-group button.border-blue .txt, .btn-group a.border-blue .txt {
+      color: #0778ca; }
   .btn-group button.wid-full, .btn-group a.wid-full {
     width: 100%; }
   .btn-group button.inline, .btn-group a.inline {
@@ -2023,6 +2089,10 @@ body {
       padding: 9px 5px;
       border: 1px solid #e4e7ed;
       border-radius: 4px; }
+  .btn-group.type-r {
+    position: absolute;
+    bottom: 24px;
+    right: 24px; }
 
 /* 공통영역 */
 section.content-wrap {
@@ -2033,8 +2103,9 @@ section.content-wrap {
   overflow: auto;
   white-space: nowrap; }
   section.content-wrap .inner {
+    position: relative;
     margin-top: 0;
-    min-width: 1140px;
+    min-width: 1420px;
     padding: 24px; }
   section.content-wrap .sec-tit {
     position: relative; }
@@ -2065,6 +2136,7 @@ section.content-wrap {
         margin-left: 16px;
         padding: 11px 10px;
         border: 1px solid #0778ca;
+        text-align: center;
         border-radius: 4px; }
         section.content-wrap .sec-tit .btn-area .btn-download .txt {
           font-size: 12px;
@@ -2128,6 +2200,9 @@ section.content-wrap {
       margin: 0 0 0 40px;
       padding: 54px 81px;
       border: 1px solid #cacdd5; }
+  section.content-wrap.shadow-n {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 /*검사 현황 자료 게시판 */
 .detail-view-container .view-title {
@@ -2268,7 +2343,13 @@ section.content-wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .search-form .search-type:not(:first-child) {
+    margin-top: 18px; }
 
 .search-form .input-radio {
   width: 180px; }
@@ -2278,13 +2359,122 @@ section.content-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 220px; }
-  .search-form .search-list .type + .input-txt {
-    margin-left: 28px; }
-  .search-form .search-list .type + .selectbox {
-    margin-left: 28px; }
+  .search-form .search-list .type {
+    font-size: 14px;
+    font-weight: bold;
+    color: #606266; }
+    .search-form .search-list .type + .input-txt {
+      margin-left: 20px; }
+    .search-form .search-list .type + .selectbox {
+      margin-left: 20px; }
   .search-form .search-list .selectbox {
     width: 150px; }
+  .search-form .search-list .input-txt {
+    padding-right: 6px; }
+  .search-form .search-list + .search-list {
+    margin-left: 30px; }
+  .search-form .search-list.wid-445 {
+    width: 445px; }
+
+.search-form .btn-data {
+  padding: 11px 10px;
+  border: 1px solid #e4e7ed;
+  border-radius: 4px;
+  text-align: center; }
+  .search-form .btn-data .txt {
+    text-align: center; }
+  .search-form .btn-data:not(:last-child) {
+    margin-left: 28px; }
+  .search-form .btn-data + .btn-data {
+    margin-left: 10PX; }
+  .search-form .btn-data + .input-txt {
+    margin-left: 16px; }
+
+/* 확진자 등록 공통 */
+.register-form table.form-group th, .register-form table.form-group td {
+  padding: 5px 0;
+  font-size: 12px; }
+
+.register-form table.form-group th {
+  padding: 8px 0;
+  color: #333;
+  font-weight: normal; }
+
+.register-form table.form-group .input-txt {
+  width: auto;
+  /* 기본 input 139px */ }
+  .register-form table.form-group .input-txt input {
+    width: 139px;
+    height: 28px;
+    margin: 0 auto;
+    padding-left: 12px;
+    color: #606266;
+    font-size: 12px;
+    line-height: initial; }
+    .register-form table.form-group .input-txt input::-webkit-input-placeholder {
+      font-size: 12px; }
+    .register-form table.form-group .input-txt input::-moz-placeholder {
+      font-size: 12px; }
+    .register-form table.form-group .input-txt input:-ms-input-placeholder {
+      font-size: 12px; }
+    .register-form table.form-group .input-txt input::-ms-input-placeholder {
+      font-size: 12px; }
+    .register-form table.form-group .input-txt input::placeholder {
+      font-size: 12px; }
+    .register-form table.form-group .input-txt input.wid-281 {
+      width: 281px; }
+    .register-form table.form-group .input-txt input.wid-430 {
+      width: 430px; }
+  .register-form table.form-group .input-txt .selectbox {
+    width: auto; }
+    .register-form table.form-group .input-txt .selectbox select {
+      width: 139px;
+      height: 28px;
+      margin: 0 auto;
+      padding-left: 12px;
+      font-size: 12px;
+      line-height: initial; }
+      .register-form table.form-group .input-txt .selectbox select.wid-281 {
+        width: 281px; }
+  .register-form table.form-group .input-txt button {
+    width: 225px; }
+    .register-form table.form-group .input-txt button .txt {
+      color: #2f80ed; }
+
+.register-form table.form-group .input-box {
+  -webkit-box-align: initial;
+  -webkit-align-items: initial;
+      -ms-flex-align: initial;
+          align-items: initial; }
+
+.register-form table.form-group .point {
+  position: relative; }
+  .register-form table.form-group .point::before {
+    content: "*";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    display: block;
+    font-size: 12px;
+    color: #eb5757; }
+
+.register-form table.form-group.wid-448 {
+  width: 448px; }
+
+.register-form table.form-group.wid-672 {
+  width: 672px; }
+
+.register-form:not(:first-child) {
+  margin-top: 12px; }
 
 /* -------------- 미디어쿼리 영역 -------------- */
 /* 로그인 메인 bg */
@@ -2304,4 +2494,4 @@ section.content-wrap {
     max-width: initial;
     margin: 60px 24px 60px; } }
 
-/*# sourceMappingURL=../sass_maps/common.css.map */
+/*# sourceMappingURL=../../sass_maps/css/common.css.map */

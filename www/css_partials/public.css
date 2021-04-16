@@ -376,8 +376,6 @@ body {
 /* 버튼 공통 */
 /* 버튼 - 개인으로 사용시 */
 button, a {
-  min-width: 80px;
-  padding: 10px 5px;
   text-align: center; }
   button .txt, a .txt {
     font-size: 14px;
@@ -480,6 +478,10 @@ button, a {
     background: #fff; }
     .btn-group button.color-white .txt, .btn-group a.color-white .txt {
       color: #646266; }
+  .btn-group button.border-blue, .btn-group a.border-blue {
+    border: 1px solid #0778ca; }
+    .btn-group button.border-blue .txt, .btn-group a.border-blue .txt {
+      color: #0778ca; }
   .btn-group button.wid-full, .btn-group a.wid-full {
     width: 100%; }
   .btn-group button.inline, .btn-group a.inline {
@@ -534,6 +536,10 @@ button, a {
       padding: 9px 5px;
       border: 1px solid #e4e7ed;
       border-radius: 4px; }
+  .btn-group.type-r {
+    position: absolute;
+    bottom: 24px;
+    right: 24px; }
 
 /* 공통영역 */
 section.content-wrap {
@@ -544,6 +550,7 @@ section.content-wrap {
   overflow: auto;
   white-space: nowrap; }
   section.content-wrap .inner {
+    position: relative;
     margin-top: 0;
     min-width: 1420px;
     padding: 24px; }
@@ -640,6 +647,9 @@ section.content-wrap {
       margin: 0 0 0 40px;
       padding: 54px 81px;
       border: 1px solid #cacdd5; }
+  section.content-wrap.shadow-n {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 /*검사 현황 자료 게시판 */
 .detail-view-container .view-title {
@@ -835,6 +845,92 @@ section.content-wrap {
     margin-left: 10PX; }
   .search-form .btn-data + .input-txt {
     margin-left: 16px; }
+
+/* 확진자 등록 공통 */
+.register-form table.form-group th, .register-form table.form-group td {
+  padding: 5px 0;
+  font-size: 12px; }
+
+.register-form table.form-group th {
+  height: 40px;
+  padding: 4px 0;
+  color: #333;
+  font-weight: normal; }
+
+.register-form table.form-group .input-txt {
+  width: auto;
+  /* 기본 input 139px */ }
+  .register-form table.form-group .input-txt input {
+    width: 139px;
+    height: 28px;
+    margin: 0 auto;
+    padding-left: 12px;
+    color: #606266;
+    font-size: 12px;
+    line-height: initial; }
+    .register-form table.form-group .input-txt input::-webkit-input-placeholder {
+      font-size: 12px; }
+    .register-form table.form-group .input-txt input::-moz-placeholder {
+      font-size: 12px; }
+    .register-form table.form-group .input-txt input:-ms-input-placeholder {
+      font-size: 12px; }
+    .register-form table.form-group .input-txt input::-ms-input-placeholder {
+      font-size: 12px; }
+    .register-form table.form-group .input-txt input::placeholder {
+      font-size: 12px; }
+    .register-form table.form-group .input-txt input.wid-26 {
+      width: 26px; }
+    .register-form table.form-group .input-txt input.wid-73 {
+      width: 73px; }
+    .register-form table.form-group .input-txt input.wid-98 {
+      width: 98px; }
+    .register-form table.form-group .input-txt input.wid-281 {
+      width: 281px; }
+    .register-form table.form-group .input-txt input.wid-430 {
+      width: 430px; }
+  .register-form table.form-group .input-txt .selectbox {
+    width: auto; }
+    .register-form table.form-group .input-txt .selectbox select {
+      width: 139px;
+      height: 28px;
+      margin: 0 auto;
+      padding-left: 12px;
+      font-size: 12px;
+      line-height: initial; }
+      .register-form table.form-group .input-txt .selectbox select.wid-281 {
+        width: 281px; }
+  .register-form table.form-group .input-txt button {
+    width: 225px; }
+    .register-form table.form-group .input-txt button .txt {
+      color: #2f80ed; }
+
+.register-form table.form-group .input-box {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .register-form table.form-group .input-box .wave {
+    margin: 0 7px; }
+
+.register-form table.form-group .point {
+  position: relative; }
+  .register-form table.form-group .point::before {
+    content: "*";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    display: block;
+    font-size: 12px;
+    color: #eb5757; }
+
+.register-form table.form-group.wid-448 {
+  width: 448px; }
+
+.register-form table.form-group.wid-672 {
+  width: 672px; }
+
+.register-form:not(:first-child) {
+  margin-top: 12px; }
 
 /* -------------- 미디어쿼리 영역 -------------- */
 /* 로그인 메인 bg */

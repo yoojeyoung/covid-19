@@ -231,11 +231,11 @@
                       </div>
                     </div>
                     <div class="btn-group type-r">
-                      <button class="wid-92">
+                      <button class="wid-92 border-blue">
                         <div class="txt">삭제목록</div>
                       </button>
-                      <button class="wid-77">
-                        <div class="txt">버튼</div>
+                      <button class="wid-77 color-blue">
+                        <div class="txt">검색</div>
                       </button>
                     </div>
                   </div>
@@ -296,7 +296,7 @@
                             <td>등록</td>
                             <td>등록</td>
                             <td>
-                              <a href="">보기 </a>
+                              <a href="#" onclick="COVID.dimLayerShow('#srdTarget01')">보기</a>
                             </td>
                           </tr>
                           <tr>
@@ -310,7 +310,7 @@
                             <td>등록</td>
                             <td>등록</td>
                             <td>
-                              <a href="">보기 </a>
+                              <a href="">보기</a>
                             </td>
                           </tr>
                           <tr class="bg-green">
@@ -525,13 +525,166 @@
             </div>
           </section>
         </div>
+        <!-- 비밀번호 재설정 팝업-->
+        <div class="dimlayer_z" id="srdTarget01">
+          <div class="dimlayer_tb">
+            <div class="dimlayer_td">
+              <!-- layer_box-->
+              <div class="layer_box wid-795">
+                <div class="layer_tit_low">
+                  <h2 class="layer_tit">확진자 정보 수정 이력</h2>
+                </div>
+                <div class="layer_cont" style="max-height: 875px;">
+                  <div class="layer_cont_in pt-20">
+                    <div class="tbl-container01">
+                      <table class="tbl-col01">
+                        <caption>공시자료: 번호,보고서명,등록일</caption>
+                        <colgroup>
+                          <col width="8%">
+                          <col width="12%">
+                          <col width="12%">
+                          <col width="20%">
+                          <col width="auto">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>NO</th>
+                            <th>수정자</th>
+                            <th>소속</th>
+                            <th>수정일자</th>
+                            <th class="align-l">수정내용</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>홍길동</td>
+                            <td>삼성병원</td>
+                            <td>2021. 3. 4 16:32</td>
+                            <td class="align-l">
+                              <span class="type-txt">격리구분 | 격리중 => 사망<span class="type">수정</span>
+                              </span>
+                              <span class="type-txt">
+                                퇴원일 | 미입력 => 2021.3.4 <span class="type">입력</span>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>홍길동</td>
+                            <td>서울시</td>
+                            <td>2021. 3. 4 16:32</td>
+                            <td class="align-l">
+                              <span class="type-txt">격리구분 | 격리중 => 사망<span class="type">수정</span>
+                              </span>
+                              <span class="type-txt">
+                                퇴원일 | 미입력 => 2021.3.4 <span class="type">입력</span>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>홍길동</td>
+                            <td>서울시</td>
+                            <td>2021. 3. 4 16:32</td>
+                            <td class="align-l">
+                              <span class="type-txt">격리구분 | 격리중 => 사망<span class="type">수정</span>
+                              </span>
+                              <span class="type-txt">
+                                퇴원일 | 미입력 => 2021.3.4 <span class="type">입력</span>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>홍길동</td>
+                            <td>서초구</td>
+                            <td>2021. 3. 4 16:32</td>
+                            <td class="align-l">최초 등록</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="page-nav-container">
+                  <div class="page-nav">
+                    <div class="page-util prev">
+                      <a class="page-link" href="#none" role="button">
+                        <span class="hide-txt">이전 페이지</span>
+                        <span class="ico-area" aria-hidden="true">
+                          <i class="ico-page-arrow left"></i>
+                        </span>
+                      </a>
+                    </div>
+                    <ul class="page-item-container">
+                      <li class="page-item">
+                        <!-- on 됐을 경우 span 태그로 변경-->
+                        <span class="page-link on">
+                          <span class="txt">1</span>
+                        </span>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#none">
+                          <span class="txt">2</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#none">
+                          <span class="txt">3</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#none">
+                          <span class="txt">4</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#none">
+                          <span class="txt">5</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="page-util next">
+                      <a class="page-link" href="#none" role="button">
+                        <span class="hide-txt">다음 페이지</span>
+                        <span class="ico-area" aria-hidden="true">
+                          <i class="ico-page-arrow right"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group right mt-16">
+                  <!-- closetrigger 있으면 닫힘-->
+                  <button class="color-white wid-89 closetrigger">
+                    <span class="txt">닫기</span>
+                  </button>
+                </div>
+                <button class="btn_layerclose" type="button">
+                  <span class="hide-txt">닫기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="dimm">
     <img src="../../images/common/blank_size_100.png" alt="">
   </div>
-  <script></script>
+  <script>
+    COVID.dimLayerShow('#srdTarget01');
+
+  </script>
 </body>
 
 </html>
