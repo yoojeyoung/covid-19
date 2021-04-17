@@ -607,11 +607,16 @@ section.content-wrap {
     section.content-wrap .sec-tit + .tbl-container01 {
       margin-top: 24px; }
   section.content-wrap .register-tit {
-    margin-top: 22px; }
+    margin-top: 22px;
+    font-size: 12px; }
     section.content-wrap .register-tit .tit {
       font-size: 18px;
       font-weight: bold;
       color: #1d2747; }
+    section.content-wrap .register-tit .sub-tit {
+      margin-left: 8px;
+      color: #0778ca;
+      vertical-align: bottom; }
   section.content-wrap .column-group {
     margin-top: 24px; }
     section.content-wrap .column-group .column {
@@ -871,7 +876,21 @@ section.content-wrap {
     font-weight: normal; }
   .register-form table.form-group .input-txt {
     width: auto;
+    margin: 0;
     /* 기본 input 139px */ }
+    .register-form table.form-group .input-txt label {
+      position: relative;
+      font-size: 12px; }
+      .register-form table.form-group .input-txt label.point::before {
+        content: "*";
+        position: absolute;
+        top: 0;
+        left: -8px;
+        display: block;
+        font-size: 12px;
+        color: #eb5757; }
+      .register-form table.form-group .input-txt label + input {
+        margin-left: 10px; }
     .register-form table.form-group .input-txt input {
       width: 139px;
       height: 28px;
@@ -892,6 +911,10 @@ section.content-wrap {
         font-size: 12px; }
       .register-form table.form-group .input-txt input.wid-26 {
         width: 26px; }
+      .register-form table.form-group .input-txt input.wid-48 {
+        width: 48px; }
+      .register-form table.form-group .input-txt input.wid-55 {
+        width: 55px; }
       .register-form table.form-group .input-txt input.wid-73 {
         width: 73px; }
       .register-form table.form-group .input-txt input.wid-98 {
@@ -904,6 +927,8 @@ section.content-wrap {
         width: 345px; }
       .register-form table.form-group .input-txt input.wid-430 {
         width: 430px; }
+      .register-form table.form-group .input-txt input.wid-771 {
+        width: 771px; }
       .register-form table.form-group .input-txt input + .input-radio {
         margin-left: 20px; }
     .register-form table.form-group .input-txt .selectbox {
@@ -945,6 +970,14 @@ section.content-wrap {
         margin-left: 10px; }
       .register-form table.form-group .input-txt .input-radio + .selectbox {
         margin-left: 10px; }
+      .register-form table.form-group .input-txt .input-radio + .input-checkbox {
+        margin-left: 20px; }
+    .register-form table.form-group .input-txt .input-checkbox + .input-checkbox {
+      margin-left: 20px; }
+    .register-form table.form-group .input-txt .input-checkbox + input {
+      margin-left: 10px; }
+    .register-form table.form-group .input-txt + .input-txt {
+      margin-left: 21px; }
   .register-form table.form-group .input-box {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -952,6 +985,14 @@ section.content-wrap {
             align-items: center; }
     .register-form table.form-group .input-box .wave {
       margin: 0 7px; }
+    .register-form table.form-group .input-box .tem {
+      margin-left: 4px;
+      color: #333; }
+    .register-form table.form-group .input-box .type {
+      margin: 0 12px;
+      color: #333; }
+    .register-form table.form-group .input-box .mr-0 {
+      margin-right: 0; }
   .register-form table.form-group .point {
     position: relative; }
     .register-form table.form-group .point::before {
@@ -973,16 +1014,28 @@ section.content-wrap {
     margin-top: 32px; }
   .register-form.mt-48 {
     margin-top: 48px; }
+  .register-form.wid-302 {
+    width: 302px; }
   .register-form.wid-448 {
     width: 448px; }
   .register-form.wid-550 {
     width: 550px; }
+  .register-form.wid-602 {
+    width: 602px; }
   .register-form.wid-672 {
     width: 672px; }
   .register-form.wid-810 {
     width: 810px; }
+  .register-form.wid-860 {
+    width: 860px; }
+  .register-form.wid-900 {
+    width: 900px; }
   .register-form.wid-998 {
     width: 998px; }
+  .register-form.wid-1125 {
+    width: 1125px; }
+  .register-form.wid-1165 {
+    width: 1165px; }
   .register-form.wid-1187 {
     width: 1187px; }
 

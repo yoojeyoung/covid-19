@@ -493,10 +493,16 @@ section.content-wrap{
   }
   .register-tit{
     @include rem(margin-top,22px);
+    @include rem(font-size,12px);
     .tit{
       @include rem(font-size,18px);
       font-weight: bold;
       color: #1d2747;
+    }
+    .sub-tit{
+      @include rem(margin-left,8px);
+      color: #0778ca;
+      vertical-align: bottom;
     }
   }
   .column-group{
@@ -686,7 +692,22 @@ section.content-wrap{
     th{@include rem(height,40px);@include rem(padding,4px 0);color: #333;font-weight: normal;}
     .input-txt{
       width: auto;
+      margin: 0;
       /* 기본 input 139px */
+      label{
+        position: relative;
+        @include rem(font-size,12px);
+        &.point::before{
+          content: "*";
+          position: absolute;
+          top: 0;
+          left: -8px;
+          display: block;
+          font-size: 12px;
+          color: #eb5757;
+        }
+        + input{@include rem(margin-left,10px);}
+      }
       input{
         @include rem(width,139px);
         @include rem(height,28px);
@@ -697,12 +718,15 @@ section.content-wrap{
         line-height: initial;
         &::placeholder{@include rem(font-size,12px);}
         &.wid-26{@include rem(width,26px);}
+        &.wid-48{@include rem(width,48px);}
+        &.wid-55{@include rem(width,55px);}
         &.wid-73{@include rem(width,73px);}
         &.wid-98{@include rem(width,98px);}
         &.wid-149{@include rem(width,149px);}
         &.wid-281{@include rem(width,281px);}
         &.wid-345{@include rem(width,345px);}
         &.wid-430{@include rem(width,430px);}
+        &.wid-771{@include rem(width,771px);}
         +.input-radio{@include rem(margin-left,20px);}
       }
       .selectbox{
@@ -738,11 +762,20 @@ section.content-wrap{
         + .input-radio{@include rem(margin-left,10px);}
         + input{@include rem(margin-left,10px);}
         + .selectbox{@include rem(margin-left,10px);}
+        + .input-checkbox{@include rem(margin-left,20px);}
       }
+      .input-checkbox{
+        + .input-checkbox{@include rem(margin-left,20px);}
+        + input{@include rem(margin-left,10px);}
+      }
+      + .input-txt{@include rem(margin-left,21px);}
     }
     .input-box{
       align-items: center;
       .wave{@include rem(margin,0 7px);}
+      .tem{@include rem(margin-left,4px);color: #333;}
+      .type{@include rem(margin, 0 12px);color: #333;}
+      .mr-0{margin-right: 0;}
     }
     .point{
       position: relative;
@@ -766,11 +799,17 @@ section.content-wrap{
   &:not(:first-child){@include rem(margin-top,12px);}
   &.mt-32{@include rem(margin-top,32px);}
   &.mt-48{@include rem(margin-top,48px);}
+  &.wid-302{@include rem(width,302px);}
   &.wid-448{@include rem(width,448px);}
   &.wid-550{@include rem(width,550px);}
+  &.wid-602{@include rem(width,602px);}
   &.wid-672{@include rem(width,672px);}
   &.wid-810{@include rem(width,810px);}
+  &.wid-860{@include rem(width,860px);}
+  &.wid-900{@include rem(width,900px);}
   &.wid-998{@include rem(width,998px);}
+  &.wid-1125{@include rem(width,1125px);}
+  &.wid-1165{@include rem(width,1165px);}
   &.wid-1187{@include rem(width,1187px);}
 }
 

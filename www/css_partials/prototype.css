@@ -288,7 +288,7 @@ a:before {
   .input-checkbox .txt {
     display: inline-block;
     color: gray;
-    font-size: 16px; }
+    font-size: 12px; }
   .input-checkbox label:before {
     content: '';
     position: absolute;
@@ -297,25 +297,9 @@ a:before {
     width: 20px;
     height: 20px;
     margin-top: -10px;
-    border: 1px solid gray;
+    border: 1px solid #dcdfe6;
+    background: #fff;
     text-align: center;
-    -webkit-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out; }
-  .input-checkbox label:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    margin-top: -4px;
-    width: 9px;
-    height: 6px;
-    border-top: 2px solid gray;
-    border-right: 2px solid gray;
-    -webkit-transform: rotate(130deg);
-        -ms-transform: rotate(130deg);
-            transform: rotate(130deg);
     -webkit-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
     transition: all .3s ease-out; }
@@ -357,14 +341,31 @@ a:before {
     margin-top: 0; }
   .input-checkbox input.checked + label:before,
   .input-checkbox input:checked + label:before {
-    background-color: blue;
-    border-color: blue; }
+    background-color: #409eff;
+    border-color: #409eff; }
   .input-checkbox input.checked + label:after,
   .input-checkbox input:checked + label:after {
     border-color: #ffffff; }
   .input-checkbox input.checked + label .txt,
   .input-checkbox input:checked + label .txt {
     color: gray; }
+  .input-checkbox input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    margin-top: -4px;
+    width: 9px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    -webkit-transform: rotate(130deg);
+        -ms-transform: rotate(130deg);
+            transform: rotate(130deg);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out; }
   .input-checkbox input.disabled + label:before,
   .input-checkbox input:disabled + label:before {
     background-color: lightgray;

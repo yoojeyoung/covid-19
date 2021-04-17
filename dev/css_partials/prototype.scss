@@ -277,9 +277,8 @@ a{
     display:inline-block;
     input{border: 0;clip: rect(0 0 0 0);width: 1px;height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;}
     label{display:inline-block;position: relative;@include rem(min-width, 20px);@include rem(min-height, 20px);@include rem(padding-top, 1px);user-select: none;}
-    .txt{display:inline-block;color:gray;@include rem(font-size, 16px);}
-    label:before{content:'';position: absolute;top: 50%;left: 0;@include rem(width, 20px);@include rem(height, 20px);@include rem(margin-top, -10px);border: 1px solid gray;text-align: center;transition: all .3s ease-out;}
-    label:after{content:'';display:block;position: absolute;top: 50%;@include rem(left, 5px);@include rem(margin-top, -4px);@include rem(width, 9px);@include rem(height, 6px);@include rem(border-top, 2px solid gray);@include rem(border-right, 2px solid gray);transform: rotate(130deg);transition: all .3s ease-out;}
+    .txt{display:inline-block;color:gray;@include rem(font-size, 12px);}
+    label:before{content:'';position: absolute;top: 50%;left: 0;@include rem(width, 20px);@include rem(height, 20px);@include rem(margin-top, -10px);border: 1px solid #dcdfe6;background: #fff;text-align: center;transition: all .3s ease-out;}
     &.right{
         label{@include rem(padding-left, 30px);}
     }
@@ -302,9 +301,12 @@ a{
     // checked 됐을때 스타일 변화
     input.checked,
     input:checked{
-        & + label:before{background-color:blue;border-color:blue;}
+        & + label:before{background-color:#409eff;border-color:#409eff;}
         & + label:after{border-color:#ffffff;}
         & + label .txt{color: gray;}
+    }
+    input:checked + label{
+        &:after{content:'';display:block;position: absolute;top: 50%;@include rem(left, 5px);@include rem(margin-top, -4px);@include rem(width, 9px);@include rem(height, 6px);@include rem(border-top, 2px solid #fff);@include rem(border-right, 2px solid #fff);transform: rotate(130deg);transition: all .3s ease-out;}
     }
     // disabled 됐을때 스타일 변화
     input.disabled,
