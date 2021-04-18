@@ -314,6 +314,15 @@ button,a{
     background: #fff;
     .txt{color: #646266;}
   }
+  &.border-blue{
+    border: 1px solid #0778ca !important;
+    .txt{color: #0778ca;}
+  }
+  &.border-red{
+    border:1px solid #dc3545 !important;
+    background: #fff6f8;
+    .txt{color: #dc3545;}
+  }
   &.wid-full{
     width: 100%;
     min-width: auto;
@@ -357,6 +366,11 @@ button,a{
     &.wid-80{@include rem(min-width,80px);}
     &.wid-89{@include rem(min-width,89px);}
     &.wid-92{@include rem(min-width,92px);}
+    &.hig-28{
+      @include rem(height,28px);
+      @include rem(padding,4px !important);
+      .txt{@include rem(font-size,12px);}
+    }
     &.color-blue{
       background: #0778ca;
       .txt{color: #fff;}
@@ -378,8 +392,13 @@ button,a{
       .txt{color: #646266;}
     }
     &.border-blue{
-      border: 1px solid #0778ca;
+      border: 1px solid #0778ca !important;
       .txt{color: #0778ca;}
+    }
+    &.border-red{
+      border:1px solid #dc3545 !important;
+      background: #fff6f8;
+      .txt{color: #dc3545;}
     }
     &.wid-full{
       width: 100%;
@@ -426,7 +445,7 @@ button,a{
     display: flex;
     justify-content: space-between;
     .white-btn-area{display: flex;}
-    a{
+    a,button{
       @include rem(max-width,66px);
       width: 100%;
       @include rem(padding,9px 5px);
@@ -438,6 +457,12 @@ button,a{
     position: absolute;
     @include rem(bottom,24px);
     @include rem(right,24px);
+  }
+  &.type-tr{
+    position: absolute;
+    @include rem(top,24px);
+    @include rem(right,24px);
+    margin: 0;
   }
 }
 
@@ -539,6 +564,21 @@ section.content-wrap{
     &.wid-1468{@include rem(max-width,1468px);@include rem(height,402px);}
     &.wid-759{@include rem(width,759px);@include rem(margin,0 0 0 40px); @include rem(padding,54px 81px);border: 1px solid #cacdd5;}
   }
+  .tab-group{
+    .tab-menu{
+      display: flex;
+    }
+    .input-radio{
+      @include rem(padding,10px);
+      border: 1px solid #e4e7ed;
+      @include rem(border-radius,4px);
+      + .input-radio{@include rem(margin-left,22px);}
+      input:checked + label .txt{color: #409eff;}
+    &.on{
+      border-color: #409eff;
+    }
+    }
+  }
   &.shadow-n{box-shadow: none;}
 }
 
@@ -578,7 +618,8 @@ section.content-wrap{
       display: block;
       color: #2f80ed;
       text-decoration: underline;
-      .txt{@include rem(font-size,12px);word-break: break-all;word-wrap: break-word;}
+      text-align: left;
+      .txt{@include rem(font-size,12px);color: #2f80ed;word-break: break-all;word-wrap: break-word;}
       + .upload-item{@include rem(margin-top,6px);}
     }
     &.type02{
@@ -650,6 +691,8 @@ section.content-wrap{
 
 /* 검색영역 */
 .search-form{
+  white-space: nowrap;
+  overflow: auto;
   .search-type{
     display: flex;align-items: center;
     &:not(:first-child){margin-top: 18px}
@@ -664,6 +707,7 @@ section.content-wrap{
       @include rem(font-size,14px);
       font-weight: bold;
       color: #606266;
+      + button{@include rem(margin-left,20px);}
       + .input-txt{@include rem(margin-left,20px);}
       + .selectbox{@include rem(margin-left,20px);}
     }
@@ -672,16 +716,37 @@ section.content-wrap{
     + .search-list{@include rem(margin-left,30px);}
     &.wid-445{width: 445px;}
   }
-  .btn-data{
+  .input-txt{
+    input{
+      &.wid-220{@include rem(width,220px)}
+      &.wid-228{@include rem(width,228px)}
+    }
+    + button{@include rem(margin-left,16px);}
+    + .input-txt{@include rem(margin-left,16px);}
+    + .selectbox{@include rem(margin-left,16px);}
+  }
+  .selectbox{
+    width: auto;
+    overflow: initial;
+    background: #fff;
+    select{
+      &.wid-100{@include rem(width,100px);}
+    }
+    + .selectbox{@include rem(margin-left,16px)}
+    + button{@include rem(margin-left,16px);}
+  }
+  button{
     @include rem(padding,11px 10px);
     border: 1px solid #e4e7ed;
     border-radius: 4px;
     text-align: center;
     .txt{text-align: center;}
-    &:not(:last-child){@include rem(margin-left,28px);}
-    + .btn-data{@include rem(margin-left,10PX);}
+    // &:not(:last-child){@include rem(margin-left,28px);}
+    + button{@include rem(margin-left,16PX);}
     + .input-txt{@include rem(margin-left,16px);}
+    &.bg-white{background: #fff;}
   }
+  &.mt-32{@include rem(margin-top,32px);}
 }
 
 /* 확진자 등록 공통 */

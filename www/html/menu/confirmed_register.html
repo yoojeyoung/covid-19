@@ -138,9 +138,26 @@
             </div>
             <div class="pgright_wrap">
               <div class="inner">
-                <h2 class="tit">확진자 목록</h2>
+                <h2 class="tit">확진자 등록</h2>
                 <section class="content-wrap shadow-n">
                   <div class="inner">
+                    <div class="tab-group">
+                      <div class="tab-menu">
+                        <!-- .input-radio + .on class 붙었을 경우 border 컬러 변경-->
+                        <div class="input-radio right">
+                          <input type="radio" id="radio1" name="radio1">
+                          <label for="radio1">
+                            <span class="txt">단건 등록</span>
+                          </label>
+                        </div>
+                        <div class="input-radio right">
+                          <input type="radio" id="radio2" name="radio2">
+                          <label for="radio2">
+                            <span class="txt">엑셀 등록</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
                     <div class="register-form">
                       <div class="tbl-container01">
                         <table class="tbl-col01 form-group">
@@ -612,7 +629,7 @@
                               <td>
                                 <div class="input-txt">
                                   <div class="input-box">
-                                    <input onclick="COVID.dimLayerShow('#srdTarget02')">
+                                    <input onclick="COVID.dimLayerShow('#srdTarget02')" placeholder="지도 선택">
                                   </div>
                                 </div>
                               </td>
@@ -669,7 +686,7 @@
                               <td>
                                 <div class="input-txt">
                                   <div class="input-box">
-                                    <input placeholder="숫자 입력">
+                                    <input onclick="COVID.dimLayerShow('#srdTarget02')" placeholder="지도 선택">
                                   </div>
                                 </div>
                               </td>

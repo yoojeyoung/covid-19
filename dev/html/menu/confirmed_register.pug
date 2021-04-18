@@ -9,9 +9,20 @@ block contents
             include /html/menu/_menulist
           .pgright_wrap
             .inner
-              h2.tit 확진자 목록
+              h2.tit 확진자 등록
               section.content-wrap.shadow-n
                 .inner
+                  .tab-group
+                    .tab-menu
+                      // .input-radio + .on class 붙었을 경우 border 컬러 변경
+                      .input-radio.right
+                        input(type="radio" id="radio1" name="radio1")
+                        label(for="radio1")
+                          span.txt 단건 등록
+                      .input-radio.right
+                        input(type="radio" id="radio2" name="radio2")
+                        label(for="radio2")
+                          span.txt 엑셀 등록
                   .register-form
                     .tbl-container01
                       table.tbl-col01.form-group
@@ -304,7 +315,7 @@ block contents
                               td 
                                 .input-txt
                                   .input-box
-                                    input(onclick="COVID.dimLayerShow('#srdTarget02')") 
+                                    input(onclick="COVID.dimLayerShow('#srdTarget02')" placeholder="지도 선택") 
                               td 
                                 .input-txt
                                   .input-box
@@ -338,7 +349,7 @@ block contents
                               td 
                                 .input-txt
                                   .input-box
-                                    input(placeholder="숫자 입력") 
+                                    input(onclick="COVID.dimLayerShow('#srdTarget02')" placeholder="지도 선택") 
                               td 
                                 .input-txt
                                   .input-box

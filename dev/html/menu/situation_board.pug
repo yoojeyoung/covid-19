@@ -10,6 +10,26 @@ block contents
           .pgright_wrap
             .inner
               h2.tit 서울시 코로나19 상황판
+              // 검색 영역
+              .search-form.mt-32
+                .search-type
+                  .search-list.wid-445
+                    .input-txt
+                      input(type="text").wid-228
+                    .selectbox
+                      select(title="").wid-100
+                        option(value="") 00시
+                        option(value="") 선택
+                        option(value="") 선택
+                    .selectbox
+                      select(title="").wid-100
+                        option(value="") 00분
+                        option(value="") 선택
+                        option(value="") 선택
+                    button.wid-66.color-blue 
+                      .txt 검색
+                    button.wid-66.reset
+                      .txt 
               // 최상위 테이블
               section.content-wrap
                 .inner 
