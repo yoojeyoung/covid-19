@@ -12,7 +12,8 @@ block contents
               h2.tit 서울시 코로나19 상황판
               // 검색 영역
               // 20210419 검색영역
-              .search-form.mt-32
+              // 20210420 .scroll class 추가
+              .search-form.mt-32.scroll
                 .search-type
                   .search-list
                     // element-ui 날짜 input
@@ -567,7 +568,7 @@ block contents
                                 td 567
                       .info-link
                         span.txt 상세한 추가 정보는 아래의 링크로<br> 이동하여 확인할 수 있습니다.
-                        a(type="button" href="#")
+                        a(type="button" href="#").color-orange
                           span.txt 병상관리 사이트
                   .column-group 
                     .column
@@ -620,7 +621,7 @@ block contents
                                 td 567
                       .info-link
                         span.txt 상세한 추가 정보는 아래의 링크로<br> 이동하여 확인할 수 있습니다.
-                        a(type="button" href="#")
+                        a(type="button" href="#").color-orange
                           span.txt 병상관리 사이트
               // 일일 확진환자 현황
               section.content-wrap

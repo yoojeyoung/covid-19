@@ -137,7 +137,308 @@
                 </ul>
               </div>
             </div>
-            <div class="pgright_wrap"></div>
+            <div class="pgright_wrap">
+              <div class="inner">
+                <h2 class="tit">삭제 확진자 목록</h2>
+                <!-- 검색 영역-->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="search-form">
+                      <div class="search-type">
+                        <div class="input-radio right">
+                          <input type="radio" id="radio211" name="radio211">
+                          <label for="radio211">
+                            <span class="txt">조건 검색</span>
+                          </label>
+                        </div>
+                        <div class="search-list">
+                          <span class="type">자치구</span>
+                          <div class="selectbox">
+                            <select title="">
+                              <option value="">선택해주세요.</option>
+                              <option value="">선택</option>
+                              <option value="">선택</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="search-list">
+                          <span class="type">상태</span>
+                          <div class="selectbox">
+                            <select title="">
+                              <option value="">선택해주세요.</option>
+                              <option value="">선택</option>
+                              <option value="">선택</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="search-list">
+                          <span class="type">발생원인</span>
+                          <div class="selectbox">
+                            <select title="">
+                              <option value="">선택해주세요.</option>
+                              <option value="">선택</option>
+                              <option value="">선택</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="search-list wid-445">
+                          <span class="type">확진일자</span>
+                          <button class="btn-data wid-66">
+                            <div class="txt">오늘</div>
+                          </button>
+                          <button class="btn-data wid-66">
+                            <div class="txt">전날</div>
+                          </button>
+                          <!-- element-ui 날짜 input-->
+                          <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                            <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="날짜 선택">
+                            <span class="el-input__prefix">
+                              <i class="el-input__icon el-icon-date"></i>
+                            </span>
+                            <span class="el-input__suffix">
+                              <span class="el-input__suffix-inner">
+                                <i class="el-input__icon el-icon-circle-close"></i>
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="search-type">
+                        <div class="input-radio right">
+                          <input type="radio" id="radio212" name="radio212">
+                          <label for="radio212">
+                            <span class="txt">확진자 번호로 검색</span>
+                          </label>
+                        </div>
+                        <div class="search-list">
+                          <div class="input-txt">
+                            <input type="text" placeholder="숫자만 입력">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="search-type">
+                        <div class="input-radio right">
+                          <input type="radio" id="radio213" name="radio213">
+                          <label for="radio213">
+                            <span class="txt">키워드 검색</span>
+                          </label>
+                        </div>
+                        <div class="search-list">
+                          <div class="input-txt">
+                            <input type="text" placeholder="검색어 입력">
+                          </div>
+                        </div>
+                        <div class="search-list">
+                          <span class="type">상테</span>
+                          <div class="selectbox">
+                            <select title="">
+                              <option value="">선택해주세요.</option>
+                              <option value="">선택</option>
+                              <option value="">선택</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn-group type-r">
+                      <button class="wid-92 border-blue">
+                        <div class="txt">삭제목록</div>
+                      </button>
+                      <button class="wid-77 color-blue">
+                        <div class="txt">검색</div>
+                      </button>
+                    </div>
+                  </div>
+                </section>
+                <!-- 최상위 테이블-->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="sec-tit">
+                      <spna class="tit">총 <span class="num">66</span>건
+                        <div class="btn-area type02">
+                          <button class="border-blue wid-109 hig-28">
+                            <span class="txt">엑셀 다운로드</span>
+                          </button>
+                        </div>
+                      </spna>
+                    </div>
+                    <div class="tbl-container01">
+                      <table class="tbl-col01 confirm-table">
+                        <caption>공시자료: 번호,보고서명,등록일</caption>
+                        <colgroup>
+                          <col width="10%">
+                          <col width="auto">
+                          <col width="20%">
+                          <col width="15%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>번호</th>
+                            <th>검사소 명</th>
+                            <th>자치구</th>
+                            <th>추가</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td class="align-l">탑골공원</td>
+                            <td rowspan="3">종로</td>
+                            <td rowspan="3">
+                              <a href="">추가하기</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td class="align-l">탑골공원</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td class="align-l">탑골공원</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td class="align-l">탑골공원</td>
+                            <td rowspan="2">종로</td>
+                            <td rowspan="2">
+                              <a href="">추가하기</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td class="align-l">탑골공원</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td class="align-l">탑골공원</td>
+                            <td rowspan="2">종로</td>
+                            <td rowspan="2">
+                              <a href="">추가하기</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td class="align-l">탑골공원</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td class="align-l">탑골공원</td>
+                            <td rowspan="3">종로</td>
+                            <td rowspan="3">
+                              <a href="">추가하기</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td class="align-l">탑골공원</td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td class="align-l">탑골공원</td>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td class="align-l">탑골공원</td>
+                            <td>종로</td>
+                            <td>
+                              <a href="">추가하기</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12</td>
+                            <td class="align-l">탑골공원</td>
+                            <td>종로</td>
+                            <td>
+                              <a href="">추가하기</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>13</td>
+                            <td class="align-l">탑골공원</td>
+                            <td>종로</td>
+                            <td>
+                              <a href="">추가하기</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>14</td>
+                            <td class="align-l">탑골공원</td>
+                            <td>종로</td>
+                            <td>
+                              <a href="">추가하기</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>15</td>
+                            <td class="align-l">탑골공원</td>
+                            <td>종로</td>
+                            <td>
+                              <a href="">추가하기</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>16</td>
+                            <td class="align-l">탑골공원</td>
+                            <td>종로</td>
+                            <td>
+                              <a href="">추가하기</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="page-nav-container">
+                      <div class="page-nav">
+                        <div class="page-util prev">
+                          <a class="page-link" href="#none" role="button">
+                            <span class="hide-txt">이전 페이지</span>
+                            <span class="ico-area" aria-hidden="true">
+                              <i class="ico-page-arrow left"></i>
+                            </span>
+                          </a>
+                        </div>
+                        <ul class="page-item-container">
+                          <li class="page-item">
+                            <!-- on 됐을 경우 span 태그로 변경-->
+                            <span class="page-link on">
+                              <span class="txt">1</span>
+                            </span>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">2</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">3</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">4</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">5</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="page-util next">
+                          <a class="page-link" href="#none" role="button">
+                            <span class="hide-txt">다음 페이지</span>
+                            <span class="ico-area" aria-hidden="true">
+                              <i class="ico-page-arrow right"></i>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -146,39 +447,7 @@
   <div class="dimm">
     <img src="../../images/common/blank_size_100.png" alt="">
   </div>
-  <script>
-    //- CTC.rockMenu("#plm01,#plm01_01");
-
-    $(function() {
-      // 테이블 액션 - 전체 선택
-      $("#check_total").on("click", function() {
-        var $this = $(this),
-          $t_p = $this.parents(".data_htb");
-        if ($this.prop("checked")) {
-          $t_p.find(".frdchk").prop("checked", true);
-        } else {
-          $t_p.find(".frdchk").prop("checked", false);
-        }
-      });
-      // 테이블 액션 - 개별 선택
-      $(".data_htb tbody .frdchk").on("click", function() {
-        var $this = $(this),
-          $t_p = $this.parents("tr");
-        if ($this.prop("checked")) {
-          $t_p.addClass("active");
-        } else {
-          $t_p.removeClass("active");
-        }
-      });
-
-      // 체크박스 for 퍼블확인용
-      $("#data_sort_table .fitem.oneitem").each(function(index) {
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id", "check_0" + index);
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for", "check_0" + index);
-      });
-    });
-
-  </script>
+  <script></script>
 </body>
 
 </html>

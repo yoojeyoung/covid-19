@@ -149,6 +149,7 @@ a:before {
     .tbl-col01 td a {
       display: inline-block;
       width: 90%;
+      color: #2f80ed;
       white-space: nowrap;
       -o-text-overflow: ellipsis;
          text-overflow: ellipsis;

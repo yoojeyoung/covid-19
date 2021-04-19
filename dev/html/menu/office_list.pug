@@ -8,36 +8,186 @@ block contents
           .pgleft_wrap
             include /html/menu/_menulist
           .pgright_wrap
-
+            .inner
+              h2.tit 삭제 확진자 목록
+              // 검색 영역
+              section.content-wrap
+                .inner
+                  .search-form
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio211" name="radio211")
+                        label(for="radio211")
+                          span.txt 조건 검색
+                      .search-list
+                        span.type 자치구
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list
+                        span.type 상태
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list
+                        span.type 발생원인
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list.wid-445
+                        span.type 확진일자
+                        button.btn-data.wid-66
+                          .txt 오늘
+                        button.btn-data.wid-66
+                          .txt 전날
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="날짜 선택").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio212" name="radio212")
+                        label(for="radio212")
+                          span.txt 확진자 번호로 검색
+                      .search-list
+                        .input-txt
+                          input(type="text" placeholder="숫자만 입력")
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio213" name="radio213")
+                        label(for="radio213")
+                          span.txt 키워드 검색
+                      .search-list
+                        .input-txt
+                          input(type="text" placeholder="검색어 입력")
+                      .search-list
+                        span.type 상테
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                  .btn-group.type-r
+                    button.wid-92.border-blue
+                      .txt 삭제목록
+                    button.wid-77.color-blue
+                      .txt 검색
+              // 최상위 테이블
+              section.content-wrap
+                .inner
+                  .sec-tit 
+                    spna.tit 총 
+                      span.num 66
+                      |건
+                      .btn-area.type02
+                        button.border-blue.wid-109.hig-28
+                          span.txt 엑셀 다운로드
+                  .tbl-container01
+                    table.tbl-col01.confirm-table
+                      caption 공시자료: 번호,보고서명,등록일
+                      colgroup
+                        col(width="10%")
+                        col(width="auto")
+                        col(width="20%")
+                        col(width="15%")
+                      thead
+                          tr
+                            th 번호
+                            th 검사소 명
+                            th 자치구
+                            th 추가
+                      tbody
+                          tr
+                            td 1
+                            td.align-l 탑골공원
+                            td(rowspan="3") 종로
+                            td(rowspan="3")
+                              a(href="") 추가하기
+                          tr
+                            td 2
+                            td.align-l 탑골공원
+                          tr
+                            td 3
+                            td.align-l 탑골공원
+                          tr
+                            td 4
+                            td.align-l 탑골공원
+                            td(rowspan="2") 종로
+                            td(rowspan="2")
+                              a(href="") 추가하기
+                          tr
+                            td 5
+                            td.align-l 탑골공원
+                          tr
+                            td 6
+                            td.align-l 탑골공원
+                            td(rowspan="2") 종로
+                            td(rowspan="2") 
+                              a(href="") 추가하기
+                          tr
+                            td 7
+                            td.align-l 탑골공원
+                          tr
+                            td 8
+                            td.align-l 탑골공원
+                            td(rowspan="3") 종로
+                            td(rowspan="3") 
+                              a(href="") 추가하기
+                          tr
+                            td 9
+                            td.align-l 탑골공원
+                          tr
+                            td 10
+                            td.align-l 탑골공원
+                          tr
+                            td 11
+                            td.align-l 탑골공원
+                            td 종로
+                            td 
+                              a(href="") 추가하기
+                          tr
+                            td 12
+                            td.align-l 탑골공원
+                            td 종로
+                            td 
+                              a(href="") 추가하기
+                          tr
+                            td 13
+                            td.align-l 탑골공원
+                            td 종로
+                            td 
+                              a(href="") 추가하기
+                          tr
+                            td 14
+                            td.align-l 탑골공원
+                            td 종로
+                            td 
+                              a(href="") 추가하기
+                          tr
+                            td 15
+                            td.align-l 탑골공원
+                            td 종로
+                            td 
+                              a(href="") 추가하기
+                          tr
+                            td 16
+                            td.align-l 탑골공원
+                            td 종로
+                            td 
+                              a(href="") 추가하기
+                          
+                          
+                  .page-nav-container
+                      +page-nav('type01')
 append script
   script.
-    //- CTC.rockMenu("#plm01,#plm01_01");
-
-    $(function(){
-      // 테이블 액션 - 전체 선택
-      $("#check_total").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents(".data_htb");
-        if($this.prop("checked")){
-          $t_p.find(".frdchk").prop("checked",true);
-        }else{
-          $t_p.find(".frdchk").prop("checked",false);
-        }
-      });
-      // 테이블 액션 - 개별 선택
-      $(".data_htb tbody .frdchk").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents("tr");
-        if($this.prop("checked")){
-          $t_p.addClass("active");
-        }else{
-          $t_p.removeClass("active");
-        }
-      });
-
-      // 체크박스 for 퍼블확인용
-      $("#data_sort_table .fitem.oneitem").each(function(index){
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id","check_0"+index);
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for","check_0"+index);
-      });
-    });

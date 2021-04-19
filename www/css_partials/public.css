@@ -400,12 +400,30 @@ button, a {
     min-width: 79px; }
   button.wid-66, a.wid-66 {
     min-width: 66px; }
+  button.wid-109, a.wid-109 {
+    min-width: 109px; }
   button.hig-28, a.hig-28 {
     height: 28px; }
+  button:hover, a:hover {
+    border-color: #aeb2ba !important; }
+  button:disabled, a:disabled {
+    border-color: #e4e7ed !important;
+    background: #f9f9f9 !important; }
+    button:disabled .txt, a:disabled .txt {
+      color: #d3d6dd !important; }
   button.color-blue, a.color-blue {
-    background: #0778ca; }
+    background: #0778ca !important;
+    border-color: #0778ca !important; }
     button.color-blue .txt, a.color-blue .txt {
-      color: #fff; }
+      color: #fff !important; }
+    button.color-blue:hover, a.color-blue:hover {
+      background: #0b5eab !important;
+      border-color: #0b5eab !important; }
+    button.color-blue:disabled, a.color-blue:disabled {
+      background: #cccccc !important;
+      border-color: #cccccc !important; }
+      button.color-blue:disabled .txt, a.color-blue:disabled .txt {
+        color: #fff !important; }
   button.color-blue02, a.color-blue02 {
     background: #2883c5; }
     button.color-blue02 .txt, a.color-blue02 .txt {
@@ -415,9 +433,31 @@ button, a {
     button.color-blue03 .txt, a.color-blue03 .txt {
       color: #fff; }
   button.color-red, a.color-red {
-    background: #dc3545; }
+    background: #dc3545;
+    border-color: #dc3545 !important; }
     button.color-red .txt, a.color-red .txt {
       color: #fff; }
+  button.color-red02, a.color-red02 {
+    border-color: #dc3545 !important;
+    background: #fff6f8 !important; }
+    button.color-red02 .txt, a.color-red02 .txt {
+      color: #dc3545 !important; }
+    button.color-red02:hover, a.color-red02:hover {
+      border-color: #ba1626 !important;
+      background: #ffd6db !important; }
+      button.color-red02:hover .txt, a.color-red02:hover .txt {
+        color: #ba1626 !important; }
+  button.color-orange, a.color-orange {
+    background: #dd682d; }
+    button.color-orange .txt, a.color-orange .txt {
+      color: #fff !important; }
+    button.color-orange:hover, a.color-orange:hover {
+      background: #c65319; }
+    button.color-orange:disabled, a.color-orange:disabled {
+      background: #cccccc !important;
+      border-color: #cccccc !important; }
+      button.color-orange:disabled .txt, a.color-orange:disabled .txt {
+        color: #fff !important; }
   button.color-white, a.color-white {
     background: #fff; }
     button.color-white .txt, a.color-white .txt {
@@ -426,14 +466,17 @@ button, a {
     border: 1px solid #0778ca !important; }
     button.border-blue .txt, a.border-blue .txt {
       color: #0778ca; }
+    button.border-blue:hover, a.border-blue:hover {
+      border-color: #0b5eab !important; }
+      button.border-blue:hover .txt, a.border-blue:hover .txt {
+        color: #0b5eab; }
   button.border-red, a.border-red {
     border: 1px solid #dc3545 !important;
     background: #fff6f8; }
     button.border-red .txt, a.border-red .txt {
       color: #dc3545; }
   button.wid-full, a.wid-full {
-    width: 100%;
-    min-width: auto; }
+    width: 100%; }
 
 /* 버튼 - 그룹으로 사용시 */
 .btn-group {
@@ -449,7 +492,6 @@ button, a {
     text-align: center; }
     .btn-group button .txt {
       font-size: 14px;
-      color: #fff;
       text-align: center; }
     .btn-group button.btn-confirm {
       background: #0778ca;
@@ -492,37 +534,6 @@ button, a {
     padding: 4px !important; }
     .btn-group button.hig-28 .txt, .btn-group a.hig-28 .txt {
       font-size: 12px; }
-  .btn-group button.color-blue, .btn-group a.color-blue {
-    background: #0778ca; }
-    .btn-group button.color-blue .txt, .btn-group a.color-blue .txt {
-      color: #fff; }
-  .btn-group button.color-blue02, .btn-group a.color-blue02 {
-    background: #2883c5; }
-    .btn-group button.color-blue02 .txt, .btn-group a.color-blue02 .txt {
-      color: #fff; }
-  .btn-group button.color-blue03, .btn-group a.color-blue03 {
-    background: #283356; }
-    .btn-group button.color-blue03 .txt, .btn-group a.color-blue03 .txt {
-      color: #fff; }
-  .btn-group button.color-red, .btn-group a.color-red {
-    background: #dc3545; }
-    .btn-group button.color-red .txt, .btn-group a.color-red .txt {
-      color: #fff; }
-  .btn-group button.color-white, .btn-group a.color-white {
-    background: #fff; }
-    .btn-group button.color-white .txt, .btn-group a.color-white .txt {
-      color: #646266; }
-  .btn-group button.border-blue, .btn-group a.border-blue {
-    border: 1px solid #0778ca !important; }
-    .btn-group button.border-blue .txt, .btn-group a.border-blue .txt {
-      color: #0778ca; }
-  .btn-group button.border-red, .btn-group a.border-red {
-    border: 1px solid #dc3545 !important;
-    background: #fff6f8; }
-    .btn-group button.border-red .txt, .btn-group a.border-red .txt {
-      color: #dc3545; }
-  .btn-group button.wid-full, .btn-group a.wid-full {
-    width: 100%; }
   .btn-group button.inline, .btn-group a.inline {
     position: relative;
     display: inline-block;
@@ -564,7 +575,7 @@ button, a {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .btn-group.flex .white-btn-area {
+    .btn-group.flex .write-btn-area {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -626,12 +637,10 @@ section.content-wrap {
         width: 100%;
         margin-left: 16px;
         padding: 11px 10px;
-        border: 1px solid #0778ca;
         text-align: center;
         border-radius: 4px; }
         section.content-wrap .sec-tit .btn-area .btn-download .txt {
           font-size: 12px;
-          color: #0778ca;
           word-wrap: break-word;
           word-break: break-all; }
         section.content-wrap .sec-tit .btn-area .btn-download.wid-156 {
@@ -687,12 +696,10 @@ section.content-wrap {
         width: 100%;
         margin: 21px auto 0;
         padding: 9px 5px;
-        background: #dd682d;
         text-align: center; }
         section.content-wrap .column-group .info-link a .txt {
           font-size: 14px;
           font-weight: 500;
-          color: #fff;
           word-break: break-all; }
   section.content-wrap .chart-area {
     margin-top: 24px;
@@ -781,7 +788,7 @@ section.content-wrap {
       font-size: 12px;
       color: #909399; }
 
-.detail-view-container .white-form {
+.detail-view-container .write-form {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -792,33 +799,33 @@ section.content-wrap {
           align-items: center;
   padding: 24px 0 24px 24px;
   border-bottom: 1px solid #e4e7ed; }
-  .detail-view-container .white-form span {
+  .detail-view-container .write-form span {
     font-size: 14px;
     color: #303133; }
-  .detail-view-container .white-form .type02 {
+  .detail-view-container .write-form .type02 {
     width: 100%;
     margin-left: 55px;
     -webkit-box-flex: 1;
     -webkit-flex: auto;
         -ms-flex: auto;
             flex: auto; }
-    .detail-view-container .white-form .type02 input {
+    .detail-view-container .write-form .type02 input {
       width: 100%;
       min-height: 40px;
       padding-left: 12px;
       border: 1px solid #e4e7ed;
       border-radius: 4px; }
-      .detail-view-container .white-form .type02 input::-webkit-input-placeholder {
+      .detail-view-container .write-form .type02 input::-webkit-input-placeholder {
         color: #c0c4cc; }
-      .detail-view-container .white-form .type02 input::-moz-placeholder {
+      .detail-view-container .write-form .type02 input::-moz-placeholder {
         color: #c0c4cc; }
-      .detail-view-container .white-form .type02 input:-ms-input-placeholder {
+      .detail-view-container .write-form .type02 input:-ms-input-placeholder {
         color: #c0c4cc; }
-      .detail-view-container .white-form .type02 input::-ms-input-placeholder {
+      .detail-view-container .write-form .type02 input::-ms-input-placeholder {
         color: #c0c4cc; }
-      .detail-view-container .white-form .type02 input::placeholder {
+      .detail-view-container .write-form .type02 input::placeholder {
         color: #c0c4cc; }
-    .detail-view-container .white-form .type02 input[type="file"] {
+    .detail-view-container .write-form .type02 input[type="file"] {
       position: absolute;
       width: 1px;
       height: 1px;
@@ -827,7 +834,7 @@ section.content-wrap {
       overflow: hidden;
       clip: rect(0, 0, 0, 0);
       border: 0; }
-    .detail-view-container .white-form .type02 .upload-btn {
+    .detail-view-container .write-form .type02 .upload-btn {
       display: inline-block;
       max-width: 113px;
       width: 100%;
@@ -836,36 +843,36 @@ section.content-wrap {
       color: #fff;
       background: #0778ca;
       border-radius: 4px;
-      text-align: center; }
-    .detail-view-container .white-form .type02 textarea {
+      text-align: center;
+      cursor: pointer; }
+      .detail-view-container .write-form .type02 .upload-btn:hover {
+        background: #0b5eab; }
+    .detail-view-container .write-form .type02 textarea {
       width: 100%;
       min-height: 263px;
       padding: 12px 8px;
       border: 1px solid #e4e7ed;
       border-radius: 4px; }
-      .detail-view-container .white-form .type02 textarea::-webkit-input-placeholder {
+      .detail-view-container .write-form .type02 textarea::-webkit-input-placeholder {
         color: #c0c4cc; }
-      .detail-view-container .white-form .type02 textarea::-moz-placeholder {
+      .detail-view-container .write-form .type02 textarea::-moz-placeholder {
         color: #c0c4cc; }
-      .detail-view-container .white-form .type02 textarea:-ms-input-placeholder {
+      .detail-view-container .write-form .type02 textarea:-ms-input-placeholder {
         color: #c0c4cc; }
-      .detail-view-container .white-form .type02 textarea::-ms-input-placeholder {
+      .detail-view-container .write-form .type02 textarea::-ms-input-placeholder {
         color: #c0c4cc; }
-      .detail-view-container .white-form .type02 textarea::placeholder {
+      .detail-view-container .write-form .type02 textarea::placeholder {
         color: #c0c4cc; }
-    .detail-view-container .white-form .type02.ml-30 {
+    .detail-view-container .write-form .type02.ml-30 {
       margin-left: 30px; }
-  .detail-view-container .white-form:nth-child(3) {
+  .detail-view-container .write-form:nth-child(3) {
     border-bottom: none; }
-  .detail-view-container .white-form.pb-0 {
+  .detail-view-container .write-form.pb-0 {
     padding-bottom: 0; }
 
 /* 검색영역 */
 .search-form {
-  position: relative;
-  width: 100%;
-  white-space: nowrap;
-  overflow: auto; }
+  position: relative; }
   .search-form .search-type {
     display: -webkit-box;
     display: -webkit-flex;
@@ -954,6 +961,10 @@ section.content-wrap {
         font-size: 12px; }
   .search-form.mt-32 {
     margin-top: 32px; }
+  .search-form.scroll {
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto; }
 
 /* 확진자 등록 공통 */
 .register-form {
