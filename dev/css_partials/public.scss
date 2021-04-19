@@ -261,6 +261,9 @@ body{background: #f5f5f7}
       select{border-color: #dc3545 !important;}
       .message{color: #dc3545 !important;}
     }
+    &:disabled{
+      background: #f5f7fa;
+    }
   }
   .el-date-editor.el-input{
     &.form-success{

@@ -352,6 +352,9 @@ body {
 .form-group .selectbox.form-error .message {
   color: #dc3545 !important; }
 
+.form-group .selectbox:disabled {
+  background: #f5f7fa; }
+
 .form-group .el-date-editor.el-input.form-success .el-input__inner {
   border-color: #28a745 !important; }
 

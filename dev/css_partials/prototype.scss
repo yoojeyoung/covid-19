@@ -436,7 +436,7 @@ a{
     &:after{content:'';display:block;position:absolute;top:50%;@include rem(right, 22px);@include rem(margin-top, -8px);@include rem(width, 10px);@include rem(height, 10px);@include rem(border-top, 2px solid gray);@include rem(border-right, 2px solid gray);transform: rotate(135deg);}
     select{cursor: pointer;position: relative;z-index: 1;width:100%;@include rem(padding, 0 0 0 20px);@include rem(height, 40px);@include rem(line-height, 40px);@include rem(font-size, 14px);color: #c0c4cc;background-color:transparent;border:1px solid #e4e7ed;appearance:none;border-radius:0;}
     select::-ms-expand{display:none;}
-    select:disabled{background-color:lightgray;pointer-events: none;}
+    select:disabled{background-color:#f5f7fa;pointer-events: none;}
 }
 
 .input-textarea{

@@ -639,7 +639,7 @@ a:before {
   .selectbox select::-ms-expand {
     display: none; }
   .selectbox select:disabled {
-    background-color: lightgray;
+    background-color: #f5f7fa;
     pointer-events: none; }
 
 .input-textarea textarea {
