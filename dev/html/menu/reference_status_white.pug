@@ -13,17 +13,20 @@ block contents
               // 최상위 테이블
               section.content-wrap
                 .inner
-                  .detail-view-container 
+                  .detail-view-container.form-group
                     .write-form
                       span.type01 제목
                       span.type02 
                         .input-wrap
-                            input(type="text" placeholder="제목을 입력해주세요")
+                          .input-txt 
+                            .input-box
+                              input(type="text" placeholder="제목을 입력해주세요").mt-0
                     .write-form
                       span.type01 내용
                       span.type02 
                         .input-wrap
-                            textarea(name="", cols="30", rows="10" placeholder="내용을 입력해주세요")
+                          .input-textarea
+                            textarea(name="", cols="30", rows="10" placeholder="내용을 입력해주세요").mt-0
                     .write-form.pb-0
                       span.type01 첨부파일
                       span.type02.ml-30

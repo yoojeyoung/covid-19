@@ -149,7 +149,7 @@ a:before {
     .tbl-col01 td a {
       display: inline-block;
       width: 90%;
-      color: #2f80ed;
+      color: #0778ca;
       white-space: nowrap;
       -o-text-overflow: ellipsis;
          text-overflow: ellipsis;
@@ -164,6 +164,8 @@ a:before {
         color: #fff;
         border-radius: 50%;
         background: #dc3545; }
+      .tbl-col01 td a:hover {
+        color: #0b5eab; }
     .tbl-col01 td.point {
       color: #c12526; }
     .tbl-col01 td.point02 {
@@ -545,6 +547,11 @@ a:before {
       color: blue; }
     .input-txt .message.error {
       color: red; }
+  .input-txt:focus {
+    border: 1px solid #0778ca !important; }
+  .input-txt:disabled {
+    border-color: #e4e7ed;
+    background: #f5f7fa; }
 
 .input-txt input:-moz-read-only {
   opacity: 0.5; }

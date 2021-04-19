@@ -253,16 +253,6 @@ body {
           min-height: 40px;
           border: 1px solid #e4e7ed;
           border-radius: 4px; }
-        .pgright_wrap .password_wrap .user-info-area .column .type02 .input-wrap .validation-wrap {
-          margin-top: 6px; }
-          .pgright_wrap .password_wrap .user-info-area .column .type02 .input-wrap .validation-wrap span {
-            display: block;
-            font-size: 12px;
-            color: #c0c4cc; }
-        .pgright_wrap .password_wrap .user-info-area .column .type02 .input-wrap.form-fail input {
-          border: 1px solid #dc3545; }
-        .pgright_wrap .password_wrap .user-info-area .column .type02 .input-wrap.form-fail .validation-wrap .validation-text {
-          color: #dc3545; }
       .pgright_wrap .password_wrap .user-info-area .column:not(:first-child) {
         margin-top: 14px; }
 
@@ -326,6 +316,8 @@ body {
         margin-top: 0; }
       .form-group .input-txt .input-box input.h-56 {
         height: 56px; }
+      .form-group .input-txt .input-box input:disabled {
+        background: #f5f7fa; }
     .form-group .input-txt .input-box .btn-lv01 {
       min-width: 85px;
       height: 40px;
@@ -340,25 +332,37 @@ body {
   .form-group .input-txt:not(:first-child) {
     margin-top: 16px; }
   .form-group .input-txt.form-success input {
-    border-color: #28a745; }
+    border-color: #28a745 !important; }
   .form-group .input-txt.form-success .message {
-    color: #28a745; }
+    color: #28a745 !important; }
   .form-group .input-txt.form-error input {
-    border-color: #dc3545; }
+    border-color: #dc3545 !important; }
   .form-group .input-txt.form-error .message {
-    color: #dc3545; }
+    color: #dc3545 !important; }
 
 .form-group .selectbox.form-success select {
-  border-color: #28a745; }
+  border-color: #28a745 !important; }
 
 .form-group .selectbox.form-success .message {
-  color: #28a745; }
+  color: #28a745 !important; }
 
 .form-group .selectbox.form-error select {
-  border-color: #dc3545; }
+  border-color: #dc3545 !important; }
 
 .form-group .selectbox.form-error .message {
-  color: #dc3545; }
+  color: #dc3545 !important; }
+
+.form-group .el-date-editor.el-input.form-success .el-input__inner {
+  border-color: #28a745 !important; }
+
+.form-group .el-date-editor.el-input.form-success .message {
+  color: #28a745 !important; }
+
+.form-group .el-date-editor.el-input.form-error .el-input__inner {
+  border-color: #dc3545 !important; }
+
+.form-group .el-date-editor.el-input.form-error .message {
+  color: #dc3545 !important; }
 
 .form-group .form-tit {
   padding-bottom: 16px;
@@ -372,6 +376,18 @@ body {
   margin-top: 19px; }
   .form-group .input-radio .selectbox {
     margin-top: 15px; }
+
+.form-group .input-textarea.form-success textarea {
+  border-color: #28a745 !important; }
+
+.form-group .input-textarea.form-success .message {
+  color: #28a745; }
+
+.form-group .input-textarea.form-error textarea {
+  border-color: #dc3545 !important; }
+
+.form-group .input-textarea.form-error .message {
+  color: #dc3545; }
 
 .form-group .input-notice .point-txt {
   display: block;
@@ -825,6 +841,8 @@ section.content-wrap {
         color: #c0c4cc; }
       .detail-view-container .write-form .type02 input::placeholder {
         color: #c0c4cc; }
+      .detail-view-container .write-form .type02 input.mt-0 {
+        margin-top: 0; }
     .detail-view-container .write-form .type02 input[type="file"] {
       position: absolute;
       width: 1px;
@@ -863,6 +881,8 @@ section.content-wrap {
         color: #c0c4cc; }
       .detail-view-container .write-form .type02 textarea::placeholder {
         color: #c0c4cc; }
+      .detail-view-container .write-form .type02 textarea.mt-0 {
+        margin-top: 0; }
     .detail-view-container .write-form .type02.ml-30 {
       margin-left: 30px; }
   .detail-view-container .write-form:nth-child(3) {
