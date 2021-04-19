@@ -15,6 +15,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link href="../../css_partials/font.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/reset.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/element.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/prototype.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/public.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/contents.css" type="text/css" rel="stylesheet">
@@ -188,8 +189,17 @@
                           <button class="btn-data wid-66">
                             <div class="txt">전날</div>
                           </button>
-                          <div class="input-txt">
-                            <input type="text">
+                          <!-- element-ui 날짜 input-->
+                          <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                            <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="날짜 선택">
+                            <span class="el-input__prefix">
+                              <i class="el-input__icon el-icon-date"></i>
+                            </span>
+                            <span class="el-input__suffix">
+                              <span class="el-input__suffix-inner">
+                                <i class="el-input__icon el-icon-circle-close"></i>
+                              </span>
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -287,11 +297,11 @@
                         <tbody>
                           <tr>
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -301,11 +311,11 @@
                           </tr>
                           <tr>
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -395,10 +405,21 @@
                                       <td>고혈압</td>
                                       <td colspan="2">-</td>
                                     </tr>
+                                    <tr>
+                                      <th colspan="2">집단발병 연관(최종)</th>
+                                      <th colspan="2">확진자 접촉력</th>
+                                      <th colspan="2">상태(격리구분)</th>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2">송파구 스타벅스 관련</td>
+                                      <td class="num">#2198</td>
+                                      <td>해당 확진자의 남편</td>
+                                      <td colspan="2">격리중</td>
+                                    </tr>
                                     </colgroup>
                                   </table>
                                 </div>
-                                <div class="tbl-container01">
+                                <div class="tbl-container01 mt-18">
                                   <table class="tbl-col01 tbl-detail">
                                     <caption>공시자료:</caption>
                                     <colgroup>
@@ -459,11 +480,11 @@
                           </tr>
                           <tr class="bg-green">
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -473,11 +494,11 @@
                           </tr>
                           <tr class="bg-purple">
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -487,11 +508,11 @@
                           </tr>
                           <tr class="bg-pink">
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -502,11 +523,11 @@
                           </tr>
                           <tr>
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -516,11 +537,11 @@
                           </tr>
                           <tr>
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -530,11 +551,11 @@
                           </tr>
                           <tr>
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -544,11 +565,11 @@
                           </tr>
                           <tr>
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -558,11 +579,11 @@
                           </tr>
                           <tr>
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -572,11 +593,11 @@
                           </tr>
                           <tr>
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -586,11 +607,11 @@
                           </tr>
                           <tr>
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -600,11 +621,11 @@
                           </tr>
                           <tr>
                             <td>28820</td>
-                            <td>91588</td>
+                            <td class="num">91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>

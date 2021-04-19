@@ -117,6 +117,8 @@ a:before {
   .tbl-container01.scroll {
     white-space: nowrap;
     overflow: auto; }
+  .tbl-container01.mt-18 {
+    margin-top: 18px; }
 
 .tbl-cell-equal {
   table-layout: fixed; }
@@ -144,12 +146,6 @@ a:before {
     border-bottom: 1px solid #e4e7ed;
     line-height: 1.5;
     text-align: center; }
-    .tbl-col01 td.point {
-      color: #c12526; }
-    .tbl-col01 td.point02 {
-      background: #fff6f8; }
-    .tbl-col01 td.border-r {
-      border-right: 1px solid #e4e7ed; }
     .tbl-col01 td a {
       display: inline-block;
       width: 90%;
@@ -158,12 +154,23 @@ a:before {
          text-overflow: ellipsis;
       overflow: hidden; }
       .tbl-col01 td a .ico-new {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
         margin-left: 8px;
-        padding: 2px 4px;
+        padding: 1px 4px;
         font-size: 9px;
         color: #fff;
         border-radius: 50%;
         background: #dc3545; }
+    .tbl-col01 td.point {
+      color: #c12526; }
+    .tbl-col01 td.point02 {
+      background: #fff6f8; }
+    .tbl-col01 td.border-r {
+      border-right: 1px solid #e4e7ed; }
+    .tbl-col01 td.num {
+      color: #2f80ed; }
   .tbl-col01 tr.bg-yellow {
     background: #fff9ea; }
   .tbl-col01 tr.bg-green {
@@ -198,10 +205,7 @@ a:before {
     .tbl-col01.board th {
       text-align: left; }
   .tbl-col01.confirm-table th, .tbl-col01.confirm-table td {
-    padding: 8px 10px;
-    text-align: center; }
-  .tbl-col01.confirm-table tbody td:nth-child(6) {
-    text-align: left; }
+    padding: 8px 10px; }
   .tbl-col01.tbl-detail th {
     font-size: 12px;
     background: #e1e3e8; }
@@ -592,7 +596,6 @@ a:before {
   display: inline-block;
   width: 100%;
   overflow: hidden;
-  border: 1px solid #e4e7ed;
   border-radius: 4px;
   border-radius: 4px; }
   .selectbox:after {
@@ -620,7 +623,7 @@ a:before {
     font-size: 14px;
     color: #c0c4cc;
     background-color: transparent;
-    border: none;
+    border: 1px solid #e4e7ed;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;

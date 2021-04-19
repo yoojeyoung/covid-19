@@ -46,8 +46,14 @@ block contents
                           .txt 오늘
                         button.btn-data.wid-66
                           .txt 전날
-                        .input-txt
-                          input(type="text")
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="날짜 선택").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
                     .search-type
                       .input-radio.right
                         input(type="radio" id="radio212" name="radio212")
@@ -117,11 +123,11 @@ block contents
                       tbody
                           tr 
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -129,11 +135,11 @@ block contents
                               a(href="#" onclick="COVID.dimLayerShow('#srdTarget01')") 보기
                           tr 
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -215,7 +221,17 @@ block contents
                                         td 오한, 두통
                                         td 고혈압
                                         td(colspan="2") -
-                                .tbl-container01
+
+                                      tr
+                                        th(colspan="2") 집단발병 연관(최종)
+                                        th(colspan="2") 확진자 접촉력
+                                        th(colspan="2") 상태(격리구분)
+                                      tr 
+                                        td(colspan="2") 송파구 스타벅스 관련
+                                        td.num #2198
+                                        td 해당 확진자의 남편
+                                        td(colspan="2") 격리중
+                                .tbl-container01.mt-18
                                   table.tbl-col01.tbl-detail
                                     caption 공시자료:
                                     colgroup 
@@ -259,11 +275,11 @@ block contents
                                       span.txt 닫기
                           tr.bg-green 
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -271,11 +287,11 @@ block contents
                               a(href="") 보기 
                           tr.bg-purple
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -283,11 +299,11 @@ block contents
                               a(href="") 보기 
                           tr.bg-pink
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -297,11 +313,11 @@ block contents
                                 span.ico-new N
                           tr 
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -309,11 +325,11 @@ block contents
                               a(href="") 보기 
                           tr 
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -321,11 +337,11 @@ block contents
                               a(href="") 보기 
                           tr 
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -333,11 +349,11 @@ block contents
                               a(href="") 보기 
                           tr 
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -345,11 +361,11 @@ block contents
                               a(href="") 보기 
                           tr 
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -357,11 +373,11 @@ block contents
                               a(href="") 보기 
                           tr 
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -369,11 +385,11 @@ block contents
                               a(href="") 보기 
                           tr 
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -381,11 +397,11 @@ block contents
                               a(href="") 보기 
                           tr 
                             td 28820
-                            td 91588
+                            td.num 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록

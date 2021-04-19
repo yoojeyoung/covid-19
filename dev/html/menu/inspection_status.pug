@@ -11,6 +11,7 @@ block contents
             .inner
               h2.tit 보건소 및 의료기관 선별진료소 검사 현황
               // 검색 영역
+              // 20210419 검색영역
               .search-form.mt-32
                 .search-type
                   .search-list.wid-445
@@ -18,10 +19,22 @@ block contents
                       .txt 오늘
                     button.wid-66.bg-white
                       .txt 전날
-                    .input-txt
-                      input(type="text").wid-228
-                    .input-txt
-                      input(type="text" placeholder="종료일").wid-220
+                    // element-ui 날짜 input
+                    .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                      input(type="text" autocomplete="off" name="" placeholder="시작일").el-input__inner.wid-228
+                      span.el-input__prefix
+                        i.el-input__icon.el-icon-date
+                      span.el-input__suffix
+                        span.el-input__suffix-inner
+                          i.el-input__icon.el-icon-circle-close
+                    // element-ui 날짜 input
+                    .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                      input(type="text" autocomplete="off" name="" placeholder="종료일").el-input__inner.wid-220
+                      span.el-input__prefix
+                        i.el-input__icon.el-icon-date
+                      span.el-input__suffix
+                        span.el-input__suffix-inner
+                          i.el-input__icon.el-icon-circle-close
                     button.wid-66.color-blue 
                       .txt 검색
                     button.wid-80.border-blue 

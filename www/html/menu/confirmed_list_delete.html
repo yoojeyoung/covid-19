@@ -15,6 +15,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link href="../../css_partials/font.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/reset.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/element.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/prototype.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/public.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/contents.css" type="text/css" rel="stylesheet">
@@ -188,8 +189,17 @@
                           <button class="btn-data wid-66">
                             <div class="txt">전날</div>
                           </button>
-                          <div class="input-txt">
-                            <input type="text">
+                          <!-- element-ui 날짜 input-->
+                          <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                            <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="날짜 선택">
+                            <span class="el-input__prefix">
+                              <i class="el-input__icon el-icon-date"></i>
+                            </span>
+                            <span class="el-input__suffix">
+                              <span class="el-input__suffix-inner">
+                                <i class="el-input__icon el-icon-circle-close"></i>
+                              </span>
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -264,6 +274,7 @@
                           <col width="%">
                           <col width="%">
                           <col width="%">
+                          <col width="%">
                           <col width="30%">
                           <col width="%">
                           <col width="%">
@@ -272,6 +283,7 @@
                         </colgroup>
                         <thead>
                           <tr>
+                            <th>삭제일</th>
                             <th>연번</th>
                             <th>확진번호</th>
                             <th>이르므 </th>
@@ -286,12 +298,13 @@
                         </thead>
                         <tbody>
                           <tr>
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -300,12 +313,13 @@
                             </td>
                           </tr>
                           <tr>
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -314,12 +328,13 @@
                             </td>
                           </tr>
                           <tr class="bg-green">
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -328,12 +343,13 @@
                             </td>
                           </tr>
                           <tr class="bg-purple">
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -342,12 +358,13 @@
                             </td>
                           </tr>
                           <tr class="bg-pink">
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -357,12 +374,13 @@
                             </td>
                           </tr>
                           <tr>
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -371,12 +389,13 @@
                             </td>
                           </tr>
                           <tr>
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -385,12 +404,13 @@
                             </td>
                           </tr>
                           <tr>
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -399,12 +419,13 @@
                             </td>
                           </tr>
                           <tr>
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -413,12 +434,13 @@
                             </td>
                           </tr>
                           <tr>
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -427,12 +449,13 @@
                             </td>
                           </tr>
                           <tr>
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -441,12 +464,13 @@
                             </td>
                           </tr>
                           <tr>
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>
@@ -455,12 +479,13 @@
                             </td>
                           </tr>
                           <tr>
+                            <td>2021.3.4</td>
                             <td>28820</td>
                             <td>91588</td>
                             <td>홍길동</td>
                             <td>2321.3.4</td>
                             <td>영등포구</td>
-                            <td>감염경로 조사중</td>
+                            <td class="align-l">감염경로 조사중</td>
                             <td>퇴원</td>
                             <td>등록</td>
                             <td>등록</td>

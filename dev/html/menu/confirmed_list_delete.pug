@@ -46,8 +46,14 @@ block contents
                           .txt 오늘
                         button.btn-data.wid-66
                           .txt 전날
-                        .input-txt
-                          input(type="text")
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="날짜 선택").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
                     .search-type
                       .input-radio.right
                         input(type="radio" id="radio212" name="radio212")
@@ -97,6 +103,7 @@ block contents
                         col(width="%")
                         col(width="%")
                         col(width="%")
+                        col(width="%")
                         col(width="30%")
                         col(width="%")
                         col(width="%")
@@ -104,6 +111,7 @@ block contents
                         col(width="%")
                       thead
                           tr
+                            th 삭제일
                             th 연번
                             th 확진번호
                             th 이르므 
@@ -116,60 +124,65 @@ block contents
                             th 수정이력
                       tbody
                           tr 
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
                             td
                               a(href="") 보기 
                           tr 
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
                             td
                               a(href="") 보기 
                           tr.bg-green 
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
                             td
                               a(href="") 보기 
                           tr.bg-purple
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
                             td
                               a(href="") 보기 
                           tr.bg-pink
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
@@ -178,96 +191,104 @@ block contents
                                 |보기
                                 span.ico-new N
                           tr 
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
                             td
                               a(href="") 보기 
                           tr 
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
                             td
                               a(href="") 보기 
                           tr 
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
                             td
                               a(href="") 보기 
                           tr 
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
                             td
                               a(href="") 보기 
                           tr 
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
                             td
                               a(href="") 보기 
                           tr 
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
                             td
                               a(href="") 보기 
                           tr 
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록
                             td
                               a(href="") 보기 
                           tr 
+                            td 2021.3.4
                             td 28820
                             td 91588
                             td 홍길동
                             td 2321.3.4
                             td 영등포구
-                            td 감염경로 조사중
+                            td.align-l 감염경로 조사중
                             td 퇴원
                             td 등록
                             td 등록

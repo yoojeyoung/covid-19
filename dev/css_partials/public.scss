@@ -259,6 +259,16 @@ body{background: #f5f5f7}
       .message{color: #dc3545;}
     }
   }
+  .selectbox{
+    &.form-success{
+      select{border-color:#28a745;}
+      .message{color: #28a745;}
+    }
+    &.form-error{
+      select{border-color: #dc3545;}
+      .message{color: #dc3545;}
+    }
+  }
   .form-tit{
     @include rem(padding-bottom, 16px);
     border-bottom: 1px solid #e4e7ed;
@@ -289,11 +299,12 @@ button,a{
   // @include rem(min-width,80px);
   // @include rem(padding,10px 5px);
   text-align: center;
-  .txt{@include rem(font-size,14px);color: #646266;}
+  .txt{@include rem(font-size,14px);color: #606266;}
   &.wid-80{@include rem(min-width,80px);}
   &.wid-89{@include rem(min-width,89px);}
   &.wid-79{@include rem(min-width,79px);}
   &.wid-66{@include rem(min-width,66px);}
+  &.hig-28{@include rem(height,28px);}
   &.color-blue{
     background: #0778ca;
     .txt{color: #fff;}
@@ -498,7 +509,7 @@ section.content-wrap{
       @include rem(right,16px);
       .data{@include rem(font-size,12px);vertical-align: bottom;}
       .btn-download{
-        @include rem(max-width,85px);
+        @include rem(min-width,85px);
         width: 100%;
         @include rem(margin-left,16px);
         @include rem(padding,11px 10px);
@@ -512,6 +523,7 @@ section.content-wrap{
       /* 확진자 관리 > 확진자 목록 오른쪽 버튼 영역 */
       &.type02{
         @include rem(top,-6px);
+        right: 0;
       }
     }
     + .tbl-container01{@include rem(margin-top,24px);}
@@ -532,7 +544,10 @@ section.content-wrap{
   }
   .column-group{
     @include rem(margin-top,24px);
-    .column{display: flex;}
+    .column{
+      display: flex;
+      &.mt-24{@include rem(margin-top,24px);}
+    }
     .tbl-container01{flex: 1;}
     .info-link{
       @include rem(width,373px);
@@ -691,6 +706,8 @@ section.content-wrap{
 
 /* 검색영역 */
 .search-form{
+  position: relative;
+  width: 100%;
   white-space: nowrap;
   overflow: auto;
   .search-type{
@@ -744,7 +761,14 @@ section.content-wrap{
     // &:not(:last-child){@include rem(margin-left,28px);}
     + button{@include rem(margin-left,16PX);}
     + .input-txt{@include rem(margin-left,16px);}
+    + .el-date-editor{@include rem(margin-left,16px);}
     &.bg-white{background: #fff;}
+    &.btn-download{
+      position: absolute;
+      top: 0;
+      right: 0;
+      .txt{@include rem(font-size,12px);}
+    }
   }
   &.mt-32{@include rem(margin-top,32px);}
 }
@@ -787,12 +811,18 @@ section.content-wrap{
         &.wid-55{@include rem(width,55px);}
         &.wid-73{@include rem(width,73px);}
         &.wid-98{@include rem(width,98px);}
+        &.wid-114{@include rem(width,114px);}
         &.wid-149{@include rem(width,149px);}
         &.wid-281{@include rem(width,281px);}
         &.wid-345{@include rem(width,345px);}
         &.wid-430{@include rem(width,430px);}
         &.wid-771{@include rem(width,771px);}
         +.input-radio{@include rem(margin-left,20px);}
+        +.selectbox{@include rem(margin-left,4px);}
+      }
+      .el-date-editor.el-input{
+        .el-input__inner{@include rem(height,28px);@include rem(padding-left,30px);@include rem(font-size,12px);line-height: initial;}
+        .el-input__icon{@include rem(line-height,initial);}
       }
       .selectbox{
         width: auto;
@@ -803,9 +833,11 @@ section.content-wrap{
           @include rem(padding-left,12px);
           @include rem(font-size,12px);
           line-height: initial;
+          &.wid-80{@include rem(width,80px);}
           &.wid-281{@include rem(width,281px);}
         }
         +input{@include rem(margin-left,10px);}
+        +.selectbox{@include rem(margin-left,4px);}
       }
       button{
         @include rem(width,225px);
@@ -876,6 +908,21 @@ section.content-wrap{
   &.wid-1125{@include rem(width,1125px);}
   &.wid-1165{@include rem(width,1165px);}
   &.wid-1187{@include rem(width,1187px);}
+}
+
+/* element ui - input 공통 */
+.el-date-editor.el-input{
+  width: auto;
+  .el-input__inner{
+    @include rem(width,139px);
+    border-color: #e4e7ed;
+    &.wid-114{@include rem(width,114px);}
+    &.wid-220{@include rem(width,220px)}
+    &.wid-228{@include rem(width,228px)}
+  }
+  + .el-date-editor.el-input{@include rem(margin-left,16px);}
+  + .selectbox{@include rem(margin-left,16px);}
+  + button{@include rem(margin-left,16px);}
 }
 
 /* -------------- 미디어쿼리 영역 -------------- */

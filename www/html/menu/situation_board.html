@@ -15,6 +15,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link href="../../css_partials/font.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/reset.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/element.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/prototype.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/public.css" type="text/css" rel="stylesheet">
   <link href="../../css_partials/contents.css" type="text/css" rel="stylesheet">
@@ -140,11 +141,21 @@
               <div class="inner">
                 <h2 class="tit">서울시 코로나19 상황판</h2>
                 <!-- 검색 영역-->
+                <!-- 20210419 검색영역-->
                 <div class="search-form mt-32">
                   <div class="search-type">
-                    <div class="search-list wid-445">
-                      <div class="input-txt">
-                        <input class="wid-228" type="text">
+                    <div class="search-list">
+                      <!-- element-ui 날짜 input-->
+                      <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                        <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="날짜 선택">
+                        <span class="el-input__prefix">
+                          <i class="el-input__icon el-icon-date"></i>
+                        </span>
+                        <span class="el-input__suffix">
+                          <span class="el-input__suffix-inner">
+                            <i class="el-input__icon el-icon-circle-close"></i>
+                          </span>
+                        </span>
                       </div>
                       <div class="selectbox">
                         <select class="wid-100" title="">
@@ -160,11 +171,12 @@
                           <option value="">선택</option>
                         </select>
                       </div>
-                      <button class="wid-66 color-blue">
+                      <button class="wid-66 color-blue" type="button">
                         <div class="txt">검색</div>
                       </button>
-                      <button class="wid-66 reset">
-                        <div class="txt"> </div>
+                      <!-- reset 버튼-->
+                      <button class="btn-download wid-80 border-blue" type="button">
+                        <span class="txt">다운로드</span>
                       </button>
                     </div>
                   </div>
@@ -223,6 +235,12 @@
                   <div class="inner">
                     <div class="sec-tit">
                       <spna class="tit">검사 및 확진자 현황</spna>
+                      <!-- 20210419 버튼 추가-->
+                      <div class="btn-area type02">
+                        <button class="wid-80 hig-28 border-blue" type="button">
+                          <span class="txt">다운로드</span>
+                        </button>
+                      </div>
                     </div>
                     <div class="tbl-container01 scroll">
                       <table class="tbl-col-row01">
@@ -415,6 +433,12 @@
                   <div class="inner">
                     <div class="sec-tit">
                       <spna class="tit">주요 발생 원인 별 현황</spna>
+                      <!-- 20210419 버튼 추가-->
+                      <div class="btn-area type02">
+                        <button class="wid-80 hig-28 border-blue" type="button">
+                          <span class="txt">다운로드</span>
+                        </button>
+                      </div>
                     </div>
                     <div class="column-group">
                       <div class="column">
@@ -509,6 +533,12 @@
                   <div class="inner">
                     <div class="sec-tit">
                       <span class="tit">자치구별 확진환자 현황</span>
+                      <!-- 20210419 버튼 추가-->
+                      <div class="btn-area type02">
+                        <button class="wid-80 hig-28 border-blue" type="button">
+                          <span class="txt">다운로드</span>
+                        </button>
+                      </div>
                     </div>
                     <div class="tbl-container01">
                       <table class="tbl-col01 tbl-cell-equal">
@@ -642,6 +672,12 @@
                   <div class="inner">
                     <div class="sec-tit">
                       <span class="tit">자가격리자 현황</span>
+                      <!-- 20210419 버튼 추가-->
+                      <div class="btn-area type02">
+                        <button class="wid-80 hig-28 border-blue" type="button">
+                          <span class="txt">다운로드</span>
+                        </button>
+                      </div>
                     </div>
                     <div class="tbl-container01">
                       <table class="tbl-col01">
@@ -705,8 +741,37 @@
                       <span class="tit">확진자 관리 현황</span>
                     </div>
                     <div class="column-group">
-                      <div class="column"></div>
                       <div class="column">
+                        <!-- 20210419 검색영역-->
+                        <div class="search-form">
+                          <div class="search-type">
+                            <div class="search-list">
+                              <button class="wid-66" type="button">
+                                <span class="txt">오늘</span>
+                              </button>
+                              <button class="wid-66" type="button">
+                                <span class="txt">전날</span>
+                              </button>
+                              <!-- element-ui 날짜 input-->
+                              <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                                <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="날짜 선택">
+                                <span class="el-input__prefix">
+                                  <i class="el-input__icon el-icon-date"></i>
+                                </span>
+                                <span class="el-input__suffix">
+                                  <span class="el-input__suffix-inner">
+                                    <i class="el-input__icon el-icon-circle-close"></i>
+                                  </span>
+                                </span>
+                              </div>
+                              <button class="wid-66 color-blue" type="button">
+                                <div class="txt">검색</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column mt-24">
                         <div class="tbl-container01">
                           <table class="tbl-col01">
                             <caption>공시자료: 번호,보고서명,등록일</caption>
@@ -752,8 +817,37 @@
                       </div>
                     </div>
                     <div class="column-group">
-                      <div class="column"></div>
                       <div class="column">
+                        <!-- 20210419 검색영역-->
+                        <div class="search-form">
+                          <div class="search-type">
+                            <div class="search-list">
+                              <button class="wid-66" type="button">
+                                <span class="txt">오늘</span>
+                              </button>
+                              <button class="wid-66" type="button">
+                                <span class="txt">전날</span>
+                              </button>
+                              <!-- element-ui 날짜 input-->
+                              <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                                <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="날짜 선택">
+                                <span class="el-input__prefix">
+                                  <i class="el-input__icon el-icon-date"></i>
+                                </span>
+                                <span class="el-input__suffix">
+                                  <span class="el-input__suffix-inner">
+                                    <i class="el-input__icon el-icon-circle-close"></i>
+                                  </span>
+                                </span>
+                              </div>
+                              <button class="wid-66 color-blue" type="button">
+                                <div class="txt">검색</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column mt-24">
                         <div class="tbl-container01">
                           <table class="tbl-col01">
                             <caption>공시자료: 번호,보고서명,등록일</caption>
@@ -805,6 +899,12 @@
                   <div class="inner">
                     <div class="sec-tit">
                       <span class="tit">일일 확진환자 현황</span>
+                      <!-- 20210419 버튼 추가-->
+                      <div class="btn-area type02">
+                        <button class="wid-80 hig-28 border-blue" type="button">
+                          <span class="txt">다운로드</span>
+                        </button>
+                      </div>
                     </div>
                     <div class="chart-area wid-1468">
                       <div class="chart-graph"></div>
