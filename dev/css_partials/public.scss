@@ -289,6 +289,7 @@ body{background: #f5f5f7}
         &::placeholder{color: #c0c4cc;@include rem(font-size,14px);}
         &.mt-0{margin-top: 0}
         &.h-56{@include rem(height, 56px);}
+        &.h-28{@include rem(height, 28px);}
         &:disabled{
           background: #f5f7fa;
         }
@@ -377,7 +378,8 @@ button,a{
   // @include rem(min-width,80px);
   // @include rem(padding,10px 5px);
   text-align: center;
-  .txt{@include rem(font-size,14px);color: #606266;}
+  @include rem(border-radius,4px);
+  .txt{@include rem(font-size,14px);color: #606266;text-align: center;}
   &.wid-80{@include rem(min-width,80px);}
   &.wid-89{@include rem(min-width,89px);}
   &.wid-79{@include rem(min-width,79px);}
@@ -565,6 +567,11 @@ button,a{
     @include rem(right,24px);
     margin: 0;
   }
+}
+
+.notice-area{ 
+  @include rem(margin-top,24px);
+  .notice-txt{@include rem(font-size,14px);color: #000;}
 }
 
 /* 공통영역 */
@@ -1020,6 +1027,10 @@ section.content-wrap{
 }
 
 /* 성공 및 실패 텍스트 공통 */
+span{
+  &.success-txt{display: block;@include rem(margin-top,5px);color: #28a745 !important;@include rem(font-size,12px);}
+  &.error-txt{display: block;@include rem(margin-top,5px);color:#dc3545 !important;@include rem(font-size,12px);}
+}
 .success-txt{@include rem(margin-top,5px);color: #28a745 !important;@include rem(font-size,12px);}
 .error-txt{@include rem(margin-top,5px);color:#dc3545 !important;@include rem(font-size,12px);}
 

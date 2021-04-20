@@ -219,6 +219,19 @@ a:before {
       text-align: center !important; }
     .tbl-col01.tbl-detail td.align-l {
       text-align: left !important; }
+  .tbl-col01.type-input td {
+    padding: 8px 5px 7px; }
+    .tbl-col01.type-input td input {
+      margin-top: 0 !important;
+      font-size: 12px; }
+    .tbl-col01.type-input td a.btn-regist, .tbl-col01.type-input td a.btn-complete {
+      width: 66px;
+      height: 28px;
+      padding: 3px 0 2px; }
+    .tbl-col01.type-input td a.btn-complete {
+      background-color: #1c3a61; }
+      .tbl-col01.type-input td a.btn-complete .txt {
+        color: #fff; }
   .tbl-col01 .table-group {
     padding: 20px 30px; }
   .tbl-col01 .align-l {
@@ -649,4 +662,4 @@ a:before {
   border-color: #e4e7ed;
   border-radius: 4px; }
 
-/*# sourceMappingURL=../sass_maps/prototype.css.map */
+/*# sourceMappingURL=../../sass_maps/css_partials/prototype.css.map */

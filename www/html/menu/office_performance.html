@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>프로젝트타이틀</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link href="../../css_partials/font.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/reset.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/element.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/public.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/contents.css" type="text/css" rel="stylesheet">
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/iscroll.js"></script>
+  <script src="../../js/common.js" defer></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+  <div id="wrap">
+    <!-- s: header include-->
+    <!--#include virtual="/html/include/header.html" -->
+    <!-- e: header include-->
+    <div id="container">
+      <div id="content" role="main">
+        <div class="page_wrap page_layout">
+          <section class="pgmid_zone">
+            <div class="pgright_wrap">
+              <div class="inner">
+                <h2 class="tit">검사소 목록</h2>
+                <!-- 검색 영역-->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="search-form">
+                      <div class="search-type">
+                        <div class="search-list">
+                          <span class="type">구분</span>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">자치구(선별진료소)</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">의료기관</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- 최상위 테이블-->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="sec-tit">
+                      <spna class="tit">총 <span class="num">66</span>건
+                        <div class="btn-area type02">
+                          <button class="border-blue wid-109 hig-28">
+                            <span class="txt">엑셀 다운로드</span>
+                          </button>
+                        </div>
+                      </spna>
+                    </div>
+                    <div class="tbl-container01">
+                      <table class="tbl-col01">
+                        <caption>공시자료: 번호,보고서명,등록일</caption>
+                        <thead>
+                          <tr>
+                            <th>구분</th>
+                            <th colspan="4">검사건수</th>
+                            <th colspan="5">확진자(명)</th>
+                            <th>확진률</th>
+                            <th>관리</th>
+                          </tr>
+                          <tr>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                          </tr>
+                          <tr>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                      </table>
+                    </div>
+                    <div class="page-nav-container">
+                      <div class="page-nav">
+                        <div class="page-util prev">
+                          <a class="page-link" href="#none" role="button">
+                            <span class="hide-txt">이전 페이지</span>
+                            <span class="ico-area" aria-hidden="true">
+                              <i class="ico-page-arrow left"></i>
+                            </span>
+                          </a>
+                        </div>
+                        <ul class="page-item-container">
+                          <li class="page-item">
+                            <!-- on 됐을 경우 span 태그로 변경-->
+                            <span class="page-link on">
+                              <span class="txt">1</span>
+                            </span>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">2</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">3</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">4</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">5</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="page-util next">
+                          <a class="page-link" href="#none" role="button">
+                            <span class="hide-txt">다음 페이지</span>
+                            <span class="ico-area" aria-hidden="true">
+                              <i class="ico-page-arrow right"></i>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div class="notice-area">
+                  <span class="notice-txt">* 검사소의 삭제는 관리자에게 문의 바랍니다.</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- 접속권한 요청 팝업-->
+        <div class="dimlayer_z" id="srdTarget03">
+          <div class="dimlayer_tb">
+            <div class="dimlayer_td">
+              <!-- layer_box-->
+              <div class="layer_box">
+                <div class="layer_tit_low">
+                  <h2 class="layer_tit font-18">검사소 추가</h2>
+                </div>
+                <div class="layer_cont" style="max-height: 875px;">
+                  <div class="layer_cont_in form-group">
+                    <div class="content-txt">
+                      <spna class="txt point">서초구의 검사소를 추가합니다. 검사소명을 정확히 입력 바랍니다.</spna>
+                      <div class="input-txt">
+                        <div class="input-box block">
+                          <label for="search-input">검사소명</label>
+                          <input type="text" id="search-input">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group right mt-25">
+                  <!-- closetrigger 있으면 닫힘-->
+                  <button class="wid-89 closetrigger" type="button">
+                    <span class="txt">취소</span>
+                  </button>
+                  <button class="color-blue wid-89 closetrigger">
+                    <span class="txt">확인</span>
+                  </button>
+                </div>
+                <!-- 20210415 수정-->
+                <button class="btn_layerclose" type="button">
+                  <span class="hide-txt">닫기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dimm">
+    <img src="../../images/common/blank_size_100.png" alt="">
+  </div>
+  <script></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>프로토타입</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link href="../../css/common.css" type="text/css" rel="stylesheet">
+  <link href="../../css/element.css" type="text/css" rel="stylesheet">
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/iscroll.js"></script>
+  <script src="../../js/common.js" defer></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+  <div id="wrap">
+    <div id="container">
+      <h1 class="hide-txt">프로토타입</h1>
+      <div id="content" role="main">
+        <div class="____prototype-group">
+          <h2 class="____prototype-tit01">영상 - youtube iframe</h2>
+          <!-- youtube iframe-->
+          <div class="movie-area">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?"></iframe>
+          </div>
+        </div>
+        <div class="____prototype-group">
+          <h2 class="____prototype-tit01">영상 - youtube object</h2>
+          <!-- youtube object-->
+          <div class="movie-area">
+            <object data="https://www.youtube.com/embed/tgbNymZ7vqY"></object>
+          </div>
+        </div>
+        <div class="____prototype-group">
+          <h2 class="____prototype-tit01">영상 - youtube embed</h2>
+          <!-- youtube embed-->
+          <div class="movie-area">
+            <embed src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </div>
+        </div>
+        <div class="____prototype-group">
+          <h2 class="____prototype-tit01">영상 - vimeo iframe</h2>
+          <!-- vimeo iframe-->
+          <div class="movie-area">
+            <iframe src="https://player.vimeo.com/video/3873878?control=0&amp;background=1&amp;autoplay=0&amp;loop=1&amp;autopause=0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="____prototype-group">
+          <h2 class="____prototype-tit01">영상 - vimeo embed</h2>
+          <!-- vimeo embed-->
+          <div class="movie-area">
+            <embed src="https://player.vimeo.com/video/3873878?control=0&amp;background=1&amp;autoplay=0&amp;loop=1&amp;autopause=0" allowfullscreen>
+          </div>
+        </div>
+        <div class="____prototype-group">
+          <h2 class="____prototype-tit01">영상 - video</h2><br>
+          <!-- video-->
+          <div class="movie-area">
+            <video controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dimm">
+    <img src="../../images/common/blank_size_100.png" alt="">
+  </div>
+</body>
+
+</html>

@@ -1025,6 +1025,8 @@ a:before {
     .layer_cont_in .content-txt .txt {
       font-size: 14px;
       color: #909399; }
+    .layer_cont_in .content-txt.block {
+      display: block; }
   .layer_cont_in.form-group {
     padding: 0 16px; }
     .layer_cont_in.form-group .input-txt {
@@ -1205,7 +1207,7 @@ a:before {
 
 .pgright_wrap .inner {
   max-width: 1612px;
-  margin: 106px auto 0;
+  margin: 106px auto 24px;
   padding: 0 24px; }
 
 .pgright_wrap .inner .tit {
@@ -2222,6 +2224,12 @@ button, a {
     right: 24px;
     margin: 0; }
 
+.notice-area {
+  margin-top: 24px; }
+  .notice-area .notice-txt {
+    font-size: 14px;
+    color: #000; }
+
 /* 공통영역 */
 section.content-wrap {
   margin-top: 24px;
@@ -2807,6 +2815,18 @@ section.content-wrap {
     margin-left: 16px; }
 
 /* 성공 및 실패 텍스트 공통 */
+span.success-txt {
+  display: block;
+  margin-top: 5px;
+  color: #28a745 !important;
+  font-size: 12px; }
+
+span.error-txt {
+  display: block;
+  margin-top: 5px;
+  color: #dc3545 !important;
+  font-size: 12px; }
+
 .success-txt {
   margin-top: 5px;
   color: #28a745 !important;
@@ -2898,4 +2918,4 @@ section.content-wrap {
       width: 584px;
       max-width: initial; } }
 
-/*# sourceMappingURL=../sass_maps/common.css.map */
+/*# sourceMappingURL=../../sass_maps/css/common.css.map */

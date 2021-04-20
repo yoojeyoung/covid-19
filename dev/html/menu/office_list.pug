@@ -7,79 +7,22 @@ block contents
         section.pgmid_zone
           .pgright_wrap
             .inner
-              h2.tit 삭제 확진자 목록
+              h2.tit 검사소 목록
               // 검색 영역
               section.content-wrap
                 .inner
                   .search-form
                     .search-type
-                      .input-radio.right
-                        input(type="radio" id="radio211" name="radio211")
-                        label(for="radio211")
-                          span.txt 조건 검색
                       .search-list
-                        span.type 자치구
-                        .selectbox 
-                          select(title="")
-                            option(value="") 선택해주세요.
-                            option(value="") 선택
-                            option(value="") 선택
-                      .search-list
-                        span.type 상태
-                        .selectbox 
-                          select(title="")
-                            option(value="") 선택해주세요.
-                            option(value="") 선택
-                            option(value="") 선택
-                      .search-list
-                        span.type 발생원인
-                        .selectbox 
-                          select(title="")
-                            option(value="") 선택해주세요.
-                            option(value="") 선택
-                            option(value="") 선택
-                      .search-list.wid-445
-                        span.type 확진일자
-                        button.btn-data.wid-66
-                          .txt 오늘
-                        button.btn-data.wid-66
-                          .txt 전날
-                        // element-ui 날짜 input
-                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
-                          input(type="text" autocomplete="off" name="" placeholder="날짜 선택").el-input__inner.wid-228
-                          span.el-input__prefix
-                            i.el-input__icon.el-icon-date
-                          span.el-input__suffix
-                            span.el-input__suffix-inner
-                              i.el-input__icon.el-icon-circle-close
-                    .search-type
-                      .input-radio.right
-                        input(type="radio" id="radio212" name="radio212")
-                        label(for="radio212")
-                          span.txt 확진자 번호로 검색
-                      .search-list
-                        .input-txt
-                          input(type="text" placeholder="숫자만 입력")
-                    .search-type
-                      .input-radio.right
-                        input(type="radio" id="radio213" name="radio213")
-                        label(for="radio213")
-                          span.txt 키워드 검색
-                      .search-list
-                        .input-txt
-                          input(type="text" placeholder="검색어 입력")
-                      .search-list
-                        span.type 상테
-                        .selectbox 
-                          select(title="")
-                            option(value="") 선택해주세요.
-                            option(value="") 선택
-                            option(value="") 선택
-                  .btn-group.type-r
-                    button.wid-92.border-blue
-                      .txt 삭제목록
-                    button.wid-77.color-blue
-                      .txt 검색
+                        span.type 구분
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 자치구(선별진료소)
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 의료기관
               // 최상위 테이블
               section.content-wrap
                 .inner
@@ -110,7 +53,7 @@ block contents
                             td.align-l 탑골공원
                             td(rowspan="3") 종로
                             td(rowspan="3")
-                              a(href="") 추가하기
+                              a(href="#" onclick="COVID.dimLayerShow('#srdTarget03')") 추가하기
                           tr
                             td 2
                             td.align-l 탑골공원
@@ -122,7 +65,7 @@ block contents
                             td.align-l 탑골공원
                             td(rowspan="2") 종로
                             td(rowspan="2")
-                              a(href="") 추가하기
+                              a(href="#") 추가하기
                           tr
                             td 5
                             td.align-l 탑골공원
@@ -131,7 +74,7 @@ block contents
                             td.align-l 탑골공원
                             td(rowspan="2") 종로
                             td(rowspan="2") 
-                              a(href="") 추가하기
+                              a(href="#") 추가하기
                           tr
                             td 7
                             td.align-l 탑골공원
@@ -140,7 +83,7 @@ block contents
                             td.align-l 탑골공원
                             td(rowspan="3") 종로
                             td(rowspan="3") 
-                              a(href="") 추가하기
+                              a(href="#") 추가하기
                           tr
                             td 9
                             td.align-l 탑골공원
@@ -152,40 +95,69 @@ block contents
                             td.align-l 탑골공원
                             td 종로
                             td 
-                              a(href="") 추가하기
+                              a(href="#") 추가하기
                           tr
                             td 12
                             td.align-l 탑골공원
                             td 종로
                             td 
-                              a(href="") 추가하기
+                              a(href="#") 추가하기
                           tr
                             td 13
                             td.align-l 탑골공원
                             td 종로
                             td 
-                              a(href="") 추가하기
+                              a(href="#") 추가하기
                           tr
                             td 14
                             td.align-l 탑골공원
                             td 종로
                             td 
-                              a(href="") 추가하기
+                              a(href="#") 추가하기
                           tr
                             td 15
                             td.align-l 탑골공원
                             td 종로
                             td 
-                              a(href="") 추가하기
+                              a(href="#") 추가하기
                           tr
                             td 16
                             td.align-l 탑골공원
                             td 종로
                             td 
-                              a(href="") 추가하기
+                              a(href="#") 추가하기
                           
                           
                   .page-nav-container
                       +page-nav('type01')
+              .notice-area 
+                span.notice-txt * 검사소의 삭제는 관리자에게 문의 바랍니다.
+
+      // 접속권한 요청 팝업
+      #srdTarget03.dimlayer_z
+        .dimlayer_tb
+          .dimlayer_td
+            // layer_box
+            .layer_box
+              .layer_tit_low
+                h2.layer_tit.font-18 검사소 추가
+              .layer_cont(style='max-height: 875px;')
+                .layer_cont_in.form-group
+                  .content-txt
+                    spna.txt.point 서초구의 검사소를 추가합니다. 검사소명을 정확히 입력 바랍니다.
+                    .input-txt 
+                      .input-box.block
+                        label(for="search-input") 검사소명
+                        input(type="text")#search-input
+                  
+              .btn-group.right.mt-25
+                // closetrigger 있으면 닫힘
+                button(type="button").wid-89.closetrigger
+                  span.txt 취소
+                button.color-blue.wid-89.closetrigger
+                  span.txt 확인
+              // 20210415 수정
+              button(type="button").btn_layerclose
+                span.hide-txt 닫기
 append script
   script.
