@@ -587,6 +587,7 @@ section.content-wrap{
     // 1140px
     @include rem(min-width,1420px);
     @include rem(padding,24px);
+    &.mb-0{margin-bottom: 0px;}
   }
   .sec-tit{
     position: relative;

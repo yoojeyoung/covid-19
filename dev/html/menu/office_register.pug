@@ -7,10 +7,10 @@ block contents
         section.pgmid_zone
           .pgright_wrap
             .inner
-              h2.tit 검사소 목록
+              h2.tit 검사 종류별 검사건수 및 확진자 데이터 입력
               // 검색 영역
               section.content-wrap
-                .inner
+                .inner.mb-0
                   .search-form
                     .search-type
                       .search-list
@@ -23,6 +23,45 @@ block contents
                           input(type="radio" id="radio211" name="radio211")
                           label(for="radio211")
                             span.txt 의료기관
+                    .search-type
+                      .search-list
+                        span.type 자치구
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list
+                        span.type 상태
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list
+                        button.btn-data.wid-66
+                          .txt 오늘
+                        button.btn-data.wid-66
+                          .txt 전날
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="시작일").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="종료일").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        button(type="button").wid-79.color-blue
+                          span.txt 검색
+                        button(type="button").wid-89.border-blue
+                          span.txt 다운로드
               // 최상위 테이블
               section.content-wrap
                 .inner

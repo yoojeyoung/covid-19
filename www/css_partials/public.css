@@ -868,6 +868,8 @@ section.content-wrap {
     margin-top: 0;
     min-width: 1420px;
     padding: 24px; }
+    section.content-wrap .inner.mb-0 {
+      margin-bottom: 0px; }
   section.content-wrap .sec-tit {
     position: relative; }
     section.content-wrap .sec-tit .tit {

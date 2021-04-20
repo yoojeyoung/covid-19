@@ -36,10 +36,10 @@
           <section class="pgmid_zone">
             <div class="pgright_wrap">
               <div class="inner">
-                <h2 class="tit">검사소 목록</h2>
+                <h2 class="tit">검사 종류별 검사건수 및 확진자 데이터 입력</h2>
                 <!-- 검색 영역-->
                 <section class="content-wrap">
-                  <div class="inner">
+                  <div class="inner mb-0">
                     <div class="search-form">
                       <div class="search-type">
                         <div class="search-list">
@@ -56,6 +56,65 @@
                               <span class="txt">의료기관</span>
                             </label>
                           </div>
+                        </div>
+                      </div>
+                      <div class="search-type">
+                        <div class="search-list">
+                          <span class="type">자치구</span>
+                          <div class="selectbox">
+                            <select title="">
+                              <option value="">선택해주세요.</option>
+                              <option value="">선택</option>
+                              <option value="">선택</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="search-list">
+                          <span class="type">상태</span>
+                          <div class="selectbox">
+                            <select title="">
+                              <option value="">선택해주세요.</option>
+                              <option value="">선택</option>
+                              <option value="">선택</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="search-list">
+                          <button class="btn-data wid-66">
+                            <div class="txt">오늘</div>
+                          </button>
+                          <button class="btn-data wid-66">
+                            <div class="txt">전날</div>
+                          </button>
+                          <!-- element-ui 날짜 input-->
+                          <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                            <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="시작일">
+                            <span class="el-input__prefix">
+                              <i class="el-input__icon el-icon-date"></i>
+                            </span>
+                            <span class="el-input__suffix">
+                              <span class="el-input__suffix-inner">
+                                <i class="el-input__icon el-icon-circle-close"></i>
+                              </span>
+                            </span>
+                          </div>
+                          <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                            <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="종료일">
+                            <span class="el-input__prefix">
+                              <i class="el-input__icon el-icon-date"></i>
+                            </span>
+                            <span class="el-input__suffix">
+                              <span class="el-input__suffix-inner">
+                                <i class="el-input__icon el-icon-circle-close"></i>
+                              </span>
+                            </span>
+                          </div>
+                          <button class="wid-79 color-blue" type="button">
+                            <span class="txt">검색</span>
+                          </button>
+                          <button class="wid-89 border-blue" type="button">
+                            <span class="txt">다운로드</span>
+                          </button>
                         </div>
                       </div>
                     </div>
