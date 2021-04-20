@@ -17,6 +17,7 @@
     left: 0;
   }
 }
+
 /* 푸터 공통 */
 #footer.type02{
   height: 83px;
@@ -31,91 +32,20 @@
       .footer-copyright{@include rem(margin-left, 10px);@include rem(font-size, 14px);color: #999;word-break: break-all;word-wrap: break-word;}
   }
 }
-
-@media (max-width:1250px){
-  #footer.type02{
-    @include rem(max-width,auto);
-    @include rem(padding, 0 24px);
+/* footer 공통 */
+.f-fixed{
+  .login-content-wrap{
+      @include rem(margin-bottom,143px);
+  }
+  footer.type02{
+      position: fixed;
+      bottom: 0;
+      left: 0;
   }
 }
 
 .pgheader_wrap{@include rem(height,60px);background:#fff;position:fixed;top:0;left:0;width:100%;z-index:100;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);}
 .pgheader_in{position:relative;}
-.pghleft_w{
-	@include rem(height,60px);
-	position:relative;
-	@include rem(width,250px);
-	box-sizing:border-box;
-	@include rem(padding, 0 60px);
-	background: #1d2747;
-	overflow:hidden;
-	.btn_pghtotal{
-		@include rem(width,30px);
-		@include rem(height,30px);
-		display:block;
-		position:absolute;
-		@include rem(top,20px);
-		@include rem(left,20px);
-		.bar{
-			position: absolute;
-			left: 0;
-			@include rem(width,22px);
-			@include rem(height,2px);
-			background: #fff;
-			transform: rotate(0);
-			&:nth-child(1){
-				top: 0;
-				transform-origin: 0 0;
-			}
-			&:nth-child(2){
-				@include rem(top,8px);
-			}
-			&:nth-child(3){
-				@include rem(top,16px);
-				transform-origin: 0 100%;
-			}
-		}
-		&.on{
-			.bar{
-				&:nth-child(1){
-					@include rem(top,1px);
-					@include rem(left,3px);
-					transform: rotate(45deg);
-				}
-				&:nth-child(2){
-					opacity: 0;
-				}
-				&:nth-child(3){
-					@include rem(left,3px);
-					transform: rotate(-45deg);
-				}
-			}
-		}
-	}
-}
-.pgh_title{display:flex;@include rem(height,60px);box-sizing:border-box;align-items: center;line-height:1.3;justify-content:center;@include rem(font-size,21px);font-family: 'NanumSquare'; font-weight:700;color:#fff;white-space: nowrap;}
-
-.title-area{
-	position: absolute;
-	@include rem(top,22px);
-	@include rem(left,274px);
-	h1{@include rem(font-size,18px);color: #1d2747;font-weight: bold;}
-}
-.adm_men_w{
-	position:absolute;
-	@include rem(top,24px);
-	@include rem(right,40px);
-	a{display: inline-block;@include rem(font-size,16px);color:#606266;line-height:1;white-space: nowrap;}
-}
-.adm_mendl_w{
-	position:relative;
-	display:block;
-	@include rem(padding,0 21px 0 30px);
-	font-size:0;
-	line-height:0;
-	.adm_men{display:inline-block;@include rem(width,30px);@include rem(height,30px);background:#13d5aa url("../images/admin/ico_logtop.png") no-repeat 50% 0/cover;border-radius: 100%;}
-	&::before{content:'';position:absolute;@include rem(top,-9px);display:block;@include rem(width,30px);@include rem(height,30px);background:url("../images/admin/ico_logtop.png") no-repeat 0 0;}
-}
 .pgheader_wrap.type02{
   position: relative;
 	@include rem(height,100px);
@@ -128,25 +58,157 @@
   }
 }
 
-@media (max-width:1250px){
-	.pgheader_wrap.type02{
-		@include rem(max-width,auto);
-		@include rem(padding, 0 24px);
+/* 변경된 헤더 */
+.touchDis{touch-action: none;overflow:hidden;position:relative;}
+.pgheader-wrap{position:fixed;top:0;left:0;width:100%;height:70px; min-width:280px;z-index:50;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);background:#fff;}
+.pghside-zone{position:fixed;top:0;left:0;width:260px;height:100%;z-index:10;}
+.bg-pghdim{display:none;position:fixed;top:0;left:0;width:100%;height:100%;transition:.5s;background:rgba(0,0,0,0);}
+.pghside-zone-in{position:relative;z-index:5;background:#283356;}
+.pghtoplogo-low{height:70px;display:flex;align-items: center;justify-content: center;background:#1d2747;position:absolute;top:0;left:0;z-index:5;width:100%;}
+.pghtoplogo{display:inline-block;width:106px;height:18px;background:url("../images/common/toplogo.png") no-repeat 0 0;}
+.pghtopmenu-low{position:absolute;top:0;left:0;bottom:0;width:100%;box-sizing: border-box;padding-top:70px;height:calc(100% - 70px);}
+.iscroll-wrap{
+	z-index: 1;
+	position: absolute;
+	padding-top:24px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}
+.pghtopmenu-list{
+	> li{
+		.pghom{
+			transition:.5s;
+			&.active{
+				opacity:1;
+				&::after{
+					top:20px;right:28px;transform:rotate(45deg);}
+			}
+		}
+		&.has-menu{
+			.pghom{
+				&::after{
+					display:block;content:'';width:8px;height:8px;border-right:1px solid #fff;border-bottom:1px solid #fff;position:absolute;top:22px;right:30px;
+					transform: translateZ(0);transform:rotate(-45deg);}
+				&.active{
+					&::after{top:20px;right:28px;transform:rotate(45deg);}
+				}
+			}
+		}
+	}
+	&.readytoggle{
+		.pghtm-list-wrap{display:none;}
+	}
+}
+.pghom{
+	display:block;padding:13px 50px 13px 30px;position:relative;-webkit-user-drag: none;cursor:pointer;user-select:none;opacity:.5;
+	.pghtm_in{
+    color:#fff;font-size:16px;line-height:1;min-height:24px;display:inline-flex;position:relative;padding-left:28px;align-items: center;
+		&::before{
+      display:block;
+      content:'';
+      width:24px;
+      height:24px;
+      position:absolute;
+      top:0;
+      left:0;
+      background:url("../images/common/ico_lm.png") no-repeat 0 0;
+    }
+	}
+	&.ico02 .pghtm_in::before{background-position:0 -24px !important;}
+	&.ico03 .pghtm_in::before{background-position:0 -48px !important;}
+	&.ico04 .pghtm_in::before{background-position:0 -72px !important;}
+	&.ico05 .pghtm_in::before{background-position:0 -96px !important;}
+	&.ico06 .pghtm_in::before{background-position:0 -120px !important;}
+	&.ico07 .pghtm_in::before{background-position:0 -144px !important;}
+	&.ico08 .pghtm_in::before{background-position:0 -168px !important;}
+	&.ico09 .pghtm_in::before{background-position:0 -192px !important;}
+	&.ico10 .pghtm_in::before{background-position:0 -216px !important;}
+	&.ico11 .pghtm_in::before{background-position:0 -240px !important;}
+
+}
+.pghtm-list-wrap{background:#0f1c49;position:relative;overflow:hidden;transition: .5s;height:0;transition:.5s;}
+.pghside-zone-in{position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
+.pghtm-list{
+	> li{
+		&.active{
+			.pghtm{opacity:1;}
+		}
+	}
+}
+.pghtm{
+	display:block;padding:0 0 0 58px;opacity:.5;transition:.5s;
+	-webkit-user-drag: none;cursor:pointer;user-select:none;
+	.pghtm_in{font-size:16px;line-height:1.4;color:#fff;padding:14px 0;display:block;}
+	&:hover{opacity:1;}
+}
+.pghtop-zone{position:fixed;top:0;left:260px;width:calc(100% - 260px);height:70px;}
+.pghtop-htb{display:table;height:70px;width:100%;}
+.pghtop-htd{
+	display:table-cell;vertical-align: middle;
+	&:after{display:block;content:'';clear:both;}
+	&.pghtop-hleft{padding-left:24px;}
+	&.pghtop-hright{padding-right:24px;}
+}
+.pghutil-list{
+	display:table;float:right;
+	> li{
+		display:table-cell;vertical-align:middle;padding-right:30px;
+		&:last-of-type{
+			padding-right:0;
+		}
+	}
+}
+.pghutil{
+	display:inline-flex;min-height:16px;padding-left:20px;align-items:center;position:relative;font-size:16px;color:#606266;
+	&:before{
+    display:block;
+    content:'';
+    width:16px;
+    height:16px;
+    position:absolute;
+    top:1px;
+    left:0;
+    background:url("../images/common/ico_util.png") no-repeat 0 0;
+  }
+	&.pghutil02{
+		&:before{
+			background-position:0 -16px !important;
+		}
+	}
+}
+.pghtop-title{font-size:18px;line-height:1;font-weight:700;letter-spacing: -1px;}
+
+.pgcontents{margin:70px 0 0 260px;}
+body > #wrap{min-width:280px;}
+.touchmode {
+	.pghtoplogo{background:url("../images/common/toplogo_high.png") no-repeat 0 0/cover}
+	.pghom{
+		.pghtm_in{
+			&::before{background:url("../images/common/ico_lm_high.png") no-repeat 0 0/cover;}
+		}
+	}
+	.pghutil{
+		&:before{background:url("../images/common/ico_util_high.png") no-repeat 0 0/cover;}
+	}
+}
+.btn-mbtotal{
+	display:none;width:70px;height:70px;position:absolute;top:0;left:0;
+	.btn-mbtotal-in{
+		display:block;width:24px;height:2px;background:#1d2747;position:absolute;top:50%;left:50%;
+		margin:-1px 0 0 -12px;
+		&:before , &:after{
+			display:block;content:'';width:100%;height:2px;background:#1d2747;position:absolute;top:0;left:0;
+		}
+		&:before{transform: translateY(-8px);}
+		&:after{transform: translateY(8px);}
 	}
 }
 
+/* e: 변경 된 헤더 */
 
-/* footer 공통 */
-.f-fixed{
-  .login-content-wrap{
-      @include rem(margin-bottom,143px);
-  }
-  footer.type02{
-      position: fixed;
-      bottom: 0;
-      left: 0;
-  }
-}
 
 
 /* 임시 비밀번호 로그인 페이지 */
@@ -957,7 +1019,49 @@ section.content-wrap{
   + button{@include rem(margin-left,16px);}
 }
 
+/* 성공 및 실패 텍스트 공통 */
+.success-txt{@include rem(margin-top,5px);color: #28a745 !important;@include rem(font-size,12px);}
+.error-txt{@include rem(margin-top,5px);color:#dc3545 !important;@include rem(font-size,12px);}
+
+
 /* -------------- 미디어쿼리 영역 -------------- */
+
+/* 헤더 */
+@media (max-width:1679px){
+	.pghtop-zone{left:0;width:auto;position:static;}
+	.pghtop-title{font-size:17px;padding-left:40px;text-align:left;padding-bottom:1px;}
+	.pgcontents{margin:70px 0 0 0;}
+	.btn-mbtotal{display:block;}
+	.pghtop-htb{justify-content: left;}
+	.pghside-zone{display:none;left:-260px;transition:.5s;
+		&.active{left:0;display:block;
+			.bg-pghdim{background:rgba(0,0,0,.5);}
+		}
+	}
+	.bg-pghdim{display:block;background:rgba(0,0,0,0)}
+}
+@media (max-width:1023px){
+	.pghtop-htb{display:flex;align-items: center;justify-content: space-between;height:70px;}
+	.pghtop-title{padding-left:70px;padding-right:30px;}
+	.pghtop-htd{display:block;}
+	.pghtop-htd.pghtop-hleft{padding:0;}
+}
+
+@media (max-width:1250px){
+  .pgheader_wrap.type02{
+		@include rem(max-width,auto);
+		@include rem(padding, 0 24px);
+	}
+  #footer.type02{
+    @include rem(max-width,auto);
+    @include rem(padding, 0 24px);
+  }
+  .login-content-wrap{
+    @include rem(max-width,initial);
+    @include rem(margin, 60px 24px 60px);
+  }
+}
+
 /* 로그인 메인 bg */
 @media (min-width:1200px){
   .cform_wrap{
@@ -970,13 +1074,5 @@ section.content-wrap{
         .cform_box{@include rem(width,584px);max-width: initial;}
       }
     }
-  }
-}
-
-/*! mobile 버전 - css */
-@media (max-width:1250px){
-  .login-content-wrap{
-    @include rem(max-width,initial);
-    @include rem(margin, 60px 24px 60px);
   }
 }

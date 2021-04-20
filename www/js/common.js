@@ -13,56 +13,11 @@ COVID = {
 				$("html").removeClass("touchmode");
 			}
 			funcThis.dimLayerControl();
-			funcThis.layoutCommon();
 			funcThis.formCommon();
 		});
 		$(window).on("load",function(){
 			funcThis.oldBrowerPop();
-		});
-	},
-	layoutCommon : function(){
-		var menuList = $('.plm_list > li').find('.pltm_list_w');
-		if(menuList.length){
-			menuList.closest('li').find('.plm').addClass('on');
-		}
-		$(".adm_mendl_w").on("click",function(){
-			$(".mentype_list_w").slideToggle();
-		});
-		$(".btn_pghtotal").on("click",function(){
-			$(this).toggleClass('on');
-			$(".page_wrap").toggleClass("fold");
-		});
-		$(".plm").on("click",function(){
-			var $this = $(this),
-				$t_p = $this.parents(".plm_list > li"),
-				$t_g = $(".plm_list > li").not($t_p), 
-				$t_t = $this.next(".pltm_list_w");
-
-			if($t_g.hasClass("active")){
-				$t_g.removeClass("active");
-				
-				if($(".page_wrap").hasClass("fold")){
-					$t_g.find(".pltm_list_w").css("display","");
-				}else{
-					$t_g.find(".pltm_list_w").slideUp();
-				}
-			}
-			
-			$t_p.toggleClass("active");
-			$t_t.slideToggle();
-		});
-
-		$(document).on("click",function(e){
-			if($(e.target).parents(".adm_men_w").length === 0){
-				$(".mentype_list_w").slideUp();
-			}
-		});
-	},
-	rockMenu : function(target){
-		$(function(){
-			var $target = $(target) || target;
-			$target.addClass("active");
-			$target.find(".pltm_list_w").show();
+			funcThis.commonFunc();
 		});
 	},
 	dimLayerControl : function(){
@@ -183,6 +138,156 @@ COVID = {
 				$this.removeClass("ing_place");
 			}
 		});
+	},
+	commonFunc : function(){
+		var touchmode = "ontouchstart" in window;
+		if(touchmode){
+			document.querySelector("body").classList.add("touchmode");
+		}
+		var pghtopmenulow = document.querySelector(".pghtopmenu-low");
+		var btnmbtotal = document.querySelector(".btn-mbtotal");
+		var bgpghdim = document.querySelector(".bg-pghdim");
+		var pghtopmenu = document.querySelector(".pghtopmenu-list");
+		var pghtopmenuli = document.querySelectorAll(".pghtopmenu-list > li");
+		var pghom = document.querySelectorAll(".pghom");
+		var pghsidezone = document.querySelector(".pghside-zone");
+		var pghtmListWrap = document.querySelectorAll(".pghtm-list-wrap");
+		var currentItem = null;
+		var rockItem = null;
+		var pghmenuObj = null;
+		init();
+		function init(){
+			if(pghtopmenulow !== null){
+				if(pghmenuObj == null){
+					pghmenuObj = new IScroll(".pghtopmenu-low",{
+						mouseWheel: true,
+						preventDefault : false
+					});
+				}else{
+					pghmenuObj.refresh();
+				}
+				[].forEach.call(pghtopmenuli, function(el) {
+					if(el.children[1] !== undefined){
+						el.classList.add("has-menu");
+					}
+				});
+			}
+		}
+		[].forEach.call(pghom,function(pghom_this){
+			pghom_this.togis = false;
+			pghom_this.addEventListener("click",function(e){
+				var nextItem = pghom_this.nextElementSibling;
+				var setTimeObj = 0;
+				var setTimeObj2 = 0;
+				if(setTimeObj>0 || setTimeObj2>0){
+					clearTimeout(setTimeObj);
+					clearTimeout(setTimeObj2);
+				}
+				if(currentItem && currentItem !== pghom_this){
+					currentItem.classList.remove("active");
+					if(currentItem.nextElementSibling !== null){
+						currentItem.nextElementSibling.style.height = "0px";
+					}
+					pghom_this.togis = false;
+				}
+				pghom_this.classList.toggle('active');
+				if(pghom_this.togis){
+					if(nextItem !== null && !nextItem.classList.contains("ani")){
+						nextItem.classList.add("ani");
+						nextItem.style.height = "0px";
+					}
+				}else{
+					if(nextItem !== null && !nextItem.classList.contains("ani")){
+						nextItem.classList.add("ani");
+						nextItem.style.display = "block";
+						nextItem.style.height = nextItem.children[0].clientHeight + "px";
+					}
+				}
+				currentItem = pghom_this;
+				setTimeObj = setTimeout(function(){
+					if(nextItem !== null){
+						nextItem.classList.remove("ani");
+					}
+					pghmenuObj.refresh();
+				},511);
+				pghom_this.togis = !pghom_this.togis;
+			});
+		});
+		btnmbtotal.addEventListener("click",function(){
+			pghsidezone.style.display = "block";
+			setTimeout(function(){
+				pghsidezone.classList.add("active");
+			},30);
+			setTimeout(function(){
+				pghmenuObj.refresh();
+			},530);
+			if(touchmode){
+				document.querySelector("body,html").classList.add("touchDis");
+			}
+		});
+		bgpghdim.addEventListener("click",function(){
+			pghsidezone.classList.remove("active");
+			setTimeout(function(){
+				pghsidezone.style.display = "none";
+			},530);
+			if(touchmode){
+				document.querySelector("body,html").classList.remove("touchDis");
+			}
+		});
+		
+		window.addEventListener('resize', function(){
+			pghmenuObj.refresh();
+			resetCss();
+		});
+
+		function resetCss(){
+			if(window.innerWidth>1679){
+				pghsidezone.removeAttribute("style");
+				pghsidezone.classList.remove("active");
+			}
+		}
+
+		function rockMenu(one,two){
+			var rockitem = document.querySelector(one);
+			var rockitem_m = rockitem.children[0];
+			var rockitem_t = rockitem.children[1] !== undefined ? rockitem.children[1] : null;
+			var rocktwo = document.querySelector(two);
+			
+			rockitem_m.classList.add("active");
+			if(rockitem_t !== null){
+				rockitem_t.classList.add("ani");
+				rockitem_t.style.display = "block";
+				if(touchmode){
+					rockitem_t.style.height = "auto";
+				}else{
+					rockitem_t.style.height = rockitem_t.children[0].clientHeight + "px";
+				}
+			}
+			if(rocktwo !== null){
+				rocktwo.classList.add("active");
+			}
+			if(rockitem_t !== null){
+				rockitem_t.classList.remove("ani");
+			}
+			pghmenuObj.refresh();
+
+			
+			rockitem_m.togis = true;
+			currentItem = rockitem_m;
+
+			var firstAction = false;
+			btnmbtotal.addEventListener("click",function(){
+				if(firstAction){return;}
+				rockitem_t.style.height = rockitem_t.children[0].clientHeight + "px";
+				firstAction = true;
+			});
+			window.addEventListener("resize",function(){
+				rockitem_t.style.height = rockitem_t.children[0].clientHeight + "px";
+			});
+		}
+		return{
+			"rockMenu" : rockMenu
+		}
 	}
 };
 COVID.init();

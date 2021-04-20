@@ -1,16 +1,92 @@
-header.pgheader_wrap
-	.pgheader_in
-		.pghleft_w
-			a.btn_pghtotal(href='javascript:;')
-				//- span.pghtotal
-				span.bar
-				span.bar
-				span.bar
-			.pgh_title I SEOUL U
-		.title-area
-			h1 서울시 Covid-19 환자 관리 지원 시스템
-		.adm_men_w
-			a.adm_mendl_w(href='javascript:;')
-				span.adm_men_name 홍길동
-			a.adm_mendl_w.login_btn(href='javascript:;')
-				span 로그아웃
+header.pgheader-wrap
+	.pghside-zone
+		.bg-pghdim
+		.pghside-zone-in
+			.pghtoplogo-low
+				p.pghtoplogo
+					a.pghtoplogo-link
+						span.hide-txt I LOVE SEOUL
+			.pghtopmenu-low
+				.iscroll-wrap
+					ul.pghtopmenu-list
+						li(id="pm01")
+							a.pghom(href="javascript:;")
+								span.pghtm_in 상황판
+						li(id="pm02") 
+							a.pghom(href="javascript:;").ico02
+								span.pghtm_in 검사현황
+						li(id="pm03") 
+							a.pghom(href="javascript:;").ico03
+								span.pghtm_in 통계
+							.pghtm-list-wrap 
+								ul.pghtm-list
+									li(id="pm03_01")
+										a.pghtm
+											span.pghtm_in 확진자 통계
+									li(id="pm03_02") 
+										a.pghtm
+											span.pghtm_in 검사 통계
+						li(id="pm04") 
+							a.pghom(href="javascript:;").ico04
+								span.pghtm_in 역학조사
+						li(id="pm05") 
+							a.pghom(href="javascript:;").ico05
+								span.pghtm_in 자료실
+							.pghtm-list-wrap 
+								ul.pghtm-list
+									li(id="pm05_01")
+										a.pghtm
+											span.pghtm_in 현황자료게시판
+									li(id="pm05_02")
+										a.pghtm
+											span.pghtm_in 분석자료게시판
+						li(id="pm06")
+							a.pghom(href="javascript:;").ico06
+								span.pghtm_in 확진자 관리  
+							.pghtm-list-wrap 
+								ul.pghtm-list
+									li(id="pm06_01")
+										a.pghtm
+											span.pghtm_in 확진자전국데이터
+									li(id="pm06_02") 
+										a.pghtm
+											span.pghtm_in 확진자목록
+									li(id="pm06_03")
+										a.pghtm
+											span.pghtm_in 확진자등록
+						li(id="pm07") 
+							a.pghom(href="javascript:;").ico07
+								span.pghtm_in 검사소 관리
+							.pghtm-list-wrap 
+								ul.pghtm-list
+									li(id="pm07_01") 
+										a.pghtm
+											span.pghtm_in 검사소목록 / 괸리
+									li(id="pm07_02")
+										a.pghtm
+											span.pghtm_in 검사실적등록
+						li(id="pm08") 
+							a.pghom(href="javascript:;").ico08
+								span.pghtm_in 통계 데이터 관리
+						li(id="pm09") 
+							a.pghom(href="javascript:;").ico09
+								span.pghtm_in 카카오톡 게시판
+						li(id="pm10") 
+							a.pghom(href="javascript:;").ico10
+								span.pghtm_in 클러스터 관리
+						li(id="pm11") 
+							a.pghom(href="javascript:;").ico11
+								span.pghtm_in 사용자 관리
+	.pghtop-zone
+		.pghtop-htb
+			.pghtop-htd.pghtop-hleft
+				h1.pghtop-title 서울시 Covid-19 환자 관리 지원 시스템          
+			.pghtop-htd.pghtop-hright
+				ul.pghutil-list
+					li 
+						a(href="javascript:;").pghutil 홍길동 
+					li 
+						a(href="javascript:;").pghutil.pghutil02 로그아웃
+	a.btn-mbtotal(href="javascript:;")
+		.btn-mbtotal-in
+			span.hide-txt 전체메뉴 보기

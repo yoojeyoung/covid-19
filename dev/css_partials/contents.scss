@@ -4,9 +4,6 @@
 
 /*! pc & tablet 버전 - css */
 
-.gbutton_w{padding:0 0 100px;}
-.gbutton_w a{height:50px;line-height:50px;display:inline-block;padding:0 20px;background:#ddd;}
-
 /* 레이어팝업 */
 .dimlayer_z{display:none;position:fixed;top:0;left:0;overflow:hidden;overflow-y:auto;width:100%;height:100%;z-index:1000;background:rgba(0,0,0,.75);}
 .dimlayer_tb{display:table;width:100%;height:100%;table-layout: fixed;}
@@ -125,82 +122,15 @@
 /* ---------------------------------------------------------- */
 /* layout */
 .page_wrap{/*min-width:1280px;*/background:#f2f2f2;}
-.page_wrap.page_layout{}
 .page_wrap.page_layout:after{display:block;content:'';clear:both;}
 .front_body{background:#f2f2f2;}
-.page_leftzone{@include rem(width, 250px);position:relative;overflow:hidden;position:absolute;top:0;left:0;background:#511bb4;height:100%;}
-.page_leftzone:before{display:block;content:'';@include rem(width, 250px);background:#511bb4;height:100%;position:fixed;top:0;left:0;}
 
-.page_leftzone > *{position:relative;z-index:5;}
-
-.plm_list{@include rem(width, 250px);}
-.plm_list > li{
-  position:relative;
-  .plm_in{
-    position: relative;
-    @include rem(font-size, 14px);
-    color:#94a5bb;
-    line-height:1.3;
-    &::before{content: "";position: absolute;@include rem(top, -4px);@include rem(left, -30px);@include rem(width, 24px);@include rem(height, 25px);}
-  }
-  &:nth-child(1){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_situation.png);}}
-  &:nth-child(2){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_status.png);}}
-  &:nth-child(3){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_chart.png);}}
-  &:nth-child(4){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_research.png);}}
-  &:nth-child(5){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_notice.png);}}
-  &:nth-child(6){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_confirmed.png);}}
-  &:nth-child(7){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_inspection.png);}}
-  &:nth-child(8){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_data.png);}}
-  &:nth-child(9){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_kakao.png);}}
-  &:nth-child(10){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_set.png);}}
-  &:nth-child(11){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_user.png);}}
-}
-.plm_list > li.active .pltm_list li{background: #0f1c49;}
-.plm_list > li.active{
-  .plm_in{color: #fff;}
-  &:nth-child(1){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_situation_on.png);}}
-  &:nth-child(2){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_status_on.png);}}
-  &:nth-child(3){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_chart_on.png);}}
-  &:nth-child(4){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_research_on.png);}}
-  &:nth-child(5){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_notice_on.png);}}
-  &:nth-child(6){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_confirmed_on.png);}}
-  &:nth-child(7){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_inspection_on.png);}}
-  &:nth-child(8){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_data_on.png);}}
-  &:nth-child(9){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_kakao_on.png);}}
-  &:nth-child(10){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_set_on.png);}}
-  &:nth-child(11){.plm_in::before{@include rem(width, 24px);@include rem(height, 24px);background: url(../images/menu/ico_user_on.png);}}
-}
-.plm_list > li.active .plm.on:after{transform:rotate(45deg);}
-.plm{display:block;position:relative;@include rem(padding, 13px 45px 13px 58px);overflow:hidden;}
-.plm.on:after{
-    display:block;content:'';@include rem(width, 8px);@include rem(height, 8px);opacity:.55;position:absolute;@include rem(top, 15px);@include rem(right,25px);border-right:1px solid rgba(255,255,255,.55);border-bottom:1px solid rgba(255,255,255,.55);
-    transform: translateZ(0);transform:rotate(-45deg);transition: all ease .3s;
-}
-.pltm_list_w{display:none;}
-.pltm_list > li{position:relative;@include rem(padding, 13px 45px 13px 50px);}
-.pltm_list > li.active .pltm{color:#13d5aa;}
-.pltm_list > li:last-of-type{margin-bottom:0;}
-.pltm{display:inline-block;@include rem(font-size,12px);color:#fff;}
 .page_rightzone{@include rem(margin-left,250px);}
 .page_rightzone > *{position:relative;z-index:5;}
 .pgright_wrap .inner{@include rem(max-width,1612px);@include rem(margin,106px auto 0);@include rem(padding,0 24px);}
 .pgright_wrap .inner .tit{color: #1d2747;@include rem(font-size,24px);font-weight: bold;}
 
-
-.pgleft_wrap{position:fixed;top:60px;left:0;visibility:hidden; width:0;height:calc(100% - 60px); background:#283356;z-index:50;transition:.4s;overflow:hidden;overflow-y:auto;}
 .pgright_wrap{margin:60px auto 0;transition:.4s;background: #f5f5f7;}
-
-.page_wrap.fold{}
-.page_wrap.fold .plm{padding:0;@include rem(height,60px);}
-.page_wrap.fold .pgright_wrap{@include rem(margin-left,60px);}
-.page_wrap.fold .pgh_title,
-.page_wrap.fold .plm_in,
-.page_wrap.fold .plm:after,
-.page_wrap.fold .pltm_list_w{display:none !important;}
-.page_wrap.fold .pgleft_wrap{@include rem(width,60px);}
-.page_wrap.fold .pgh_title{opacity:0;}
-.page_wrap.fold .pghleft_w{@include rem(width,60px);padding-right:0;}
-
 
 /* */
 .cform_body{width:100%;height:100%;background:#f2f2f2;}
@@ -286,12 +216,11 @@
 }
 
 /* 미디어 쿼리 영역*/
-/* 메뉴리스트 1660 이하 햄버그 메뉴 변경 */
-@media (min-width:1660px){
+/* 메뉴리스트 1680 이하 햄버그 메뉴 변경 */
+@media (min-width:1680px){
   .pgright_wrap{
     margin:60px 0 0 250px;
   }
-  .pgleft_wrap{visibility: visible;width: 250px; transition: all .2s;}
 }
 
 /*! mobile 버전 - css */
