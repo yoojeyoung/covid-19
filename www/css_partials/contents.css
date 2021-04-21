@@ -123,6 +123,8 @@
       vertical-align: top; }
   .layer_cont_in.pt-20 {
     padding: 20px 16px 0; }
+  .layer_cont_in .input-radio {
+    margin-top: 0; }
 
 .layer_box .btn-group {
   margin-top: 32px;

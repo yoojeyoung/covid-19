@@ -104,7 +104,8 @@
 }
 .pghom{
 	display:block;padding:13px 50px 13px 30px;position:relative;-webkit-user-drag: none;cursor:pointer;user-select:none;opacity:.5;
-	.pghtm_in{
+  text-align: left;
+  .pghtm_in{
     color:#fff;font-size:16px;line-height:1;min-height:24px;display:inline-flex;position:relative;padding-left:28px;align-items: center;
 		&::before{
       display:block;
@@ -274,104 +275,103 @@ body{background: #f5f5f7}
 
 /* form 공통 */
 .form-group{
-  .input-txt{
-    border: none;
-    label{@include rem(font-size,14px);color: #606266;}
-    .input-box{
-      display: flex;
-      align-items: flex-end;
-      input{
-        @include rem(height,40px);
-        @include rem(margin-top,8px);
-        @include rem(font-size,14px);
-        border: 1px solid #e4e7ed;
-        @include rem(border-radius,4px);
-        &::placeholder{color: #c0c4cc;@include rem(font-size,14px);}
-        &.mt-0{margin-top: 0}
-        &.h-56{@include rem(height, 56px);}
-        &.h-28{@include rem(height, 28px);}
-        &:disabled{
-          background: #f5f7fa;
-        }
-      }
-      .btn-lv01{
-        @include rem(min-width,85px);
-        @include rem(height,40px);
-        @include rem(margin-left,8px);
-        @include rem(padding,9px 5px);
-        @include rem(border-radius,4px);
-        background: #e1e3e8;
-        text-align: center;
-        .txt{@include rem(font-size,14px);color: #606266;}
-      }
-    }
-    &:not(:first-child){@include rem(margin-top,16px);}
-    &.form-success{
-      input{border-color:#28a745 !important;}
-      .message{color: #28a745 !important;}
-    }
-    &.form-error{
-      input{border-color: #dc3545 !important;}
-      .message{color: #dc3545 !important;}
+  + .form-group{@include rem(margin-top,32px);}
+}
+.input-txt{
+  border: none;
+  label{@include rem(font-size,14px);color: #606266;}
+  .input-box{
+    display: flex;
+    align-items: flex-end;
+    .btn-lv01{
+      @include rem(min-width,85px);
+      @include rem(height,40px);
+      @include rem(margin-left,8px);
+      @include rem(padding,9px 5px);
+      @include rem(border-radius,4px);
+      background: #e1e3e8;
+      text-align: center;
+      .txt{@include rem(font-size,14px);color: #606266;}
     }
   }
-  .selectbox{
-    &.form-success{
-      select{border-color:#28a745 !important;}
-      .message{color: #28a745 !important;}
-    }
-    &.form-error{
-      select{border-color: #dc3545 !important;}
-      .message{color: #dc3545 !important;}
-    }
+  input{
+    @include rem(height,40px);
+    @include rem(margin-top,8px);
+    @include rem(padding-right,6px);
+    @include rem(font-size,14px);
+    border: 1px solid #e4e7ed;
+    @include rem(border-radius,4px);
+    &::placeholder{color: #c0c4cc;@include rem(font-size,14px);}
+    &.mt-0{margin-top: 0}
+    &.h-56{@include rem(height, 56px);}
+    &.h-28{@include rem(height, 28px);}
     &:disabled{
       background: #f5f7fa;
     }
   }
-  .el-date-editor.el-input{
-    &.form-success{
-      .el-input__inner{border-color:#28a745 !important;}
-      .message{color: #28a745 !important;}
-    }
-    &.form-error{
-      .el-input__inner{border-color: #dc3545 !important;}
-      .message{color: #dc3545 !important;}
-    }
+  &:not(:first-child){@include rem(margin-top,16px);}
+  &.form-success{
+    input{border-color:#28a745 !important;}
+    .message{color: #28a745 !important;}
   }
-  .form-tit{
-    @include rem(padding-bottom, 16px);
-    border-bottom: 1px solid #e4e7ed;
-    .tit{@include rem(font-size,16px);font-weight: 500;color: #303133;}
+  &.form-error{
+    input{border-color: #dc3545 !important;}
+    .message{color: #dc3545 !important;}
   }
-  .input-radio{
-    @include rem(margin-top,19px);
-    .selectbox{@include rem(margin-top,15px);}
-  }
-  .input-textarea{
-    &.form-success{
-      textarea{border-color:#28a745 !important;}
-      .message{color: #28a745;}
-    }
-    &.form-error{
-      textarea{border-color: #dc3545 !important;}
-      .message{color: #dc3545;}
-    }
-  }
-  .input-notice{
-    .point-txt{
-      display: block;
-      @include rem(margin-top,16px);
-      @include rem(padding-left,10px);
-      @include rem(font-size,12px);
-      @include rem(text-indent,-10px);
-      color: #2883c5;
-      line-height: 1.5
-    }
-  }
-  + .form-group{@include rem(margin-top,32px);}
 }
-
-/* 버튼 공통 */
+.selectbox{
+  &.form-success{
+    select{border-color:#28a745 !important;}
+    .message{color: #28a745 !important;}
+  }
+  &.form-error{
+    select{border-color: #dc3545 !important;}
+    .message{color: #dc3545 !important;}
+  }
+  &:disabled{
+    background: #f5f7fa;
+  }
+}
+.el-date-editor.el-input{
+  &.form-success{
+    .el-input__inner{border-color:#28a745 !important;}
+    .message{color: #28a745 !important;}
+  }
+  &.form-error{
+    .el-input__inner{border-color: #dc3545 !important;}
+    .message{color: #dc3545 !important;}
+  }
+}
+.form-tit{
+  @include rem(padding-bottom, 16px);
+  border-bottom: 1px solid #e4e7ed;
+  .tit{@include rem(font-size,16px);font-weight: 500;color: #303133;}
+}
+.input-radio{
+  @include rem(margin-top,19px);
+  .selectbox{@include rem(margin-top,15px);}
+}
+.input-textarea{
+  &.form-success{
+    textarea{border-color:#28a745 !important;}
+    .message{color: #28a745;}
+  }
+  &.form-error{
+    textarea{border-color: #dc3545 !important;}
+    .message{color: #dc3545;}
+  }
+}
+.input-notice{
+  .point-txt{
+    display: block;
+    @include rem(margin-top,16px);
+    @include rem(padding-left,10px);
+    @include rem(font-size,12px);
+    @include rem(text-indent,-10px);
+    color: #2883c5;
+    line-height: 1.5
+  }
+}
 
 /* 버튼 - 개인으로 사용시 */
 button,a{
@@ -380,6 +380,7 @@ button,a{
   text-align: center;
   @include rem(border-radius,4px);
   .txt{@include rem(font-size,14px);color: #606266;text-align: center;}
+  &.wid-56{@include rem(min-width,56px);}
   &.wid-80{@include rem(min-width,80px);}
   &.wid-89{@include rem(min-width,89px);}
   &.wid-79{@include rem(min-width,79px);}
@@ -430,7 +431,6 @@ button,a{
       background: #ffd6db !important;
       .txt{color: #ba1626 !important;}
     }
-
   }
   &.color-orange{
     background: #dd682d;
@@ -462,6 +462,7 @@ button,a{
   &.wid-full{
     width: 100%;
   }
+  &.ml-8{@include rem(margin-left,8px);}
 }
 /* 버튼 - 그룹으로 사용시 */
 .btn-group{
@@ -583,7 +584,7 @@ section.content-wrap{
   white-space: nowrap;
   .inner{
     position: relative;
-    margin-top: 0;
+    margin: 0;
     // 1140px
     @include rem(min-width,1420px);
     @include rem(padding,24px);
@@ -816,7 +817,7 @@ section.content-wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include rem(width,220px);
+    @include rem(min-width,204px);
     .type{
       @include rem(font-size,14px);
       font-weight: bold;
@@ -824,14 +825,35 @@ section.content-wrap{
       + button{@include rem(margin-left,20px);}
       + .input-txt{@include rem(margin-left,20px);}
       + .selectbox{@include rem(margin-left,20px);}
+      + .input-radio{@include rem(margin-left,30px);}
     }
-    .selectbox{width: 150px}
-    .input-txt{@include rem(padding-right,6px);}
+    .input-radio.type-border{
+      width: auto;
+      background: #fff;
+      label{
+        @include rem(padding,10px);
+        border: 1px solid #e4e7ed;
+        @include rem(border-radius,4px);
+        &::before{@include rem(left,10px);}
+      }
+      input:checked + label{
+        border: 1px solid #409eff;
+        &::after{
+          @include rem(left,16px);
+        }
+        .txt{color: #409eff;}
+      }
+      .txt{@include rem(padding-left,30px);}
+      + .input-radio{@include rem(margin-left,12px);}
+    }
+    .selectbox{width: 150px;}
     + .search-list{@include rem(margin-left,30px);}
     &.wid-445{width: 445px;}
   }
   .input-txt{
+    margin-top: 0;
     input{
+      margin-top: 0;
       &.wid-220{@include rem(width,220px)}
       &.wid-228{@include rem(width,228px)}
     }
@@ -843,11 +865,9 @@ section.content-wrap{
     width: auto;
     overflow: initial;
     background: #fff;
-    select{
-      &.wid-100{@include rem(width,100px);}
-    }
     + .selectbox{@include rem(margin-left,16px)}
     + button{@include rem(margin-left,16px);}
+    &.wid-100{@include rem(width,100px);}
   }
   button{
     @include rem(padding,11px 10px);
@@ -878,96 +898,34 @@ section.content-wrap{
 /* 확진자 등록 공통 */
 .register-form{
   position: relative;
-  table.form-group{
-    th,td{@include rem(padding, 5px 0);@include rem(font-size,12px);}
-    th{@include rem(height,40px);@include rem(padding,4px 0);color: #333;font-weight: normal;}
-    .input-txt{
-      width: auto;
-      margin: 0;
-      /* 기본 input 139px */
-      label{
-        position: relative;
-        @include rem(font-size,12px);
-        &.point::before{
+  .btn-group{
+    position: absolute;
+    @include rem(top,-44px);
+    right: 0;
+    margin-top: 0;
+  }
+  .input-txt{
+    width: auto;
+    margin: 0;
+    border: none;
+    /* 기본 input 139px */
+    label{
+      position: relative;
+      display: block;
+      @include rem(margin-bottom,8px);
+      @include rem(font-size,12px);
+      &.point{
+        @include rem(padding-left,8px);
+        &::before{
           content: "*";
           position: absolute;
           top: 0;
-          left: -8px;
+          left: 0;
           display: block;
           font-size: 12px;
           color: #eb5757;
-        }
-        + input{@include rem(margin-left,10px);}
+        } 
       }
-      input{
-        @include rem(width,139px);
-        @include rem(height,28px);
-        margin: 0 auto;
-        @include rem(padding-left,12px);
-        color: #606266;
-        @include rem(font-size,12px);
-        line-height: initial;
-        &::placeholder{@include rem(font-size,12px);}
-        &.wid-26{@include rem(width,26px);}
-        &.wid-48{@include rem(width,48px);}
-        &.wid-55{@include rem(width,55px);}
-        &.wid-73{@include rem(width,73px);}
-        &.wid-98{@include rem(width,98px);}
-        &.wid-114{@include rem(width,114px);}
-        &.wid-149{@include rem(width,149px);}
-        &.wid-281{@include rem(width,281px);}
-        &.wid-345{@include rem(width,345px);}
-        &.wid-430{@include rem(width,430px);}
-        &.wid-771{@include rem(width,771px);}
-        +.input-radio{@include rem(margin-left,20px);}
-        +.selectbox{@include rem(margin-left,4px);}
-      }
-      .el-date-editor.el-input{
-        .el-input__inner{@include rem(height,28px);@include rem(padding-left,30px);@include rem(font-size,12px);line-height: initial;}
-        .el-input__icon{@include rem(line-height,initial);}
-      }
-      .selectbox{
-        width: auto;
-        select{
-          @include rem(width,139px);
-          @include rem(height,28px);
-          margin: 0 auto;
-          @include rem(padding-left,12px);
-          @include rem(font-size,12px);
-          line-height: initial;
-          &.wid-80{@include rem(width,80px);}
-          &.wid-281{@include rem(width,281px);}
-        }
-        +input{@include rem(margin-left,10px);}
-        +.selectbox{@include rem(margin-left,4px);}
-      }
-      button{
-        @include rem(width,225px);
-        .txt{
-          color: #2f80ed;
-        }
-        &.btn-data{
-          @include rem(width,51px);
-          @include rem(padding, 5px 0 4px);
-          border: 1px solid #e4e7ed;
-          .txt{@include rem(font-size,12px);color: #606266;}
-          +.btn-data{@include rem(margin-left,10px);}
-          + input{@include rem(margin-left,10px);}
-        }
-      }
-      .input-radio{
-        margin-top: 0;
-        .txt{@include rem(font-size,12px);color: #333;}
-        + .input-radio{@include rem(margin-left,10px);}
-        + input{@include rem(margin-left,10px);}
-        + .selectbox{@include rem(margin-left,10px);}
-        + .input-checkbox{@include rem(margin-left,20px);}
-      }
-      .input-checkbox{
-        + .input-checkbox{@include rem(margin-left,20px);}
-        + input{@include rem(margin-left,10px);}
-      }
-      + .input-txt{@include rem(margin-left,21px);}
     }
     .input-box{
       align-items: center;
@@ -976,28 +934,111 @@ section.content-wrap{
       .type{@include rem(margin, 0 12px);color: #333;}
       .mr-0{margin-right: 0;}
     }
-    .point{
-      position: relative;
-      &::before{
-        content: "*";
-        position: absolute;
-        top: 0;
-        left: -8px;
-        display: block;
+    input{
+      @include rem(width,139px);
+      @include rem(height,40px);
+      margin: 0 auto;
+      @include rem(padding-left,12px);
+      color: #606266;
+      @include rem(font-size,12px);
+      border: 1px solid #e4e7ed;
+      line-height: initial;
+      &::placeholder{@include rem(font-size,12px);}
+      &.wid-26{@include rem(width,26px);}
+      &.wid-40{@include rem(width,40px);}
+      &.wid-48{@include rem(width,48px);}
+      &.wid-55{@include rem(width,55px);}
+      &.wid-73{@include rem(width,73px);}
+      &.wid-98{@include rem(width,98px);}
+      &.wid-114{@include rem(width,114px);}
+      &.wid-149{@include rem(width,149px);}
+      &.wid-164{@include rem(width,164px);}
+      &.wid-200{@include rem(width,200px);}
+      &.wid-225{@include rem(width,225px);}
+      &.wid-245{@include rem(width,245px);}
+      &.wid-274{@include rem(width,274px);}
+      &.wid-281{@include rem(width,281px);}
+      &.wid-300{@include rem(width,300px);}
+      &.wid-345{@include rem(width,345px);}
+      &.wid-430{@include rem(width,430px);}
+      &.wid-771{@include rem(width,771px);}
+      +.input-radio{@include rem(margin-left,20px);}
+      +.selectbox{@include rem(margin-left,4px);}
+    }
+    .el-date-editor.el-input{
+      .el-input__inner{@include rem(height,28px);@include rem(padding-left,30px);@include rem(font-size,12px);line-height: initial;}
+      .el-input__icon{@include rem(line-height,initial);}
+      + .selectbox{@include rem(margin-left,8px);}
+    }
+    .selectbox{
+      width: auto;
+      select{
+        @include rem(width,139px);
+        @include rem(height,40px);
+        margin: 0 auto;
+        @include rem(padding-left,12px);
         @include rem(font-size,12px);
-        color: #eb5757;
+        line-height: initial;
+        &.wid-63{@include rem(width,63px);}
+        &.wid-80{@include rem(width,80px);}
+        &.wid-110{@include rem(width,110px);}
+        &.wid-152{@include rem(width,152px);}
+        &.wid-188{@include rem(width,188px);}
+        &.wid-218{@include rem(width,218px);}
+        &.wid-281{@include rem(width,281px);}
+        &.wid-488{@include rem(width,488px);}
+      }
+      +input{@include rem(margin-left,10px);}
+      +.selectbox{@include rem(margin-left,8px);}
+    }
+    button{
+      @include rem(width,225px);
+      .txt{
+        color: #2f80ed;
+      }
+      &.btn-data{
+        @include rem(width,51px);
+        @include rem(padding, 5px 0 4px);
+        border: 1px solid #e4e7ed;
+        .txt{@include rem(font-size,12px);color: #606266;}
+        +.btn-data{@include rem(margin-left,10px);}
+        + input{@include rem(margin-left,10px);}
       }
     }
+    .input-radio{
+      margin-top: 0;
+      .txt{@include rem(font-size,12px);color: #333;}
+      + .input-radio{@include rem(margin-left,10px);}
+      + input{@include rem(margin-left,10px);}
+      + .selectbox{@include rem(margin-left,10px);}
+      + .input-checkbox{@include rem(margin-left,20px);}
+    }
+    .input-checkbox{
+      + .input-checkbox{@include rem(margin-left,20px);}
+      + input{@include rem(margin-left,10px);}
+    }
+    .input-textarea{
+      textarea{
+        margin-top: 0;
+        &.wid-648{@include rem(width,648px);}
+      }
+      + .input-textarea{@include rem(margin-left,24px)};
+    }
+    + .input-txt{@include rem(margin-left,24px);}
   }
-  .btn-group{
-    position: absolute;
-    @include rem(top,-44px);
-    right: 0;
-    margin-top: 0;
-  }
+
   &:not(:first-child){@include rem(margin-top,12px);}
+  &.flex{
+    display: flex;
+    justify-content: space-between;
+    &.flex-l{
+      justify-content: left;
+    }
+  }
+  &.mt-23{@include rem(margin-top,23px);}
   &.mt-32{@include rem(margin-top,32px);}
   &.mt-48{@include rem(margin-top,48px);}
+  &.mt-50{@include rem(margin-top,50px);}
   &.wid-302{@include rem(width,302px);}
   &.wid-448{@include rem(width,448px);}
   &.wid-550{@include rem(width,550px);}
@@ -1021,6 +1062,20 @@ section.content-wrap{
     &.wid-114{@include rem(width,114px);}
     &.wid-220{@include rem(width,220px)}
     &.wid-228{@include rem(width,228px)}
+  }
+  .el-icon-date{
+    &::before{
+      content: "" !important;
+      width: 14px;
+      height: 100%;
+      right: 10px;
+      top: 0;
+      background-image: url("../images/common/ico_calendar.png");
+      display: inline-block;
+      background-size: 14px auto;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
   }
   + .el-date-editor.el-input{@include rem(margin-left,16px);}
   + .selectbox{@include rem(margin-left,16px);}

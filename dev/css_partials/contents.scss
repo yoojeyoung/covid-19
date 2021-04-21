@@ -98,6 +98,7 @@
     }
   }
   &.pt-20{@include rem(padding,20px 16px 0);}
+  .input-radio{margin-top: 0}
 }
 .layer_box .btn-group{
 	@include rem(margin-top,32px);

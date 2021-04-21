@@ -231,7 +231,8 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  opacity: .5; }
+  opacity: .5;
+  text-align: left; }
   .pghom .pghtm_in {
     color: #fff;
     font-size: 16px;
@@ -507,12 +508,15 @@ body {
       color: #000; }
 
 /* form 공통 */
-.form-group .input-txt {
+.form-group + .form-group {
+  margin-top: 32px; }
+
+.input-txt {
   border: none; }
-  .form-group .input-txt label {
+  .input-txt label {
     font-size: 14px;
     color: #606266; }
-  .form-group .input-txt .input-box {
+  .input-txt .input-box {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -521,36 +525,7 @@ body {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end; }
-    .form-group .input-txt .input-box input {
-      height: 40px;
-      margin-top: 8px;
-      font-size: 14px;
-      border: 1px solid #e4e7ed;
-      border-radius: 4px; }
-      .form-group .input-txt .input-box input::-webkit-input-placeholder {
-        color: #c0c4cc;
-        font-size: 14px; }
-      .form-group .input-txt .input-box input::-moz-placeholder {
-        color: #c0c4cc;
-        font-size: 14px; }
-      .form-group .input-txt .input-box input:-ms-input-placeholder {
-        color: #c0c4cc;
-        font-size: 14px; }
-      .form-group .input-txt .input-box input::-ms-input-placeholder {
-        color: #c0c4cc;
-        font-size: 14px; }
-      .form-group .input-txt .input-box input::placeholder {
-        color: #c0c4cc;
-        font-size: 14px; }
-      .form-group .input-txt .input-box input.mt-0 {
-        margin-top: 0; }
-      .form-group .input-txt .input-box input.h-56 {
-        height: 56px; }
-      .form-group .input-txt .input-box input.h-28 {
-        height: 28px; }
-      .form-group .input-txt .input-box input:disabled {
-        background: #f5f7fa; }
-    .form-group .input-txt .input-box .btn-lv01 {
+    .input-txt .input-box .btn-lv01 {
       min-width: 85px;
       height: 40px;
       margin-left: 8px;
@@ -558,73 +533,103 @@ body {
       border-radius: 4px;
       background: #e1e3e8;
       text-align: center; }
-      .form-group .input-txt .input-box .btn-lv01 .txt {
+      .input-txt .input-box .btn-lv01 .txt {
         font-size: 14px;
         color: #606266; }
-  .form-group .input-txt:not(:first-child) {
+  .input-txt input {
+    height: 40px;
+    margin-top: 8px;
+    padding-right: 6px;
+    font-size: 14px;
+    border: 1px solid #e4e7ed;
+    border-radius: 4px; }
+    .input-txt input::-webkit-input-placeholder {
+      color: #c0c4cc;
+      font-size: 14px; }
+    .input-txt input::-moz-placeholder {
+      color: #c0c4cc;
+      font-size: 14px; }
+    .input-txt input:-ms-input-placeholder {
+      color: #c0c4cc;
+      font-size: 14px; }
+    .input-txt input::-ms-input-placeholder {
+      color: #c0c4cc;
+      font-size: 14px; }
+    .input-txt input::placeholder {
+      color: #c0c4cc;
+      font-size: 14px; }
+    .input-txt input.mt-0 {
+      margin-top: 0; }
+    .input-txt input.h-56 {
+      height: 56px; }
+    .input-txt input.h-28 {
+      height: 28px; }
+    .input-txt input:disabled {
+      background: #f5f7fa; }
+  .input-txt:not(:first-child) {
     margin-top: 16px; }
-  .form-group .input-txt.form-success input {
+  .input-txt.form-success input {
     border-color: #28a745 !important; }
-  .form-group .input-txt.form-success .message {
+  .input-txt.form-success .message {
     color: #28a745 !important; }
-  .form-group .input-txt.form-error input {
+  .input-txt.form-error input {
     border-color: #dc3545 !important; }
-  .form-group .input-txt.form-error .message {
+  .input-txt.form-error .message {
     color: #dc3545 !important; }
 
-.form-group .selectbox.form-success select {
+.selectbox.form-success select {
   border-color: #28a745 !important; }
 
-.form-group .selectbox.form-success .message {
+.selectbox.form-success .message {
   color: #28a745 !important; }
 
-.form-group .selectbox.form-error select {
+.selectbox.form-error select {
   border-color: #dc3545 !important; }
 
-.form-group .selectbox.form-error .message {
+.selectbox.form-error .message {
   color: #dc3545 !important; }
 
-.form-group .selectbox:disabled {
+.selectbox:disabled {
   background: #f5f7fa; }
 
-.form-group .el-date-editor.el-input.form-success .el-input__inner {
+.el-date-editor.el-input.form-success .el-input__inner {
   border-color: #28a745 !important; }
 
-.form-group .el-date-editor.el-input.form-success .message {
+.el-date-editor.el-input.form-success .message {
   color: #28a745 !important; }
 
-.form-group .el-date-editor.el-input.form-error .el-input__inner {
+.el-date-editor.el-input.form-error .el-input__inner {
   border-color: #dc3545 !important; }
 
-.form-group .el-date-editor.el-input.form-error .message {
+.el-date-editor.el-input.form-error .message {
   color: #dc3545 !important; }
 
-.form-group .form-tit {
+.form-tit {
   padding-bottom: 16px;
   border-bottom: 1px solid #e4e7ed; }
-  .form-group .form-tit .tit {
+  .form-tit .tit {
     font-size: 16px;
     font-weight: 500;
     color: #303133; }
 
-.form-group .input-radio {
+.input-radio {
   margin-top: 19px; }
-  .form-group .input-radio .selectbox {
+  .input-radio .selectbox {
     margin-top: 15px; }
 
-.form-group .input-textarea.form-success textarea {
+.input-textarea.form-success textarea {
   border-color: #28a745 !important; }
 
-.form-group .input-textarea.form-success .message {
+.input-textarea.form-success .message {
   color: #28a745; }
 
-.form-group .input-textarea.form-error textarea {
+.input-textarea.form-error textarea {
   border-color: #dc3545 !important; }
 
-.form-group .input-textarea.form-error .message {
+.input-textarea.form-error .message {
   color: #dc3545; }
 
-.form-group .input-notice .point-txt {
+.input-notice .point-txt {
   display: block;
   margin-top: 16px;
   padding-left: 10px;
@@ -633,10 +638,6 @@ body {
   color: #2883c5;
   line-height: 1.5; }
 
-.form-group + .form-group {
-  margin-top: 32px; }
-
-/* 버튼 공통 */
 /* 버튼 - 개인으로 사용시 */
 button, a {
   text-align: center;
@@ -645,6 +646,8 @@ button, a {
     font-size: 14px;
     color: #606266;
     text-align: center; }
+  button.wid-56, a.wid-56 {
+    min-width: 56px; }
   button.wid-80, a.wid-80 {
     min-width: 80px; }
   button.wid-89, a.wid-89 {
@@ -730,6 +733,8 @@ button, a {
       color: #dc3545; }
   button.wid-full, a.wid-full {
     width: 100%; }
+  button.ml-8, a.ml-8 {
+    margin-left: 8px; }
 
 /* 버튼 - 그룹으로 사용시 */
 .btn-group {
@@ -865,7 +870,7 @@ section.content-wrap {
   white-space: nowrap; }
   section.content-wrap .inner {
     position: relative;
-    margin-top: 0;
+    margin: 0;
     min-width: 1420px;
     padding: 24px; }
     section.content-wrap .inner.mb-0 {
@@ -1164,7 +1169,7 @@ section.content-wrap {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 220px; }
+    min-width: 204px; }
     .search-form .search-list .type {
       font-size: 14px;
       font-weight: bold;
@@ -1175,34 +1180,57 @@ section.content-wrap {
         margin-left: 20px; }
       .search-form .search-list .type + .selectbox {
         margin-left: 20px; }
+      .search-form .search-list .type + .input-radio {
+        margin-left: 30px; }
+    .search-form .search-list .input-radio.type-border {
+      width: auto;
+      background: #fff; }
+      .search-form .search-list .input-radio.type-border label {
+        padding: 10px;
+        border: 1px solid #e4e7ed;
+        border-radius: 4px; }
+        .search-form .search-list .input-radio.type-border label::before {
+          left: 10px; }
+      .search-form .search-list .input-radio.type-border input:checked + label {
+        border: 1px solid #409eff; }
+        .search-form .search-list .input-radio.type-border input:checked + label::after {
+          left: 16px; }
+        .search-form .search-list .input-radio.type-border input:checked + label .txt {
+          color: #409eff; }
+      .search-form .search-list .input-radio.type-border .txt {
+        padding-left: 30px; }
+      .search-form .search-list .input-radio.type-border + .input-radio {
+        margin-left: 12px; }
     .search-form .search-list .selectbox {
       width: 150px; }
-    .search-form .search-list .input-txt {
-      padding-right: 6px; }
     .search-form .search-list + .search-list {
       margin-left: 30px; }
     .search-form .search-list.wid-445 {
       width: 445px; }
-  .search-form .input-txt input.wid-220 {
-    width: 220px; }
-  .search-form .input-txt input.wid-228 {
-    width: 228px; }
-  .search-form .input-txt + button {
-    margin-left: 16px; }
-  .search-form .input-txt + .input-txt {
-    margin-left: 16px; }
-  .search-form .input-txt + .selectbox {
-    margin-left: 16px; }
+  .search-form .input-txt {
+    margin-top: 0; }
+    .search-form .input-txt input {
+      margin-top: 0; }
+      .search-form .input-txt input.wid-220 {
+        width: 220px; }
+      .search-form .input-txt input.wid-228 {
+        width: 228px; }
+    .search-form .input-txt + button {
+      margin-left: 16px; }
+    .search-form .input-txt + .input-txt {
+      margin-left: 16px; }
+    .search-form .input-txt + .selectbox {
+      margin-left: 16px; }
   .search-form .selectbox {
     width: auto;
     overflow: initial;
     background: #fff; }
-    .search-form .selectbox select.wid-100 {
-      width: 100px; }
     .search-form .selectbox + .selectbox {
       margin-left: 16px; }
     .search-form .selectbox + button {
       margin-left: 16px; }
+    .search-form .selectbox.wid-100 {
+      width: 100px; }
   .search-form button {
     padding: 11px 10px;
     border: 1px solid #e4e7ed;
@@ -1234,169 +1262,207 @@ section.content-wrap {
 /* 확진자 등록 공통 */
 .register-form {
   position: relative; }
-  .register-form table.form-group th, .register-form table.form-group td {
-    padding: 5px 0;
-    font-size: 12px; }
-  .register-form table.form-group th {
-    height: 40px;
-    padding: 4px 0;
-    color: #333;
-    font-weight: normal; }
-  .register-form table.form-group .input-txt {
-    width: auto;
-    margin: 0;
-    /* 기본 input 139px */ }
-    .register-form table.form-group .input-txt label {
-      position: relative;
-      font-size: 12px; }
-      .register-form table.form-group .input-txt label.point::before {
-        content: "*";
-        position: absolute;
-        top: 0;
-        left: -8px;
-        display: block;
-        font-size: 12px;
-        color: #eb5757; }
-      .register-form table.form-group .input-txt label + input {
-        margin-left: 10px; }
-    .register-form table.form-group .input-txt input {
-      width: 139px;
-      height: 28px;
-      margin: 0 auto;
-      padding-left: 12px;
-      color: #606266;
-      font-size: 12px;
-      line-height: initial; }
-      .register-form table.form-group .input-txt input::-webkit-input-placeholder {
-        font-size: 12px; }
-      .register-form table.form-group .input-txt input::-moz-placeholder {
-        font-size: 12px; }
-      .register-form table.form-group .input-txt input:-ms-input-placeholder {
-        font-size: 12px; }
-      .register-form table.form-group .input-txt input::-ms-input-placeholder {
-        font-size: 12px; }
-      .register-form table.form-group .input-txt input::placeholder {
-        font-size: 12px; }
-      .register-form table.form-group .input-txt input.wid-26 {
-        width: 26px; }
-      .register-form table.form-group .input-txt input.wid-48 {
-        width: 48px; }
-      .register-form table.form-group .input-txt input.wid-55 {
-        width: 55px; }
-      .register-form table.form-group .input-txt input.wid-73 {
-        width: 73px; }
-      .register-form table.form-group .input-txt input.wid-98 {
-        width: 98px; }
-      .register-form table.form-group .input-txt input.wid-114 {
-        width: 114px; }
-      .register-form table.form-group .input-txt input.wid-149 {
-        width: 149px; }
-      .register-form table.form-group .input-txt input.wid-281 {
-        width: 281px; }
-      .register-form table.form-group .input-txt input.wid-345 {
-        width: 345px; }
-      .register-form table.form-group .input-txt input.wid-430 {
-        width: 430px; }
-      .register-form table.form-group .input-txt input.wid-771 {
-        width: 771px; }
-      .register-form table.form-group .input-txt input + .input-radio {
-        margin-left: 20px; }
-      .register-form table.form-group .input-txt input + .selectbox {
-        margin-left: 4px; }
-    .register-form table.form-group .input-txt .el-date-editor.el-input .el-input__inner {
-      height: 28px;
-      padding-left: 30px;
-      font-size: 12px;
-      line-height: initial; }
-    .register-form table.form-group .input-txt .el-date-editor.el-input .el-input__icon {
-      line-height: initial; }
-    .register-form table.form-group .input-txt .selectbox {
-      width: auto; }
-      .register-form table.form-group .input-txt .selectbox select {
-        width: 139px;
-        height: 28px;
-        margin: 0 auto;
-        padding-left: 12px;
-        font-size: 12px;
-        line-height: initial; }
-        .register-form table.form-group .input-txt .selectbox select.wid-80 {
-          width: 80px; }
-        .register-form table.form-group .input-txt .selectbox select.wid-281 {
-          width: 281px; }
-      .register-form table.form-group .input-txt .selectbox + input {
-        margin-left: 10px; }
-      .register-form table.form-group .input-txt .selectbox + .selectbox {
-        margin-left: 4px; }
-    .register-form table.form-group .input-txt button {
-      width: 225px; }
-      .register-form table.form-group .input-txt button .txt {
-        color: #2f80ed; }
-      .register-form table.form-group .input-txt button.btn-data {
-        width: 51px;
-        padding: 5px 0 4px;
-        border: 1px solid #e4e7ed; }
-        .register-form table.form-group .input-txt button.btn-data .txt {
-          font-size: 12px;
-          color: #606266; }
-        .register-form table.form-group .input-txt button.btn-data + .btn-data {
-          margin-left: 10px; }
-        .register-form table.form-group .input-txt button.btn-data + input {
-          margin-left: 10px; }
-    .register-form table.form-group .input-txt .input-radio {
-      margin-top: 0; }
-      .register-form table.form-group .input-txt .input-radio .txt {
-        font-size: 12px;
-        color: #333; }
-      .register-form table.form-group .input-txt .input-radio + .input-radio {
-        margin-left: 10px; }
-      .register-form table.form-group .input-txt .input-radio + input {
-        margin-left: 10px; }
-      .register-form table.form-group .input-txt .input-radio + .selectbox {
-        margin-left: 10px; }
-      .register-form table.form-group .input-txt .input-radio + .input-checkbox {
-        margin-left: 20px; }
-    .register-form table.form-group .input-txt .input-checkbox + .input-checkbox {
-      margin-left: 20px; }
-    .register-form table.form-group .input-txt .input-checkbox + input {
-      margin-left: 10px; }
-    .register-form table.form-group .input-txt + .input-txt {
-      margin-left: 21px; }
-  .register-form table.form-group .input-box {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .register-form table.form-group .input-box .wave {
-      margin: 0 7px; }
-    .register-form table.form-group .input-box .tem {
-      margin-left: 4px;
-      color: #333; }
-    .register-form table.form-group .input-box .type {
-      margin: 0 12px;
-      color: #333; }
-    .register-form table.form-group .input-box .mr-0 {
-      margin-right: 0; }
-  .register-form table.form-group .point {
-    position: relative; }
-    .register-form table.form-group .point::before {
-      content: "*";
-      position: absolute;
-      top: 0;
-      left: -8px;
-      display: block;
-      font-size: 12px;
-      color: #eb5757; }
   .register-form .btn-group {
     position: absolute;
     top: -44px;
     right: 0;
     margin-top: 0; }
+  .register-form .input-txt {
+    width: auto;
+    margin: 0;
+    border: none;
+    /* 기본 input 139px */ }
+    .register-form .input-txt label {
+      position: relative;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 12px; }
+      .register-form .input-txt label.point {
+        padding-left: 8px; }
+        .register-form .input-txt label.point::before {
+          content: "*";
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          font-size: 12px;
+          color: #eb5757; }
+    .register-form .input-txt .input-box {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .register-form .input-txt .input-box .wave {
+        margin: 0 7px; }
+      .register-form .input-txt .input-box .tem {
+        margin-left: 4px;
+        color: #333; }
+      .register-form .input-txt .input-box .type {
+        margin: 0 12px;
+        color: #333; }
+      .register-form .input-txt .input-box .mr-0 {
+        margin-right: 0; }
+    .register-form .input-txt input {
+      width: 139px;
+      height: 40px;
+      margin: 0 auto;
+      padding-left: 12px;
+      color: #606266;
+      font-size: 12px;
+      border: 1px solid #e4e7ed;
+      line-height: initial; }
+      .register-form .input-txt input::-webkit-input-placeholder {
+        font-size: 12px; }
+      .register-form .input-txt input::-moz-placeholder {
+        font-size: 12px; }
+      .register-form .input-txt input:-ms-input-placeholder {
+        font-size: 12px; }
+      .register-form .input-txt input::-ms-input-placeholder {
+        font-size: 12px; }
+      .register-form .input-txt input::placeholder {
+        font-size: 12px; }
+      .register-form .input-txt input.wid-26 {
+        width: 26px; }
+      .register-form .input-txt input.wid-40 {
+        width: 40px; }
+      .register-form .input-txt input.wid-48 {
+        width: 48px; }
+      .register-form .input-txt input.wid-55 {
+        width: 55px; }
+      .register-form .input-txt input.wid-73 {
+        width: 73px; }
+      .register-form .input-txt input.wid-98 {
+        width: 98px; }
+      .register-form .input-txt input.wid-114 {
+        width: 114px; }
+      .register-form .input-txt input.wid-149 {
+        width: 149px; }
+      .register-form .input-txt input.wid-164 {
+        width: 164px; }
+      .register-form .input-txt input.wid-200 {
+        width: 200px; }
+      .register-form .input-txt input.wid-225 {
+        width: 225px; }
+      .register-form .input-txt input.wid-245 {
+        width: 245px; }
+      .register-form .input-txt input.wid-274 {
+        width: 274px; }
+      .register-form .input-txt input.wid-281 {
+        width: 281px; }
+      .register-form .input-txt input.wid-300 {
+        width: 300px; }
+      .register-form .input-txt input.wid-345 {
+        width: 345px; }
+      .register-form .input-txt input.wid-430 {
+        width: 430px; }
+      .register-form .input-txt input.wid-771 {
+        width: 771px; }
+      .register-form .input-txt input + .input-radio {
+        margin-left: 20px; }
+      .register-form .input-txt input + .selectbox {
+        margin-left: 4px; }
+    .register-form .input-txt .el-date-editor.el-input .el-input__inner {
+      height: 28px;
+      padding-left: 30px;
+      font-size: 12px;
+      line-height: initial; }
+    .register-form .input-txt .el-date-editor.el-input .el-input__icon {
+      line-height: initial; }
+    .register-form .input-txt .el-date-editor.el-input + .selectbox {
+      margin-left: 8px; }
+    .register-form .input-txt .selectbox {
+      width: auto; }
+      .register-form .input-txt .selectbox select {
+        width: 139px;
+        height: 40px;
+        margin: 0 auto;
+        padding-left: 12px;
+        font-size: 12px;
+        line-height: initial; }
+        .register-form .input-txt .selectbox select.wid-63 {
+          width: 63px; }
+        .register-form .input-txt .selectbox select.wid-80 {
+          width: 80px; }
+        .register-form .input-txt .selectbox select.wid-110 {
+          width: 110px; }
+        .register-form .input-txt .selectbox select.wid-152 {
+          width: 152px; }
+        .register-form .input-txt .selectbox select.wid-188 {
+          width: 188px; }
+        .register-form .input-txt .selectbox select.wid-218 {
+          width: 218px; }
+        .register-form .input-txt .selectbox select.wid-281 {
+          width: 281px; }
+        .register-form .input-txt .selectbox select.wid-488 {
+          width: 488px; }
+      .register-form .input-txt .selectbox + input {
+        margin-left: 10px; }
+      .register-form .input-txt .selectbox + .selectbox {
+        margin-left: 8px; }
+    .register-form .input-txt button {
+      width: 225px; }
+      .register-form .input-txt button .txt {
+        color: #2f80ed; }
+      .register-form .input-txt button.btn-data {
+        width: 51px;
+        padding: 5px 0 4px;
+        border: 1px solid #e4e7ed; }
+        .register-form .input-txt button.btn-data .txt {
+          font-size: 12px;
+          color: #606266; }
+        .register-form .input-txt button.btn-data + .btn-data {
+          margin-left: 10px; }
+        .register-form .input-txt button.btn-data + input {
+          margin-left: 10px; }
+    .register-form .input-txt .input-radio {
+      margin-top: 0; }
+      .register-form .input-txt .input-radio .txt {
+        font-size: 12px;
+        color: #333; }
+      .register-form .input-txt .input-radio + .input-radio {
+        margin-left: 10px; }
+      .register-form .input-txt .input-radio + input {
+        margin-left: 10px; }
+      .register-form .input-txt .input-radio + .selectbox {
+        margin-left: 10px; }
+      .register-form .input-txt .input-radio + .input-checkbox {
+        margin-left: 20px; }
+    .register-form .input-txt .input-checkbox + .input-checkbox {
+      margin-left: 20px; }
+    .register-form .input-txt .input-checkbox + input {
+      margin-left: 10px; }
+    .register-form .input-txt .input-textarea textarea {
+      margin-top: 0; }
+      .register-form .input-txt .input-textarea textarea.wid-648 {
+        width: 648px; }
+    .register-form .input-txt .input-textarea + .input-textarea {
+      margin-left: 24px; }
+    .register-form .input-txt + .input-txt {
+      margin-left: 24px; }
   .register-form:not(:first-child) {
     margin-top: 12px; }
+  .register-form.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .register-form.flex.flex-l {
+      -webkit-box-pack: left;
+      -webkit-justify-content: left;
+          -ms-flex-pack: left;
+              justify-content: left; }
+  .register-form.mt-23 {
+    margin-top: 23px; }
   .register-form.mt-32 {
     margin-top: 32px; }
   .register-form.mt-48 {
     margin-top: 48px; }
+  .register-form.mt-50 {
+    margin-top: 50px; }
   .register-form.wid-302 {
     width: 302px; }
   .register-form.wid-448 {
@@ -1434,6 +1500,17 @@ section.content-wrap {
       width: 220px; }
     .el-date-editor.el-input .el-input__inner.wid-228 {
       width: 228px; }
+  .el-date-editor.el-input .el-icon-date::before {
+    content: "" !important;
+    width: 14px;
+    height: 100%;
+    right: 10px;
+    top: 0;
+    background-image: url("../images/common/ico_calendar.png");
+    display: inline-block;
+    background-size: 14px auto;
+    background-repeat: no-repeat;
+    background-position: center center; }
   .el-date-editor.el-input + .el-date-editor.el-input {
     margin-left: 16px; }
   .el-date-editor.el-input + .selectbox {

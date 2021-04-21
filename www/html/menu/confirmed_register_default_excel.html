@@ -1,0 +1,2163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>프로젝트타이틀</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link href="../../css_partials/font.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/reset.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/element.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/public.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/contents.css" type="text/css" rel="stylesheet">
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/iscroll.js"></script>
+  <script src="../../js/common.js" defer></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+  <div id="wrap">
+    <!-- s: header include-->
+    <!--#include virtual="/html/include/header.html" -->
+    <!-- e: header include-->
+    <div id="container">
+      <div id="content" role="main">
+        <div class="page_wrap page_layout">
+          <section class="pgmid_zone">
+            <div class="pgright_wrap">
+              <div class="inner">
+                <h2 class="tit">확진자 목록</h2>
+                <section class="content-wrap shadow-n">
+                  <div class="inner">
+                    <div class="btn-group type-tr">
+                      <button class="border-blue" type="button">
+                        <span class="txt">확진자 정보</span>
+                      </button>
+                      <button class="border-blue" type="button">
+                        <span class="txt">심층역학조사서</span>
+                      </button>
+                    </div>
+                    <div class="register-form wid-550">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>연번</th>
+                              <th>자치구</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="숫자 입력">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="selectbox">
+                                    <select title="">
+                                      <option value="">선택해주세요.</option>
+                                      <option value="">선택</option>
+                                      <option value="">선택</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th class="border02-b" colspan="7">동선장소 </th>
+                            </tr>
+                            <tr>
+                              <th class="border02-b" rowspan="2">관할시도</th>
+                              <th class="border02-b" rowspan="2">조사보건소</th>
+                              <th class="border02-b" rowspan="2">조사자성명</th>
+                              <th class="border02-b" colspan="2">연락처</th>
+                              <th class="border02-b" rowspan="2">조사일</th>
+                              <th class="border02-b" rowspan="2">신고기관</th>
+                            </tr>
+                            <tr>
+                              <th>사무실</th>
+                              <th>핸드폰</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <button class="btn-data">
+                                      <span class="txt">오늘</span>
+                                    </button>
+                                    <button class="btn-data">
+                                      <span class="txt">전날</span>
+                                    </button>
+                                    <input class="wid-149" placeholder="숫자 입력">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio1" name="radio1">
+                                      <label for="radio1">
+                                        <span class="txt">보건소</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio2" name="radio2">
+                                      <label for="radio2">
+                                        <span class="txt">의료기관</span>
+                                      </label>
+                                    </div>
+                                    <input class="wid-149" placeholder="숫자 입력">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-998">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>확진번호</th>
+                              <th>검사기관</th>
+                              <th>격리종류 및 장소</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="숫자 입력">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="숫자 입력">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio3" name="radio3">
+                                      <label for="radio3">
+                                        <span class="txt">자가</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio4" name="radio4">
+                                      <label for="radio4">
+                                        <span class="txt">시설</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio5" name="radio5">
+                                      <label for="radio5">
+                                        <span class="txt">병원</span>
+                                      </label>
+                                    </div>
+                                    <input placeholder="장소명 입력">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-tit">
+                      <span class="tit">인적사항</span>
+                    </div>
+                    <div class="register-form wid-998">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <colgroup>
+                            <col width="25%">
+                            <col width="auto">
+                            <col width="25%">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>
+                                <span>성명</span>
+                              </th>
+                              <th>
+                                <span class="point">주민등록번호</span>
+                              </th>
+                              <th>
+                                <span>성별</span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio6" name="radio6">
+                                      <label for="radio6">
+                                        <span class="txt">여권번호</span>
+                                      </label>
+                                    </div>
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio7" name="radio7">
+                                      <label for="radio7">
+                                        <span class="txt">남성</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio8" name="radio8">
+                                      <label for="radio8">
+                                        <span class="txt">여성</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-1187">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>환자 연락처</th>
+                              <th>보호자 연락처</th>
+                              <th>직업</th>
+                              <th>의료기관종사자</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="숫자 입력">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="숫자 입력">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input class="wid-345" placeholder="직작명, 학교명, 의료기관명 등">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio7" name="radio7">
+                                      <label for="radio7">
+                                        <span class="txt">해당없음</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio8" name="radio8">
+                                      <label for="radio8">
+                                        <span class="txt">없음</span>
+                                      </label>
+                                    </div>
+                                    <div class="selectbox">
+                                      <select title="">
+                                        <option value="">선택해주세요.</option>
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                      </select>
+                                    </div>
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-810">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>등록장애인여부</th>
+                              <th>장애유형</th>
+                              <th>장애정도</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio9" name="radio9">
+                                      <label for="radio9">
+                                        <span class="txt">예</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio10" name="radio10">
+                                      <label for="radio10">
+                                        <span class="txt">아니오</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="selectbox">
+                                      <select title="">
+                                        <option value="">선택해주세요.</option>
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                      </select>
+                                    </div>
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio11" name="radio11">
+                                      <label for="radio11">
+                                        <span class="txt">중증</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio12" name="radio12">
+                                      <label for="radio12">
+                                        <span class="txt">경증</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-tit">
+                      <span class="tit">증상 및 기저질환</span>
+                    </div>
+                    <div class="register-form wid-550">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>증상 유무</th>
+                              <th>증상발현일</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio113" name="radio13">
+                                      <label for="radio11">
+                                        <span class="txt">예</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio14" name="radio14">
+                                      <label for="radio14">
+                                        <span class="txt">아니오</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="숫자 입력">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-860">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <colspan>
+                            <col width="30%">
+                            <col width="auto">
+                          </colspan>
+                          <thead>
+                            <tr>
+                              <th class="border02-b" colspan="2">최초증상</th>
+                            </tr>
+                            <tr>
+                              <th>
+                                <div class="input-checkbox right">
+                                  <input type="checkbox" id="check1" name="check1">
+                                  <label for="check1">
+                                    <span class="txt">발열</span>
+                                  </label>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="input-checkbox right">
+                                  <input type="checkbox" id="check2" name="check2">
+                                  <label for="check2">
+                                    <span class="txt">호흡기 증상 외</span>
+                                  </label>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio15" name="radio15">
+                                      <label for="radio15">
+                                        <span class="txt">아니오</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio16" name="radio16">
+                                      <label for="radio16">
+                                        <span class="txt">아니오</span>
+                                      </label>
+                                    </div>
+                                    <input class="wid-48">
+                                    <span class="tem">°C</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio17" name="radio17">
+                                      <label for="radio17">
+                                        <span class="txt">있음</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio18" name="radio18">
+                                      <label for="radio18">
+                                        <span class="txt">없음</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check3" name="check3">
+                                      <label for="check3">
+                                        <span class="txt">근육통</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check4" name="check4">
+                                      <label for="check4">
+                                        <span class="txt">두통</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check5" name="check5">
+                                      <label for="check5">
+                                        <span class="txt">오한</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check6" name="check6">
+                                      <label for="check6">
+                                        <span class="txt">미각손실</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check7" name="check7">
+                                      <label for="check7">
+                                        <span class="txt">호각손실</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check8" name="check8">
+                                      <label for="check8">
+                                        <span class="txt">기타</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-860">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>
+                                <div class="input-checkbox right">
+                                  <input type="checkbox" id="check9" name="check9">
+                                  <label for="check9">
+                                    <span class="txt">호흡기 증상</span>
+                                  </label>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="input-checkbox right">
+                                  <input type="checkbox" id="check10" name="check10">
+                                  <label for="check10">
+                                    <span class="txt">폐렴</span>
+                                  </label>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio19" name="radio19">
+                                      <label for="radio19">
+                                        <span class="txt">있음</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio20" name="radio20">
+                                      <label for="radio20">
+                                        <span class="txt">없음</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check11" name="check11">
+                                      <label for="check11">
+                                        <span class="txt">기침</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check12" name="check12">
+                                      <label for="check12">
+                                        <span class="txt">가래</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check13" name="check13">
+                                      <label for="check13">
+                                        <span class="txt">인후통</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check14" name="check14">
+                                      <label for="check14">
+                                        <span class="txt">호흡곤란</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio21" name="radio21">
+                                      <label for="radio21">
+                                        <span class="txt">있음</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio22" name="radio22">
+                                      <label for="radio22">
+                                        <span class="txt">없음</span>
+                                      </label>
+                                    </div>
+                                    <span class="type">흉부영상확인여부(CT/X-ray)</span>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio23" name="radio23">
+                                      <label for="radio23">
+                                        <span class="txt">예</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio24" name="radio24">
+                                      <label for="radio24">
+                                        <span class="txt">아니오</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-602">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>기저질환</th>
+                              <th>임신여부</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio25" name="radio25">
+                                      <label for="radio25">
+                                        <span class="txt">있음</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio26" name="radio26">
+                                      <label for="radio26">
+                                        <span class="txt">없음</span>
+                                      </label>
+                                    </div>
+                                    <input placeholder="기거질환명">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio27" name="radio27">
+                                      <label for="radio27">
+                                        <span class="txt">네</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio28" name="radio28">
+                                      <label for="radio28">
+                                        <span class="txt">아니오</span>
+                                      </label>
+                                    </div>
+                                    <input class="wid-55">
+                                    <span class="type">주</span>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-860">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>검사현황치료상태(확진당시)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check15" name="check15">
+                                      <label for="check15">
+                                        <span class="txt">일반치료</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check16" name="check16">
+                                      <label for="check16">
+                                        <span class="txt">산소치료(비강캐뉼라, 마스크)</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check17" name="check17">
+                                      <label for="check17">
+                                        <span class="txt">인공호흡</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check18" name="check18">
+                                      <label for="check18">
+                                        <span class="txt">ECMO</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check19" name="check19">
+                                      <label for="check19">
+                                        <span class="txt">사망</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check20" name="check20">
+                                      <label for="check20">
+                                        <span class="txt">조사중</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check21" name="check21">
+                                      <label for="check21">
+                                        <span class="txt">기타</span>
+                                      </label>
+                                    </div>
+                                    <input placeholder="기타 내용 입력">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-302">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>흡연여부</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio29" name="radio29">
+                                      <label for="radio29">
+                                        <span class="txt">햔재흡연</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio30" name="radio30">
+                                      <label for="radio30">
+                                        <span class="txt">과거흡연</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio31" name="radio31">
+                                      <label for="radio31">
+                                        <span class="txt">비흡연</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-860">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>검사현황치료상태(확진당시)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="">실험기관 </label>
+                                    <input class="wid-98">
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="">RdRp gene</label>
+                                    <input class="wid-98">
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="">E gene</label>
+                                    <input class="wid-98">
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="">N gene</label>
+                                    <input class="wid-98">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-860">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>검사경위</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio32" name="radio32">
+                                      <label for="radio32">
+                                        <span class="txt">본인이 판단</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio33" name="radio33">
+                                      <label for="radio33">
+                                        <span class="txt">의사의 소견 및 권장</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio34" name="radio34">
+                                      <label for="radio34">
+                                        <span class="txt">해외방문력</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio35" name="radio35">
+                                      <label for="radio35">
+                                        <span class="txt">집단발생과 역학적 연관성</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio36" name="radio36">
+                                      <label for="radio36">
+                                        <span class="txt">가족 또는 지인이 확진환자</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-tit">
+                      <span class="tit">증상 및 기저질환</span>
+                      <span class="sub-tit">*최초 증상 발병일 14일 전부터 현재까지, ☐표시 또는 기재</span>
+                    </div>
+                    <div class="register-form wid-1125">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>해외방문(체류국가)</th>
+                              <th>국가명</th>
+                              <th>입국일</th>
+                              <th>확진자 접촉</th>
+                              <th>최종접촉일</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio37" name="radio37">
+                                      <label for="radio37">
+                                        <span class="txt">무</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio38" name="radio38">
+                                      <label for="radio38">
+                                        <span class="txt">유</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="selectbox">
+                                    <select title="">
+                                      <option value="">선택해주세요.</option>
+                                      <option value="">선택</option>
+                                      <option value="">선택</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input type="text" placeholder="날짜 입력">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio39" name="radio39">
+                                      <label for="radio39">
+                                        <span class="txt">무</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio40" name="radio40">
+                                      <label for="radio40">
+                                        <span class="txt">유</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input type="text" placeholder="날짜 입력">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check22" name="check22">
+                                      <label for="check22">
+                                        <span class="txt">가족(동거인) 접촉자</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="align-l" colspan="4">
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label class="point" for="name">이름</label>
+                                    <input class="wid-98" type="text" id="name">
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label class="point" for="num">확진자 번호</label>
+                                    <input class="wid-98" type="text" id="num">
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label class="point" for="relation">관계</label>
+                                    <input class="wid-98" type="text" id="relation">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check23" name="check23">
+                                      <label for="check23">
+                                        <span class="txt">가족(동거인) 이외 접촉자</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="align-l" colspan="4">
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label class="point" for="name">이름</label>
+                                    <input class="wid-98" type="text" id="name">
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label class="point" for="num">확진자 번호</label>
+                                    <input class="wid-98" type="text" id="num">
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label class="point" for="relation">관계</label>
+                                    <input class="wid-98" type="text" id="relation">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-1125">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>집단발병관리</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio41" name="radio41">
+                                      <label for="radio41">
+                                        <span class="txt">무</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio41" name="radio41">
+                                      <label for="radio41">
+                                        <span class="txt">유</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-checkbox right">
+                                      <input type="checkbox" id="check24" name="check24">
+                                      <label for="check24">
+                                        <span class="txt">가족(동거인)</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="label1">의료기관</label>
+                                    <input class="wid-98" type="text" id="label1">
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="label2">종교기관</label>
+                                    <input class="wid-98" type="text" id="label2">
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="label3">요양/정신시설</label>
+                                    <input class="wid-98" type="text" id="label3">
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="label4">학교</label>
+                                    <input class="wid-98" type="text" id="label4">
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="label5">기타</label>
+                                    <input class="wid-98" type="text" id="label5">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-form wid-860">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>기타</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input class="wid-771" type="text">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-tit">
+                      <span class="tit">선행확진자</span>
+                      <span class="sub-tit">*시도/권역 확인 (우선순위 순으로 기재)</span>
+                    </div>
+                    <div class="register-form wid-1165">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <colgroup>
+                            <col width="5%">
+                            <col width="auto">
+                            <col width="auto">
+                            <col width="auto">
+                            <col width="auto">
+                            <col width="auto">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>NO</th>
+                              <th>확진자번호</th>
+                              <th>이름</th>
+                              <th>관계</th>
+                              <th>노출장소</th>
+                              <th>최초노출일</th>
+                              <th>최종노출일</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="지도 선택">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="날짜 입력">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="날짜 입력">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="지도 선택">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="날짜 입력">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="날짜 입력">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="지도 선택">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="날짜 입력">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input placeholder="날짜 입력">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-tit">
+                      <span class="tit">집단시설 이용력</span>
+                      <span class="sub-tit">*의료 기관, 시설 등 / 최초 증상 발병일 14일 전부터 현재까지, ☐표시 또는 기재</span>
+                    </div>
+                    <div class="register-form wid-900">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>집단시설 이용력</th>
+                              <th>기관 / 시설명</th>
+                              <th>
+                                <div class="input-checkbox right">
+                                  <input type="checkbox" id="check25" name="check25">
+                                  <label for="check25">
+                                    <span class="txt">입소(입원) 중</span>
+                                  </label>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="input-checkbox right">
+                                  <input type="checkbox" id="check26" name="check26">
+                                  <label for="check26">
+                                    <span class="txt">입소(입원) 중</span>
+                                  </label>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio41" name="radio41">
+                                      <label for="radio41">
+                                        <span class="txt">유</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio41" name="radio41">
+                                      <label for="radio41">
+                                        <span class="txt">유</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input type="text">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="label7">입소일 </label>
+                                    <input type="text" placeholder="날짜 입력" id="label7">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="label8">퇴원일</label>
+                                    <input type="text" placeholder="날짜 입력" id="label8">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-tit">
+                      <span class="tit">가족(동거인) 및 집단시설 접촉자</span>
+                      <span class="sub-tit">*최초 증상 발병일 2일 전부터 현재까지 접촉한 가족 및 집단시설 접촉자 / ☐표시 또는 기재</span>
+                    </div>
+                    <div class="register-form wid-998">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>가족(동거인) 접촉자</th>
+                              <th>시설 접촉자</th>
+                              <th>의료기관 접촉자</th>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio43" name="radio43">
+                                      <label for="radio43">
+                                        <span class="txt">유</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio44" name="radio44">
+                                      <label for="radio44">
+                                        <span class="txt">유</span>
+                                      </label>
+                                    </div>
+                                    <input class="wid-48" type="text">
+                                    <span class="type">명</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio45" name="radio45">
+                                      <label for="radio45">
+                                        <span class="txt">무</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio46" name="radio46">
+                                      <label for="radio46">
+                                        <span class="txt">유</span>
+                                      </label>
+                                    </div>
+                                    <input class="wid-48" type="text">
+                                    <span class="tem">명</span>
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="label8">시설명</label>
+                                    <input class="wid-98" type="text" id="label8">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio47" name="radio47">
+                                      <label for="radio47">
+                                        <span class="txt">무</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio48" name="radio48">
+                                      <label for="radio48">
+                                        <span class="txt">유</span>
+                                      </label>
+                                    </div>
+                                    <input class="wid-48" type="text">
+                                    <span class="tem">명</span>
+                                  </div>
+                                </div>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <label for="label9">의료기관명</label>
+                                    <input class="wid-98" type="text" id="label9">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </thead>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="register-tit">
+                      <span class="tit">사례분류 결과</span>
+                      <span class="sub-tit">*시도/권역 확인</span>
+                    </div>
+                    <div class="register-form wid-1165">
+                      <div class="tbl-container01">
+                        <table class="tbl-col01 form-group">
+                          <caption>공시자료: 번호,보고서명,등록일</caption>
+                          <thead>
+                            <tr>
+                              <th>대분류</th>
+                              <th>중분류</th>
+                              <th>참고사항</th>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio49" name="radio49">
+                                      <label for="radio49">
+                                        <span class="txt">해외유입</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio50" name="radio50">
+                                      <label for="radio50">
+                                        <span class="txt">해외유입관련</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio51" name="radio51">
+                                      <label for="radio51">
+                                        <span class="txt">요양</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio52" name="radio52">
+                                      <label for="radio52">
+                                        <span class="txt">기타 집단</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio53" name="radio53">
+                                      <label for="radio53">
+                                        <span class="txt">확진자접촉</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-radio right">
+                                      <input type="radio" id="radio54" name="radio54">
+                                      <label for="radio54">
+                                        <span class="txt">미분류</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input class="wid-281" type="text">
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-txt">
+                                  <div class="input-box">
+                                    <input class="wid-281" type="text">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </thead>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="btn-group">
+                      <button class="border-blue wid-66">
+                        <span class="txt">취소</span>
+                      </button>
+                      <button class="color-blue wid-66" type="submit">
+                        <span class="txt">등록</span>
+                      </button>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- 확진자 정보 검색 팝업-->
+        <div class="dimlayer_z" id="srdTarget01">
+          <div class="dimlayer_tb">
+            <div class="dimlayer_td">
+              <!-- layer_box-->
+              <div class="layer_box wid-1330">
+                <div class="layer_tit_low">
+                  <h2 class="layer_tit">확진자 정보 검색</h2>
+                </div>
+                <div class="layer_cont">
+                  <div class="layer_cont_in pt-20">
+                    <div class="search-form">
+                      <div class="search-type">
+                        <div class="input-radio right">
+                          <input type="radio" id="radio211" name="radio211">
+                          <label for="radio211">
+                            <span class="txt">조건 검색</span>
+                          </label>
+                        </div>
+                        <div class="search-list">
+                          <span class="type">자치구</span>
+                          <div class="selectbox">
+                            <select title="">
+                              <option value="">선택해주세요.</option>
+                              <option value="">선택</option>
+                              <option value="">선택</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="search-list wid-445">
+                          <span class="type">확진일자</span>
+                          <button class="btn-data wid-66">
+                            <div class="txt">오늘</div>
+                          </button>
+                          <button class="btn-data wid-66">
+                            <div class="txt">전날</div>
+                          </button>
+                          <div class="input-txt">
+                            <input type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="search-type">
+                        <div class="input-radio right">
+                          <input type="radio" id="radio212" name="radio212">
+                          <label for="radio212">
+                            <span class="txt">확진자 번호로 검색</span>
+                          </label>
+                        </div>
+                        <div class="search-list">
+                          <div class="input-txt">
+                            <input type="text" placeholder="숫자만 입력">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="search-type">
+                        <div class="input-radio right">
+                          <input type="radio" id="radio213" name="radio213">
+                          <label for="radio213">
+                            <span class="txt">키워드 검색</span>
+                          </label>
+                        </div>
+                        <div class="search-list">
+                          <div class="input-txt">
+                            <input type="text" placeholder="검색어 입력">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn-group type-r">
+                        <button class="color-blue wid-77">
+                          <span class="txt">검색</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="search-tit">
+                      <span class="tit">검색결과 총 <span class="num">12,345 </span>건</span>
+                    </div>
+                    <div class="tbl-container01">
+                      <table class="tbl-col01">
+                        <caption>공시자료: 번호,보고서명,등록일</caption>
+                        <colgroup>
+                          <col width="5%">
+                          <col width="9%">
+                          <col width="9%">
+                          <col width="9%">
+                          <col width="9%">
+                          <col width="9%">
+                          <col width="9%">
+                          <col width="9%">
+                          <col width="9%">
+                          <col width="auto">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>선택</th>
+                            <th>연번</th>
+                            <th>확진일</th>
+                            <th>확진번호</th>
+                            <th>이름</th>
+                            <th>성별(출생년)</th>
+                            <th>국적</th>
+                            <th>거주지</th>
+                            <th>직업</th>
+                            <th>직장명(학교명)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="input-radio">
+                                <input type="radio" id="radio214" name="radio214">
+                                <label for="radio214"></label>
+                              </div>
+                            </td>
+                            <td>28820</td>
+                            <td>2021. 3. 4</td>
+                            <td>91588</td>
+                            <td>홍길동</td>
+                            <td>041025-2</td>
+                            <td>한국</td>
+                            <td>영등포구</td>
+                            <td>한국</td>
+                            <td class="align-l">숭의여고</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-radio">
+                                <input type="radio" id="radio215" name="radio215">
+                                <label for="radio215"></label>
+                              </div>
+                            </td>
+                            <td>28820</td>
+                            <td>2021. 3. 4</td>
+                            <td>91588</td>
+                            <td>홍길동</td>
+                            <td>041025-2</td>
+                            <td>한국</td>
+                            <td>영등포구</td>
+                            <td>한국</td>
+                            <td class="align-l">숭의여고</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-radio">
+                                <input type="radio" id="radio216" name="radio216">
+                                <label for="radio216"></label>
+                              </div>
+                            </td>
+                            <td>28820</td>
+                            <td>2021. 3. 4</td>
+                            <td>91588</td>
+                            <td>홍길동</td>
+                            <td>041025-2</td>
+                            <td>한국</td>
+                            <td>영등포구</td>
+                            <td>한국</td>
+                            <td class="align-l">숭의여고</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-radio">
+                                <input type="radio" id="radio217" name="radio217">
+                                <label for="radio217"></label>
+                              </div>
+                            </td>
+                            <td>28820</td>
+                            <td>2021. 3. 4</td>
+                            <td>91588</td>
+                            <td>홍길동</td>
+                            <td>041025-2</td>
+                            <td>한국</td>
+                            <td>영등포구</td>
+                            <td>한국</td>
+                            <td class="align-l">숭의여고</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-radio">
+                                <input type="radio" id="radio218" name="radio218">
+                                <label for="radio218"></label>
+                              </div>
+                            </td>
+                            <td>28820</td>
+                            <td>2021. 3. 4</td>
+                            <td>91588</td>
+                            <td>홍길동</td>
+                            <td>041025-2</td>
+                            <td>한국</td>
+                            <td>영등포구</td>
+                            <td>한국</td>
+                            <td class="align-l">숭의여고</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-radio">
+                                <input type="radio" id="radio219" name="radio219">
+                                <label for="radio219"></label>
+                              </div>
+                            </td>
+                            <td>28820</td>
+                            <td>2021. 3. 4</td>
+                            <td>91588</td>
+                            <td>홍길동</td>
+                            <td>041025-2</td>
+                            <td>한국</td>
+                            <td>영등포구</td>
+                            <td>한국</td>
+                            <td class="align-l">숭의여고</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-radio">
+                                <input type="radio" id="radio220" name="radio220">
+                                <label for="radio220"></label>
+                              </div>
+                            </td>
+                            <td>28820</td>
+                            <td>2021. 3. 4</td>
+                            <td>91588</td>
+                            <td>홍길동</td>
+                            <td>041025-2</td>
+                            <td>한국</td>
+                            <td>영등포구</td>
+                            <td>한국</td>
+                            <td class="align-l">숭의여고</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-radio">
+                                <input type="radio" id="radio221" name="radio221">
+                                <label for="radio221"></label>
+                              </div>
+                            </td>
+                            <td>28820</td>
+                            <td>2021. 3. 4</td>
+                            <td>91588</td>
+                            <td>홍길동</td>
+                            <td>041025-2</td>
+                            <td>한국</td>
+                            <td>영등포구</td>
+                            <td>한국</td>
+                            <td class="align-l">숭의여고</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-radio">
+                                <input type="radio" id="radio222" name="radio222">
+                                <label for="radio222"></label>
+                              </div>
+                            </td>
+                            <td>28820</td>
+                            <td>2021. 3. 4</td>
+                            <td>91588</td>
+                            <td>홍길동</td>
+                            <td>041025-2</td>
+                            <td>한국</td>
+                            <td>영등포구</td>
+                            <td>한국</td>
+                            <td class="align-l">숭의여고</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-radio">
+                                <input type="radio" id="radio223" name="radio223">
+                                <label for="radio223"></label>
+                              </div>
+                            </td>
+                            <td>28820</td>
+                            <td>2021. 3. 4</td>
+                            <td>91588</td>
+                            <td>홍길동</td>
+                            <td>041025-2</td>
+                            <td>한국</td>
+                            <td>영등포구</td>
+                            <td>한국</td>
+                            <td class="align-l">숭의여고</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="page-nav-container">
+                  <div class="page-nav">
+                    <div class="page-util prev">
+                      <a class="page-link" href="#none" role="button">
+                        <span class="hide-txt">이전 페이지</span>
+                        <span class="ico-area" aria-hidden="true">
+                          <i class="ico-page-arrow left"></i>
+                        </span>
+                      </a>
+                    </div>
+                    <ul class="page-item-container">
+                      <li class="page-item">
+                        <!-- on 됐을 경우 span 태그로 변경-->
+                        <span class="page-link on">
+                          <span class="txt">1</span>
+                        </span>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#none">
+                          <span class="txt">2</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#none">
+                          <span class="txt">3</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#none">
+                          <span class="txt">4</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#none">
+                          <span class="txt">5</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="page-util next">
+                      <a class="page-link" href="#none" role="button">
+                        <span class="hide-txt">다음 페이지</span>
+                        <span class="ico-area" aria-hidden="true">
+                          <i class="ico-page-arrow right"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group right mt-16">
+                  <!-- closetrigger 있으면 닫힘-->
+                  <button class="color-white wid-58 closetrigger">
+                    <span class="txt">닫기</span>
+                  </button>
+                  <button class="color-blue wid-58">
+                    <span class="txt">등록</span>
+                  </button>
+                </div>
+                <button class="btn_layerclose" type="button">
+                  <span class="hide-txt">닫기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 지도 검색-->
+        <div class="dimlayer_z" id="srdTarget02">
+          <div class="dimlayer_tb">
+            <div class="dimlayer_td">
+              <!-- layer_box-->
+              <div class="layer_box wid-1330">
+                <div class="layer_tit_low">
+                  <h2 class="layer_tit">지도 검색</h2>
+                </div>
+                <div class="layer_cont">
+                  <div class="layer_cont_in pt-20">
+                    <div class="search-form">
+                      <div class="search-type">
+                        <div class="input-radio right">
+                          <input type="radio" id="radio213" name="radio213">
+                          <label for="radio213">
+                            <span class="txt">지도 검색</span>
+                          </label>
+                        </div>
+                        <div class="search-list">
+                          <div class="input-txt">
+                            <input type="text" placeholder="검색어 입력">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn-group type-r">
+                        <button class="color-blue wid-77">
+                          <span class="txt">검색</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="search-tit">
+                      <span class="tit">
+                        <span class="object">할리스커피 </span>검색결과 총 <span class="num">12,345 </span>건
+                      </span>
+                    </div>
+                    <div class="search-map-area">
+                      <ul class="result-list">
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="">할리스 커피 강남 </a>
+                        </li>
+                      </ul>
+                      <div class="map-area"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group right mt-16">
+                  <!-- closetrigger 있으면 닫힘-->
+                  <button class="color-white wid-58 closetrigger">
+                    <span class="txt">닫기</span>
+                  </button>
+                  <button class="color-blue wid-58" type="submit">
+                    <span class="txt">등록</span>
+                  </button>
+                </div>
+                <button class="btn_layerclose" type="button">
+                  <span class="hide-txt">닫기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dimm">
+    <img src="../../images/common/blank_size_100.png" alt="">
+  </div>
+  <script>
+    COVID.dimLayerShow('#srdTarget01');
+    COVID.dimLayerShow('#srdTarget02');
+
+  </script>
+</body>
+
+</html>

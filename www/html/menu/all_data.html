@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>프로젝트타이틀</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link href="../../css_partials/font.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/reset.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/element.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/public.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/contents.css" type="text/css" rel="stylesheet">
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/iscroll.js"></script>
+  <script src="../../js/common.js" defer></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+  <div id="wrap">
+    <!-- s: header include-->
+    <!--#include virtual="/html/include/header.html" -->
+    <!-- e: header include-->
+    <div id="container">
+      <div id="content" role="main">
+        <div class="page_wrap page_layout">
+          <section class="pgmid_zone">
+            <div class="pgright_wrap"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dimm">
+    <img src="../../images/common/blank_size_100.png" alt="">
+  </div>
+  <script>
+    //- CTC.rockMenu("#plm01,#plm01_01");
+
+    $(function() {
+      // 테이블 액션 - 전체 선택
+      $("#check_total").on("click", function() {
+        var $this = $(this),
+          $t_p = $this.parents(".data_htb");
+        if ($this.prop("checked")) {
+          $t_p.find(".frdchk").prop("checked", true);
+        } else {
+          $t_p.find(".frdchk").prop("checked", false);
+        }
+      });
+      // 테이블 액션 - 개별 선택
+      $(".data_htb tbody .frdchk").on("click", function() {
+        var $this = $(this),
+          $t_p = $this.parents("tr");
+        if ($this.prop("checked")) {
+          $t_p.addClass("active");
+        } else {
+          $t_p.removeClass("active");
+        }
+      });
+
+      // 체크박스 for 퍼블확인용
+      $("#data_sort_table .fitem.oneitem").each(function(index) {
+        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id", "check_0" + index);
+        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for", "check_0" + index);
+      });
+    });
+
+  </script>
+</body>
+
+</html>
