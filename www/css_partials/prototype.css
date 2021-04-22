@@ -564,12 +564,22 @@ a:before {
     width: 100%;
     font-size: 12px;
     height: 38px;
-    line-height: 38px;
+    line-height: normal;
     border: none;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
     border-radius: 0; }
+    .input-txt input::-webkit-input-placeholder {
+      color: #c0c4cc; }
+    .input-txt input::-moz-placeholder {
+      color: #c0c4cc; }
+    .input-txt input:-ms-input-placeholder {
+      color: #c0c4cc; }
+    .input-txt input::-ms-input-placeholder {
+      color: #c0c4cc; }
+    .input-txt input::placeholder {
+      color: #c0c4cc; }
   .input-txt .message {
     display: block;
     margin-top: 5px;
