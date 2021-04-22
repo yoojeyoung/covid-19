@@ -506,6 +506,8 @@ body {
       font-size: 18px;
       font-weight: bold;
       color: #000; }
+  .login-content-wrap .input-radio {
+    margin-top: 19px; }
 
 /* form 공통 */
 .form-group + .form-group {
@@ -614,10 +616,11 @@ body {
     font-weight: 500;
     color: #303133; }
 
-.input-radio {
+.input-radio .selectbox {
+  margin-top: 15px; }
+
+.input-radio.mt-19 {
   margin-top: 19px; }
-  .input-radio .selectbox {
-    margin-top: 15px; }
 
 .input-textarea.form-success textarea {
   border-color: #28a745 !important; }
