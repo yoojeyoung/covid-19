@@ -8,19 +8,20 @@ block contents
           .pgright_wrap
             .inner
               h2.tit 확진자 등록
-              .search-form
-                .search-type
-                  .search-list
-                    .input-radio.right.type-border
-                      input(type="radio" id="radio211" name="radio211" checked)
-                      label(for="radio211")
-                        span.txt 단건 등록
-                    .input-radio.right.type-border
-                      input(type="radio" id="radio212" name="radio212")
-                      label(for="radio212")
-                        span.txt 엑셀 등록
               section.content-wrap
                 .inner
+                  // 검색영역
+                  .search-form.mb-20
+                    .search-type
+                      .search-list
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio211" name="radio211" checked)
+                          label(for="radio211")
+                            span.txt 단건 등록
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio212" name="radio212")
+                          label(for="radio212")
+                            span.txt 엑셀 등록
                   .register-form.flex
                     .input-txt.form-error
                       label(for="input01").point 연번
@@ -215,7 +216,36 @@ block contents
                     span.tit 확진자 접촉력
                     button(type="button").border-blue.wid-56.hig-28.ml-8
                       span.txt 추가
-                  .register-form
+                  .register-form.flex
+                    .form-box.wid-672
+                      .from-list
+                        .list-item.wid-225
+                          button(type="button" onclick="COVID.dimLayerShow('#srdTarget01')")
+                            span.txt #2198
+                        .list-item
+                          .input-txt 
+                            input(type="text" placeholder="해당 확진자의 남편").wid-430
+                      .from-list
+                        .list-item.wid-225
+                          button(type="button")
+                            span.txt 확진자 검색
+                        .list-item
+                          .input-txt 
+                            input(type="text").wid-430
+                      .from-list 
+                        .list-item.wid-225
+                          button(type="button")
+                            span.txt 확진자 검색
+                        .list-item
+                          .input-txt 
+                            input(type="text").wid-430
+                      .from-list 
+                        .list-item.wid-225
+                          button(type="button")
+                            span.txt 확진자 검색
+                        .list-item
+                          .input-txt 
+                            input(type="text").wid-430
               section.content-wrap
                 .inner
                   .sec-tit
@@ -357,7 +387,7 @@ block contents
                           span.txt 확진자 번호로 검색
                       .search-list
                         .input-txt
-                          input(type="text" placeholder="숫자만 입력")
+                          input(type="text" placeholder="숫자만 입력").wid-220
                     .search-type
                       .input-radio.right
                         input(type="radio" id="radio213" name="radio213")
@@ -365,7 +395,7 @@ block contents
                           span.txt 키워드 검색
                       .search-list
                         .input-txt
-                          input(type="text" placeholder="검색어 입력")
+                          input(type="text" placeholder="검색어 입력").wid-220
                     .btn-group.type-r
                       button.color-blue.wid-77 
                         span.txt 검색
@@ -408,7 +438,7 @@ block contents
                               label(for="radio214")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -422,7 +452,7 @@ block contents
                               label(for="radio215")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -436,7 +466,7 @@ block contents
                               label(for="radio216")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -450,7 +480,7 @@ block contents
                               label(for="radio217")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -464,7 +494,7 @@ block contents
                               label(for="radio218")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -478,7 +508,7 @@ block contents
                               label(for="radio219")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -492,7 +522,7 @@ block contents
                               label(for="radio220")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -506,7 +536,7 @@ block contents
                               label(for="radio221")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -520,7 +550,7 @@ block contents
                               label(for="radio222")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -534,7 +564,7 @@ block contents
                               label(for="radio223")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -669,5 +699,3 @@ block contents
                 span.hide-txt 닫기
 append script
   script.
-    COVID.dimLayerShow('#srdTarget01');
-    COVID.dimLayerShow('#srdTarget02');

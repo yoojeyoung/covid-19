@@ -7,129 +7,145 @@ block contents
         section.pgmid_zone
           .pgright_wrap
             .inner
-              h2.tit 서울시 코로나19 상황판
-              // 검색 영역
-              .search-form.mt-32
-                .search-type
-                  .search-list.wid-445
-                    button.wid-66.bg-white
-                      .txt 오늘
-                    button.wid-66.bg-white
-                      .txt 전날
-                    .input-txt
-                      input(type="text").wid-228
-                    .input-txt
-                      input(type="text" placeholder="감색어를 입력해주세요").wid-220
-                    button.wid-66.color-blue 
-                      .txt 검색
+              h2.tit 확진자 전국 데이터 관리
+              section.content-wrap
+                .inner
+                  // 검색 영역
+                  .search-form.scroll
+                    .search-type
+                      .search-list.wid-445
+                        button.wid-66.bg-white
+                          .txt 오늘
+                        button.wid-66.bg-white
+                          .txt 전날
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="시작일").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="종료일").el-input__inner.wid-220
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        button.wid-80.border-blue 
+                          .txt 다운로드
+                        button.wid-66.color-blue 
+                          .txt 검색
               // 최상위 테이블
               section.content-wrap
                 .inner
                   .tbl-container01
-                    table.tbl-col01.board
+                    table.tbl-col01
                       caption 공시자료: 번호,보고서명,등록일
                       colgroup
-                        col(width="8%")
+                        col(width="5%")
                         col(width="auto")
                         col(width="10%")
                         col(width="12%")
                         col(width="8%")
                       thead
                           tr
-                            th 번호
-                            th 제목
+                            th.align-l 번호
+                            th.align-l 제목
                             th 작성자
                             th 작성일
                             th 조회수
                       tbody
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165
                           tr
-                            td 165
-                            td 
-                              a(href="#") 보건소 선별 검사실적 취합 자료 공유
+                            td.align-l 165
+                            td.align-l 
+                              a(href="#").color-n 보건소 선별 검사실적 취합 자료 공유
                             td 홍길동
                             td 2021. 3. 6
                             td 165

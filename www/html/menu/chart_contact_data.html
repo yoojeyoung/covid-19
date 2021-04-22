@@ -36,50 +36,19 @@
           <section class="pgmid_zone">
             <div class="pgright_wrap">
               <div class="inner">
-                <h2 class="tit">검사 종류별 검사건수 및 확진자 데이터 입력</h2>
+                <h2 class="tit">확진자 전국 데이터 관리</h2>
                 <!-- 검색 영역-->
                 <section class="content-wrap">
                   <div class="inner mb-0">
-                    <div class="search-form">
+                    <!-- 검색 영역-->
+                    <div class="search-form scroll">
                       <div class="search-type">
-                        <div class="search-list">
-                          <span class="type">구분</span>
-                          <div class="input-radio right type-border">
-                            <input type="radio" id="radio211" name="radio211">
-                            <label for="radio211">
-                              <span class="txt">자치구(선별진료소)</span>
-                            </label>
-                          </div>
-                          <div class="input-radio right type-border">
-                            <input type="radio" id="radio212" name="radio212" checked>
-                            <label for="radio212">
-                              <span class="txt">보건소</span>
-                            </label>
-                          </div>
-                          <div class="input-radio right type-border">
-                            <input type="radio" id="radio213" name="radio213">
-                            <label for="radio213">
-                              <span class="txt">의료기관</span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="search-type">
-                        <div class="search-list">
-                          <span class="type">자치구</span>
-                          <div class="selectbox">
-                            <select title="">
-                              <option value="">선택해주세요.</option>
-                              <option value="">선택</option>
-                              <option value="">선택</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="search-list">
-                          <button class="btn-data wid-66">
+                        <div class="search-list wid-445">
+                          <span class="type">확진일자</span>
+                          <button class="wid-66 bg-white">
                             <div class="txt">오늘</div>
                           </button>
-                          <button class="btn-data wid-66">
+                          <button class="wid-66 bg-white">
                             <div class="txt">전날</div>
                           </button>
                           <!-- element-ui 날짜 input-->
@@ -94,8 +63,9 @@
                               </span>
                             </span>
                           </div>
+                          <!-- element-ui 날짜 input-->
                           <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
-                            <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="종료일">
+                            <input class="el-input__inner wid-220" type="text" autocomplete="off" name="" placeholder="종료일">
                             <span class="el-input__prefix">
                               <i class="el-input__icon el-icon-date"></i>
                             </span>
@@ -105,11 +75,11 @@
                               </span>
                             </span>
                           </div>
-                          <button class="wid-79 color-blue" type="button">
-                            <span class="txt">검색</span>
+                          <button class="wid-80 border-blue">
+                            <div class="txt">다운로드</div>
                           </button>
-                          <button class="wid-89 border-blue" type="button">
-                            <span class="txt">다운로드</span>
+                          <button class="wid-66 color-blue">
+                            <div class="txt">검색</div>
                           </button>
                         </div>
                       </div>
@@ -119,93 +89,64 @@
                 <!-- 최상위 테이블-->
                 <section class="content-wrap">
                   <div class="inner">
-                    <div class="sec-tit">
-                      <spna class="tit">총 <span class="num">66</span>건
-                        <div class="btn-area type02">
-                          <button class="border-blue wid-109 hig-28">
-                            <span class="txt">엑셀 다운로드</span>
-                          </button>
-                        </div>
-                      </spna>
-                    </div>
                     <div class="tbl-container01 form-group">
                       <table class="tbl-col01 type-input">
                         <caption>공시자료: 번호,보고서명,등록일</caption>
                         <colgroup>
-                          <col width="8.333%">
-                          <col width="8.333%">
-                          <col width="8.333%">
-                          <col width="8.333%">
-                          <col width="8.333%">
-                          <col width="8.333%">
-                          <col width="8.333%">
-                          <col width="8.333%">
-                          <col width="8.333%">
-                          <col width="8.333%">
-                          <col width="8.333%">
-                          <col width="8.333%">
+                          <col width="11.111%">
+                          <col width="11.111%">
+                          <col width="11.111%">
+                          <col width="11.111%">
+                          <col width="11.111%">
+                          <col width="11.111%">
+                          <col width="11.111%">
+                          <col width="11.111%">
+                          <col width="11.111%">
                         </colgroup>
                         <thead>
                           <tr>
-                            <th class="border-r" rowspan="3">구분</th>
-                            <th class="border-b border-r" colspan="4">검사건수</th>
-                            <th class="border-b border-r" colspan="5">확진자(명)</th>
-                            <th class="border-r" rowspan="2">확진률</th>
-                            <th rowspan="3">관리</th>
+                            <th class="border-r" rowspan="2">날짜</th>
+                            <th class="border-r" rowspan="2">계</th>
+                            <th class="border-b" colspan="3">접촉자</th>
+                            <th class="border-b border-r" colspan="3">해외입국자</th>
+                            <th rowspan="2">수정</th>
                           </tr>
                           <tr>
-                            <th class="border-r" rowspan="2">소계</th>
-                            <th class="border-b border-r" colspan="3">PCR</th>
-                            <th class="border-r" rowspan="2">소계</th>
-                            <th class="border-b border-r" colspan="3">PCR</th>
-                            <th class="border-r" rowspan="2">신속항원</th>
-                          </tr>
-                          <tr>
-                            <th>비인도두말</th>
-                            <th>타액</th>
-                            <th>2차 비인도두말</th>
-                            <th>비인도두말</th>
-                            <th>타액</th>
-                            <th>2차 비인도두말 </th>
-                            <th>평균</th>
+                            <th>소계</th>
+                            <th>감시중</th>
+                            <th>해제</th>
+                            <th>소계</th>
+                            <th>감시중</th>
+                            <th>해제</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr class="bg-yellow">
-                            <td>총 누계</td>
+                            <td>총 계</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
-                            <td>1,485</td>
-                            <td>1,485</td>
-                            <td>1.4</td>
                             <td>1.4</td>
                             <td> </td>
                           </tr>
                           <tr>
                             <td>3월31일</td>
                             <td>-</td>
+                            <td>-</td>
                             <td>
                               <div class="input-txt">
                                 <div class="input-box">
-                                  <input class="h-28" type="text" placeholder="숫자만 입력">
+                                  <input class="h-28 align-r" type="text" placeholder="숫자만 입력">
                                 </div>
                               </div>
                             </td>
                             <td>
                               <div class="input-txt">
                                 <div class="input-box">
-                                  <input class="h-28" type="text" placeholder="숫자만 입력">
-                                </div>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="input-txt">
-                                <div class="input-box">
-                                  <input class="h-28" type="text" placeholder="숫자만 입력">
+                                  <input class="h-28 align-r" type="text" placeholder="숫자만 입력">
                                 </div>
                               </div>
                             </td>
@@ -213,29 +154,20 @@
                             <td>
                               <div class="input-txt">
                                 <div class="input-box">
-                                  <input class="h-28" type="text" placeholder="숫자만 입력">
+                                  <input class="h-28 align-r" type="text" placeholder="숫자만 입력">
                                 </div>
                               </div>
                             </td>
                             <td>
                               <div class="input-txt">
                                 <div class="input-box">
-                                  <input class="h-28" type="text" placeholder="숫자만 입력">
+                                  <input class="h-28 align-r" type="text" placeholder="숫자만 입력">
                                 </div>
                               </div>
                             </td>
-                            <td>
-                              <div class="input-txt">
-                                <div class="input-box">
-                                  <input class="h-28" type="text" placeholder="숫자만 입력">
-                                </div>
-                              </div>
-                            </td>
-                            <td>-</td>
-                            <td>-</td>
                             <td>
                               <a class="btn-regist border-blue" href="#" role="button">
-                                <div class="txt">등록</div>
+                                <div class="txt">입력</div>
                               </a>
                             </td>
                           </tr>
@@ -244,13 +176,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -260,13 +189,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -276,13 +202,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -292,13 +215,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -308,13 +228,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -324,13 +241,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -340,13 +254,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -356,13 +267,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a class="btn-complete" href="#">
                                 <div class="txt">완료</div>
@@ -374,13 +282,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -390,13 +295,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -406,13 +308,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -422,13 +321,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -438,13 +334,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -454,13 +347,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -470,13 +360,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -486,13 +373,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -502,13 +386,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -518,13 +399,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -534,13 +412,10 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>
@@ -550,13 +425,23 @@
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
                             <td>1,485</td>
                             <td>331,715</td>
                             <td>1,485</td>
                             <td>1,485</td>
                             <td>1,485</td>
-                            <td>1.4</td>
-                            <td>1.4</td>
                             <td>
                               <a href="#">수정</a>
                             </td>

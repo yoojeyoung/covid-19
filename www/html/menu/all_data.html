@@ -34,8 +34,550 @@
       <div id="content" role="main">
         <div class="page_wrap page_layout">
           <section class="pgmid_zone">
-            <div class="pgright_wrap"></div>
+            <div class="pgright_wrap">
+              <div class="inner">
+                <h2 class="tit">확진자 전국 데이터 관리</h2>
+                <!-- 검색 영역-->
+                <section class="content-wrap">
+                  <div class="inner mb-0">
+                    <!-- 검색 영역-->
+                    <div class="search-form scroll">
+                      <div class="search-type">
+                        <div class="search-list wid-445">
+                          <span class="type">확진일자</span>
+                          <button class="wid-66 bg-white">
+                            <div class="txt">오늘</div>
+                          </button>
+                          <button class="wid-66 bg-white">
+                            <div class="txt">전날</div>
+                          </button>
+                          <!-- element-ui 날짜 input-->
+                          <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                            <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="시작일">
+                            <span class="el-input__prefix">
+                              <i class="el-input__icon el-icon-date"></i>
+                            </span>
+                            <span class="el-input__suffix">
+                              <span class="el-input__suffix-inner">
+                                <i class="el-input__icon el-icon-circle-close"></i>
+                              </span>
+                            </span>
+                          </div>
+                          <!-- element-ui 날짜 input-->
+                          <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                            <input class="el-input__inner wid-220" type="text" autocomplete="off" name="" placeholder="종료일">
+                            <span class="el-input__prefix">
+                              <i class="el-input__icon el-icon-date"></i>
+                            </span>
+                            <span class="el-input__suffix">
+                              <span class="el-input__suffix-inner">
+                                <i class="el-input__icon el-icon-circle-close"></i>
+                              </span>
+                            </span>
+                          </div>
+                          <button class="wid-80 border-blue">
+                            <div class="txt">다운로드</div>
+                          </button>
+                          <button class="wid-66 color-blue">
+                            <div class="txt">검색</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- 최상위 테이블-->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="sec-tit">
+                      <spna class="tit">총 <span class="num">66</span>건
+                        <div class="btn-area type02">
+                          <button class="border-blue wid-109 hig-28">
+                            <span class="txt">엑셀 다운로드</span>
+                          </button>
+                        </div>
+                      </spna>
+                    </div>
+                    <div class="tbl-container01 form-group">
+                      <table class="tbl-col01 type-input">
+                        <caption>공시자료: 번호,보고서명,등록일</caption>
+                        <colgroup>
+                          <col width="8.333%">
+                          <col width="8.333%">
+                          <col width="8.333%">
+                          <col width="8.333%">
+                          <col width="8.333%">
+                          <col width="8.333%">
+                          <col width="8.333%">
+                          <col width="8.333%">
+                          <col width="8.333%">
+                          <col width="8.333%">
+                          <col width="8.333%">
+                          <col width="8.333%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th rowspan="3">구분</th>
+                            <th colspan="4">검사건수</th>
+                            <th colspan="5">확진자(명)</th>
+                            <th rowspan="2">확진률</th>
+                            <th rowspan="3">관리</th>
+                          </tr>
+                          <tr>
+                            <th rowspan="2">소계</th>
+                            <th colspan="3">PCR</th>
+                            <th rowspan="2">소계</th>
+                            <th colspan="3">PCR</th>
+                            <th rowspan="2">신속항원</th>
+                          </tr>
+                          <tr>
+                            <th>비인도두말</th>
+                            <th>타액</th>
+                            <th>2차 비인도두말</th>
+                            <th>비인도두말</th>
+                            <th>타액</th>
+                            <th>2차 비인도두말 </th>
+                            <th>평균</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="bg-yellow">
+                            <td>총 누계</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>-</td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>-</td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>
+                              <a class="btn-regist border-blue" href="#" role="button">
+                                <div class="txt">등록</div>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a class="btn-complete" href="#">
+                                <div class="txt">완료</div>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>331,715</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1,485</td>
+                            <td>1.4</td>
+                            <td>1.4</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
           </section>
+        </div>
+        <!-- 접속권한 요청 팝업-->
+        <div class="dimlayer_z" id="srdTarget03">
+          <div class="dimlayer_tb">
+            <div class="dimlayer_td">
+              <!-- layer_box-->
+              <div class="layer_box">
+                <div class="layer_tit_low">
+                  <h2 class="layer_tit font-18">검사소 추가</h2>
+                </div>
+                <div class="layer_cont" style="max-height: 875px;">
+                  <div class="layer_cont_in form-group">
+                    <div class="content-txt">
+                      <spna class="txt point">서초구의 검사소를 추가합니다. 검사소명을 정확히 입력 바랍니다.</spna>
+                      <div class="input-txt">
+                        <div class="input-box block">
+                          <label for="search-input">검사소명</label>
+                          <input type="text" id="search-input">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group right mt-25">
+                  <!-- closetrigger 있으면 닫힘-->
+                  <button class="wid-89 closetrigger" type="button">
+                    <span class="txt">취소</span>
+                  </button>
+                  <button class="color-blue wid-89 closetrigger">
+                    <span class="txt">확인</span>
+                  </button>
+                </div>
+                <!-- 20210415 수정-->
+                <button class="btn_layerclose" type="button">
+                  <span class="hide-txt">닫기</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -43,39 +585,7 @@
   <div class="dimm">
     <img src="../../images/common/blank_size_100.png" alt="">
   </div>
-  <script>
-    //- CTC.rockMenu("#plm01,#plm01_01");
-
-    $(function() {
-      // 테이블 액션 - 전체 선택
-      $("#check_total").on("click", function() {
-        var $this = $(this),
-          $t_p = $this.parents(".data_htb");
-        if ($this.prop("checked")) {
-          $t_p.find(".frdchk").prop("checked", true);
-        } else {
-          $t_p.find(".frdchk").prop("checked", false);
-        }
-      });
-      // 테이블 액션 - 개별 선택
-      $(".data_htb tbody .frdchk").on("click", function() {
-        var $this = $(this),
-          $t_p = $this.parents("tr");
-        if ($this.prop("checked")) {
-          $t_p.addClass("active");
-        } else {
-          $t_p.removeClass("active");
-        }
-      });
-
-      // 체크박스 for 퍼블확인용
-      $("#data_sort_table .fitem.oneitem").each(function(index) {
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id", "check_0" + index);
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for", "check_0" + index);
-      });
-    });
-
-  </script>
+  <script></script>
 </body>
 
 </html>

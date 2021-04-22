@@ -135,6 +135,8 @@ a:before {
     text-align: center; }
     .tbl-col01 th:last-child {
       border-right: 0; }
+    .tbl-col01 th.align {
+      text-align: left; }
     .tbl-col01 th.border-b {
       border-bottom: 1px solid #c5d5e3; }
     .tbl-col01 th.border-r {
@@ -151,7 +153,6 @@ a:before {
     text-align: center; }
     .tbl-col01 td a {
       display: inline-block;
-      width: 90%;
       color: #0778ca;
       white-space: nowrap;
       -o-text-overflow: ellipsis;
@@ -169,6 +170,8 @@ a:before {
         background: #dc3545; }
       .tbl-col01 td a:hover {
         color: #0b5eab; }
+      .tbl-col01 td a.color-n {
+        color: #606266; }
     .tbl-col01 td.point {
       color: #c12526; }
     .tbl-col01 td.point02 {
@@ -227,6 +230,16 @@ a:before {
     .tbl-col01.type-input td input {
       margin-top: 0 !important;
       font-size: 12px; }
+      .tbl-col01.type-input td input::-webkit-input-placeholder {
+        font-size: 12px; }
+      .tbl-col01.type-input td input::-moz-placeholder {
+        font-size: 12px; }
+      .tbl-col01.type-input td input:-ms-input-placeholder {
+        font-size: 12px; }
+      .tbl-col01.type-input td input::-ms-input-placeholder {
+        font-size: 12px; }
+      .tbl-col01.type-input td input::placeholder {
+        font-size: 12px; }
     .tbl-col01.type-input td a.btn-regist, .tbl-col01.type-input td a.btn-complete {
       width: 66px;
       height: 28px;
@@ -239,6 +252,8 @@ a:before {
     padding: 20px 30px; }
   .tbl-col01 .align-l {
     text-align: left; }
+  .tbl-col01 .align-r {
+    text-align: right; }
   .tbl-col01 .border02-b {
     border-bottom: 1px solid #e4e7ed; }
   .tbl-col01 .pd-0 {
@@ -626,16 +641,17 @@ a:before {
     content: '';
     display: block;
     position: absolute;
-    top: 50%;
-    right: 22px;
+    top: 23px;
+    right: 10px;
     margin-top: -8px;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid gray;
-    border-right: 2px solid gray;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #c0c4cc;
+    border-right: 2px solid #c0c4cc;
     -webkit-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
-            transform: rotate(135deg); }
+            transform: rotate(135deg);
+    z-index: 1000; }
   .selectbox select {
     cursor: pointer;
     position: relative;
@@ -646,7 +662,6 @@ a:before {
     line-height: 40px;
     font-size: 14px;
     color: #c0c4cc;
-    background-color: transparent;
     border: 1px solid #e4e7ed;
     border-radius: 4px;
     -webkit-appearance: none;

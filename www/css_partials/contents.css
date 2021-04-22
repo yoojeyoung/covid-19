@@ -115,6 +115,8 @@
   .layer_cont_in table thead th {
     color: #333;
     font-weight: normal; }
+  .layer_cont_in table tbody td.color-b {
+    color: #2f80ed; }
   .layer_cont_in table tbody .type-txt {
     display: block; }
     .layer_cont_in table tbody .type-txt .type {

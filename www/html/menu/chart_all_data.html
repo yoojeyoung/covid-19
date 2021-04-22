@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>프로젝트타이틀</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link href="../../css_partials/font.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/reset.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/element.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/public.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/contents.css" type="text/css" rel="stylesheet">
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/iscroll.js"></script>
+  <script src="../../js/common.js" defer></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+  <div id="wrap">
+    <!-- s: header include-->
+    <!--#include virtual="/html/include/header.html" -->
+    <!-- e: header include-->
+    <div id="container">
+      <div id="content" role="main">
+        <div class="page_wrap page_layout">
+          <section class="pgmid_zone">
+            <div class="pgright_wrap">
+              <div class="inner">
+                <h2 class="tit">확진자 전국 데이터 관리</h2>
+                <!-- 검색 영역-->
+                <section class="content-wrap">
+                  <div class="inner mb-0">
+                    <!-- 검색 영역-->
+                    <div class="search-form scroll">
+                      <div class="search-type">
+                        <div class="search-list wid-445">
+                          <span class="type">확진일자</span>
+                          <button class="wid-66 bg-white">
+                            <div class="txt">오늘</div>
+                          </button>
+                          <button class="wid-66 bg-white">
+                            <div class="txt">전날</div>
+                          </button>
+                          <!-- element-ui 날짜 input-->
+                          <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                            <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="시작일">
+                            <span class="el-input__prefix">
+                              <i class="el-input__icon el-icon-date"></i>
+                            </span>
+                            <span class="el-input__suffix">
+                              <span class="el-input__suffix-inner">
+                                <i class="el-input__icon el-icon-circle-close"></i>
+                              </span>
+                            </span>
+                          </div>
+                          <!-- element-ui 날짜 input-->
+                          <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                            <input class="el-input__inner wid-220" type="text" autocomplete="off" name="" placeholder="종료일">
+                            <span class="el-input__prefix">
+                              <i class="el-input__icon el-icon-date"></i>
+                            </span>
+                            <span class="el-input__suffix">
+                              <span class="el-input__suffix-inner">
+                                <i class="el-input__icon el-icon-circle-close"></i>
+                              </span>
+                            </span>
+                          </div>
+                          <button class="wid-80 border-blue">
+                            <div class="txt">다운로드</div>
+                          </button>
+                          <button class="wid-66 color-blue">
+                            <div class="txt">검색</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- 최상위 테이블-->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="tbl-container01 form-group">
+                      <table class="tbl-col01 type-input">
+                        <caption>공시자료: 번호,보고서명,등록일</caption>
+                        <colgroup>
+                          <col width="14.28%">
+                          <col width="14.28%">
+                          <col width="14.28%">
+                          <col width="14.28%">
+                          <col width="14.28%">
+                          <col width="14.28%">
+                          <col width="14.28%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="bold-n">날짜</th>
+                            <th class="bold-n">격리중</th>
+                            <th class="bold-n">퇴원</th>
+                            <th class="bold-n">사망</th>
+                            <th class="bold-n">전일대비 증감</th>
+                            <th class="bold-n">계 </th>
+                            <th class="bold-n">수정</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>3월31일</td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28 align-r" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28 align-r" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28 align-r" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28 align-r" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>-</td>
+                            <td>
+                              <a class="btn-regist border-blue" href="#" role="button">
+                                <div class="txt">입력</div>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664</td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28 align-r" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28 align-r" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="input-txt">
+                                <div class="input-box">
+                                  <input class="h-28 align-r" type="text" placeholder="숫자만 입력">
+                                </div>
+                              </div>
+                            </td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a class="btn-complete" href="#">
+                                <div class="txt">완료</div>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3월30일</td>
+                            <td class="align-r">17,130</td>
+                            <td class="align-r">50,409</td>
+                            <td class="align-r">1,125</td>
+                            <td class="align-r">665</td>
+                            <td>68,664 </td>
+                            <td>
+                              <a href="#">수정</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- 접속권한 요청 팝업-->
+        <div class="dimlayer_z" id="srdTarget03">
+          <div class="dimlayer_tb">
+            <div class="dimlayer_td">
+              <!-- layer_box-->
+              <div class="layer_box">
+                <div class="layer_tit_low">
+                  <h2 class="layer_tit font-18">검사소 추가</h2>
+                </div>
+                <div class="layer_cont" style="max-height: 875px;">
+                  <div class="layer_cont_in form-group">
+                    <div class="content-txt">
+                      <spna class="txt point">서초구의 검사소를 추가합니다. 검사소명을 정확히 입력 바랍니다.</spna>
+                      <div class="input-txt">
+                        <div class="input-box block">
+                          <label for="search-input">검사소명</label>
+                          <input type="text" id="search-input">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group right mt-25">
+                  <!-- closetrigger 있으면 닫힘-->
+                  <button class="wid-89 closetrigger" type="button">
+                    <span class="txt">취소</span>
+                  </button>
+                  <button class="color-blue wid-89 closetrigger">
+                    <span class="txt">확인</span>
+                  </button>
+                </div>
+                <!-- 20210415 수정-->
+                <button class="btn_layerclose" type="button">
+                  <span class="hide-txt">닫기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dimm">
+    <img src="../../images/common/blank_size_100.png" alt="">
+  </div>
+  <script></script>
+</body>
+
+</html>

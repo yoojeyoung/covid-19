@@ -33,10 +33,15 @@ block contents
                           input(type="file" id="upload-file")
                     .upload-list.type02
                       span.point-txt 최대 용량 2mb 이하의 파일을 업로드해주세요
-                      a(href="").upload-item
-                        span.txt 보건소 선별 검사실적_.0305.xls
-                      a(href="").upload-item
-                        span.txt 보건소 선별 검사실적_.0305.xls
+                      .file-list
+                        // list-item + .complete 추가 시 업로드 완료 icon 생깁니다.
+                        .list-item.complete
+                          span.file-txt 보건소 선별 검사실적_.0305.xls
+                        .list-item
+                          span.file-txt 보건소 선별 검사실적_.0305.xls
+                          button.btn-close
+                            .hide-txt 닫기
+
 
               .btn-group.flex
                 a(href="").btn-list

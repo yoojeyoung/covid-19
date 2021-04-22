@@ -86,7 +86,9 @@
       th{color: #333;font-weight: normal;}
     }
     tbody{
-      td{}
+      td{
+        &.color-b{color: #2f80ed;}
+      }
       .type-txt{
         display: block;
         .type{

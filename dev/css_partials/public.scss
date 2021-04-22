@@ -308,6 +308,7 @@ body{background: #f5f5f7}
     &:disabled{
       background: #f5f7fa;
     }
+    &.align-r{text-align: right;}
   }
   &:not(:first-child){@include rem(margin-top,16px);}
   &.form-success{
@@ -380,6 +381,7 @@ button,a{
   text-align: center;
   @include rem(border-radius,4px);
   .txt{@include rem(font-size,14px);color: #606266;text-align: center;}
+  &.wid-40{@include rem(min-width,40px);}
   &.wid-56{@include rem(min-width,56px);}
   &.wid-80{@include rem(min-width,80px);}
   &.wid-89{@include rem(min-width,89px);}
@@ -691,7 +693,122 @@ section.content-wrap{
     }
     }
   }
+  .notice-area{
+    @include rem(padding,20px 24px);
+    background: #fbfbfb;
+    .tit{
+      position: relative;
+      @include rem(padding-left,8px);
+      @include rem(font-size,12px);
+      font-weight: normal;
+      color: #333;
+      &::before{
+        content: "*";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        font-size: 12px;
+        color: #eb5757;
+      } 
+    }
+    ul{
+      @include rem(margin-top,12px);
+      li{
+        @include rem(font-size,12px);
+        color: #606266;
+        + li {@include rem(margin-top,6px);}
+      }
+    }
+  }
+  .file-area{
+    display: table;
+    @include rem(margin-top,22px);
+    .type{
+      display: table-cell;
+      vertical-align: top;
+      .tit{
+        @include rem(font-size,14px);
+        font-weight: normal;
+        color: #303133;
+      }
+      .input-wrap{
+        input[type="file"]{
+          position: absolute;
+          @include rem(width,1px);
+          @include rem(height,1px);
+          padding: 0;
+          @include rem(margin,-1px);
+          overflow: hidden;
+          clip:rect(0,0,0,0);
+          border: 0;
+        }
+        .upload-btn{
+          display: inline-block;
+          @include rem(max-width,113px);
+          width: 100%;
+          @include rem(height,32px);
+          @include rem(padding,7px 5px 5px);
+          @include rem(font-size,14px);
+          color: #fff;
+          background: #0778ca;
+          @include rem(border-radius,4px);
+          text-align: center;
+          cursor: pointer;
+          &:hover{background: #0b5eab;}
+        }
+      }
+      .point-txt{
+        display: block;
+        @include rem(margin-top,8px);
+        @include rem(font-size,12px);
+        font-weight: normal;
+        color: #909399;
+      }
+      .file-list{
+        @include rem(margin-top,8px);
+        .list-item{
+          + .list-item{@include rem(margin-top,6px);}
+          &.complete{
+            .file-txt{
+              &::after{
+                content: "";
+                position: absolute;
+                top: -2px;
+                right: -20px;
+                @include rem(width,16px);
+                @include rem(height,16px);
+                background: url(../images/common/ico_complete.png);
+              }
+            }
+          }
+        }
+        .file-txt{
+          position: relative;
+          @include rem(padding,0 20px 0);
+          color: #606266;
+          @include rem(font-size,12px);
+          &:before{
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: 0;
+            @include rem(width,16px);
+            @include rem(height,16px);
+            background: url(../images/common/ico_file.png);
+          }
+        }
+        .btn-close{
+          width: 16px;
+          height: 16px;
+          background: url(../images/common/ico_close.png);
+        }
+      }
+      &:last-child{@include rem(padding-left,16px);}
+    }
+  }
   &.shadow-n{box-shadow: none;}
+
 }
 
 /*검사 현황 자료 게시판 */
@@ -728,9 +845,19 @@ section.content-wrap{
     .upload-item{
       position: relative;
       display: block;
+      @include rem(padding-left,20px);
       color: #2f80ed;
       text-decoration: underline;
       text-align: left;
+      &:before{
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 0;
+        @include rem(width,16px);
+        @include rem(height,16px);
+        background: url(../images/common/ico_file.png);
+      }
       .txt{@include rem(font-size,12px);color: #2f80ed;word-break: break-all;word-wrap: break-word;}
       + .upload-item{@include rem(margin-top,6px);}
     }
@@ -739,9 +866,47 @@ section.content-wrap{
       @include rem(padding-left,100px);
       .point-txt{
         display: inline-block;
-        @include rem(margin-bottom,11px);
         @include rem(font-size,12px);
         color: #909399;
+      }
+    }
+    .file-list{
+      @include rem(margin-top,8px);
+      .list-item{
+        + .list-item{@include rem(margin-top,6px);}
+        &.complete{
+          .file-txt{
+            &::after{
+              content: "";
+              position: absolute;
+              top: -2px;
+              right: -20px;
+              @include rem(width,16px);
+              @include rem(height,16px);
+              background: url(../images/common/ico_complete.png);
+            }
+          }
+        }
+      }
+      .file-txt{
+        position: relative;
+        @include rem(padding,0 20px 0);
+        color: #606266;
+        @include rem(font-size,12px);
+        &:before{
+          content: "";
+          position: absolute;
+          top: -2px;
+          left: 0;
+          @include rem(width,16px);
+          @include rem(height,16px);
+          background: url(../images/common/ico_file.png);
+        }
+      }
+      .btn-close{
+        width: 16px;
+        height: 16px;
+        background: url(../images/common/ico_close.png);
       }
     }
   }
@@ -829,6 +994,7 @@ section.content-wrap{
     }
     .input-radio.type-border{
       width: auto;
+      margin-top: 0;
       background: #fff;
       label{
         @include rem(padding,10px);
@@ -870,7 +1036,8 @@ section.content-wrap{
     &.wid-100{@include rem(width,100px);}
   }
   button{
-    @include rem(padding,11px 10px);
+    @include rem(padding,10px 10px);
+    height: 40px;
     border: 1px solid #e4e7ed;
     border-radius: 4px;
     text-align: center;
@@ -886,14 +1053,29 @@ section.content-wrap{
       right: 0;
       .txt{@include rem(font-size,12px);}
     }
+    &.btn-reset{
+      background: url(../images/common/ico_reset.png) center center no-repeat;
+      @include rem(background-size,20px 20px);
+    }
   }
   &.mt-32{@include rem(margin-top,32px);}
+  &.mb-20{@include rem(margin-bottom,20px);}
   &.scroll{
     width: 100%;
     white-space: nowrap;
     overflow: auto;
   }
+  .right-area{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    button{
+      padding: 0;
+      height: 28px;
+    }
+  }
 }
+
 
 /* 확진자 등록 공통 */
 .register-form{
@@ -954,6 +1136,7 @@ section.content-wrap{
       &.wid-149{@include rem(width,149px);}
       &.wid-164{@include rem(width,164px);}
       &.wid-200{@include rem(width,200px);}
+      &.wid-220{@include rem(width,220px);}
       &.wid-225{@include rem(width,225px);}
       &.wid-245{@include rem(width,245px);}
       &.wid-274{@include rem(width,274px);}
@@ -966,7 +1149,7 @@ section.content-wrap{
       +.selectbox{@include rem(margin-left,4px);}
     }
     .el-date-editor.el-input{
-      .el-input__inner{@include rem(height,28px);@include rem(padding-left,30px);@include rem(font-size,12px);line-height: initial;}
+      .el-input__inner{@include rem(height,40px);@include rem(padding-left,30px);@include rem(font-size,12px);line-height: initial;}
       .el-input__icon{@include rem(line-height,initial);}
       + .selectbox{@include rem(margin-left,8px);}
     }
@@ -1026,7 +1209,26 @@ section.content-wrap{
     }
     + .input-txt{@include rem(margin-left,24px);}
   }
-
+  .form-box{
+    border-top: 1px solid #e4e7ed;
+    border-bottom: 1px solid #e4e7ed;
+    .from-list{
+      display: table;
+      @include rem(padding,4px 0);
+      &:not(:last-child){border-bottom: 1px solid #e4e7ed;}
+    }
+    .list-item{
+      display: table-cell;
+      &:first-child{text-align: center;}
+      &:last-child{@include rem(margin-left,8px);}
+      &.wid-225{@include rem(width,225px);}
+      input{height: 28px;}
+      button{
+        .txt{color: #2f80ed}
+      }
+    }
+    &.wid-672{@include rem(width,672px);}
+  }
   &:not(:first-child){@include rem(margin-top,12px);}
   &.flex{
     display: flex;
