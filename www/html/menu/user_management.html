@@ -34,8 +34,689 @@
       <div id="content" role="main">
         <div class="page_wrap page_layout">
           <section class="pgmid_zone">
-            <div class="pgright_wrap"></div>
+            <div class="pgright_wrap">
+              <div class="inner">
+                <h2 class="tit">검사소 목록</h2>
+                <!-- 검색 영역-->
+                <section class="content-wrap">
+                  <div class="inner mb-0">
+                    <div class="search-form">
+                      <div class="search-type">
+                        <div class="search-list">
+                          <div class="input-radio right">
+                            <input type="radio" id="radio213" name="radio213">
+                            <label for="radio213">
+                              <span class="txt">전체</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio214" name="radio214">
+                            <label for="radio214">
+                              <span class="txt">서울</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio215" name="radio215">
+                            <label for="radio215">
+                              <span class="txt">자치구</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio216" name="radio216">
+                            <label for="radio216">
+                              <span class="txt">보건소</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio217" name="radio217">
+                            <label for="radio217">
+                              <span class="txt">의료기관</span>
+                            </label>
+                          </div>
+                          <div class="selectbox wid-200 ml-50">
+                            <select title="">
+                              <option value="">선택해주세요.</option>
+                              <option value="">선택</option>
+                              <option value="">선택</option>
+                            </select>
+                          </div>
+                          <!-- element-ui 날짜 input-->
+                          <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                            <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="시작일">
+                            <span class="el-input__prefix">
+                              <i class="el-input__icon el-icon-date"></i>
+                            </span>
+                            <span class="el-input__suffix">
+                              <span class="el-input__suffix-inner">
+                                <i class="el-input__icon el-icon-circle-close"></i>
+                              </span>
+                            </span>
+                          </div>
+                          <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                            <input class="el-input__inner wid-228" type="text" autocomplete="off" name="" placeholder="종료일">
+                            <span class="el-input__prefix">
+                              <i class="el-input__icon el-icon-date"></i>
+                            </span>
+                            <span class="el-input__suffix">
+                              <span class="el-input__suffix-inner">
+                                <i class="el-input__icon el-icon-circle-close"></i>
+                              </span>
+                            </span>
+                          </div>
+                          <button class="wid-79 color-blue" type="button">
+                            <span class="txt">검색</span>
+                          </button>
+                          <button class="wid-89 border-blue" type="button">
+                            <span class="txt">다운로드</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- 최상위 테이블-->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="tbl-container01">
+                      <table class="tbl-col01 confirm-table">
+                        <caption>공시자료: 번호,보고서명,등록일</caption>
+                        <colgroup>
+                          <col width="12.5%">
+                          <col width="12.5%">
+                          <col width="12.5%">
+                          <col width="12.5%">
+                          <col width="12.5%">
+                          <col width="12.5%">
+                          <col width="12.5%">
+                          <col width="12.5%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>NO.</th>
+                            <th>이름</th>
+                            <th colspan="2">소속 </th>
+                            <th>승인요청일</th>
+                            <th>승인일</th>
+                            <th>상테</th>
+                            <th>권한관리</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#" onclick="COVID.dimLayerShow('#srdTarget01')">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm ing">승인요청중</td>
+                            <td>
+                              <a href="#" onclick="COVID.dimLayerShow('#srdTarget02')">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">미승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>28820</td>
+                            <td>
+                              <a class="underline" href="#">홍길동 </a>
+                            </td>
+                            <td>서울시</td>
+                            <td class="align-l">강남팀</td>
+                            <td>3월 2일</td>
+                            <td>3월 2일</td>
+                            <td class="confirm">승인</td>
+                            <td>
+                              <a href="#">관리</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="page-nav-container">
+                      <div class="page-nav">
+                        <div class="page-util prev">
+                          <a class="page-link" href="#none" role="button">
+                            <span class="hide-txt">이전 페이지</span>
+                            <span class="ico-area" aria-hidden="true">
+                              <i class="ico-page-arrow left"></i>
+                            </span>
+                          </a>
+                        </div>
+                        <ul class="page-item-container">
+                          <li class="page-item">
+                            <!-- on 됐을 경우 span 태그로 변경-->
+                            <span class="page-link on">
+                              <span class="txt">1</span>
+                            </span>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">2</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">3</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">4</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#none">
+                              <span class="txt">5</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="page-util next">
+                          <a class="page-link" href="#none" role="button">
+                            <span class="hide-txt">다음 페이지</span>
+                            <span class="ico-area" aria-hidden="true">
+                              <i class="ico-page-arrow right"></i>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
           </section>
+        </div>
+        <!-- 접속권한 요청 팝업-->
+        <div class="dimlayer_z" id="srdTarget01">
+          <div class="dimlayer_tb">
+            <div class="dimlayer_td">
+              <!-- layer_box-->
+              <div class="layer_box wid-583">
+                <div class="layer_tit_low">
+                  <h2 class="layer_tit font-18">서울시 Covid-19 환자 관리 지원 시스템 사용자 정보</h2>
+                </div>
+                <div class="layer_cont" style="max-height: 875px;">
+                  <div class="layer_cont_in form-group">
+                    <div class="content-txt">
+                      <div class="input-form">
+                        <div class="form-list">
+                          <div class="list-item">
+                            <span class="tit">이름</span>
+                          </div>
+                          <div class="list-item">
+                            <span class="txt">홍길동</span>
+                          </div>
+                        </div>
+                        <div class="form-list">
+                          <div class="list-item">
+                            <span class="tit">이메일(ID)</span>
+                          </div>
+                          <div class="list-item">
+                            <span class="txt">abcd@email.com </span>
+                          </div>
+                        </div>
+                        <div class="form-list">
+                          <div class="list-item">
+                            <span class="tit">휴대전화</span>
+                          </div>
+                          <div class="list-item">
+                            <span class="txt">abcd@email.com </span>
+                          </div>
+                        </div>
+                        <div class="form-list">
+                          <div class="list-item">
+                            <span class="tit">소속</span>
+                          </div>
+                          <div class="list-item">
+                            <span class="txt">자치구 : <span class="sub-txt">의료기관</span>
+                              <span class="sub-txt">삼성서울병원</span>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="form-list">
+                          <div class="list-item">
+                            <span class="tit">이름</span>
+                          </div>
+                          <div class="list-item">
+                            <div class="input-textarea">
+                              <textarea name="" cols="30" rows="10" placeholder="제목을 입력해주세요"> </textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-list">
+                          <div class="list-item">
+                            <span class="tit">승인처리</span>
+                          </div>
+                          <div class="list-item">
+                            <div class="input-radio right">
+                              <input type="radio" id="radio219" name="radio219">
+                              <label for="radio219">
+                                <span class="txt">승인처리</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group right mt-25">
+                  <!-- closetrigger 있으면 닫힘-->
+                  <button class="wid-66 closetrigger" type="button">
+                    <span class="txt">취소</span>
+                  </button>
+                  <button class="color-blue wid-66 closetrigger">
+                    <span class="txt">확인</span>
+                  </button>
+                </div>
+                <!-- 20210415 수정-->
+                <button class="btn_layerclose" type="button">
+                  <span class="hide-txt">닫기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 환자 관리 지원 시스템 권한 관리 팝업-->
+        <div class="dimlayer_z" id="srdTarget02">
+          <div class="dimlayer_tb">
+            <div class="dimlayer_td">
+              <!-- layer_box-->
+              <div class="layer_box wid-695">
+                <div class="layer_tit_low">
+                  <h2 class="layer_tit font-18">서울시 Covid-19 환자 관리 지원 시스템 권한 관리</h2>
+                </div>
+                <div class="layer_cont" style="max-height: 875px;">
+                  <div class="layer_cont_in form-group">
+                    <div class="content-txt">
+                      <table class="tbl-col01 confirm-table">
+                        <caption>공시자료: 번호,보고서명,등록일</caption>
+                        <colgroup>
+                          <col width="20%">
+                          <col width="80%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>선택</th>
+                            <th>접근 메뉴</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">상황판</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">검사현황</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">확진자통계</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">검사통계</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">격리자통계</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">역학조사</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">현황자료게시판</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">분석자료게시판</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">확진자전국데이터</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">확진자목록</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">확진자등록</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">검사소목록 / 관리</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="input-checkbox">
+                                <input type="checkbox" id="checkbox201" name="checkbox201">
+                                <label for="checkbox201">
+                                  <span class="hide-txt">숨김텍스트처리</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="align-l">검사실적등록</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group right mt-25">
+                  <!-- closetrigger 있으면 닫힘-->
+                  <button class="wid-66 closetrigger" type="button">
+                    <span class="txt">닫기</span>
+                  </button>
+                  <button class="color-blue wid-66 closetrigger">
+                    <span class="txt">확인</span>
+                  </button>
+                </div>
+                <!-- 20210415 수정-->
+                <button class="btn_layerclose" type="button">
+                  <span class="hide-txt">닫기</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -43,39 +724,7 @@
   <div class="dimm">
     <img src="../../images/common/blank_size_100.png" alt="">
   </div>
-  <script>
-    //- CTC.rockMenu("#plm01,#plm01_01");
-
-    $(function() {
-      // 테이블 액션 - 전체 선택
-      $("#check_total").on("click", function() {
-        var $this = $(this),
-          $t_p = $this.parents(".data_htb");
-        if ($this.prop("checked")) {
-          $t_p.find(".frdchk").prop("checked", true);
-        } else {
-          $t_p.find(".frdchk").prop("checked", false);
-        }
-      });
-      // 테이블 액션 - 개별 선택
-      $(".data_htb tbody .frdchk").on("click", function() {
-        var $this = $(this),
-          $t_p = $this.parents("tr");
-        if ($this.prop("checked")) {
-          $t_p.addClass("active");
-        } else {
-          $t_p.removeClass("active");
-        }
-      });
-
-      // 체크박스 for 퍼블확인용
-      $("#data_sort_table .fitem.oneitem").each(function(index) {
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id", "check_0" + index);
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for", "check_0" + index);
-      });
-    });
-
-  </script>
+  <script></script>
 </body>
 
 </html>

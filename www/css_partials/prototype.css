@@ -72,7 +72,8 @@ a:before {
         color: #606266; }
       .page-nav .page-item .page-link.on .txt {
         color: #409eff;
-        font-weight: 500; }
+        font-weight: 500;
+        text-align: center; }
   .page-nav .page-util {
     display: inline-block;
     width: 22px;
@@ -83,7 +84,8 @@ a:before {
       height: 100%; }
     .page-nav .page-util .ico-area {
       display: table-cell;
-      width: 100%; }
+      width: 100%;
+      text-align: center; }
     .page-nav .page-util .ico-page-arrow {
       display: inline-block;
       position: relative;
@@ -172,6 +174,8 @@ a:before {
         color: #0b5eab; }
       .tbl-col01 td a.color-n {
         color: #606266; }
+      .tbl-col01 td a.underline {
+        text-decoration: underline; }
     .tbl-col01 td.point {
       color: #c12526; }
     .tbl-col01 td.point02 {
@@ -180,6 +184,11 @@ a:before {
       border-right: 1px solid #e4e7ed; }
     .tbl-col01 td.num {
       color: #2f80ed; }
+    .tbl-col01 td.confirm {
+      color: #b0b0b0;
+      text-decoration: underline; }
+      .tbl-col01 td.confirm.ing {
+        color: #2f80ed; }
   .tbl-col01 tr.bg-yellow {
     background: #fff9ea; }
   .tbl-col01 tr.bg-green {
@@ -473,7 +482,7 @@ a:before {
   transition: all .3s ease-out; }
 
 .input-radio.right label {
-  padding-left: 30px; }
+  padding: 2px 0 0 30px; }
 
 .input-radio.left label {
   padding-right: 30px; }
@@ -690,4 +699,4 @@ a:before {
   border-color: #e4e7ed;
   border-radius: 4px; }
 
-/*# sourceMappingURL=../sass_maps/prototype.css.map */
+/*# sourceMappingURL=../../sass_maps/css_partials/prototype.css.map */

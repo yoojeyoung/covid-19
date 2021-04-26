@@ -72,7 +72,7 @@ a{
             height:100%;
             .txt{display:table-cell;@include rem(font-size, 12px);color: #606266;}
             &.on{
-                .txt{color: #409eff;font-weight: 500;}
+                .txt{color: #409eff;font-weight: 500;text-align: center;}
             }
         }
     }
@@ -83,7 +83,7 @@ a{
         @include rem(width, 22px);
         @include rem(height, 21px);
         .page-link{display:table;width:100%;height:100%;}
-        .ico-area{display:table-cell;width:100%;}
+        .ico-area{display:table-cell;width:100%;text-align: center;}
         .ico-page-arrow{
             display:inline-block;
             position: relative;
@@ -161,11 +161,17 @@ a{
             }
             &:hover{color: #0b5eab;}
             &.color-n{color: #606266;}
+            &.underline{text-decoration: underline;}
         }
         &.point{color: #c12526;}
         &.point02{background:#fff6f8};
         &.border-r{border-right: 1px solid #e4e7ed};
         &.num{color: #2f80ed;}
+        &.confirm{
+            color: #b0b0b0;
+            text-decoration: underline;
+            &.ing{color: #2f80ed;}
+        }
     }
     tr{
         &.bg-yellow{background: #fff9ea;}
@@ -374,7 +380,7 @@ a{
     .txt{display:inline-block;color:#606266;@include rem(font-size, 14px);}
     label:before{content:'';position: absolute;top: 50%;left: 0;@include rem(width, 20px);@include rem(height, 20px);@include rem(margin-top, -10px);border: 1px solid #dcdfe6;text-align: center;border-radius: 50%;transition: all .3s ease-out;}
     &.right{
-        label{@include rem(padding-left, 30px);}
+        label{@include rem(padding, 2px 0 0 30px);}
     }
     &.left{
         label{@include rem(padding-right, 30px);}

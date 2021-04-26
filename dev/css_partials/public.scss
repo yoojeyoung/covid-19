@@ -822,7 +822,7 @@ section.content-wrap{
     @include rem(padding-bottom,26px);
     border-bottom: 1px solid #e4e7ed;
     span{@include rem(font-size,14px);color: #303133;}
-    .tit{@include rem(margin-left,20px);@include rem(font-size,16px);font-weight: bold;}
+    .tit{@include rem(margin-left,20px);@include rem(font-size,16px !important);font-weight: bold;}
   }
   .view-content{
     margin: 26px 0 0;
@@ -1038,7 +1038,10 @@ section.content-wrap{
     background: #fff;
     + .selectbox{@include rem(margin-left,16px)}
     + button{@include rem(margin-left,16px);}
+    + .el-date-editor.el-input{@include rem(margin-left,16px);}
     &.wid-100{@include rem(width,100px);}
+    &.wid-200{@include rem(width,200px);}
+    &.ml-50{@include rem(margin-left,50px);}
   }
   button{
     @include rem(padding,10px 10px);

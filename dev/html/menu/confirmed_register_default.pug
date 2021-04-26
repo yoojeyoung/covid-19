@@ -7,993 +7,342 @@ block contents
         section.pgmid_zone
           .pgright_wrap
             .inner
-              h2.tit 확진자 목록
-              section.content-wrap.shadow-n
+              h2.tit 확진자 등록
+              section.content-wrap
                 .inner
-                  .btn-group.type-tr
-                    button(type="button").border-blue
-                      span.txt 확진자 정보
-                    button(type="button").border-blue
-                      span.txt 심층역학조사서
-                  .register-form.wid-550
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th 연번
-                              th 자치구
-                        tbody
-                            tr
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력")
-                              td 
-                                .input-txt
-                                  .selectbox
-                                    select(title="")
-                                      option(value="") 선택해주세요.
-                                      option(value="") 선택
-                                      option(value="") 선택
-                  .register-form
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th(colspan="7").border02-b 동선장소 
-                            tr
-                              th(rowspan="2").border02-b 관할시도
-                              th(rowspan="2").border02-b 조사보건소
-                              th(rowspan="2").border02-b 조사자성명
-                              th(colspan="2").border02-b 연락처
-                              th(rowspan="2").border02-b 조사일
-                              th(rowspan="2").border02-b 신고기관
-                            tr
-                              th 사무실
-                              th 핸드폰
-                        tbody
-                            tr
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input 
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input 
-                              td 
-                                .input-txt
-                                  .input-box
-                                    button.btn-data
-                                      span.txt 오늘
-                                    button.btn-data
-                                      span.txt 전날
-                                    input(placeholder="숫자 입력").wid-149
-                              td 
-                                .input-txt
-                                  .input-box
-                                    .input-radio.right
-                                      input(type="radio" id="radio1" name="radio1")
-                                      label(for="radio1")
-                                        span.txt 보건소
-                                    .input-radio.right
-                                      input(type="radio" id="radio2" name="radio2")
-                                      label(for="radio2")
-                                        span.txt 의료기관
-                                    input(placeholder="숫자 입력").wid-149                            
-                  .register-form.wid-998
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th 확진번호
-                              th 검사기관
-                              th 격리종류 및 장소
-                        tbody
-                            tr
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력")
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력")
-                              td 
-                                .input-txt
-                                  .input-box
-                                    .input-radio.right
-                                      input(type="radio" id="radio3" name="radio3")
-                                      label(for="radio3")
-                                        span.txt 자가
-                                    .input-radio.right
-                                      input(type="radio" id="radio4" name="radio4")
-                                      label(for="radio4")
-                                        span.txt 시설
-                                    .input-radio.right
-                                      input(type="radio" id="radio5" name="radio5")
-                                      label(for="radio5")
-                                        span.txt 병원
-                                    input(placeholder="장소명 입력")
-                  .register-tit
-                    span.tit 인적사항
-                  .register-form.wid-998
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        colgroup 
-                          col(width="25%")
-                          col(width="auto")
-                          col(width="25%")
-                        thead
-                            tr
-                              th 
-                                span 성명
-                              th 
-                                span.point 주민등록번호
-                              th 
-                                span 성별
-                        tbody
-                            tr
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                                    .input-radio.right
-                                      input(type="radio" id="radio6" name="radio6")
-                                      label(for="radio6")
-                                        span.txt 여권번호
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    .input-radio.right
-                                      input(type="radio" id="radio7" name="radio7")
-                                      label(for="radio7")
-                                        span.txt 남성
-                                    .input-radio.right
-                                      input(type="radio" id="radio8" name="radio8")
-                                      label(for="radio8")
-                                        span.txt 여성
-                  .register-form.wid-1187
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th 환자 연락처
-                              th 보호자 연락처
-                              th 직업
-                              th 의료기관종사자
-                        tbody
-                            tr
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력")
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력")
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="직작명, 학교명, 의료기관명 등").wid-345
-                              td 
-                                .input-txt
-                                  .input-box
-                                    .input-radio.right
-                                      input(type="radio" id="radio7" name="radio7")
-                                      label(for="radio7")
-                                        span.txt 해당없음
-                                    .input-radio.right
-                                      input(type="radio" id="radio8" name="radio8")
-                                      label(for="radio8")
-                                        span.txt 없음
-                                    .selectbox
-                                      select(title="")
-                                        option(value="") 선택해주세요.
-                                        option(value="") 선택
-                                        option(value="") 선택
-                                    input
-                  .register-form.wid-810
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th 등록장애인여부
-                              th 장애유형
-                              th 장애정도
-                        tbody
-                            tr
-                              td 
-                                .input-txt
-                                  .input-box
-                                    .input-radio.right
-                                      input(type="radio" id="radio9" name="radio9")
-                                      label(for="radio9")
-                                        span.txt 예
-                                    .input-radio.right
-                                      input(type="radio" id="radio10" name="radio10")
-                                      label(for="radio10")
-                                        span.txt 아니오
-                              td 
-                                .input-txt
-                                  .input-box
-                                    .selectbox
-                                      select(title="")
-                                        option(value="") 선택해주세요.
-                                        option(value="") 선택
-                                        option(value="") 선택
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    .input-radio.right
-                                      input(type="radio" id="radio11" name="radio11")
-                                      label(for="radio11")
-                                        span.txt 중증
-                                    .input-radio.right
-                                      input(type="radio" id="radio12" name="radio12")
-                                      label(for="radio12")
-                                        span.txt 경증
-                  .register-tit
-                    span.tit 증상 및 기저질환
-                  .register-form.wid-550
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th 증상 유무
-                              th 증상발현일
-                        tbody
-                            tr
-                              td 
-                                .input-txt
-                                  .input-box
-                                    .input-radio.right
-                                      input(type="radio" id="radio113" name="radio13")
-                                      label(for="radio11")
-                                        span.txt 예
-                                    .input-radio.right
-                                      input(type="radio" id="radio14" name="radio14")
-                                      label(for="radio14")
-                                        span.txt 아니오
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="숫자 입력")
-                  .register-form.wid-860
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        colspan 
-                          col(width="30%")
-                          col(width="auto")
-                        thead
-                          tr
-                            th(colspan="2").border02-b 최초증상
-                          tr
-                            th 
-                              .input-checkbox.right
-                                input(type="checkbox" id="check1" name="check1")
-                                label(for="check1")
-                                  span.txt 발열
-                            th 
-                              .input-checkbox.right
-                                input(type="checkbox" id="check2" name="check2")
-                                label(for="check2")
-                                  span.txt 호흡기 증상 외
-                        tbody
-                          tr
-                            td 
-                              .input-txt
-                                .input-box
-                                  .input-radio.right
-                                      input(type="radio" id="radio15" name="radio15")
-                                      label(for="radio15")
-                                        span.txt 아니오
-                                  .input-radio.right
-                                      input(type="radio" id="radio16" name="radio16")
-                                      label(for="radio16")
-                                        span.txt 아니오
-                                  input.wid-48
-                                  span.tem °C
-                            td 
-                              .input-txt
-                                .input-box
-                                  .input-radio.right
-                                      input(type="radio" id="radio17" name="radio17")
-                                      label(for="radio17")
-                                        span.txt 있음
-                                  .input-radio.right
-                                      input(type="radio" id="radio18" name="radio18")
-                                      label(for="radio18")
-                                        span.txt 없음
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check3" name="check3")
-                                    label(for="check3")
-                                      span.txt 근육통
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check4" name="check4")
-                                    label(for="check4")
-                                      span.txt 두통
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check5" name="check5")
-                                    label(for="check5")
-                                      span.txt 오한
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check6" name="check6")
-                                    label(for="check6")
-                                      span.txt 미각손실
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check7" name="check7")
-                                    label(for="check7")
-                                      span.txt 호각손실
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check8" name="check8")
-                                    label(for="check8")
-                                      span.txt 기타
-                  .register-form.wid-860
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                          tr
-                            th 
-                              .input-checkbox.right
-                                input(type="checkbox" id="check9" name="check9")
-                                label(for="check9")
-                                  span.txt 호흡기 증상
-                            th 
-                              .input-checkbox.right
-                                input(type="checkbox" id="check10" name="check10")
-                                label(for="check10")
-                                  span.txt 폐렴
-                        tbody
-                          tr
-                            td 
-                              .input-txt
-                                .input-box
-                                  .input-radio.right
-                                      input(type="radio" id="radio19" name="radio19")
-                                      label(for="radio19")
-                                        span.txt 있음
-                                  .input-radio.right
-                                      input(type="radio" id="radio20" name="radio20")
-                                      label(for="radio20")
-                                        span.txt 없음
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check11" name="check11")
-                                    label(for="check11")
-                                      span.txt 기침
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check12" name="check12")
-                                    label(for="check12")
-                                      span.txt 가래
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check13" name="check13")
-                                    label(for="check13")
-                                      span.txt 인후통
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check14" name="check14")
-                                    label(for="check14")
-                                      span.txt 호흡곤란
-                            td 
-                              .input-txt
-                                .input-box
-                                  .input-radio.right
-                                      input(type="radio" id="radio21" name="radio21")
-                                      label(for="radio21")
-                                        span.txt 있음
-                                  .input-radio.right
-                                      input(type="radio" id="radio22" name="radio22")
-                                      label(for="radio22")
-                                        span.txt 없음
-                                  span.type 흉부영상확인여부(CT/X-ray)
-                                  .input-radio.right
-                                      input(type="radio" id="radio23" name="radio23")
-                                      label(for="radio23")
-                                        span.txt 예
-                                  .input-radio.right
-                                      input(type="radio" id="radio24" name="radio24")
-                                      label(for="radio24")
-                                        span.txt 아니오
-                  .register-form.wid-602
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th 기저질환
-                              th 임신여부
-                        tbody
-                            tr
-                              td 
-                                .input-txt
-                                  .input-box
-                                    .input-radio.right
-                                      input(type="radio" id="radio25" name="radio25")
-                                      label(for="radio25")
-                                        span.txt 있음
-                                    .input-radio.right
-                                      input(type="radio" id="radio26" name="radio26")
-                                      label(for="radio26")
-                                        span.txt 없음
-                                    input(placeholder="기거질환명")
-                              td 
-                                .input-txt
-                                  .input-box
-                                    .input-radio.right
-                                      input(type="radio" id="radio27" name="radio27")
-                                      label(for="radio27")
-                                        span.txt 네
-                                    .input-radio.right
-                                      input(type="radio" id="radio28" name="radio28")
-                                      label(for="radio28")
-                                        span.txt 아니오
-                                    input.wid-55
-                                    span.type 주
-                  .register-form.wid-860
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                          tr
-                            th 검사현황치료상태(확진당시)
-                        tbody
-                          tr
-                            td 
-                              .input-txt
-                                .input-box
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check15" name="check15")
-                                    label(for="check15")
-                                      span.txt 일반치료
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check16" name="check16")
-                                    label(for="check16")
-                                      span.txt 산소치료(비강캐뉼라, 마스크)
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check17" name="check17")
-                                    label(for="check17")
-                                      span.txt 인공호흡
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check18" name="check18")
-                                    label(for="check18")
-                                      span.txt ECMO
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check19" name="check19")
-                                    label(for="check19")
-                                      span.txt 사망
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check20" name="check20")
-                                    label(for="check20")
-                                      span.txt 조사중
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check21" name="check21")
-                                    label(for="check21")
-                                      span.txt 기타
-                                  input(placeholder="기타 내용 입력")
-                  .register-form.wid-302
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                          tr
-                            th 흡연여부
-                        tbody
-                          tr
-                            td 
-                              .input-txt
-                                .input-box
-                                  .input-radio.right
-                                      input(type="radio" id="radio29" name="radio29")
-                                      label(for="radio29")
-                                        span.txt 햔재흡연
-                                  .input-radio.right
-                                      input(type="radio" id="radio30" name="radio30")
-                                      label(for="radio30")
-                                        span.txt 과거흡연
-                                  .input-radio.right
-                                      input(type="radio" id="radio31" name="radio31")
-                                      label(for="radio31")
-                                        span.txt 비흡연
-                  .register-form.wid-860
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                          tr
-                            th 검사현황치료상태(확진당시)
-                        tbody
-                          tr
-                            td 
-                              .input-txt
-                                .input-box
-                                  label(for="") 실험기관 
-                                  input.wid-98
-                              .input-txt
-                                .input-box
-                                  label(for="") RdRp gene
-                                  input.wid-98
-                              .input-txt
-                                .input-box
-                                  label(for="") E gene
-                                  input.wid-98
-                              .input-txt
-                                .input-box
-                                  label(for="") N gene
-                                  input.wid-98
-                  .register-form.wid-860
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                          tr
-                            th 검사경위
-                        tbody
-                          tr
-                            td 
-                              .input-txt 
-                                .input-box
-                                  .input-radio.right
-                                    input(type="radio" id="radio32" name="radio32")
-                                    label(for="radio32")
-                                      span.txt 본인이 판단
-                                  .input-radio.right
-                                    input(type="radio" id="radio33" name="radio33")
-                                    label(for="radio33")
-                                      span.txt 의사의 소견 및 권장
-                                  .input-radio.right
-                                    input(type="radio" id="radio34" name="radio34")
-                                    label(for="radio34")
-                                      span.txt 해외방문력
-                                  .input-radio.right
-                                    input(type="radio" id="radio35" name="radio35")
-                                    label(for="radio35")
-                                      span.txt 집단발생과 역학적 연관성
-                                  .input-radio.right
-                                    input(type="radio" id="radio36" name="radio36")
-                                    label(for="radio36")
-                                      span.txt 가족 또는 지인이 확진환자
-                  .register-tit
-                    span.tit 증상 및 기저질환
-                    span.sub-tit *최초 증상 발병일 14일 전부터 현재까지, ☐표시 또는 기재
-                  .register-form.wid-1125
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                          tr
-                            th 해외방문(체류국가)
-                            th 국가명
-                            th 입국일
-                            th 확진자 접촉
-                            th 최종접촉일
-                        tbody
-                          tr 
-                            td 
-                              .input-txt 
-                                .input-box
-                                  .input-radio.right
-                                    input(type="radio" id="radio37" name="radio37")
-                                    label(for="radio37")
-                                      span.txt 무
-                                  .input-radio.right
-                                    input(type="radio" id="radio38" name="radio38")
-                                    label(for="radio38")
-                                      span.txt 유
-                            td 
-                              .input-txt
-                                  .selectbox
-                                    select(title="")
-                                      option(value="") 선택해주세요.
-                                      option(value="") 선택
-                                      option(value="") 선택
-                            td 
-                              .input-txt
-                                  .input-box 
-                                    input(type="text" placeholder="날짜 입력")
-                            td 
-                              .input-txt 
-                                .input-box
-                                  .input-radio.right
-                                    input(type="radio" id="radio39" name="radio39")
-                                    label(for="radio39")
-                                      span.txt 무
-                                  .input-radio.right
-                                    input(type="radio" id="radio40" name="radio40")
-                                    label(for="radio40")
-                                      span.txt 유
-                            td 
-                              .input-txt
-                                  .input-box 
-                                    input(type="text" placeholder="날짜 입력")
-                          tr 
-                            td 
-                              .input-txt 
-                                .input-box 
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check22" name="check22")
-                                    label(for="check22")
-                                      span.txt 가족(동거인) 접촉자
-                            td(colspan="4").align-l
-                              .input-txt 
-                                .input-box
-                                  label(for="name").point 이름
-                                  input(type="text")#name.wid-98
-                              .input-txt 
-                                .input-box
-                                  label(for="num").point 확진자 번호
-                                  input(type="text")#num.wid-98
-                              .input-txt 
-                                .input-box
-                                  label(for="relation").point 관계
-                                  input(type="text")#relation.wid-98
-                          tr 
-                            td 
-                              .input-txt 
-                                .input-box 
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check23" name="check23")
-                                    label(for="check23")
-                                      span.txt 가족(동거인) 이외 접촉자
-                            td(colspan="4").align-l
-                              .input-txt 
-                                .input-box
-                                  label(for="name").point 이름
-                                  input(type="text")#name.wid-98
-                              .input-txt 
-                                .input-box
-                                  label(for="num").point 확진자 번호
-                                  input(type="text")#num.wid-98
-                              .input-txt 
-                                .input-box
-                                  label(for="relation").point 관계
-                                  input(type="text")#relation.wid-98
-                  .register-form.wid-1125
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                          tr
-                            th 집단발병관리
-                        tbody
-                          tr
-                            td 
-                              .input-txt 
-                                .input-box
-                                  .input-radio.right
-                                    input(type="radio" id="radio41" name="radio41")
-                                    label(for="radio41")
-                                      span.txt 무
-                                  .input-radio.right
-                                    input(type="radio" id="radio41" name="radio41")
-                                    label(for="radio41")
-                                      span.txt 유
-                                  .input-checkbox.right
-                                    input(type="checkbox" id="check24" name="check24")
-                                    label(for="check24")
-                                      span.txt 가족(동거인)
-                              .input-txt 
-                                .input-box
-                                  label(for="label1") 의료기관
-                                  input(type="text")#label1.wid-98
-                              .input-txt 
-                                .input-box
-                                  label(for="label2") 종교기관
-                                  input(type="text")#label2.wid-98
-                              .input-txt 
-                                .input-box
-                                  label(for="label3") 요양/정신시설
-                                  input(type="text")#label3.wid-98
-                              .input-txt 
-                                .input-box
-                                  label(for="label4") 학교
-                                  input(type="text")#label4.wid-98
-                              .input-txt 
-                                .input-box
-                                  label(for="label5") 기타
-                                  input(type="text")#label5.wid-98
-                  .register-form.wid-860
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                          tr
-                            th 기타
-                        tbody
-                          tr
-                            td 
-                              .input-txt 
-                                .input-box
-                                  input(type="text").wid-771
-                  .register-tit
-                    span.tit 선행확진자
-                    span.sub-tit *시도/권역 확인 (우선순위 순으로 기재)
-                  .register-form.wid-1165
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        colgroup 
-                          col(width="5%")
-                          col(width="auto")
-                          col(width="auto")
-                          col(width="auto")
-                          col(width="auto")
-                          col(width="auto")
-                        thead
-                            tr
-                              th NO
-                              th 확진자번호
-                              th 이름
-                              th 관계
-                              th 노출장소
-                              th 최초노출일
-                              th 최종노출일
-                        tbody
-                            tr
-                              td 1
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="지도 선택")
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="날짜 입력")
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="날짜 입력")
-                            tr
-                              td 2
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="지도 선택")
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="날짜 입력")
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="날짜 입력")
-                            tr
-                              td 3
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="지도 선택")
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="날짜 입력")
-                              td 
-                                .input-txt
-                                  .input-box
-                                    input(placeholder="날짜 입력")
-                  .register-tit
-                    span.tit 집단시설 이용력
-                    span.sub-tit *의료 기관, 시설 등 / 최초 증상 발병일 14일 전부터 현재까지, ☐표시 또는 기재
-                  .register-form.wid-900
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th 집단시설 이용력
-                              th 기관 / 시설명
-                              th 
-                                .input-checkbox.right
-                                  input(type="checkbox" id="check25" name="check25")
-                                  label(for="check25")
-                                    span.txt 입소(입원) 중
-                              th 
-                                .input-checkbox.right
-                                  input(type="checkbox" id="check26" name="check26")
-                                  label(for="check26")
-                                    span.txt 입소(입원) 중
-                        tbody
-                            tr
-                              td
-                                .input-txt 
-                                  .input-box 
-                                    .input-radio.right
-                                      input(type="radio" id="radio41" name="radio41")
-                                      label(for="radio41")
-                                        span.txt 유
-                                    .input-radio.right
-                                      input(type="radio" id="radio41" name="radio41")
-                                      label(for="radio41")
-                                        span.txt 유
-                              td 
-                                .input-txt 
-                                  .input-box
-                                    input(type="text")
-                              td 
-                                .input-txt 
-                                  .input-box
-                                    label(for="label7") 입소일 
-                                    input(type="text" placeholder="날짜 입력")#label7
-                              td 
-                                .input-txt 
-                                  .input-box
-                                    label(for="label8") 퇴원일
-                                    input(type="text" placeholder="날짜 입력")#label8
-                  .register-tit
-                    span.tit 가족(동거인) 및 집단시설 접촉자
-                    span.sub-tit *최초 증상 발병일 2일 전부터 현재까지 접촉한 가족 및 집단시설 접촉자 / ☐표시 또는 기재
-                  .register-form.wid-998
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th 가족(동거인) 접촉자
-                              th 시설 접촉자
-                              th 의료기관 접촉자
-                            tr
-                              td
-                                .input-txt 
-                                  .input-box 
-                                    .input-radio.right
-                                      input(type="radio" id="radio43" name="radio43")
-                                      label(for="radio43")
-                                        span.txt 유
-                                    .input-radio.right
-                                      input(type="radio" id="radio44" name="radio44")
-                                      label(for="radio44")
-                                        span.txt 유
-                                    input(type="text").wid-48
-                                    span.type 명
-                              td 
-                                .input-txt 
-                                  .input-box 
-                                    .input-radio.right
-                                      input(type="radio" id="radio45" name="radio45")
-                                      label(for="radio45")
-                                        span.txt 무
-                                    .input-radio.right
-                                      input(type="radio" id="radio46" name="radio46")
-                                      label(for="radio46")
-                                        span.txt 유
-                                    input(type="text").wid-48
-                                    span.tem 명
-                                .input-txt 
-                                  .input-box 
-                                    label(for="label8") 시설명
-                                    input(type="text").wid-98#label8
-                              td 
-                                .input-txt 
-                                  .input-box 
-                                    .input-radio.right
-                                      input(type="radio" id="radio47" name="radio47")
-                                      label(for="radio47")
-                                        span.txt 무
-                                    .input-radio.right
-                                      input(type="radio" id="radio48" name="radio48")
-                                      label(for="radio48")
-                                        span.txt 유
-                                    input(type="text").wid-48
-                                    span.tem 명
-                                .input-txt 
-                                  .input-box 
-                                    label(for="label9") 의료기관명
-                                    input(type="text").wid-98#label9
-                  .register-tit
-                    span.tit 사례분류 결과
-                    span.sub-tit *시도/권역 확인
-                  .register-form.wid-1165
-                    .tbl-container01
-                      table.tbl-col01.form-group
-                        caption 공시자료: 번호,보고서명,등록일
-                        thead
-                            tr
-                              th 대분류
-                              th 중분류
-                              th 참고사항
-                            tr
-                              td
-                                .input-txt 
-                                  .input-box 
-                                    .input-radio.right
-                                      input(type="radio" id="radio49" name="radio49")
-                                      label(for="radio49")
-                                        span.txt 해외유입
-                                    .input-radio.right
-                                      input(type="radio" id="radio50" name="radio50")
-                                      label(for="radio50")
-                                        span.txt 해외유입관련
-                                    .input-radio.right
-                                      input(type="radio" id="radio51" name="radio51")
-                                      label(for="radio51")
-                                        span.txt 요양
-                                    .input-radio.right
-                                      input(type="radio" id="radio52" name="radio52")
-                                      label(for="radio52")
-                                        span.txt 기타 집단
-                                    .input-radio.right
-                                      input(type="radio" id="radio53" name="radio53")
-                                      label(for="radio53")
-                                        span.txt 확진자접촉
-                                    .input-radio.right
-                                      input(type="radio" id="radio54" name="radio54")
-                                      label(for="radio54")
-                                        span.txt 미분류
-                              td 
-                                .input-txt 
-                                  .input-box 
-                                    input(type="text").wid-281
-                              td 
-                                .input-txt 
-                                  .input-box
-                                    input(type="text").wid-281
-                  
-                  .btn-group 
-                    button.border-blue.wid-66
-                      span.txt 취소
-                    button(type="submit").color-blue.wid-66
-                      span.txt 등록
+                  // 검색영역
+                  .search-form.mb-20
+                    .search-type
+                      .search-list
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio211" name="radio211" checked)
+                          label(for="radio211")
+                            span.txt 단건 등록
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio212" name="radio212")
+                          label(for="radio212")
+                            span.txt 엑셀 등록
+                  .register-form.flex
+                    .input-txt.form-error
+                      label(for="input01").point 연번
+                      input(type="text" placeholder="숫자 입력" id="input01")
+                      .message 입력해주세요
+                    .input-txt 
+                      label(for="") 접수일(질본통계반영일)
+                      .input-box
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="날짜 선택").el-input__inner
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        .selectbox 
+                          select(title="").wid-63
+                            option(value="") 시간
+                            option(value="") 선택
+                            option(value="") 선택
+                        .selectbox 
+                          select(title="").wid-63
+                            option(value="") 분
+                            option(value="") 선택
+                            option(value="") 선택
+                    .input-txt 
+                      label(for="").point 확진일
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 선택").el-input__inner.wid-225
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                    .input-txt 
+                      label(for="") 역학조사서 입력일(클러스터 조정일)
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 선택").el-input__inner.wid-245
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                    .input-txt 
+                      label(for="input01") 확진No.
+                      input(type="text" placeholder="숫자 입력" id="input01")
+                    .input-txt
+                      label(for="input01") 확진기관
+                      input(type="text" id="input01").wid-274
+                  .register-form.flex.mt-32
+                    .input-txt
+                      label(for="") 최초상황 접수 보건소 
+                      .selectbox.form-error
+                        select(title="").wid-281
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                          option(value="") 선택
+                        .message 선택해주세요
+                    .input-txt 
+                      label(for="").point 이름
+                      input(type="text")
+                    .input-txt 
+                      label(for="").point *성별(출생년)
+                      .input-box 
+                        input(type="text")
+                        span.wave ~
+                        input(type="text").wid-40
+                    .input-txt
+                      label(for="") 국적
+                      .selectbox 
+                        select(title="").wid-110
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                    .input-txt
+                      label(for="").point 발생구(통계기준)
+                      .selectbox 
+                        select(title="").wid-152
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                    .input-txt
+                      label(for="").point 거주지
+                      .selectbox 
+                        select(title="").wid-152
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                    .input-txt 
+                      label(for="input01") 직업
+                      input(type="text" id="input01").wid-114
+                    .input-txt
+                      label(for="input01").point 직장명(학교명)
+                      input(type="text" id="input01")
+                  .register-form.flex.mt-32
+                    .input-txt
+                      label(for="") 여행지역
+                      .selectbox 
+                        select(title="")
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                          option(value="") 선택
+                    .input-txt 
+                      label(for="") 여행력
+                      input(type="text")
+                    .input-txt 
+                      label(for="") 해외 2차 접촉
+                      input(type="text").wid-114
+                    .input-txt
+                      label(for="") 상태(격리구분)
+                      .selectbox 
+                        select(title="").wid-218
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                          option(value="") 선택
+                    .input-txt
+                      label(for="") 격리 시설 구분
+                      .selectbox
+                        select(title="").wid-188
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                          option(value="") 선택
+                    .input-txt 
+                      label(for="input01") 격리병원
+                      input(type="text" id="input01").wid-274
+                    .input-txt 
+                      label(for="") 퇴원일(사망일) 
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 선택").el-input__inner.wid-245
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                  .register-form.flex.mt-32
+                    .input-txt.form-error 
+                      label(for="") RdRp값
+                      input(type="text" placeholder="숫자만 입력")
+                      .message 입력해주세요
+                    .input-txt 
+                      label(for="") E gene값
+                      input(type="text" placeholder="숫자만 입력")
+                    .input-txt
+                      label(for="") 증상발현일
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 선택").el-input__inner.wid-245
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                    .input-txt 
+                      label(for="") 14일 이내증상
+                      input(type="text").wid-281
+                    .input-txt 
+                      label(for="") 비고
+                      input(type="text")
+                    .input-txt 
+                      label(for="") 기저질환
+                      input(type="text").wid-345
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 집단발병 연관
+                  .register-form.flex.mt-32
+                    .input-txt.form-error 
+                      label(for="") 대분류
+                      .selectbox 
+                        select(title="").wid-488
+                          option(value="") 시간
+                          option(value="") 선택
+                          option(value="") 선택
+                    .input-txt.form-error 
+                      label(for="") 중분류
+                      .selectbox 
+                        select(title="").wid-488
+                          option(value="") 시간
+                          option(value="") 선택
+                          option(value="") 선택
+                    .input-txt.form-error 
+                      label(for="") 소분류
+                      .selectbox 
+                        select(title="").wid-488
+                          option(value="") 시간
+                          option(value="") 선택
+                          option(value="") 선택
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 확진자 접촉력
+                    button(type="button").border-blue.wid-56.hig-28.ml-8
+                      span.txt 추가
+                  .register-form.flex
+                    .form-box.wid-672
+                      .from-list
+                        .list-item.wid-225
+                          button(type="button" onclick="COVID.dimLayerShow('#srdTarget01')")
+                            span.txt #2198
+                        .list-item
+                          .input-txt 
+                            input(type="text" placeholder="해당 확진자의 남편").wid-430
+                      .from-list
+                        .list-item.wid-225
+                          button(type="button")
+                            span.txt 확진자 검색
+                        .list-item
+                          .input-txt 
+                            input(type="text").wid-430
+                      .from-list 
+                        .list-item.wid-225
+                          button(type="button")
+                            span.txt 확진자 검색
+                        .list-item
+                          .input-txt 
+                            input(type="text").wid-430
+                      .from-list 
+                        .list-item.wid-225
+                          button(type="button")
+                            span.txt 확진자 검색
+                        .list-item
+                          .input-txt 
+                            input(type="text").wid-430
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 동선조사
+                    button(type="button").border-blue.wid-56.hig-28.ml-8
+                      span.txt 추가
+                    .btn-area.type02 
+                      button(type="button").border-blue.wid-109.hig-28
+                        span.txt 동선 지도로 보기
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 일시 
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 선택").el-input__inner.wid-225
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close 
+                      .selectbox 
+                        select(title="").wid-80
+                          option(value="") 00:00
+                          option(value="") 선택
+                      span.wave ~ 
+                      .selectbox 
+                        select(title="").wid-80
+                          option(value="") 00:00
+                          option(value="") 선택
+                    .input-txt 
+                      label(for="") 자치구
+                      .selectbox 
+                        select(title="").wid-218
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                    .input-txt
+                      label(for="") 위치 
+                      // element-ui 날짜 input
+                      input(type="text" placeholder="지도선택" onclick="COVID.dimLayerShow('#srdTarget02')").wid-300
+                    .input-txt 
+                      label(for="") 이동수단
+                      input(type="text").wid-281
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      .input-box
+                        .input-textarea 
+                          label(for="") 상황
+                          textarea(name="", cols="30", rows="10").wid-648
+                        .input-textarea 
+                          label(for="") 접촉자 및 특이활동
+                          textarea(name="", cols="30", rows="10").wid-648
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 일시 
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 선택").el-input__inner.wid-225
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close 
+                      .selectbox 
+                        select(title="").wid-80
+                          option(value="") 00:00
+                          option(value="") 선택
+                      span.wave ~ 
+                      .selectbox 
+                        select(title="").wid-80
+                          option(value="") 00:00
+                          option(value="") 선택
+                    .input-txt 
+                      label(for="") 자치구
+                      .selectbox 
+                        select(title="").wid-218
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                    .input-txt
+                      label(for="") 위치 
+                      input(type="text" placeholder="지도선택" onclick="COVID.dimLayerShow('#srdTarget02')").wid-300
+                    .input-txt 
+                      label(for="") 이동수단
+                      input(type="text").wid-281
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      .input-box
+                        .input-textarea 
+                          label(for="") 상황 
+                          textarea(name="", cols="30", rows="10").wid-648
+                        .input-textarea 
+                          label(for="") 접촉자 및 특이활동
+                          textarea(name="", cols="30", rows="10").wid-648
+              .btn-group 
+                button.border-blue.wid-66
+                  span.txt 취소
+                button(type="submit").color-blue.wid-66
+                  span.txt 등록
       // 확진자 정보 검색 팝업
       #srdTarget01.dimlayer_z
         .dimlayer_tb
@@ -1023,8 +372,14 @@ block contents
                           .txt 오늘
                         button.btn-data.wid-66
                           .txt 전날
-                        .input-txt
-                          input(type="text")
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
                     .search-type
                       .input-radio.right
                         input(type="radio" id="radio212" name="radio212")
@@ -1032,7 +387,7 @@ block contents
                           span.txt 확진자 번호로 검색
                       .search-list
                         .input-txt
-                          input(type="text" placeholder="숫자만 입력")
+                          input(type="text" placeholder="숫자만 입력").wid-220
                     .search-type
                       .input-radio.right
                         input(type="radio" id="radio213" name="radio213")
@@ -1040,7 +395,7 @@ block contents
                           span.txt 키워드 검색
                       .search-list
                         .input-txt
-                          input(type="text" placeholder="검색어 입력")
+                          input(type="text" placeholder="검색어 입력").wid-220
                     .btn-group.type-r
                       button.color-blue.wid-77 
                         span.txt 검색
@@ -1083,7 +438,7 @@ block contents
                               label(for="radio214")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -1097,7 +452,7 @@ block contents
                               label(for="radio215")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -1111,7 +466,7 @@ block contents
                               label(for="radio216")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -1125,7 +480,7 @@ block contents
                               label(for="radio217")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -1139,7 +494,7 @@ block contents
                               label(for="radio218")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -1153,7 +508,7 @@ block contents
                               label(for="radio219")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -1167,7 +522,7 @@ block contents
                               label(for="radio220")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -1181,7 +536,7 @@ block contents
                               label(for="radio221")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -1195,7 +550,7 @@ block contents
                               label(for="radio222")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -1209,7 +564,7 @@ block contents
                               label(for="radio223")
                           td 28820
                           td 2021. 3. 4
-                          td 91588
+                          td.color-b 91588
                           td 홍길동
                           td 041025-2
                           td 한국
@@ -1344,5 +699,3 @@ block contents
                 span.hide-txt 닫기
 append script
   script.
-    COVID.dimLayerShow('#srdTarget01');
-    COVID.dimLayerShow('#srdTarget02');

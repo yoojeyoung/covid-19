@@ -6,36 +6,456 @@ block contents
       .page_wrap.page_layout
         section.pgmid_zone
           .pgright_wrap
+            .inner
+              h2.tit 검사소 목록
+              // 검색 영역
+              section.content-wrap
+                .inner.mb-0
+                  .search-form
+                    .search-type
+                      .search-list 
+                        .input-radio.right
+                          input(type="radio" id="radio213" name="radio213")
+                          label(for="radio213")
+                            span.txt 전체
+                        .input-radio.right
+                          input(type="radio" id="radio214" name="radio214")
+                          label(for="radio214")
+                            span.txt 서울
+                        .input-radio.right
+                          input(type="radio" id="radio215" name="radio215")
+                          label(for="radio215")
+                            span.txt 자치구
+                        .input-radio.right
+                          input(type="radio" id="radio216" name="radio216")
+                          label(for="radio216")
+                            span.txt 보건소
+                        .input-radio.right
+                          input(type="radio" id="radio217" name="radio217")
+                          label(for="radio217")
+                            span.txt 의료기관
+                        .selectbox.wid-200.ml-50
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="시작일").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="종료일").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        button(type="button").wid-79.color-blue
+                          span.txt 검색
+                        button(type="button").wid-89.border-blue
+                          span.txt 다운로드
+              // 최상위 테이블
+              section.content-wrap
+                .inner
+                  .tbl-container01
+                    table.tbl-col01.confirm-table
+                      caption 공시자료: 번호,보고서명,등록일
+                      colgroup
+                        col(width="12.5%")
+                        col(width="12.5%")
+                        col(width="12.5%")
+                        col(width="12.5%")
+                        col(width="12.5%")
+                        col(width="12.5%")
+                        col(width="12.5%")
+                        col(width="12.5%")
+                      thead
+                          tr
+                            th NO.
+                            th 이름
+                            th(colspan="2") 소속 
+                            th 승인요청일
+                            th 승인일
+                            th 상테
+                            th 권한관리
+                      tbody
+                          tr
+                            td 28820
+                            td 
+                              a(href="#" onclick="COVID.dimLayerShow('#srdTarget01')").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm.ing 승인요청중
+                            td
+                              a(href="#" onclick="COVID.dimLayerShow('#srdTarget02')") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 미승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          tr
+                            td 28820
+                            td 
+                              a(href="#").underline 홍길동 
+                            td 서울시
+                            td.align-l 강남팀
+                            td 3월 2일
+                            td 3월 2일
+                            td.confirm 승인
+                            td
+                              a(href="#") 관리
+                          
+                          
+                  .page-nav-container
+                      +page-nav('type01')
+              
+      // 접속권한 요청 팝업
+      #srdTarget01.dimlayer_z
+        .dimlayer_tb
+          .dimlayer_td
+            // layer_box
+            .layer_box.wid-583
+              .layer_tit_low
+                h2.layer_tit.font-18 서울시 Covid-19 환자 관리 지원 시스템 사용자 정보
+              .layer_cont(style='max-height: 875px;')
+                .layer_cont_in.form-group
+                  .content-txt
+                    .input-form 
+                      .form-list 
+                        .list-item
+                          span.tit 이름
+                        .list-item
+                          span.txt 홍길동
+                      .form-list 
+                        .list-item
+                          span.tit 이메일(ID)
+                        .list-item
+                          span.txt abcd@email.com 
+                      .form-list 
+                        .list-item
+                          span.tit 휴대전화
+                        .list-item
+                          span.txt abcd@email.com 
+                      .form-list 
+                        .list-item
+                          span.tit 소속
+                        .list-item
+                          span.txt
+                            |자치구 : 
+                            span.sub-txt 의료기관
+                            span.sub-txt 삼성서울병원
+                      .form-list 
+                        .list-item
+                          span.tit 이름
+                        .list-item
+                          .input-textarea 
+                            textarea(name="", cols="30", rows="10" placeholder="제목을 입력해주세요") 
+                      .form-list 
+                        .list-item
+                          span.tit 승인처리
+                        .list-item
+                          .input-radio.right
+                            input(type="radio" id="radio219" name="radio219")
+                            label(for="radio219")
+                              span.txt 승인처리
+                  
+              .btn-group.right.mt-25
+                // closetrigger 있으면 닫힘
+                button(type="button").wid-66.closetrigger
+                  span.txt 취소
+                button.color-blue.wid-66.closetrigger
+                  span.txt 확인
+              // 20210415 수정
+              button(type="button").btn_layerclose
+                span.hide-txt 닫기
+      
+      // 환자 관리 지원 시스템 권한 관리 팝업
+      #srdTarget02.dimlayer_z
+        .dimlayer_tb
+          .dimlayer_td
+            // layer_box
+            .layer_box.wid-695
+              .layer_tit_low
+                h2.layer_tit.font-18 서울시 Covid-19 환자 관리 지원 시스템 권한 관리
+              .layer_cont(style='max-height: 875px;')
+                .layer_cont_in.form-group
+                  .content-txt 
+                    table.tbl-col01.confirm-table
+                      caption 공시자료: 번호,보고서명,등록일
+                      colgroup
+                        col(width="20%")
+                        col(width="80%")
+                      thead
+                          tr
+                            th 선택
+                            th 접근 메뉴
+                      tbody 
+                        tr 
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 상황판
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 검사현황
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 확진자통계
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 검사통계
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 격리자통계
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 역학조사
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 현황자료게시판
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 분석자료게시판
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 확진자전국데이터
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 확진자목록
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 확진자등록
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 검사소목록 / 관리
+                        tr
+                          td 
+                            .input-checkbox
+                              input(type="checkbox", id="checkbox201", name="checkbox201")
+                              label(for="checkbox201")
+                                  span.hide-txt 숨김텍스트처리
+                          td.align-l 검사실적등록
 
+              .btn-group.right.mt-25
+                // closetrigger 있으면 닫힘
+                button(type="button").wid-66.closetrigger
+                  span.txt 닫기
+                button.color-blue.wid-66.closetrigger
+                  span.txt 확인
+              // 20210415 수정
+              button(type="button").btn_layerclose
+                span.hide-txt 닫기
 append script
   script.
-    //- CTC.rockMenu("#plm01,#plm01_01");
-
-    $(function(){
-      // 테이블 액션 - 전체 선택
-      $("#check_total").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents(".data_htb");
-        if($this.prop("checked")){
-          $t_p.find(".frdchk").prop("checked",true);
-        }else{
-          $t_p.find(".frdchk").prop("checked",false);
-        }
-      });
-      // 테이블 액션 - 개별 선택
-      $(".data_htb tbody .frdchk").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents("tr");
-        if($this.prop("checked")){
-          $t_p.addClass("active");
-        }else{
-          $t_p.removeClass("active");
-        }
-      });
-
-      // 체크박스 for 퍼블확인용
-      $("#data_sort_table .fitem.oneitem").each(function(index){
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id","check_0"+index);
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for","check_0"+index);
-      });
-    });

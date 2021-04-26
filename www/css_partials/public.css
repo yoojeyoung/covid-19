@@ -1107,7 +1107,7 @@ section.content-wrap {
     color: #303133; }
   .detail-view-container .view-title .tit {
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 16px !important;
     font-weight: bold; }
 
 .detail-view-container .view-content {
@@ -1368,8 +1368,14 @@ section.content-wrap {
       margin-left: 16px; }
     .search-form .selectbox + button {
       margin-left: 16px; }
+    .search-form .selectbox + .el-date-editor.el-input {
+      margin-left: 16px; }
     .search-form .selectbox.wid-100 {
       width: 100px; }
+    .search-form .selectbox.wid-200 {
+      width: 200px; }
+    .search-form .selectbox.ml-50 {
+      margin-left: 50px; }
   .search-form button {
     padding: 10px 10px;
     height: 40px;
@@ -1813,4 +1819,4 @@ span.error-txt {
       width: 584px;
       max-width: initial; } }
 
-/*# sourceMappingURL=../sass_maps/public.css.map */
+/*# sourceMappingURL=../../sass_maps/css_partials/public.css.map */
