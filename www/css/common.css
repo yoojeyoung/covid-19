@@ -2089,6 +2089,9 @@ body {
   .input-txt.form-error .message {
     color: #dc3545 !important; }
 
+.selectbox .message {
+  margin-top: 5px; }
+
 .selectbox.form-success select {
   border-color: #28a745 !important; }
 

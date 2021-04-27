@@ -160,22 +160,22 @@ a:before {
       -o-text-overflow: ellipsis;
          text-overflow: ellipsis;
       overflow: hidden; }
-      .tbl-col01 td a .ico-new {
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        margin-left: 8px;
-        padding: 1px 4px;
-        font-size: 9px;
-        color: #fff;
-        border-radius: 50%;
-        background: #dc3545; }
       .tbl-col01 td a:hover {
         color: #0b5eab; }
       .tbl-col01 td a.color-n {
         color: #606266; }
       .tbl-col01 td a.underline {
         text-decoration: underline; }
+    .tbl-col01 td .ico-new {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-left: 8px;
+      padding: 1px 4px;
+      font-size: 9px;
+      color: #fff;
+      border-radius: 50%;
+      background: #dc3545; }
     .tbl-col01 td.point {
       color: #c12526; }
     .tbl-col01 td.point02 {
@@ -671,6 +671,10 @@ a:before {
         -ms-transform: rotate(135deg);
             transform: rotate(135deg);
     z-index: 1000; }
+  .selectbox .message {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px; }
   .selectbox select {
     cursor: pointer;
     position: relative;
@@ -684,19 +688,34 @@ a:before {
     border: 1px solid #e4e7ed;
     border-radius: 4px;
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none; }
+    -moz-appearance: none;
+    appearance: none; }
   .selectbox select::-ms-expand {
     display: none; }
   .selectbox select:disabled {
     background-color: #f5f7fa;
     pointer-events: none; }
+  .selectbox select::-ms-value {
+    background: none;
+    color: #c0c4cc; }
 
 .input-textarea textarea {
   width: 100%;
   height: 152px;
   margin-top: 8px;
+  padding: 12px 8px;
+  font-size: 14px;
   border-color: #e4e7ed;
   border-radius: 4px; }
+  .input-textarea textarea::-webkit-input-placeholder {
+    color: #c0c4cc; }
+  .input-textarea textarea::-moz-placeholder {
+    color: #c0c4cc; }
+  .input-textarea textarea:-ms-input-placeholder {
+    color: #c0c4cc; }
+  .input-textarea textarea::-ms-input-placeholder {
+    color: #c0c4cc; }
+  .input-textarea textarea::placeholder {
+    color: #c0c4cc; }
 
-/*# sourceMappingURL=../../sass_maps/css_partials/prototype.css.map */
+/*# sourceMappingURL=../sass_maps/prototype.css.map */

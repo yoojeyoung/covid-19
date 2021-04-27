@@ -323,7 +323,7 @@ body{background: #f5f5f7}
     .message{color: #dc3545 !important;}
   }
 }
-.selectbox{
+.selectbox{  
   &.form-success{
     select{border-color:#28a745 !important;}
     .message{color: #28a745 !important;}
@@ -401,6 +401,9 @@ button,a{
     border-color: #e4e7ed !important;
     background: #f9f9f9 !important;
     .txt{color: #d3d6dd !important;}
+  }
+  &.color-b{
+    .txt{color: #0778ca;}
   }
   &.color-blue{
     background: #0778ca !important;

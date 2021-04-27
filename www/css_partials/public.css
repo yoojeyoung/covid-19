@@ -674,6 +674,8 @@ button, a {
     background: #f9f9f9 !important; }
     button:disabled .txt, a:disabled .txt {
       color: #d3d6dd !important; }
+  button.color-b .txt, a.color-b .txt {
+    color: #0778ca; }
   button.color-blue, a.color-blue {
     background: #0778ca !important;
     border-color: #0778ca !important; }
