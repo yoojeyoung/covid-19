@@ -6,36 +6,191 @@ block contents
       .page_wrap.page_layout
         section.pgmid_zone
           .pgright_wrap
-
+            .inner
+              h2.tit 역학 관계도
+              // 검색 영역
+              section.content-wrap
+                .inner
+                  .search-form
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio211" name="radio211")
+                        label(for="radio211")
+                          span.txt 조건 검색
+                      .search-list
+                        span.type 자치구
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list
+                        span.type 발생원인
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list.wid-445
+                        span.type 확진일자
+                        button.btn-data.wid-66
+                          .txt 오늘
+                        button.btn-data.wid-66
+                          .txt 전날
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="시작일").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="종료일").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio212" name="radio212")
+                        label(for="radio212")
+                          span.txt 확진자 번호로 검색
+                      .search-list
+                        .input-txt
+                          input(type="text" placeholder="숫자만 입력")                    
+                  .btn-group.type-r
+                    button.wid-77.color-blue
+                      .txt 검색              
+              // 차트 영역
+              section.content-wrap.bg-n.shadow-n
+                .date-area 
+                  span 조회 일자 : 
+                    span.date 2021.1.4 - 2021.1.10
+                .inner.pd-0.mt-0
+                  .column-group.flex.mt-0
+                    .column.shadow
+                      .chart-area.wid-1200.mt-0.bg-f
+                        .chart-graph
+                    .column
+                      .count-area
+                        span.txt 유관 확진자
+                          span.total 141명
+                      .result-area 
+                        ul 
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+                          li #775번 확진자
+              // 역학관계도 테이블
+              section.content-wrap
+                .inner 
+                  .tbl-container01
+                    table.tbl-row01
+                      caption 공시자료: 번호,보고서명,등록일
+                      colgroup
+                        col(width="11.111%")
+                        col(width="22.222%")
+                        col(width="11.111%")
+                        col(width="22.222%")
+                        col(width="11.111%")
+                        col(width="22.222%")
+                      tbody
+                          tr
+                            th 확진자 번호
+                            td #3068
+                            th 검사기관
+                            td 은평성모 병원
+                            th 감염원인
+                            td 관악구 소재 종교시설 관련
+                          tr
+                            th 확진자 정보
+                            td 51세 / 남성
+                            th 자치구
+                            td 강북구
+                            th 치료장소
+                            td 국립 중앙 의료원
+                          tr
+                            th 확진 일자
+                            td 2021년 3월 2일
+                            th 감염차수
+                            td 2차 감염
+                            th 상태
+                            td 치료중
+              h2.tit.mt-24 클러스터 별 확진환자 분포
+              // 검색 영역
+              section.content-wrap
+                .inner
+                  .search-form
+                    .search-type
+                      .search-list
+                        span.type 클러스터
+                        .selectbox.wid-281
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list.wid-445
+                        span.type 기간 선택
+                        button.wid-66.bg-white
+                          .txt 오늘
+                        button.wid-66.bg-white
+                          .txt 전날
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="시작일").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="종료일").el-input__inner.wid-220
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        button.wid-66.color-blue 
+                          .txt 검색
+                        button.wid-80.border-blue 
+                          .txt 다운로드
+              // 차트 영역
+              section.content-wrap.bg-n.shadow-n
+                .date-area 
+                  span 조회 일자 : 
+                    span.date 2021.1.4 - 2021.1.10
+                .inner.pd-0.mt-0
+                  .chart-area.wid-full.hig-940.bg-f
+                    .chart-graph
 append script
   script.
-    //- CTC.rockMenu("#plm01,#plm01_01");
-
-    $(function(){
-      // 테이블 액션 - 전체 선택
-      $("#check_total").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents(".data_htb");
-        if($this.prop("checked")){
-          $t_p.find(".frdchk").prop("checked",true);
-        }else{
-          $t_p.find(".frdchk").prop("checked",false);
-        }
-      });
-      // 테이블 액션 - 개별 선택
-      $(".data_htb tbody .frdchk").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents("tr");
-        if($this.prop("checked")){
-          $t_p.addClass("active");
-        }else{
-          $t_p.removeClass("active");
-        }
-      });
-
-      // 체크박스 for 퍼블확인용
-      $("#data_sort_table .fitem.oneitem").each(function(index){
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id","check_0"+index);
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for","check_0"+index);
-      });
-    });

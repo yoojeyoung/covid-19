@@ -665,6 +665,8 @@ button, a {
     min-width: 66px; }
   button.wid-109, a.wid-109 {
     min-width: 109px; }
+  button.wid-full, a.wid-full {
+    width: 100%; }
   button.hig-28, a.hig-28 {
     height: 28px; }
   button:hover, a:hover {
@@ -674,6 +676,10 @@ button, a {
     background: #f9f9f9 !important; }
     button:disabled .txt, a:disabled .txt {
       color: #d3d6dd !important; }
+  button.color-b .txt, a.color-b .txt {
+    color: #0778ca; }
+  button.color-r .txt, a.color-r .txt {
+    color: #dc3545; }
   button.color-blue, a.color-blue {
     background: #0778ca !important;
     border-color: #0778ca !important; }
@@ -875,6 +881,11 @@ section.content-wrap {
           box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   overflow: auto;
   white-space: nowrap; }
+  section.content-wrap .date-area {
+    margin-bottom: 16px; }
+    section.content-wrap .date-area span {
+      font-size: 14px;
+      color: #2e2e30; }
   section.content-wrap .inner {
     position: relative;
     margin: 0;
@@ -882,6 +893,8 @@ section.content-wrap {
     padding: 24px; }
     section.content-wrap .inner.mb-0 {
       margin-bottom: 0px; }
+    section.content-wrap .inner.pd-0 {
+      padding: 0; }
   section.content-wrap .sec-tit {
     position: relative; }
     section.content-wrap .sec-tit .tit {
@@ -947,6 +960,9 @@ section.content-wrap {
       display: flex; }
       section.content-wrap .column-group .column.mt-24 {
         margin-top: 24px; }
+      section.content-wrap .column-group .column.shadow {
+        -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+                box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
     section.content-wrap .column-group .tbl-container01 {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
@@ -974,17 +990,69 @@ section.content-wrap {
           font-size: 14px;
           font-weight: 500;
           word-break: break-all; }
+    section.content-wrap .column-group.mt-0 {
+      margin-top: 0; }
+    section.content-wrap .column-group.flex {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      section.content-wrap .column-group.flex .column:last-child {
+        display: block;
+        width: 30%;
+        margin-left: 24px; }
+    section.content-wrap .column-group .count-area {
+      width: 100%;
+      height: 52px;
+      padding: 13px;
+      background: #dd682d;
+      text-align: center; }
+      section.content-wrap .column-group .count-area .txt {
+        font-size: 16px;
+        color: #fff; }
+        section.content-wrap .column-group .count-area .txt .total {
+          margin-left: 8px;
+          font-size: 24px;
+          font-weight: bold; }
+    section.content-wrap .column-group .result-area {
+      height: 608px;
+      margin-top: 24px;
+      border: 1px solid #e4e7ed;
+      background: #fff;
+      -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+              box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+      white-space: nowrap;
+      overflow: auto; }
+      section.content-wrap .column-group .result-area li {
+        padding: 11px;
+        font-size: 14px;
+        color: #606266;
+        text-align: center;
+        cursor: pointer; }
+        section.content-wrap .column-group .result-area li:hover {
+          background: #fff9ea; }
   section.content-wrap .chart-area {
     margin-top: 24px;
     background: #e5edf4; }
+    section.content-wrap .chart-area.wid-full {
+      width: 100%; }
     section.content-wrap .chart-area.wid-1468 {
       max-width: 1468px;
       height: 402px; }
+    section.content-wrap .chart-area.wid-1200 {
+      width: 1200px;
+      height: 684px; }
     section.content-wrap .chart-area.wid-759 {
       width: 759px;
       margin: 0 0 0 40px;
       padding: 54px 81px;
       border: 1px solid #cacdd5; }
+    section.content-wrap .chart-area.hig-940 {
+      height: 940px; }
+    section.content-wrap .chart-area.mt-0 {
+      margin-top: 0; }
+    section.content-wrap .chart-area.bg-f {
+      background: #fff; }
   section.content-wrap .tab-group .tab-menu {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1097,6 +1165,8 @@ section.content-wrap {
   section.content-wrap.shadow-n {
     -webkit-box-shadow: none;
             box-shadow: none; }
+  section.content-wrap.bg-n {
+    background: none; }
 
 /*검사 현황 자료 게시판 */
 .detail-view-container .view-title {
@@ -1374,6 +1444,8 @@ section.content-wrap {
       width: 100px; }
     .search-form .selectbox.wid-200 {
       width: 200px; }
+    .search-form .selectbox.wid-281 {
+      width: 281px; }
     .search-form .selectbox.ml-50 {
       margin-left: 50px; }
   .search-form button {

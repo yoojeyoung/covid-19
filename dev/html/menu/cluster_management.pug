@@ -6,36 +6,188 @@ block contents
       .page_wrap.page_layout
         section.pgmid_zone
           .pgright_wrap
-
+            .inner
+              h2.tit 클러스터(발생 원인) 관리
+              // 검색 영역
+              section.content-wrap
+                .inner.mb-0
+                  .search-form
+                    .search-type
+                      .search-list
+                        span.type 구분
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio211" name="radio211" checked)
+                          label(for="radio211")
+                            span.txt 대분류
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio212" name="radio212")
+                          label(for="radio212")
+                            span.txt 중분류
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio213" name="radio213")
+                          label(for="radio213")
+                            span.txt 소분류
+                      .search-list
+                        span.type 대분류선택
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택
+                            option(value="") 선택
+                            option(value="") 선택
+              // 최상위 테이블
+              section.content-wrap
+                .inner
+                  .sec-tit 
+                    spna.tit 총 
+                      span.num 66
+                      |건
+                    .btn-area.type02 
+                      button(type="button").wid-66.color-blue.hig-28
+                        span.txt 추가
+                  .tbl-container01
+                    table.tbl-col01.confirm-table
+                      caption 공시자료: 번호,보고서명,등록일
+                      colgroup
+                        col(width="7%")
+                        col(width="auto")
+                        col(width="15%")
+                        col(width="10%")
+                      thead
+                        tr
+                          th.bold-n 번호
+                          th.bold-n 대분류명
+                          th.bold-n 우선순휘
+                          th.bold-n 관리
+                      tbody
+                        tr 
+                          td 신규등록
+                          td
+                            .input-txt
+                              input(type="text").h-28.mt-0
+                          td -
+                          td 
+                            button(type="button").btn-regist.border-blue
+                              span.txt 등록
+                        tr 
+                          td 1
+                          td.align-l 해외유입
+                          td 
+                            span.ico-arrow.down
+                            span.ico-arrow.up
+                          td 
+                            button(type="button").color-b
+                              span.txt 수정
+                            button(type="button").color-r 
+                              span.txt 삭제
+                        tr 
+                          td 2
+                          td.align-l 해외유입
+                          td 
+                            span.ico-arrow.down
+                            span.ico-arrow.up 
+                          td 
+                            button(type="button").color-b
+                              span.txt 수정
+                            button(type="button").color-r 
+                              span.txt 삭제 
+                        tr 
+                          td 3
+                          td.align-l 해외유입
+                          td 
+                            span.ico-arrow.down
+                            span.ico-arrow.up 
+                          td 
+                            button(type="button").color-b
+                              span.txt 수정
+                            button(type="button").color-r 
+                              span.txt 삭제 
+                        tr 
+                          td 4
+                          td.align-l 해외유입
+                          td 
+                            span.ico-arrow.down
+                            span.ico-arrow.up 
+                          td 
+                            button(type="button").color-b
+                              span.txt 수정
+                            button(type="button").color-r 
+                              span.txt 삭제 
+                        tr 
+                          td 5
+                          td.align-l 해외유입
+                          td 
+                            span.ico-arrow.down
+                            span.ico-arrow.up 
+                          td 
+                            button(type="button").color-b
+                              span.txt 수정
+                            button(type="button").color-r 
+                              span.txt 삭제 
+                        tr 
+                          td 6
+                          td.align-l 해외유입
+                          td 
+                            span.ico-arrow.down
+                            span.ico-arrow.up 
+                          td 
+                            button(type="button").color-b
+                              span.txt 수정
+                            button(type="button").color-r 
+                              span.txt 삭제 
+                        tr 
+                          td 7
+                          td.align-l 해외유입
+                          td 
+                            span.ico-arrow.down
+                            span.ico-arrow.up 
+                          td 
+                            button(type="button").color-b
+                              span.txt 수정
+                            button(type="button").color-r 
+                              span.txt 삭제 
+                        tr 
+                          td 8
+                          td.align-l 해외유입
+                          td 
+                            span.ico-arrow.down
+                            span.ico-arrow.up 
+                          td 
+                            button(type="button").color-b
+                              span.txt 수정
+                            button(type="button").color-r 
+                              span.txt 삭제 
+                        tr 
+                          td 9
+                          td.align-l 해외유입
+                          td 
+                            span.ico-arrow.down
+                            span.ico-arrow.up 
+                          td 
+                            button(type="button").color-b
+                              span.txt 수정
+                            button(type="button").color-r 
+                              span.txt 삭제 
+                        tr 
+                          td 10
+                          td.align-l 해외유입
+                          td 
+                            span.ico-arrow.down
+                            span.ico-arrow.up 
+                          td 
+                            button(type="button").color-b
+                              span.txt 수정
+                            button(type="button").color-r 
+                              span.txt 삭제 
+                        tr 
+                          td 11
+                          td.align-l 해외유입
+                          td 
+                            span.ico-arrow.down
+                            span.ico-arrow.up 
+                          td 
+                            button(type="button").color-b
+                              span.txt 수정
+                            button(type="button").color-r 
+                              span.txt 삭제 
 append script
   script.
-    //- CTC.rockMenu("#plm01,#plm01_01");
-
-    $(function(){
-      // 테이블 액션 - 전체 선택
-      $("#check_total").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents(".data_htb");
-        if($this.prop("checked")){
-          $t_p.find(".frdchk").prop("checked",true);
-        }else{
-          $t_p.find(".frdchk").prop("checked",false);
-        }
-      });
-      // 테이블 액션 - 개별 선택
-      $(".data_htb tbody .frdchk").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents("tr");
-        if($this.prop("checked")){
-          $t_p.addClass("active");
-        }else{
-          $t_p.removeClass("active");
-        }
-      });
-
-      // 체크박스 for 퍼블확인용
-      $("#data_sort_table .fitem.oneitem").each(function(index){
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id","check_0"+index);
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for","check_0"+index);
-      });
-    });

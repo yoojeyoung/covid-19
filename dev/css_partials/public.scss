@@ -323,7 +323,7 @@ body{background: #f5f5f7}
     .message{color: #dc3545 !important;}
   }
 }
-.selectbox{
+.selectbox{  
   &.form-success{
     select{border-color:#28a745 !important;}
     .message{color: #28a745 !important;}
@@ -393,6 +393,7 @@ button,a{
   &.wid-79{@include rem(min-width,79px);}
   &.wid-66{@include rem(min-width,66px);}
   &.wid-109{@include rem(min-width,109px);}
+  &.wid-full{width: 100%;}
   &.hig-28{@include rem(height,28px);}
   &:hover{
     border-color: #aeb2ba !important;
@@ -401,6 +402,12 @@ button,a{
     border-color: #e4e7ed !important;
     background: #f9f9f9 !important;
     .txt{color: #d3d6dd !important;}
+  }
+  &.color-b{
+    .txt{color: #0778ca;}
+  }
+  &.color-r{
+    .txt{color: #dc3545;}
   }
   &.color-blue{
     background: #0778ca !important;
@@ -589,6 +596,10 @@ section.content-wrap{
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   overflow: auto;
   white-space: nowrap;
+  .date-area{
+    @include rem(margin-bottom,16px);
+    span{@include rem(font-size,14px);color: #2e2e30;}
+  }
   .inner{
     position: relative;
     margin: 0;
@@ -596,6 +607,7 @@ section.content-wrap{
     @include rem(min-width,1420px);
     @include rem(padding,24px);
     &.mb-0{margin-bottom: 0px;}
+    &.pd-0{padding: 0;}
   }
   .sec-tit{
     position: relative;
@@ -652,6 +664,7 @@ section.content-wrap{
     .column{
       display: flex;
       &.mt-24{@include rem(margin-top,24px);}
+      &.shadow{box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);}
     }
     .tbl-container01{flex: 1;}
     .info-link{
@@ -676,12 +689,59 @@ section.content-wrap{
         .txt{@include rem(font-size,14px);font-weight: 500;word-break: break-all;}
       }
     }
+    &.mt-0{margin-top: 0}
+    &.flex{
+      display: flex;
+      .column{
+        &:last-child{
+          display: block;
+          width: 30%;
+          @include rem(margin-left,24px);
+        }
+      }
+    }
+    .count-area{
+      width: 100%;
+      @include rem(height,52px);
+      @include rem(padding,13px);
+      background: #dd682d;
+      text-align: center;
+      .txt{
+        @include rem(font-size,16px);
+        color: #fff;
+        .total{@include rem(margin-left,8px);@include rem(font-size,24px);font-weight: bold;}
+      }
+    }
+    .result-area{
+      @include rem(height,608px);
+      @include rem(margin-top,24px);
+      border: 1px solid #e4e7ed;
+      background: #fff;
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+      white-space: nowrap;
+      overflow: auto;
+      li{
+        @include rem(padding,11px);
+        @include rem(font-size,14px);
+        color: #606266;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+          background: #fff9ea;
+        }
+      }
+    }
   }
   .chart-area{
     @include rem(margin-top,24px);
     background: #e5edf4;
+    &.wid-full{width: 100%;}
     &.wid-1468{@include rem(max-width,1468px);@include rem(height,402px);}
+    &.wid-1200{@include rem(width,1200px);@include rem(height,684px);}
     &.wid-759{@include rem(width,759px);@include rem(margin,0 0 0 40px); @include rem(padding,54px 81px);border: 1px solid #cacdd5;}
+    &.hig-940{@include rem(height,940px);}
+    &.mt-0{margin-top: 0;}
+    &.bg-f{background: #fff;}
   }
   .tab-group{
     .tab-menu{
@@ -813,7 +873,7 @@ section.content-wrap{
     }
   }
   &.shadow-n{box-shadow: none;}
-
+  &.bg-n{background: none;}
 }
 
 /*검사 현황 자료 게시판 */
@@ -1041,6 +1101,7 @@ section.content-wrap{
     + .el-date-editor.el-input{@include rem(margin-left,16px);}
     &.wid-100{@include rem(width,100px);}
     &.wid-200{@include rem(width,200px);}
+    &.wid-281{@include rem(width,281px);}
     &.ml-50{@include rem(margin-left,50px);}
   }
   button{

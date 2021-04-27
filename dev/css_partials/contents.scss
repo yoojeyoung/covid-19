@@ -34,7 +34,7 @@
     display: flex;
     @include rem(margin-top,22px);
     .result-list{
-      flex: 1;
+      @include rem(width,30%);
       @include rem(height,713px);
       border: 1px solid #e4e7ed;
       overflow-y: auto;
@@ -44,7 +44,7 @@
         @include rem(font-size,14px);
       }
     }
-    .map-area{@include rem(width,891px);@include rem(margin-left,13px);background: #cacdd5}
+    .map-area{@include rem(width,/*891px*/70%);@include rem(margin-left,13px);background: #cacdd5}
   }
   table{
     @include rem(margin-top,22px);
@@ -189,7 +189,12 @@
 .page_rightzone{@include rem(margin-left,250px);}
 .page_rightzone > *{position:relative;z-index:5;}
 .pgright_wrap .inner{@include rem(max-width,1612px);@include rem(margin,106px auto 24px);@include rem(padding,0 24px);}
-.pgright_wrap .inner .tit{color: #1d2747;@include rem(font-size,24px);font-weight: bold;}
+.pgright_wrap .inner .tit{
+  color: #1d2747;
+  @include rem(font-size,24px);
+  font-weight: bold;
+  &.mt-24{@include rem(margin-top,24px);}
+}
 
 .pgright_wrap{margin:60px auto 0;transition:.4s;background: #f5f5f7;}
 

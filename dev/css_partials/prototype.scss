@@ -139,6 +139,14 @@ a{
         border-bottom:1px solid #e4e7ed;
         line-height: 1.5;
         text-align: center;
+        a,button{
+            &.btn-regist,
+            &.btn-complete{@include rem(width,66px);@include rem(height,28px);@include rem(padding,3px 0 2px);}
+            &.btn-complete{
+                background-color: #1c3a61;
+                .txt{color: #fff;}
+            }
+        }
         a{
             display: inline-block;
             // @include rem(max-width,calc(100% - 60px));
@@ -146,22 +154,59 @@ a{
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
-            .ico-new{
-                // @include rem(width,15px);
-                // @include rem(height,15px);
-                display: inline-block;
-                @include rem(width,15px);
-                @include rem(height,15px);
-                @include rem(margin-left,8px);
-                @include rem(padding,1px 4px);
-                @include rem(font-size,9px);
-                color: #fff;
-                border-radius: 50%;
-                background: #dc3545;
-            }
             &:hover{color: #0b5eab;}
             &.color-n{color: #606266;}
             &.underline{text-decoration: underline;}
+        }
+        .ico-new{
+            // @include rem(width,15px);
+            // @include rem(height,15px);
+            display: inline-block;
+            @include rem(width,15px);
+            @include rem(height,15px);
+            // @include rem(margin-left,4px);
+            @include rem(padding,1px 4px);
+            @include rem(font-size,9px);
+            color: #fff;
+            border-radius: 50%;
+            background: #dc3545;
+        }
+        .ico-arrow{
+            position: relative;
+            display: inline-block;
+            @include rem(width,16px);
+            @include rem(height,16px); 
+            border: 1px solid #0778ca;
+            &.up{
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include rem(top,-1px);
+                    @include rem(left,2px);
+                    display: inline-block;
+                    width:0; 
+                    height:0; 
+                    border-style:solid; 
+                    border-width:5px;
+                    border-color: transparent transparent #0778ca transparent;
+                }
+            }
+            &.down{
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include rem(top,5px);
+                    @include rem(left,2px);
+                    display: inline-block;
+                    width:0; 
+                    height:0; 
+                    border-style:solid; 
+                    border-width:5px;
+                    border-color:#0778ca transparent transparent transparent;
+                }
+            }
+            + .ico-arrow{@include rem(margin-left,6px);}
+            
         }
         &.point{color: #c12526;}
         &.point02{background:#fff6f8};
@@ -263,17 +308,23 @@ a{
 // row 타입
 .tbl-row01{
     width:100%;
-    border:1px solid gray;
+    border:1px solid #e4e7ed;
     th{
-        background-color:cornsilk;
-        @include rem(font-size, 24px);
-        border-right:1px solid gray;
-        border-bottom:1px solid gray;
+        @include rem(padding,8px 10px);
+        @include rem(font-size,12px);
+        color: #333;
+        background-color:#e5edf4;
+        // border-right:1px solid #e5edf4;
+        border-bottom:1px solid #e4e7ed;
+        text-align: center;
     }
     td{
-        @include rem(font-size, 18px);
-        border-right:1px solid gray;
-        border-bottom:1px solid gray;
+        @include rem(padding,8px 10px);
+        @include rem(font-size,12px);
+        color: #333;
+        border-right:1px solid #e4e7ed;
+        border-bottom:1px solid #e4e7ed;
+        text-align: left;
         &:last-child{
             border-right:0;
         }
@@ -467,6 +518,11 @@ a{
     overflow:hidden;border-radius: 4px;
     border-radius: 4px;
     &:after{content:'';display:block;position:absolute;@include rem(top,23px);@include rem(right, 10px);@include rem(margin-top, -8px);@include rem(width, 8px);@include rem(height, 8px);@include rem(border-top, 2px solid #c0c4cc);@include rem(border-right, 2px solid #c0c4cc);transform: rotate(135deg);z-index: 1000;}
+    .message{
+        display: block;
+        @include rem(margin-top,5px);
+        @include rem(font-size, 12px);
+    }
     select{
         cursor: pointer;
         position: relative;
@@ -479,12 +535,24 @@ a{
         color: #c0c4cc;
         border:1px solid #e4e7ed;
         @include rem(border-radius,4px);
-        appearance:none;
+        -webkit-appearance: none;
+        -moz-appearance: none; 
+        appearance: none;
     }
     select::-ms-expand{display:none;}
     select:disabled{background-color:#f5f7fa;pointer-events: none;}
+    select::-ms-value {background: none; color: #c0c4cc;}
 }
 
 .input-textarea{
-    textarea{width: 100%;height: 152px;margin-top: 8px;border-color: #e4e7ed;border-radius: 4px;}
+    textarea{
+        width: 100%;
+        height: 152px;
+        margin-top: 8px;
+        @include rem(padding,12px 8px);
+        @include rem(font-size,14px);
+        border-color: #e4e7ed;
+        border-radius: 4px;
+        &::placeholder{color: #c0c4cc;}
+    }
 }
