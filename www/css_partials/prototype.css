@@ -153,6 +153,14 @@ a:before {
     border-bottom: 1px solid #e4e7ed;
     line-height: 1.5;
     text-align: center; }
+    .tbl-col01 td a.btn-regist, .tbl-col01 td a.btn-complete, .tbl-col01 td button.btn-regist, .tbl-col01 td button.btn-complete {
+      width: 66px;
+      height: 28px;
+      padding: 3px 0 2px; }
+    .tbl-col01 td a.btn-complete, .tbl-col01 td button.btn-complete {
+      background-color: #1c3a61; }
+      .tbl-col01 td a.btn-complete .txt, .tbl-col01 td button.btn-complete .txt {
+        color: #fff; }
     .tbl-col01 td a {
       display: inline-block;
       color: #0778ca;
@@ -170,12 +178,41 @@ a:before {
       display: inline-block;
       width: 15px;
       height: 15px;
-      margin-left: 8px;
       padding: 1px 4px;
       font-size: 9px;
       color: #fff;
       border-radius: 50%;
       background: #dc3545; }
+    .tbl-col01 td .ico-arrow {
+      position: relative;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #0778ca; }
+      .tbl-col01 td .ico-arrow.up::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 2px;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px;
+        border-color: transparent transparent #0778ca transparent; }
+      .tbl-col01 td .ico-arrow.down::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 2px;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #0778ca transparent transparent transparent; }
+      .tbl-col01 td .ico-arrow + .ico-arrow {
+        margin-left: 6px; }
     .tbl-col01 td.point {
       color: #c12526; }
     .tbl-col01 td.point02 {
@@ -718,4 +755,4 @@ a:before {
   .input-textarea textarea::placeholder {
     color: #c0c4cc; }
 
-/*# sourceMappingURL=../sass_maps/prototype.css.map */
+/*# sourceMappingURL=../../sass_maps/css_partials/prototype.css.map */

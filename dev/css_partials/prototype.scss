@@ -139,6 +139,14 @@ a{
         border-bottom:1px solid #e4e7ed;
         line-height: 1.5;
         text-align: center;
+        a,button{
+            &.btn-regist,
+            &.btn-complete{@include rem(width,66px);@include rem(height,28px);@include rem(padding,3px 0 2px);}
+            &.btn-complete{
+                background-color: #1c3a61;
+                .txt{color: #fff;}
+            }
+        }
         a{
             display: inline-block;
             // @include rem(max-width,calc(100% - 60px));
@@ -156,12 +164,49 @@ a{
             display: inline-block;
             @include rem(width,15px);
             @include rem(height,15px);
-            @include rem(margin-left,8px);
+            // @include rem(margin-left,4px);
             @include rem(padding,1px 4px);
             @include rem(font-size,9px);
             color: #fff;
             border-radius: 50%;
             background: #dc3545;
+        }
+        .ico-arrow{
+            position: relative;
+            display: inline-block;
+            @include rem(width,16px);
+            @include rem(height,16px); 
+            border: 1px solid #0778ca;
+            &.up{
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include rem(top,-1px);
+                    @include rem(left,2px);
+                    display: inline-block;
+                    width:0; 
+                    height:0; 
+                    border-style:solid; 
+                    border-width:5px;
+                    border-color: transparent transparent #0778ca transparent;
+                }
+            }
+            &.down{
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include rem(top,5px);
+                    @include rem(left,2px);
+                    display: inline-block;
+                    width:0; 
+                    height:0; 
+                    border-style:solid; 
+                    border-width:5px;
+                    border-color:#0778ca transparent transparent transparent;
+                }
+            }
+            + .ico-arrow{@include rem(margin-left,6px);}
+            
         }
         &.point{color: #c12526;}
         &.point02{background:#fff6f8};
