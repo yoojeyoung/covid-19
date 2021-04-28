@@ -368,6 +368,14 @@
   color: #1d2747;
   font-size: 24px;
   font-weight: bold; }
+  .pgright_wrap .inner .tit .sub-tit-area {
+    margin-top: 16px; }
+    .pgright_wrap .inner .tit .sub-tit-area .sub-tit {
+      display: block;
+      font-size: 16px;
+      color: #0778ca;
+      font-weight: normal;
+      line-height: 1.4; }
   .pgright_wrap .inner .tit.mt-24 {
     margin-top: 24px; }
 

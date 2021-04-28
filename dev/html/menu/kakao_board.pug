@@ -6,36 +6,189 @@ block contents
       .page_wrap.page_layout
         section.pgmid_zone
           .pgright_wrap
-
+            .inner
+              h2.tit 카카오톡게시판
+                .sub-tit-area
+                  span.sub-tit *카카오톡 채널에서 등록된 실시간 내역입니다.
+                  span.sub-tit *상세한 내역 확인 및 조회/관리는 확진자관리 > 확진자 목록에서 확인바랍니다.
+              // 현황판
+              section.content-wrap
+                .inner
+                  .status-board
+                    .board-type
+                      span.type 서울시(전체)
+                      span.date 2021.3.19
+                    .board-item.wid-717
+                      span.txt.color-red
+                        | 금일
+                        span.total 5명
+                    .board-item.wid-717
+                      span.txt
+                        | 누적
+                        span.total 456명
+              // 검색 영역
+              section.content-wrap
+                .inner.mb-0
+                  .search-form
+                    .search-type
+                      .search-list
+                        span.type 구분
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio211" name="radio211" checked)
+                          label(for="radio211")
+                            span.txt 확진자 채널
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio212" name="radio212")
+                          label(for="radio212")
+                            span.txt 검사실적 채널
+                    .search-type
+                      .search-list
+                        span.type 자치구
+                        .selectbox 
+                          select(title="")
+                            option(value="") 자치구 선택
+                            option(value="") 선택
+                            option(value="") 선택
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="시작일").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="종료일").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                        .input-txt.wid-auto
+                          input(type="text" placeholder="이름 또는 연번").wid-220
+                        button(type="button").wid-79.color-blue
+                          span.txt 검색
+              // 테이블
+              section.content-wrap
+                .inner
+                  .tbl-container01.form-group
+                    table.tbl-col01.type-input
+                      caption 공시자료: 번호,보고서명,등록일
+                      colgroup 
+                        col(width="10%")
+                        col(width="10%")
+                        col(width="10%")
+                        col(width="10%")
+                        col(width="10%")
+                        col(width="auto")
+                      thead
+                          tr
+                            th.bold-n 연번
+                            th.bold-n 확진번호
+                            th.bold-n 이름
+                            th.bold-n 확진일
+                            th.bold-n 자치구
+                            th.bold-n 발생원인
+                      tbody 
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                        tr 
+                          td 28820
+                          td.num 91588
+                          td 홍길동
+                          td 2021. 3. 4
+                          td 영등포구
+                          td.align-l 감염경로 조사중
+                  .page-nav-container
+                    +page-nav('type01')
 append script
   script.
-    //- CTC.rockMenu("#plm01,#plm01_01");
-
-    $(function(){
-      // 테이블 액션 - 전체 선택
-      $("#check_total").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents(".data_htb");
-        if($this.prop("checked")){
-          $t_p.find(".frdchk").prop("checked",true);
-        }else{
-          $t_p.find(".frdchk").prop("checked",false);
-        }
-      });
-      // 테이블 액션 - 개별 선택
-      $(".data_htb tbody .frdchk").on("click",function(){
-        var $this = $(this),
-          $t_p = $this.parents("tr");
-        if($this.prop("checked")){
-          $t_p.addClass("active");
-        }else{
-          $t_p.removeClass("active");
-        }
-      });
-
-      // 체크박스 for 퍼블확인용
-      $("#data_sort_table .fitem.oneitem").each(function(index){
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".frdchk").attr("id","check_0"+index);
-        $("#data_sort_table .fitem.oneitem").eq(index).find(".fitem_lab").attr("for","check_0"+index);
-      });
-    });

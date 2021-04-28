@@ -193,6 +193,16 @@
   color: #1d2747;
   @include rem(font-size,24px);
   font-weight: bold;
+  .sub-tit-area{
+    @include rem(margin-top,16px);
+    .sub-tit{
+      display: block;
+      @include rem(font-size,16px);
+      color: #0778ca;
+      font-weight: normal;
+      line-height: 1.4;
+    }
+  }
   &.mt-24{@include rem(margin-top,24px);}
 }
 
