@@ -402,6 +402,7 @@ a{
         label:before{top:0;left:50%;@include rem(margin-left, -10px);margin-top:0;}
         label:after{@include rem(top, 6px);left:50%;@include rem(margin-left, -5px);margin-top:0;}
     }
+    &.mwid-170{@include rem(width,170px);}
     // checked 됐을때 스타일 변화
     input.checked,
     input:checked{

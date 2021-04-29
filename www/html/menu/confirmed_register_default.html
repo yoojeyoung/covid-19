@@ -706,6 +706,626 @@
                     </div>
                   </div>
                 </section>
+                <!-- 추정감염 경로-->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="sec-tit">
+                      <span class="tit">추정감염 경로<span class="point-txt">*최초 증상 발병일 14일 전부터 현재까지, ☐표시 또는 기재</span>
+                      </span>
+                    </div>
+                    <div class="register-form flex flex-l mt-32">
+                      <div class="input-txt">
+                        <label for="">해외방문(체류국가)</label>
+                        <div class="input-box">
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">무</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">유</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">국가명</label>
+                        <div class="selectbox">
+                          <select class="wid-245" title="">
+                            <option value="">국가선택</option>
+                            <option value="">선택</option>
+                            <option value="">선택 </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">입국일</label>
+                        <!-- element-ui 날짜 input-->
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                          <input class="el-input__inner wid-245" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                          <span class="el-input__prefix">
+                            <i class="el-input__icon el-icon-date"></i>
+                          </span>
+                          <span class="el-input__suffix">
+                            <span class="el-input__suffix-inner">
+                              <i class="el-input__icon el-icon-circle-close"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="register-form flex flex-l mt-32">
+                      <div class="input-txt">
+                        <label for="">확진자 접촉</label>
+                        <div class="input-box">
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">무</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">유</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">최종접촉일</label>
+                        <!-- element-ui 날짜 input-->
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                          <input class="el-input__inner wid-245" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                          <span class="el-input__prefix">
+                            <i class="el-input__icon el-icon-date"></i>
+                          </span>
+                          <span class="el-input__suffix">
+                            <span class="el-input__suffix-inner">
+                              <i class="el-input__icon el-icon-circle-close"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="register-form flex flex-l mt-32">
+                      <div class="input-txt">
+                        <div class="input-box">
+                          <div class="input-checkbox right mwid-170">
+                            <input type="checkbox" id="checkbox211" name="checkbox211">
+                            <label for="checkbox211">
+                              <span class="txt">가족(동거인)접촉자</span>
+                            </label>
+                          </div>
+                          <div class="inline-area">
+                            <label class="inline point" for="">이름</label>
+                            <input class="wid-183" type="text">
+                          </div>
+                          <div class="inline-area">
+                            <label class="inline point" for="">확진번호</label>
+                            <input class="wid-183" type="text">
+                          </div>
+                          <div class="inline-area">
+                            <label class="inline point" for="">관계</label>
+                            <input class="wid-183" type="text">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="register-form flex flex-l mt-32">
+                      <div class="input-txt">
+                        <div class="input-box">
+                          <div class="input-checkbox right mwid-170">
+                            <input type="checkbox" id="checkbox211" name="checkbox211">
+                            <label for="checkbox211">
+                              <span class="txt">가족(동거인)이외 접촉자</span>
+                            </label>
+                          </div>
+                          <div class="inline-area">
+                            <label class="inline point" for="">이름</label>
+                            <input class="wid-183" type="text">
+                          </div>
+                          <div class="inline-area">
+                            <label class="inline point" for="">확진번호</label>
+                            <input class="wid-183" type="text">
+                          </div>
+                          <div class="inline-area">
+                            <label class="inline point" for="">관계</label>
+                            <input class="wid-183" type="text">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="register-form flex mt-32">
+                      <div class="input-txt">
+                        <label for="">집단발병관련</label>
+                        <div class="input-box">
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">무</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">유</span>
+                            </label>
+                          </div>
+                          <div class="input-checkbox right">
+                            <input type="checkbox" id="checkbox211" name="checkbox211">
+                            <label for="checkbox211">
+                              <span class="txt">가족(동거인)</span>
+                            </label>
+                          </div>
+                          <div class="input-checkbox right">
+                            <input type="checkbox" id="checkbox211" name="checkbox211">
+                            <label for="checkbox211">
+                              <span class="txt">의료기관</span>
+                            </label>
+                          </div>
+                          <input type="text">
+                          <div class="input-checkbox right">
+                            <input type="checkbox" id="checkbox211" name="checkbox211">
+                            <label for="checkbox211">
+                              <span class="txt">종교관련</span>
+                            </label>
+                          </div>
+                          <input type="text">
+                          <div class="input-checkbox right">
+                            <input type="checkbox" id="checkbox211" name="checkbox211">
+                            <label for="checkbox211">
+                              <span class="txt">요양/정신시설</span>
+                            </label>
+                          </div>
+                          <input type="text">
+                          <div class="input-checkbox right">
+                            <input type="checkbox" id="checkbox211" name="checkbox211">
+                            <label for="checkbox211">
+                              <span class="txt">학교</span>
+                            </label>
+                          </div>
+                          <input type="text">
+                          <div class="input-checkbox right">
+                            <input type="checkbox" id="checkbox211" name="checkbox211">
+                            <label for="checkbox211">
+                              <span class="txt">기타</span>
+                            </label>
+                          </div>
+                          <input type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="register-form flex mt-32">
+                      <div class="input-txt flex-1">
+                        <label for="">기타</label>
+                        <input class="wid-full" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- 선행확진자-->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="sec-tit">
+                      <span class="tit">선행확진자</span>
+                    </div>
+                    <div class="register-form flex mt-32">
+                      <div class="input-txt">
+                        <label for="">1. 확진자 번호</label>
+                        <input class="wid-245" type="text">
+                      </div>
+                      <div class="input-txt">
+                        <label for="">이름</label>
+                        <input class="wid-200" type="text">
+                      </div>
+                      <div class="input-txt">
+                        <label for="">관계</label>
+                        <input class="wid-200" type="text">
+                      </div>
+                      <div class="input-txt">
+                        <label for="">노출장소</label>
+                        <!-- element-ui 날짜 input-->
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                          <input class="el-input__inner wid-300" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                          <span class="el-input__prefix">
+                            <i class="el-input__icon el-icon-date"></i>
+                          </span>
+                          <span class="el-input__suffix">
+                            <span class="el-input__suffix-inner">
+                              <i class="el-input__icon el-icon-circle-close"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">최초 노출일</label>
+                        <!-- element-ui 날짜 input-->
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                          <input class="el-input__inner wid-225" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                          <span class="el-input__prefix">
+                            <i class="el-input__icon el-icon-date"></i>
+                          </span>
+                          <span class="el-input__suffix">
+                            <span class="el-input__suffix-inner">
+                              <i class="el-input__icon el-icon-circle-close"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">최종 노출일</label>
+                        <!-- element-ui 날짜 input-->
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                          <input class="el-input__inner wid-225" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                          <span class="el-input__prefix">
+                            <i class="el-input__icon el-icon-date"></i>
+                          </span>
+                          <span class="el-input__suffix">
+                            <span class="el-input__suffix-inner">
+                              <i class="el-input__icon el-icon-circle-close"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="register-form flex mt-32">
+                      <div class="input-txt">
+                        <label for="">1. 확진자 번호</label>
+                        <input class="wid-245" type="text">
+                      </div>
+                      <div class="input-txt">
+                        <label for="">이름</label>
+                        <input class="wid-200" type="text">
+                      </div>
+                      <div class="input-txt">
+                        <label for="">관계</label>
+                        <input class="wid-200" type="text">
+                      </div>
+                      <div class="input-txt">
+                        <label for="">노출장소</label>
+                        <!-- element-ui 날짜 input-->
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                          <input class="el-input__inner wid-300" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                          <span class="el-input__prefix">
+                            <i class="el-input__icon el-icon-date"></i>
+                          </span>
+                          <span class="el-input__suffix">
+                            <span class="el-input__suffix-inner">
+                              <i class="el-input__icon el-icon-circle-close"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">최초 노출일</label>
+                        <!-- element-ui 날짜 input-->
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                          <input class="el-input__inner wid-225" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                          <span class="el-input__prefix">
+                            <i class="el-input__icon el-icon-date"></i>
+                          </span>
+                          <span class="el-input__suffix">
+                            <span class="el-input__suffix-inner">
+                              <i class="el-input__icon el-icon-circle-close"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">최종 노출일</label>
+                        <!-- element-ui 날짜 input-->
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                          <input class="el-input__inner wid-225" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                          <span class="el-input__prefix">
+                            <i class="el-input__icon el-icon-date"></i>
+                          </span>
+                          <span class="el-input__suffix">
+                            <span class="el-input__suffix-inner">
+                              <i class="el-input__icon el-icon-circle-close"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="register-form flex mt-32">
+                      <div class="input-txt">
+                        <label for="">1. 확진자 번호</label>
+                        <input class="wid-245" type="text">
+                      </div>
+                      <div class="input-txt">
+                        <label for="">이름</label>
+                        <input class="wid-200" type="text">
+                      </div>
+                      <div class="input-txt">
+                        <label for="">관계</label>
+                        <input class="wid-200" type="text">
+                      </div>
+                      <div class="input-txt">
+                        <label for="">노출장소</label>
+                        <!-- element-ui 날짜 input-->
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                          <input class="el-input__inner wid-300" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                          <span class="el-input__prefix">
+                            <i class="el-input__icon el-icon-date"></i>
+                          </span>
+                          <span class="el-input__suffix">
+                            <span class="el-input__suffix-inner">
+                              <i class="el-input__icon el-icon-circle-close"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">최초 노출일</label>
+                        <!-- element-ui 날짜 input-->
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                          <input class="el-input__inner wid-225" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                          <span class="el-input__prefix">
+                            <i class="el-input__icon el-icon-date"></i>
+                          </span>
+                          <span class="el-input__suffix">
+                            <span class="el-input__suffix-inner">
+                              <i class="el-input__icon el-icon-circle-close"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">최종 노출일</label>
+                        <!-- element-ui 날짜 input-->
+                        <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                          <input class="el-input__inner wid-225" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                          <span class="el-input__prefix">
+                            <i class="el-input__icon el-icon-date"></i>
+                          </span>
+                          <span class="el-input__suffix">
+                            <span class="el-input__suffix-inner">
+                              <i class="el-input__icon el-icon-circle-close"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- 집단 시설 이용력-->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="sec-tit">
+                      <span class="tit">집단 시설 이용력<span class="point-txt color-b">* 의료 기관, 시설 등 / 최초 증상 발병일 14일 전부터 현재까지, ☐표시 또는 기재</span>
+                      </span>
+                    </div>
+                    <div class="register-form flex flex-l mt-32">
+                      <div class="input-txt">
+                        <label for="">집단시설이용력</label>
+                        <div class="input-box">
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">무</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">유</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">기관/시설명</label>
+                        <input class="wid-245" type="text">
+                      </div>
+                    </div>
+                    <div class="register-form flex flex-l mt-32">
+                      <div class="input-txt">
+                        <div class="input-box">
+                          <div class="input-checkbox right">
+                            <input type="checkbox" id="checkbox211" name="checkbox211">
+                            <label for="checkbox211">
+                              <span class="txt">입소(입원)중</span>
+                            </label>
+                          </div>
+                          <div class="inline-area">
+                            <label class="inline" for="">입소일</label>
+                            <!-- element-ui 날짜 input-->
+                            <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                              <input class="el-input__inner wid-245" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                              <span class="el-input__prefix">
+                                <i class="el-input__icon el-icon-date"></i>
+                              </span>
+                              <span class="el-input__suffix">
+                                <span class="el-input__suffix-inner">
+                                  <i class="el-input__icon el-icon-circle-close"></i>
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <div class="input-box">
+                          <div class="input-checkbox right">
+                            <input type="checkbox" id="checkbox211" name="checkbox211">
+                            <label for="checkbox211">
+                              <span class="txt">퇴소(퇴원)</span>
+                            </label>
+                          </div>
+                          <div class="inline-area">
+                            <label class="inline" for="">퇴원일</label>
+                            <!-- element-ui 날짜 input-->
+                            <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                              <input class="el-input__inner wid-245" type="text" autocomplete="off" name="" placeholder="날짜 입력">
+                              <span class="el-input__prefix">
+                                <i class="el-input__icon el-icon-date"></i>
+                              </span>
+                              <span class="el-input__suffix">
+                                <span class="el-input__suffix-inner">
+                                  <i class="el-input__icon el-icon-circle-close"></i>
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- 가족(동거인) 및 집단시설 접촉자 -->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="sec-tit">
+                      <span class="tit">가족(동거인) 및 집단시설 접촉자 <span class="point-txt color-b">* 최초 증상 발병일 2일 전부터 현재까지 접촉한 가족 및 집단시설 접촉자 / ☐표시 또는 기재</span>
+                      </span>
+                    </div>
+                    <div class="register-form flex flex-l mt-32">
+                      <div class="input-txt">
+                        <label for="">가족(동거인)접촉자</label>
+                        <div class="input-box">
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">무</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">유</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">인원(명)</label>
+                        <input class="wid-245" type="text">
+                      </div>
+                    </div>
+                    <div class="register-form flex flex-l mt-32">
+                      <div class="input-txt">
+                        <label for="">시설 접촉자</label>
+                        <div class="input-box">
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">무</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">유</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">인원(명)</label>
+                        <input class="wid-245" type="text">
+                      </div>
+                      <div class="input-txt">
+                        <label for="">시설명</label>
+                        <input class="wid-345" type="text">
+                      </div>
+                    </div>
+                    <div class="register-form flex flex-l mt-32">
+                      <div class="input-txt">
+                        <label for="">의료기관 접촉자</label>
+                        <div class="input-box">
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">무</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">유</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-txt">
+                        <label for="">인원(명)</label>
+                        <input class="wid-245" type="text">
+                      </div>
+                      <div class="input-txt">
+                        <label for="">의료기관명</label>
+                        <input class="wid-345" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- 사례분류 결과-->
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="sec-tit">
+                      <span class="tit">사례분류 결과<span class="point-txt color-b">* 시도/권역 확인</span>
+                      </span>
+                    </div>
+                    <div class="register-form flex flex-l mt-32">
+                      <div class="input-txt">
+                        <label for="">대분류</label>
+                        <div class="input-box">
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">해외유입</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">해외유입관련</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">요양</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">기타집단</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">확진자 접촉</span>
+                            </label>
+                          </div>
+                          <div class="input-radio right">
+                            <input type="radio" id="radio211" name="radio211">
+                            <label for="radio211">
+                              <span class="txt">미분류</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="register-form flex mt-32">
+                      <div class="input-txt flex-1">
+                        <label for="">중분류</label>
+                        <input class="wid-full" type="text">
+                      </div>
+                    </div>
+                    <div class="register-form flex mt-32">
+                      <div class="input-txt flex-1">
+                        <label for="">참고사항</label>
+                        <input class="wid-full" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </section>
                 <div class="btn-group">
                   <button class="border-blue wid-66">
                     <span class="txt">취소</span>

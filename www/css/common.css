@@ -1401,9 +1401,14 @@ a:before {
   color: #1d2747;
   font-size: 24px;
   font-weight: bold; }
-  .pgright_wrap .inner .tit .sub-tit-area .sub-tit {
-    font-size: 16px;
-    color: #0778ca; }
+  .pgright_wrap .inner .tit .sub-tit-area {
+    margin-top: 16px; }
+    .pgright_wrap .inner .tit .sub-tit-area .sub-tit {
+      display: block;
+      font-size: 16px;
+      color: #0778ca;
+      font-weight: normal;
+      line-height: 1.4; }
   .pgright_wrap .inner .tit.mt-24 {
     margin-top: 24px; }
 
@@ -2151,6 +2156,8 @@ body {
     border-color: #dc3545 !important; }
   .input-txt.form-error .message {
     color: #dc3545 !important; }
+  .input-txt.wid-auto {
+    width: auto; }
 
 .selectbox.form-success select {
   border-color: #28a745 !important; }
@@ -2226,20 +2233,24 @@ button, a {
     min-width: 40px; }
   button.wid-56, a.wid-56 {
     min-width: 56px; }
+  button.wid-66, a.wid-66 {
+    min-width: 66px; }
+  button.wid-75, a.wid-75 {
+    min-width: 75px; }
+  button.wid-79, a.wid-79 {
+    min-width: 79px; }
   button.wid-80, a.wid-80 {
     min-width: 80px; }
   button.wid-89, a.wid-89 {
     min-width: 89px; }
-  button.wid-79, a.wid-79 {
-    min-width: 79px; }
-  button.wid-66, a.wid-66 {
-    min-width: 66px; }
   button.wid-109, a.wid-109 {
     min-width: 109px; }
   button.wid-full, a.wid-full {
     width: 100%; }
   button.hig-28, a.hig-28 {
     height: 28px; }
+  button.hig-40, a.hig-40 {
+    height: 40px; }
   button:hover, a:hover {
     border-color: #aeb2ba !important; }
   button:disabled, a:disabled {
@@ -2472,6 +2483,14 @@ section.content-wrap {
       font-size: 16px;
       font-weight: bold; }
       section.content-wrap .sec-tit .tit .num {
+        color: #0778ca; }
+    section.content-wrap .sec-tit .point-txt {
+      margin-left: 8px;
+      color: #dc3545;
+      font-size: 12px;
+      font-weight: normal;
+      vertical-align: 2px; }
+      section.content-wrap .sec-tit .point-txt.color-b {
         color: #0778ca; }
     section.content-wrap .sec-tit .btn-area {
       display: -webkit-box;
@@ -2733,6 +2752,48 @@ section.content-wrap {
           background: url(../images/common/ico_close.png); }
       section.content-wrap .file-area .type:last-child {
         padding-left: 16px; }
+  section.content-wrap .status-board {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.content-wrap .status-board .board-type span {
+      display: block;
+      font-size: 14px;
+      color: #283356; }
+      section.content-wrap .status-board .board-type span.type {
+        font-size: 16px;
+        font-weight: bold; }
+      section.content-wrap .status-board .board-type span + span {
+        margin-top: 8px; }
+    section.content-wrap .status-board .board-type + .board-item {
+      margin-left: 28px; }
+    section.content-wrap .status-board .board-item {
+      padding: 11px 10px 10px;
+      border: 1px solid #e3e4e6;
+      background: #f6f7fb;
+      text-align: center; }
+      section.content-wrap .status-board .board-item .txt {
+        font-size: 16px;
+        color: #283356; }
+        section.content-wrap .status-board .board-item .txt .total {
+          margin-left: 16px;
+          font-size: 24px;
+          font-weight: bold; }
+        section.content-wrap .status-board .board-item .txt.color-red {
+          color: #dc3545; }
+      section.content-wrap .status-board .board-item.wid-717 {
+        width: 717px; }
+      section.content-wrap .status-board .board-item + .board-item {
+        margin-left: 16px; }
   section.content-wrap.shadow-n {
     -webkit-box-shadow: none;
             box-shadow: none; }
@@ -3001,6 +3062,8 @@ section.content-wrap {
       margin-left: 16px; }
     .search-form .input-txt + .selectbox {
       margin-left: 16px; }
+  .search-form .el-date-editor.el-input + .input-txt {
+    margin-left: 16px; }
   .search-form .selectbox {
     width: auto;
     overflow: initial;
@@ -3077,7 +3140,7 @@ section.content-wrap {
       position: relative;
       display: block;
       margin-bottom: 8px;
-      font-size: 12px; }
+      font-size: 14px; }
       .register-form .input-txt label.point {
         padding-left: 8px; }
         .register-form .input-txt label.point::before {
@@ -3088,7 +3151,21 @@ section.content-wrap {
           display: block;
           font-size: 12px;
           color: #eb5757; }
+      .register-form .input-txt label.inline {
+        display: inline-block;
+        min-width: 62px; }
+    .register-form .input-txt .inline-area label {
+      font-size: 12px; }
+    .register-form .input-txt .inline-area + .inline-area {
+      margin-left: 24px; }
+    .register-form .input-txt .type-txt {
+      min-width: 94px;
+      font-size: 12px;
+      color: #333; }
+      .register-form .input-txt .type-txt + .input-radio {
+        margin-left: 15px; }
     .register-form .input-txt .input-box {
+      min-height: 40px;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
@@ -3097,7 +3174,9 @@ section.content-wrap {
         margin: 0 7px; }
       .register-form .input-txt .input-box .tem {
         margin-left: 4px;
-        color: #333; }
+        font-size: 12px;
+        color: #333;
+        font-weight: 500; }
       .register-form .input-txt .input-box .type {
         margin: 0 12px;
         color: #333; }
@@ -3137,6 +3216,8 @@ section.content-wrap {
         width: 55px; }
       .register-form .input-txt input.wid-73 {
         width: 73px; }
+      .register-form .input-txt input.wid-88 {
+        width: 88px; }
       .register-form .input-txt input.wid-98 {
         width: 98px; }
       .register-form .input-txt input.wid-114 {
@@ -3145,6 +3226,8 @@ section.content-wrap {
         width: 149px; }
       .register-form .input-txt input.wid-164 {
         width: 164px; }
+      .register-form .input-txt input.wid-183 {
+        width: 183px; }
       .register-form .input-txt input.wid-200 {
         width: 200px; }
       .register-form .input-txt input.wid-220 {
@@ -3159,16 +3242,28 @@ section.content-wrap {
         width: 281px; }
       .register-form .input-txt input.wid-300 {
         width: 300px; }
+      .register-form .input-txt input.wid-330 {
+        width: 330px; }
       .register-form .input-txt input.wid-345 {
         width: 345px; }
       .register-form .input-txt input.wid-430 {
         width: 430px; }
+      .register-form .input-txt input.wid-460 {
+        width: 460px; }
+      .register-form .input-txt input.wid-489 {
+        width: 489px; }
+      .register-form .input-txt input.wid-500 {
+        width: 500px; }
       .register-form .input-txt input.wid-771 {
         width: 771px; }
+      .register-form .input-txt input.hig-28 {
+        height: 28px; }
       .register-form .input-txt input + .input-radio {
         margin-left: 20px; }
       .register-form .input-txt input + .selectbox {
         margin-left: 4px; }
+      .register-form .input-txt input + button {
+        margin-left: 7px; }
     .register-form .input-txt .el-date-editor.el-input .el-input__inner {
       height: 40px;
       padding-left: 30px;
@@ -3201,29 +3296,42 @@ section.content-wrap {
           width: 218px; }
         .register-form .input-txt .selectbox select.wid-281 {
           width: 281px; }
+        .register-form .input-txt .selectbox select.wid-380 {
+          width: 380px; }
         .register-form .input-txt .selectbox select.wid-488 {
           width: 488px; }
       .register-form .input-txt .selectbox + input {
         margin-left: 10px; }
       .register-form .input-txt .selectbox + .selectbox {
         margin-left: 8px; }
-    .register-form .input-txt button {
-      width: 225px; }
-      .register-form .input-txt button .txt {
-        color: #2f80ed; }
-      .register-form .input-txt button.btn-data {
-        width: 51px;
-        padding: 5px 0 4px;
-        border: 1px solid #e4e7ed; }
-        .register-form .input-txt button.btn-data .txt {
-          font-size: 12px;
-          color: #606266; }
-        .register-form .input-txt button.btn-data + .btn-data {
-          margin-left: 10px; }
-        .register-form .input-txt button.btn-data + input {
-          margin-left: 10px; }
+    .register-form .input-txt button .txt {
+      color: #2f80ed; }
+    .register-form .input-txt button.btn {
+      width: auto;
+      height: 40px;
+      border: 1px solid #e4e7ed; }
+      .register-form .input-txt button.btn .txt {
+        color: #606266;
+        font-size: 12px; }
+    .register-form .input-txt button.btn-data {
+      width: 51px;
+      padding: 5px 0 4px;
+      border: 1px solid #e4e7ed; }
+      .register-form .input-txt button.btn-data .txt {
+        font-size: 12px;
+        color: #606266; }
+      .register-form .input-txt button.btn-data + .btn-data {
+        margin-left: 10px; }
+      .register-form .input-txt button.btn-data + input {
+        margin-left: 10px; }
+    .register-form .input-txt button + button {
+      margin-left: 10px; }
+    .register-form .input-txt button + .el-date-editor {
+      margin-left: 10px; }
     .register-form .input-txt .input-radio {
       margin-top: 0; }
+      .register-form .input-txt .input-radio label {
+        margin-bottom: 0; }
       .register-form .input-txt .input-radio .txt {
         font-size: 12px;
         color: #333; }
@@ -3235,6 +3343,8 @@ section.content-wrap {
         margin-left: 10px; }
       .register-form .input-txt .input-radio + .input-checkbox {
         margin-left: 20px; }
+    .register-form .input-txt .input-checkbox label {
+      margin-bottom: 0; }
     .register-form .input-txt .input-checkbox + .input-checkbox {
       margin-left: 20px; }
     .register-form .input-txt .input-checkbox + input {

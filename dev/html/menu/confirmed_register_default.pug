@@ -451,6 +451,419 @@ block contents
                           input(type="radio" id="radio211" name="radio211")
                           label(for="radio211")
                             span.txt 가족 또는 지인이 확진환자
+              // 추정감염 경로
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 추정감염 경로
+                      span.point-txt *최초 증상 발병일 14일 전부터 현재까지, ☐표시 또는 기재
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 해외방문(체류국가)
+                      .input-box
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 무
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 유
+                    .input-txt 
+                      label(for="") 국가명
+                      .selectbox
+                        select(title="").wid-245
+                          option(value="") 국가선택
+                          option(value="") 선택
+                          option(value="") 선택 
+                    .input-txt
+                      label(for="") 입국일
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-245
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 확진자 접촉
+                      .input-box
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 무
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 유
+                    .input-txt
+                      label(for="") 최종접촉일
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-245
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      .input-box
+                        .input-checkbox.right.mwid-170
+                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                          label(for="checkbox211")
+                            span.txt 가족(동거인)접촉자
+                        .inline-area
+                          label(for="").inline.point 이름
+                          input(type="text").wid-183
+                        .inline-area
+                          label(for="").inline.point 확진번호
+                          input(type="text").wid-183
+                        .inline-area
+                          label(for="").inline.point 관계
+                          input(type="text").wid-183
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      .input-box
+                        .input-checkbox.right.mwid-170
+                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                          label(for="checkbox211")
+                            span.txt 가족(동거인)이외 접촉자
+                        .inline-area
+                          label(for="").inline.point 이름
+                          input(type="text").wid-183
+                        .inline-area
+                          label(for="").inline.point 확진번호
+                          input(type="text").wid-183
+                        .inline-area
+                          label(for="").inline.point 관계
+                          input(type="text").wid-183
+                  .register-form.flex.mt-32
+                    .input-txt
+                      label(for="") 집단발병관련
+                      .input-box
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 무
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 유
+                        .input-checkbox.right
+                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                          label(for="checkbox211")
+                            span.txt 가족(동거인)
+                        .input-checkbox.right
+                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                          label(for="checkbox211")
+                            span.txt 의료기관
+                        input(type="text")
+                        .input-checkbox.right
+                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                          label(for="checkbox211")
+                            span.txt 종교관련
+                        input(type="text")
+                        .input-checkbox.right
+                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                          label(for="checkbox211")
+                            span.txt 요양/정신시설
+                        input(type="text")
+                        .input-checkbox.right
+                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                          label(for="checkbox211")
+                            span.txt 학교
+                        input(type="text")
+                        .input-checkbox.right
+                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                          label(for="checkbox211")
+                            span.txt 기타
+                        input(type="text")
+                  .register-form.flex.mt-32
+                    .input-txt.flex-1
+                      label(for="") 기타
+                      input(type="text").wid-full
+              // 선행확진자
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 선행확진자
+                  .register-form.flex.mt-32
+                    .input-txt
+                      label(for="") 1. 확진자 번호
+                      input(type="text").wid-245
+                    .input-txt
+                      label(for="") 이름
+                      input(type="text").wid-200
+                    .input-txt
+                      label(for="") 관계
+                      input(type="text").wid-200
+                    .input-txt 
+                      label(for="") 노출장소
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-300
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                    .input-txt 
+                      label(for="") 최초 노출일
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-225
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                    .input-txt 
+                      label(for="") 최종 노출일
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-225
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                  .register-form.flex.mt-32
+                    .input-txt
+                      label(for="") 1. 확진자 번호
+                      input(type="text").wid-245
+                    .input-txt
+                      label(for="") 이름
+                      input(type="text").wid-200
+                    .input-txt
+                      label(for="") 관계
+                      input(type="text").wid-200
+                    .input-txt 
+                      label(for="") 노출장소
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-300
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                    .input-txt 
+                      label(for="") 최초 노출일
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-225
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                    .input-txt 
+                      label(for="") 최종 노출일
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-225
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                  .register-form.flex.mt-32
+                    .input-txt
+                      label(for="") 1. 확진자 번호
+                      input(type="text").wid-245
+                    .input-txt
+                      label(for="") 이름
+                      input(type="text").wid-200
+                    .input-txt
+                      label(for="") 관계
+                      input(type="text").wid-200
+                    .input-txt 
+                      label(for="") 노출장소
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-300
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                    .input-txt 
+                      label(for="") 최초 노출일
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-225
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+                    .input-txt 
+                      label(for="") 최종 노출일
+                      // element-ui 날짜 input
+                      .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                        input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-225
+                        span.el-input__prefix
+                          i.el-input__icon.el-icon-date
+                        span.el-input__suffix
+                          span.el-input__suffix-inner
+                            i.el-input__icon.el-icon-circle-close
+              // 집단 시설 이용력
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 집단 시설 이용력
+                      span.point-txt.color-b * 의료 기관, 시설 등 / 최초 증상 발병일 14일 전부터 현재까지, ☐표시 또는 기재
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 집단시설이용력
+                      .input-box
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 무
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 유
+                    .input-txt 
+                      label(for="") 기관/시설명
+                      input(type="text").wid-245
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      .input-box
+                        .input-checkbox.right
+                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                          label(for="checkbox211")
+                            span.txt 입소(입원)중
+                        .inline-area
+                          label(for="").inline 입소일
+                          // element-ui 날짜 input
+                          .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                            input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-245
+                            span.el-input__prefix
+                              i.el-input__icon.el-icon-date
+                            span.el-input__suffix
+                              span.el-input__suffix-inner
+                                i.el-input__icon.el-icon-circle-close
+                    .input-txt
+                      .input-box
+                        .input-checkbox.right
+                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                          label(for="checkbox211")
+                            span.txt 퇴소(퇴원)
+                        .inline-area
+                          label(for="").inline 퇴원일
+                          // element-ui 날짜 input
+                          .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                            input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-245
+                            span.el-input__prefix
+                              i.el-input__icon.el-icon-date
+                            span.el-input__suffix
+                              span.el-input__suffix-inner
+                                i.el-input__icon.el-icon-circle-close
+              // 가족(동거인) 및 집단시설 접촉자 
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 가족(동거인) 및 집단시설 접촉자 
+                      span.point-txt.color-b * 최초 증상 발병일 2일 전부터 현재까지 접촉한 가족 및 집단시설 접촉자 / ☐표시 또는 기재
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 가족(동거인)접촉자
+                      .input-box
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 무
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 유
+                    .input-txt 
+                      label(for="") 인원(명)
+                      input(type="text").wid-245
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 시설 접촉자
+                      .input-box
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 무
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 유
+                    .input-txt 
+                      label(for="") 인원(명)
+                      input(type="text").wid-245
+                    .input-txt 
+                      label(for="") 시설명
+                      input(type="text").wid-345
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 의료기관 접촉자
+                      .input-box
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 무
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 유
+                    .input-txt 
+                      label(for="") 인원(명)
+                      input(type="text").wid-245
+                    .input-txt 
+                      label(for="") 의료기관명
+                      input(type="text").wid-345
+              // 사례분류 결과
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 사례분류 결과
+                      span.point-txt.color-b * 시도/권역 확인
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 대분류
+                      .input-box
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 해외유입
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 해외유입관련
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 요양
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 기타집단
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 확진자 접촉
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 미분류
+                  .register-form.flex.mt-32
+                    .input-txt.flex-1
+                      label(for="") 중분류
+                      input(type="text").wid-full
+                  .register-form.flex.mt-32
+                    .input-txt.flex-1
+                      label(for="") 참고사항
+                      input(type="text").wid-full
+                  
               .btn-group 
                 button.border-blue.wid-66
                   span.txt 취소

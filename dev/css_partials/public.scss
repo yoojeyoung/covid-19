@@ -622,7 +622,14 @@ section.content-wrap{
       font-weight: bold;
       .num{color: #0778ca;}
     }
-    .point-txt{@include rem(margin-left,8px);color: #dc3545;@include rem(font-size,12px);font-weight: normal;@include rem(vertical-align,2px);}
+    .point-txt{
+      @include rem(margin-left,8px);
+      color: #dc3545;
+      @include rem(font-size,12px);
+      font-weight: normal;
+      @include rem(vertical-align,2px);
+      &.color-b{color: #0778ca;}
+    }
     .btn-area{
       display: flex;
       align-items: flex-end;
@@ -1125,16 +1132,16 @@ section.content-wrap{
     + .input-txt{@include rem(margin-left,16px);}
     + .selectbox{@include rem(margin-left,16px);}
   }
-  .el-date-editor.el-input{
-    + .input-txt{@include rem(margin-left,16px);}
-  }
+  // .el-date-editor.el-input{
+  //   + .input-txt{@include rem(margin-left,16px);}
+  // }
   .selectbox{
     width: auto;
     overflow: initial;
     background: #fff;
     + .selectbox{@include rem(margin-left,16px)}
     + button{@include rem(margin-left,16px);}
-    + .el-date-editor.el-input{@include rem(margin-left,16px);}
+    // + .el-date-editor.el-input{@include rem(margin-left,16px);}
     &.wid-100{@include rem(width,100px);}
     &.wid-200{@include rem(width,200px);}
     &.wid-281{@include rem(width,281px);}
@@ -1150,7 +1157,7 @@ section.content-wrap{
     // &:not(:last-child){@include rem(margin-left,28px);}
     + button{@include rem(margin-left,16PX);}
     + .input-txt{@include rem(margin-left,16px);}
-    + .el-date-editor{@include rem(margin-left,16px);}
+    // + .el-date-editor{@include rem(margin-left,16px);}
     &.bg-white{background: #fff;}
     &.btn-download{
       position: absolute;
@@ -1214,8 +1221,11 @@ section.content-wrap{
         } 
       }
       &.inline{
+        position: relative;
         display: inline-block;
-        @include rem(min-width,62px);
+        margin-bottom: 0;
+        + input{@include rem(margin-left,8px);}
+        // + .el-date-editor{@include rem(margin-left,8px);}
       }
     }
     .inline-area{
@@ -1256,6 +1266,7 @@ section.content-wrap{
       &.wid-114{@include rem(width,114px);}
       &.wid-149{@include rem(width,149px);}
       &.wid-164{@include rem(width,164px);}
+      &.wid-168{@include rem(width,168px);}
       &.wid-183{@include rem(width,183px);}
       &.wid-200{@include rem(width,200px);}
       &.wid-220{@include rem(width,220px);}
@@ -1271,16 +1282,18 @@ section.content-wrap{
       &.wid-489{@include rem(width,489px);}
       &.wid-500{@include rem(width,500px);}
       &.wid-771{@include rem(width,771px);}
+      &.wid-full{width: 100%;}
       &.hig-28{@include rem(height,28px);}
       +.input-radio{@include rem(margin-left,20px);}
+      +.input-checkbox{@include rem(margin-left,16px);}
       +.selectbox{@include rem(margin-left,4px);}
       + button{@include rem(margin-left,7px);}
     }
-    .el-date-editor.el-input{
-      .el-input__inner{@include rem(height,40px);@include rem(padding-left,30px);@include rem(font-size,12px);line-height: initial;}
-      .el-input__icon{@include rem(line-height,initial);}
-      + .selectbox{@include rem(margin-left,8px);}
-    }
+    // .el-date-editor.el-input{
+    //   .el-input__inner{@include rem(height,40px);@include rem(padding-left,30px);@include rem(font-size,12px);line-height: initial;}
+    //   .el-input__icon{@include rem(line-height,initial);}
+    //   + .selectbox{@include rem(margin-left,8px);}
+    // }
     .selectbox{
       width: auto;
       select{
@@ -1296,6 +1309,7 @@ section.content-wrap{
         &.wid-152{@include rem(width,152px);}
         &.wid-188{@include rem(width,188px);}
         &.wid-218{@include rem(width,218px);}
+        &.wid-245{@include rem(width,245px);}
         &.wid-281{@include rem(width,281px);}
         &.wid-380{@include rem(width,380px);}
         &.wid-488{@include rem(width,488px);}
@@ -1322,7 +1336,7 @@ section.content-wrap{
         + input{@include rem(margin-left,10px);}
       }
       + button{@include rem(margin-left,10px);}
-      + .el-date-editor{@include rem(margin-left,10px);}
+      // + .el-date-editor{@include rem(margin-left,10px);}
     }
     .input-radio{
       margin-top: 0;
@@ -1337,6 +1351,7 @@ section.content-wrap{
       label{margin-bottom: 0}
       + .input-checkbox{@include rem(margin-left,20px);}
       + input{@include rem(margin-left,10px);}
+      + .inline-area{@include rem(margin-left,24px);}
     }
     .input-textarea{
       textarea{
@@ -1346,6 +1361,7 @@ section.content-wrap{
       + .input-textarea{@include rem(margin-left,24px)};
     }
     + .input-txt{@include rem(margin-left,24px);}
+    &.flex-1{flex: 1;}
   }
   .form-box{
     border-top: 1px solid #e4e7ed;
@@ -1370,9 +1386,10 @@ section.content-wrap{
   &:not(:first-child){@include rem(margin-top,12px);}
   &.flex{
     display: flex;
+    display: -ms-flexbox;
     justify-content: space-between;
     &.flex-l{
-      justify-content: left;
+      justify-content: flex-start;
     }
   }
   
@@ -1395,34 +1412,34 @@ section.content-wrap{
 }
 
 /* element ui - input 공통 */
-.el-date-editor.el-input{
-  width: auto;
-  .el-input__inner{
-    @include rem(width,139px);
-    border-color: #e4e7ed;
-    &.wid-114{@include rem(width,114px);}
-    &.wid-220{@include rem(width,220px)}
-    &.wid-228{@include rem(width,228px)}
-    &::placeholder{color: #c0c4cc;}
-  }
-  .el-icon-date{
-    &::before{
-      content: "" !important;
-      width: 14px;
-      height: 100%;
-      right: 10px;
-      top: 0;
-      background-image: url("../images/common/ico_calendar.png");
-      display: inline-block;
-      background-size: 14px auto;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-  }
-  + .el-date-editor.el-input{@include rem(margin-left,16px);}
-  + .selectbox{@include rem(margin-left,16px);}
-  + button{@include rem(margin-left,16px);}
-}
+// .el-date-editor.el-input{
+//   width: auto;
+//   .el-input__inner{
+//     @include rem(width,139px);
+//     border-color: #e4e7ed;
+//     &.wid-114{@include rem(width,114px);}
+//     &.wid-220{@include rem(width,220px)}
+//     &.wid-228{@include rem(width,228px)}
+//     &::placeholder{color: #c0c4cc;}
+//   }
+//   .el-icon-date{
+//     &::before{
+//       content: "" !important;
+//       width: 14px;
+//       height: 100%;
+//       right: 10px;
+//       top: 0;
+//       background-image: url("../images/common/ico_calendar.png");
+//       display: inline-block;
+//       background-size: 14px auto;
+//       background-repeat: no-repeat;
+//       background-position: center center;
+//     }
+//   }
+//   + .el-date-editor.el-input{@include rem(margin-left,16px);}
+//   + .selectbox{@include rem(margin-left,16px);}
+//   + button{@include rem(margin-left,16px);}
+// }
 
 /* 성공 및 실패 텍스트 공통 */
 span{

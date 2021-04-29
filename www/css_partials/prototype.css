@@ -446,6 +446,8 @@ a:before {
     left: 50%;
     margin-left: -5px;
     margin-top: 0; }
+  .input-checkbox.mwid-170 {
+    width: 170px; }
   .input-checkbox input.checked + label:before,
   .input-checkbox input:checked + label:before {
     background-color: #409eff;
