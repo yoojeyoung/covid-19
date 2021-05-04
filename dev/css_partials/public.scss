@@ -406,6 +406,7 @@ button,a{
     background: #f9f9f9 !important;
     .txt{color: #d3d6dd !important;}
   }
+  &.complete{color: #283356;}
   &.color-b{
     .txt{color: #0778ca;}
   }
@@ -1277,10 +1278,12 @@ section.content-wrap{
       &.wid-300{@include rem(width,300px);}
       &.wid-330{@include rem(width,330px);}
       &.wid-345{@include rem(width,345px);}
+      &.wid-400{@include rem(width,400px);}
       &.wid-430{@include rem(width,430px);}
       &.wid-460{@include rem(width,460px);}
       &.wid-489{@include rem(width,489px);}
       &.wid-500{@include rem(width,500px);}
+      &.wid-650{@include rem(width,650px);}
       &.wid-771{@include rem(width,771px);}
       &.wid-full{width: 100%;}
       &.hig-28{@include rem(height,28px);}
@@ -1311,6 +1314,7 @@ section.content-wrap{
         &.wid-218{@include rem(width,218px);}
         &.wid-245{@include rem(width,245px);}
         &.wid-281{@include rem(width,281px);}
+        &.wid-300{@include rem(width,300px);}
         &.wid-380{@include rem(width,380px);}
         &.wid-488{@include rem(width,488px);}
       }
@@ -1359,6 +1363,7 @@ section.content-wrap{
         &.wid-648{@include rem(width,648px);}
       }
       + .input-textarea{@include rem(margin-left,24px)};
+      &.wid-full{width: 100%;}
     }
     + .input-txt{@include rem(margin-left,24px);}
     &.flex-1{flex: 1;}
@@ -1390,6 +1395,63 @@ section.content-wrap{
     justify-content: space-between;
     &.flex-l{
       justify-content: flex-start;
+    }
+  }
+  &.d-table{
+    display: table;
+    .inline-area{
+      display: table-cell;
+      vertical-align: top;
+      font-size: 0;
+      .box-group{
+        + .box-group{@include rem(margin-top,24px);}
+      }
+      .sub-tit{
+        @include rem(margin-bottom,8px);
+        @include rem(font-size,14px);
+        color: #606266;
+      }
+      .img-area{
+        display: inline-block;
+        @include rem(min-width,150px);
+        @include rem(height,134px);
+        @include rem(padding,47px 20px);
+        border: 1px solid #e4e7ed;
+        text-align: center;
+        .txt{
+          @include rem(font-size,12px);
+          font-weight: 500;
+          color: #333;
+        }
+        .btn-file{
+          @include rem(margin-top,16px);
+          label{
+            display: inline-block;
+            @include rem(width,111px);
+            @include rem(height,28px);
+            @include rem(padding,7px 5px 5px);
+            @include rem(font-size,12px);
+            color: #fff;
+            background: #0778ca;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+        
+          }
+          input{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+          }
+        }
+        + .img-area{@include rem(margin-left,8px);}
+      }
+      + .inline-area{@include rem(padding-left,24px);}
     }
   }
   

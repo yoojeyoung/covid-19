@@ -682,6 +682,8 @@ button, a {
     background: #f9f9f9 !important; }
     button:disabled .txt, a:disabled .txt {
       color: #d3d6dd !important; }
+  button.complete, a.complete {
+    color: #283356; }
   button.color-b .txt, a.color-b .txt {
     color: #0778ca; }
   button.color-r .txt, a.color-r .txt {
@@ -1669,6 +1671,8 @@ section.content-wrap {
         width: 330px; }
       .register-form .input-txt input.wid-345 {
         width: 345px; }
+      .register-form .input-txt input.wid-400 {
+        width: 400px; }
       .register-form .input-txt input.wid-430 {
         width: 430px; }
       .register-form .input-txt input.wid-460 {
@@ -1677,6 +1681,8 @@ section.content-wrap {
         width: 489px; }
       .register-form .input-txt input.wid-500 {
         width: 500px; }
+      .register-form .input-txt input.wid-650 {
+        width: 650px; }
       .register-form .input-txt input.wid-771 {
         width: 771px; }
       .register-form .input-txt input.wid-full {
@@ -1716,6 +1722,8 @@ section.content-wrap {
           width: 245px; }
         .register-form .input-txt .selectbox select.wid-281 {
           width: 281px; }
+        .register-form .input-txt .selectbox select.wid-300 {
+          width: 300px; }
         .register-form .input-txt .selectbox select.wid-380 {
           width: 380px; }
         .register-form .input-txt .selectbox select.wid-488 {
@@ -1775,6 +1783,8 @@ section.content-wrap {
         width: 648px; }
     .register-form .input-txt .input-textarea + .input-textarea {
       margin-left: 24px; }
+    .register-form .input-txt .input-textarea.wid-full {
+      width: 100%; }
     .register-form .input-txt + .input-txt {
       margin-left: 24px; }
     .register-form .input-txt.flex-1 {
@@ -1820,6 +1830,55 @@ section.content-wrap {
       -webkit-justify-content: flex-start;
           -ms-flex-pack: start;
               justify-content: flex-start; }
+  .register-form.d-table {
+    display: table; }
+    .register-form.d-table .inline-area {
+      display: table-cell;
+      vertical-align: top;
+      font-size: 0; }
+      .register-form.d-table .inline-area .box-group + .box-group {
+        margin-top: 24px; }
+      .register-form.d-table .inline-area .sub-tit {
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: #606266; }
+      .register-form.d-table .inline-area .img-area {
+        display: inline-block;
+        min-width: 150px;
+        height: 134px;
+        padding: 47px 20px;
+        border: 1px solid #e4e7ed;
+        text-align: center; }
+        .register-form.d-table .inline-area .img-area .txt {
+          font-size: 12px;
+          font-weight: 500;
+          color: #333; }
+        .register-form.d-table .inline-area .img-area .btn-file {
+          margin-top: 16px; }
+          .register-form.d-table .inline-area .img-area .btn-file label {
+            display: inline-block;
+            width: 111px;
+            height: 28px;
+            padding: 7px 5px 5px;
+            font-size: 12px;
+            color: #fff;
+            background: #0778ca;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer; }
+          .register-form.d-table .inline-area .img-area .btn-file input {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0; }
+        .register-form.d-table .inline-area .img-area + .img-area {
+          margin-left: 8px; }
+      .register-form.d-table .inline-area + .inline-area {
+        padding-left: 24px; }
   .register-form.mt-23 {
     margin-top: 23px; }
   .register-form.mt-32 {

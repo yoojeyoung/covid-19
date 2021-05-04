@@ -247,7 +247,7 @@ a{
                     border-bottom: 1px solid #cacdd5;
                 }
             }
-            td{border: none;}
+            td{border: none;text-align: left;}
         }
     }
     &.board{
@@ -295,6 +295,13 @@ a{
                     .txt{color: #fff;}
                 }
                 
+            }
+        }
+    }
+    &.cluster{
+        td{
+            button{
+                + button{@include rem(margin-left,8px);}
             }
         }
     }

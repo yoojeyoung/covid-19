@@ -254,7 +254,8 @@ a:before {
         border-top: 1px solid #cacdd5;
         border-bottom: 1px solid #cacdd5; }
     .tbl-col01.type02 tbody td {
-      border: none; }
+      border: none;
+      text-align: left; }
   .tbl-col01.board {
     text-align: left; }
     .tbl-col01.board th {
@@ -294,6 +295,8 @@ a:before {
       background-color: #1c3a61; }
       .tbl-col01.type-input td a.btn-complete .txt {
         color: #fff; }
+  .tbl-col01.cluster td button + button {
+    margin-left: 8px; }
   .tbl-col01 .table-group {
     padding: 20px 30px; }
   .tbl-col01 .align-l {
