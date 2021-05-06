@@ -1,0 +1,96 @@
+extends /_src/_pug/_extend_html5
+
+block vars
+  - var bodyClass = 'kakao'
+
+block header 
+  header
+
+block contents
+  #container
+    #content(role='main')
+      .page_wrap.page_layout
+        section.pgmid_zone
+          .pgright_wrap
+            .inner
+              section.content-wrap
+                .inner
+                  // 검색영역
+                  .search-form.mb-20
+                    .search-type
+                      .search-list
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio211" name="radio211" checked)
+                          label(for="radio211")
+                            span.txt 단건 등록
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio212" name="radio212")
+                          label(for="radio212")
+                            span.txt 엑셀 등록
+                  .register-form
+                    .input-txt 
+                      label(for="") 국적
+                    .input-txt
+                      label(for="input01") 확진일
+                      // 달력 영역
+                    .input-txt 
+                      label(for="input01") 서울시 연번
+                      input(type="text")
+                    .input-txt 
+                      label(for="input01") 확진번호
+                      input(type="text")
+                    .input-txt 
+                      label(for="input01") 이름
+                      input(type="text")
+                    .input-txt 
+                      label(for="input01") 성별
+                    .input-txt 
+                      label(for="input01") 직업
+                      input(type="text")
+                    .input-txt 
+                      label(for="") 검사자치구
+                      .input-box
+                        .selectbox 
+                          select(title="")
+                            option(value="") 시간
+                            option(value="") 선택
+                    .input-txt 
+                      label(for="") 거주 자치구
+                      .input-box
+                        .selectbox 
+                          select(title="")
+                            option(value="") 시간
+                            option(value="") 선택
+                    .input-txt 
+                      label(for="") 발생 원인
+                      .input-box
+                        .selectbox 
+                          select(title="")
+                            option(value="") 대분류
+                            option(value="") 선택
+                        .selectbox 
+                          select(title="")
+                            option(value="") 중분류
+                            option(value="") 선택
+                      .input-box
+                        .selectbox 
+                          select(title="")
+                            option(value="") 소분류
+                            option(value="") 선택
+                        .selectbox 
+                          select(title="")
+                            option(value="") 시간
+                            option(value="") 선택
+                      .input-box
+                        input(type="text")
+                    .input-txt 
+                      label(for="") 유관확진자
+                      .input-box
+                        input(type="text")
+                        span.space-txt 의
+                        input(type="text")
+                    .input-txt
+                      label(for="") 기타
+                      textarea(name="", cols="30", rows="10") 
+append script
+  script.

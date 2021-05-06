@@ -567,6 +567,8 @@ a:before {
       background-color: #1c3a61; }
       .tbl-col01.type-input td a.btn-complete .txt {
         color: #fff; }
+  .tbl-col01.cluster td button + button {
+    margin-left: 8px; }
   .tbl-col01 .table-group {
     padding: 20px 30px; }
   .tbl-col01 .align-l {
@@ -2261,6 +2263,8 @@ button, a {
     background: #f9f9f9 !important; }
     button:disabled .txt, a:disabled .txt {
       color: #d3d6dd !important; }
+  button.complete, a.complete {
+    color: #283356; }
   button.color-b .txt, a.color-b .txt {
     color: #0778ca; }
   button.color-r .txt, a.color-r .txt {
@@ -2828,7 +2832,8 @@ section.content-wrap {
   .detail-view-container .view-content p {
     font-size: 14px;
     color: #303133;
-    line-height: 1.5; }
+    line-height: 1.5;
+    white-space: initial; }
     .detail-view-container .view-content p + p {
       margin-top: 30px; }
   .detail-view-container .view-content .input-radio {

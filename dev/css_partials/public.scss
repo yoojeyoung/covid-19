@@ -939,6 +939,7 @@ section.content-wrap{
       @include rem(font-size,14px);
       color: #303133;
       line-height: 1.5;
+      white-space: normal;
       + p{@include rem(margin-top,30px);}
     }
     .input-radio{
@@ -1562,5 +1563,77 @@ span{
         .cform_box{@include rem(width,584px);max-width: initial;}
       }
     }
+  }
+}
+
+/* 카카오톡 모바일 화면 */
+@media (max-width:760px){
+  .kakao{
+    background: #fff;
+    *{font-size: 12px;}
+    header.pgheader_wrap{position: relative;@include rem(padding, 0 14px);}
+    .cform_wrap{
+      position: relative;height: auto;
+      &.login-type {
+        .cform_box_td{max-width: none;width: 100%;@include rem(padding,0 14px);}
+        .cform_box{max-width: none;width: 100%;}
+      }
+    }
+    .cform_titlow{
+      .cform_tit_in{}
+    }
+    footer.type02{position: relative;}
+
+    /* 본문 레이아웃 */
+    .pgright_wrap{
+      @include rem(margin, 23px 0 26px);
+      background: #fff;
+      .inner{
+        min-width: auto;
+        width: 100%;
+        margin: 0;
+        @include rem(padding,0 14px);
+      }
+    }
+    section.content-wrap{
+      overflow: initial;
+      white-space: normal;
+      box-shadow: none;
+      .inner{padding: 0}
+    }
+    .register-form{
+      margin: 0;
+      @include rem(padding, 24px 0);
+      border-top: 1px solid #b4b6ba;
+      .space-txt{@include rem(margin, 0 11px);color: #838383;}
+      .input-txt{
+        width: 100%;
+        label{@include rem(font-size,12px);color: #0a0a0a;}
+        input{
+          width: 100%;
+          ::placeholder{@include rem(font-size,12px)}
+        }
+        .selectbox{
+          width: 100%;
+          select{width: 100%;}
+          + .selectbox{margin: 0;}
+        }
+        textarea{width: 100%;@include rem(height,66px);@include rem(padding,10px);border: 1px solid #e4e7ed;}
+        & +.input-txt{margin: 24px 0 0;}
+      }
+      .input-box{
+        .selectbox{
+          +.selectbox{@include rem(margin-left, 10px);}
+        }
+        +.input-box{@include rem(margin-top,8px);}
+      }
+    }
+    
+    /* input 영역 */
+    .input-txt{
+      display: block;
+      input{@include rem(height,43px);}
+    }
+    .selectbox{display: block;}
   }
 }
