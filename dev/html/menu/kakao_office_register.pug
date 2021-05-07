@@ -1,0 +1,67 @@
+extends /_src/_pug/_extend_html5
+
+block vars
+  - var bodyClass = 'kakao'
+
+block header 
+  header
+
+block contents
+  #container
+    #content(role='main')
+      .page_wrap.page_layout
+        section.pgmid_zone
+          .pgright_wrap
+            .inner
+              section.content-wrap
+                .inner
+                  .tab-area 
+                    .tab-list
+                      input(type="radio" id="tab01" checked) 
+                      label(for="tab01") 검사실정 등록
+                    .tab-list
+                      input(type="radio" id="tab02") 
+                      label(for="tab02") 검사실적 조회
+                  .info-area
+                    .info
+                      span.ico_info
+                      span.type 
+                        span.type01 작성자
+                        span.type02 홍길동
+                    .selectbox
+                      select(title="")
+                        option(value="") 자치구 선택
+                        option(value="") 선택
+                  .register-form
+                    span.data-txt 2021.03.19
+                    span.register-tit 검사실적
+                    .input-txt
+                      label(for="input01") PCR 비인두도말
+                      input(type="text" placeholder="숫자만 입력")
+                    .input-txt
+                      label(for="input01") PCR 비말
+                      input(type="text" placeholder="숫자만 입력")
+                    .input-txt 
+                      label(for="input01") PCR 2차 비인두도말
+                      input(type="text" placeholder="숫자만 입력")
+                  .register-form
+                    span.register-tit 확진자
+                    .input-txt
+                      label(for="input01") PCR 비인두도말
+                      input(type="text" placeholder="숫자만 입력")
+                    .input-txt
+                      label(for="input01") PCR 비말
+                      input(type="text" placeholder="숫자만 입력")
+                    .input-txt 
+                      label(for="input01") PCR 2차 비인두도말
+                      input(type="text" placeholder="숫자만 입력")
+
+            .btn-area.col-2
+              button(type="button").hig-38.color-nomal.wid-40p
+                span.txt 취소
+              button(type="submit").hig-38.color-blue.wid-60p
+                span.txt 등록
+                    
+                    
+append script
+  script.

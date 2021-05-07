@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>프로젝트타이틀</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link href="../../css_partials/font.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/reset.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/element.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/prototype.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/public.css" type="text/css" rel="stylesheet">
+  <link href="../../css_partials/contents.css" type="text/css" rel="stylesheet">
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/iscroll.js"></script>
+  <script src="../../js/common.js" defer></script>
+</head>
+
+<body class="kakao">
+  <!--[if lte IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+  <div id="wrap">
+    <header></header>
+    <div id="container">
+      <div id="content" role="main">
+        <div class="page_wrap page_layout">
+          <section class="pgmid_zone">
+            <div class="pgright_wrap">
+              <div class="inner">
+                <section class="content-wrap">
+                  <div class="inner">
+                    <div class="tab-area">
+                      <div class="tab-list">
+                        <input type="radio" id="tab01">
+                        <label for="tab01">검사실적 등록</label>
+                      </div>
+                      <div class="tab-list">
+                        <input type="radio" id="tab02" checked>
+                        <label for="tab02">검사실적 조회</label>
+                      </div>
+                    </div>
+                    <div class="info-area">
+                      <div class="info">
+                        <span class="ico_info"></span>
+                        <span class="type">
+                          <span class="type01">작성자</span>
+                          <span class="type02">홍길동</span>
+                        </span>
+                      </div>
+                      <div class="selectbox">
+                        <select title="">
+                          <option value="">자치구 선택</option>
+                          <option value="">선택</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="register-form">
+                      <div class="input-txt">
+                        <label for="">서초구</label>
+                        <span class="label-data">2021.03.19 </span>
+                        <div class="input-box">
+                          <div class="board today">
+                            <span class="txt">금일</span>
+                            <span class="total">5명</span>
+                          </div>
+                          <div class="board">
+                            <span class="txt">누적</span>
+                            <span class="total">456명</span>
+                          </div>
+                        </div>
+                        <div class="input-box">
+                          <!--달력 영역-->
+                          <!--달력 영역-->
+                          <button class="color-blue wid-40p hig-43" type="button">
+                            <span class="txt">검색</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="register-form pb-0">
+                      <div class="data-area">
+                        <span class="term">기간 : <span class="type">전체</span>
+                        </span>
+                      </div>
+                      <div class="human-group type-02">
+                        <div class="human-info">
+                          <div class="col tit">
+                            <span class="type01">검사실적</span>
+                            <span class="type02">(건)</span>
+                          </div>
+                          <div class="col total">
+                            <span class="type01">총 누계</span>
+                            <span class="type02">480,695</span>
+                          </div>
+                          <div class="col">
+                            <span class="type01">PCR<br>비인두도말</span>
+                            <span class="type02">1,485</span>
+                          </div>
+                          <div class="col">
+                            <span class="type01">PCR<br>비말</span>
+                            <span class="type02">3,283</span>
+                          </div>
+                          <div class="col">
+                            <span class="type01">PCR<br>2차 비인두도말</span>
+                            <span class="type02">14</span>
+                          </div>
+                        </div>
+                        <div class="human-info">
+                          <div class="col tit">
+                            <span class="type01">확진자</span>
+                            <span class="type02">(명)</span>
+                          </div>
+                          <div class="col total">
+                            <span class="type01">총 누계</span>
+                            <span class="type02">480,695</span>
+                          </div>
+                          <div class="col">
+                            <span class="type01">PCR<br>비인두도말</span>
+                            <span class="type02">1,485</span>
+                          </div>
+                          <div class="col">
+                            <span class="type01">PCR<br>비말</span>
+                            <span class="type02">3,283</span>
+                          </div>
+                          <div class="col">
+                            <span class="type01">PCR<br>2차 비인두도말</span>
+                            <span class="type02">14</span>
+                          </div>
+                          <div class="col">
+                            <span class="type01">신속항원</span>
+                            <span class="type02">25</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="btn-area col-2">
+                <button class="hig-38 color-nomal wid-40p" type="button">
+                  <span class="txt">취소</span>
+                </button>
+                <button class="hig-38 color-blue wid-60p" type="submit">
+                  <span class="txt">등록</span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dimm">
+    <img src="../../images/common/blank_size_100.png" alt="">
+  </div>
+  <script></script>
+</body>
+
+</html>
