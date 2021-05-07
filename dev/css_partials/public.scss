@@ -387,6 +387,7 @@ button,a{
   text-align: center;
   @include rem(border-radius,4px);
   .txt{@include rem(font-size,14px);color: #606266;text-align: center;}
+  &.wid-40p{width: 40%;}
   &.wid-40{@include rem(min-width,40px);}
   &.wid-56{@include rem(min-width,56px);}
   &.wid-66{@include rem(min-width,66px);}
@@ -398,6 +399,7 @@ button,a{
   &.wid-full{width: 100%;}
   &.hig-28{@include rem(height,28px);}
   &.hig-40{@include rem(height,40px);}
+  &.hig-43{@include rem(height,43px);}
   &:hover{
     border-color: #aeb2ba !important;
   }
@@ -1101,22 +1103,6 @@ section.content-wrap{
     }
     .input-radio.type-border{
       width: auto;
-      margin-top: 0;
-      background: #fff;
-      label{
-        @include rem(padding,10px);
-        border: 1px solid #e4e7ed;
-        @include rem(border-radius,4px);
-        &::before{@include rem(left,10px);}
-      }
-      input:checked + label{
-        border: 1px solid #409eff;
-        &::after{
-          @include rem(left,16px);
-        }
-        .txt{color: #409eff;}
-      }
-      .txt{@include rem(padding-left,30px);}
       + .input-radio{@include rem(margin-left,12px);}
     }
     .selectbox{width: 150px;}
@@ -1351,6 +1337,7 @@ section.content-wrap{
       + input{@include rem(margin-left,10px);}
       + .selectbox{@include rem(margin-left,10px);}
       + .input-checkbox{@include rem(margin-left,20px);}
+      &.m-0{margin: 0;}
     }
     .input-checkbox{
       label{margin-bottom: 0}
@@ -1600,9 +1587,54 @@ span{
       white-space: normal;
       box-shadow: none;
       .inner{padding: 0}
+      .tab-area{
+        display: flex;
+        border: 1px solid #cecece;
+        .tab-list{
+          flex: 1;
+          label{
+            display: inline-block;
+            width: 100%;
+            height: 43px;
+            padding: 14px;
+            font-size: 12px;
+            color: #646464;
+            background: #f7f7f7;
+            text-align: center;
+            cursor: pointer;
+          }
+          input{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+            &:checked + label{
+              color: #fff;
+              border-color: #283356;
+              background: #283356;
+            }
+          }
+        }
+      }
+      .info-area{
+        display: flex;
+        @include rem(margin-top,24px);
+        justify-content: space-between;
+        .selectbox{width: 40%;}
+        span{display: block;}
+        .type{
+          color: #606266;
+          @include rem(font-size,12px);
+          .type02{@include rem(margin-top,4px);@include rem(font-size,16px);font-weight: bold;}
+        }
+      }
     }
     .register-form{
-      margin: 0;
+      @include rem(margin,24px 0 0);
       @include rem(padding, 24px 0);
       border-top: 1px solid #b4b6ba;
       .space-txt{@include rem(margin, 0 11px);color: #838383;}
@@ -1616,17 +1648,175 @@ span{
         .selectbox{
           width: 100%;
           select{width: 100%;}
-          + .selectbox{margin: 0;}
+          + .selectbox{@include rem(margin-left,10px)}
+          + .input-radio{@include rem(margin-left,10px)}
+          &.wid-120{@include rem(width,120px);}
+        }
+        .input-radio{
+          label{
+            &:before{
+              @include rem(top,23px);
+              @include rem(left,14px);
+              @include rem(width,11px);
+              @include rem(height,11px);
+            }
+          }
+          input:checked + label{
+            &::after{
+              @include rem(top,20px);
+              @include rem(left,17px);
+              @include rem(width,5px);
+              @include rem(height,5px);
+            }
+          }
+          &.wid-full{width: 100%;}
+          &.type-border{
+            // label{text-align: center;}
+          }
         }
         textarea{width: 100%;@include rem(height,66px);@include rem(padding,10px);border: 1px solid #e4e7ed;}
+        button,a{
+          .txt{@include rem(font-size,12px);}
+        }
+        .board{
+          flex: 1;
+          @include rem(padding,15px);
+          border: 1px solid #e3e4e6;
+          @include rem(border-radius,4px);
+          background: #f6f7fb;
+          text-align: center;
+          span{
+            display: block;
+            color: #283356;
+            text-align: center;
+          }
+          .total{
+            @include rem(margin-top,4px);
+            @include rem(font-size,16px);
+            font-weight: bold;
+          }
+          + .board{@include rem(margin-left,10px);}
+          &.today{
+            span{
+              color: #dc3545;
+            }
+          }
+        }
         & +.input-txt{margin: 24px 0 0;}
       }
       .input-box{
-        .selectbox{
-          +.selectbox{@include rem(margin-left, 10px);}
-        }
         +.input-box{@include rem(margin-top,8px);}
+        &.col-2-1{
+          .input-radio{flex: 1;}
+          .selectbox{width: 40%;}
+        }
+        &.col-1{
+          .input-radio{flex: 1;}
+        }
+        &.file{
+          label{
+            display: inline-block;
+            width: 100%;
+            height: 43px;
+            padding: 14px;
+            font-size: 12px;
+            color: #409eff;
+            // background: #0778ca;
+            border: 1px solid #409eff;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+          }
+          input{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+          }
+        }
       }
+      .upload-list{
+        .list-item{
+          position: relative;
+          display: block;
+          padding-left: 20px;
+          color: #2f80ed;
+          text-decoration: underline;
+          text-align: left;
+          .txt{
+            font-size: 12px;
+            color: #2f80ed;
+            word-break: break-all;
+            word-wrap: break-word;
+          }
+          &::before{
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            background: url(../images/common/ico_file.png);
+          }
+          + .list-item{@include rem(margin-top,5px);}
+        }
+      }
+      .data-area{
+        text-align: right;
+        span{color: #5b5b5b;text-align: right;}
+        .total{
+          position: relative;
+          @include rem(margin-left,6px);
+          @include rem(padding-left,6px);
+          &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1px;
+            height: 100%;
+            background: #5b5b5b;
+          }
+        }
+      }
+      .human-group{
+        @include rem(margin-top,24px);
+        .human-info{
+          display: block;
+          width: 100%;
+          @include rem(padding,11px 0);
+          border-bottom: 1px solid #e4e7ed;
+          .col{
+            display: flex;
+            justify-content:space-between;
+            span{color: #000;}
+            .type01{
+              font-weight: bold;
+              + .type02{@include rem(margin-left,4px);}
+            }
+            + .col{@include rem(margin-top,10px);}
+          }
+        }
+        .detail-info{
+          @include rem(margin,10px 0);
+          @include rem(padding,19px 16px);
+          background: #fff9ea;
+          .info{
+            display: block;
+            width: 100%;
+            font-size: 0;
+            span{display: inline-block;}
+            .type01{width: 25%;font-weight: bold;}
+            .type02{width: 75%;}
+            + .info{@include rem(margin-top,10px);}
+          }
+        }
+      }
+      + .register-form{margin: 0;}
     }
     
     /* input 영역 */
@@ -1635,5 +1825,10 @@ span{
       input{@include rem(height,43px);}
     }
     .selectbox{display: block;}
+
+    /* 버튼 공통 영역 */
+    button,a{
+      @include rem(font-size,12px);
+    }
   }
 }

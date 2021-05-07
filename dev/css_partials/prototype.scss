@@ -456,6 +456,25 @@ a{
         label:before{top:0;left:50%;@include rem(margin-left, -10px);margin-top:0;}
         label:after{@include rem(top, 6px);left:50%;@include rem(margin-left, -4px);margin-top:0;}
     }
+    &.type-border{
+        width: auto;
+        margin-top: 0;
+        background: #fff;
+        label{
+            @include rem(padding,10px);
+            border: 1px solid #e4e7ed;
+            @include rem(border-radius,4px);
+            &::before{@include rem(left,10px);}
+        }
+        input:checked + label{
+            border: 1px solid #409eff;
+            &::after{
+            @include rem(left,16px);
+            }
+            .txt{color: #409eff;}
+        }
+        .txt{@include rem(padding-left,30px);}
+    }
     // checked 됐을때 스타일 변화
     input.checked,
     input:checked{

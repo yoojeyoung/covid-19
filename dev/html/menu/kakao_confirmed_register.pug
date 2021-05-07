@@ -15,35 +15,64 @@ block contents
             .inner
               section.content-wrap
                 .inner
-                  // 검색영역
-                  .search-form.mb-20
-                    .search-type
-                      .search-list
-                        .input-radio.right.type-border
-                          input(type="radio" id="radio211" name="radio211" checked)
-                          label(for="radio211")
-                            span.txt 단건 등록
-                        .input-radio.right.type-border
-                          input(type="radio" id="radio212" name="radio212")
-                          label(for="radio212")
-                            span.txt 엑셀 등록
+                  .tab-area 
+                    .tab-list
+                      input(type="radio" id="tab01" checked) 
+                      label(for="tab01") 확진자 등록
+                    .tab-list
+                      input(type="radio" id="tab02") 
+                      label(for="tab02") 확진자 목록
+                  .info-area
+                    .info
+                      span.ico_info
+                      span.type 
+                        span.type01 작성자
+                        span.type02 홍길동
+                    .selectbox
+                      select(title="")
+                        option(value="") 자치구 선택
+                        option(value="") 선택
                   .register-form
                     .input-txt 
                       label(for="") 국적
+                      .input-box.col-2-1
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio211" name="radio211" checked)
+                          label(for="radio211")
+                            span.txt 내국인
+                        .input-radio.right.type-border.m-0
+                          input(type="radio" id="radio212" name="radio212")
+                          label(for="radio212")
+                            span.txt 외국인
+                        .selectbox
+                          select(title="")
+                            option(value="") 국적선택
+                            option(value="") 선택
                     .input-txt
                       label(for="input01") 확진일
                       // 달력 영역
-                    .input-txt 
+                    .input-txt.form-success
                       label(for="input01") 서울시 연번
                       input(type="text")
-                    .input-txt 
+                      .message 입력완료
+                    .input-txt.form-error
                       label(for="input01") 확진번호
                       input(type="text")
+                      .message 확진번호를 확인해주세요
                     .input-txt 
                       label(for="input01") 이름
                       input(type="text")
                     .input-txt 
                       label(for="input01") 성별
+                      .input-box.col-1
+                        .input-radio.right.type-border
+                          input(type="radio" id="radio213" name="radio213" checked)
+                          label(for="radio213")
+                            span.txt 남자
+                        .input-radio.right.type-border.m-0
+                          input(type="radio" id="radio214" name="radio214")
+                          label(for="radio214")
+                            span.txt 여자
                     .input-txt 
                       label(for="input01") 직업
                       input(type="text")
@@ -77,20 +106,30 @@ block contents
                           select(title="")
                             option(value="") 소분류
                             option(value="") 선택
-                        .selectbox 
-                          select(title="")
-                            option(value="") 시간
-                            option(value="") 선택
+                        .input-radio.right.type-border.wid-full.m-0
+                          input(type="radio" id="radio215" name="radio215" checked)
+                          label(for="radio215")
+                            span.txt 직접입력
                       .input-box
                         input(type="text")
                     .input-txt 
                       label(for="") 유관확진자
                       .input-box
-                        input(type="text")
+                        input(type="text" placeholder="확진자 번호")
                         span.space-txt 의
-                        input(type="text")
+                        input(type="text" placeholder="관계")
                     .input-txt
                       label(for="") 기타
                       textarea(name="", cols="30", rows="10") 
+                    .input-txt 
+                      label(for="") 파일첨부
+                      .input-box.file
+                        label(for="upload") +추가하기
+                        input(type="file" id="upload")
+                      .upload-list
+                        a(href="#").list-item
+                          span.txt 보건소 선별 검사실적.jpg
+                        a(href="#").list-item
+                          span.txt 보건소 선별 검사실적.jpg
 append script
   script.

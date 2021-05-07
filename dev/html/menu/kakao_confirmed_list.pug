@@ -1,0 +1,170 @@
+extends /_src/_pug/_extend_html5
+
+block vars
+  - var bodyClass = 'kakao'
+
+block header 
+  header
+
+block contents
+  #container
+    #content(role='main')
+      .page_wrap.page_layout
+        section.pgmid_zone
+          .pgright_wrap
+            .inner
+              section.content-wrap
+                .inner
+                  .tab-area 
+                    .tab-list
+                      input(type="radio" id="tab01" checked) 
+                      label(for="tab01") 확진자 등록
+                    .tab-list
+                      input(type="radio" id="tab02") 
+                      label(for="tab02") 확진자 목록
+                  .info-area
+                    .info
+                      span.ico_info
+                      span.type 
+                        span.type01 작성자
+                        span.type02 홍길동
+                    .selectbox
+                      select(title="")
+                        option(value="") 자치구 선택
+                        option(value="") 선택
+                  .register-form
+                    .input-txt 
+                      label(for="") 서초구
+                      .input-box
+                        .board.today
+                          span.txt 금일
+                          span.total 5명
+                        .board
+                          span.txt 누적
+                          span.total 456명
+                      .input-box
+                        // 달력 영역
+                        // 달력 영역
+                      .input-box
+                        input(type="text" placeholder="이름 또는 연번")
+                        button(type="button").color-blue.wid-40p.hig-43
+                          span.txt 검색
+                  
+                  .register-form
+                    .data-area
+                      span.term 기간 : 
+                        span.type 전체
+                      span.total 총 : 
+                        span.num 456명
+                    .human-group
+                      a(href="#" role="button").human-info
+                        .col
+                          span.info
+                            span.type01 연번
+                            span.type02 28820
+                          span.info
+                            span.type01 확진번호
+                            span.type02 91588
+                        .col
+                          span.info
+                            span.type01 이름
+                            span.type02 홍길동
+                          span.info
+                            span.type01 확진일
+                            span.type02 2021.03.04
+                          span.info
+                            span.type01 자치구
+                            span.type02 영등포구
+                        .col
+                          span.info
+                            span.type01 발생원
+                            span.type02 감염경로 조사중
+                      .detail-info
+                          span.info
+                            span.type01 국적
+                            span.type02 외국인
+                          span.info
+                            span.type01 확진일
+                            span.type02 2021.03.19
+                          span.info
+                            span.type01 연번
+                            span.type02 #123
+                          span.info
+                            span.type01 확진번호
+                            span.type02 #456
+                          span.info
+                            span.type01 이름
+                            span.type02 홍길동
+                          span.info
+                            span.type01 성별
+                            span.type02 남자
+                          span.info
+                            span.type01 직업
+                            span.type02 학생
+                          span.info
+                            span.type01 검사자치구
+                            span.type02 서초구
+                          span.info
+                            span.type01 거주자치구
+                            span.type02 송파구
+                          span.info
+                            span.type01 발생원
+                            span.type02 영등포구 요양병원
+                          span.info
+                            span.type01 유관확진자
+                            span.type02 #12345 의 남편
+                          span.info
+                            span.type01 기타
+                            span.type02 현재 증상 기침 가래 입니다.
+                          span.info
+                            span.type01 파일첨부
+                            span.type02 
+                              .upload-list
+                                a(href="#").list-item
+                                  span.txt 보건소 선별 검사실적.jpg
+                      a(href="#" role="button").human-info
+                        .col
+                          span.info
+                            span.type01 연번
+                            span.type02 28820
+                          span.info
+                            span.type01 확진번호
+                            span.type02 91588
+                        .col
+                          span.info
+                            span.type01 이름
+                            span.type02 홍길동
+                          span.info
+                            span.type01 확진일
+                            span.type02 2021.03.04
+                          span.info
+                            span.type01 자치구
+                            span.type02 영등포구
+                        .col
+                          span.info
+                            span.type01 발생원
+                            span.type02 감염경로 조사중
+                      a(href="#" role="button").human-info
+                        .col
+                          span.info
+                            span.type01 연번
+                            span.type02 28820
+                          span.info
+                            span.type01 확진번호
+                            span.type02 91588
+                        .col
+                          span.info
+                            span.type01 이름
+                            span.type02 홍길동
+                          span.info
+                            span.type01 확진일
+                            span.type02 2021.03.04
+                          span.info
+                            span.type01 자치구
+                            span.type02 영등포구
+                        .col
+                          span.info
+                            span.type01 발생원
+                            span.type02 감염경로 조사중
+append script
+  script.

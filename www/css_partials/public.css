@@ -653,6 +653,8 @@ button, a {
     font-size: 14px;
     color: #606266;
     text-align: center; }
+  button.wid-40p, a.wid-40p {
+    width: 40%; }
   button.wid-40, a.wid-40 {
     min-width: 40px; }
   button.wid-56, a.wid-56 {
@@ -675,6 +677,8 @@ button, a {
     height: 28px; }
   button.hig-40, a.hig-40 {
     height: 40px; }
+  button.hig-43, a.hig-43 {
+    height: 43px; }
   button:hover, a:hover {
     border-color: #aeb2ba !important; }
   button:disabled, a:disabled {
@@ -1450,23 +1454,7 @@ section.content-wrap {
       .search-form .search-list .type + .input-radio {
         margin-left: 30px; }
     .search-form .search-list .input-radio.type-border {
-      width: auto;
-      margin-top: 0;
-      background: #fff; }
-      .search-form .search-list .input-radio.type-border label {
-        padding: 10px;
-        border: 1px solid #e4e7ed;
-        border-radius: 4px; }
-        .search-form .search-list .input-radio.type-border label::before {
-          left: 10px; }
-      .search-form .search-list .input-radio.type-border input:checked + label {
-        border: 1px solid #409eff; }
-        .search-form .search-list .input-radio.type-border input:checked + label::after {
-          left: 16px; }
-        .search-form .search-list .input-radio.type-border input:checked + label .txt {
-          color: #409eff; }
-      .search-form .search-list .input-radio.type-border .txt {
-        padding-left: 30px; }
+      width: auto; }
       .search-form .search-list .input-radio.type-border + .input-radio {
         margin-left: 12px; }
     .search-form .search-list .selectbox {
@@ -1770,6 +1758,8 @@ section.content-wrap {
         margin-left: 10px; }
       .register-form .input-txt .input-radio + .input-checkbox {
         margin-left: 20px; }
+      .register-form .input-txt .input-radio.m-0 {
+        margin: 0; }
     .register-form .input-txt .input-checkbox label {
       margin-bottom: 0; }
     .register-form .input-txt .input-checkbox + .input-checkbox {
@@ -2023,7 +2013,8 @@ span.error-txt {
   .kakao {
     background: #fff;
     /* 본문 레이아웃 */
-    /* input 영역 */ }
+    /* input 영역 */
+    /* 버튼 공통 영역 */ }
     .kakao * {
       font-size: 12px; }
     .kakao header.pgheader_wrap {
@@ -2056,8 +2047,63 @@ span.error-txt {
               box-shadow: none; }
       .kakao section.content-wrap .inner {
         padding: 0; }
+      .kakao section.content-wrap .tab-area {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        border: 1px solid #cecece; }
+        .kakao section.content-wrap .tab-area .tab-list {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1; }
+          .kakao section.content-wrap .tab-area .tab-list label {
+            display: inline-block;
+            width: 100%;
+            height: 43px;
+            padding: 14px;
+            font-size: 12px;
+            color: #646464;
+            background: #f7f7f7;
+            text-align: center;
+            cursor: pointer; }
+          .kakao section.content-wrap .tab-area .tab-list input {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0; }
+            .kakao section.content-wrap .tab-area .tab-list input:checked + label {
+              color: #fff;
+              border-color: #283356;
+              background: #283356; }
+      .kakao section.content-wrap .info-area {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 24px;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .kakao section.content-wrap .info-area .selectbox {
+          width: 40%; }
+        .kakao section.content-wrap .info-area span {
+          display: block; }
+        .kakao section.content-wrap .info-area .type {
+          color: #606266;
+          font-size: 12px; }
+          .kakao section.content-wrap .info-area .type .type02 {
+            margin-top: 4px;
+            font-size: 16px;
+            font-weight: bold; }
     .kakao .register-form {
-      margin: 0;
+      margin: 24px 0 0;
       padding: 24px 0;
       border-top: 1px solid #b4b6ba; }
       .kakao .register-form .space-txt {
@@ -2085,23 +2131,177 @@ span.error-txt {
           .kakao .register-form .input-txt .selectbox select {
             width: 100%; }
           .kakao .register-form .input-txt .selectbox + .selectbox {
-            margin: 0; }
+            margin-left: 10px; }
+          .kakao .register-form .input-txt .selectbox + .input-radio {
+            margin-left: 10px; }
+          .kakao .register-form .input-txt .selectbox.wid-120 {
+            width: 120px; }
+        .kakao .register-form .input-txt .input-radio label:before {
+          top: 23px;
+          left: 14px;
+          width: 11px;
+          height: 11px; }
+        .kakao .register-form .input-txt .input-radio input:checked + label::after {
+          top: 20px;
+          left: 17px;
+          width: 5px;
+          height: 5px; }
+        .kakao .register-form .input-txt .input-radio.wid-full {
+          width: 100%; }
         .kakao .register-form .input-txt textarea {
           width: 100%;
           height: 66px;
           padding: 10px;
           border: 1px solid #e4e7ed; }
+        .kakao .register-form .input-txt button .txt, .kakao .register-form .input-txt a .txt {
+          font-size: 12px; }
+        .kakao .register-form .input-txt .board {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          padding: 15px;
+          border: 1px solid #e3e4e6;
+          border-radius: 4px;
+          background: #f6f7fb;
+          text-align: center; }
+          .kakao .register-form .input-txt .board span {
+            display: block;
+            color: #283356;
+            text-align: center; }
+          .kakao .register-form .input-txt .board .total {
+            margin-top: 4px;
+            font-size: 16px;
+            font-weight: bold; }
+          .kakao .register-form .input-txt .board + .board {
+            margin-left: 10px; }
+          .kakao .register-form .input-txt .board.today span {
+            color: #dc3545; }
         .kakao .register-form .input-txt + .input-txt {
           margin: 24px 0 0; }
-      .kakao .register-form .input-box .selectbox + .selectbox {
-        margin-left: 10px; }
       .kakao .register-form .input-box + .input-box {
         margin-top: 8px; }
+      .kakao .register-form .input-box.col-2-1 .input-radio {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+      .kakao .register-form .input-box.col-2-1 .selectbox {
+        width: 40%; }
+      .kakao .register-form .input-box.col-1 .input-radio {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+      .kakao .register-form .input-box.file label {
+        display: inline-block;
+        width: 100%;
+        height: 43px;
+        padding: 14px;
+        font-size: 12px;
+        color: #409eff;
+        border: 1px solid #409eff;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer; }
+      .kakao .register-form .input-box.file input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0; }
+      .kakao .register-form .upload-list .list-item {
+        position: relative;
+        display: block;
+        padding-left: 20px;
+        color: #2f80ed;
+        text-decoration: underline;
+        text-align: left; }
+        .kakao .register-form .upload-list .list-item .txt {
+          font-size: 12px;
+          color: #2f80ed;
+          word-break: break-all;
+          word-wrap: break-word; }
+        .kakao .register-form .upload-list .list-item::before {
+          content: "";
+          position: absolute;
+          top: -2px;
+          left: 0;
+          width: 16px;
+          height: 16px;
+          background: url(../images/common/ico_file.png); }
+        .kakao .register-form .upload-list .list-item + .list-item {
+          margin-top: 5px; }
+      .kakao .register-form .data-area {
+        text-align: right; }
+        .kakao .register-form .data-area span {
+          color: #5b5b5b;
+          text-align: right; }
+        .kakao .register-form .data-area .total {
+          position: relative;
+          margin-left: 6px;
+          padding-left: 6px; }
+          .kakao .register-form .data-area .total::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1px;
+            height: 100%;
+            background: #5b5b5b; }
+      .kakao .register-form .human-group {
+        margin-top: 24px; }
+        .kakao .register-form .human-group .human-info {
+          display: block;
+          width: 100%;
+          padding: 11px 0;
+          border-bottom: 1px solid #e4e7ed; }
+          .kakao .register-form .human-group .human-info .col {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            .kakao .register-form .human-group .human-info .col span {
+              color: #000; }
+            .kakao .register-form .human-group .human-info .col .type01 {
+              font-weight: bold; }
+              .kakao .register-form .human-group .human-info .col .type01 + .type02 {
+                margin-left: 4px; }
+            .kakao .register-form .human-group .human-info .col + .col {
+              margin-top: 10px; }
+        .kakao .register-form .human-group .detail-info {
+          margin: 10px 0;
+          padding: 19px 16px;
+          background: #fff9ea; }
+          .kakao .register-form .human-group .detail-info .info {
+            display: block;
+            width: 100%;
+            font-size: 0; }
+            .kakao .register-form .human-group .detail-info .info span {
+              display: inline-block; }
+            .kakao .register-form .human-group .detail-info .info .type01 {
+              width: 25%;
+              font-weight: bold; }
+            .kakao .register-form .human-group .detail-info .info .type02 {
+              width: 75%; }
+            .kakao .register-form .human-group .detail-info .info + .info {
+              margin-top: 10px; }
+      .kakao .register-form + .register-form {
+        margin: 0; }
     .kakao .input-txt {
       display: block; }
       .kakao .input-txt input {
         height: 43px; }
     .kakao .selectbox {
-      display: block; } }
+      display: block; }
+    .kakao button, .kakao a {
+      font-size: 12px; } }
 
 /*# sourceMappingURL=../../sass_maps/css_partials/public.css.map */

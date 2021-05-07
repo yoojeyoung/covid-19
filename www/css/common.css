@@ -846,6 +846,27 @@ a:before {
   margin-left: -4px;
   margin-top: 0; }
 
+.input-radio.type-border {
+  width: auto;
+  margin-top: 0;
+  background: #fff; }
+  .input-radio.type-border label {
+    padding: 10px;
+    border: 1px solid #e4e7ed;
+    border-radius: 4px; }
+    .input-radio.type-border label::before {
+      left: 10px; }
+  .input-radio.type-border input:checked + label {
+    border: 1px solid #409eff; }
+    .input-radio.type-border input:checked + label::after {
+      left: 16px; }
+    .input-radio.type-border input:checked + label .txt {
+      color: #409eff; }
+  .input-radio.type-border .txt {
+    padding-left: 30px; }
+  .input-radio.type-border + .input-radio {
+    margin-left: 12px; }
+
 .input-radio input.checked + label:before,
 .input-radio input:checked + label:before {
   background-color: #409eff;
@@ -2833,7 +2854,7 @@ section.content-wrap {
     font-size: 14px;
     color: #303133;
     line-height: 1.5;
-    white-space: initial; }
+    white-space: normal; }
     .detail-view-container .view-content p + p {
       margin-top: 30px; }
   .detail-view-container .view-content .input-radio {
@@ -3598,5 +3619,91 @@ span.error-txt {
     .cform_wrap.login-type .cform_box_td .cform_box {
       width: 584px;
       max-width: initial; } }
+
+/* 카카오톡 모바일 화면 */
+@media (max-width: 760px) {
+  .kakao {
+    background: #fff;
+    /* 본문 레이아웃 */
+    /* input 영역 */ }
+    .kakao * {
+      font-size: 12px; }
+    .kakao header.pgheader_wrap {
+      position: relative;
+      padding: 0 14px; }
+    .kakao .cform_wrap {
+      position: relative;
+      height: auto; }
+      .kakao .cform_wrap.login-type .cform_box_td {
+        max-width: none;
+        width: 100%;
+        padding: 0 14px; }
+      .kakao .cform_wrap.login-type .cform_box {
+        max-width: none;
+        width: 100%; }
+    .kakao footer.type02 {
+      position: relative; }
+    .kakao .pgright_wrap {
+      margin: 23px 0 26px;
+      background: #fff; }
+      .kakao .pgright_wrap .inner {
+        min-width: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0 14px; }
+    .kakao section.content-wrap {
+      overflow: initial;
+      white-space: normal;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+      .kakao section.content-wrap .inner {
+        padding: 0; }
+    .kakao .register-form {
+      margin: 0;
+      padding: 24px 0;
+      border-top: 1px solid #b4b6ba; }
+      .kakao .register-form .space-txt {
+        margin: 0 11px;
+        color: #838383; }
+      .kakao .register-form .input-txt {
+        width: 100%; }
+        .kakao .register-form .input-txt label {
+          font-size: 12px;
+          color: #0a0a0a; }
+        .kakao .register-form .input-txt input {
+          width: 100%; }
+          .kakao .register-form .input-txt input ::-webkit-input-placeholder {
+            font-size: 12px; }
+          .kakao .register-form .input-txt input ::-moz-placeholder {
+            font-size: 12px; }
+          .kakao .register-form .input-txt input :-ms-input-placeholder {
+            font-size: 12px; }
+          .kakao .register-form .input-txt input ::-ms-input-placeholder {
+            font-size: 12px; }
+          .kakao .register-form .input-txt input ::placeholder {
+            font-size: 12px; }
+        .kakao .register-form .input-txt .selectbox {
+          width: 100%; }
+          .kakao .register-form .input-txt .selectbox select {
+            width: 100%; }
+          .kakao .register-form .input-txt .selectbox + .selectbox {
+            margin: 0; }
+        .kakao .register-form .input-txt textarea {
+          width: 100%;
+          height: 66px;
+          padding: 10px;
+          border: 1px solid #e4e7ed; }
+        .kakao .register-form .input-txt + .input-txt {
+          margin: 24px 0 0; }
+      .kakao .register-form .input-box .selectbox + .selectbox {
+        margin-left: 10px; }
+      .kakao .register-form .input-box + .input-box {
+        margin-top: 8px; }
+    .kakao .input-txt {
+      display: block; }
+      .kakao .input-txt input {
+        height: 43px; }
+    .kakao .selectbox {
+      display: block; } }
 
 /*# sourceMappingURL=../../sass_maps/css/common.css.map */
