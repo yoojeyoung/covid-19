@@ -2079,7 +2079,7 @@ span.error-txt {
         margin: 0;
         padding: 0 14px; }
     .kakao section.content-wrap {
-      overflow: initial;
+      overflow: hidden;
       white-space: normal;
       -webkit-box-shadow: none;
               box-shadow: none; }
