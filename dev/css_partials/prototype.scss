@@ -324,6 +324,12 @@ a{
         // border-right:1px solid #e5edf4;
         border-bottom:1px solid #e4e7ed;
         text-align: center;
+        .th-txt{
+            display: block;
+            color: #999;
+            @include rem(font-size,10px);
+            font-weight: bold;
+        }
     }
     td{
         @include rem(padding,8px 10px);

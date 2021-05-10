@@ -1,0 +1,1261 @@
+extends /_src/_pug/_extend_html5
+
+block contents
+  #container
+    #content(role='main')
+      .page_wrap.page_layout
+        section.pgmid_zone
+          .pgright_wrap
+            .inner
+              h2.tit 코로나19 기초역학조사서(확진환자)
+              section.content-wrap.reading-wrap(style="margin-bottom:300px")
+                .inner
+                  .register-form
+                    p.reading-tit 코로나19 기초역학조사서(확진환자)
+                    .tbl-container01
+                      table.tbl-row01
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup
+                          col(width="8%")
+                          col(width="12%")
+                          col(width="17.333%")
+                          col(width="12%")
+                          col(width="17.333%")
+                          col(width="12%")
+                          col(width="17.333%")
+                        tbody
+                            tr
+                              th(rowspan="3") 조사자
+                              th 관할시도
+                              td 서울
+                              th 연락처
+                              td
+                                span.type 사무실
+                                span.num 02-1234-1234
+                              th(rowspan="3") 신고기관<br>(보건소명,<br> 의료기간광)
+                              td(rowspan="3") 서울특별시 송파구 보건소
+                            tr
+                              th 관할 보건소
+                              td 서울특별시 송파구 보건소
+                              th 연락처
+                              td
+                                span.type 핸드폰
+                                span.num 010-1234-1234
+                            tr
+                              th 조사자 성명
+                              td 홍길동
+                              th 조사일
+                              td 2021-03-16
+                    
+                    .tbl-container01
+                      table.tbl-row01
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup
+                          col(width="12%")
+                          col(width="20%")
+                          col(width="12%")
+                          col(width="20%")
+                          col(width="12%")
+                          col(width="24%")
+                        tbody
+                            tr
+                              th(rowspan="2") 확진번호
+                              td(rowspan="2") 서울
+                              th(rowspan="2") 검사기관
+                              td(rowspan="2") 송파보건소
+                              th 격리종류
+                              td
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 자가
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 시설
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 병원
+                            tr
+                              th 격리장소
+                              td
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 선별진료소
+                            tr 
+                              th 확진일
+                              td 2021-03-16
+                              th 조사일
+                              td 2021-03-16
+                              th 격리시작일
+                              td 2021-03-16
+
+                    .tbl-container01.align-l
+                      .tit-area
+                        span.tit 1. 조사대상자 인적사항
+                          span.sub-tit (해당사항에 표시 또는 기재)
+                      table.tbl-row01
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                        tbody
+                            tr
+                              th 1.1 성명
+                              td(colspan="2") 안재용
+                              th 1.2 주민등록번호
+                              td 930501-1234567
+                              th 1.3 성별
+                              td
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 남
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 여
+                            tr
+                              th 1.4 국적
+                              td(colspan="2")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 남
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 여
+                              th 1.5 거주지 주소
+                              td(colspan="3") (05604) 서울특별시 중랑구 상봉동 103-13 늘푸름빌 503호
+                            tr 
+                              th 1.6 연락처
+                              th 환자
+                              td 010-1234-5678
+                              th 보호자
+                              td(colspan="3") 010-1234-5678
+                            tr 
+                              th 
+                                |1.7 연락처
+                                span.th-txt 직장명, 학교명, 의료기간명 등
+                              td(colspan="6") 오렌지라이프 보험설계사
+                            tr
+                              th(rowspan="2") 1.8 의료기간 종사자
+                              td
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 해당있음
+                              td(colspan="5")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 의사
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 간호사
+                            tr
+                              td
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 해당없음
+                              td(colspan="5")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 기타(방사선사, 간호조무사, 임상병리사, 이송요원, 이외)
+                            tr
+                              th 1.9 등록장애인 여부
+                              td
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 예
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 아니요
+                              th 1.10 장애유형
+                              td
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 지체
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 장애
+                              th 1.11 장애정도
+                              td(colspan="2")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 중증
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 경증
+                    
+                    .tbl-container01.align-l
+                      .tit-area
+                        span.tit 2. 증상 및 기저질환
+                          span.sub-tit (해당사항에 표시 또는 기재)
+                      table.tbl-row01
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                        tbody
+                            tr
+                              th 
+                                |2.1 증상유무
+                                span.th-txt 확진 14일전부터 현재까지
+                              td(colspan="2")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 남
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 여
+                              th 2.2 증상발현일
+                              td(colspan="3") 2021-03-16
+                            tr
+                              th 2.3 최초증상
+                              td(colspan="6").pd-0
+                                table.sub-table
+                                  caption 공시자료: 번호,보고서명,등록일
+                                  colgroup
+                                    col(width="25%")
+                                    col(width="25%")
+                                    col(width="25%")
+                                    col(width="25%")
+                                  thead  
+                                    tr 
+                                      th 발열(주관적 호소 포함)
+                                      th 발열(주관적 호소 포함)
+                                      th 발열(주관적 호소 포함)
+                                      th 발열(주관적 호소 포함)
+                                  tbody 
+                                    tr 
+                                      td
+                                        .row.flex-l
+                                          .input-radio.right
+                                            input(type="radio" id="radio211" name="radio211")
+                                            label(for="radio211")
+                                              span.txt 있음
+                                          .input-radio.right
+                                            input(type="radio" id="radio211" name="radio211")
+                                            label(for="radio211")
+                                              span.txt 없음
+                                      td
+                                        .row.flex-l
+                                          .input-radio.right
+                                            input(type="radio" id="radio211" name="radio211")
+                                            label(for="radio211")
+                                              span.txt 있음
+                                          .input-radio.right
+                                            input(type="radio" id="radio211" name="radio211")
+                                            label(for="radio211")
+                                              span.txt 없음
+                                      td
+                                        .row.flex-l
+                                          .input-radio.right
+                                            input(type="radio" id="radio211" name="radio211")
+                                            label(for="radio211")
+                                              span.txt 있음
+                                          .input-radio.right
+                                            input(type="radio" id="radio211" name="radio211")
+                                            label(for="radio211")
+                                              span.txt 없음
+                                      td
+                                        .row.flex-l
+                                          .input-radio.right
+                                            input(type="radio" id="radio211" name="radio211")
+                                            label(for="radio211")
+                                              span.txt 있음
+                                          .input-radio.right
+                                            input(type="radio" id="radio211" name="radio211")
+                                            label(for="radio211")
+                                              span.txt 없음
+                                    tr 
+                                      td (39.0 C)
+                                      td
+                                        .row
+                                          .input-checkbox.right
+                                            input(type="checkbox", id="checkbox211", name="checkbox211")
+                                            label(for="checkbox211")
+                                                span.txt 기침
+                                          .input-checkbox.right
+                                            input(type="checkbox", id="checkbox211", name="checkbox211")
+                                            label(for="checkbox211")
+                                                span.txt 가래
+                                          .input-checkbox.right
+                                            input(type="checkbox", id="checkbox211", name="checkbox211")
+                                            label(for="checkbox211")
+                                                span.txt 인후통
+                                          .input-checkbox.right
+                                            input(type="checkbox", id="checkbox211", name="checkbox211")
+                                            label(for="checkbox211")
+                                                span.txt 호흡곤란
+                                      td
+                                        .row
+                                          .input-checkbox.right
+                                            input(type="checkbox", id="checkbox211", name="checkbox211")
+                                            label(for="checkbox211")
+                                                span.txt 근육통
+                                          .input-checkbox.right
+                                            input(type="checkbox", id="checkbox211", name="checkbox211")
+                                            label(for="checkbox211")
+                                                span.txt 두통
+                                          .input-checkbox.right
+                                            input(type="checkbox", id="checkbox211", name="checkbox211")
+                                            label(for="checkbox211")
+                                                span.txt 오한
+                                          .input-checkbox.right
+                                            input(type="checkbox", id="checkbox211", name="checkbox211")
+                                            label(for="checkbox211")
+                                                span.txt 미각손식
+                                          .input-checkbox.right
+                                            input(type="checkbox", id="checkbox211", name="checkbox211")
+                                            label(for="checkbox211")
+                                                span.txt 후각손실
+                                          .input-checkbox.right
+                                            input(type="checkbox", id="checkbox211", name="checkbox211")
+                                            label(for="checkbox211")
+                                                span.txt 기타()
+                                      td
+                                        span.lable 흉부영상 확인여부
+                                        .row.flex-l
+                                          .input-radio.right
+                                            input(type="radio" id="radio211" name="radio211")
+                                            label(for="radio211")
+                                              span.txt 예
+                                          .input-radio.right
+                                            input(type="radio" id="radio211" name="radio211")
+                                            label(for="radio211")
+                                              span.txt 아니오
+                            tr
+                              th 2.4 기저 질환
+                              td(colspan="3")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 예 (기저질환 : )
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 아니오
+                              th 2.5 임신 여부
+                              td(colspan="2")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 예 ( 주)
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 아니오
+                            tr
+                              th 2.6 치료 상태<br>(확진 당시)
+                              td(colspan="3")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 일반치료
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 산소치료(비강캐뉼라, 마스크)
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 인공호흡
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt ECMO
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 사망
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 조사중
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 기타( )
+                              th 2.5 임신 여부
+                              td(colspan="2")
+                                .row
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 흡연
+                                .row
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 과거흡연
+                                .row
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 비흡연
+                            tr
+                              th 2.9 검사 경위
+                              td(colspan="6")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 본인이 판단
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 의사의 소견 및 권장
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 해외방문력
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 집단발생과 역학적 연관성
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 가족 또는 지인이 확진환자
+                    
+                    .tbl-container01.align-l
+                      .tit-area
+                        span.tit 3. 추정 감염경로
+                          span.sub-tit
+                            |(최초증상 
+                            strong 발병일 14일전부터 현재
+                            |까지, 표시 또는 기재)
+                      table.tbl-row01.table-fix
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                        tbody
+                            tr
+                              th(rowspan="2") 3.1 해외방문
+                              td(colspan="6")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 남
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 여
+                            tr
+                              th 국가명
+                              td(colspan="2") ()
+                              th 입국일
+                              td(colspan="2") 년 월 일
+                            tr
+                              th 3.2 확진자 접촉
+                              td(colspan="6").pd-0
+                                table.sub-table
+                                  caption 공시자료: 번호,보고서명,등록일
+                                  colgroup
+                                    col(width="25%")
+                                    col(width="25%")
+                                    col(width="25%")
+                                    col(width="25%")
+                                  thead  
+                                    tr
+                                      th(colspan="4").bg02 가족(동거인) 접촉자
+                                    tr 
+                                      th 이름
+                                      th 확진환자번호
+                                      th 최종 접촉일
+                                      th 관계
+                                  tbody 
+                                    tr 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                    tr 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                    tr 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                table.sub-table
+                                  caption 공시자료: 번호,보고서명,등록일
+                                  colgroup
+                                    col(width="25%")
+                                    col(width="25%")
+                                    col(width="25%")
+                                    col(width="25%")
+                                  thead  
+                                    tr
+                                      th(colspan="4").bg02 가족(동거인) 이외 접촉자
+                                    tr 
+                                      th 이름
+                                      th 확진환자번호
+                                      th 최종 접촉일
+                                      th 관계
+                                  tbody 
+                                    tr 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                    tr 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                    tr 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                            tr
+                              th 3.3 집단발병 관련
+                              td(colspan="6")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 유
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 무
+                                .row.flex-l
+                                  .input-checkbox.right
+                                    input(type="checkbox", id="checkbox211", name="checkbox211")
+                                    label(for="checkbox211")
+                                        span.txt 가족(동거인)
+                                  .input-checkbox.right
+                                    input(type="checkbox", id="checkbox211", name="checkbox211")
+                                    label(for="checkbox211")
+                                        span.txt 의료기관( )
+                                  .input-checkbox.right
+                                    input(type="checkbox", id="checkbox211", name="checkbox211")
+                                    label(for="checkbox211")
+                                        span.txt 종교관련( )
+                                .row.flex-l
+                                  .input-checkbox.right
+                                    input(type="checkbox", id="checkbox211", name="checkbox211")
+                                    label(for="checkbox211")
+                                        span.txt 요양,정신시설( )
+                                  .input-checkbox.right
+                                    input(type="checkbox", id="checkbox211", name="checkbox211")
+                                    label(for="checkbox211")
+                                        span.txt 학교( )
+                                  .input-checkbox.right
+                                    input(type="checkbox", id="checkbox211", name="checkbox211")
+                                    label(for="checkbox211")
+                                        span.txt 기타( )
+                                .row.flex-l
+                            tr
+                              th 3.4 기타
+                              td(colspan="6")
+                            tr
+                              th 3.5 선행확진자<br>(중앙확인)
+                              td(colspan="6").pd-0
+                                table.sub-table
+                                  caption 공시자료: 번호,보고서명,등록일
+                                  colgroup
+                                    col(width="15%")
+                                    col(width="15%")
+                                    col(width="15%")
+                                    col(width="25%")
+                                    col(width="15%")
+                                    col(width="15%")
+                                  thead 
+                                    tr 
+                                      th 관리번호
+                                      th 성명
+                                      th 관계
+                                      th 노출장소
+                                      th 최초노출일
+                                      th 최종노출일
+                                  tbody 
+                                    tr 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                    tr 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                    tr 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                    tr 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                    tr 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+                                      td 
+
+                    .tbl-container01.align-l
+                      .tit-area
+                        span.tit 4. 집단시설(의료기관, 시설 등) 이용력
+                          span.sub-tit
+                            |(최초증상 
+                            strong 발병일 14일전부터 현재
+                            |까지, 표시 또는 기재)
+                      table.tbl-row01.table-fix
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                        tbody
+                            tr
+                              th(rowspan="2") 4.1 집단시설이용력
+                              td(colspan="6")
+                                .row.flex-l
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 유
+                                  .input-radio.right
+                                    input(type="radio" id="radio211" name="radio211")
+                                    label(for="radio211")
+                                      span.txt 무
+                            tr
+                              td(colspan="6").pd-0
+                                table.sub-table
+                                  caption 공시자료: 번호,보고서명,등록일
+                                  colgroup
+                                    col(width="26%")
+                                    col(width="11%")
+                                    col(width="26%")
+                                    col(width="11%")
+                                    col(width="26%")
+                                  thead  
+                                    tr 
+                                      th 기관/시설명
+                                      th 입소(입원) 중
+                                      th 입소일
+                                      th 퇴소(퇴원)
+                                      th 퇴소일
+                                  tbody 
+                                    tr 
+                                      td 
+                                      td.align-c 
+                                        .input-checkbox.right
+                                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                                          label(for="checkbox211")
+                                      td 
+                                      td.align-c
+                                        .input-checkbox.right
+                                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                                          label(for="checkbox211")
+                                      td
+                                    tr 
+                                      td 
+                                      td.align-c
+                                        .input-checkbox.right
+                                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                                          label(for="checkbox211")
+                                      td 
+                                      td.align-c
+                                        .input-checkbox.right
+                                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                                          label(for="checkbox211")
+                                      td
+                                    tr 
+                                      td 
+                                      td.align-c 
+                                        .input-checkbox.right
+                                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                                          label(for="checkbox211")
+                                      td 
+                                      td.align-c
+                                        .input-checkbox.right
+                                          input(type="checkbox", id="checkbox211", name="checkbox211")
+                                          label(for="checkbox211")
+                                      td
+                    
+                    .tbl-container01.align-l
+                      .tit-area
+                        span.tit 5. 가족(동거인) 및 집단시설 접촉자
+                          span.sub-tit
+                            |(최초증상 
+                            strong 발병일 14일전부터 현재
+                            |까지 접촉한 가족 및 집단시설 접촉자), 표시 또는 기재 
+                      table.tbl-row01.table-fix
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                          col(width="13.333%")
+                        tbody
+                          tr
+                            th 5.1 가족(동거인) 접촉
+                            td(colspan="6")
+                              .row.flex-l
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 유 (인원 : 명)
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 무
+                          tr
+                            th(rowspan="2") 5.2 시설 접촉자
+                            td(colspan="6")
+                              .row.flex-l
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 유
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 무
+                          tr
+                            td(colspan="6").pd-0
+                              table.sub-table
+                                caption 공시자료: 번호,보고서명,등록일
+                                colgroup
+                                  col(width="55%")
+                                  col(width="45%")
+                                thead  
+                                  tr 
+                                    th 시설명
+                                    th 인원
+                                tbody 
+                                  tr 
+                                    td 
+                                    td
+                                  tr 
+                                    td 
+                                    td
+                                  tr 
+                                    td 
+                                    td
+                          tr
+                            th(rowspan="2") 5.3 의료기관 접촉자
+                            td(colspan="6")
+                              .row.flex-l
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 유
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 무
+                          tr
+                            td(colspan="6").pd-0
+                              table.sub-table
+                                caption 공시자료: 번호,보고서명,등록일
+                                colgroup
+                                  col(width="55%")
+                                  col(width="45%")
+                                thead  
+                                  tr 
+                                    th 의료기관명
+                                    th 인원
+                                tbody 
+                                  tr 
+                                    td 
+                                    td
+                                  tr 
+                                    td 
+                                    td
+                                  tr 
+                                    td 
+                                    td
+
+                    .tbl-container01.align-l
+                      .tit-area
+                        span.tit 6. 사례분분류 결과
+                          span.sub-tit ※시도/권역 확인
+                      table.tbl-row01.table-fix
+                        caption 공시자료: 번호,보고서명,등록일
+                        colgroup
+                          col(width="13.333%")
+                          col(width="auto")
+                          col(width="13.333%")
+                          col(width="auto")
+                          col(width="13.333%")
+                          col(width="auto")
+                        tbody
+                          tr
+                            th 6.1 대분류
+                            td
+                              .row
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 해외유입
+                              .row
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 해외유입 관련
+                              .row
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 요양
+                              .row 
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 기타 집단
+                              .row 
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 확진자 접촉
+                              .row 
+                                .input-radio.right
+                                  input(type="radio" id="radio211" name="radio211")
+                                  label(for="radio211")
+                                    span.txt 미분류
+                            th 6.2 중분류
+                            td 
+                            th 6.3 소분류
+                            td 
+                          tr
+                            th 6.4 참고사항
+                            td(colspan="6")
+
+
+              
+              .btn-group 
+                button.border-blue.wid-66
+                  span.txt 취소
+                button(type="submit").color-blue.wid-66
+                  span.txt 등록
+      // 확진자 정보 검색 팝업
+      #srdTarget01.dimlayer_z
+        .dimlayer_tb
+          .dimlayer_td
+            // layer_box
+            .layer_box.wid-1330
+              .layer_tit_low
+                h2.layer_tit 확진자 정보 검색
+              .layer_cont
+                .layer_cont_in.pt-20
+                  .search-form
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio211" name="radio211")
+                        label(for="radio211")
+                          span.txt 조건 검색
+                      .search-list
+                        span.type 자치구
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list.wid-445
+                        span.type 확진일자
+                        button.btn-data.wid-66
+                          .txt 오늘
+                        button.btn-data.wid-66
+                          .txt 전날
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio212" name="radio212")
+                        label(for="radio212")
+                          span.txt 확진자 번호로 검색
+                      .search-list
+                        .input-txt
+                          input(type="text" placeholder="숫자만 입력").wid-220
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio213" name="radio213")
+                        label(for="radio213")
+                          span.txt 키워드 검색
+                      .search-list
+                        .input-txt
+                          input(type="text" placeholder="검색어 입력").wid-220
+                    .btn-group.type-r
+                      button.color-blue.wid-77 
+                        span.txt 검색
+                  .search-tit 
+                    span.tit
+                      |검색결과 총 
+                      span.num 12,345 
+                      |건
+                  .tbl-container01
+                    table.tbl-col01
+                      caption 공시자료: 번호,보고서명,등록일
+                      colgroup 
+                        col(width="5%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="auto")
+                      thead 
+                        tr
+                          th 선택
+                          th 연번
+                          th 확진일
+                          th 확진번호
+                          th 이름
+                          th 성별(출생년)
+                          th 국적
+                          th 거주지
+                          th 직업
+                          th 직장명(학교명)
+                      tbody 
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio214" name="radio214")
+                              label(for="radio214")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio215" name="radio215")
+                              label(for="radio215")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio216" name="radio216")
+                              label(for="radio216")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio217" name="radio217")
+                              label(for="radio217")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio218" name="radio218")
+                              label(for="radio218")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio219" name="radio219")
+                              label(for="radio219")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio220" name="radio220")
+                              label(for="radio220")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio221" name="radio221")
+                              label(for="radio221")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio222" name="radio222")
+                              label(for="radio222")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio223" name="radio223")
+                              label(for="radio223")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+              .page-nav-container
+                +page-nav('type01')
+              .btn-group.right.mt-16
+                // closetrigger 있으면 닫힘
+                button.color-white.wid-58.closetrigger
+                  span.txt 닫기
+                button.color-blue.wid-58
+                  span.txt 등록
+              button(type="button").btn_layerclose
+                span.hide-txt 닫기
+
+      // 지도 검색
+      #srdTarget02.dimlayer_z
+        .dimlayer_tb
+          .dimlayer_td
+            // layer_box
+            .layer_box.wid-1330
+              .layer_tit_low
+                h2.layer_tit 지도 검색
+              .layer_cont
+                .layer_cont_in.pt-20
+                  .search-form
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio213" name="radio213")
+                        label(for="radio213")
+                          span.txt 지도 검색
+                      .search-list
+                        .input-txt
+                          input(type="text" placeholder="검색어 입력")
+                    .btn-group.type-r
+                      button.color-blue.wid-77 
+                        span.txt 검색
+                  .search-tit 
+                    span.tit
+                      span.object 할리스커피 
+                      |검색결과 총 
+                      span.num 12,345 
+                      |건
+                  .search-map-area
+                    ul.result-list 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                    .map-area
+              .btn-group.right.mt-16
+                // closetrigger 있으면 닫힘
+                button.color-white.wid-58.closetrigger
+                  span.txt 닫기
+                button(type="submit").color-blue.wid-58
+                  span.txt 등록
+              button(type="button").btn_layerclose
+                span.hide-txt 닫기
+append script
+  script.

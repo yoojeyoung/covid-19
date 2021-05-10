@@ -921,6 +921,146 @@ section.content-wrap{
       + .board-item{@include rem(margin-left,16px);}
     }
   }
+  /* 확진자 기초,심층 열람 */
+  &.reading-wrap{
+    .inner{
+      @include rem(min-width,940px);
+      @include rem(max-width,940px);
+      margin: 0 auto;
+      .register-form{
+        @include rem(padding,44px 24px 40px);
+        border: 1px solid #e0e0e0;
+        .reading-tit{
+          color: #333;
+          @include rem(font-size,24px);
+          font-weight: bold;
+          text-align: center;
+          + .tbl-container01{@include rem(margin-top,45px);}
+        }
+        .tbl-container01{
+          .tit-area{
+            @include rem(padding,14px 16px);
+            background: #333;
+            .tit{
+              color: #fff;
+              @include rem(font-size,16px);
+              font-weight: bold;
+              .sub-tit{
+                @include rem(margin-left,12px);
+                @include rem(font-size,12px);
+                font-weight: normal;
+                strong{
+                  font-weight: bold;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+          table{
+            &.sub-table{
+              tr{
+                &:last-child{
+                  td{border-bottom: 0}
+                }
+              }
+              th{
+                background: #e1e3e8;
+                text-align: center !important;
+                &.bg02{
+                  background: #e5edf4;
+                }
+              }
+              td{
+                @include rem(padding,10px 11px !important);
+                border: 1px solid #e4e7ed;
+                vertical-align: top;
+                &.align-c{text-align: center;}
+              }
+              .lable{display: block;@include rem(margin-bottom,11px);color: #333;}
+            }
+            &.table-fix{
+              table-layout: fixed;
+            }
+          }
+          .row{
+            &.flex-l{
+              display: flex;
+              justify-content: flex-start;
+              .input-radio{
+                + .input-radio{@include rem(margin-left,10px);}
+              }
+              .input-checkbox{
+                + .input-checkbox{@include rem(margin,0 0 0 10px);}
+              }
+            }
+            .input-checkbox{
+              display: block;
+              + .input-checkbox{@include rem(margin-top,5px);}
+            }
+            + .row{@include rem(margin-top,10px);}
+          }
+          .input-radio{
+            label{
+              @include rem(padding,1px 0 0 19px);
+              &::before{
+                @include rem(width,14px);
+                @include rem(height,14px);
+              }
+            }
+            input:checked{
+              + label{
+                &::before{
+                  @include rem(width,14px);
+                  @include rem(height,14px);
+                }
+                &::after{
+                  @include rem(left,5px);
+                  @include rem(width,5px);
+                  @include rem(height,5px);
+                  @include rem(margin-top,-5px);
+                }
+              }
+            }
+            .txt{@include rem(font-size,12px);}
+          }
+          .input-checkbox{
+            label{
+              @include rem(padding,1px 0 0 19px);
+              &::before{
+                @include rem(width,14px);
+                @include rem(height,14px);
+              }
+            }
+            input:checked{
+              + label{
+                &::before{
+                  @include rem(width,14px);
+                  @include rem(height,14px);
+                }
+                &::after{
+                  @include rem(left,3px);
+                  @include rem(margin-top,-7px);
+                }
+              }
+            }
+            .txt{@include rem(font-size,12px);}
+          }
+          + .tbl-container01{@include rem(margin-top,16px);}
+          &.align-l{
+            table{
+              width: 100%;
+              // table-layout: fixed;
+              th,td{text-align: left;}
+              td{
+                @include rem(padding,6px 4px);
+                &.pd-0{padding: 0;}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   &.shadow-n{box-shadow: none;}
   &.bg-n{background: none;}
 }
@@ -1622,7 +1762,7 @@ span{
       }
     }
     section.content-wrap{
-      overflow: initial;
+      overflow: hidden;
       white-space: normal;
       box-shadow: none;
       .inner{padding: 0}

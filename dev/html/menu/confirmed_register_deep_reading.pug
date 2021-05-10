@@ -1,0 +1,751 @@
+extends /_src/_pug/_extend_html5
+
+block contents
+  #container
+    #content(role='main')
+      .page_wrap.page_layout
+        section.pgmid_zone
+          .pgright_wrap
+            .inner
+              h2.tit 심층역학 조사서 등록
+              section.content-wrap
+                .inner
+                  .register-form.flex.flex-l
+                    .input-txt
+                      label(for="input01").point 연번
+                      input(type="text" placeholder="숫자 입력" id="input01").wid-460
+                    .input-txt
+                      label(for="input01").point 자치구
+                      .selectbox
+                        select(title="").wid-380
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                          option(value="") 선택
+              // 조사자
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 조사자
+                  .register-form.flex.mt-32
+                    .input-txt
+                      label(for="") 역학조사관
+                      input(type="text").wid-489
+                    .input-txt
+                      label(for="") 역학조사원1
+                      input(type="text").wid-489
+                    .input-txt
+                      label(for="") 역학조사원2
+                      input(type="text").wid-489
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 사무실 연락처
+                      input(type="text" placeholder="숫자만 입력").wid-274
+                    .input-txt
+                      label(for="") 핸드폰 연락처
+                      input(type="text" placeholder="숫자만 입력").wid-274
+                    .input-txt
+                      label(for="") 조사일
+                      // 달력 영역
+                      .selectbox
+                        select(title="").wid-152
+                          option(value="") 시간
+                          option(value="") 선택
+                          option(value="") 선택
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 조사 기관
+                      .input-box
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 선별진료소
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 의료기관
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 보건소
+                        .selectbox
+                          select(title="").wid-281
+                            option(value="") 선택해주세요
+                            option(value="") 선택
+                            option(value="") 선택
+                        input(type="text" placeholder="직접입력").wid-345
+              // 확진자 인적 정보
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 확진자 인적 정보
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 확진일
+                      // 달력 영역
+                    .input-txt
+                      label(for="") 검사일
+                      // 달력 영역
+                    .input-txt
+                      label(for="") 검사기관
+                      input(type="text" placeholder="강남구 보건소" disabled).wid-400
+                    .input-txt
+                      label(for="") 주민등록번호(여권번호)
+                      input(type="text" placeholder="800000-1000000" disabled).wid-430
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 이름
+                      input(type="text" placeholder="홍길동" disabled).wid-300
+                    .input-txt
+                      label(for="") 주민등록 주소
+                      input(type="text" placeholder="(12345) 서울시 송파구 백제고분로 00길 12-3, 101호" disabled).wid-500
+                      button(type="button").wid-75.hig-40.color-blue
+                        span.txt 주소검색
+                    .input-txt
+                      label(for="") 실거주 주소
+                      input(type="text" placeholder="(12345) 서울시 송파구 백제고분로 00길 12-3, 101호" disabled).wid-500
+                      button(type="button").wid-75.hig-40.color-blue
+                        span.txt 주소검색
+                  .register-form.d-table.mt-32
+                    .inline-area
+                      .box-group
+                        .sub-tit 사진등록
+                        .img-area
+                          span.txt 사진1
+                          .btn-file 
+                            label(for="img-file") 첨부파일 추가
+                            input(type="file" id="img-file")
+                        .img-area
+                          span.txt 사진2
+                          .btn-file 
+                            label(for="img-file") 첨부파일 추가
+                            input(type="file" id="img-file")
+                    .inline-area
+                      .box-group
+                        .input-txt
+                          label(for="") 휴대폰 번호
+                          input(type="text" placeholder="숫자만 입력").wid-300
+                        .input-txt
+                          label(for="") 통신사
+                          .selectbox
+                            select(title="").wid-245
+                              option(value="") 선택해주세요
+                              option(value="") 선택
+                              option(value="") 선택
+                        .input-txt
+                          label(for="") 휴대폰 명의
+                          input(type="text").wid-164
+                        .input-txt
+                          label(for="") 종교
+                          input(type="text").wid-164
+                      .box-group
+                        .input-txt
+                          label(for="") 신용카드 번호
+                          input(type="text" placeholder="숫자만 입력").wid-300
+                        .input-txt
+                          label(for="") 카드사
+                          input(type="text").wid-245
+                        .input-txt
+                          label(for="") 카드 명의
+                          input(type="text").wid-164
+                        .input-txt
+                          label(for="") 차량
+                          input(type="text").wid-164
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 동거인 정보
+                    button(type="button").border-blue.wid-56.hig-28.ml-8
+                      span.txt 추가
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 관계
+                      input(type="text" placeholder="직접입력").wid-200
+                    .input-txt
+                      label(for="") 이름
+                      input(type="text" placeholder="직접입력").wid-200
+                    .input-txt
+                      label(for="") 연락처
+                      input(type="text" placeholder="직접입력").wid-300
+                    .input-txt
+                      label(for="") 직업
+                      input(type="text" placeholder="직접입력").wid-281
+                    .input-txt
+                      label(for="") 검사일/결과
+                      input(type="text" placeholder="직접입력").wid-430
+              // 직업 정보
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 직업 정보
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 상호
+                      input(type="text" placeholder="직접입력").wid-200
+                    .input-txt
+                      label(for="") 업종
+                      input(type="text" placeholder="직접입력").wid-200
+                    .input-txt
+                      label(for="") 연락처
+                      input(type="text" placeholder="직접입력").wid-300
+                    .input-txt
+                      label(for="") 연락처
+                      input(type="text" placeholder="직접입력").wid-650
+                      button(typ="button").wid-75.color-blue.hig-40
+                        span.txt 주소검색
+              // 실험실 진단 결과
+              section.content-wrap
+                .inner
+                  .register-form.flex.flex-l
+                    .input-txt
+                      label(for="") 실험실 진단검사 결과 Ct값
+                      .input-box
+                        .inline-area
+                          label(for="").inline 실험기관
+                          input(type="text").wid-183
+                        .inline-area
+                          label(for="").inline RdRp gene
+                          input(type="text").wid-183
+                        .inline-area
+                          label(for="").inline E gene
+                          input(type="text").wid-183
+                        .inline-area
+                          label(for="").inline N gene
+                          input(type="text").wid-183
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="").point *집단 발병 연관
+                      .selectbox
+                        select(title="").wid-281
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                          option(value="") 선택
+                      input(type="text" placeholder="직접입력").wid-345
+              // 확진자 접촉력
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 확진자 접촉력
+                    button(type="button").border-blue.wid-56.hig-28.ml-8
+                      span.txt 추가
+                  .register-form.flex
+                    .form-box.wid-672
+                      .from-list
+                        .list-item.wid-225
+                          button(type="button" onclick="COVID.dimLayerShow('#srdTarget01')")
+                            span.txt #2198
+                        .list-item
+                          .input-txt 
+                            input(type="text" placeholder="해당 확진자의 남편").wid-430
+                      .from-list
+                        .list-item.wid-225
+                          button(type="button")
+                            span.txt 확진자 검색
+                        .list-item
+                          .input-txt 
+                            input(type="text").wid-430
+                      .from-list 
+                        .list-item.wid-225
+                          button(type="button")
+                            span.txt 확진자 검색
+                        .list-item
+                          .input-txt 
+                            input(type="text").wid-430
+                      .from-list 
+                        .list-item.wid-225
+                          button(type="button")
+                            span.txt 확진자 검색
+                        .list-item
+                          .input-txt 
+                            input(type="text").wid-430
+              // 참고사항
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 참고사항
+                    button(type="button").border-blue.wid-56.hig-28.ml-8
+                      span.txt 추가
+                  .register-form.flex.mt-32
+                    .input-txt.flex-1
+                      .input-textarea
+                        textarea(name="", cols="30", rows="10")
+              // 동선조사
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 동선조사
+                    button(type="button").border-blue.wid-56.hig-28.ml-8
+                      span.txt 추가
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 일시 
+                      // 달력 영역
+                      .selectbox 
+                        select(title="").wid-80
+                          option(value="") 00:00
+                          option(value="") 선택
+                      span.wave ~ 
+                      .selectbox 
+                        select(title="").wid-80
+                          option(value="") 00:00
+                          option(value="") 선택
+                    .input-txt 
+                      label(for="") 자치구
+                      .selectbox 
+                        select(title="").wid-218
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                    .input-txt
+                      label(for="") 위치 
+                      input(type="text" placeholder="지도선택" onclick="COVID.dimLayerShow('#srdTarget02')").wid-300
+                    .input-txt 
+                      label(for="") 이동수단
+                      input(type="text").wid-281
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      .input-box
+                        .input-textarea 
+                          label(for="") 상황
+                          textarea(name="", cols="30", rows="10").wid-648
+                        .input-textarea 
+                          label(for="") 접촉자 및 특이활동
+                          textarea(name="", cols="30", rows="10").wid-648
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      label(for="") 일시 
+                      // 달력 영역
+                      .selectbox 
+                        select(title="").wid-80
+                          option(value="") 00:00
+                          option(value="") 선택
+                      span.wave ~ 
+                      .selectbox 
+                        select(title="").wid-80
+                          option(value="") 00:00
+                          option(value="") 선택
+                    .input-txt 
+                      label(for="") 자치구
+                      .selectbox 
+                        select(title="").wid-218
+                          option(value="") 선택해주세요
+                          option(value="") 선택
+                    .input-txt
+                      label(for="") 위치 
+                      input(type="text" placeholder="지도선택" onclick="COVID.dimLayerShow('#srdTarget02')").wid-300
+                    .input-txt 
+                      label(for="") 이동수단
+                      input(type="text").wid-281
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt
+                      .input-box
+                        .input-textarea 
+                          label(for="") 상황 
+                          textarea(name="", cols="30", rows="10").wid-648
+                        .input-textarea 
+                          label(for="") 접촉자 및 특이활동
+                          textarea(name="", cols="30", rows="10").wid-648
+              // 접촉자 현황
+              section.content-wrap
+                .inner
+                  .sec-tit
+                    span.tit 접촉자 현황
+                    button(type="button").border-blue.wid-56.hig-28.ml-8
+                      span.txt 추가
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt 
+                      label(for="") 접촉일
+                      // 달력 영역
+                    .input-txt 
+                      label(for="") 이름
+                      input(type="text").wid-183
+                    .input-txt 
+                      label(for="") 관계
+                      input(type="text").wid-183
+                    .input-txt 
+                      label(for="") 장소
+                      input(type="text" placeholder="지도선택").wid-300
+                    .input-txt 
+                      label(for="") 연락처
+                      input(type="text").wid-300
+                  .register-form.flex.flex-l.mt-32
+                    .input-txt 
+                      label(for="") 접촉장소
+                      input(type="text").wid-114
+                    .input-txt 
+                      label(for="") 주소
+                      input(type="text" placeholder="지도선택").wid-300
+                    .input-txt
+                      label(for="") 자가격리 통보여부
+                      .input-box
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 통보
+                        .input-radio.right
+                          input(type="radio" id="radio211" name="radio211")
+                          label(for="radio211")
+                            span.txt 미통보
+                    .input-txt 
+                      label(for="") 검사
+                      input(type="text").wid-500
+              
+              .btn-group 
+                button.border-blue.wid-66
+                  span.txt 취소
+                button(type="submit").color-blue.wid-66
+                  span.txt 등록
+      // 확진자 정보 검색 팝업
+      #srdTarget01.dimlayer_z
+        .dimlayer_tb
+          .dimlayer_td
+            // layer_box
+            .layer_box.wid-1330
+              .layer_tit_low
+                h2.layer_tit 확진자 정보 검색
+              .layer_cont
+                .layer_cont_in.pt-20
+                  .search-form
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio211" name="radio211")
+                        label(for="radio211")
+                          span.txt 조건 검색
+                      .search-list
+                        span.type 자치구
+                        .selectbox 
+                          select(title="")
+                            option(value="") 선택해주세요.
+                            option(value="") 선택
+                            option(value="") 선택
+                      .search-list.wid-445
+                        span.type 확진일자
+                        button.btn-data.wid-66
+                          .txt 오늘
+                        button.btn-data.wid-66
+                          .txt 전날
+                        // element-ui 날짜 input
+                        .el-date-editor.el-input.el-input--prefix.el-input--suffix.el-date-editor--date
+                          input(type="text" autocomplete="off" name="" placeholder="날짜 입력").el-input__inner.wid-228
+                          span.el-input__prefix
+                            i.el-input__icon.el-icon-date
+                          span.el-input__suffix
+                            span.el-input__suffix-inner
+                              i.el-input__icon.el-icon-circle-close
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio212" name="radio212")
+                        label(for="radio212")
+                          span.txt 확진자 번호로 검색
+                      .search-list
+                        .input-txt
+                          input(type="text" placeholder="숫자만 입력").wid-220
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio213" name="radio213")
+                        label(for="radio213")
+                          span.txt 키워드 검색
+                      .search-list
+                        .input-txt
+                          input(type="text" placeholder="검색어 입력").wid-220
+                    .btn-group.type-r
+                      button.color-blue.wid-77 
+                        span.txt 검색
+                  .search-tit 
+                    span.tit
+                      |검색결과 총 
+                      span.num 12,345 
+                      |건
+                  .tbl-container01
+                    table.tbl-col01
+                      caption 공시자료: 번호,보고서명,등록일
+                      colgroup 
+                        col(width="5%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="9%")
+                        col(width="auto")
+                      thead 
+                        tr
+                          th 선택
+                          th 연번
+                          th 확진일
+                          th 확진번호
+                          th 이름
+                          th 성별(출생년)
+                          th 국적
+                          th 거주지
+                          th 직업
+                          th 직장명(학교명)
+                      tbody 
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio214" name="radio214")
+                              label(for="radio214")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio215" name="radio215")
+                              label(for="radio215")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio216" name="radio216")
+                              label(for="radio216")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio217" name="radio217")
+                              label(for="radio217")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio218" name="radio218")
+                              label(for="radio218")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio219" name="radio219")
+                              label(for="radio219")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio220" name="radio220")
+                              label(for="radio220")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio221" name="radio221")
+                              label(for="radio221")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio222" name="radio222")
+                              label(for="radio222")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+                        tr 
+                          td
+                            .input-radio
+                              input(type="radio" id="radio223" name="radio223")
+                              label(for="radio223")
+                          td 28820
+                          td 2021. 3. 4
+                          td.color-b 91588
+                          td 홍길동
+                          td 041025-2
+                          td 한국
+                          td 영등포구
+                          td 한국
+                          td.align-l 숭의여고
+              .page-nav-container
+                +page-nav('type01')
+              .btn-group.right.mt-16
+                // closetrigger 있으면 닫힘
+                button.color-white.wid-58.closetrigger
+                  span.txt 닫기
+                button.color-blue.wid-58
+                  span.txt 등록
+              button(type="button").btn_layerclose
+                span.hide-txt 닫기
+
+      // 지도 검색
+      #srdTarget02.dimlayer_z
+        .dimlayer_tb
+          .dimlayer_td
+            // layer_box
+            .layer_box.wid-1330
+              .layer_tit_low
+                h2.layer_tit 지도 검색
+              .layer_cont
+                .layer_cont_in.pt-20
+                  .search-form
+                    .search-type
+                      .input-radio.right
+                        input(type="radio" id="radio213" name="radio213")
+                        label(for="radio213")
+                          span.txt 지도 검색
+                      .search-list
+                        .input-txt
+                          input(type="text" placeholder="검색어 입력")
+                    .btn-group.type-r
+                      button.color-blue.wid-77 
+                        span.txt 검색
+                  .search-tit 
+                    span.tit
+                      span.object 할리스커피 
+                      |검색결과 총 
+                      span.num 12,345 
+                      |건
+                  .search-map-area
+                    ul.result-list 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남  
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                      li.list-item 
+                        a(href="") 할리스 커피 강남 
+                    .map-area
+              .btn-group.right.mt-16
+                // closetrigger 있으면 닫힘
+                button.color-white.wid-58.closetrigger
+                  span.txt 닫기
+                button(type="submit").color-blue.wid-58
+                  span.txt 등록
+              button(type="button").btn_layerclose
+                span.hide-txt 닫기
+append script
+  script.
