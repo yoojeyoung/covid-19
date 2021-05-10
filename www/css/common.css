@@ -590,6 +590,11 @@ a:before {
     background-color: #e5edf4;
     border-bottom: 1px solid #e4e7ed;
     text-align: center; }
+    .tbl-row01 th .th-txt {
+      display: block;
+      color: #999;
+      font-size: 10px;
+      font-weight: bold; }
   .tbl-row01 td {
     padding: 8px 10px;
     font-size: 12px;
@@ -2500,7 +2505,8 @@ section.content-wrap {
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   overflow: auto;
-  white-space: nowrap; }
+  white-space: nowrap;
+  /* 확진자 기초,심층 열람 */ }
   section.content-wrap .date-area {
     margin-bottom: 16px; }
     section.content-wrap .date-area span {
@@ -2832,6 +2838,110 @@ section.content-wrap {
         width: 717px; }
       section.content-wrap .status-board .board-item + .board-item {
         margin-left: 16px; }
+  section.content-wrap.reading-wrap .inner {
+    min-width: 940px;
+    max-width: 940px;
+    margin: 0 auto; }
+    section.content-wrap.reading-wrap .inner .register-form {
+      padding: 44px 24px 40px;
+      border: 1px solid #e0e0e0; }
+      section.content-wrap.reading-wrap .inner .register-form .reading-tit {
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center; }
+        section.content-wrap.reading-wrap .inner .register-form .reading-tit + .tbl-container01 {
+          margin-top: 45px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .tit-area {
+        padding: 14px 16px;
+        background: #333; }
+        section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .tit-area .tit {
+          color: #fff;
+          font-size: 16px;
+          font-weight: bold; }
+          section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .tit-area .tit .sub-tit {
+            margin-left: 12px;
+            font-size: 12px;
+            font-weight: normal; }
+            section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .tit-area .tit .sub-tit strong {
+              font-weight: bold;
+              text-decoration: underline; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 table.sub-table tr:last-child td {
+        border-bottom: 0; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 table.sub-table th {
+        background: #e1e3e8;
+        text-align: center !important; }
+        section.content-wrap.reading-wrap .inner .register-form .tbl-container01 table.sub-table th.bg02 {
+          background: #e5edf4; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 table.sub-table td {
+        padding: 10px 11px !important;
+        border: 1px solid #e4e7ed;
+        vertical-align: top; }
+        section.content-wrap.reading-wrap .inner .register-form .tbl-container01 table.sub-table td.align-c {
+          text-align: center; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 table.sub-table .lable {
+        display: block;
+        margin-bottom: 11px;
+        color: #333; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 table.table-fix {
+        table-layout: fixed; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .row.flex-l {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; }
+        section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .row.flex-l .input-radio + .input-radio {
+          margin-left: 10px; }
+        section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .row.flex-l .input-checkbox + .input-checkbox {
+          margin: 0 0 0 10px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .row .input-checkbox {
+        display: block; }
+        section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .row .input-checkbox + .input-checkbox {
+          margin-top: 5px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .row + .row {
+        margin-top: 10px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .input-radio label {
+        padding: 1px 0 0 19px; }
+        section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .input-radio label::before {
+          width: 14px;
+          height: 14px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .input-radio input:checked + label::before {
+        width: 14px;
+        height: 14px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .input-radio input:checked + label::after {
+        left: 5px;
+        width: 5px;
+        height: 5px;
+        margin-top: -5px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .input-radio .txt {
+        font-size: 12px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .input-checkbox label {
+        padding: 1px 0 0 19px; }
+        section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .input-checkbox label::before {
+          width: 14px;
+          height: 14px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .input-checkbox input:checked + label::before {
+        width: 14px;
+        height: 14px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .input-checkbox input:checked + label::after {
+        left: 3px;
+        margin-top: -7px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 .input-checkbox .txt {
+        font-size: 12px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01 + .tbl-container01 {
+        margin-top: 16px; }
+      section.content-wrap.reading-wrap .inner .register-form .tbl-container01.align-l table {
+        width: 100%; }
+        section.content-wrap.reading-wrap .inner .register-form .tbl-container01.align-l table th, section.content-wrap.reading-wrap .inner .register-form .tbl-container01.align-l table td {
+          text-align: left; }
+        section.content-wrap.reading-wrap .inner .register-form .tbl-container01.align-l table td {
+          padding: 6px 4px; }
+          section.content-wrap.reading-wrap .inner .register-form .tbl-container01.align-l table td.pd-0 {
+            padding: 0; }
   section.content-wrap.shadow-n {
     -webkit-box-shadow: none;
             box-shadow: none; }
@@ -3626,17 +3736,50 @@ span.error-txt {
     .kakao * {
       font-size: 12px; }
     .kakao header.pgheader_wrap {
+      padding: 0 14px;
+      background: #f5f6f7; }
+      .kakao header.pgheader_wrap .inner {
+        height: auto;
+        margin-top: 75px;
+        padding: 0; }
+    .kakao .cform_wrap.login-type .cform_box_td {
+      max-width: none;
+      width: 100%;
       padding: 0 14px; }
-    .kakao .cform_wrap {
-      position: relative;
-      height: auto; }
-      .kakao .cform_wrap.login-type .cform_box_td {
-        max-width: none;
-        width: 100%;
-        padding: 0 14px; }
-      .kakao .cform_wrap.login-type .cform_box {
-        max-width: none;
-        width: 100%; }
+    .kakao .cform_wrap.login-type .cform_box {
+      max-width: none;
+      width: 100%;
+      padding: 29px 14px;
+      -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+              box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
+    .kakao .cform_titlow .cform_tit {
+      text-align: center; }
+    .kakao .cform_titlow .cform_tit_in {
+      font-size: 20px; }
+    .kakao .cform_contlow {
+      margin-top: 30px; }
+      .kakao .cform_contlow .btn-group button .txt {
+        font-size: 12px; }
+      .kakao .cform_contlow .btn-group button.wid-full {
+        height: 43px; }
+      .kakao .cform_contlow .point-txt {
+        display: block;
+        margin-top: 10px;
+        font-size: 10px;
+        color: #0a0a0a; }
+    .kakao #footer.type02 {
+      height: auto;
+      padding: 0 14px; }
+      .kakao #footer.type02 .inner {
+        padding: 15px 0; }
+      .kakao #footer.type02 .footer-wrap {
+        display: block; }
+      .kakao #footer.type02 .footer-column {
+        display: block;
+        text-align: center; }
+        .kakao #footer.type02 .footer-column .footer-copyright {
+          margin: 10px 0 0;
+          font-size: 12px; }
     .kakao .pgright_wrap {
       margin: 23px 0 0;
       background: #fff; }
@@ -3646,7 +3789,7 @@ span.error-txt {
         margin: 0;
         padding: 0 14px; }
     .kakao section.content-wrap {
-      overflow: initial;
+      overflow: hidden;
       white-space: normal;
       -webkit-box-shadow: none;
               box-shadow: none; }
@@ -3945,6 +4088,16 @@ span.error-txt {
       display: block; }
       .kakao .input-txt input {
         height: 43px; }
+        .kakao .input-txt input::-webkit-input-placeholder {
+          font-size: 12px; }
+        .kakao .input-txt input::-moz-placeholder {
+          font-size: 12px; }
+        .kakao .input-txt input:-ms-input-placeholder {
+          font-size: 12px; }
+        .kakao .input-txt input::-ms-input-placeholder {
+          font-size: 12px; }
+        .kakao .input-txt input::placeholder {
+          font-size: 12px; }
     .kakao .selectbox {
       display: block; }
     .kakao button, .kakao a {
@@ -3955,6 +4108,8 @@ span.error-txt {
       display: -ms-flexbox;
       display: flex; }
       .kakao .btn-area.col-2 button {
-        border-radius: 0; } }
+        border-radius: 0; }
+  .login {
+    background: #f5f6f7; } }
 
-/*# sourceMappingURL=../../sass_maps/css/common.css.map */
+/*# sourceMappingURL=../sass_maps/common.css.map */
