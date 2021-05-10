@@ -2255,6 +2255,8 @@ button, a {
     text-align: center; }
   button.wid-40p, a.wid-40p {
     width: 40%; }
+  button.wid-60p, a.wid-60p {
+    width: 60%; }
   button.wid-40, a.wid-40 {
     min-width: 40px; }
   button.wid-56, a.wid-56 {
@@ -2275,6 +2277,8 @@ button, a {
     width: 100%; }
   button.hig-28, a.hig-28 {
     height: 28px; }
+  button.hig-38, a.hig-38 {
+    height: 38px; }
   button.hig-40, a.hig-40 {
     height: 40px; }
   button.hig-43, a.hig-43 {
@@ -2343,6 +2347,10 @@ button, a {
     background: #fff; }
     button.color-white .txt, a.color-white .txt {
       color: #646266; }
+  button.color-nomal, a.color-nomal {
+    background: #f7f7f7; }
+    button.color-nomal .txt, a.color-nomal .txt {
+      color: #646464; }
   button.border-blue, a.border-blue {
     border: 1px solid #0778ca !important; }
     button.border-blue .txt, a.border-blue .txt {
@@ -3618,7 +3626,6 @@ span.error-txt {
     .kakao * {
       font-size: 12px; }
     .kakao header.pgheader_wrap {
-      position: relative;
       padding: 0 14px; }
     .kakao .cform_wrap {
       position: relative;
@@ -3630,10 +3637,8 @@ span.error-txt {
       .kakao .cform_wrap.login-type .cform_box {
         max-width: none;
         width: 100%; }
-    .kakao footer.type02 {
-      position: relative; }
     .kakao .pgright_wrap {
-      margin: 23px 0 26px;
+      margin: 23px 0 0;
       background: #fff; }
       .kakao .pgright_wrap .inner {
         min-width: auto;
@@ -3703,6 +3708,7 @@ span.error-txt {
             font-size: 16px;
             font-weight: bold; }
     .kakao .register-form {
+      position: relative;
       margin: 24px 0 0;
       padding: 24px 0;
       border-top: 1px solid #b4b6ba; }
@@ -3712,6 +3718,21 @@ span.error-txt {
       .kakao .register-form .data-txt {
         display: block;
         color: #0a0a0a; }
+        .kakao .register-form .data-txt + .register-tit {
+          margin-top: 24px; }
+      .kakao .register-form .label-data {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block; }
+      .kakao .register-form .register-tit {
+        display: block;
+        margin-top: 0;
+        color: #000;
+        font-size: 16px;
+        font-weight: bold; }
+        .kakao .register-form .register-tit + .input-txt {
+          margin-top: 16px; }
       .kakao .register-form .input-txt {
         width: 100%; }
         .kakao .register-form .input-txt label {
@@ -3896,8 +3917,30 @@ span.error-txt {
               width: 75%; }
             .kakao .register-form .human-group .detail-info .info + .info {
               margin-top: 10px; }
+        .kakao .register-form .human-group.type-02 {
+          margin-top: 0; }
+          .kakao .register-form .human-group.type-02 .human-info {
+            padding: 24px 0; }
+            .kakao .register-form .human-group.type-02 .human-info .col {
+              -webkit-box-align: end;
+              -webkit-align-items: flex-end;
+                  -ms-flex-align: end;
+                      align-items: flex-end; }
+              .kakao .register-form .human-group.type-02 .human-info .col span {
+                font-weight: normal; }
+              .kakao .register-form .human-group.type-02 .human-info .col.total span {
+                font-weight: bold; }
+              .kakao .register-form .human-group.type-02 .human-info .col.tit .type01 {
+                font-size: 16px;
+                font-weight: bold; }
+              .kakao .register-form .human-group.type-02 .human-info .col + .col {
+                margin-top: 16px; }
+            .kakao .register-form .human-group.type-02 .human-info:last-child {
+              border-bottom: 0; }
       .kakao .register-form + .register-form {
         margin: 0; }
+      .kakao .register-form.pb-0 {
+        padding-bottom: 0; }
     .kakao .input-txt {
       display: block; }
       .kakao .input-txt input {
@@ -3905,6 +3948,13 @@ span.error-txt {
     .kakao .selectbox {
       display: block; }
     .kakao button, .kakao a {
-      font-size: 12px; } }
+      font-size: 12px; }
+    .kakao .btn-area {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .kakao .btn-area.col-2 button {
+        border-radius: 0; } }
 
 /*# sourceMappingURL=../../sass_maps/css/common.css.map */

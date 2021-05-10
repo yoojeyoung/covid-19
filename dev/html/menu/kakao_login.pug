@@ -1,7 +1,7 @@
 extends /_src/_pug/_extend_html5
 
 block vars
-  - var bodyClass = 'kakao'
+  - var bodyClass = 'kakao login'
   - var wrapClass = 'main'
 
 block header 
@@ -35,70 +35,8 @@ block contents
                 .btn-group
                   button.wid-full.color-blue02(type="submit")
                     .txt 웹 로그인
+                span.point-txt *접속 권한 요청 및 비밀번호 확인은 PC웹사이트 접속하여 확인바랍니다.
 
-      // 비밀번호 재설정 팝업
-      #srdTarget01.dimlayer_z
-        .dimlayer_tb
-          .dimlayer_td
-            // layer_box
-            .layer_box
-              .layer_tit_low
-                h2.layer_tit 비밀번호 재설정 요청
-              .layer_cont(style='max-height: 875px;')
-                .layer_cont_in.form-group
-                  // 이름
-                  .input-txt.form-error
-                    label(for="txt01") 이름
-                    .input-box
-                      input(type="text" title="" id="txt01")
-                    .message 이름을 확인해주세요
-                  // 메일
-                  .input-txt.form-error
-                    label(for="txt01") 이메일(ID)
-                    .input-box
-                      input(type="text" title="" id="txt01" placeholder="example@mail.com")
-                      button.btn-lv01
-                        span.txt 중복확인
-                    .message 이메일을 확인해주세요
-                  // 비밀번호
-                  .input-txt.form-error
-                    label(for="txt01") 비밀번호
-                    .input-box
-                      input(type="text" title="" id="txt01")
-                    .message 비밀번호를 확인해주세요
-                  .input-notice 
-                    span.point-txt * 기존 비밀번호는 초기화되며, 입력하신 이메일(ID)로 임시 비밀번호가 발송됩니다. 받으신 임시 비밀번호로 로그인 후 변경 바랍니다.
-              .btn-group.right
-                // closetrigger 있으면 닫힘
-                button.color-white.wid-89.closetrigger
-                  span.txt 취소
-                button(type="submit").color-blue.wid-89.closetrigger
-                  span.txt 확인
-              // 20210415 수정
-              button(type="button").btn_layerclose
-                span.hide-txt 닫기
-
-      // 접속권한 요청 팝업
-      #srdTarget02.dimlayer_z
-        .dimlayer_tb
-          .dimlayer_td
-            // layer_box
-            .layer_box
-              .layer_tit_low
-                h2.layer_tit 서울시 Covid-19 환자 관리 지원 시스템
-              .layer_cont(style='max-height: 875px;')
-                .layer_cont_in.form-group
-                  .content-txt
-                    spna.txt 해당 페이지에 접근 권한이 없습니다. <br> 접근이 필요할 경우 관리자에게 문의 바랍니다.
-                  
-              .btn-group.right.mt-25
-                // closetrigger 있으면 닫힘
-                button.color-blue.wid-80.closetrigger(href='#')
-                  span.txt 확인
-              // 20210415 수정
-              button(type="button").btn_layerclose
-                span.hide-txt 닫기
-        
 
 
 

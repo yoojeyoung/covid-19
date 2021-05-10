@@ -2026,20 +2026,50 @@ span.error-txt {
     .kakao * {
       font-size: 12px; }
     .kakao header.pgheader_wrap {
-      position: relative;
+      padding: 0 14px;
+      background: #f5f6f7; }
+      .kakao header.pgheader_wrap .inner {
+        height: auto;
+        margin-top: 75px;
+        padding: 0; }
+    .kakao .cform_wrap.login-type .cform_box_td {
+      max-width: none;
+      width: 100%;
       padding: 0 14px; }
-    .kakao .cform_wrap {
-      position: relative;
-      height: auto; }
-      .kakao .cform_wrap.login-type .cform_box_td {
-        max-width: none;
-        width: 100%;
-        padding: 0 14px; }
-      .kakao .cform_wrap.login-type .cform_box {
-        max-width: none;
-        width: 100%; }
-    .kakao footer.type02 {
-      position: relative; }
+    .kakao .cform_wrap.login-type .cform_box {
+      max-width: none;
+      width: 100%;
+      padding: 29px 14px;
+      -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+              box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
+    .kakao .cform_titlow .cform_tit {
+      text-align: center; }
+    .kakao .cform_titlow .cform_tit_in {
+      font-size: 20px; }
+    .kakao .cform_contlow {
+      margin-top: 30px; }
+      .kakao .cform_contlow .btn-group button .txt {
+        font-size: 12px; }
+      .kakao .cform_contlow .btn-group button.wid-full {
+        height: 43px; }
+      .kakao .cform_contlow .point-txt {
+        display: block;
+        margin-top: 10px;
+        font-size: 10px;
+        color: #0a0a0a; }
+    .kakao #footer.type02 {
+      height: auto;
+      padding: 0 14px; }
+      .kakao #footer.type02 .inner {
+        padding: 15px 0; }
+      .kakao #footer.type02 .footer-wrap {
+        display: block; }
+      .kakao #footer.type02 .footer-column {
+        display: block;
+        text-align: center; }
+        .kakao #footer.type02 .footer-column .footer-copyright {
+          margin: 10px 0 0;
+          font-size: 12px; }
     .kakao .pgright_wrap {
       margin: 23px 0 0;
       background: #fff; }
@@ -2348,6 +2378,16 @@ span.error-txt {
       display: block; }
       .kakao .input-txt input {
         height: 43px; }
+        .kakao .input-txt input::-webkit-input-placeholder {
+          font-size: 12px; }
+        .kakao .input-txt input::-moz-placeholder {
+          font-size: 12px; }
+        .kakao .input-txt input:-ms-input-placeholder {
+          font-size: 12px; }
+        .kakao .input-txt input::-ms-input-placeholder {
+          font-size: 12px; }
+        .kakao .input-txt input::placeholder {
+          font-size: 12px; }
     .kakao .selectbox {
       display: block; }
     .kakao button, .kakao a {
@@ -2358,6 +2398,8 @@ span.error-txt {
       display: -ms-flexbox;
       display: flex; }
       .kakao .btn-area.col-2 button {
-        border-radius: 0; } }
+        border-radius: 0; }
+  .login {
+    background: #f5f6f7; } }
 
 /*# sourceMappingURL=../../sass_maps/css_partials/public.css.map */

@@ -1564,18 +1564,51 @@ span{
   .kakao{
     background: #fff;
     *{font-size: 12px;}
-    header.pgheader_wrap{position: relative;@include rem(padding, 0 14px);}
+    header.pgheader_wrap{
+      @include rem(padding, 0 14px);
+      background: #f5f6f7;
+      .inner{height: auto;@include rem(margin-top,75px); padding: 0;}
+    }
     .cform_wrap{
-      position: relative;height: auto;
       &.login-type {
         .cform_box_td{max-width: none;width: 100%;@include rem(padding,0 14px);}
-        .cform_box{max-width: none;width: 100%;}
+        .cform_box{
+          max-width: none;
+          width: 100%;
+          @include rem(padding,29px 14px);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        }
       }
     }
     .cform_titlow{
-      .cform_tit_in{}
+      .cform_tit{text-align: center;}
+      .cform_tit_in{@include rem(font-size,20px);}
     }
-    footer.type02{position: relative;}
+    .cform_contlow{
+      @include rem(margin-top,30px);
+      .btn-group{
+        button{
+          .txt{@include rem(font-size,12px);}
+          &.wid-full{
+            @include rem(height,43px);
+          }
+        }
+      }
+      .point-txt{display: block;@include rem(margin-top,10px);@include rem(font-size,10px);color: #0a0a0a;}
+    }
+    #footer.type02{
+      height: auto;
+      @include rem(padding,0 14px);
+      .inner{@include rem(padding,15px 0);}
+      .footer-wrap{
+        display: block;
+      }
+      .footer-column{
+        display: block;
+        text-align: center;
+        .footer-copyright{@include rem(margin,10px 0 0);@include rem(font-size,12px);}
+      }
+    }
 
     /* 본문 레이아웃 */
     .pgright_wrap{
@@ -1867,7 +1900,10 @@ span{
     /* input 영역 */
     .input-txt{
       display: block;
-      input{@include rem(height,43px);}
+      input{
+        @include rem(height,43px);
+        &::placeholder{@include rem(font-size,12px);}
+      }
     }
     .selectbox{display: block;}
 
@@ -1881,5 +1917,8 @@ span{
         button{border-radius: 0;}
       }
     }
+  }
+  &.login{
+    background: #f5f6f7;
   }
 }
