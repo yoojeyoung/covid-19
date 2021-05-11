@@ -927,6 +927,16 @@ section.content-wrap{
       @include rem(min-width,940px);
       @include rem(max-width,940px);
       margin: 0 auto;
+      .btn-group{
+        &.flex-s{
+          display: flex;
+          justify-content: space-between;
+          button{
+            @include rem(min-width,80px);
+            .txt{@include rem(padding,0 20px);}
+          }
+        }
+      }
       .register-form{
         @include rem(padding,44px 24px 40px);
         border: 1px solid #e0e0e0;
@@ -936,6 +946,48 @@ section.content-wrap{
           font-weight: bold;
           text-align: center;
           + .tbl-container01{@include rem(margin-top,45px);}
+        }
+        .type-tit{
+          display: block;
+          @include rem(margin-top,20px);
+          text-align: center;
+          .type{
+            position: relative;
+            @include rem(font-size,12px);
+            color: #333;
+            &:not(:first-child){
+              @include rem(margin-left,5px);
+              @include rem(padding-left,5px);
+              &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                @include rem(left,-2px);
+                width: 1px;
+                height: 100%;
+                background: #333;
+              }
+            }
+          }
+        }
+        .display-t{
+          display: table;
+          width: 100%;
+          @include rem(margin-top,40px);
+          .table-c{
+            display: table-cell;
+            .photo-img{
+              // @include rem(width,152px);
+              @include rem(height,113px);
+              @include rem(padding,0 22px);
+              border: 1px solid #e5edf4;
+              img{width: 100%;}
+              + .photo-img{@include rem(margin-top,20px);}
+            }
+            &:nth-child(1){@include rem(width,80%);}
+            &:nth-child(2){@include rem(width,20%);@include rem(padding-left,20px);}
+          }
+          + .tbl-container01{@include rem(margin-top,16px);}
         }
         .tbl-container01{
           .tit-area{

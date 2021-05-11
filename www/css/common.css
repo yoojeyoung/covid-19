@@ -2842,6 +2842,18 @@ section.content-wrap {
     min-width: 940px;
     max-width: 940px;
     margin: 0 auto; }
+    section.content-wrap.reading-wrap .inner .btn-group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      section.content-wrap.reading-wrap .inner .btn-group button {
+        min-width: 80px;
+        padding: 0 20px; }
     section.content-wrap.reading-wrap .inner .register-form {
       padding: 44px 24px 40px;
       border: 1px solid #e0e0e0; }
@@ -4112,4 +4124,4 @@ span.error-txt {
   .login {
     background: #f5f6f7; } }
 
-/*# sourceMappingURL=../sass_maps/common.css.map */
+/*# sourceMappingURL=../../sass_maps/css/common.css.map */

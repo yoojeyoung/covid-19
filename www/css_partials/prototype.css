@@ -121,6 +121,20 @@ a:before {
     overflow: auto; }
   .tbl-container01.mt-18 {
     margin-top: 18px; }
+  .tbl-container01.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .tbl-container01.flex table .num {
+      font-size: 14px;
+      color: #2f80ed; }
+    .tbl-container01.flex table .txt {
+      margin-left: 10px; }
+    .tbl-container01.flex table + table {
+      margin-left: 20px; }
+  .tbl-container01.algin-c .tbl-row01 th, .tbl-container01.algin-c .tbl-row01 td {
+    text-align: center; }
 
 .tbl-cell-equal {
   table-layout: fixed; }
@@ -323,7 +337,12 @@ a:before {
       color: #999;
       font-size: 10px;
       font-weight: bold; }
+      .tbl-row01 th .th-txt.align-c {
+        text-align: center; }
+    .tbl-row01 th.bg02 {
+      background-color: #e1e3e8; }
   .tbl-row01 td {
+    height: 31px;
     padding: 8px 10px;
     font-size: 12px;
     color: #333;
@@ -332,6 +351,17 @@ a:before {
     text-align: left; }
     .tbl-row01 td:last-child {
       border-right: 0; }
+    .tbl-row01 td.align-l {
+      text-align: left !important; }
+    .tbl-row01 td.display-b span {
+      display: block;
+      line-height: 1.5; }
+    .tbl-row01 td.ellipsis {
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 80px; }
   .tbl-row01 tr:last-child th {
     border-bottom: 0; }
   .tbl-row01 tr:last-child td {
@@ -789,4 +819,4 @@ a:before {
   .input-textarea textarea::placeholder {
     color: #c0c4cc; }
 
-/*# sourceMappingURL=../sass_maps/prototype.css.map */
+/*# sourceMappingURL=../../sass_maps/css_partials/prototype.css.map */
