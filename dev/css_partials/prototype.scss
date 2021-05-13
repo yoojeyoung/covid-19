@@ -287,6 +287,9 @@ a{
             &:nth-child(6){text-align: center !important;}
             &.align-l{text-align: left !important;}
         }
+        &.bg-ddd{
+            th{background: #ddd;}
+        }
     }
     &.type-input{
         td{

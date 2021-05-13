@@ -558,6 +558,8 @@ a:before {
       text-align: center !important; }
     .tbl-col01.tbl-detail td.align-l {
       text-align: left !important; }
+  .tbl-col01.tbl-detail.bg-ddd th {
+    background: #ddd; }
   .tbl-col01.type-input td {
     padding: 8px 5px 7px; }
     .tbl-col01.type-input td input {
@@ -1131,6 +1133,8 @@ a:before {
     max-width: 795px; }
   .layer_box.wid-1330 {
     max-width: 1330px; }
+  .layer_box.wid-1564 {
+    max-width: 1564px; }
   .layer_box .search-form {
     position: relative;
     padding: 24px;
@@ -1284,6 +1288,8 @@ a:before {
       margin-left: 18px;
       color: #2f80ed;
       vertical-align: top; }
+  .layer_cont_in table.tbl-detail th, .layer_cont_in table.tbl-detail td {
+    padding: 5px 10px 5px; }
   .layer_cont_in.pt-20 {
     padding: 20px 16px 0; }
   .layer_cont_in .input-radio {

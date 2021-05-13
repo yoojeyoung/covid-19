@@ -18,6 +18,7 @@
   &.wid-695{@include rem(max-width,695px);}
   &.wid-795{@include rem(max-width,795px);}
   &.wid-1330{@include rem(max-width,1330px);}
+  &.wid-1564{@include rem(max-width,1564px);}
   .search-form{
     position: relative;
     @include rem(padding,24px);
@@ -137,6 +138,9 @@
           vertical-align: top;
         }
       }
+    }
+    &.tbl-detail{
+      th,td{@include rem(padding,5px 10px 5px);}
     }
   }
   &.pt-20{@include rem(padding,20px 16px 0);}

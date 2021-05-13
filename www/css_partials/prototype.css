@@ -286,6 +286,8 @@ a:before {
       text-align: center !important; }
     .tbl-col01.tbl-detail td.align-l {
       text-align: left !important; }
+  .tbl-col01.tbl-detail.bg-ddd th {
+    background: #ddd; }
   .tbl-col01.type-input td {
     padding: 8px 5px 7px; }
     .tbl-col01.type-input td input {
