@@ -1264,25 +1264,6 @@ section.content-wrap {
         text-align: center; }
         section.content-wrap.reading-wrap .inner .register-form .reading-tit + .tbl-container01 {
           margin-top: 45px; }
-      section.content-wrap.reading-wrap .inner .register-form .type-tit {
-        display: block;
-        margin-top: 20px;
-        text-align: center; }
-        section.content-wrap.reading-wrap .inner .register-form .type-tit .type {
-          position: relative;
-          font-size: 12px;
-          color: #333; }
-          section.content-wrap.reading-wrap .inner .register-form .type-tit .type:not(:first-child) {
-            margin-left: 5px;
-            padding-left: 5px; }
-            section.content-wrap.reading-wrap .inner .register-form .type-tit .type:not(:first-child)::before {
-              content: "";
-              position: absolute;
-              top: 0;
-              left: -2px;
-              width: 1px;
-              height: 100%;
-              background: #333; }
       section.content-wrap.reading-wrap .inner .register-form .display-t {
         display: table;
         width: 100%;
@@ -1399,6 +1380,30 @@ section.content-wrap {
             box-shadow: none; }
   section.content-wrap.bg-n {
     background: none; }
+
+.type-tit {
+  display: block;
+  margin-top: 20px;
+  text-align: center; }
+  .type-tit .type {
+    position: relative;
+    font-size: 12px;
+    color: #333; }
+    .type-tit .type:not(:first-child) {
+      margin-left: 5px;
+      padding-left: 5px; }
+      .type-tit .type:not(:first-child)::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -2px;
+        width: 1px;
+        height: 100%;
+        background: #333; }
+  .type-tit.color-b .type {
+    color: #0778ca; }
+    .type-tit.color-b .type::before {
+      background: #0778ca; }
 
 /*검사 현황 자료 게시판 */
 .detail-view-container .view-title {
