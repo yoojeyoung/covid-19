@@ -307,6 +307,7 @@ body{background: #f5f5f7}
     &::placeholder{color: #c0c4cc;@include rem(font-size,14px);}
     &.mt-0{margin-top: 0}
     &.h-56{@include rem(height, 56px);}
+    &.h-40{@include rem(height, 40px);}
     &.h-28{@include rem(height, 28px);}
     &:disabled{
       background: #f5f7fa;
@@ -402,6 +403,7 @@ button,a{
   &.hig-38{@include rem(height,38px);}
   &.hig-40{@include rem(height,40px);}
   &.hig-43{@include rem(height,43px);}
+  &.hig-48{@include rem(height,48px);}
   &:hover{
     border-color: #aeb2ba !important;
   }
@@ -1658,6 +1660,36 @@ section.content-wrap{
   &.wid-1165{@include rem(width,1165px);}
   &.wid-1187{@include rem(width,1187px);}
 }
+/* 404 에러페이지 */
+.error-404{
+  background: #fff;
+  .error-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+  }
+  .img-area{
+    text-align: center;
+  }
+  .txt-area{
+    @include rem(margin-top,72px);
+    text-align: center;
+    span{display: block;@include rem(font-size,24px);color: #333;}
+    .error-tit{@include rem(font-size,32px);font-weight: 500;color: #0778ca;}
+    .error-txt{@include rem(margin-top,38px);color: #333!important;line-height: 1.5;text-align: center;}
+  }
+  .btn-area{
+    @include rem(margin-top,38px);
+    text-align: center;
+    a{
+      display: inline-block;
+      @include rem(padding,16px 24px);
+    }
+  }
+}
+
 
 /* element ui - input 공통 */
 // .el-date-editor.el-input{

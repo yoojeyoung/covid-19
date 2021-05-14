@@ -564,6 +564,8 @@ body {
       margin-top: 0; }
     .input-txt input.h-56 {
       height: 56px; }
+    .input-txt input.h-40 {
+      height: 40px; }
     .input-txt input.h-28 {
       height: 28px; }
     .input-txt input:disabled {
@@ -683,6 +685,8 @@ button, a {
     height: 40px; }
   button.hig-43, a.hig-43 {
     height: 43px; }
+  button.hig-48, a.hig-48 {
+    height: 48px; }
   button:hover, a:hover {
     border-color: #aeb2ba !important; }
   button:disabled, a:disabled {
@@ -2069,6 +2073,42 @@ section.content-wrap {
   .register-form.wid-1187 {
     width: 1187px; }
 
+/* 404 에러페이지 */
+.error-404 {
+  background: #fff; }
+  .error-404 .error-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: #fff; }
+  .error-404 .img-area {
+    text-align: center; }
+  .error-404 .txt-area {
+    margin-top: 72px;
+    text-align: center; }
+    .error-404 .txt-area span {
+      display: block;
+      font-size: 24px;
+      color: #333; }
+    .error-404 .txt-area .error-tit {
+      font-size: 32px;
+      font-weight: 500;
+      color: #0778ca; }
+    .error-404 .txt-area .error-txt {
+      margin-top: 38px;
+      color: #333 !important;
+      line-height: 1.5;
+      text-align: center; }
+  .error-404 .btn-area {
+    margin-top: 38px;
+    text-align: center; }
+    .error-404 .btn-area a {
+      display: inline-block;
+      padding: 16px 24px; }
+
 /* element ui - input 공통 */
 /* 성공 및 실패 텍스트 공통 */
 span.success-txt {
@@ -2560,4 +2600,4 @@ span.error-txt {
   .login {
     background: #f5f6f7; } }
 
-/*# sourceMappingURL=../sass_maps/public.css.map */
+/*# sourceMappingURL=../../sass_maps/css_partials/public.css.map */

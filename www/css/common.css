@@ -2205,6 +2205,8 @@ body {
       margin-top: 0; }
     .input-txt input.h-56 {
       height: 56px; }
+    .input-txt input.h-56 {
+      height: 40px; }
     .input-txt input.h-28 {
       height: 28px; }
     .input-txt input:disabled {
@@ -4201,4 +4203,4 @@ span.error-txt {
   .login {
     background: #f5f6f7; } }
 
-/*# sourceMappingURL=../sass_maps/common.css.map */
+/*# sourceMappingURL=../../sass_maps/css/common.css.map */
