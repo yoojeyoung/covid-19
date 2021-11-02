@@ -438,6 +438,113 @@ body > #wrap {
               transform: translateY(8px); }
 
 /* e: 변경 된 헤더 */
+@-webkit-keyframes circle01 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(300deg);
+            transform: rotate(300deg); } }
+@keyframes circle01 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(300deg);
+            transform: rotate(300deg); } }
+
+@-webkit-keyframes circle02 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(-300deg);
+            transform: rotate(-300deg); } }
+
+@keyframes circle02 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(-300deg);
+            transform: rotate(-300deg); } }
+
+@-webkit-keyframes circle03 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(300deg);
+            transform: rotate(300deg); } }
+
+@keyframes circle03 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(300deg);
+            transform: rotate(300deg); } }
+
+@-webkit-keyframes circle04 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(-300deg);
+            transform: rotate(-300deg); } }
+
+@keyframes circle04 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(-300deg);
+            transform: rotate(-300deg); } }
+
+@-webkit-keyframes circle05 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(300deg);
+            transform: rotate(300deg); } }
+
+@keyframes circle05 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(300deg);
+            transform: rotate(300deg); } }
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%); }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%); }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: .3; } }
+
+@keyframes opacity {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: .3; } }
+
 /* 임시 비밀번호 로그인 페이지 */
 body {
   background: #f5f5f7; }
@@ -457,6 +564,119 @@ body {
       margin-top: 10px;
       font-size: 18px;
       font-weight: normal; }
+  .pgright_wrap .password_wrap .test-section {
+    -webkit-animation: slideDown ease .5s;
+            animation: slideDown ease .5s; }
+    .pgright_wrap .password_wrap .test-section .test-area {
+      font-size: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .pgright_wrap .password_wrap .test-section .test-area .circle-area {
+        position: relative; }
+        .pgright_wrap .password_wrap .test-section .test-area .circle-area .circle {
+          position: relative;
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          border-radius: 100%;
+          -webkit-transition: ease 1.2s;
+          -o-transition: ease 1.2s;
+          transition: ease 1.2s; }
+          .pgright_wrap .password_wrap .test-section .test-area .circle-area .circle::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 22px;
+            -webkit-transform: translate(-50%, 0);
+                -ms-transform: translate(-50%, 0);
+                    transform: translate(-50%, 0);
+            background: #333;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%; }
+        .pgright_wrap .password_wrap .test-section .test-area .circle-area:nth-child(1) .circle {
+          background: red;
+          -webkit-animation: circle01 1s;
+                  animation: circle01 1s;
+          -webkit-animation-delay: .4s;
+                  animation-delay: .4s;
+          -webkit-transform: rotate(300deg);
+              -ms-transform: rotate(300deg);
+                  transform: rotate(300deg); }
+          .pgright_wrap .password_wrap .test-section .test-area .circle-area:nth-child(1) .circle::before {
+            top: 50%; }
+        .pgright_wrap .password_wrap .test-section .test-area .circle-area:nth-child(2) .circle {
+          background: #28a745;
+          -webkit-animation: circle02 1s;
+                  animation: circle02 1s;
+          -webkit-animation-delay: .4s;
+                  animation-delay: .4s;
+          -webkit-transform: rotate(-300deg);
+              -ms-transform: rotate(-300deg);
+                  transform: rotate(-300deg); }
+          .pgright_wrap .password_wrap .test-section .test-area .circle-area:nth-child(2) .circle::before {
+            top: 10px; }
+        .pgright_wrap .password_wrap .test-section .test-area .circle-area:nth-child(3) .circle {
+          background: #2f80ed;
+          -webkit-animation: circle03 1s;
+                  animation: circle03 1s;
+          -webkit-animation-delay: .4s;
+                  animation-delay: .4s;
+          -webkit-transform: rotate(300deg);
+              -ms-transform: rotate(300deg);
+                  transform: rotate(300deg); }
+          .pgright_wrap .password_wrap .test-section .test-area .circle-area:nth-child(3) .circle::before {
+            top: 0;
+            left: auto;
+            right: 10px; }
+        .pgright_wrap .password_wrap .test-section .test-area .circle-area:nth-child(4) .circle {
+          background: #c65319;
+          -webkit-animation: circle04 1s;
+                  animation: circle04 1s;
+          -webkit-animation-delay: .4s;
+                  animation-delay: .4s;
+          -webkit-transform: rotate(-300deg);
+              -ms-transform: rotate(-300deg);
+                  transform: rotate(-300deg); }
+          .pgright_wrap .password_wrap .test-section .test-area .circle-area:nth-child(4) .circle::before {
+            top: auto;
+            left: auto;
+            right: 5px;
+            bottom: 0; }
+        .pgright_wrap .password_wrap .test-section .test-area .circle-area:nth-child(5) .circle {
+          background: #ffd6db;
+          -webkit-animation: circle05 1s;
+                  animation: circle05 1s;
+          -webkit-animation-delay: .4s;
+                  animation-delay: .4s;
+          -webkit-transform: rotate(300deg);
+              -ms-transform: rotate(300deg);
+                  transform: rotate(300deg); }
+          .pgright_wrap .password_wrap .test-section .test-area .circle-area:nth-child(5) .circle::before {
+            top: 35%;
+            left: auto;
+            right: -13px; }
+        .pgright_wrap .password_wrap .test-section .test-area .circle-area.on .circle {
+          -webkit-animation: opacity 1s;
+                  animation: opacity 1s;
+          opacity: .3; }
+      .pgright_wrap .password_wrap .test-section .test-area span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: none;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        font-size: 18px;
+        font-weight: bold;
+        color: #333; }
   .pgright_wrap .password_wrap .user-info-area {
     margin-top: 24px;
     max-width: 657px;
@@ -2605,4 +2825,4 @@ span.error-txt {
   .login {
     background: #f5f6f7; } }
 
-/*# sourceMappingURL=../../sass_maps/css_partials/public.css.map */
+/*# sourceMappingURL=../sass_maps/public.css.map */

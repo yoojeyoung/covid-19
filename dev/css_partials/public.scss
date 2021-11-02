@@ -211,7 +211,34 @@ body > #wrap{min-width:280px;}
 /* e: 변경 된 헤더 */
 
 
-
+@keyframes circle01{
+  0% {transform: rotate(0);}
+  100% {transform: rotate(300deg);}
+}
+@keyframes circle02{
+  0% {transform: rotate(0);}
+  100% {transform: rotate(-300deg);}
+}
+@keyframes circle03{
+  0% {transform: rotate(0);}
+  100% {transform: rotate(300deg);}
+}
+@keyframes circle04{
+  0% {transform: rotate(0);}
+  100% {transform: rotate(-300deg);}
+}
+@keyframes circle05{
+  0% {transform: rotate(0);}
+  100% {transform: rotate(300deg);}
+}
+@keyframes slideDown {
+	0% {transform: translateY(-80%);}		
+	100% {transform: translateY(0%);}		
+}
+@keyframes opacity {
+	0% {opacity: 1;}
+	100% {opacity: .3;}		
+}
 /* 임시 비밀번호 로그인 페이지 */
 body{background: #f5f5f7}
 .pgright_wrap{
@@ -224,6 +251,115 @@ body{background: #f5f5f7}
       span{display: block;@include rem(font-size, 24px);color: #3d3e42;font-weight: bold;}
       .sub-tit{@include rem(margin-top, 10px); @include rem(font-size,18px);font-weight: normal;}
     }
+    .test-section{
+      animation: slideDown ease .5s;
+      .test-area{
+        font-size: 0;
+        display: flex;
+        justify-content: space-between;
+        .circle-area{
+          position: relative;
+          .circle{
+            position: relative;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            transition: ease 1.2s;
+            &::before{
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 22px;
+              transform: translate(-50%,0);
+              background: #333;
+              width: 30px;
+              height: 30px;
+              border-radius: 100%;
+              
+            }
+          }
+          &:nth-child(1){
+            .circle{
+              background: red;
+              animation: circle01 1s;
+              animation-delay: .4s;
+              transform: rotate(300deg);
+              &::before{
+                top: 50%;
+              }
+            }
+          }
+          &:nth-child(2){
+            .circle{
+              background: #28a745;
+              animation: circle02 1s;
+              animation-delay: .4s;
+              transform: rotate(-300deg);
+              &::before{
+                top: 10px;
+              }
+            }
+          }
+          &:nth-child(3){
+            .circle{
+              background: #2f80ed;
+              animation: circle03 1s;
+              animation-delay: .4s;
+              transform: rotate(300deg);
+              &::before{
+                top: 0;
+                left: auto;
+                right: 10px;
+              }
+            }
+          }
+          &:nth-child(4){
+            .circle{
+              background: #c65319;
+              animation: circle04 1s;
+              animation-delay: .4s;
+              transform: rotate(-300deg);
+              &::before{
+                top: auto;
+                left: auto;
+                right: 5px;
+                bottom: 0;
+              }
+            }
+          }
+          &:nth-child(5){
+            .circle{background: #ffd6db;
+              animation: circle05 1s;
+              animation-delay: .4s;
+              transform: rotate(300deg);
+              &::before{
+                top: 35%;
+                left: auto;
+                right: -13px;
+              }
+            }
+          }
+          &.on{
+            .circle{
+              animation: opacity 1s;
+              opacity: .3;
+            }
+          }
+        }
+        span{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: none;
+          transform: translate(-50%,-50%);
+          font-size: 18px;
+          font-weight: bold;
+          color: #333;
+        }
+      }
+    }
+    
     .user-info-area{
       @include rem(margin-top,24px);
       @include rem(max-width,657px);
